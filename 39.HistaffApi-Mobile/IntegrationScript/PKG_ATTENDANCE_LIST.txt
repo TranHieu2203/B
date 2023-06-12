@@ -1,0 +1,211 @@
+﻿CREATE OR REPLACE PACKAGE BODY TVC_OM."PKG_ATTENDANCE_LIST" IS
+
+  PROCEDURE GET_AT_PROJECT_LIST(P_ISBLANK IN NUMBER, P_CUR OUT CURSOR_TYPE) IS
+  BEGIN
+    IF P_ISBLANK = 0 THEN
+      OPEN P_CUR FOR
+        SELECT E.ID, E.NAME
+          FROM AT_PROJECT E
+         ORDER BY NLSSORT(E.NAME, 'NLS_SORT=vietnamese');
+    ELSE
+      OPEN P_CUR FOR
+        SELECT NULL ID, NULL NAME
+          FROM DUAL
+        UNION ALL
+        SELECT *
+          FROM (SELECT E.ID, E.NAME
+                  FROM AT_PROJECT E
+                 ORDER BY NLSSORT(E.NAME, 'NLS_SORT=vietnamese'));
+    END IF;
+  END;
+
+  PROCEDURE GET_AT_PROJECT_TITLE_LIST(P_ISBLANK IN NUMBER,
+                                      P_CUR     OUT CURSOR_TYPE) IS
+  BEGIN
+    IF P_ISBLANK = 0 THEN
+      OPEN P_CUR FOR
+        SELECT E.ID, E.NAME
+          FROM AT_PROJECT_TITLE E
+         ORDER BY NLSSORT(E.NAME, 'NLS_SORT=vietnamese');
+    ELSE
+      OPEN P_CUR FOR
+        SELECT NULL ID, NULL NAME
+          FROM DUAL
+        UNION ALL
+        SELECT *
+          FROM (SELECT E.ID, E.NAME
+                  FROM AT_PROJECT_TITLE E
+                 ORDER BY NLSSORT(E.NAME, 'NLS_SORT=vietnamese'));
+    END IF;
+  END;
+
+  PROCEDURE GET_AT_PROJECT_WORK_LIST(P_ISBLANK IN NUMBER,
+                                     P_CUR     OUT CURSOR_TYPE) IS
+  BEGIN
+    IF P_ISBLANK = 0 THEN
+      OPEN P_CUR FOR
+        SELECT E.ID, E.NAME
+          FROM AT_PROJECT_WORK E
+         ORDER BY NLSSORT(E.NAME, 'NLS_SORT=vietnamese');
+    ELSE
+      OPEN P_CUR FOR
+        SELECT NULL ID, NULL NAME
+          FROM DUAL
+        UNION ALL
+        SELECT *
+          FROM (SELECT E.ID, E.NAME
+                  FROM AT_PROJECT_WORK E
+                 ORDER BY NLSSORT(E.NAME, 'NLS_SORT=vietnamese'));
+    END IF;
+  END;
+
+  PROCEDURE LOAD_PERIOD(P_YEAR   IN NUMBER,
+                        P_ORG_ID IN NUMBER,
+                        CUR      OUT CURSOR_TYPE) AS
+    PV_ORG_ID NUMBER;
+  BEGIN
+    OPEN CUR FOR
+      SELECT P.PERIOD_ID,
+             P2.PERIOD_NAME PERIOD_NAME,
+             (CASE
+               WHEN TO_CHAR(P2.START_DATE, 'yyyymm') =
+                    TO_CHAR(SYSDATE, 'yyyymm') THEN
+                1
+               ELSE
+                0
+             END) SHOW
+        FROM AT_ORG_PERIOD P
+        LEFT JOIN AT_PERIOD P2
+          ON P.PERIOD_ID = P2.ID
+       WHERE P.ORG_ID = P_ORG_ID
+         AND P2.YEAR = P_YEAR;
+  END;
+
+  PROCEDURE GET_TERMINAL(P_ID IN NUMBER, CUR OUT CURSOR_TYPE) AS
+  BEGIN
+    OPEN CUR FOR
+      SELECT T.TERMINAL_IP || ':' || T.PORT || ':' || T.PASS || ':' TERMINAL_ID,
+             T.TERMINAL_CODE,
+             T.TERMINAL_NAME,
+             T.ADDRESS_PLACE,
+             T.TERMINAL_IP,
+             T.TERMINAL_NUMBER,
+             T.PASS,
+             T.PORT,
+             T.NOTE,
+             T.ID
+        FROM AT_TERMINALS T
+       WHERE T.ACTFLG = 'A';
+  END;
+
+  PROCEDURE GET_TIME_MANUAL_IMPORT(CUR OUT CURSOR_TYPE) IS
+  BEGIN
+    OPEN CUR FOR
+      SELECT T.ID,
+             T.NAME,
+             T.MORNING_ID,
+             F1.NAME_VN     MORNING_NAME,
+             T.AFTERNOON_ID,
+             F2.NAME_VN     AFTERNOON_NAME
+        FROM AT_TIME_MANUAL T
+        LEFT JOIN AT_FML F1
+          ON T.MORNING_ID = F1.ID
+        LEFT JOIN AT_FML F2
+          ON T.AFTERNOON_ID = F2.ID
+       WHERE T.ACTFLG = 'A';
+  END GET_TIME_MANUAL_IMPORT;
+
+  PROCEDURE GETAT_TIME_MANUAL(CUR OUT CURSOR_TYPE) IS
+  BEGIN
+    OPEN CUR FOR
+      SELECT TB.*
+        FROM (SELECT NULL ID, '' NAME
+                FROM DUAL
+              UNION ALL
+              SELECT E.ID, TO_CHAR('[' || E.CODE || '] ' || E.NAME) NAME
+                FROM AT_TIME_MANUAL E
+               WHERE E.CODE IN ('X', 'D', 'T', 'H', 'A', 'N', 'Q', 'OFF')
+                 AND E.ACTFLG = 'A') TB
+       ORDER BY TB.NAME DESC;
+  END;
+  --------
+  PROCEDURE GET_TYPE_FORMULAR(P_ISBLANK IN NUMBER, P_CUR OUT CURSOR_TYPE) IS
+  BEGIN
+    IF P_ISBLANK = 0 THEN
+      OPEN P_CUR FOR
+        select * from AT_Type_FORMULAR;
+    ELSE
+      OPEN P_CUR FOR
+        SELECT NULL ID, NULL NAME
+          FROM DUAL
+        UNION ALL
+        select *
+          from AT_Type_FORMULAR;
+    END IF;
+  END;
+
+  PROCEDURE GET_DETAILDMVSBYID(P_ID IN NUMBER, CUR OUT CURSOR_TYPE) AS
+  BEGIN
+    OPEN CUR FOR
+      SELECT C.FROM_DATE, SUM(C.DM) DM, SUM(C.VS) VS, 
+      			CASE C.Status 	WHEN 1 THEN N'Chưa phê duyệt'
+      							WHEN 2 THEN N'Phê duyệt'
+      							WHEN 3 THEN N'Từ chối' 
+      							ELSE u'' END status_name
+        FROM (SELECT A.FROM_DATE FROM_DATE,
+                     A.TO_DATE   TO_DATE,
+                     A.NVALUE    DM,
+                     0           VS,
+                     A.STATUS
+                FROM AT_PORTAL_REG A
+               WHERE A.ID_SIGN = 168
+                 AND A.PARENT_ID = P_ID
+              UNION ALL
+              SELECT A.FROM_DATE FROM_DATE,
+                     A.TO_DATE   TO_DATE,
+                     0           DM,
+                     A.NVALUE    VS,
+                     A.STATUS
+                FROM AT_PORTAL_REG A
+               WHERE A.ID_SIGN = 167
+                 AND A.PARENT_ID = P_ID) C
+       GROUP BY C.FROM_DATE, C.Status
+       ORDER BY C.FROM_DATE;
+  END;
+ PROCEDURE GET_TERMINAL_AUTO(CUR OUT CURSOR_TYPE) AS
+  BEGIN
+    OPEN CUR FOR
+      SELECT T.TERMINAL_IP || ':' || T.PORT || ':' || T.PASS || ':' TERMINAL_ID,
+             T.TERMINAL_CODE,
+             T.TERMINAL_NAME,
+             T.ADDRESS_PLACE,
+             T.TERMINAL_IP,
+             T.TERMINAL_NUMBER,
+             T.PASS,
+             T.PORT,
+             T.NOTE, 
+             T.ID,
+             T.LAST_TIME_UPDATE
+        FROM AT_TERMINALS T
+       WHERE T.ACTFLG = 'A';
+  END;
+   PROCEDURE GET_STATUS_TERMINAL_LASTIME(P_ID     IN NUMBER,
+                                        P_DATE   IN DATE,
+                                        P_STATUS IN NVARCHAR2,
+                                        P_ROW    IN NUMBER) AS
+  BEGIN
+    UPDATE AT_TERMINALS T
+       SET T.LAST_TIME_STATUS = P_DATE,
+           T.TERMINAL_STATUS  = P_STATUS,
+           T.TERMINAL_ROW     = P_ROW
+     WHERE T.ID = P_ID;
+  END;
+
+  PROCEDURE GET_UPDATE_TERMINAL_LASTIME (P_ID IN NUMBER,
+                                        P_DATE IN DATE) AS
+  BEGIN
+    UPDATE AT_TERMINALS T
+       SET T.LAST_TIME_UPDATE = P_DATE
+     WHERE T.ID = P_ID;
+  END;
+END;

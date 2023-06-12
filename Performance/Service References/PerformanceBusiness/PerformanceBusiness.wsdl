@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PerformanceBusiness" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IPerformanceBusiness_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="1800000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PerformanceDAL" />
+      <xsd:import schemaLocation="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Framework.Data" />
+      <xsd:import schemaLocation="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd6" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPerformanceBusiness_TestService_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestService" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_TestService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_CheckExistInDatabase_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExistInDatabase" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_CheckExistInDatabase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExistInDatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetOtherList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherList" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetOtherList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPeriodList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriodList" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPeriodList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriodListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroupList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroupList" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroupList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroupListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroupByPeriodList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroupByPeriodList" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroupByPeriodList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroupByPeriodListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteriaByObjectList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaByObjectList" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteriaByObjectList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaByObjectListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetListEmployeePortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListEmployeePortal" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetListEmployeePortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListEmployeePortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteria" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCriteria" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ValidateCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCriteria" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ValidateCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCriteria" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ActiveCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCriteria" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ActiveCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriteria" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetClassification_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassification" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetClassification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertClassification_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassification" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertClassification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ValidateClassification_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateClassification" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ValidateClassification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateClassificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyClassification_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyClassification" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyClassification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyClassificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ActiveClassification_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveClassification" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ActiveClassification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveClassificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteClassification_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassification" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteClassification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ValidateObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ValidateObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ActiveObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ActiveObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPeriodById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriodById" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPeriodById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriodByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ValidatePeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ValidatePeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ActivePeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivePeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ActivePeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivePeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeletePeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeletePeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroupNotByPeriodID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroupNotByPeriodID" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroupNotByPeriodID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroupNotByPeriodIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroupByPeriodID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroupByPeriodID" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetObjectGroupByPeriodID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectGroupByPeriodIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertObjectGroupByPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertObjectGroupByPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertObjectGroupByPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertObjectGroupByPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteObjectGroupByPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteObjectGroupByPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteObjectGroupByPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteObjectGroupByPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteriaNotByObjectGroupID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaNotByObjectGroupID" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteriaNotByObjectGroupID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaNotByObjectGroupIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteriaByObjectGroupID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaByObjectGroupID" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteriaByObjectGroupID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaByObjectGroupIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertCriteriaByObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCriteriaByObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertCriteriaByObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCriteriaByObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteCriteriaByObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriteriaByObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteCriteriaByObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriteriaByObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetEmployeeNotByObjectGroupID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeNotByObjectGroupID" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetEmployeeNotByObjectGroupID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeNotByObjectGroupIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetEmployeeByObjectGroupID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByObjectGroupID" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetEmployeeByObjectGroupID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByObjectGroupIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertEmployeeByObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmployeeByObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertEmployeeByObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmployeeByObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteEmployeeByObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeByObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeleteEmployeeByObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeByObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetEmployeeImport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeImport" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetEmployeeImport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeImportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteriaImport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaImport" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetCriteriaImport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaImportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ImportEmployeeAssessment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportEmployeeAssessment" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ImportEmployeeAssessment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportEmployeeAssessmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetEmployeeImportAssessment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeImportAssessment" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetEmployeeImportAssessment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeImportAssessmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPe_Organization_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPe_Organization" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPe_Organization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPe_OrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPe_OrganizationByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPe_OrganizationByID" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetPe_OrganizationByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPe_OrganizationByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertPe_Organization_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPe_Organization" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_InsertPe_Organization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPe_OrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyPe_Organization_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPe_Organization" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyPe_Organization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPe_OrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeletePe_Organization_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePe_Organization" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_DeletePe_Organization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePe_OrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_UpdateCriteriaObjectGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCriteriaObjectGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_UpdateCriteriaObjectGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCriteriaObjectGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetAssessment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessment" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetAssessment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyAssessment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAssessment" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_ModifyAssessment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAssessmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_UpdateStatusEmployeeAssessment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusEmployeeAssessment" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_UpdateStatusEmployeeAssessment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusEmployeeAssessmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetTotalPointRating_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalPointRating" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetTotalPointRating_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalPointRatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetAssessmentDirect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessmentDirect" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetAssessmentDirect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessmentDirectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_UpdateStatusAssessmentDirect_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusAssessmentDirect" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_UpdateStatusAssessmentDirect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusAssessmentDirectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetKPIAssessEmp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetKPIAssessEmp" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetKPIAssessEmp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetKPIAssessEmpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetDirectKPIEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDirectKPIEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetDirectKPIEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDirectKPIEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetAssessRatingEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessRatingEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetAssessRatingEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessRatingEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetAssessRatingEmployeeOrg_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessRatingEmployeeOrg" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetAssessRatingEmployeeOrg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessRatingEmployeeOrgResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetStatisticKPIByClassification_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticKPIByClassification" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetStatisticKPIByClassification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticKPIByClassificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetStatisticKPIByClassifiOrg_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticKPIByClassifiOrg" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetStatisticKPIByClassifiOrg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticKPIByClassifiOrgResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetStatisticClassification_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticClassification" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetStatisticClassification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticClassificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetStatisticKPISeniority_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticKPISeniority" />
+  </wsdl:message>
+  <wsdl:message name="IPerformanceBusiness_GetStatisticKPISeniority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticKPISeniorityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPerformanceBusiness">
+    <wsdl:operation name="TestService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/TestService" message="tns:IPerformanceBusiness_TestService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/TestServiceResponse" message="tns:IPerformanceBusiness_TestService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistInDatabase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/CheckExistInDatabase" message="tns:IPerformanceBusiness_CheckExistInDatabase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/CheckExistInDatabaseResponse" message="tns:IPerformanceBusiness_CheckExistInDatabase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetOtherList" message="tns:IPerformanceBusiness_GetOtherList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetOtherListResponse" message="tns:IPerformanceBusiness_GetOtherList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPeriodList" message="tns:IPerformanceBusiness_GetPeriodList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPeriodListResponse" message="tns:IPerformanceBusiness_GetPeriodList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroupList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroupList" message="tns:IPerformanceBusiness_GetObjectGroupList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroupListResponse" message="tns:IPerformanceBusiness_GetObjectGroupList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroupByPeriodList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroupByPeriodList" message="tns:IPerformanceBusiness_GetObjectGroupByPeriodList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroupByPeriodListResponse" message="tns:IPerformanceBusiness_GetObjectGroupByPeriodList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaByObjectList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteriaByObjectList" message="tns:IPerformanceBusiness_GetCriteriaByObjectList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteriaByObjectListResponse" message="tns:IPerformanceBusiness_GetCriteriaByObjectList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeePortal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetListEmployeePortal" message="tns:IPerformanceBusiness_GetListEmployeePortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetListEmployeePortalResponse" message="tns:IPerformanceBusiness_GetListEmployeePortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteria" message="tns:IPerformanceBusiness_GetCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteriaResponse" message="tns:IPerformanceBusiness_GetCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertCriteria" message="tns:IPerformanceBusiness_InsertCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertCriteriaResponse" message="tns:IPerformanceBusiness_InsertCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ValidateCriteria" message="tns:IPerformanceBusiness_ValidateCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ValidateCriteriaResponse" message="tns:IPerformanceBusiness_ValidateCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyCriteria" message="tns:IPerformanceBusiness_ModifyCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyCriteriaResponse" message="tns:IPerformanceBusiness_ModifyCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ActiveCriteria" message="tns:IPerformanceBusiness_ActiveCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ActiveCriteriaResponse" message="tns:IPerformanceBusiness_ActiveCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteCriteria" message="tns:IPerformanceBusiness_DeleteCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteCriteriaResponse" message="tns:IPerformanceBusiness_DeleteCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetClassification" message="tns:IPerformanceBusiness_GetClassification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetClassificationResponse" message="tns:IPerformanceBusiness_GetClassification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertClassification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertClassification" message="tns:IPerformanceBusiness_InsertClassification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertClassificationResponse" message="tns:IPerformanceBusiness_InsertClassification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateClassification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ValidateClassification" message="tns:IPerformanceBusiness_ValidateClassification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ValidateClassificationResponse" message="tns:IPerformanceBusiness_ValidateClassification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyClassification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyClassification" message="tns:IPerformanceBusiness_ModifyClassification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyClassificationResponse" message="tns:IPerformanceBusiness_ModifyClassification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveClassification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ActiveClassification" message="tns:IPerformanceBusiness_ActiveClassification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ActiveClassificationResponse" message="tns:IPerformanceBusiness_ActiveClassification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteClassification" message="tns:IPerformanceBusiness_DeleteClassification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteClassificationResponse" message="tns:IPerformanceBusiness_DeleteClassification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroup" message="tns:IPerformanceBusiness_GetObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroupResponse" message="tns:IPerformanceBusiness_GetObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertObjectGroup" message="tns:IPerformanceBusiness_InsertObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertObjectGroupResponse" message="tns:IPerformanceBusiness_InsertObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ValidateObjectGroup" message="tns:IPerformanceBusiness_ValidateObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ValidateObjectGroupResponse" message="tns:IPerformanceBusiness_ValidateObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyObjectGroup" message="tns:IPerformanceBusiness_ModifyObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyObjectGroupResponse" message="tns:IPerformanceBusiness_ModifyObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ActiveObjectGroup" message="tns:IPerformanceBusiness_ActiveObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ActiveObjectGroupResponse" message="tns:IPerformanceBusiness_ActiveObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteObjectGroup" message="tns:IPerformanceBusiness_DeleteObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteObjectGroupResponse" message="tns:IPerformanceBusiness_DeleteObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPeriod" message="tns:IPerformanceBusiness_GetPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPeriodResponse" message="tns:IPerformanceBusiness_GetPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPeriodById" message="tns:IPerformanceBusiness_GetPeriodById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPeriodByIdResponse" message="tns:IPerformanceBusiness_GetPeriodById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertPeriod" message="tns:IPerformanceBusiness_InsertPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertPeriodResponse" message="tns:IPerformanceBusiness_InsertPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ValidatePeriod" message="tns:IPerformanceBusiness_ValidatePeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ValidatePeriodResponse" message="tns:IPerformanceBusiness_ValidatePeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyPeriod" message="tns:IPerformanceBusiness_ModifyPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyPeriodResponse" message="tns:IPerformanceBusiness_ModifyPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivePeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ActivePeriod" message="tns:IPerformanceBusiness_ActivePeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ActivePeriodResponse" message="tns:IPerformanceBusiness_ActivePeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeletePeriod" message="tns:IPerformanceBusiness_DeletePeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeletePeriodResponse" message="tns:IPerformanceBusiness_DeletePeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroupNotByPeriodID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroupNotByPeriodID" message="tns:IPerformanceBusiness_GetObjectGroupNotByPeriodID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroupNotByPeriodIDResponse" message="tns:IPerformanceBusiness_GetObjectGroupNotByPeriodID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroupByPeriodID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroupByPeriodID" message="tns:IPerformanceBusiness_GetObjectGroupByPeriodID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetObjectGroupByPeriodIDResponse" message="tns:IPerformanceBusiness_GetObjectGroupByPeriodID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertObjectGroupByPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertObjectGroupByPeriod" message="tns:IPerformanceBusiness_InsertObjectGroupByPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertObjectGroupByPeriodResponse" message="tns:IPerformanceBusiness_InsertObjectGroupByPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteObjectGroupByPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteObjectGroupByPeriod" message="tns:IPerformanceBusiness_DeleteObjectGroupByPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteObjectGroupByPeriodResponse" message="tns:IPerformanceBusiness_DeleteObjectGroupByPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaNotByObjectGroupID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteriaNotByObjectGroupID" message="tns:IPerformanceBusiness_GetCriteriaNotByObjectGroupID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteriaNotByObjectGroupIDResponse" message="tns:IPerformanceBusiness_GetCriteriaNotByObjectGroupID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaByObjectGroupID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteriaByObjectGroupID" message="tns:IPerformanceBusiness_GetCriteriaByObjectGroupID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteriaByObjectGroupIDResponse" message="tns:IPerformanceBusiness_GetCriteriaByObjectGroupID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCriteriaByObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertCriteriaByObjectGroup" message="tns:IPerformanceBusiness_InsertCriteriaByObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertCriteriaByObjectGroupResponse" message="tns:IPerformanceBusiness_InsertCriteriaByObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriteriaByObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteCriteriaByObjectGroup" message="tns:IPerformanceBusiness_DeleteCriteriaByObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteCriteriaByObjectGroupResponse" message="tns:IPerformanceBusiness_DeleteCriteriaByObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeNotByObjectGroupID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetEmployeeNotByObjectGroupID" message="tns:IPerformanceBusiness_GetEmployeeNotByObjectGroupID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetEmployeeNotByObjectGroupIDResponse" message="tns:IPerformanceBusiness_GetEmployeeNotByObjectGroupID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByObjectGroupID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetEmployeeByObjectGroupID" message="tns:IPerformanceBusiness_GetEmployeeByObjectGroupID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetEmployeeByObjectGroupIDResponse" message="tns:IPerformanceBusiness_GetEmployeeByObjectGroupID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmployeeByObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertEmployeeByObjectGroup" message="tns:IPerformanceBusiness_InsertEmployeeByObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertEmployeeByObjectGroupResponse" message="tns:IPerformanceBusiness_InsertEmployeeByObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeByObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteEmployeeByObjectGroup" message="tns:IPerformanceBusiness_DeleteEmployeeByObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeleteEmployeeByObjectGroupResponse" message="tns:IPerformanceBusiness_DeleteEmployeeByObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeImport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetEmployeeImport" message="tns:IPerformanceBusiness_GetEmployeeImport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetEmployeeImportResponse" message="tns:IPerformanceBusiness_GetEmployeeImport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaImport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteriaImport" message="tns:IPerformanceBusiness_GetCriteriaImport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetCriteriaImportResponse" message="tns:IPerformanceBusiness_GetCriteriaImport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportEmployeeAssessment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ImportEmployeeAssessment" message="tns:IPerformanceBusiness_ImportEmployeeAssessment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ImportEmployeeAssessmentResponse" message="tns:IPerformanceBusiness_ImportEmployeeAssessment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeImportAssessment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetEmployeeImportAssessment" message="tns:IPerformanceBusiness_GetEmployeeImportAssessment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetEmployeeImportAssessmentResponse" message="tns:IPerformanceBusiness_GetEmployeeImportAssessment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPe_Organization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPe_Organization" message="tns:IPerformanceBusiness_GetPe_Organization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPe_OrganizationResponse" message="tns:IPerformanceBusiness_GetPe_Organization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPe_OrganizationByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPe_OrganizationByID" message="tns:IPerformanceBusiness_GetPe_OrganizationByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetPe_OrganizationByIDResponse" message="tns:IPerformanceBusiness_GetPe_OrganizationByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPe_Organization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertPe_Organization" message="tns:IPerformanceBusiness_InsertPe_Organization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/InsertPe_OrganizationResponse" message="tns:IPerformanceBusiness_InsertPe_Organization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPe_Organization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyPe_Organization" message="tns:IPerformanceBusiness_ModifyPe_Organization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyPe_OrganizationResponse" message="tns:IPerformanceBusiness_ModifyPe_Organization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePe_Organization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeletePe_Organization" message="tns:IPerformanceBusiness_DeletePe_Organization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/DeletePe_OrganizationResponse" message="tns:IPerformanceBusiness_DeletePe_Organization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCriteriaObjectGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/UpdateCriteriaObjectGroup" message="tns:IPerformanceBusiness_UpdateCriteriaObjectGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/UpdateCriteriaObjectGroupResponse" message="tns:IPerformanceBusiness_UpdateCriteriaObjectGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetAssessment" message="tns:IPerformanceBusiness_GetAssessment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetAssessmentResponse" message="tns:IPerformanceBusiness_GetAssessment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAssessment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyAssessment" message="tns:IPerformanceBusiness_ModifyAssessment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/ModifyAssessmentResponse" message="tns:IPerformanceBusiness_ModifyAssessment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusEmployeeAssessment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/UpdateStatusEmployeeAssessment" message="tns:IPerformanceBusiness_UpdateStatusEmployeeAssessment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/UpdateStatusEmployeeAssessmentResponse" message="tns:IPerformanceBusiness_UpdateStatusEmployeeAssessment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPointRating">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetTotalPointRating" message="tns:IPerformanceBusiness_GetTotalPointRating_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetTotalPointRatingResponse" message="tns:IPerformanceBusiness_GetTotalPointRating_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessmentDirect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetAssessmentDirect" message="tns:IPerformanceBusiness_GetAssessmentDirect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetAssessmentDirectResponse" message="tns:IPerformanceBusiness_GetAssessmentDirect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusAssessmentDirect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/UpdateStatusAssessmentDirect" message="tns:IPerformanceBusiness_UpdateStatusAssessmentDirect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/UpdateStatusAssessmentDirectResponse" message="tns:IPerformanceBusiness_UpdateStatusAssessmentDirect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKPIAssessEmp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetKPIAssessEmp" message="tns:IPerformanceBusiness_GetKPIAssessEmp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetKPIAssessEmpResponse" message="tns:IPerformanceBusiness_GetKPIAssessEmp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDirectKPIEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetDirectKPIEmployee" message="tns:IPerformanceBusiness_GetDirectKPIEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetDirectKPIEmployeeResponse" message="tns:IPerformanceBusiness_GetDirectKPIEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessRatingEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetAssessRatingEmployee" message="tns:IPerformanceBusiness_GetAssessRatingEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetAssessRatingEmployeeResponse" message="tns:IPerformanceBusiness_GetAssessRatingEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessRatingEmployeeOrg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetAssessRatingEmployeeOrg" message="tns:IPerformanceBusiness_GetAssessRatingEmployeeOrg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetAssessRatingEmployeeOrgResponse" message="tns:IPerformanceBusiness_GetAssessRatingEmployeeOrg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticKPIByClassification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetStatisticKPIByClassification" message="tns:IPerformanceBusiness_GetStatisticKPIByClassification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetStatisticKPIByClassificationResponse" message="tns:IPerformanceBusiness_GetStatisticKPIByClassification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticKPIByClassifiOrg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetStatisticKPIByClassifiOrg" message="tns:IPerformanceBusiness_GetStatisticKPIByClassifiOrg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetStatisticKPIByClassifiOrgResponse" message="tns:IPerformanceBusiness_GetStatisticKPIByClassifiOrg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticClassification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetStatisticClassification" message="tns:IPerformanceBusiness_GetStatisticClassification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetStatisticClassificationResponse" message="tns:IPerformanceBusiness_GetStatisticClassification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticKPISeniority">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetStatisticKPISeniority" message="tns:IPerformanceBusiness_GetStatisticKPISeniority_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPerformanceBusiness/GetStatisticKPISeniorityResponse" message="tns:IPerformanceBusiness_GetStatisticKPISeniority_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IPerformanceBusiness" type="tns:IPerformanceBusiness">
+    <wsp:PolicyReference URI="#WSHttpBinding_IPerformanceBusiness_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestService">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/TestService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistInDatabase">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/CheckExistInDatabase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherList">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetOtherList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodList">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetPeriodList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroupList">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetObjectGroupList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroupByPeriodList">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetObjectGroupByPeriodList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaByObjectList">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetCriteriaByObjectList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeePortal">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetListEmployeePortal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteria">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCriteria">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/InsertCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCriteria">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ValidateCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCriteria">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ModifyCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCriteria">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ActiveCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriteria">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/DeleteCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassification">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetClassification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertClassification">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/InsertClassification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateClassification">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ValidateClassification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyClassification">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ModifyClassification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveClassification">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ActiveClassification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassification">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/DeleteClassification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/InsertObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ValidateObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ModifyObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ActiveObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/DeleteObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodById">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetPeriodById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/InsertPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ValidatePeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ModifyPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivePeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ActivePeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/DeletePeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroupNotByPeriodID">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetObjectGroupNotByPeriodID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGroupByPeriodID">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetObjectGroupByPeriodID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertObjectGroupByPeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/InsertObjectGroupByPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteObjectGroupByPeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/DeleteObjectGroupByPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaNotByObjectGroupID">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetCriteriaNotByObjectGroupID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaByObjectGroupID">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetCriteriaByObjectGroupID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCriteriaByObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/InsertCriteriaByObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriteriaByObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/DeleteCriteriaByObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeNotByObjectGroupID">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetEmployeeNotByObjectGroupID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByObjectGroupID">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetEmployeeByObjectGroupID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmployeeByObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/InsertEmployeeByObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeByObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/DeleteEmployeeByObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeImport">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetEmployeeImport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaImport">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetCriteriaImport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportEmployeeAssessment">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ImportEmployeeAssessment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeImportAssessment">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetEmployeeImportAssessment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPe_Organization">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetPe_Organization" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPe_OrganizationByID">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetPe_OrganizationByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPe_Organization">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/InsertPe_Organization" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPe_Organization">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ModifyPe_Organization" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePe_Organization">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/DeletePe_Organization" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCriteriaObjectGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/UpdateCriteriaObjectGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessment">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetAssessment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAssessment">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/ModifyAssessment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusEmployeeAssessment">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/UpdateStatusEmployeeAssessment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPointRating">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetTotalPointRating" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessmentDirect">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetAssessmentDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusAssessmentDirect">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/UpdateStatusAssessmentDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKPIAssessEmp">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetKPIAssessEmp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDirectKPIEmployee">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetDirectKPIEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessRatingEmployee">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetAssessRatingEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessRatingEmployeeOrg">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetAssessRatingEmployeeOrg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticKPIByClassification">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetStatisticKPIByClassification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticKPIByClassifiOrg">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetStatisticKPIByClassifiOrg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticClassification">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetStatisticClassification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticKPISeniority">
+      <soap12:operation soapAction="http://tempuri.org/IPerformanceBusiness/GetStatisticKPISeniority" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PerformanceBusiness">
+    <wsdl:port name="WSHttpBinding_IPerformanceBusiness" binding="tns:WSHttpBinding_IPerformanceBusiness">
+      <soap12:address location="http://localhost:9999/PerformanceBusiness.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:9999/PerformanceBusiness.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

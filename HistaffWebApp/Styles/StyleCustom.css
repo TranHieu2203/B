@@ -1,0 +1,156 @@
+﻿/*----------------------------------COMMON----------------------------------*/
+.RadComboBox_Metro .rcbDisabled .rcbInput {
+    color: black;
+}
+div.rgWrap.rgAdvPart div.RadComboBox_Metro
+{
+    width: 50px !important;
+}
+table.rgClipCells tr td[align=right]
+{
+    padding-right: 5px !important;
+}
+table.rgClipCells tr td[align=center]:first-child, table.rgClipCells tr th:first-child
+{
+    padding-left: 0px !important;
+}
+/*----------------------------------START FIX FILTER TEXTBOX WIDTH----------------------------------*/
+table.rgClipCells tr.rgFilterRow td
+{
+    padding: 1px !important;
+}
+table.rgClipCells tr.rgFilterRow td div.RadPicker.RadPicker_Metro
+{
+    /*height: 25px !important;*/
+    width: 100% !important;
+}
+table.rgClipCells tr.rgFilterRow td span
+{
+    max-width: 100% !important;
+    width: 100% !important;
+}
+table.rgClipCells tr.rgFilterRow td input:not([type=checkbox])
+{
+    max-width: 100% !important;
+    height: 25px !important;
+    box-sizing: border-box;
+    padding: 1px !important;
+    width: 100% !important;
+}
+table.rcSingle tbody tr td.rcInputCell
+{
+    padding: 0px !important;
+}
+table.rgClipCells tr.rgFilterRow td span input.riDisabled
+{
+    background-color: rgb(235, 235, 228);
+    cursor: default;
+}
+/*-----------------------SCREEN CTRREPORT-----------------------------*/
+#MainContent_ctrlREPORT_lblProgram
+{
+    font-size: large !important;
+    font-weight: bold !important;
+    text-align:center;
+    display: inherit;
+}
+
+/*-----------------------SCREEN ctrlPROCESS-----------------------------*/
+span.spancustomleft
+{
+    float: left;
+    width: 85%;
+    text-align: center;
+}
+span.spancustomright
+{
+    float: right;
+    width: 15%;
+    text-align: center;
+}
+span.spancustomstatus
+{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+/*-----------------------SCREEN ctrlHU_DynamicReport-----------------------------*/
+#ctl00_MainContent_ctrlHU_DynamicReport_RadDock4 .dissolution
+{
+    visibility: hidden;
+}/*-------------------------- Fire fox---------------------------------------------*/
+.search-ff
+{
+    float: left;
+    padding-left: 3px;
+    margin-top: -3px;
+}
+html>/**/body .search-ff, x:-moz-any-link {
+   float:left;
+   margin-top:1px;
+}
+html>/**/body .txtareaff, x:-moz-any-link {
+   padding-right:20px;
+}
+
+html>/**/body table.rgClipCells tr.rgFilterRow td span input.riDisabled, x:-moz-any-link {
+    background-color:#e3e3e3;
+    cursor: default;
+}
+html>/**/body #RAD_SPLITTER_PANE_CONTENT_ctl00_MainContent_ctrlHU_ContractType_RadPane1, x:-moz-any-link 
+{
+    height:170px;
+}
+
+/*--------------------------ctrlHU_LabourProtectionMng---------------------------------------------*/
+#ctl00_MainContent_ctrlHU_LabourProtectionMng_rgLabourProtection_ctl00_Header thead tr.rgFilterRow td:nth-child(14){
+    text-align: center;
+    padding-left: 5px !important;
+}
+/*--------------------------ctrlHU_LabourProtectionMng---------------------------------------------*/
+#ctl00_MainContent_ctrlHU_EmpDtl_ctrlHU_EmpDtlFamily_rgFamily_ctl00_Header thead tr.rgFilterRow td:nth-child(7){
+    text-align: center;
+    padding-left: 5px !important;
+}
+/*-------------------------CtrlHU_DisciplineSalary----*/
+#RAD_SPLITTER_ctl00_MainContent_ctrlHU_DisciplineSalary_RadSplitter3 .table-form td
+{
+        padding: 0px 3px 0px 0px;
+}
+/*------------------------ctrlOnlineUser--------------------------------------*/
+#RAD_SPLITTER_PANE_TR_ctl00_MainContent_ctrlOnlineUser_RadPane1
+{
+    height: 40px;
+}
+/*------------------ctrlListUser--------------------------------------*/
+#ctl00_MainContent_ctrlListUser_RadSplitter1 table.rgClipCells tr.rgFilterRow td:nth-child(6){
+    text-align: center;
+    /*padding-left: 6px !important;*/
+}
+#ctl00_MainContent_ctrlListUser_RadSplitter1 table.rgClipCells tr.rgFilterRow td:nth-child(7){
+    text-align: center;
+    /*padding-left: 6px !important;*/
+}
+#ctl00_MainContent_ctrlListUser_RadSplitter1 table.rgClipCells tr.rgFilterRow td:nth-child(8){
+    text-align: center;
+    padding-left: 5px !important;
+}
+/*------------------------ctrlDeclaresOT--------------------------------------*/
+#RAD_SPLITTER_PANE_CONTENT_ctl00_MainContent_ctrlDeclaresOT_RadPane1 table.rgClipCells tr .rgCheck
+{
+    padding-right: 5px !important;
+}
+#RAD_SPLITTER_PANE_CONTENT_ctl00_MainContent_ctrlDeclaresOT_RadPane1 table.rgClipCells tr.rgFilterRow td:nth-child(11)
+{
+    text-align: center;
+}
+#RAD_SPLITTER_PANE_CONTENT_ctl00_MainContent_ctrlDeclaresOT_RadPane1 table.rgClipCells tr td[align=center]
+{
+    padding-right: 5px !important;
+}
+.padding-bottom-3px
+{
+    padding-bottom: 3px;
+}

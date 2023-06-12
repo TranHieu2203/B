@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{23A541BA-D14F-4150-9E44-72FD1D045D7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AttendanceDAL</RootNamespace>
+    <AssemblyName>AttendanceDAL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AttendanceDAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AttendanceDAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\ref\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.zkemkeeper">
+      <HintPath>..\ref\Interop.zkemkeeper.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\LinqKit.1.0\lib\35\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.DataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\app\client\GO\product\12.2.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ATConstant.vb" />
+    <Compile Include="AttendanceContext.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttendanceContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceContext.Func.vb" />
+    <Compile Include="AttendanceRepository.LeaveSheet.vb" />
+    <Compile Include="AttendanceRepository.List.vb" />
+    <Compile Include="AttendanceRepositoryStatic.vb" />
+    <Compile Include="BusinessObjects\AnnualLeaveDTO.vb" />
+    <Compile Include="BusinessObjects\APPOINTMENT_DTO.vb" />
+    <Compile Include="BusinessObjects\AT_COEFF_OVERTIME_EXCEPTIONDTO.vb" />
+    <Compile Include="BusinessObjects\AT_REASON_LIST_DTO.vb" />
+    <Compile Include="BusinessObjects\AT_SETUP_WIFI_GPS_DTO.vb" />
+    <Compile Include="BusinessObjects\AT_LEAVE_PAYMENTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_HOLIDAYDTO.vb" />
+    <Compile Include="BusinessObjects\AT_LATE_COMBACKOUTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_LISTPARAM_SYSTEAMDTO.vb" />
+    <Compile Include="BusinessObjects\AT_OT_REGISTRATIONDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIMESHEET_LOCKDTO.vb" />
+    <Compile Include="BusinessObjects\AT_WORKNIGHTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_WORKSIGNEDITDTO.vb" />
+    <Compile Include="BusinessObjects\SE_NOTIFICATIONDTO.vb" />
+    <Compile Include="BusinessObjects\VALIDATE_DTO.vb" />
+    <Compile Include="BusinessObjects\AT_REGISTER_OTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_PERIODDTO.vb" />
+    <Compile Include="BusinessObjects\AT_COMPENSATORYDTO.vb" />
+    <Compile Include="BusinessObjects\AT_ENTITLEMENTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SETUP_EXCHANGEDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SHIFTCYCLEDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TERMINALSDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SWIPE_DATADTO.vb" />
+    <Compile Include="AttendanceRepository.Common.vb" />
+    <Compile Include="BusinessObjects\AT_HOLIDAY_GENERALDTO.vb" />
+    <Compile Include="BusinessObjects\AT_FMLDTO.vb" />
+    <Compile Include="BusinessObjects\AT_DATAINOUTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_GSIGNDTO.vb" />
+    <Compile Include="BusinessObjects\AT_DMVSDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_PERIODDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_TIMESHEET_DAILYDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_TIMESHEET_MACHINETDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SHIFTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_HOLIDAY_OBJECTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SETUP_SPECIALDTO.vb" />
+    <Compile Include="BusinessObjects\AT_LEAVESHEETDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SIGNDEFAULTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIMESHEET_REGISTERDTO.vb" />
+    <Compile Include="BusinessObjects\AT_PORTAL_REG_DTO.vb" />
+    <Compile Include="BusinessObjects\ApproveUserDTO.vb" />
+    <Compile Include="BusinessObjects\ATRegSearchDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_TIMESHEET_MONTHLYDTO.vb" />
+    <Compile Include="BusinessObjects\AT_DECLAREOTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_MANUALDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_TIMESHEET_OTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_RICEDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_TIMESHEET_RICEDTO.vb" />
+    <Compile Include="BusinessObjects\AT_DECLARE_ENTITLEMENTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_ACTION_LOGDTO.vb" />
+    <Compile Include="BusinessObjects\AT_ACTION_ORG_LOGDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SETUP_TIME_EMPDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_TIMESHEET_NBDTO.vb" />
+    <Compile Include="BusinessObjects\AT_PROJECT_TITLEDTO.vb" />
+    <Compile Include="BusinessObjects\AT_PROJECTDTO.vb" />
+    <Compile Include="BusinessObjects\AT_PROJECT_WORKDTO.vb" />
+    <Compile Include="BusinessObjects\AT_PROJECT_EMPDTO.vb" />
+    <Compile Include="BusinessObjects\AT_PROJECT_ASSIGNDTO.vb" />
+    <Compile Include="BusinessObjects\AT_PORTAL_REG_LIST_DTO.vb" />
+    <Compile Include="BusinessObjects\AT_PROCESS_DTO.vb" />
+    <Compile Include="BusinessObjects\AT_OFFFSETTINGDTO.vb" />
+    <Compile Include="BusinessObjects\AT_OFFFSETTING_EMPDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TOXIC_LEAVE_EMPDTO.vb" />
+    <Compile Include="BusinessObjects\ComboBoxDataDTO.vb" />
+    <Compile Include="BusinessObjects\CONTRACT_DTO.vb" />
+    <Compile Include="BusinessObjects\AT_TYPE_PROCESSDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_MANUAL_RATEDTO.vb" />
+    <Compile Include="BusinessObjects\AT_TIME_WORKSTANDARDDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SIGNDEFAULT_ORGDTO.vb" />
+    <Compile Include="BusinessObjects\AT_COEFF_OVERTIMEDTO.vb" />
+    <Compile Include="BusinessObjects\AT_ANNUAL_LEAVEDTO.vb" />
+    <Compile Include="BusinessObjects\AT_ANNUAL_LEAVE_ORGDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SETUP_ELEAVEDTO.vb" />
+    <Compile Include="BusinessObjects\AT_SENIORITYDTO.vb" />
+    <Compile Include="BusinessObjects\AT_WAGEOFFSET_EMPDTO.vb" />
+    <Compile Include="BusinessObjects\AT_ADVANCE_LEAVE_EMPDTO.vb" />
+    <Compile Include="BusinessObjects\AT_CONCLUDE_ANNUAL_YEARDTO.vb" />
+    <Compile Include="BusinessObjects\AT_YEAR_LEAVE_EDITDTO.vb" />
+    <Compile Include="BusinessObjects\AT_COMPENSATION_YEARDTO.vb" />
+    <Compile Include="BusinessObjects\AT_ASSIGNEMP_CALENDARDTO.vb" />
+    <Compile Include="BusinessObjects\EMPLOYEE_SHIFT_DTO.vb" />
+    <Compile Include="BusinessObjects\LEAVEINOUTKHDTO.vb" />
+    <Compile Include="BusinessObjects\LEAVE_DETAIL_EMP_DTO.vb" />
+    <Compile Include="BusinessObjects\HistoryLeaveDTO.vb" />
+    <Compile Include="BusinessObjects\SetUpCodeAttDTO.vb" />
+    <Compile Include="BusinessObjects\SHIFT_DTO.vb" />
+    <Compile Include="BusinessObjects\SIGNDEFAULTDTO.vb" />
+    <Compile Include="BusinessObjects\SIGNEXT_DTO.vb" />
+    <Compile Include="BusinessObjects\SIGN_DTO.vb" />
+    <Compile Include="BusinessObjects\TotalDayOffDTO.vb" />
+    <Compile Include="BusinessObjects\Dashboard\StatisticDTO.vb" />
+    <Compile Include="BusinessObjects\SE_EMPLOYEE_CHOSENDTO.vb" />
+    <Compile Include="BusinessObjects\HU_STAFF_RANKDTO.vb" />
+    <Compile Include="BusinessObjects\EmployeeDTO.vb" />
+    <Compile Include="BusinessObjects\OT_OTHERLIST_DTO.vb" />
+    <Compile Include="BusinessObjects\PARAMDTO.vb" />
+    <Compile Include="AttendanceRepository.Reports.vb" />
+    <Compile Include="BusinessObjects\Se_ReportDTO.vb" />
+    <Compile Include="AttendanceRepository.Dashboard.vb" />
+    <Compile Include="Database.vb" />
+    <Compile Include="AttendanceRepository.Business.vb" />
+    <Compile Include="AttendanceRepository.vb" />
+    <Compile Include="BusinessObjects\AT_WORKSIGNDTO.vb" />
+    <Compile Include="ExtendMethods.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="AttendanceCommon.vb" />
+    <Compile Include="Utility.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="AttendanceContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AttendanceContext.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AttendanceContext.datasource" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vbproj">
+      <Project>{4B2EF214-7880-45F2-BB79-B394E552B4BE}</Project>
+      <Name>Common %28Common\Common%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Data\Framework.Data.vbproj">
+      <Project>{5AB0D232-7B7A-44B8-9D14-115C065027DB}</Project>
+      <Name>Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFrameworkPublic\HistaffFrameworkPublic.vbproj">
+      <Project>{5D0CFFD8-3EF0-4584-818F-3F165BD8DE0C}</Project>
+      <Name>HistaffFrameworkPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAppLog\WebAppLog.vbproj">
+      <Project>{780365C3-C031-4841-9B4C-B39840797596}</Project>
+      <Name>WebAppLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AttendanceContext.edmx.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

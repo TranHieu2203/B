@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{36529316-FD32-4CC9-B310-422A79EB101B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PayrollDAL</RootNamespace>
+    <AssemblyName>PayrollDAL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PayrollDAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PayrollDAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.0.3.0, Culture=neutral, PublicKeyToken=12d8fa3d810c48da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HistaffFrameworkPublic\lib\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>..\ref\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>..\packages\LinqKit.1.0\lib\35\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\HistaffFrameworkPublic\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\Business\AT_PERIODDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PayrollAdvanceDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_Salary_PITCodeDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_Award_13MonthDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_ManageDTTDDailyDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_PayrollSheetLockDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_SumCHTomDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_TAXINCOME_YEARDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_TARGET_STOREDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_Salary_DetentionDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_AccountingSubsidizeDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_MA_SCP_QLCHDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_LDT_VPDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_DTTD_ECDDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_DTTD_DTPB_EMPDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_Accounting_OvertimeDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_STORE_DTTDDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_TARGET_DTTD_LABELDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_STORE_SUBSIDIZEDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_Vehicle_NormDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_Accounting_TimeDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_Accounting_AdjustingDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PaBenefitSeniorityDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_ADDTAXDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_Delegacy_TaxDTO.vb" />
+    <Compile Include="BusinessObjects\Dashboard\StatisticDTO.vb" />
+    <Compile Include="BusinessObjects\List\EmpQuyLuongDTO.vb" />
+    <Compile Include="BusinessObjects\List\SalaryQuyLuongDTO.vb" />
+    <Compile Include="BusinessObjects\List\PA_FRAME_PRODUCTIVITYDTO.vb" />
+    <Compile Include="BusinessObjects\List\PA_FRAME_PRODUCTIVITY_PATHDTO.vb" />
+    <Compile Include="BusinessObjects\List\PA_FRAME_SALARY_PATHDTO.vb" />
+    <Compile Include="BusinessObjects\List\PA_FRAME_SALARYDTO.vb" />
+    <Compile Include="BusinessObjects\List\PA_SYSTEM_CRITERIADTO.vb" />
+    <Compile Include="BusinessObjects\List\DonViQuyLuongDTO.vb" />
+    <Compile Include="BusinessObjects\List\SaleCommisionDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_NKLDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_EMP_FORMULER_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_HESOMR_NV_QLCH_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_AOMS_TOM_MNG_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_MR_BQN_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_CLASSIFICATIONDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_RATE_DTTT_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_HSTDT_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_INDEX_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_BrandRate_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_BONUS_KPI_PRODUCTTYPE_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_FRAMEWORK_KPIDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_FRAMEWORK_OFFICEDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_FRAMEWORK_ECDDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_COMPLETION_KPI_SHOPMANAGERDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_LDTTT_NV_QLCH_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_RATE_DTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PA_SETUP_SHOP_GRADEDTO.vb" />
+    <Compile Include="PayrollRepository.Dashboard.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PAEmployeeCalculateDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PASeniorityMonthlyDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PASeniorityProcessDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_ACTION_LOGDTO.vb" />
+    <Compile Include="BusinessObjects\Business\PA_ParamDTO.vb" />
+    <Compile Include="BusinessObjects\List\AllowanceListDTO.vb" />
+    <Compile Include="BusinessObjects\List\ComboBoxDataDTO.vb" />
+    <Compile Include="BusinessObjects\List\ATPeriodDTO.vb" />
+    <Compile Include="BusinessObjects\List\ATPriceLunchDTO.vb" />
+    <Compile Include="BusinessObjects\List\OrgBonusDTO.vb" />
+    <Compile Include="BusinessObjects\List\PAFomulerGroup.vb" />
+    <Compile Include="BusinessObjects\List\PAFomuler.vb" />
+    <Compile Include="BusinessObjects\List\PAListSalariesDTO.vb" />
+    <Compile Include="BusinessObjects\List\PAHoldSalaryDTO.vb" />
+    <Compile Include="BusinessObjects\List\PATaxationDTO.vb" />
+    <Compile Include="BusinessObjects\List\OT_OTHERLIST_DTO.vb" />
+    <Compile Include="BusinessObjects\List\PAPaymentListDTO.vb" />
+    <Compile Include="BusinessObjects\List\PAObjectPaymentDTO.vb" />
+    <Compile Include="BusinessObjects\List\CostCenterDTO.vb" />
+    <Compile Include="BusinessObjects\List\SalaryTypeDTO.vb" />
+    <Compile Include="BusinessObjects\Report\Se_ReportDTO.vb" />
+    <Compile Include="BusinessObjects\SalaryGroup\SalaryType_GroupDTO.vb" />
+    <Compile Include="BusinessObjects\SalaryGroup\IncentiveRankDTO.vb" />
+    <Compile Include="BusinessObjects\SalaryGroup\SalaryLevel_UNILEVER_DTO.vb" />
+    <Compile Include="BusinessObjects\SalaryGroup\SalaryRankDTO.vb" />
+    <Compile Include="BusinessObjects\SalaryGroup\SalaryGroupDTO.vb" />
+    <Compile Include="BusinessObjects\SalaryGroup\SalaryLevelDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PASalaryFundDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PASalaryPlanningDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\PATitleCostDTO.vb" />
+    <Compile Include="PayrollRepository.SalaryType.vb" />
+    <Compile Include="PayrollRepository.IncentiveRank.vb" />
+    <Compile Include="PayrollRepository.SalaryLevel_Unilever.vb" />
+    <Compile Include="PayrollRepository.Business.vb" />
+    <Compile Include="PayrollRepository.Setting.vb" />
+    <Compile Include="PayrollRepository.List.vb" />
+    <Compile Include="PayrollRepository.SalaryRank.vb" />
+    <Compile Include="PayrollRepository.SalaryLevel.vb" />
+    <Compile Include="PayrollRepository.SalaryGroup.vb" />
+    <Compile Include="PAConstant.vb" />
+    <Compile Include="Database.vb" />
+    <Compile Include="PayrollRepositoryStatic.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PayrollContext.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayrollContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollRepository.vb" />
+    <Compile Include="PayrollRepositoryBase.vb" />
+    <Compile Include="PayrollContext.vb" />
+    <Compile Include="Utility.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\PayrollContext.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <EntityDeploy Include="PayrollContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PayrollContext.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PayrollContext.edmx.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.Data\Framework.Data.vbproj">
+      <Project>{5AB0D232-7B7A-44B8-9D14-115C065027DB}</Project>
+      <Name>Framework.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

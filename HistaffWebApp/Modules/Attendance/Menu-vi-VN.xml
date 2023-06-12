@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Nghiệp vụ"  PostBack="False">
+      <Group>
+        <Item Text="Ca làm việc"  PostBack="False">
+          <Group>
+            <Item Value="ctrlGetSignDefaultOrg" Text="Thiết lập Ca mặc định theo cơ cấu" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlGetSignDefaultOrg&amp;group=Setting" CheckPermission="true" />
+            <Item Value="ctrlGetSignDefault" Text="Đăng ký ca mặc định" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlGetSignDefault&amp;group=Setting" CheckPermission="true" />
+            <Item Value="ctrlAT_AssignEmp_Calendar" Text="Gán NV vào lịch làm việc" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_AssignEmp_Calendar&amp;group=Business" CheckPermission="true" />
+            <Item Value="ctrlSignWork" Text="Xếp ca làm việc" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSignWork&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlSignWorkNewEdit" Text="Cập nhật ca làm việc" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSignWorkNewEdit&amp;group=Business" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Text="Thông tin nghỉ"  PostBack="False">
+          <Group>
+            <Item Value="ctrlRegisterCO" Text="Đăng ký nghỉ/công tác" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlRegisterCO&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlAtToxicLeaveEmp" Text="Bổ sung phép độc hại cho nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAtToxicLeaveEmp&amp;group=Business" CheckPermission="true" />
+            <Item Value="ctrlAtAdvanceLeaveEmp" Text="Nhân viên tạm ứng phép" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAtAdvanceLeaveEmp&amp;group=Setting" CheckPermission="true" />
+            <Item Value="ctrlEntitlement" Text="Quản lý phép năm" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlEntitlement&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlAtConcludeAnnualYear" Text="Kết phép năm" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAtConcludeAnnualYear&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlAT_YearLeaveEdit" Text="Điều chỉnh phép năm" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_YearLeaveEdit&amp;group=Business" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Text="Thông tin làm thêm"  PostBack="False">
+          <Group>
+            <Item Value="ctrlDeclaresOT" Text="Quản lý làm thêm" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDeclaresOT&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlConfirmDeclaresOT" Text="Xác nhận giờ làm thêm đăng ký" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlConfirmDeclaresOT&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlTime_Timesheet_ot" Text="Tổng hợp giờ làm thêm" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlTime_Timesheet_ot&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlManagementNB" Text="Quản lý nghỉ bù" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlManagementNB&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlAtCompensationYear" Text="Kết phép bù" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAtCompensationYear&amp;group=Business" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Text="Bảng công chi tiết"  PostBack="False">
+          <Group>
+            <Item Value="ctrlSwipeDataDownload" Text="Quản lý dữ liệu vào ra" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSwipeDataDownload&amp;group=Business" CheckPermission="true" />
+            <Item Value="ctrlRegisterDSVM" Text="Quản lý giải trình công" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlRegisterDSVM&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlChildren" Text="Đăng ký đối tượng nuôi con nhỏ" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlChildren&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlDSVM_LISTEMP" Text="Danh sách nhân viên đi trễ về sớm" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDSVM_LISTEMP&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlTimeTimesheet_machine" Text="Bảng chấm công gốc" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlTimeTimesheet_machine&amp;group=Business" CheckPermission="true"/>
+			  <Item Value="ctrlTime_Timesheet_CTT" Text="Bảng công theo ký hiệu" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlTime_Timesheet_CTT&amp;group=Business" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Value="ctrlAT_WageOffset" Text="Bù công nhân viên" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_WageOffset&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlTimesheetSummary" Text="Bảng tổng hợp chấm công" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlTimesheetSummary&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlWorkNight" Text="Quản lý trực đêm" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlWorkNight&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlAT_TIMESHEET_LOCK" Text="Khóa bảng công nhân viên" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_TIMESHEET_LOCK&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlAT_LeavePayment" Text="Quản lý thanh toán phép nhân viên" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_LeavePayment&amp;group=Business" CheckPermission="true"/>
+      </Group>
+    </Item>
+    <Item Text="Thiết lập"  PostBack="False">
+      <Group>
+        <Item Value="ctrlSetupWifi" Text="Thiết lập chấm công Wifi" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSetupWifi&amp;group=List" CheckPermission="true" />
+        <Item Value="ctrlSetupGPS" Text="Thiết lập chấm công GPS" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSetupGPS&amp;group=List" CheckPermission="true" />
+        <Item Value="crtlATTimePeriod" Text="Thiết lập Chu kỳ chấm công" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=crtlATTimePeriod&amp;group=Setting" CheckPermission="true" />
+        <Item Value="crtlATTimeWorkStandard" Text="Thiết lập công chuẩn theo cơ cấu" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=crtlATTimeWorkStandard&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlRitual" Text="Thiết lập ngày nghỉ lễ" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlRitual&amp;group=List" CheckPermission="true"/>
+        <Item Value="crtlSetUpExchange" Text="Thiết lập thang quy đổi trừ công" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=crtlSetUpExchange&amp;group=Setting" CheckPermission="true" />
+        <Item Text="Thiết lập OT"  PostBack="False">
+          <Group>
+            <Item Value="crtlATCoeffOTException" Text="Thiết lập hệ số OT ngoại lệ" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=crtlATCoeffOTException&amp;group=Setting" CheckPermission="true" />
+            <Item Value="crtlATCoeffOverTime" Text="Thiết lập hệ số OT nhà nước" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=crtlATCoeffOverTime&amp;group=Setting" CheckPermission="true" />
+          </Group>
+        </Item>
+        <Item Text="Thiết lập thông tin phép"  PostBack="False">
+          <Group>
+            <Item Value="ctrlAtAnnualLeaveEmp" Text="Thiết lập phép chuẩn theo nhân viên" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAtAnnualLeaveEmp&amp;group=Setting" CheckPermission="true"/>
+            <Item Value="ctrlAtAnnualLeaveOrg" Text="Thiết lập phép chuẩn theo cơ cấu" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAtAnnualLeaveOrg&amp;group=Setting" CheckPermission="true"/>
+            <Item Value="ctrlAtSeniority" Text="Thiết lập thâm niên" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAtSeniority&amp;group=Setting" CheckPermission="true"/>
+            <Item Value="ctrlAtSetupELeave" Text="Thiết lập thông tin phép" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAtSetupELeave&amp;group=Setting" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Text="Máy chấm công"  PostBack="False">
+          <Group>
+            <Item Value="ctrlSetUpCodeAttEmp" Text="Thiết lập mã chấm công" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSetUpCodeAttEmp&amp;group=Setting" CheckPermission="true" />
+            <Item Value="ctrlSwipeMachine" Text="Thiết lập máy chấm công" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSwipeMachine&amp;group=Setting" CheckPermission="true" />
+            <Item Value="ctrlSwipeMachineStatus" Text="Tình trạng máy chấm công" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSwipeMachineStatus&amp;group=Setting" CheckPermission="true" />
+          </Group>
+        </Item>
+      </Group>
+    </Item>
+    <Item Text="Danh mục"  PostBack="False">
+      <Group>
+        <Item Value="ctrlDMKieuCong" Text="Ký hiệu chấm công" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDMKieuCong&amp;group=List" CheckPermission="true" />
+        <Item Value="ctrlATTimeManual" Text="Kiểu công" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlATTimeManual&amp;group=Setting" CheckPermission="true" />
+		<Item Value="ctrlDMCaLamViec" Text="Ca làm việc" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDMCaLamViec&amp;group=List" CheckPermission="true" />
+		<Item Value="ctrlAtReasonList" Text="Lý do giải trình công" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAtReasonList&amp;group=List" CheckPermission="true" />
+		<Item Value="ctrlListParamSystem" Text="Tham số hệ thống" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlListParamSystem&amp;group=List" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+    <Item Text="Báo cáo" PostBack="False">
+      <Group>
+        <Item Value="ctrlREPORT" Text="Danh sách báo cáo" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlREPORT&amp;moduleID=2" CheckPermission="true" />
+      </Group>
+    </Item>
+  </Group>
+</Menu>

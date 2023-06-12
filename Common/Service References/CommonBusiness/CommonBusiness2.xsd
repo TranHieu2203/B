@@ -1,0 +1,3721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9999/CommonBusiness.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommonDAL" />
+  <xs:import schemaLocation="http://localhost:9999/CommonBusiness.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Framework.Data" />
+  <xs:import schemaLocation="http://localhost:9999/CommonBusiness.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="DeleteOtherList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lstOtherList" nillable="true" type="q1:ArrayOfOtherListDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOtherListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteOtherListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListGroupBySystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="systemName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListGroupBySystemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOtherListGroupBySystemResult" nillable="true" type="q2:ArrayOfOtherListGroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sACT" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOtherListGroupResult" nillable="true" type="q3:ArrayOfOtherListGroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOtherListGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="objOtherListGroup" nillable="true" type="q4:OtherListGroupDTO" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q5:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOtherListGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertOtherListGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyOtherListGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="objOtherListGroup" nillable="true" type="q6:OtherListGroupDTO" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q7:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyOtherListGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyOtherListGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveOtherListGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lstOtherListGroup" nillable="true" type="q8:ArrayOfOtherListGroupDTO" />
+        <xs:element minOccurs="0" name="sActive" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q9:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveOtherListGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveOtherListGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOtherListGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lstOtherListGroup" nillable="true" type="q10:ArrayOfOtherListGroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOtherListGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteOtherListGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListTypeSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="systemName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListTypeSystemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOtherListTypeSystemResult" nillable="true" type="q11:ArrayOfOtherListTypeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sACT" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOtherListTypeResult" nillable="true" type="q12:ArrayOfOtherListTypeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOtherListType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="objOtherListType" nillable="true" type="q13:OtherListTypeDTO" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q14:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOtherListTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertOtherListTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyOtherListType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="objOtherListType" nillable="true" type="q15:OtherListTypeDTO" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q16:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyOtherListTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyOtherListTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveOtherListType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lstOtherListType" nillable="true" type="q17:ArrayOfOtherListTypeDTO" />
+        <xs:element minOccurs="0" name="sActive" nillable="true" type="xs:string" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q18:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveOtherListTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveOtherListTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOtherListType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lstOtherListType" nillable="true" type="q19:ArrayOfOtherListTypeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOtherListTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteOtherListTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReminderConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReminderConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetReminderConfigResult" nillable="true" type="q20:ArrayOfKeyValueOfintstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetReminderConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetReminderConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetReminderConfigResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveProcessList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveProcessListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveProcessListResult" nillable="true" type="q21:ArrayOfApproveProcessDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="processId" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveProcessResult" nillable="true" type="q22:ApproveProcessDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q23:ApproveProcessDTO" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q24:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertApproveProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q25:ApproveProcessDTO" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q26:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateApproveProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveProcessStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="itemUpdates" nillable="true" type="q27:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveProcessStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateApproveProcessStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLeavePlanList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLeavePlanListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetLeavePlanListResult" nillable="true" type="q28:ArrayOfOtherListDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetTitleListResult" nillable="true" type="q29:ArrayOfOtherListDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetupByEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="employeeId" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetupByEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveSetupByEmployeeResult" nillable="true" type="q30:ArrayOfApproveSetupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetupByOrg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orgId" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetupByOrgResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveSetupByOrgResult" nillable="true" type="q31:ArrayOfApproveSetupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveSetupResult" nillable="true" type="q32:ApproveSetupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveSetup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q33:ApproveSetupDTO" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q34:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveSetupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertApproveSetupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveSetup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q35:ApproveSetupDTO" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q36:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveSetupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateApproveSetupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproveSetup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="itemDeletes" nillable="true" type="q37:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproveSetupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteApproveSetupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistSetupByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="itemCheck" nillable="true" type="q38:ApproveSetupDTO" />
+        <xs:element minOccurs="0" name="idExclude" nillable="true" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistSetupByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsExistSetupByDateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleByRank_ID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lst_Rank" nillable="true" type="q39:ArrayOfOtherListDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleByRank_IDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetTitleByRank_IDResult" nillable="true" type="q40:ArrayOfTitleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetTitleAllResult" nillable="true" type="q41:ArrayOfTitleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q42:ApproveTemplateDTO" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q43:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertApproveTemplateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q44:ApproveTemplateDTO" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q45:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateApproveTemplateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveTemplateResult" nillable="true" type="q46:ApproveTemplateDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveTemplateList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveTemplateListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveTemplateListResult" nillable="true" type="q47:ArrayOfApproveTemplateDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproveTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="itemDeletes" nillable="true" type="q48:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproveTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteApproveTemplateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsApproveTemplateUsed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="templateID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsApproveTemplateUsedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsApproveTemplateUsedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveTemplateDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q49:ApproveTemplateDetailDTO" />
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q50:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveTemplateDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertApproveTemplateDetailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveTemplateDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q51:ApproveTemplateDetailDTO" />
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q52:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveTemplateDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateApproveTemplateDetailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveTemplateDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveTemplateDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveTemplateDetailResult" nillable="true" type="q53:ApproveTemplateDetailDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveTemplateDetailList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="templateId" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveTemplateDetailListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveTemplateDetailListResult" nillable="true" type="q54:ArrayOfApproveTemplateDetailDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproveTemplateDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="itemDeletes" nillable="true" type="q55:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproveTemplateDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteApproveTemplateDetailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckLevelInsert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="level" type="xs:decimal" />
+        <xs:element minOccurs="0" name="idExclude" type="xs:decimal" />
+        <xs:element minOccurs="0" name="idTemplate" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckLevelInsertResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckLevelInsertResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveSetupExt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q56:ApproveSetupExtDTO" />
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q57:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertApproveSetupExtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertApproveSetupExtResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveSetupExt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="item" nillable="true" type="q58:ApproveSetupExtDTO" />
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q59:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApproveSetupExtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateApproveSetupExtResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetupExt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetupExtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveSetupExtResult" nillable="true" type="q60:ApproveSetupExtDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetupExtList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="employeeId" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveSetupExtListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveSetupExtListResult" nillable="true" type="q61:ArrayOfApproveSetupExtDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproveSetupExt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="itemDeletes" nillable="true" type="q62:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteApproveSetupExtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteApproveSetupExtResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistSetupExtByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="itemCheck" nillable="true" type="q63:ApproveSetupExtDTO" />
+        <xs:element minOccurs="0" name="idExclude" nillable="true" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistSetupExtByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsExistSetupExtByDateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="employeeId" type="xs:decimal" />
+        <xs:element minOccurs="0" name="processCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetApproveUsersResult" nillable="true" type="q64:ArrayOfApproveUserDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_orgIds" nillable="true" type="q65:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="is_ter" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetListEmployeeResult" nillable="true" type="q66:ArrayOfEmployeeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_Se_Mail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q67:SEMailDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_Se_MailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="Get_Se_MailResult" nillable="true" type="q68:ArrayOfSEMailDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLdap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q69:LdapDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLdapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetLdapResult" nillable="true" type="q70:ArrayOfLdapDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLdap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="objLdap" nillable="true" type="q71:LdapDTO" />
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q72:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLdapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertLdapResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyLdap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="objLdap" nillable="true" type="q73:LdapDTO" />
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q74:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyLdapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyLdapResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLdap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q75:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLdapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteLdapResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExistIDTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q76:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="table" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="column" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExistIDTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckExistIDTableResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExistValue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q77:ArrayOfstring" />
+        <xs:element minOccurs="0" name="table" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="column" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExistValueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckExistValueResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckWorkStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="colName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckWorkStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckWorkStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExistProgram">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strTableName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strcolName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExistProgramResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckExistProgramResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutoGenColID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strTableName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strColName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutoGenColIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AutoGenColIDResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateComboboxActive">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tableName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="colName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateComboboxActiveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateComboboxActiveResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMailTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q78:MailTemplateDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMailTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetMailTemplateResult" nillable="true" type="q79:ArrayOfMailTemplateDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMailTemplateBaseCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="group" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMailTemplateBaseCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetMailTemplateBaseCodeResult" nillable="true" type="q80:MailTemplateDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertMailTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="mailTemplate" nillable="true" type="q81:MailTemplateDTO" />
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q82:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertMailTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertMailTemplateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyMailTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="mailTemplate" nillable="true" type="q83:MailTemplateDTO" />
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q84:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyMailTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyMailTemplateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteMailTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q85:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteMailTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteMailTemplateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckValidEmailTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="group" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckValidEmailTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckValidEmailTemplateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListControl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="KeyView" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListControlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetListControlResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insert_Edit_Dynamic_Control">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="KeyView" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataView" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insert_Edit_Dynamic_ControlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Insert_Edit_Dynamic_ControlResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfigView">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="KeyView" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfigViewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConfigViewResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfigViewAndFillData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="keyView" nillable="true" type="xs:string" />
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="viewcontrol" nillable="true" type="q86:se_view_config_control_DTO" />
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="girdcollum" nillable="true" type="q87:se_view_config_girdColumm_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfigViewAndFillDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConfigViewAndFillDataResult" nillable="true" type="xs:anyType" />
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="viewcontrol" nillable="true" type="q88:se_view_config_control_DTO" />
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="girdcollum" nillable="true" type="q89:se_view_config_girdColumm_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGeneralConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_lstConfig" nillable="true" type="q90:ArrayOfKeyValueOfstringstring" />
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="eModule" type="q91:SystemConfig.ModuleID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGeneralConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetGeneralConfigResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSystem_Maintain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q92:SE_SYSTEM_MAINTAINDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSystem_MaintainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetSystem_MaintainResult" nillable="true" type="q93:ArrayOfSE_SYSTEM_MAINTAINDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySystem_Maintain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lstObj" nillable="true" type="q94:SE_SYSTEM_MAINTAINDTO" />
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="userLog" nillable="true" type="q95:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySystem_MaintainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifySystem_MaintainResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSystem_Maintain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_item" nillable="true" type="q96:SE_SYSTEM_MAINTAINDTO" />
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q97:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSystem_MaintainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSystem_MaintainResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CHECK_DUP_SYSTEM_MAINTAIN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="effect_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CHECK_DUP_SYSTEM_MAINTAINResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CHECK_DUP_SYSTEM_MAINTAINResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CHECK_SYSTEM_MAINTAIN">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CHECK_SYSTEM_MAINTAINResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CHECK_SYSTEM_MAINTAINResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CHECK_SYSTEM_MAINTAIN_IS_END">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CHECK_SYSTEM_MAINTAIN_IS_ENDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CHECK_SYSTEM_MAINTAIN_IS_ENDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GET_SYSTEM_MAINTAIN_IS_END">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GET_SYSTEM_MAINTAIN_IS_ENDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GET_SYSTEM_MAINTAIN_IS_ENDResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSE_BACKGROUND_PORTALList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSE_BACKGROUND_PORTALListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetSE_BACKGROUND_PORTALListResult" nillable="true" type="q98:ArrayOfSE_BACKGROUND_PORTALDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyBACKGROUND_PORTAL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lstObj" nillable="true" type="q99:SE_BACKGROUND_PORTALDTO" />
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="userLog" nillable="true" type="q100:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyBACKGROUND_PORTALResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyBACKGROUND_PORTALResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertBACKGROUND_PORTAL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_item" nillable="true" type="q101:SE_BACKGROUND_PORTALDTO" />
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q102:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertBACKGROUND_PORTALResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertBACKGROUND_PORTALResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GET_SE_BACKGROUND_PORTAL">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GET_SE_BACKGROUND_PORTALResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GET_SE_BACKGROUND_PORTALResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSE_BACKGROUND_PORTAL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q103:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSE_BACKGROUND_PORTALResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSE_BACKGROUND_PORTALResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrainningRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q104:RequestDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrainningRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetTrainningRequestResult" nillable="true" type="q105:ArrayOfRequestDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProcessByIDReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id_RegGroup" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_process_Type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProcessByIDRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetProcessByIDRegResult" nillable="true" type="q106:ArrayOfProcessDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHRProcessList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q107:HR_PROCESS_DTO" />
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_param" nillable="true" type="q108:ParamDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q109:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHRProcessListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHRProcessListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeWorkProcessByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeWorkProcessByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetPeWorkProcessByIDResult" nillable="true" type="q110:PE_WORK_PROCESSDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeWorkEmployeeByProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeWorkEmployeeByProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetPeWorkEmployeeByProcessResult" nillable="true" type="q111:ArrayOfPE_WORK_EMPLOYEEDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeWorkManByProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeWorkManByProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetPeWorkManByProcessResult" nillable="true" type="q112:ArrayOfPE_WORK_MANAGERDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeWorkManConcludeByProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeWorkManConcludeByProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetPeWorkManConcludeByProcessResult" nillable="true" type="q113:PE_WORK_MANAGER_CONCLUDEDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPeWorkProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="obj" nillable="true" type="q114:PE_WORK_PROCESSDTO" />
+        <xs:element xmlns:q115="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q115:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPeWorkProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPeWorkProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPeWorkProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="obj" nillable="true" type="q116:PE_WORK_PROCESSDTO" />
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q117:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPeWorkProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyPeWorkProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWorkProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q118:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWorkProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteWorkProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateWorkProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="obj" nillable="true" type="q119:PE_WORK_PROCESSDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateWorkProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateWorkProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertManagerConclude">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="obj" nillable="true" type="q120:PE_WORK_MANAGER_CONCLUDEDTO" />
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q121:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertManagerConcludeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertManagerConcludeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyManagerConclude">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="obj" nillable="true" type="q122:PE_WORK_MANAGER_CONCLUDEDTO" />
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q123:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyManagerConcludeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyManagerConcludeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HRProcessCancel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+        <xs:element minOccurs="0" name="process" nillable="true" type="xs:string" />
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q124:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HRProcessCancelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HRProcessCancelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTerProcessByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTerProcessByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetTerProcessByIDResult" nillable="true" type="q125:HU_TERMINATION_PROCESSDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTerProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="obj" nillable="true" type="q126:HU_TERMINATION_PROCESSDTO" />
+        <xs:element xmlns:q127="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q127:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTerProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertTerProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyTerProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q128="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="obj" nillable="true" type="q128:HU_TERMINATION_PROCESSDTO" />
+        <xs:element xmlns:q129="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q129:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyTerProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyTerProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTerProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q130="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q130:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTerProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteTerProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateTerProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q131="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="obj" nillable="true" type="q131:HU_TERMINATION_PROCESSDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateTerProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateTerProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFrameSalaryAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFrameSalaryAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetFrameSalaryAllResult" nillable="true" type="q132:ArrayOfPA_FRAME_SALARYDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFrameProductivityAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFrameProductivityAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetFrameProductivityAllResult" nillable="true" type="q133:ArrayOfPA_FRAME_PRODUCTIVITYDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SE_RESET_USER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserIDs" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SE_RESET_USERResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SE_RESET_USERResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPermisionPortal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="employeeID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPermisionPortalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q134="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserPermisionPortalResult" nillable="true" type="q134:ArrayOfPermissionDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckOtherListExistInDatabase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q135:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="typeID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckOtherListExistInDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckOtherListExistInDatabaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetATOrgPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="periodID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetATOrgPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetATOrgPeriodResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPositionToPopupFind">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q136:PositionPopupFindListDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q137="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q137:UserLog" />
+        <xs:element xmlns:q138="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_param" nillable="true" type="q138:ParamDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPositionToPopupFindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetPositionToPopupFindResult" nillable="true" type="q139:ArrayOfPositionPopupFindListDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_groupID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetGroupOrganizationResult" nillable="true" type="q140:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupOrganizationFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_groupID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupOrganizationFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetGroupOrganizationFunctionResult" nillable="true" type="q141:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroupOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_groupId" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroupOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteGroupOrganizationResult" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_lstOrg" nillable="true" type="q142:ArrayOfGroupOrgAccessDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateGroupOrganizationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupOrganizationFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q143="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_lstOrg" nillable="true" type="q143:ArrayOfGroupOrgFunAccessDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupOrganizationFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateGroupOrganizationFunctionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseConfigByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codename" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codecase" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseConfigByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCaseConfigByIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GET_VALUE_SE_CONFIG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="P_EMP_CODE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GET_VALUE_SE_CONFIGResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GET_VALUE_SE_CONFIGResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSignList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSignListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetSignListResult" nillable="true" type="q144:ArrayOfATTimeManualDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsUsernameExist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsUsernameExistResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsUsernameExistResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserWithPermision">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserWithPermisionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserWithPermisionResult" nillable="true" type="q145:UserDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPermissions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPermissionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserPermissionsResult" nillable="true" type="q146:ArrayOfPermissionDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckUserAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckUserAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckUserAdminResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeUserPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_oldpass" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_newpass" nillable="true" type="xs:string" />
+        <xs:element xmlns:q147="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q147:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeUserPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChangeUserPasswordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPasswordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByUserID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByUserIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q148="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserByUserIDResult" nillable="true" type="q148:SE_USER" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_ACTFLG" nillable="true" type="xs:string" />
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q149:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q150="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOrganizationListResult" nillable="true" type="q150:ArrayOfOrganizationDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsOM" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOrganizationAllResult" nillable="true" type="q151:ArrayOfOrganizationDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationLocationTreeView">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="state" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationLocationTreeViewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q152="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOrganizationLocationTreeViewResult" nillable="true" type="q152:ArrayOfOrganizationDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationLocationInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_orgId" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationLocationInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q153="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOrganizationLocationInfoResult" nillable="true" type="q153:OrganizationDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationStructureInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_orgId" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationStructureInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q154="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOrganizationStructureInfoResult" nillable="true" type="q154:ArrayOfOrganizationStructureDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOrgImport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q155="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orgID" nillable="true" type="q155:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOrgImportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetListOrgImportResult" nillable="true" type="q156:ArrayOfOrganizationDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q157="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q157:UserDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q158="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserResult" nillable="true" type="q158:ArrayOfUserDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q159="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q159:UserDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q160="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserListResult" nillable="true" type="q160:ArrayOfUserDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q161="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_user" nillable="true" type="q161:UserDTO" />
+        <xs:element xmlns:q162="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q162:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q163="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_validate" nillable="true" type="q163:UserDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q164="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_user" nillable="true" type="q164:UserDTO" />
+        <xs:element xmlns:q165="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q165:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_lstUserID" nillable="true" type="q166:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="_error" nillable="true" type="xs:string" />
+        <xs:element xmlns:q167="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q167:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteUserResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_error" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserListStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q168="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_lstUserID" nillable="true" type="q168:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="_status" nillable="true" type="xs:string" />
+        <xs:element xmlns:q169="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q169:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserListStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserListStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SyncUserList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_newUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_modifyUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_deleteUser" nillable="true" type="xs:string" />
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q170:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SyncUserListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SyncUserListResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_newUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_modifyUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_deleteUser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetUserPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q171="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_userid" nillable="true" type="q171:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="_minLength" type="xs:int" />
+        <xs:element minOccurs="0" name="_hasLowerChar" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_hasUpperChar" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_hasNumbericChar" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_hasSpecialChar" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_hasPasswordConfig" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_hasPasswordDefault" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_hasPasswordDefaultText" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetUserPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ResetUserPasswordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_user_info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_user_infoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q172="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Get_user_infoResult" nillable="true" type="q172:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GET_MAIL_TEMPLATE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="group" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GET_MAIL_TEMPLATEResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q173="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GET_MAIL_TEMPLATEResult" nillable="true" type="q173:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMailConfirmUserPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q174="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_userid" nillable="true" type="q174:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="_subject" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_content" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMailConfirmUserPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendMailConfirmUserPasswordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserNeedSendMail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_groupid" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserNeedSendMailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q175="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserNeedSendMailResult" nillable="true" type="q175:ArrayOfUserDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUserForgetPass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUserForgetPassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateUserForgetPassResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangePassByForget">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_passWord" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangePassByForgetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChangePassByForgetResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForgetPassSendCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_code" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForgetPassSendCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ForgetPassSendCodeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupListToComboListBox">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupListToComboListBoxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q176="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetGroupListToComboListBoxResult" nillable="true" type="q176:ArrayOfGroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupListToComboListBox1">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupListToComboListBox1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q177="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetGroupListToComboListBox1Result" nillable="true" type="q177:ArrayOfGroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q178="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q178:GroupDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q179="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetGroupListResult" nillable="true" type="q179:ArrayOfGroupDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateGroupList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q180="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_validate" nillable="true" type="q180:GroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateGroupListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateGroupListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q181="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lst" nillable="true" type="q181:GroupDTO" />
+        <xs:element xmlns:q182="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q182:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q183="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lst" nillable="true" type="q183:GroupDTO" />
+        <xs:element xmlns:q184="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q184:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q185="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GroupID" nillable="true" type="q185:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="_error" nillable="true" type="xs:string" />
+        <xs:element xmlns:q186="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q186:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteGroupResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_error" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q187="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_lstID" nillable="true" type="q187:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="_ACTFLG" nillable="true" type="xs:string" />
+        <xs:element xmlns:q188="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q188:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateGroupStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_FunctionWithControl_List">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q189="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q189:FunctionDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_FunctionWithControl_ListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q190="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="Get_FunctionWithControl_ListResult" nillable="true" type="q190:ArrayOfFunctionDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insert_Update_Control_List">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Config" nillable="true" type="xs:string" />
+        <xs:element xmlns:q191="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q191:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insert_Update_Control_ListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Insert_Update_Control_ListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegisterUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q192="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q192:RegisterUserDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegisterUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q193="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetRegisterUserResult" nillable="true" type="q193:ArrayOfRegisterUserDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRegisterUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q194="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_item" nillable="true" type="q194:ArrayOfRegisterUserDTO" />
+        <xs:element xmlns:q195="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q195:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRegisterUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateRegisterUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertRegisterUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q196="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_item" nillable="true" type="q196:RegisterUserDTO" />
+        <xs:element xmlns:q197="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q197:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertRegisterUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertRegisterUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRegisterUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q198="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lst_id" nillable="true" type="q198:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRegisterUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteRegisterUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="check_dup_reguser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="effect_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="check_dup_reguserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="check_dup_reguserResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFunctionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q199="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q199:FunctionDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFunctionListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q200="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetFunctionListResult" nillable="true" type="q200:ArrayOfFunctionDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateFunctionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q201="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_validate" nillable="true" type="q201:FunctionDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateFunctionListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateFunctionListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFunctionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q202="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_item" nillable="true" type="q202:ArrayOfFunctionDTO" />
+        <xs:element xmlns:q203="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q203:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFunctionListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateFunctionListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertFunctionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q204="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_item" nillable="true" type="q204:FunctionDTO" />
+        <xs:element xmlns:q205="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q205:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertFunctionListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertFunctionListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModuleList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModuleListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q206="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetModuleListResult" nillable="true" type="q206:ArrayOfModuleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveFunctions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q207="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lstFunction" nillable="true" type="q207:ArrayOfFunctionDTO" />
+        <xs:element minOccurs="0" name="sActive" nillable="true" type="xs:string" />
+        <xs:element xmlns:q208="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q208:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveFunctionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveFunctionsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListInGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GroupID" type="xs:decimal" />
+        <xs:element xmlns:q209="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q209:UserDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListInGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q210="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserListInGroupResult" nillable="true" type="q210:ArrayOfUserDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListInGroup1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GroupID" type="xs:decimal" />
+        <xs:element xmlns:q211="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q211:UserDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListInGroup1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q212="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserListInGroup1Result" nillable="true" type="q212:ArrayOfUserDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListOutGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GroupID" type="xs:decimal" />
+        <xs:element xmlns:q213="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q213:UserDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListOutGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q214="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserListOutGroupResult" nillable="true" type="q214:ArrayOfUserDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_groupID" type="xs:decimal" />
+        <xs:element xmlns:q215="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_lstUserID" nillable="true" type="q215:ArrayOfdecimal" />
+        <xs:element xmlns:q216="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q216:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUserGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_groupID" type="xs:decimal" />
+        <xs:element xmlns:q217="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_lstUserID" nillable="true" type="q217:ArrayOfdecimal" />
+        <xs:element xmlns:q218="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q218:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteUserGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupFunctionPermision">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GroupID" type="xs:decimal" />
+        <xs:element xmlns:q219="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q219:GroupFunctionDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupFunctionPermisionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q220="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetGroupFunctionPermisionResult" nillable="true" type="q220:ArrayOfGroupFunctionDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupFunctionNotPermision">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GroupID" type="xs:decimal" />
+        <xs:element xmlns:q221="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q221:FunctionDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q222="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q222:UserLog" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupFunctionNotPermisionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q223="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetGroupFunctionNotPermisionResult" nillable="true" type="q223:ArrayOfFunctionDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGroupFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q224="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lst" nillable="true" type="q224:ArrayOfGroupFunctionDTO" />
+        <xs:element xmlns:q225="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q225:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGroupFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertGroupFunctionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyGroupFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="groupCopyID" type="xs:decimal" />
+        <xs:element minOccurs="0" name="groupID" type="xs:decimal" />
+        <xs:element xmlns:q226="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q226:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyGroupFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CopyGroupFunctionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q227="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lst" nillable="true" type="q227:ArrayOfGroupFunctionDTO" />
+        <xs:element xmlns:q228="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q228:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateGroupFunctionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroupFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q229="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lst" nillable="true" type="q229:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroupFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteGroupFunctionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupReportList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_groupID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupReportListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q230="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetGroupReportListResult" nillable="true" type="q230:ArrayOfGroupReportDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupReportListFilter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_groupID" type="xs:decimal" />
+        <xs:element xmlns:q231="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q231:GroupReportDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupReportListFilterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q232="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetGroupReportListFilterResult" nillable="true" type="q232:ArrayOfGroupReportDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_groupID" type="xs:decimal" />
+        <xs:element xmlns:q233="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_lstReport" nillable="true" type="q233:ArrayOfGroupReportDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGroupReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateGroupReportResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFunctionPermisionException">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:decimal" />
+        <xs:element xmlns:q234="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q234:UserFunctionDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFunctionPermisionExceptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q235="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserFunctionPermisionExceptionResult" nillable="true" type="q235:ArrayOfUserFunctionDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserFunctionException">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q236="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lst" nillable="true" type="q236:ArrayOfUserFunctionDTO" />
+        <xs:element xmlns:q237="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q237:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserFunctionExceptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserFunctionExceptionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserFunctionException">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q238="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lst" nillable="true" type="q238:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserFunctionExceptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteUserFunctionExceptionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFunctionPermision">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:decimal" />
+        <xs:element xmlns:q239="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q239:UserFunctionDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFunctionPermisionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q240="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserFunctionPermisionResult" nillable="true" type="q240:ArrayOfUserFunctionDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFunctionNotPermision">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:decimal" />
+        <xs:element xmlns:q241="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q241:FunctionDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q242="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q242:UserLog" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFunctionNotPermisionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q243="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserFunctionNotPermisionResult" nillable="true" type="q243:ArrayOfFunctionDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q244="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lst" nillable="true" type="q244:ArrayOfUserFunctionDTO" />
+        <xs:element xmlns:q245="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q245:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUserFunctionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFunctionNotPermisionException">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:decimal" />
+        <xs:element xmlns:q246="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q246:FunctionDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q247="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q247:UserLog" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFunctionNotPermisionExceptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q248="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserFunctionNotPermisionExceptionResult" nillable="true" type="q248:ArrayOfFunctionDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserFunctionException">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q249="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lst" nillable="true" type="q249:ArrayOfUserFunctionDTO" />
+        <xs:element xmlns:q250="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q250:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserFunctionExceptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUserFunctionExceptionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyUserFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserCopyID" type="xs:decimal" />
+        <xs:element minOccurs="0" name="UserID" type="xs:decimal" />
+        <xs:element xmlns:q251="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q251:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyUserFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CopyUserFunctionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q252="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="lst" nillable="true" type="q252:ArrayOfUserFunctionDTO" />
+        <xs:element xmlns:q253="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q253:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserFunctionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q254="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lst" nillable="true" type="q254:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteUserFunctionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q255="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetUserOrganizationResult" nillable="true" type="q255:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_UserId" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteUserOrganizationResult" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q256="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="OrgIDs" nillable="true" type="q256:ArrayOfUserOrgAccessDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserOrganizationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserReportList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_UserID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserReportListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q257="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserReportListResult" nillable="true" type="q257:ArrayOfUserReportDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserReportListFilter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_UserID" type="xs:decimal" />
+        <xs:element xmlns:q258="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q258:UserReportDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserReportListFilterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q259="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetUserReportListFilterResult" nillable="true" type="q259:ArrayOfUserReportDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_UserID" type="xs:decimal" />
+        <xs:element xmlns:q260="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_lstReport" nillable="true" type="q260:ArrayOfUserReportDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserReportResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeSignToPopupFind">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q261="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q261:EmployeePopupFindListDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q262="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q262:UserLog" />
+        <xs:element xmlns:q263="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_param" nillable="true" type="q263:ParamDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeSignToPopupFindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q264="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetEmployeeSignToPopupFindResult" nillable="true" type="q264:ArrayOfEmployeePopupFindListDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeToPopupFind">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q265="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q265:EmployeePopupFindListDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q266="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q266:UserLog" />
+        <xs:element xmlns:q267="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_param" nillable="true" type="q267:ParamDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeToPopupFindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q268="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetEmployeeToPopupFindResult" nillable="true" type="q268:ArrayOfEmployeePopupFindListDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeFind">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q269="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q269:EmployeePopupFindListDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q270="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q270:UserLog" />
+        <xs:element xmlns:q271="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_param" nillable="true" type="q271:ParamDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeFindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q272="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetEmployeeFindResult" nillable="true" type="q272:ArrayOfEmployeePopupFindListDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeToPopupFind2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q273="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q273:EmployeePopupFindListDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="request_id" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q274="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q274:UserLog" />
+        <xs:element xmlns:q275="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_param" nillable="true" type="q275:ParamDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeToPopupFind2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q276="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetEmployeeToPopupFind2Result" nillable="true" type="q276:ArrayOfEmployeePopupFindListDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeToPopupFind_EmployeeID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q277="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_empId" nillable="true" type="q277:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeToPopupFind_EmployeeIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q278="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetEmployeeToPopupFind_EmployeeIDResult" nillable="true" type="q278:ArrayOfEmployeePopupFindDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_empId" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q279="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetEmployeeIDResult" nillable="true" type="q279:EmployeePopupFindDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q280="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="Filter" nillable="true" type="q280:TitleDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q281="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetTitleResult" nillable="true" type="q281:ArrayOfTitleDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleFromId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q282="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_lstIds" nillable="true" type="q282:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleFromIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q283="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetTitleFromIdResult" nillable="true" type="q283:ArrayOfTitleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccessLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q284="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="filter" nillable="true" type="q284:AccessLogFilter" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccessLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q285="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="GetAccessLogResult" nillable="true" type="q285:ArrayOfAccessLog" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAccessLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q286="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="_accesslog" nillable="true" type="q286:AccessLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAccessLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAccessLogResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActionLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q287="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="filter" nillable="true" type="q287:ActionLogFilter" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActionLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q288="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="GetActionLogResult" nillable="true" type="q288:ArrayOfActionLog" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActionLogByObjectId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObjectId" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActionLogByObjectIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q289="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="GetActionLogByObjectIdResult" nillable="true" type="q289:ArrayOfActionLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActionLogByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActionLogByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q290="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="GetActionLogByIDResult" nillable="true" type="q290:ArrayOfAuditLogDtl" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteActionLogs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q291="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstDeleteIds" nillable="true" type="q291:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteActionLogsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteActionLogsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetComboList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q292="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_combolistDTO" nillable="true" type="q292:ComboBoxDataDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetComboListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetComboListResult" type="xs:boolean" />
+        <xs:element xmlns:q293="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_combolistDTO" nillable="true" type="q293:ComboBoxDataDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllTrCertificateList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllTrCertificateListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAllTrCertificateListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCourseByList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCourseByListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCourseByListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeriodYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeriodYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPeriodYearResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeriodByYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+        <xs:element minOccurs="0" name="year" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeriodByYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPeriodByYearResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassificationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetClassificationResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLearningLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLearningLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLearningLevelResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHU_CompetencyList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHU_CompetencyListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHU_CompetencyListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q294="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="eModule" type="q294:SystemConfig.ModuleID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q295="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetConfigResult" nillable="true" type="q295:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q296="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_lstConfig" nillable="true" type="q296:ArrayOfKeyValueOfstringstring" />
+        <xs:element xmlns:q297="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="eModule" type="q297:SystemConfig.ModuleID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateConfigResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMail">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendMailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertMail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_from" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_to" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_subject" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_content" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_cc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_bcc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DefaultRunNowIsZero" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertMailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertMailResult" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListByTypeToCombo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListByTypeToComboResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q298="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOtherListByTypeToComboResult" nillable="true" type="q298:ArrayOfOtherListDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sACT" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q299="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOtherListResult" nillable="true" type="q299:ArrayOfOtherListDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListByType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+        <xs:element xmlns:q300="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_filter" nillable="true" type="q300:OtherListDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListByTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q301="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="GetOtherListByTypeResult" nillable="true" type="q301:ArrayOfOtherListDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOtherList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q302="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="objOtherList" nillable="true" type="q302:OtherListDTO" />
+        <xs:element xmlns:q303="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q303:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOtherListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertOtherListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyOtherList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q304="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="objOtherList" nillable="true" type="q304:OtherListDTO" />
+        <xs:element xmlns:q305="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q305:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyOtherListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyOtherListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateOtherList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q306="http://schemas.datacontract.org/2004/07/CommonDAL" minOccurs="0" name="_validate" nillable="true" type="q306:OtherListDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateOtherListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateOtherListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveOtherList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q307="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstOtherList" nillable="true" type="q307:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="sActive" nillable="true" type="xs:string" />
+        <xs:element xmlns:q308="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q308:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveOtherListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveOtherListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

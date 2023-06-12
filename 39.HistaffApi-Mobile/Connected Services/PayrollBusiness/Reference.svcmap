@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e31fba7f-04b4-49be-a7e4-597affa3a289" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/PayrollBusiness.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PayrollBusiness1.disco" MetadataType="Disco" ID="22c358a8-6c35-484f-a829-5a4502e88fdc" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?disco" />
+    <MetadataFile FileName="PayrollBusiness8.xsd" MetadataType="Schema" ID="3da759eb-fda4-4119-ba38-30e482a1fa8f" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?xsd=xsd7" />
+    <MetadataFile FileName="PayrollBusiness81.xsd" MetadataType="Schema" ID="9369ec1f-f8ed-4c3e-ae93-bfa031da1bc0" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?xsd=xsd6" />
+    <MetadataFile FileName="PayrollBusiness82.xsd" MetadataType="Schema" ID="b31b7d51-e8f6-484a-8758-baef0111a53d" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?xsd=xsd5" />
+    <MetadataFile FileName="PayrollBusiness1.wsdl" MetadataType="Wsdl" ID="5fdefac2-c605-485d-bfb8-4deb08c5c0da" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?wsdl" />
+    <MetadataFile FileName="PayrollBusiness83.xsd" MetadataType="Schema" ID="007a3d90-8be5-4337-9ecf-f04ac0502c53" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?xsd=xsd3" />
+    <MetadataFile FileName="PayrollBusiness84.xsd" MetadataType="Schema" ID="8f1b847c-13c0-46c4-9b7b-a6e3c1d91686" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?xsd=xsd2" />
+    <MetadataFile FileName="PayrollBusiness85.xsd" MetadataType="Schema" ID="332dcefc-a4da-45d9-900e-6bb75b54c5e6" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?xsd=xsd4" />
+    <MetadataFile FileName="PayrollBusiness86.xsd" MetadataType="Schema" ID="02067990-27e8-4595-82fe-29f776983741" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?xsd=xsd0" />
+    <MetadataFile FileName="PayrollBusiness87.xsd" MetadataType="Schema" ID="0e32f833-b78c-42ac-8394-79ef1df6fcf2" SourceId="1" SourceUrl="http://localhost:9999/PayrollBusiness.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

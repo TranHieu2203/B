@@ -1,0 +1,805 @@
+﻿@using HiStaffAPI.Areas.MobileView.Models
+@model HiStaffAPI.Areas.MobileView.Models.PayslipResponse
+@{
+    Layout = "~/Areas/MobileView/Views/Shared/_LayoutMobile.cshtml";
+    var title = "THÔNG TIN THU NHẬP";
+    var lang = ViewData["lang"] == null ? "vi-VN" : ViewData["lang"].ToString();
+    ViewData["Title"] = title;
+}
+<style>
+    /*override main to test mobile*/
+    .background-cover {
+        border-radius: unset;
+        min-height: unset;
+        max-height: unset;
+    }
+
+    .wrapper {
+        min-width: unset;
+    }
+
+    .content-wrapper .content {
+        padding: unset;
+    }
+
+    .background-cover .title-whorksheet {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    .form-group {
+        padding-left: unset;
+    }
+
+    .fill-width {
+    }
+
+        .fill-width .select2 {
+            width: 100% !important;
+        }
+
+    .left-label {
+        text-align: left;
+        padding-left: 7.5px;
+        width: calc(100% - 105px);
+    }
+
+    .left-label-text {
+        text-align: left;
+        padding-left: 7.5px;
+        width: calc(100% - 185px);
+    }
+
+    .right-label {
+        width: 80px;
+        text-align: right;
+        display: block;
+    }
+
+    .right-label-text {
+        width: 160px;
+        text-align: right;
+        display: block;
+    }
+
+    .group-title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #409AB2;
+    }
+
+    .group-line {
+        border: 1px solid #ECECEC;
+    }
+
+    .item-label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1;
+        color: #39393A;
+    }
+
+    .item-container {
+        /*height: 10px;*/
+        line-height: 14px;
+    }
+
+    .item-p {
+        padding-left: 10px;
+    }
+</style>
+<div class="background-cover background-cover-hm">
+    <div class="income-information">
+        <div class="col-lg-6 col-md-6 col-sm-6" style="display:none">
+            <button type="button" onclick="packageFilter()" class="btn-outline">Tìm kiếm</button>
+        </div>
+        <div class="title-whorksheet form-group">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="form-group" style="margin-bottom:10px">
+                    <label style="color: #B0B0B0;">Năm</label>
+                </div>
+                <div class="fill-width">
+                    @Html.DropDownListFor(x => Model.Year, Model.YearOptions, new { @class = "select2-single-select-first", @onchange = "changeYear()" })
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="form-group" style="margin-bottom:10px">
+                    <label style="color: #B0B0B0;">Kỳ công</label>
+                </div>
+                <div class="fill-width">
+                    @Html.DropDownListFor(x => Model.PeriodId, Model.PeriodIdOptions, new { @class = "select2-single-select-first", @onchange = "packageFilter()" })
+                </div>
+            </div>
+        </div>
+
+        <!--Mã nhân viên-->
+        <div class="item-p form-group item-container">
+            <div class="left-label-text">
+                <div class="item-label" data-i18n="MÃ NHÂN VIÊN">Mã nhân viên</div>
+            </div>
+            <div class="right-label-text">
+                <span class="item-label" id="employee_code"></span>
+            </div>
+        </div>
+
+        <!--Họ và tên-->
+        <div class="item-p form-group item-container">
+            <div class="left-label-text">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_LabelHVT" data-i18n="HỌ VÀ TÊN">Họ và tên</div>
+            </div>
+            <div class="right-label-text">
+                <span class="item-label" id="fullname_vn"></span>
+            </div>
+        </div>
+
+        <!--Mã nhân viên-->
+        <div class="item-p form-group item-container">
+            <div class="left-label-text">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_LabelCD" data-i18n="CHỨC DANH">Chức danh</div>
+            </div>
+            <div class="right-label-text">
+                <span class="item-label" id="pos_name"></span>
+            </div>
+        </div>
+
+        <!--Mã nhân viên-->
+        <div class="item-p form-group item-container">
+            <div class="left-label-text">
+                <div class="item-label" MainContent_ctrlPA_PortalSalary_LabelCNS" data-i18n="PHÒNG BAN">Phòng ban</div>
+            </div>
+            <div class="right-label-text">
+                <span class="item-label" id="org_name"></span>
+            </div>
+        </div>
+
+        <!--Thực lĩnh-->
+        <div class="title-whorksheet form-group">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div style="background: #409AB2; border-radius: 7px;color:#FFFFFF; height:70px; padding: 12px 12px 10px 12px;">
+                    <div id="MainContent_ctrlPA_PortalSalary_lbl54" data-i18n="THỰC LĨNH" style="font-size:14px">Thực lĩnh</div>
+                    <div class="" style="font-size:18px; float:right; font-weight:600">
+                        <span id="csum1" style="display:none"></span>
+                        <span id="hidenEye" style="display:none" onclick="showHideMoney(false)">
+                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99996 2.66667C9.83996 2.66667 11.3333 4.16 11.3333 6C11.3333 6.43333 11.2466 6.84 11.0933 7.22L13.04 9.16667C14.0466 8.32667 14.84 7.24 15.3266 6C14.1733 3.07333 11.3266 1 7.99329 1C7.05996 1 6.16663 1.16667 5.33996 1.46667L6.77996 2.90667C7.15996 2.75333 7.56663 2.66667 7.99996 2.66667ZM1.33329 0.846667L2.85329 2.36667L3.15996 2.67333C2.05329 3.53333 1.18663 4.68 0.666626 6C1.81996 8.92667 4.66663 11 7.99996 11C9.03329 11 10.02 10.8 10.92 10.44L11.2 10.72L13.1533 12.6667L14 11.82L2.17996 0L1.33329 0.846667ZM5.01996 4.53333L6.05329 5.56667C6.01996 5.70667 5.99996 5.85333 5.99996 6C5.99996 7.10667 6.89329 8 7.99996 8C8.14663 8 8.29329 7.98 8.43329 7.94667L9.46662 8.98C9.01996 9.2 8.52662 9.33333 7.99996 9.33333C6.15996 9.33333 4.66663 7.84 4.66663 6C4.66663 5.47333 4.79996 4.98 5.01996 4.53333ZM7.89329 4.01333L9.99329 6.11333L10.0066 6.00667C10.0066 4.9 9.11329 4.00667 8.00663 4.00667L7.89329 4.01333Z" fill="white" />
+                            </svg>
+                        </span>
+                        <span id="showEye" onclick="showHideMoney(true)">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.00008 0C4.66675 0 1.82008 2.07333 0.666748 5C1.82008 7.92667 4.66675 10 8.00008 10C11.3334 10 14.1801 7.92667 15.3334 5C14.1801 2.07333 11.3334 0 8.00008 0ZM8.00008 8.33333C6.16008 8.33333 4.66675 6.84 4.66675 5C4.66675 3.16 6.16008 1.66667 8.00008 1.66667C9.84008 1.66667 11.3334 3.16 11.3334 5C11.3334 6.84 9.84008 8.33333 8.00008 8.33333ZM8.00008 3C6.89341 3 6.00008 3.89333 6.00008 5C6.00008 6.10667 6.89341 7 8.00008 7C9.10675 7 10.0001 6.10667 10.0001 5C10.0001 3.89333 9.10675 3 8.00008 3Z" fill="white" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Group 1-->
+        <div class="item-p form-group group-title">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <span>Thông tin lương</span>
+            </div>
+        </div>
+        <!--Mức lương-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <span class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl1" data-i18n="MỨC LƯƠNG">Mức lương</span>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="cl1"></span>
+            </div>
+        </div>
+        <!--Tổng lương-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl2" data-i18n="TỔNG LƯƠNG">Tổng lương</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="cl2"></span>
+            </div>
+        </div>
+        <!--Ngày công chế độ-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl3" data-i18n="NGÀY CÔNG CHẾ ĐỘ">Ngày công chế độ</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="cw1"></span>
+            </div>
+        </div>
+        <!--Số ngày công tính lương-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl4" data-i18n="SỐ NGÀY CÔNG TÍNH LƯƠNG">Số ngày công tính lương</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="cw2"></span>
+            </div>
+        </div>
+
+        <!--Group Line-->
+        <div class="title-whorksheet form-group">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="group-line"> </div>
+            </div>
+        </div>
+        <div class="item-p form-group group-title">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <span>Các khoản cộng</span>
+            </div>
+        </div>
+
+        <!--Phụ cấp trách nhiệm-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl5" data-i18n="PHỤ CẤP TRÁCH NHIỆM">Phụ cấp trách nhiệm</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="allowance1"></span>
+            </div>
+        </div>
+        <!--Phụ cấp công việc-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" iid="MainContent_ctrlPA_PortalSalary_lbl6" data-i18n="PHỤ CẤP CÔNG VIỆC">Phụ cấp công việc</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="allowance2"></span>
+            </div>
+        </div>
+        <!--Khen thưởng-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl7" data-i18n="KHEN THƯỞNG">Khen thưởng</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="MainContent_ctrlPA_PortalSalary_lblBONUS1"></span>
+            </div>
+        </div>
+        <!--Phúc lợi tính thuế-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl8" data-i18n="PHÚC LỢI TÍNH THUẾ">Phúc lợi tính thuế</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="MainContent_ctrlPA_PortalSalary_lblBONUS2"></span>
+            </div>
+        </div>
+        <!--Phúc lợi không tính thuế-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl9" data-i18n="PHÚC LỢI KHÔNG TÍNH THUẾ">Phúc lợi không tính thuế</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="MainContent_ctrlPA_PortalSalary_lblBONUS3"></span>
+            </div>
+        </div>
+        <!--Tổng khen thưởng, phúc lợi-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl10" data-i18n="TỔNG KHEN THƯỞNG, PHÚC LỢI">Tổng khen thưởng, phúc lợi</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="MainContent_ctrlPA_PortalSalary_lblBONUS4"></span>
+            </div>
+        </div>
+        <!--Khoản cộng khác(tính thuế)-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl11" data-i18n="KHOẢN CỘNG KHÁC (TÍNH THUẾ)">Khoản cộng khác(tính thuế)</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="MainContent_ctrlPA_PortalSalary_lblADD1"></span>
+            </div>
+        </div>
+        <!--Khoản cộng khác (không tính thuế)-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl12" data-i18n="KHOẢN CỘNG KHÁC (KHÔNG TÍNH THUẾ)">Khoản cộng khác (không tính thuế)</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="add2"></span>
+            </div>
+        </div>
+        <!--Thưởng sản xuất kinh doanh-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl13" data-i18n="THƯỞNG SẢN XUẤT KINH DOANH">Thưởng sản xuất kinh doanh</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="add3"></span>
+            </div>
+        </div>
+        <!--Lương tháng 13-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl14" data-i18n="LƯƠNG THÁNG 13">Lương tháng 13</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="MainContent_ctrlPA_PortalSalary_lblADD4"></span>
+            </div>
+        </div>
+        <!--Lương bổ sung-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl15" data-i18n="LƯƠNG BỔ SUNG">Lương bổ sung</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="add5"></span>
+            </div>
+        </div>
+        <!--Thưởng khác-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl16" data-i18n="THƯỞNG KHÁC">Thưởng khác</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="add6"></span>
+            </div>
+        </div>
+        <!--Tổng các khoản thu nhập đã lãnh trong kỳ-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl17" data-i18n="TỔNG CÁC KHOẢN THU NHẬP ĐÃ LÃNH TRONG KỲ">Tổng các khoản thu nhập đã lãnh trong kỳ</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="add7"></span>
+            </div>
+        </div>
+        <!--Tổng các khoản cộng khác-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl18" data-i18n="TỔNG CÁC KHOẢN CỘNG KHÁC">Tổng các khoản cộng khác</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="add8"></span>
+            </div>
+        </div>
+        <!--Tiền lương-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl19" data-i18n="TIỀN LƯƠNG">Tiền lương</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh1"></span>
+            </div>
+        </div>
+        <!--Lương ngoài giờ ngày lễ ban ngày tính thuế-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl20" data-i18n="LƯƠNG NGOÀI GIỜ NGÀY LỄ BAN NGÀY TÍNH THUẾ">Lương ngoài giờ ngày lễ ban ngày tính thuế</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh2"></span>
+            </div>
+        </div>
+        <!--Lương ngoài giờ ngày lễ ban ngày không tính thuế-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl21" data-i18n="LƯƠNG NGOÀI GIỜ NGÀY LỄ BAN NGÀY KHÔNG TÍNH THUẾ">Lương ngoài giờ ngày lễ ban ngày không tính thuế</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh3"></span>
+            </div>
+        </div>
+        <!--Lương ngoài giờ ngày lễ ban đêm tính thuế-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl22" data-i18n="LƯƠNG NGOÀI GIỜ NGÀY LỄ BAN ĐÊM TÍNH THUẾ">Lương ngoài giờ ngày lễ ban đêm tính thuế</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh4"></span>
+            </div>
+        </div>
+        <!--Lương ngoài giờ ngày lễ ban đêm không tính thuế-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl23" data-i18n="LƯƠNG NGOÀI GIỜ NGÀY LỄ BAN ĐÊM KHÔNG TÍNH THUẾ">Lương ngoài giờ ngày lễ ban đêm không tính thuế</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh5"></span>
+            </div>
+        </div>
+        <!--Tổng tiền làm thêm giờ ngày lễ-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl24" data-i18n="TỔNG TIỀN LÀM THÊM GIỜ NGÀY LỄ">Tổng tiền làm thêm giờ ngày lễ</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh13"></span>
+            </div>
+        </div>
+        <!--Lương làm đêm-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl25" data-i18n="LƯƠNG LÀM ĐÊM">Lương làm đêm</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh6"></span>
+            </div>
+        </div>
+        <!--Tiền ăn cơm-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl26" data-i18n="TIỀN ĂN CƠM">Tiền ăn cơm</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh7"></span>
+            </div>
+        </div>
+        <!--Tiền ăn cơm tính thuế-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl27" data-i18n="TIỀN ĂN CƠM TÍNH THUẾ">Tiền ăn cơm tính thuế</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh8"></span>
+            </div>
+        </div>
+        <!--Thu nhập chịu thuế đã lãnh HQCV-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl28" data-i18n="THU NHẬP CHỊU THUẾ ĐÃ LÃNH HQCV">Thu nhập chịu thuế đã lãnh HQCV</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh9"></span>
+            </div>
+        </div>
+        <!--Khoản Truy lĩnh-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl29" data-i18n="KHOẢN TRUY LĨNH">Khoản Truy lĩnh</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh12"></span>
+            </div>
+        </div>
+        <!--Tổng thu nhập trong tháng-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl30" data-i18n="TỔNG THU NHẬP TRONG THÁNG">Tổng thu nhập trong tháng</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh10"></span>
+            </div>
+        </div>
+        <!--Tổng thu nhập chịu thuế-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl31" data-i18n="TỔNG THU NHẬP CHỊU THUẾ">Tổng thu nhập chịu thuế</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="clchinh11"></span>
+            </div>
+        </div>
+
+        <!--Group Line-->
+        <div class="title-whorksheet form-group">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="group-line"> </div>
+            </div>
+        </div>
+        <div class="item-p form-group group-title">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <span>Các khoản trừ</span>
+            </div>
+        </div>
+
+        <!--BHXH NV-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl32" data-i18n="BHXH NV">BHXH NV</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="insu4"></span>
+            </div>
+        </div>
+
+        <!--BHYT NV-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl33" data-i18n="BHYT NV">BHYT NV</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="insu5"></span>
+            </div>
+        </div>
+
+        <!--BHTN NV-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl34" data-i18n="BHTN NV">BHTN NV</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="insu6"></span>
+            </div>
+        </div>
+
+        <!--Tổng BHXH NV-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl35" data-i18n="TỔNG BHXH NV">Tổng BHXH NV</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="insu7"></span>
+            </div>
+        </div>
+
+        <!--Tổng giảm trừ-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl36" data-i18n="TỔNG GIẢM TRỪ">Tổng giảm trừ</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="tax1"></span>
+            </div>
+        </div>
+
+        <!--Tổng thu nhập tính thuế-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl37" data-i18n="TỔNG THU NHẬP TÍNH THUẾ">Tổng thu nhập tính thuế</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="tax2"></span>
+            </div>
+        </div>
+
+        <!--Thuế TNCN lũy tiến-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl38" data-i18n="THUÊ TNCN LŨY TIẾN">Thuế TNCN lũy tiến</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="tax3"></span>
+            </div>
+        </div>
+
+        <!--Thuế TNCN 10%/20%-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl39" data-i18n="THUẾ TNCN 10%/20%">Thuế TNCN 10%/20%</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="tax4"></span>
+            </div>
+        </div>
+
+        <!--Thuế TNCN từ thưởng HQCV-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl40" data-i18n="THUẾ TNCN TỪ THƯỞNG HQV">Thuế TNCN từ thưởng HQCV</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="tax5"></span>
+            </div>
+        </div>
+
+        <!--Mức bồi thường Kỷ luật-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl41" data-i18n="MỨC BỒI THƯỜNG KỶ LUẬT">Mức bồi thường Kỷ luật</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="fine1"></span>
+            </div>
+        </div>
+
+        <!--Tỷ lệ/số tiền trừ tiền kỷ luật-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl42" data-i18n="TỶ LỆ/SỐ TIỀN TỪ TIỀN KỶ LUẬT">Tỷ lệ/số tiền trừ tiền kỷ luật</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="fine2"></span>
+            </div>
+        </div>
+
+        <!--Tiền trừ kỷ luật-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl43" data-i18n="TIỀN TRỪ KỶ LUẬT">Tiền trừ kỷ luật</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="fine3"></span>
+            </div>
+        </div>
+
+        <!--Tổng tiền phạt-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl44" data-i18n="TỔNG TIỀN PHẠT">Tổng tiền phạt</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="fine5"></span>
+            </div>
+        </div>
+
+        <!--Công đoàn phí-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl45" data-i18n="CÔNG DOÀN PHÍ">Công đoàn phí</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="deduct1"></span>
+            </div>
+        </div>
+
+        <!--Thiệt hại tài sản-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl46" data-i18n="THIỆT HẠI TÀI SẢN">Thiệt hại tài sản</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="deduct2"></span>
+            </div>
+        </div>
+
+        <!--Vay công đoàn-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl47" data-i18n="VAY CÔNG ĐOÀN">Vay công đoàn</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="deduct3"></span>
+            </div>
+        </div>
+
+        <!--Khám sức khỏe ngoài quy định-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl48" data-i18n="KHÁM SỨC KHỎE NGOÀI QUY ĐỊNH">Khám sức khỏe ngoài quy định</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="deduct4"></span>
+            </div>
+        </div>
+
+        <!--Ăn giữa ca ngoài quy định-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl49" data-i18n="ĂN GIỮA CA NGOÀI QUY ĐỊNH">Ăn giữa ca ngoài quy định</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="deduct5"></span>
+            </div>
+        </div>
+
+        <!--Xã hội từ thiện-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl50" data-i18n="XÃ HỘI TỪ THIỆN">Xã hội từ thiện</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="deduct6"></span>
+            </div>
+        </div>
+
+        <!--Bảo trợ nội bộ-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl51" data-i18n="BẢO TRỢ NỘI BỘ">Bảo trợ nội bộ</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="deduct7"></span>
+            </div>
+        </div>
+
+        <!--Trừ khác-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl52" data-i18n="TRỪ KHÁC">Trừ khác</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="deduct8"></span>
+            </div>
+        </div>
+
+        <!--Tổng trích nộp-->
+        <div class="item-p form-group item-container">
+            <div class="left-label">
+                <div class="item-label" id="MainContent_ctrlPA_PortalSalary_lbl53" data-i18n="TỔNG TRÍCH NỘP">Tổng trích nộp</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label" id="deduct8"></span>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        function packageFilter() {
+            var periodId = $('#PeriodId option:selected').val();
+            if (periodId) {
+                PostAjax({
+                    url: "@Url.Action("GetPayslip", "PayslipMobile")?PeriodId=" + periodId,
+                    data: { 'PeriodId': periodId },
+                    success: function (data) {
+                        $.each(data, function (key, value) {
+                            var response = value.Value;
+                            if (Number(response)) {
+                                response = formatNumber(response);
+                            }
+                            $("#" + value.Key).html(response);
+                        });
+                    }
+                }, true);
+            }
+        }
+
+        function showHideMoney(isshow = false) {
+            if (isshow) {
+                $('#csum1').show();
+                $('#hidenEye').show();
+                $('#showEye').hide();
+                $('.right-label').show();
+            } else {
+                $('#csum1').hide();
+                $('#hidenEye').hide();
+                $('#showEye').show();
+                $('.right-label').hide();
+            }
+        }
+
+        var initFunction = function () {
+            $(document).ready(function () {
+                $("#Year").change(function () {
+
+                });
+            });
+        }
+
+        function changeYear() {
+            var year = $('#Year option:selected').val();
+                    PostAjax({
+                        url: "@Url.Action("GetPayslipPeriodByYear", "PayslipMobile")?year=" + parseInt(year),
+                        success: function (data)
+                        {
+                            var dateNow = new Date();
+                            var selectedDateToStrTime = new Date(dateNow.getFullYear(), dateNow.getMonth(), dateNow.getDate());
+                            //bind date
+                            $('#PeriodId option').remove();
+                            $.each(data, function (key, value) {
+                                var newData = new Option(value.PERIOD_NAME, value.PERIOD_ID, true, true);
+                                $("#PeriodId").append(newData);
+                            });
+                            //selected
+                            var selected = false;
+                            var idFirst = null;
+                            $.each(data, function (key, value)
+                            {
+                                if (idFirst == null)
+                                {
+                                    idFirst = value.PERIOD_ID;
+                                }
+                                var startDate = new Date(value.start_date);
+                                var endDate = new Date(value.end_date);
+                                if (selectedDateToStrTime >= startDate && selectedDateToStrTime <= endDate)
+                                {
+                                    selected = true;
+                                    $('#PeriodId').val(value.PERIOD_ID).trigger('change.select2');
+                                }
+                            });
+                            if (!selected)
+                            {
+                                if (idFirst)
+                                {
+                                    $('#PeriodId').val(idFirst).trigger('change.select2');
+                                }
+                            }
+                        }
+                    });
+        }
+
+        $(document).ready(function () {
+            packageFilter(); showHideMoney(false);
+            $('.select2-single-select-first').select2({});
+        });
+    </script>
+}

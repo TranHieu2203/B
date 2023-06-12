@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b9b12cc5-a3af-4f40-a562-10f3aef9e9f8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/InsuranceBusiness.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InsuranceBusiness.xsd" MetadataType="Schema" ID="cdb004ef-06e2-4cc8-864e-cfeda70540f7" SourceId="1" SourceUrl="http://localhost:9999/InsuranceBusiness.svc?xsd=xsd0" />
+    <MetadataFile FileName="InsuranceBusiness1.xsd" MetadataType="Schema" ID="616856ba-b7d6-415e-9ab4-0054928c2c12" SourceId="1" SourceUrl="http://localhost:9999/InsuranceBusiness.svc?xsd=xsd3" />
+    <MetadataFile FileName="InsuranceBusiness5.xsd" MetadataType="Schema" ID="a46049d8-48d5-4f61-b8c2-2b920b0e6ed9" SourceId="1" SourceUrl="http://localhost:9999/InsuranceBusiness.svc?xsd=xsd5" />
+    <MetadataFile FileName="InsuranceBusiness3.xsd" MetadataType="Schema" ID="300aa413-f00d-4718-90ed-eac6f0bcf801" SourceId="1" SourceUrl="http://localhost:9999/InsuranceBusiness.svc?xsd=xsd2" />
+    <MetadataFile FileName="InsuranceBusiness.wsdl" MetadataType="Wsdl" ID="f730b8d7-1212-44f3-9c12-5a45fd1e49b1" SourceId="1" SourceUrl="http://localhost:9999/InsuranceBusiness.svc?wsdl" />
+    <MetadataFile FileName="InsuranceBusiness2.xsd" MetadataType="Schema" ID="ba6fb9ca-810a-46cf-86c3-fcfdc49fbf23" SourceId="1" SourceUrl="http://localhost:9999/InsuranceBusiness.svc?xsd=xsd1" />
+    <MetadataFile FileName="InsuranceBusiness4.xsd" MetadataType="Schema" ID="f7161757-cb4e-4981-a9a0-af5cf980e027" SourceId="1" SourceUrl="http://localhost:9999/InsuranceBusiness.svc?xsd=xsd4" />
+    <MetadataFile FileName="InsuranceBusiness.disco" MetadataType="Disco" ID="57aae7e3-cc70-4951-9405-fbce8203bbd0" SourceId="1" SourceUrl="http://localhost:9999/InsuranceBusiness.svc?disco" />
+    <MetadataFile FileName="InsuranceBusiness6.xsd" MetadataType="Schema" ID="0e4111f8-3e9f-4ee3-81ad-0af776474e68" SourceId="1" SourceUrl="http://localhost:9999/InsuranceBusiness.svc?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

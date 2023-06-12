@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="{% static 'Dashboard/styles/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'Dashboard/styles/css/main.css'%}">
+    <link rel="stylesheet" href="{% static 'Dashboard/styles/css/reset.css'%}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+</head>
+<script>
+    windown.onload=function(){
+    function BindingData(data) {
+	
+}
+
+$.getJSON("https://localhost:5001/api/Process/72FC1F59C5CCB34F7E29A71AF111E170", BindingData);
+    }
+</script>
+<body>
+    <div id="wapper">
+        <div id="header">
+            <div class="wp-inner clearfix">
+                <a href="" id="logo" class="fl-left clearfix">
+                    <p class="title-logo fl-right">Trung Nam Group</p>
+                    <img src="{% static 'Dashboard/images/logo.png' %}" title="Trung Nam Group" alt="Trung Nam Group">
+                </a>
+            </div>
+        </div>
+        <div id="wp-content" class="clearfix">
+            <div id="content">
+                <form method="POST">
+                    <!-- Button1 -->
+                    <button type="submit" id="button-a">Phê duyệt</button>
+                    <!-- Button2 -->
+                    <button type="submit" id="button-b">Không phê duyệt</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>

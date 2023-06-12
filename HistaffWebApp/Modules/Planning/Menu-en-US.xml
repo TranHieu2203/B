@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Business"  PostBack="False">
+      <Group>        
+        <Item Value="ctrlPA_SalaryPlan" Text="Construction payroll according to marginal" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_SalaryPlan&amp;group=Business" CheckPermission="true" />
+      </Group>
+    </Item>
+
+    <Item Text="Report"  PostBack="False">
+      <Group>
+        <Item Value="ctrlPA_SalaryTracker" Text="Monitoring the salary fund" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_SalaryTracker&amp;group=Report" CheckPermission="true" />
+        <Item Value="ctrlPA_SalaryEmpTracker" Text="Chart monitor salary fund" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_SalaryEmpTracker&amp;group=Report" CheckPermission="true" />
+      </Group>
+    </Item>
+
+    <Item Text="Institute"  PostBack="False">
+      <Group>
+        <Item Value="ctrlPA_SalaryFund" Text="Total payroll" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_SalaryFund&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlPA_TitleCost" Text="Costs for Title" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_TitleCost&amp;group=Setting" CheckPermission="true" />
+      </Group>
+    </Item>
+  </Group>
+</Menu> 

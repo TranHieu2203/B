@@ -1,0 +1,5 @@
+E:\histaffhcm-5\37.ConfigTool\ConfigTool\obj\Debug\ConfigTool.csprojAssemblyReference.cache
+E:\histaffhcm-5\37.ConfigTool\ConfigTool\obj\Debug\ConfigTool.frmConfigTool.resources
+E:\histaffhcm-5\37.ConfigTool\ConfigTool\obj\Debug\ConfigTool.Properties.Resources.resources
+E:\histaffhcm-5\37.ConfigTool\ConfigTool\obj\Debug\ConfigTool.csproj.GenerateResource.cache
+E:\histaffhcm-5\37.ConfigTool\ConfigTool\obj\Debug\ConfigTool.csproj.CoreCompileInputs.cache

@@ -1,0 +1,2906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayrollDAL" />
+  <xs:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Framework.Data" />
+  <xs:element name="DeleteWorkFactor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q1:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWorkFactorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteWorkFactorResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateWorkFactor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTitle" nillable="true" type="q2:WorkFactorDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateWorkFactorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateWorkFactorResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryLevel_Unilever">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryLevel" nillable="true" type="q3:SalaryLevelDTO" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q4:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryLevel_UnileverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifySalaryLevel_UnileverResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryLevel_Unilever">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q5:ArrayOfdecimal" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q6:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryLevel_UnileverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveSalaryLevel_UnileverResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryLevel_Unilever">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="lstSalaryLevel" nillable="true" type="q7:ArrayOfSalaryLevelDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryLevel_UnileverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSalaryLevel_UnileverResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q8:SalaryRankDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryRankResult" nillable="true" type="q9:ArrayOfSalaryRankDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryRank_Unilever">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q10:SalaryRankDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryRank_UnileverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryRank_UnileverResult" nillable="true" type="q11:ArrayOfSalaryRankDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryRankCombo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="salLevelID" type="xs:decimal" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryRankComboResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSalaryRankComboResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryRank" nillable="true" type="q12:SalaryRankDTO" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q13:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSalaryRankResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryRank" nillable="true" type="q14:SalaryRankDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateSalaryRankResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryRank" nillable="true" type="q15:SalaryRankDTO" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q16:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifySalaryRankResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q17:ArrayOfdecimal" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q18:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveSalaryRankResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="lstSalaryRank" nillable="true" type="q19:ArrayOfSalaryRankDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSalaryRankResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncentiveRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q20:IncentiveRankDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncentiveRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetIncentiveRankResult" nillable="true" type="q21:ArrayOfIncentiveRankDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncentiveRankDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q22:IncentiveRankDetailDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncentiveRankDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetIncentiveRankDetailResult" nillable="true" type="q23:ArrayOfIncentiveRankDetailDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncentiveRankIncludeDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q24:IncentiveRankDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncentiveRankIncludeDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetIncentiveRankIncludeDetailResult" nillable="true" type="q25:ArrayOfIncentiveRankDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncentiveRankIdIncludeDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q26:IncentiveRankDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncentiveRankIdIncludeDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetIncentiveRankIdIncludeDetailResult" nillable="true" type="q27:IncentiveRankDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncentiveRankIncludeDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objIncentiveRank" nillable="true" type="q28:IncentiveRankDTO" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q29:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncentiveRankIncludeDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertIncentiveRankIncludeDetailResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncentiveRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objIncentiveRank" nillable="true" type="q30:IncentiveRankDTO" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q31:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncentiveRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertIncentiveRankResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncentiveRankDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objIncentiveRankDetail" nillable="true" type="q32:IncentiveRankDetailDTO" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q33:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncentiveRankDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertIncentiveRankDetailResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncentiveListRankDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objIncentiveRankDetail" nillable="true" type="q34:ArrayOfIncentiveRankDetailDTO" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q35:UserLog" />
+        <xs:element xmlns:q36="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="gID" nillable="true" type="q36:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncentiveListRankDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertIncentiveListRankDetailResult" type="xs:boolean" />
+        <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="gID" nillable="true" type="q37:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyIncentiveRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objIncentiveRank" nillable="true" type="q38:IncentiveRankDTO" />
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q39:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyIncentiveRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyIncentiveRankResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyIncentiveRankDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objIncentiveRankDetail" nillable="true" type="q40:IncentiveRankDetailDTO" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q41:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyIncentiveRankDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyIncentiveRankDetailResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyIncentiveRankIncludeDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objIncentive" nillable="true" type="q42:IncentiveRankDTO" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q43:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyIncentiveRankIncludeDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyIncentiveRankIncludeDetailResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateIncentiveRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_validate" nillable="true" type="q44:IncentiveRankDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateIncentiveRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateIncentiveRankResult" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveIncentiveRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q45:ArrayOfdecimal" />
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q46:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveIncentiveRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveIncentiveRankResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIncentiveRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="lstIncentiveRank" nillable="true" type="q47:ArrayOfIncentiveRankDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIncentiveRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteIncentiveRankResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveIncentiveRankDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q48:ArrayOfdecimal" />
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q49:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveIncentiveRankDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveIncentiveRankDetailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIncentiveRankDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="lstIncentiveRank" nillable="true" type="q50:ArrayOfIncentiveRankDetailDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIncentiveRankDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteIncentiveRankDetailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryType_Group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q51:SalaryType_GroupDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryType_GroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryType_GroupResult" nillable="true" type="q52:ArrayOfSalaryType_GroupDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryType_Group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryType_Group" nillable="true" type="q53:SalaryType_GroupDTO" />
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q54:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryType_GroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSalaryType_GroupResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryType_Group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryType_Group" nillable="true" type="q55:SalaryType_GroupDTO" />
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q56:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryType_GroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifySalaryType_GroupResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryType_Group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_validate" nillable="true" type="q57:SalaryType_GroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryType_GroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateSalaryType_GroupResult" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryType_Group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q58:ArrayOfdecimal" />
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q59:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryType_GroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveSalaryType_GroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryType_GroupStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q60:ArrayOfdecimal" />
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q61:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryType_GroupStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSalaryType_GroupStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryType_Group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="lstSalaryType_Group" nillable="true" type="q62:ArrayOfSalaryType_GroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryType_GroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSalaryType_GroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q63:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSalaryTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryType" nillable="true" type="q64:SalaryTypeDTO" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q65:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifySalaryTypeResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryType" nillable="true" type="q66:SalaryTypeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateSalaryTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryType" nillable="true" type="q67:SalaryTypeDTO" />
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q68:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSalaryTypeResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q69:SalaryTypeDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryTypeResult" nillable="true" type="q70:ArrayOfSalaryTypeDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q71:ArrayOfdecimal" />
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q72:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveSalaryTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryTypebyIncentive">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="incentive" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryTypebyIncentiveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryTypebyIncentiveResult" nillable="true" type="q73:ArrayOfSalaryTypeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListSalaries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q74:PAListSalariesDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListSalariesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetListSalariesResult" nillable="true" type="q75:ArrayOfPAListSalariesDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertListSalaries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objListSalaries" nillable="true" type="q76:PAListSalariesDTO" />
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q77:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertListSalariesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertListSalariesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyListSalaries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objListSalaries" nillable="true" type="q78:PAListSalariesDTO" />
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q79:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyListSalariesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyListSalariesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveListSalaries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q80:ArrayOfdecimal" />
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q81:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveListSalariesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveListSalariesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteListSalariesStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q82:ArrayOfdecimal" />
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q83:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteListSalariesStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteListSalariesStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteListSalaries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q84:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteListSalariesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteListSalariesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListSal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q85:PAListSalDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListSalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetListSalResult" nillable="true" type="q86:ArrayOfPAListSalDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertListSal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objListSal" nillable="true" type="q87:PAListSalDTO" />
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q88:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertListSalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertListSalResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyListSal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objListSalaries" nillable="true" type="q89:PAListSalDTO" />
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q90:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyListSalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyListSalResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveListSal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q91:ArrayOfdecimal" />
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q92:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveListSalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveListSalResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteListSal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q93:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteListSalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteListSalResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceLunchList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceLunchListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetPriceLunchListResult" nillable="true" type="q94:ArrayOfATPriceLunchDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceLunch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="year" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceLunchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetPriceLunchResult" nillable="true" type="q95:ArrayOfATPriceLunchDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPriceLunch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q96:ATPriceLunchDTO" />
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objOrgPeriod" nillable="true" type="q97:ArrayOfPA_ORG_LUNCH" />
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q98:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPriceLunchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPriceLunchResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPriceLunch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q99:ATPriceLunchDTO" />
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objOrgPeriod" nillable="true" type="q100:ArrayOfPA_ORG_LUNCH" />
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q101:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPriceLunchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyPriceLunchResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePriceLunch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="lstPeriod" nillable="true" type="q102:ATPriceLunchDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePriceLunchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePriceLunchResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateATPriceLunch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_validate" nillable="true" type="q103:ATPriceLunchDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateATPriceLunchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateATPriceLunchResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateATPriceLunchOrg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_validate" nillable="true" type="q104:ATPriceLunchDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateATPriceLunchOrgResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateATPriceLunchOrgResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q105:CostCenterDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetCostCenterResult" nillable="true" type="q106:ArrayOfCostCenterDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objCostCenter" nillable="true" type="q107:CostCenterDTO" />
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q108:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCostCenterResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objCostCenter" nillable="true" type="q109:CostCenterDTO" />
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q110:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyCostCenterResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objCostCenter" nillable="true" type="q111:CostCenterDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateCostCenterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q112:ArrayOfdecimal" />
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q113:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveCostCenterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCostCenterStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q114:ArrayOfdecimal" />
+        <xs:element xmlns:q115="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q115:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCostCenterStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCostCenterStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q116:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCostCenterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetComboboxData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="cbxData" nillable="true" type="q117:ComboBoxDataDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetComboboxDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetComboboxDataResult" type="xs:boolean" />
+        <xs:element xmlns:q118="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="cbxData" nillable="true" type="q118:ComboBoxDataDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayrollSheetSum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q119:UserLog" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayrollSheetSumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPayrollSheetSumResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="EmployeeId" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckPeriodResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgBonus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q120:OrgBonusDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgBonusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetOrgBonusResult" nillable="true" type="q121:ArrayOfOrgBonusDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrgBonus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTitle" nillable="true" type="q122:OrgBonusDTO" />
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q123:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrgBonusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertOrgBonusResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyOrgBonus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTitle" nillable="true" type="q124:OrgBonusDTO" />
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q125:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyOrgBonusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyOrgBonusResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveOrgBonus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q126:ArrayOfdecimal" />
+        <xs:element xmlns:q127="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q127:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveOrgBonusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveOrgBonusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOrgBonus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q128="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q128:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOrgBonusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteOrgBonusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateOrgBonus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q129="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTitle" nillable="true" type="q129:OrgBonusDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateOrgBonusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateOrgBonusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentSources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q130="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q130:PaymentSourcesDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentSourcesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q131="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetPaymentSourcesResult" nillable="true" type="q131:ArrayOfPaymentSourcesDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPaymentSources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTitle" nillable="true" type="q132:PaymentSourcesDTO" />
+        <xs:element xmlns:q133="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q133:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPaymentSourcesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPaymentSourcesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPaymentSources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q134="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTitle" nillable="true" type="q134:PaymentSourcesDTO" />
+        <xs:element xmlns:q135="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q135:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPaymentSourcesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyPaymentSourcesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivePaymentSources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q136:ArrayOfdecimal" />
+        <xs:element xmlns:q137="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q137:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivePaymentSourcesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActivePaymentSourcesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePaymentSources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q138="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q138:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePaymentSourcesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePaymentSourcesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkFactor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q139:WorkFactorDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkFactorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetWorkFactorResult" nillable="true" type="q140:ArrayOfWorkFactorDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWorkFactor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTitle" nillable="true" type="q141:WorkFactorDTO" />
+        <xs:element xmlns:q142="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q142:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWorkFactorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertWorkFactorResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyWorkFactor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q143="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTitle" nillable="true" type="q143:WorkFactorDTO" />
+        <xs:element xmlns:q144="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q144:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyWorkFactorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyWorkFactorResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveWorkFactor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q145:ArrayOfdecimal" />
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q146:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveWorkFactorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveWorkFactorResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllowanceList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q147:AllowanceListDTO" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllowanceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q148="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetAllowanceListResult" nillable="true" type="q148:ArrayOfAllowanceListDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAllowance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objAllowance" nillable="true" type="q149:AllowanceDTO" />
+        <xs:element xmlns:q150="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q150:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAllowanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAllowanceResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyAllowance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objAllowance" nillable="true" type="q151:AllowanceDTO" />
+        <xs:element xmlns:q152="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q152:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyAllowanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyAllowanceResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveAllowance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q153="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q153:ArrayOfdecimal" />
+        <xs:element xmlns:q154="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q154:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveAllowanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveAllowanceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAllowance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q155="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q155:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAllowanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAllowanceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExistInDatabase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q156:ArrayOfdecimal" />
+        <xs:element xmlns:q157="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="table" type="q157:TABLE_NAME" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckExistInDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckExistInDatabaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetOtherListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Load_Calculate_Load">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrgId" type="xs:int" />
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="IsDissolve" type="xs:int" />
+        <xs:element minOccurs="0" name="IsLoad" type="xs:int" />
+        <xs:element xmlns:q158="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q158:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Load_Calculate_LoadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Load_Calculate_LoadResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Load_data_sum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrgId" type="xs:int" />
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="IsDissolve" type="xs:int" />
+        <xs:element minOccurs="0" name="IsLoad" type="xs:int" />
+        <xs:element xmlns:q159="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q159:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Load_data_sumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Load_data_sumResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Calculate_data_sum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrgId" type="xs:int" />
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="IsDissolve" type="xs:int" />
+        <xs:element minOccurs="0" name="IsLoad" type="xs:int" />
+        <xs:element xmlns:q160="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q160:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Calculate_data_sumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Calculate_data_sumResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Load_data_calculate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrgId" type="xs:int" />
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="IsDissolve" type="xs:int" />
+        <xs:element minOccurs="0" name="IsLoad" type="xs:int" />
+        <xs:element xmlns:q161="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q161:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Load_data_calculateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Load_data_calculateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Calculate_data_temp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrgId" type="xs:int" />
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="IsDissolve" type="xs:int" />
+        <xs:element minOccurs="0" name="IsLoad" type="xs:int" />
+        <xs:element xmlns:q162="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q162:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Calculate_data_tempResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Calculate_data_tempResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListSalaryVisibleCol">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListSalaryVisibleColResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q163="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetListSalaryVisibleColResult" nillable="true" type="q163:ArrayOfPAListSalariesDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLitsCalculate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrgId" type="xs:int" />
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="IsDissolve" type="xs:int" />
+        <xs:element minOccurs="0" name="IsLoad" type="xs:int" />
+        <xs:element xmlns:q164="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q164:UserLog" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLitsCalculateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLitsCalculateResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImportSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="obj_sal_id" type="xs:int" />
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="OrgId" type="xs:int" />
+        <xs:element minOccurs="0" name="IsDissolve" type="xs:int" />
+        <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q165="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q165:UserLog" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImportSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetImportSalaryResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryListResult" nillable="true" type="q166:ArrayOfPAListSalariesDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryList_TYPE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OBJ_SAL_ID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryList_TYPEResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q167="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryList_TYPEResult" nillable="true" type="q167:ArrayOfPAListSalariesDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveImport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SalaryGroup" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Period" type="xs:decimal" />
+        <xs:element minOccurs="0" name="dtData" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element xmlns:q168="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstColVal" nillable="true" type="q168:ArrayOfstring" />
+        <xs:element xmlns:q169="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q169:UserLog" />
+        <xs:element minOccurs="0" name="RecordSussces" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveImportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveImportResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="RecordSussces" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHoldSalaryList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+        <xs:element minOccurs="0" name="OrgId" type="xs:int" />
+        <xs:element minOccurs="0" name="IsDissolve" type="xs:int" />
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q170:UserLog" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHoldSalaryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q171="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetHoldSalaryListResult" nillable="true" type="q171:ArrayOfPAHoldSalaryDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertHoldSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q172="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q172:ArrayOfPAHoldSalaryDTO" />
+        <xs:element xmlns:q173="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q173:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertHoldSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertHoldSalaryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteHoldSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q174="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstDelete" nillable="true" type="q174:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteHoldSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteHoldSalaryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaxation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaxationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q175="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetTaxationResult" nillable="true" type="q175:ArrayOfPATaxationDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTaxation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q176="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTaxation" nillable="true" type="q176:PATaxationDTO" />
+        <xs:element xmlns:q177="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q177:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTaxationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertTaxationResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyTaxation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q178="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objTaxation" nillable="true" type="q178:PATaxationDTO" />
+        <xs:element xmlns:q179="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q179:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyTaxationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyTaxationResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveTaxation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q180="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q180:ArrayOfdecimal" />
+        <xs:element xmlns:q181="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q181:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveTaxationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveTaxationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTaxation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q182="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q182:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTaxationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteTaxationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q183="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetPaymentListResult" nillable="true" type="q183:ArrayOfPAPaymentListDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentListAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentListAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q184="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetPaymentListAllResult" nillable="true" type="q184:ArrayOfPAPaymentListDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPaymentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q185="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPaymentList" nillable="true" type="q185:PAPaymentListDTO" />
+        <xs:element xmlns:q186="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q186:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPaymentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPaymentListResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPaymentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q187="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPaymentList" nillable="true" type="q187:PAPaymentListDTO" />
+        <xs:element xmlns:q188="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q188:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPaymentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyPaymentListResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivePaymentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q189="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q189:ArrayOfdecimal" />
+        <xs:element xmlns:q190="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q190:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivePaymentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActivePaymentListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePaymentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q191="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q191:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePaymentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePaymentListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObjectSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObjectSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q192="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetObjectSalaryResult" nillable="true" type="q192:ArrayOfPAObjectSalaryDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObjectSalaryAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObjectSalaryAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q193="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetObjectSalaryAllResult" nillable="true" type="q193:ArrayOfPAObjectSalaryDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertObjectSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q194="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objObjectSalary" nillable="true" type="q194:PAObjectSalaryDTO" />
+        <xs:element xmlns:q195="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q195:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertObjectSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertObjectSalaryResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateObjectSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q196="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objObjectSalary" nillable="true" type="q196:PAObjectSalaryDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateObjectSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateObjectSalaryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyObjectSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q197="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objObjectSalary" nillable="true" type="q197:PAObjectSalaryDTO" />
+        <xs:element xmlns:q198="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q198:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyObjectSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyObjectSalaryResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveObjectSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q199="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q199:ArrayOfdecimal" />
+        <xs:element xmlns:q200="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q200:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveObjectSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveObjectSalaryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteObjectSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q201="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q201:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteObjectSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteObjectSalaryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeriodList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeriodListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q202="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetPeriodListResult" nillable="true" type="q202:ArrayOfATPeriodDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeriodbyYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="year" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeriodbyYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q203="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetPeriodbyYearResult" nillable="true" type="q203:ArrayOfATPeriodDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q204="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q204:ATPeriodDTO" />
+        <xs:element xmlns:q205="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objOrgPeriod" nillable="true" type="q205:ArrayOfAT_ORG_PERIOD" />
+        <xs:element xmlns:q206="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q206:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPeriodResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q207="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q207:ATPeriodDTO" />
+        <xs:element xmlns:q208="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objOrgPeriod" nillable="true" type="q208:ArrayOfAT_ORG_PERIOD" />
+        <xs:element xmlns:q209="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q209:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyPeriodResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q210="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="lstPeriod" nillable="true" type="q210:ATPeriodDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePeriodResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateATPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q211="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q211:ATPeriodDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateATPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateATPeriodResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateATPeriodDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q212="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q212:ATPeriodDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateATPeriodDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateATPeriodDayResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivePeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q213="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q213:ArrayOfdecimal" />
+        <xs:element xmlns:q214="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q214:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivePeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActivePeriodResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkStandard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkStandardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q215="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetWorkStandardResult" nillable="true" type="q215:ArrayOfWork_StandardDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkStandardbyYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="year" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkStandardbyYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q216="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetWorkStandardbyYearResult" nillable="true" type="q216:ArrayOfWork_StandardDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWorkStandard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q217="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q217:Work_StandardDTO" />
+        <xs:element xmlns:q218="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q218:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWorkStandardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertWorkStandardResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyWorkStandard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q219="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q219:Work_StandardDTO" />
+        <xs:element xmlns:q220="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q220:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyWorkStandardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyWorkStandardResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWorkStandard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q221="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q221:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWorkStandardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteWorkStandardResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateWorkStandard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q222="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q222:Work_StandardDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateWorkStandardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateWorkStandardResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveWorkStandard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q223="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q223:ArrayOfdecimal" />
+        <xs:element xmlns:q224="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q224:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveWorkStandardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveWorkStandardResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFomulerGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q225="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="lstDelete" nillable="true" type="q225:PAFomulerGroup" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFomulerGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteFomulerGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyFomulerGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q226="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q226:PAFomulerGroup" />
+        <xs:element xmlns:q227="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q227:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyFomulerGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyFomulerGroupResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertFomulerGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q228="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objPeriod" nillable="true" type="q228:PAFomulerGroup" />
+        <xs:element xmlns:q229="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q229:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertFomulerGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertFomulerGroupResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllFomulerGroup">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllFomulerGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q230="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetAllFomulerGroupResult" nillable="true" type="q230:ArrayOfPAFomulerGroup" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListAllSalary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListAllSalaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q231="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetListAllSalaryResult" nillable="true" type="q231:ArrayOfPAFomuler" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObjectSalaryColumn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObjectSalaryColumnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetObjectSalaryColumnResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListSalColunm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListSalColunmResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetListSalColunmResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListInputColumn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListInputColumnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetListInputColumnResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListCalculation">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListCalculationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q232="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetListCalculationResult" nillable="true" type="q232:ArrayOfOT_OTHERLIST_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyFomuler">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="F_ID" type="xs:decimal" />
+        <xs:element xmlns:q233="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q233:UserLog" />
+        <xs:element minOccurs="0" name="T_ID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyFomulerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CopyFomulerResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="F_ID" type="xs:decimal" />
+        <xs:element minOccurs="0" name="T_ID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveFomuler">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q234="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objData" nillable="true" type="q234:PAFomuler" />
+        <xs:element xmlns:q235="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q235:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveFomulerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveFomulerResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckFomuler">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sFormuler" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="objID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckFomulerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckFomulerResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveFolmulerGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lstID" type="xs:decimal" />
+        <xs:element xmlns:q236="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q236:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveFolmulerGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveFolmulerGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q237="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q237:SalaryGroupDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q238="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryGroupResult" nillable="true" type="q238:ArrayOfSalaryGroupDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryGroupCombo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dateValue" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryGroupComboResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSalaryGroupComboResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q239="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryGroup" nillable="true" type="q239:SalaryGroupDTO" />
+        <xs:element xmlns:q240="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q240:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSalaryGroupResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q241="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryGroup" nillable="true" type="q241:SalaryGroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateSalaryGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q242="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryGroup" nillable="true" type="q242:SalaryGroupDTO" />
+        <xs:element xmlns:q243="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q243:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifySalaryGroupResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q244="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q244:ArrayOfdecimal" />
+        <xs:element xmlns:q245="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q245:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveSalaryGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q246="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q246:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSalaryGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEffectSalaryGroup">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEffectSalaryGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q247="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetEffectSalaryGroupResult" nillable="true" type="q247:SalaryGroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q248="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q248:SalaryLevelDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q249="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryLevelResult" nillable="true" type="q249:ArrayOfSalaryLevelDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q250="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryLevel" nillable="true" type="q250:SalaryLevelDTO" />
+        <xs:element xmlns:q251="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q251:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSalaryLevelResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q252="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryLevel" nillable="true" type="q252:SalaryLevelDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateSalaryLevelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q253="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryLevel" nillable="true" type="q253:SalaryLevelDTO" />
+        <xs:element xmlns:q254="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q254:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySalaryLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifySalaryLevelResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q255="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q255:ArrayOfdecimal" />
+        <xs:element xmlns:q256="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q256:UserLog" />
+        <xs:element minOccurs="0" name="bActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveSalaryLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveSalaryLevelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q257="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="lstSalaryLevel" nillable="true" type="q257:ArrayOfSalaryLevelDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSalaryLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSalaryLevelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryLevel_Unilever">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q258="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="_filter" nillable="true" type="q258:SalaryLevelDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryLevel_UnileverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q259="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="GetSalaryLevel_UnileverResult" nillable="true" type="q259:ArrayOfSalaryLevelDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryLevelCombo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="salGroupID" type="xs:decimal" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+        <xs:element minOccurs="0" name="other_Use" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSalaryLevelComboResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSalaryLevelComboResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryLevel_Unilever">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q260="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryLevel" nillable="true" type="q260:SalaryLevelDTO" />
+        <xs:element xmlns:q261="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q261:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSalaryLevel_UnileverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSalaryLevel_UnileverResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryLevel_Unilever">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q262="http://schemas.datacontract.org/2004/07/PayrollDAL" minOccurs="0" name="objSalaryLevel" nillable="true" type="q262:SalaryLevelDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateSalaryLevel_UnileverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateSalaryLevel_UnileverResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

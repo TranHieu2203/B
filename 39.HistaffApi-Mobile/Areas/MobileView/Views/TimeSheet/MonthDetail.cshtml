@@ -1,0 +1,569 @@
+﻿
+@{
+    Layout = "~/Areas/MobileView/Views/Shared/_LayoutMobile.cshtml";
+    var title = "THÔNG TIN CHẤM CÔNG";
+    var lang = ViewData["lang"] == null ? "vi-VN" : ViewData["lang"].ToString();
+    ViewData["Title"] = title;
+
+    var listTypeLeave = ViewData["LIST_TYPE_LEAVE"];
+}
+<style>
+    body {
+        background-color: #F8F8F8;
+    }
+    /*override main to test mobile*/
+    .background-cover {
+        border-radius: unset;
+        min-height: unset;
+        max-height: unset;
+    }
+
+    .wrapper {
+        min-width: unset;
+    }
+
+    .content-wrapper .content {
+        padding: unset;
+        background-color: #FFFFFF;
+    }
+
+    .form-group {
+        padding-left: unset;
+        margin-bottom: 10px;
+    }
+
+    /*Top style*/
+    .number-title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .detail-title {
+        font-size: 14px;
+        font-weight: normal;
+        color: #777777;
+    }
+
+    /*Calendar style*/
+    .ui-datepicker,
+    .ui-datepicker table,
+    .ui-datepicker tr,
+    .ui-datepicker td,
+    .ui-datepicker th {
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+        .ui-datepicker td,
+        .ui-datepicker th {
+            width: 14.2%;
+        }
+
+    .ui-datepicker {
+        display: none;
+        width: 100%;
+        /*padding: 35px;*/
+        cursor: default;
+        font-size: 18px;
+    }
+
+    .ui-datepicker-header {
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .ui-datepicker-title {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .ui-datepicker-month {
+        position: relative;
+        padding-right: 15px;
+    }
+
+    .ui-datepicker-year {
+        padding-left: 8px;
+        color: #a8a8a8;
+    }
+
+    /*Calendar next previous*/
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+        position: absolute;
+        cursor: pointer;
+        top: -3px;
+    }
+
+    .ui-datepicker-prev {
+        left: 20px;
+        padding-left: 0;
+    }
+
+    .ui-datepicker-next {
+        right: 20px;
+        padding-right: 0;
+    }
+
+        .ui-datepicker-prev span,
+        .ui-datepicker-next span {
+            display: block;
+            width: 20px;
+            height: 8px;
+            color: black;
+        }
+
+    .ui-datepicker-prev span {
+        background-position: 0px 0px;
+    }
+
+    .ui-datepicker-next span {
+        background-position: -5px 0px;
+    }
+
+    .ui-datepicker-prev-hover span {
+        background-position: 0px -10px;
+    }
+
+    .ui-datepicker-next-hover span {
+        background-position: -5px -10px;
+    }
+
+    .ui-datepicker-calendar th {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-weight: normal;
+        color: #a8a8a8;
+        font-size: 14px;
+    }
+
+    .ui-datepicker-calendar td {
+        text-align: center;
+        line-height: 26px;
+    }
+
+    .ui-datepicker-calendar tr {
+        height: 45px;
+    }
+    /*Selected date style*/
+    .ui-datepicker-calendar .ui-state-active {
+        color: #ffffff;
+        background-color: #409AB2;
+        border-radius: 7px;
+    }
+
+    .ui-datepicker-calendar a {
+        color: #221F20;
+        padding: 6px 7px;
+    }
+
+    .ui-datepicker-other-month .ui-state-default {
+        color: #565656;
+    }
+
+    /*Color days*/
+    .dayOff .ui-state-default,
+    .dayOff a {
+        color: #a8a8a8;
+    }
+
+    /*.dayWLEO .ui-state-default,*/
+    .containdotLeave {
+        width: 100%;
+        padding-left: 30%;
+        margin-top: 5px;
+    }
+
+    .containdotWLEO {
+        width: 100%;
+        padding-left: 45%;
+        margin-top: 5px;
+    }
+
+    .containdotOT {
+        width: 100%;
+        padding-left: 60%;
+        margin-top: 5px;
+    }
+
+    .dayLeave .dotLeave {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        background-color: green;
+        border-radius: 260px;
+    }
+
+    .dayWLEO .dotWLEO {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        background-color: orange;
+        border-radius: 260px;
+    }
+
+    .dayOT .dotOT {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        background-color: red;
+        border-radius: 260px;
+    }
+
+    /*detail*/
+    .group-line {
+        border: 1px solid #ECECEC;
+    }
+
+    .detail-date {
+        color: #221F20;
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 8.5px;
+    }
+
+    .detail-title {
+        color: #221F20;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .detail-content {
+        font-size: 13px;
+    }
+
+    /*total*/
+    .group-title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #409AB2;
+        width: 100%;
+    }
+
+    .group-line {
+        border: 1px solid #ECECEC;
+    }
+
+    .item-label {
+        /*color: #39393A;
+        font-style: normal;
+        font-weight: normal;*/
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .item-container {
+        /*height: 10px;*/
+        width: 100%;
+        line-height: 14px;
+    }
+
+    .item-p {
+        padding-left: 10px;
+    }
+
+    .left-label {
+        text-align: left;
+        padding-left: 7.5px;
+        width: calc(100% - 50px);
+    }
+
+    .left-label-text {
+        text-align: left;
+        padding-left: 7.5px;
+        width: calc(100% - 185px);
+    }
+
+    .right-label {
+        width: 50px;
+        text-align: right;
+        display: block;
+    }
+
+    .right-label-text {
+        width: 160px;
+        text-align: right;
+        display: block;
+    }
+</style>
+<div class="background-cover background-cover-hm" style="padding-bottom:15px;">
+    <div class="row text-center" style="">
+        <div class="col-6" style="border: 1px solid #ECECEC;padding: 10px 0 15px 0">
+            <div class="number-title" id="tongngaycong">0</div>
+            <div class="detail-title" data-i18n="Ngày công">Ngày công</div>
+        </div>
+        <div class="col-6" style="border: 1px solid #ECECEC;padding: 10px 0 15px 0">
+            <div class="number-title" id="solandmvs">0</div>
+            <div class="detail-title" data-i18n="Lần ĐMVS">Lần đi muộn về sớm</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div id="calendar" style="margin-top:28px;"></div>
+        </div>
+    </div>
+
+    <!--Group Line-->
+    <div class="title-whorksheet form-group" style="margin-top:30px">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="group-line"> </div>
+        </div>
+    </div>
+
+    <!--Detail info-->
+    <div class="row">
+        <div class="col-2">
+            <div class="detail-date" id="detail-date">06/10</div>
+        </div>
+        <div class="col-10" style="padding-left:20px;">
+            <div class="detail-title" id="detail-title">[P] Công nghỉ phép</div>
+            <div class="detail-content">
+                <span id="detail-icon">
+                    <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.92554 0.973145H1.47025C1.46284 0.973145 1.44886 0.975647 1.43201 0.993594C1.41497 1.01173 1.39952 1.04221 1.39952 1.08387C1.39952 1.12786 1.41554 1.15821 1.43129 1.17508C1.44635 1.19119 1.45952 1.1946 1.47025 1.1946H9.92554C9.93628 1.1946 9.94945 1.19119 9.9645 1.17508C9.98026 1.15821 9.99628 1.12786 9.99628 1.08387C9.99628 1.03988 9.98026 1.00953 9.9645 0.992663C9.94945 0.976553 9.93628 0.973145 9.92554 0.973145Z" fill="#434343" stroke="#434343" />
+                        <path d="M9.92554 3.92725H1.47025C1.46284 3.92725 1.44886 3.92975 1.43201 3.9477C1.41497 3.96583 1.39952 3.99631 1.39952 4.03797C1.39952 4.08195 1.41554 4.11231 1.43129 4.12918C1.44635 4.14528 1.45952 4.14869 1.47025 4.14869H9.92554C9.93628 4.14869 9.94945 4.14528 9.9645 4.12917C9.98026 4.11231 9.99628 4.08195 9.99628 4.03797C9.99628 3.99399 9.98026 3.96363 9.9645 3.94676C9.94945 3.93065 9.93628 3.92725 9.92554 3.92725Z" fill="#434343" stroke="#434343" />
+                        <path d="M6.05771 6.99207C6.05771 6.94835 6.05342 6.91126 6.04753 6.88135H1.40998C1.40394 6.91129 1.39952 6.94841 1.39952 6.99207C1.39952 7.03579 1.40382 7.07288 1.4097 7.1028H6.04753C6.05342 7.07288 6.05771 7.03579 6.05771 6.99207ZM1.43826 6.79797C1.43826 6.79796 1.43803 6.79828 1.4376 6.79898L1.43826 6.79797ZM1.43766 7.18682C1.43766 7.18681 1.43746 7.18647 1.43702 7.18584L1.43766 7.18682ZM6.01958 7.18682C6.01958 7.18683 6.01981 7.18652 6.02022 7.18584L6.01958 7.18682ZM6.02022 6.79831C6.0198 6.79763 6.01958 6.79731 6.01958 6.79733L6.02022 6.79831Z" fill="#434343" stroke="#434343" />
+                    </svg>
+                </span>
+                <span id="detail-WLEO">...</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="background-cover" style="margin-top:15px;margin: 16px 16px;padding: 16px 16px;">
+    <div class="row">
+        <!--Group 1-->
+        <div class="item-p form-group group-title">
+            <div class="left-label">
+                <span class="item-label" data-i18n="Tổng hợp tháng">Tổng hợp tháng</span>
+            </div>
+            <div class="right-label">
+                <span class="item-label">&nbsp;</span>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="listTotal">
+
+        @*<div class="form-group item-container">
+                <div class="left-label">
+                    <div class="item-label" id="" data-i18n="QUỸ PHÉP CÒN LẠI">Quỹ phép còn lại</div>
+                </div>
+                <div class="right-label">
+                    <span class="item-label" id="cw1">2.5</span>
+                </div>
+            </div>*@
+    </div>
+    <template id="tempItem">
+        <div class="form-group item-container">
+            <div class="left-label">
+                <div class="item-label">{{label}}</div>
+            </div>
+            <div class="right-label">
+                <span class="item-label">{{value}}</span>
+            </div>
+        </div>
+    </template>
+</div>
+@section scripts{
+    <script>
+        $("#loading").hide();
+
+        /* Vietnamese initialisation for the jQuery UI date picker plugin. */
+        /* Translated by Le Thanh Huy (lthanhhuy@cit.ctu.edu.vn). */
+        (function (factory) {
+            if (typeof define === "function" && define.amd) {
+
+                // AMD. Register as an anonymous module.
+                define(["../widgets/datepicker"], factory);
+            } else {
+
+                // Browser globals
+                factory(jQuery.datepicker);
+            }
+        }(function (datepicker) {
+
+            datepicker.regional.vi = {
+                closeText: "Đóng",
+                prevText: "&#x3C;Trước",
+                nextText: "Tiếp&#x3E;",
+                currentText: "Hôm nay",
+                monthNames: ["Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Tư", "Tháng Năm", "Tháng Sáu",
+                    "Tháng Bảy", "Tháng Tám", "Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai"],
+                monthNamesShort: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6",
+                    "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+                dayNames: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"],
+                dayNamesShort: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+                dayNamesMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+                weekHeader: "Tu",
+                dateFormat: "dd/mm/yy",
+                firstDay: 0,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: ""
+            };
+            datepicker.setDefaults(datepicker.regional.vi);
+           return datepicker.regional.vi;
+
+        }));
+        var rsData;
+        var currentMonth;
+        var rsTypeLeave = @Html.Raw(Json.Encode(@listTypeLeave));
+        function loadData(year, month) {
+            //reset
+            $('#tongngaycong').text('0');
+            $('#solandmvs').text('0');
+            $('#detail-icon').hide();
+            $('#detail-date').text('');
+            $('#detail-title').text('');
+            $('#detail-WLEO').text('');
+            //load
+            PostAjax({
+                url: '@Url.Action("GetMyTimeSheetPortalByMonth", "TimeSheet")',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: '{request: '+ JSON.stringify({ "Year": year, "Month": month, "Lang": "vi-VN" })+' }',
+                 success: function (data) {
+                     rsData = data;
+                     $('#calendar').datepicker({
+                         inline: true,
+                         firstDay: 1,
+                         showOtherMonths: false
+                         , nextText: '>'
+                         , prevText: '<'
+                         //Đổi tháng
+                         , onChangeMonthYear: function (cu_year, cu_month) {
+                             console.log('onChangeMonthYear:' + cu_month);
+                             currentMonth = cu_month;
+                             loadData(cu_year, cu_month);
+                             loadDataTotal(cu_year, cu_month);
+                         }
+                         //Hiển thị màu nền, đánh dấu ngày
+                         , beforeShowDay: function (date) {
+                             var oDate = (new Date(date));
+                             return [true, "D" + oDate.getDate()];
+                         }
+                         //Chọn ngày + action
+                         , onSelect: function (date, inst) {
+                             inst.inline = false;
+                             $('#detail-icon').hide();
+                             $('#detail-date').text('');
+                             $('#detail-title').text('');
+                             $('#detail-WLEO').text('');
+                             if (rsData != undefined) {
+                                 if (rsData.Data.Table1.length > 0) {
+                                     //View detail
+                                     $('#detail-date').text(date.substring(0, 5));//show ngày
+                                     $('#detail-title').text("[" + ((rsData.Data.Table1[1]["D" + Number(date.substring(0, 2))]) || "No data") + "]");//Show ký hiệu công
+                                     $('#detail-WLEO').text(((rsData.Data.Table1[0]["D" + Number(date.substring(0, 2))]) || ""));//show ĐMVS
+                                     if ((rsData.Data.Table1[0]["D" + Number(date.substring(0, 2))])) $('#detail-icon').show(); else $('#detail-icon').hide();
+                                     var typeChoose = rsTypeLeave.find(m => m.CODE === rsData.Data.Table1[1]["D" + Number(date.substring(0, 2))]);
+                                     if (typeChoose != undefined) $('#detail-title').text(' ' + typeChoose.NAME);
+                                 }
+                             }
+                             //default action
+                             //This removes any existing selection styling.
+                             $(".ui-datepicker-calendar .ui-datepicker-current-day").removeClass("ui-datepicker-current-day").children().removeClass("ui-state-active");
+
+                             //This finds the selected link and styles it accordingly.
+                             //You can probably change the selectors, depending on your layout.
+                             $(".ui-datepicker-calendar TBODY A").each(function () {
+                                 if ($(this).text() == inst.selectedDay) {
+                                     $(this).addClass("ui-state-active");
+                                     $(this).parent().addClass("ui-datepicker-current-day");
+                                 }
+                             });
+                         }
+                     });
+                     $.datepicker.setDefaults($.datepicker.regional["vi"]);
+                     loadDotInDay(rsData);
+                 }
+                 , error: function (ex) {
+                     console.log('error');
+
+                     rsData = ex;
+                 }
+                }, true);
+        }
+        var rsDataTotal;
+        function loadDataTotal(year, month) {
+            PostAjax({
+                url: '@Url.Action("GetTotalTimeSheetPortalByMonth", "TimeSheet")',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: '{request: '+ JSON.stringify({ "Year": year, "Month": month, "Lang": "vi-VN" })+' }',
+                 success: function (data) {
+                     rsDataTotal = data;
+                     if (rsDataTotal.Data[0] != null) {
+                         var arrKeys = Object.keys(rsDataTotal.Data[0]);
+                         $('#listTotal').html("");
+                         for (var n = 0; n < arrKeys.length;n++)
+                         {
+                             if (arrKeys[n].startsWith("WORKING_"))
+                             {
+                                 var newItem = $('#tempItem').html();
+                                 var findType = rsTypeLeave.find(m => m.CODE === arrKeys[n].replace('WORKING_', ''));
+                                 if (findType != null) {
+                                    newItem = newItem.replace('{{label}}', findType.NAME);
+                                    newItem = newItem.replace('{{value}}', rsDataTotal.Data[0][arrKeys[n]]||'');
+                                     $('#listTotal').append(newItem);
+                                 }
+                             }
+                          }
+                     }
+                 }
+                 , error: function (ex) {
+                     console.log('error');
+
+                     rsData = ex;
+                 }
+                }, true);
+        }
+
+        function loadDotInDay(rsData) {
+            if (rsData.Data.Table1.length > 0) {
+                for (var i = 1; i <= 31; i++) {
+                    //off
+                    if (rsData.Data.Table1[1]['D' + i] == "OFF" || rsData.Data.Table1[1]['D' + i] == null) {
+                        $('#calendar').find('.D' + i).addClass('dayOff');
+                    } else if ((rsData.Data.Table1[1]["D" + i]) == "P") {
+                        $('#calendar').find('.D' + i).addClass('dayLeave');
+                    } else if ((rsData.Data.Table1[1]["D" + i]) == "O") {
+                        $('#calendar').find('.D' + i).addClass('dayOT');
+                    }else if ((rsData.Data.Table1[0]["D" + i]) > 0) {
+                        $('#calendar').find('.D' + i).addClass('dayWLEO');
+                    }
+                }
+
+                //Thêm các đánh dấu cho ngày
+                $('#calendar').find('.dayWLEO').append('<div class="containdotWLEO"><span class="dotWLEO"></span></div>');
+                $('#calendar').find('.dayOT').append('<div class="containdotOT"><span class="dotOT"></span></div>');
+                $('#calendar').find('.dayLeave').append('<div class="containdotLeave"><span class="dotLeave"></span></div>');
+
+                //total
+                $('#tongngaycong').text(rsData.Data.Table1[1]['TOTAL']);
+                $('#solandmvs').text(rsData.Data.Table1[0]['TOTAL']);
+            } else {
+
+            }
+        }
+
+        $(document).ready(function () {
+            var cuDate = new Date();
+            currentMonth = cuDate.getMonth() + 1;
+            loadData(cuDate.getFullYear(), currentMonth);
+            loadDataTotal(cuDate.getFullYear(), currentMonth);
+            $("#loading").hide();
+        });
+    </script>
+}

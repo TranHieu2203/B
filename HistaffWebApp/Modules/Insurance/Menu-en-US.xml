@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Business" PostBack="False">
+      <Group>
+        <Item Value="ctrlInsClosedNew" Text="Declaring new insurance" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsClosedNew&amp;group=Business" CheckPermission="True"/>
+        <Item Value="ctrlManInfoIns" Text="Insurance information management" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlManInfoIns&amp;group=Business" CheckPermission="True"/>
+        <Item Value="ctrlInsInfoOld" Text="Insurance information management old " PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsInfoOld&amp;group=Business" CheckPermission="True"/>
+        <Item Value="ctrlInsChange" Text="Fluctuations in insurance management" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsChange&amp;group=Business" CheckPermission="True"/>
+        <Item Value="ctrlInsRemigeManager" Text="Management of insurance entitlement" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsRemigeManager&amp;group=Business" CheckPermission="True"/>
+        <Item Value="ctrlInsManagerSunCare" Text="Insurance management Health Care" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsManagerSunCare&amp;group=Business" CheckPermission="True"/>
+        <Item Value="ctrlManGroupSunCare" Text="Declare adjust insurance group Health Care" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlManGroupSunCare&amp;group=Business" CheckPermission="True"/>
+      </Group>
+    </Item>
+
+    <Item Text="Report" PostBack="False">
+      <Group>
+        <Item Value="ctrlINS_ReportList" Text="List Report" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlINS_ReportList&amp;group=Report" CheckPermission="True"/>
+      </Group>
+    </Item>
+
+    <Item Text="Category" PostBack="False">
+      <Group>
+        <Item Value="ctrlDMRegion" Text="Insurance area" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlDMRegion&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlDMGroupRegimes" Text="Group Insurance entitlement" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlDMGroupRegimes&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlInsListRegimes" Text="Insurance regime" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsListRegimes&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlInsListArisingType" Text="Fluctuation Insurance" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsListArisingType&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlDMNoiKhamChuaBenh" Text="Health care position" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlDMNoiKhamChuaBenh&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlInsListParamInsurance" Text="Regulation Insurance premiums" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsListParamInsurance&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlInsObjectPayInsurrance" Text="Specified object insurance premiums" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsObjectPayInsurrance&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlDMCostLever" Text="Insurance Health Care - The cost for each group" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlDMCostLever&amp;group=List" CheckPermission="True"/>
+      </Group>
+    </Item>
+
+  </Group>
+</Menu>

@@ -1,0 +1,6 @@
+﻿UPDATE A 
+   SET IsTransfer = 1
+  FROM CHECKINOUT A
+ WHERE IsTransfer = 0 
+	AND [Date] >= CONVERT(date,'{0}',103)
+	AND [Date] <= CONVERT(date,'{1}',103)

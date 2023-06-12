@@ -1,0 +1,543 @@
+﻿CREATE OR REPLACE PACKAGE BODY "PKG_OMS_ATTENDANCE_BUSINESS" IS
+  PROCEDURE GET_REGISTER_LEAVE_APPROVE(P_DATE_FROM   IN DATE,
+                                       P_TO_DATE     IN DATE,
+                                       P_EMP_APPROVE IN NUMBER,
+                                       P_LANG        IN NVARCHAR2,
+                                       P_COLOR       IN NVARCHAR2,
+                                       P_EMPLOYEE_ID IN NUMBER,
+                                       P_CUR         OUT CURSOR_TYPE,
+                                       P_CUR1        OUT CURSOR_TYPE,
+                                       P_CUR2        OUT CURSOR_TYPE) IS
+    P_SQL  CLOB;
+    P_I    NUMBER := 0;
+    P_SQL2 CLOB;
+    P_Char NVARCHAR2(30) := ' ';
+  BEGIN
+    -- LAY DANH COT
+    FOR C IN (SELECT CDATE
+                FROM TABLE(TABLE_LISTDATE(P_DATE_FROM, P_TO_DATE))) LOOP
+      P_I := P_I + 1;
+      --P_SQL := P_SQL || ', ''' || TO_CHAR(C.CDATE, 'DD/MM') || ''' C' || P_I;
+      --P_SQL := P_SQL || ', ''' || TO_CHAR(C.CDATE, 'DD/MM') || ''' C' || P_I;
+      P_SQL2 := P_SQL2 ||
+                TO_CLOB(', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                        TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                        ''',''MM/DD/YYYY'') THEN ''CLS'' || R.PARENT_ID ELSE '' '' END) PARENT_ID' || P_I ||
+                        ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                        TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                        ''',''MM/DD/YYYY'') THEN M.CODE ELSE CAST('' '' As NVARCHAR2(30)) END) CODE' || P_I ||
+                        ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN TO_CHAR(NVL(R.NOTE, '' '')) ELSE '' '' END) DREMARKS' || P_I ||
+                       ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                        TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                        ''',''MM/DD/YYYY'') THEN ''CLS'' || R.PARENT_ID || '' '' || CASE A.APPROVE_STATUS WHEN 1 THEN ''Pending'' WHEN 2 THEN ''Approved'' WHEN 3 THEN ''Rejected'' END ELSE '' '' END) D' || P_I ||
+                        '_COLOR' ||
+                        ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                        TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                        ''',''MM/DD/YYYY'') THEN R.ID_EMPLOYEE || ''|'' || R.ID || ''|'' || R.ID_REGGROUP ELSE '' '' END) D' || P_I);
+    END LOOP;
+  
+    WHILE (P_I < 62) LOOP
+      P_I    := P_I + 1;
+      P_SQL2 := P_SQL2 ||
+                TO_CLOB(', '' '' PARENT_ID' || P_I || ', '' '' CODE' || P_I || ', '' '' DREMARKS' || P_I ||
+                        ', ''InActive'' D' || P_I || '_COLOR, '' '' D' || P_I);
+    END LOOP;
+  
+    OPEN P_CUR FOR
+      SELECT TO_CHAR(CDATE, 'DD/MM') CDATE
+        FROM TABLE(TABLE_LISTDATE(P_DATE_FROM, P_TO_DATE)); -- 'SELECT 1 C0 ' || P_SQL || ' FROM DUAL';
+  
+    P_SQL2 := 'SELECT CASE WHEN :P_EMPLOYEE_ID = R.ID_EMPLOYEE THEN 0 ELSE 1 END STT, E.EMPLOYEE_CODE, R.ID_EMPLOYEE EMPLOYEE_ID,  
+                E.FULLNAME_VN EMPLOYEE_NAME,
+                CASE WHEN ''vi-VN''= :P_LANG THEN O.NAME_VN ELSE O.NAME_EN END ORG_NAME,
+                CASE WHEN ''vi-VN''= :P_LANG THEN T.NAME_VN ELSE T.NAME_EN END TITLE_NAME' ||
+              P_SQL2 || ' 
+                FROM AT_PORTAL_REG R 
+                INNER JOIN AT_PORTAL_APP A ON A.REGISTER_ID = R.ID
+                LEFT JOIN HU_EMPLOYEE E ON E.ID=R.ID_EMPLOYEE
+                LEFT JOIN HU_ORGANIZATION O ON O.ID=E.ORG_ID
+                LEFT JOIN AT_TIME_MANUAL M ON M.ID=R.ID_SIGN
+                LEFT JOIN HU_TITLE T ON T.ID=E.TITLE_ID 
+                WHERE R.FROM_DATE BETWEEN :P_DATE_FROM AND :P_TO_DATE 
+                      AND R.SVALUE=''LEAVE'' 
+                      AND A.ID_EMPLOYEE = :P_EMP_APPROVE
+                      AND (A.APPROVE_STATUS=1 OR A.APPROVE_STATUS=2)
+                      AND ((A.APPROVE_STATUS IN
+                     (SELECT REGEXP_SUBSTR(:P_COLOR, ''[^,]+'', 1, LEVEL) AS IVALUE 
+                          FROM DUAL
+                        CONNECT BY REGEXP_SUBSTR(:P_COLOR,
+                                                 ''[^,]+'',
+                                                 1,
+                                                 LEVEL) IS NOT NULL)) OR
+                     :P_COLOR = ''0'')
+                GROUP BY R.ID_EMPLOYEE, E.EMPLOYEE_CODE, O.NAME_VN, O.NAME_EN, E.FULLNAME_VN, T.NAME_VN, T.NAME_EN';
+  
+    --dbms_output.put_line (P_SQL2);
+  
+    OPEN P_CUR1 FOR P_SQL2 || ' ORDER BY STT, E.EMPLOYEE_CODE '
+      USING P_EMPLOYEE_ID, P_LANG, P_LANG, P_DATE_FROM, P_TO_DATE, P_EMP_APPROVE, P_COLOR, P_COLOR, P_COLOR;
+    OPEN P_CUR2 FOR '
+      SELECT COUNT(*) TOTAL FROM (' || P_SQL2 || ')'
+      USING P_EMPLOYEE_ID, P_LANG, P_LANG, P_DATE_FROM, P_TO_DATE, P_EMP_APPROVE, P_COLOR, P_COLOR, P_COLOR;
+  END;
+  PROCEDURE GET_REGISTER_OT_APPROVE(P_DATE_FROM   IN DATE,
+                                    P_TO_DATE     IN DATE,
+                                    P_EMP_APPROVE IN NUMBER,
+                                    P_LANG        IN NVARCHAR2,
+                                    P_COLOR       IN NVARCHAR2,
+                                    P_EMPLOYEE_ID IN NUMBER,
+                                    P_CUR         OUT CURSOR_TYPE,
+                                    P_CUR1        OUT CURSOR_TYPE,
+                                    P_CUR2        OUT CURSOR_TYPE) IS
+    P_SQL  CLOB;
+    P_I    NUMBER := 0;
+    P_SQL2 CLOB;
+    P_Char NVARCHAR2(30) := ' ';
+  BEGIN
+    -- LAY DANH COT
+    FOR C IN (SELECT CDATE
+                FROM TABLE(TABLE_LISTDATE(P_DATE_FROM, P_TO_DATE))) LOOP
+      P_I := P_I + 1;
+      --P_SQL := P_SQL || ', ''' || TO_CHAR(C.CDATE, 'DD/MM') || ''' C' || P_I;
+      --P_SQL := P_SQL || ', ''' || TO_CHAR(C.CDATE, 'DD/MM') || ''' C' || P_I;
+      P_SQL2 := P_SQL2 || 
+                TO_CLOB(', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN ''CLS'' || R.PARENT_ID ELSE '' '' END) PARENT_ID' || P_I ||
+                ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN TO_CHAR((R.TO_HOUR - R.FROM_HOUR)*24) ELSE '' ''  END) CODE' || P_I ||
+                ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN TO_CHAR(NVL(R.NOTE, '' '')) ELSE '' '' END) DREMARKS' || P_I ||
+               ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN ''CLS'' || R.PARENT_ID || '' '' || CASE R.STATUS WHEN 1 THEN ''Pending'' WHEN 2 THEN ''Approved'' WHEN 3 THEN ''Rejected'' END ELSE '' '' END) D' || P_I ||
+                '_COLOR' || ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN R.ID_EMPLOYEE || ''|'' || R.ID || ''|'' || R.ID_REGGROUP ELSE '' '' END) D' || P_I);
+    END LOOP;
+  
+    WHILE (P_I < 62) LOOP
+      P_I    := P_I + 1;
+      P_SQL2 := P_SQL2 ||
+                TO_CLOB(', '' '' PARENT_ID' || P_I || ', '' '' CODE' || P_I || ', '' '' DREMARKS' || P_I ||
+                        ', ''InActive'' D' || P_I || '_COLOR, '' '' D' || P_I);
+    END LOOP;
+  
+    OPEN P_CUR FOR
+      SELECT TO_CHAR(CDATE, 'DD/MM') CDATE
+        FROM TABLE(TABLE_LISTDATE(P_DATE_FROM, P_TO_DATE)); -- 'SELECT 1 C0 ' || P_SQL || ' FROM DUAL';
+  
+    P_SQL2 := 'SELECT CASE WHEN :P_EMPLOYEE_ID = R.ID_EMPLOYEE THEN 0 ELSE 1 END STT, E.EMPLOYEE_CODE, R.ID_EMPLOYEE EMPLOYEE_ID,  
+                E.FULLNAME_VN EMPLOYEE_NAME,
+                CASE WHEN ''vi-VN''= :P_LANG THEN O.NAME_VN ELSE O.NAME_EN END ORG_NAME,
+                CASE WHEN ''vi-VN''= :P_LANG THEN T.NAME_VN ELSE T.NAME_EN END TITLE_NAME' ||
+              P_SQL2 || ' 
+                FROM AT_PORTAL_REG R 
+                INNER JOIN AT_PORTAL_APP A ON A.REGISTER_ID = R.ID
+                LEFT JOIN HU_EMPLOYEE E ON E.ID=R.ID_EMPLOYEE
+                LEFT JOIN HU_ORGANIZATION O ON O.ID=E.ORG_ID
+                LEFT JOIN HU_TITLE T ON T.ID=E.TITLE_ID 
+                WHERE R.FROM_DATE BETWEEN :P_DATE_FROM AND :P_TO_DATE 
+                AND R.SVALUE=''OVERTIME''
+                AND (A.APPROVE_STATUS=1 OR A.APPROVE_STATUS=2)
+                AND A.ID_EMPLOYEE = :P_EMP_APPROVE
+                AND ((A.APPROVE_STATUS IN
+                     (SELECT REGEXP_SUBSTR(:P_COLOR, ''[^,]+'', 1, LEVEL) AS IVALUE 
+                          FROM DUAL
+                        CONNECT BY REGEXP_SUBSTR(:P_COLOR,
+                                                 ''[^,]+'',
+                                                 1,
+                                                 LEVEL) IS NOT NULL)) OR
+                     :P_COLOR = ''0'')
+                GROUP BY R.ID_EMPLOYEE, E.EMPLOYEE_CODE, O.NAME_VN, O.NAME_EN, E.FULLNAME_VN, T.NAME_VN, T.NAME_EN';
+  
+    --dbms_output.put_line (P_SQL2);
+  
+    OPEN P_CUR1 FOR P_SQL2
+      USING P_EMPLOYEE_ID, P_LANG, P_LANG, P_DATE_FROM, P_TO_DATE, P_EMP_APPROVE, P_COLOR, P_COLOR, P_COLOR;
+    OPEN P_CUR2 FOR '
+      SELECT COUNT(*) TOTAL FROM (' || P_SQL2 || ')'
+      USING P_EMPLOYEE_ID, P_LANG, P_LANG, P_DATE_FROM, P_TO_DATE, P_EMP_APPROVE, P_COLOR, P_COLOR, P_COLOR;
+  END;
+  PROCEDURE GET_REGISTER_DMVS_APPROVE(P_DATE_FROM   IN DATE,
+                                      P_TO_DATE     IN DATE,
+                                      P_EMP_APPROVE IN NUMBER,
+                                      P_TYPE        IN NVARCHAR2,
+                                      P_COLOR       IN NVARCHAR2,
+                                      P_LANG        IN NVARCHAR2,
+                                      P_EMPLOYEE_ID IN NUMBER,
+                                      P_CUR         OUT CURSOR_TYPE,
+                                      P_CUR1        OUT CURSOR_TYPE,
+                                      P_CUR2        OUT CURSOR_TYPE) is
+  
+    P_I    NUMBER := 0;
+    P_SQL2 CLOB;
+  BEGIN
+    -- Lay danh cot
+    FOR C IN (SELECT CDATE
+                FROM TABLE(table_listdate(P_DATE_FROM, P_TO_DATE))) LOOP
+      P_I    := P_I + 1;
+      P_SQL2 := P_SQL2 || 
+                TO_CLOB(', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN ''CLS'' || R.PARENT_ID ELSE '' '' END) PARENT_ID' || P_I ||
+                ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN TO_CHAR(R.DM) || ''/'' || TO_CHAR(R.VS) ELSE '' '' END) TIMES' || P_I ||
+               ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN TO_CHAR(NVL(R.NOTE, '' '')) ELSE '' '' END) DREMARKS' || P_I ||
+                ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN ''CLS'' || R.PARENT_ID || '' '' || CASE R.STATUS WHEN 1 THEN ''Pending'' WHEN 2 THEN ''Approved'' WHEN 3 THEN ''Rejected'' END ELSE '' '' END) D' || P_I ||
+                '_COLOR' || ', MAX(CASE WHEN R.FROM_DATE=TO_DATE(''' ||
+                TO_CHAR(C.CDATE, 'MM/DD/YYYY') ||
+                ''',''MM/DD/YYYY'') THEN R.ID || ''|'' || R.ID_REGGROUP ELSE '' '' END) D' || P_I);
+    END LOOP;
+  
+    WHILE (P_I < 62) LOOP
+      P_I    := P_I + 1;
+      P_SQL2 := P_SQL2 ||
+                TO_CLOB(', '' '' PARENT_ID' || P_I || ', '' '' TIMES' || P_I || ', '' '' DREMARKS' || P_I ||
+                        ', ''InActive'' D' || P_I || '_COLOR, '' '' D' || P_I);
+    END LOOP;
+  
+    OPEN P_CUR FOR
+      SELECT TO_CHAR(CDATE, 'DD/MM') CDATE
+        FROM TABLE(table_listdate(P_DATE_FROM, P_TO_DATE));
+  
+    P_SQL2 := 'WITH PORTAL_REG AS (
+    SELECT TO_CHAR(D.ID) || ''|'' || TO_CHAR(D.ID_1) ID, D.ID_JOIN, D.FROM_DATE, D.DM, D.VS, D.Status, D.ID_EMPLOYEE, D.PARENT_ID, D.ID_REGGROUP, D.NOTE FROM (
+      SELECT  (case when MIN(NOTE)<> max(NOTE) then MIN(NOTE)|| '', '' ||MAX(NOTE) else max(note) end ) NOTE, MAX(C.a) ID, MAX(C.b) ID_1, C.FROM_DATE, MAX(C.ID_JOIN) ID_JOIN, SUM(C.DM) DM, SUM(C.VS) VS, C.Status, C.ID_EMPLOYEE, MAX(C.PARENT_ID) PARENT_ID, max( C.ID_REGGROUP) ID_REGGROUP
+                FROM (SELECT A.ID a,
+                             0 b,
+                             A.FROM_DATE FROM_DATE,
+                             A.TO_DATE   TO_DATE,
+                             NVL(A.NVALUE,0)    DM,
+                             0           VS,
+                             A.STATUS,
+                             A.ID ID_JOIN,
+                             A.ID_EMPLOYEE,
+                             A.PARENT_ID,
+                             A.ID_REGGROUP,
+                             NVL(A.NOTE,'''') NOTE
+                        FROM AT_PORTAL_REG A
+                       WHERE A.ID_SIGN = 168 AND A.Svalue = :P_TYPE
+                      UNION ALL
+                      SELECT 0,
+                             A.ID,
+                             A.FROM_DATE FROM_DATE,
+                             A.TO_DATE   TO_DATE,
+                             0           DM,
+                             NVL(A.NVALUE,0)    VS,
+                             A.STATUS,
+                             A.ID,
+                             A.ID_EMPLOYEE,
+                             A.PARENT_ID,
+                             A.ID_REGGROUP,
+                            NVL(A.NOTE,'''') NOTE
+                        FROM AT_PORTAL_REG A
+                       WHERE A.ID_SIGN = 167 AND A.Svalue = :P_TYPE) C
+               GROUP BY C.FROM_DATE, C.Status, C.ID_EMPLOYEE --, C.ID_REGGROUP -- , C.PARENT_ID
+               ORDER BY C.FROM_DATE) D
+  )
+  SELECT CASE WHEN :P_EMPLOYEE_ID = R.ID_EMPLOYEE THEN 0 ELSE 1 END STT, E.EMPLOYEE_CODE, R.ID_EMPLOYEE EMPLOYEE_ID,  
+                E.FULLNAME_VN EMPLOYEE_NAME,
+                CASE WHEN ''vi-VN''= :P_LANG THEN O.NAME_VN ELSE O.NAME_EN END ORG_NAME,
+                CASE WHEN ''vi-VN''= :P_LANG THEN T.NAME_VN ELSE T.NAME_EN END TITLE_NAME' ||
+              P_SQL2 || ' 
+                FROM PORTAL_REG R 
+                LEFT JOIN HU_EMPLOYEE E ON E.ID=R.ID_EMPLOYEE
+                left JOIN AT_PORTAL_APP A ON A.REGISTER_ID = R.ID_JOIN
+                LEFT JOIN HU_ORGANIZATION O ON O.ID=E.ORG_ID
+                LEFT JOIN HU_TITLE T ON T.ID=E.TITLE_ID 
+                WHERE R.FROM_DATE BETWEEN :P_DATE_FROM AND :P_TO_DATE AND A.ID_EMPLOYEE = :P_EMP_APPROVE
+                AND ((R.STATUS IN
+                     (SELECT REGEXP_SUBSTR(:P_COLOR, ''[^,]+'', 1, LEVEL) AS IVALUE 
+                          FROM DUAL
+                        CONNECT BY REGEXP_SUBSTR(:P_COLOR,
+                                                 ''[^,]+'',
+                                                 1,
+                                                 LEVEL) IS NOT NULL)) OR
+                     :P_COLOR = ''0'')
+                AND (A.APPROVE_STATUS in (1,2,3))
+                GROUP BY R.ID_EMPLOYEE, E.EMPLOYEE_CODE, O.NAME_VN, O.NAME_EN, E.FULLNAME_VN, T.NAME_VN, T.NAME_EN';
+  
+    OPEN P_CUR1 FOR P_SQL2 || ' ORDER BY STT, E.EMPLOYEE_CODE '
+      USING P_TYPE, P_TYPE, P_EMPLOYEE_ID, P_LANG, P_LANG, P_DATE_FROM, P_TO_DATE, P_EMP_APPROVE, P_COLOR, P_COLOR, P_COLOR;
+  
+    OPEN P_CUR2 FOR '
+      SELECT COUNT(*) TOTAL FROM (' || P_SQL2 || ')'
+      USING P_TYPE, P_TYPE, P_EMPLOYEE_ID, P_LANG, P_LANG, P_DATE_FROM, P_TO_DATE, P_EMP_APPROVE, P_COLOR, P_COLOR, P_COLOR;
+  
+  END;
+  -- NGUYEN THANH CHIEN
+  PROCEDURE GET_TASKLIST_REG(P_EMPLOYEE_ID IN NUMBER,
+                             P_LANG        IN NVARCHAR2,
+                             P_CUR         OUT CURSOR_TYPE) IS
+  BEGIN
+    OPEN P_CUR FOR
+      SELECT R.ID,
+             RD.SVALUE,
+             CASE
+               WHEN rd.SVALUE = 'LEAVE' THEN
+                U'Ngh\1EC9'
+               WHEN rd.SVALUE = 'WLEO' THEN
+                U'\0110i mu\1ED9n/V\1EC1 s\1EDBm'
+               ELSE
+                U'OT'
+             END TYPE_NAME,
+             CAST(R.ID_REGGROUP AS VARCHAR2(50)) ID_REGGROUP,
+             R.FROM_DATE,
+             R.TO_DATE,
+             E.ID EMPLOYEE_ID,
+             NVL(P.EMPLOYEE_NAME, E.FULLNAME_VN) EMPLOYEE_NAME,
+             --RD.STATUS APPROVE_STATUS,
+            NVL(R.STATUS_ID, 0) APPROVE_STATUS,
+             AP.APPROVE_DATE,
+             CASE NVL(R.STATUS_ID, 0)
+               WHEN 0 THEN
+                u'Kh\1edfi t\1ea1o'
+               WHEN 1 THEN
+                u'Ch\1edd ph\00ea duy\1ec7t'
+               WHEN 2 THEN
+                u'\0110\00e3 duy\1ec7t'
+               WHEN 3 THEN
+                u'T\1eeb ch\1ed1i'
+               ELSE
+                null
+             END APPROVE_STATUS_NAME,TRUNC(p.sent_date)sent_date,TRUNC(p.REGDATE)REGDATE
+        FROM AT_REGISTER_PORTAL r
+        LEFT JOIN (SELECT MAX(NVL(EMPLOYEE_REJECT,EMPLOYEE_APPROVE )) EMPLOYEE_NAME,
+                          PARENT_ID,sent_date,REGDATE
+                     FROM (SELECT CASE WHEN A.APPROVE_STATUS IN (1, 2) THEN E.FULLNAME_VN END EMPLOYEE_APPROVE,
+                                  CASE WHEN A.APPROVE_STATUS = 3 THEN E.FULLNAME_VN END EMPLOYEE_REJECT,
+                                  R.PARENT_ID, r.sent_date, r.REGDATE
+                             FROM AT_PORTAL_REG R
+                             LEFT JOIN AT_PORTAL_APP A ON A.REGISTER_ID = R.ID
+                             LEFT JOIN HU_EMPLOYEE E ON E.ID = A.ID_EMPLOYEE
+                             WHERE R.ID_EMPLOYEE  = P_EMPLOYEE_ID
+                               )
+                    GROUP BY PARENT_ID, sent_date, REGDATE) P
+          ON P.PARENT_ID = R.ID
+        LEFT JOIN (SELECT ID_REGGROUP,
+                          APPROVE_DATE,
+                          ID_EMPLOYEE,
+                          ID_REQUSERID,
+                          ID
+                     FROM (
+                           -- Ng?y ph? duy?t cu?i
+                           SELECT ROW_NUMBER() OVER(PARTITION BY A.ID_REGGROUP ORDER BY A.APPROVE_DATE DESC, A.ID DESC) AS STT,
+                                   A.ID_REGGROUP,
+                                   A.APPROVE_DATE,
+                                   A.ID_EMPLOYEE,
+                                   A.ID_REQUSERID,
+                                   A.ID
+                             FROM  AT_PORTAL_REG R
+                             LEFT JOIN AT_PORTAL_APP A ON A.REGISTER_ID = R.ID
+                             LEFT JOIN HU_EMPLOYEE E ON E.ID = A.ID_EMPLOYEE
+                             WHERE R.ID_EMPLOYEE  = P_EMPLOYEE_ID
+                             ) B
+                    WHERE STT = 1) ap
+          ON r.ID_REGGROUP = ap.ID_REGGROUP
+        LEFT JOIN HU_EMPLOYEE e ON e.ID = ap.ID_EMPLOYEE
+       INNER JOIN (SELECT PARENT_ID, EMPLOYEE_ID, status, SVALUE
+                     FROM (SELECT ROW_NUMBER() OVER(PARTITION BY PARENT_ID, ID_EMPLOYEE ORDER BY ID DESC) AS STT,
+                                  PARENT_ID,
+                                  ID_EMPLOYEE EMPLOYEE_ID,
+                                  status,
+                                  SVALUE
+                             FROM AT_PORTAL_REG R
+                             WHERE R.ID_EMPLOYEE  = P_EMPLOYEE_ID
+                             ) B
+                    WHERE STT = 1) rd
+          ON r.ID = rd.PARENT_ID
+       WHERE rd.EMPLOYEE_ID = P_EMPLOYEE_ID
+      ORDER BY sent_date DESC, REGDATE DESC;
+  END;
+  PROCEDURE GET_TASKLIST_APPROVE(P_EMPLOYEE_ID IN NUMBER,
+                                 P_LANG        IN NVARCHAR2,
+                                 P_CUR         OUT CURSOR_TYPE) IS
+
+  BEGIN
+   
+      OPEN P_CUR FOR
+      SELECT R.ID,
+             RD.SVALUE,
+             CASE
+               WHEN rd.SVALUE = 'LEAVE' THEN
+                U'Ngh\1EC9'
+               WHEN rd.SVALUE = 'WLEO' THEN
+                U'\0110i mu\1ED9n/V\1EC1 s\1EDBm'
+               ELSE
+                U'OT'
+             END TYPE_NAME,
+             CAST(R.ID_REGGROUP AS VARCHAR2(50)) ID_REGGROUP,
+             R.FROM_DATE,
+             R.TO_DATE,
+             E.ID EMPLOYEE_ID,
+             NVL(P.EMPLOYEE_NAME, E.FULLNAME_VN) EMPLOYEE_NAME,
+             --RD.STATUS APPROVE_STATUS,
+            NVL(R.STATUS_ID, 0) APPROVE_STATUS,
+             AP.APPROVE_DATE,
+             CASE NVL(R.STATUS_ID, 0)
+               WHEN 0 THEN
+                u'Kh\1edfi t\1ea1o'
+               WHEN 1 THEN
+                u'Ch\1edd ph\00ea duy\1ec7t'
+               WHEN 2 THEN
+                u'Duy\1ec7t'
+               WHEN 3 THEN
+                u'T\1eeb ch\1ed1i'
+               ELSE
+                null
+             END APPROVE_STATUS_NAME,TRUNC(p.sent_date)sent_date,TRUNC(p.REGDATE)REGDATE,REQUEST_EMPLOYEE_NAME,REQUEST_JOB_POSITION_NAME
+        FROM AT_REGISTER_PORTAL r
+        LEFT JOIN (SELECT MAX(EMPLOYEE_ID) EMPLOYEE_ID,MAX(NVL(EMPLOYEE_APPROVE, EMPLOYEE_REJECT)) EMPLOYEE_NAME,
+                          PARENT_ID,sent_date,REGDATE
+                     FROM (SELECT E.ID EMPLOYEE_ID, CASE
+                                    WHEN A.APPROVE_STATUS IN ( 2,1) THEN
+                                     E.FULLNAME_VN
+                                  END EMPLOYEE_APPROVE,
+                                  CASE
+                                    WHEN A.APPROVE_STATUS = 3 THEN
+                                     E.FULLNAME_VN
+                                  END EMPLOYEE_REJECT,
+                                  R.PARENT_ID, r.sent_date, r.REGDATE
+                             FROM AT_PORTAL_REG R
+                             LEFT JOIN AT_PORTAL_APP A ON A.REGISTER_ID = R.ID
+                              LEFT JOIN HU_EMPLOYEE E ON E.ID = A.ID_EMPLOYEE
+                              WHERE A.ID_EMPLOYEE  = P_EMPLOYEE_ID 
+                              )
+                    GROUP BY PARENT_ID, sent_date, REGDATE) P
+          ON P.PARENT_ID = R.ID
+        LEFT JOIN (SELECT ID_REGGROUP,
+                          APPROVE_DATE,
+                          ID_EMPLOYEE,
+                          ID_REQUSERID,
+                          ID
+                     FROM (
+                           -- Ng?y ph? duy?t cu?i
+                           SELECT ROW_NUMBER() OVER(PARTITION BY A.ID_REGGROUP ORDER BY A.APPROVE_DATE DESC, A.ID DESC) AS STT,
+                                   A.ID_REGGROUP,
+                                   A.APPROVE_DATE,
+                                   A.ID_EMPLOYEE,
+                                   A.ID_REQUSERID,
+                                   A.ID
+                            FROM  AT_PORTAL_REG R
+                             LEFT JOIN AT_PORTAL_APP A ON A.REGISTER_ID = R.ID 
+                              WHERE A.ID_EMPLOYEE  = P_EMPLOYEE_ID 
+                             ) B
+                    WHERE STT = 1) ap
+          ON r.ID_REGGROUP = ap.ID_REGGROUP
+        LEFT JOIN HU_EMPLOYEE e
+          ON e.ID = ap.ID_EMPLOYEE
+       INNER JOIN (SELECT PARENT_ID, EMPLOYEE_ID, status, SVALUE, REQUEST_EMPLOYEE_NAME, REQUEST_JOB_POSITION_NAME
+                     FROM (SELECT ROW_NUMBER() OVER(PARTITION BY R.PARENT_ID, R.ID_EMPLOYEE ORDER BY R.ID DESC) AS STT,
+                                  R.PARENT_ID,
+                                  R.ID_EMPLOYEE EMPLOYEE_ID,
+                                  R.status,
+                                  EReq.Fullname_Vn REQUEST_EMPLOYEE_NAME,
+                    CASE
+               WHEN P_LANG = 'vi-VN' THEN
+                j.NAME
+               ELSE
+                j.NAME_EN
+             END REQUEST_JOB_POSITION_NAME
+                    , R.SVALUE
+                             FROM AT_PORTAL_REG R
+                             
+                              LEFT JOIN HU_EMPLOYEE EReq
+                               ON EReq.ID = R.ID_EMPLOYEE
+                              LEFT JOIN HU_JOB_POSITION j
+          ON EReq.JOB_POSITION_ID = j.ID) B
+                    WHERE STT = 1) rd
+          ON r.ID = rd.PARENT_ID
+       WHERE p.EMPLOYEE_ID = P_EMPLOYEE_ID AND NVL(R.STATUS_ID, 0)<> 0
+      ORDER BY sent_date DESC, REGDATE DESC;
+  END;
+  PROCEDURE GET_APPROVE_EMP(P_REGISTER_ID IN NUMBER,
+                            P_CUR         OUT CURSOR_TYPE) IS
+  BEGIN
+    OPEN P_CUR FOR
+      SELECT NVL(NVL(P.EMPLOYEE_NAME, E.FULLNAME_VN), 0) EMP
+        FROM AT_REGISTER_PORTAL R
+        LEFT JOIN (SELECT MAX(NVL(EMPLOYEE_APPROVE, EMPLOYEE_REJECT)) EMPLOYEE_NAME,
+                          PARENT_ID
+                     FROM (SELECT CASE
+                                    WHEN A.APPROVE_STATUS = 2 THEN
+                                     E.FULLNAME_VN
+                                  END EMPLOYEE_APPROVE,
+                                  CASE
+                                    WHEN A.APPROVE_STATUS = 3 THEN
+                                     E.FULLNAME_VN
+                                  END EMPLOYEE_REJECT,
+                                  R.PARENT_ID
+                             FROM AT_PORTAL_REG R
+                             LEFT JOIN AT_PORTAL_APP A
+                               ON A.REGISTER_ID = R.ID
+                             LEFT JOIN HU_EMPLOYEE E
+                               ON E.ID = A.ID_EMPLOYEE)
+                    GROUP BY PARENT_ID) P
+          ON P.PARENT_ID = R.ID
+        LEFT JOIN (SELECT ID_REGGROUP,
+                          APPROVE_DATE,
+                          ID_EMPLOYEE,
+                          ID_REQUSERID,
+                          ID
+                     FROM (
+                           -- NGAY PHE DUYET CUOI
+                           SELECT ROW_NUMBER() OVER(PARTITION BY ID_REGGROUP ORDER BY APPROVE_DATE DESC, ID DESC) AS STT,
+                                   ID_REGGROUP,
+                                   APPROVE_DATE,
+                                   ID_EMPLOYEE,
+                                   ID_REQUSERID,
+                                   ID
+                             FROM AT_PORTAL_APP) B
+                    WHERE STT = 1) AP
+          ON R.ID_REGGROUP = AP.ID_REGGROUP
+        LEFT JOIN HU_EMPLOYEE E
+          ON E.ID = AP.ID_EMPLOYEE
+       WHERE R.ID = P_REGISTER_ID;
+  END;
+  
+    PROCEDURE UPDATE_STATUS_REGISTER(P_REG_DETAIL_ID IN NUMBER)
+    AS
+        V_COUNT NUMBER(10) := 0;
+        V_COUNT_REJECT NUMBER(10) := 0;
+        V_PARENT_ID NUMBER(10);
+    BEGIN
+        SELECT PARENT_ID INTO V_PARENT_ID
+        FROM AT_PORTAL_REG 
+        WHERE ID = P_REG_DETAIL_ID;
+        
+        SELECT COUNT(1) INTO V_COUNT
+        FROM AT_PORTAL_REG ap
+        WHERE ap.PARENT_ID = V_PARENT_ID
+            AND ap.STATUS NOT IN (2,3);
+            
+        IF V_COUNT = 0 THEN
+            SELECT COUNT(*) INTO V_COUNT_REJECT
+            FROM AT_PORTAL_REG ap
+            WHERE ap.PARENT_ID = V_PARENT_ID
+                AND ap.STATUS = 3;
+        
+            IF V_COUNT = V_COUNT_REJECT THEN
+                UPDATE AT_REGISTER_PORTAL SET STATUS_ID = 3 WHERE ID = V_PARENT_ID;
+            ELSE
+                UPDATE AT_REGISTER_PORTAL SET STATUS_ID = 2 WHERE ID = V_PARENT_ID;
+            END IF;
+        
+            COMMIT;
+        END IF;
+    
+    EXCEPTION WHEN OTHERS THEN
+    BEGIN
+        ROLLBACK;
+    END;
+    END;
+END PKG_OMS_ATTENDANCE_BUSINESS;

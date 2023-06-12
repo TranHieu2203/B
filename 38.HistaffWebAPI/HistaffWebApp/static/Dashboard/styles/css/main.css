@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+body {
+    font-family: Roboto;
+}
+
+#wapper {
+    margin: 0px auto;
+    background: #f3f4f6;
+}
+
+#header {
+    background: #681c15;
+}
+
+#header img {
+    width: 150px;
+    height: 95px;
+    height: auto;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+#header p {
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
+    text-shadow: 5px 2px 4px grey;
+}
+
+#wp-content {
+    /* background: url("../images/b2.jpg"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: #FFF;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+
+/* #content {
+    text-align: center;
+    min-height: 650px;
+    padding-top: 250px;
+} */
+
+#content #button-a {
+    padding: 10px 30px 10px 30px;
+    margin-right: 20px;
+    border: 1px solid #00c4ff;
+    background: #00c4ff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#content #button-b {
+    padding: 10px 30px 10px 30px;
+    margin-left: 20px;
+    border: 1px solid #616151;
+    background: #acac8f;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#wp-content #content form>#button-a:hover {
+    background: blue;
+    border: 1px solid blue;
+}
+
+#wp-content #content form>#button-b:hover {
+    background: #898987;
+    border: 1px solid #898987;
+}
+
+
+/* #sidebar {
+    width: 270px;
+    float: left;
+    min-height: 850px;
+    padding: 20px 15px;
+    background: #fbfbfb;
+}
+
+#content {
+    width: 690px;
+    float: right;
+    min-height: 850px;
+    padding: 20px 15px;
+} */
+
+
+/* #footer {
+    background: #681c15;
+    padding: 24px 15px 34px 15px;
+    color: #fff;
+} */
+
+#text {
+    color: black;
+    padding-top: 50px;
+    text-align: -webkit-center;
+}
+
+#text tbody p {
+    padding-right: 25px;
+    line-height: 22px;
+}

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{505EA46A-2753-4FC4-9D86-E5383D9837BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InsuranceDAL</RootNamespace>
+    <AssemblyName>InsuranceDAL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>InsuranceDAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>InsuranceDAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\ref\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\LinqKit.1.0\lib\35\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\AT_TIME_MANUALDTO.vb" />
+    <Compile Include="BusinessObjects\ContractTypeDTO.vb" />
+    <Compile Include="BusinessObjects\ComboBoxDataDTO.vb" />
+    <Compile Include="BusinessObjects\INS_ARISING_LEAVESHEET_DTO.vb" />
+    <Compile Include="BusinessObjects\INS_CHANGE_INFO_DTO.vb" />
+    <Compile Include="BusinessObjects\Dashboard\StatisticDTO.vb" />
+    <Compile Include="BusinessObjects\Dashboard\StatisticInsCeilingDTO.vb" />
+    <Compile Include="BusinessObjects\Dashboard\StatisticInsRateDTO.vb" />
+    <Compile Include="BusinessObjects\INS_GROUP_SUN_CAREDTO.vb" />
+    <Compile Include="BusinessObjects\INS_GROUP_REGIMESDTO.vb" />
+    <Compile Include="BusinessObjects\INS_COST_FOLLOW_LEVERDTO.vb" />
+    <Compile Include="BusinessObjects\INS_LIST_CONTRACT_DETAILDTO.vb" />
+    <Compile Include="BusinessObjects\INS_LIST_CONTRACTDTO.vb" />
+    <Compile Include="BusinessObjects\INS_CLAIME_INSURANCEDTO.vb" />
+    <Compile Include="BusinessObjects\INS_LIST_PROGRAMDTO.vb" />
+    <Compile Include="BusinessObjects\INS_REGION_DTO.vb" />
+    <Compile Include="BusinessObjects\INS_INFORMATIONDTO_Print.vb" />
+    <Compile Include="BusinessObjects\INS_REMIGE_MANAGER_DTO.vb" />
+    <Compile Include="BusinessObjects\INS_HEALTH_INSURANCE_DTO.vb" />
+    <Compile Include="BusinessObjects\INS_WORKING_BEFOREDTO.vb" />
+    <Compile Include="BusinessObjects\INS_SUN_CARE.vb" />
+    <Compile Include="BusinessObjects\EmployeeDTO.vb" />
+    <Compile Include="BusinessObjects\INS_CHANGEDTO.vb" />
+    <Compile Include="BusinessObjects\INS_INFOOLDDTO.vb" />
+    <Compile Include="BusinessObjects\INS_INFORMATIONDTO.vb" />
+    <Compile Include="BusinessObjects\INS_SPECIFIED_OBJECTS_DTO.vb" />
+    <Compile Include="BusinessObjects\INS_ARISINGDTO.vb" />
+    <Compile Include="BusinessObjects\INS_ENTITLED_TYPE_DTO.vb" />
+    <Compile Include="BusinessObjects\INS_CHANGE_TYPEDTO.vb" />
+    <Compile Include="BusinessObjects\INS_WHEREHEALTHDTO.vb" />
+    <Compile Include="BusinessObjects\HU_DISTRICTDTO.vb" />
+    <Compile Include="BusinessObjects\HU_PROVINCEDTO.vb" />
+    <Compile Include="BusinessObjects\OT_OTHERLIST_DTO.vb" />
+    <Compile Include="BusinessObjects\PARAMDTO.vb" />
+    <Compile Include="BusinessObjects\HU_STAFF_RANKDTO.vb" />
+    <Compile Include="BusinessObjects\HU_TITLEDTO.vb" />
+    <Compile Include="BusinessObjects\Se_ReportDTO.vb" />
+    <Compile Include="InsuranceRepository.Dashboard.vb" />
+    <Compile Include="InsuranceRepository.Business.vb" />
+    <Compile Include="InsuranceRepository.List.vb" />
+    <Compile Include="InsuranceRepository.Func.vb" />
+    <Compile Include="InsuranceRepository.vb" />
+    <Compile Include="InsuranceContext.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsuranceContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="InsuranceCommon.vb" />
+    <Compile Include="Utility.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="InsuranceContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InsuranceContext.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.Data\Framework.Data.vbproj">
+      <Project>{5AB0D232-7B7A-44B8-9D14-115C065027DB}</Project>
+      <Name>Framework.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InsuranceContext.edmx.sql" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

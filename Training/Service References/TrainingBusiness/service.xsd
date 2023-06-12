@@ -1,0 +1,2775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/TrainingDAL" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Framework.Data" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="DeleteChooseForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lst" nillable="true" type="q1:ArrayOfChooseFormDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteChooseFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteChooseFormResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeAssessmentResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q2:AssessmentResultDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeAssessmentResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetEmployeeAssessmentResultResult" nillable="true" type="q3:ArrayOfAssessmentResultDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssessmentResultByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q4:AssessmentResultDtlDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssessmentResultByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetAssessmentResultByIDResult" nillable="true" type="q5:ArrayOfAssessmentResultDtlDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAssessmentResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="obj" nillable="true" type="q6:AssessmentResultDTO" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q7:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAssessmentResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAssessmentResultResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListEmployeePaging">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q8:RecordEmployeeDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_param" nillable="true" type="q9:ParamDTO" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q10:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListEmployeePagingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetListEmployeePagingResult" nillable="true" type="q11:ArrayOfRecordEmployeeDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q12:RecordEmployeeDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_param" nillable="true" type="q13:ParamDTO" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q14:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetEmployeeRecordResult" nillable="true" type="q15:ArrayOfRecordEmployeeDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="a" nillable="true" type="q16:CostDetailDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="testResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="testResult" nillable="true" type="q17:CostDetailDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q18:TitleCourseDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetTitleCourseResult" nillable="true" type="q19:ArrayOfTitleCourseDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTitleCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objExams" nillable="true" type="q20:TitleCourseDTO" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q21:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTitleCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateTitleCourseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTitleCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="obj" nillable="true" type="q22:TitleCourseDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTitleCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteTitleCourseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleByList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleByListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTitleByListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCourseByList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCourseByListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCourseByListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeTitleCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="filter" nillable="true" type="q23:EmployeeTitleCourseDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_param" nillable="true" type="q24:ParamDTO" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q25:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeTitleCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetEmployeeTitleCourseResult" nillable="true" type="q26:ArrayOfEmployeeTitleCourseDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExportReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sPkgName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sStartDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="sEndDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="sOrg" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsDissolve" type="xs:int" />
+        <xs:element minOccurs="0" name="sUserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExportReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExportReportResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q27:Se_ReportDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q28:UserLog" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetReportByIdResult" nillable="true" type="q29:ArrayOfSe_ReportDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatisticCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_year" type="xs:int" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q30:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatisticCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetStatisticCourseResult" nillable="true" type="q31:ArrayOfStatisticDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatisticFormCost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_year" type="xs:int" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q32:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatisticFormCostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetStatisticFormCostResult" nillable="true" type="q33:ArrayOfStatisticDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatisticDiligence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_year" type="xs:int" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q34:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatisticDiligenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetStatisticDiligenceResult" nillable="true" type="q35:ArrayOfStatisticDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatisticRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_year" type="xs:int" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q36:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatisticRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetStatisticRankResult" nillable="true" type="q37:ArrayOfStatisticDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objClass" nillable="true" type="q38:ProgramClassDTO" />
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q39:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyClassResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstClass" nillable="true" type="q40:ArrayOfProgramClassDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteClassResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeNotByClassID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q41:ProgramClassStudentDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeNotByClassIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetEmployeeNotByClassIDResult" nillable="true" type="q42:ArrayOfProgramClassStudentDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeByClassID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q43:ProgramClassStudentDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeByClassIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetEmployeeByClassIDResult" nillable="true" type="q44:ArrayOfProgramClassStudentDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertClassStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lst" nillable="true" type="q45:ArrayOfProgramClassStudentDTO" />
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q46:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertClassStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertClassStudentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteClassStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lst" nillable="true" type="q47:ArrayOfProgramClassStudentDTO" />
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q48:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteClassStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteClassStudentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q49:ProgramClassScheduleDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetClassScheduleResult" nillable="true" type="q50:ArrayOfProgramClassScheduleDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassScheduleByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q51:ProgramClassScheduleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassScheduleByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetClassScheduleByIDResult" nillable="true" type="q52:ProgramClassScheduleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertClassSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objClassSchedule" nillable="true" type="q53:ProgramClassScheduleDTO" />
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q54:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertClassScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertClassScheduleResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyClassSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objClassSchedule" nillable="true" type="q55:ProgramClassScheduleDTO" />
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q56:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyClassScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyClassScheduleResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteClassSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstClassSchedule" nillable="true" type="q57:ArrayOfProgramClassScheduleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteClassScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteClassScheduleResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q58:ProgramResultDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetProgramResultResult" nillable="true" type="q59:ArrayOfProgramResultDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProgramResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lst" nillable="true" type="q60:ArrayOfProgramResultDTO" />
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q61:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProgramResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateProgramResultResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q62:ProgramCommitDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetProgramCommitResult" nillable="true" type="q63:ArrayOfProgramCommitDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProgramCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lst" nillable="true" type="q64:ArrayOfProgramCommitDTO" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q65:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProgramCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateProgramCommitResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramCost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q66:ProgramCostDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramCostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetProgramCostResult" nillable="true" type="q67:ArrayOfProgramCostDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertProgramCost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objProgramCost" nillable="true" type="q68:ProgramCostDTO" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q69:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertProgramCostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertProgramCostResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateProgramCost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objProgramCost" nillable="true" type="q70:ProgramCostDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateProgramCostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateProgramCostResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyProgramCost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objProgramCost" nillable="true" type="q71:ProgramCostDTO" />
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q72:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyProgramCostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyProgramCostResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteProgramCost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstProgramCost" nillable="true" type="q73:ArrayOfProgramCostDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteProgramCostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteProgramCostResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReimbursement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q74:ReimbursementDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReimbursementResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetReimbursementResult" nillable="true" type="q75:ArrayOfReimbursementDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertReimbursement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objReimbursement" nillable="true" type="q76:ReimbursementDTO" />
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q77:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertReimbursementResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertReimbursementResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateReimbursement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objReimbursement" nillable="true" type="q78:ReimbursementDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateReimbursementResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateReimbursementResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyReimbursement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objReimbursement" nillable="true" type="q79:ReimbursementDTO" />
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q80:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyReimbursementResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyReimbursementResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChooseForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q81:ChooseFormDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChooseFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetChooseFormResult" nillable="true" type="q82:ArrayOfChooseFormDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertChooseForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objChooseForm" nillable="true" type="q83:ChooseFormDTO" />
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q84:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertChooseFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertChooseFormResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateChooseForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objChooseForm" nillable="true" type="q85:ChooseFormDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateChooseFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateChooseFormResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyChooseForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objChooseForm" nillable="true" type="q86:ChooseFormDTO" />
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q87:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyChooseFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyChooseFormResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlanById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlanByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetPlanByIdResult" nillable="true" type="q88:PlanDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPlan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="plan" nillable="true" type="q89:PlanDTO" />
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q90:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPlanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPlanResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPlan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="plan" nillable="true" type="q91:PlanDTO" />
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q92:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPlanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyPlanResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePlans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstId" nillable="true" type="q93:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePlansResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePlansResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrainingRequests">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="filter" nillable="true" type="q94:RequestDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_param" nillable="true" type="q95:ParamDTO" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q96:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrainingRequestsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetTrainingRequestsResult" nillable="true" type="q97:ArrayOfRequestDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrainingRequestsByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="filter" nillable="true" type="q98:RequestDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrainingRequestsByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetTrainingRequestsByIDResult" nillable="true" type="q99:RequestDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeByImportRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstEmpCode" nillable="true" type="q100:ArrayOfRequestEmpDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeByImportRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEmployeeByImportRequestResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstEmpCode" nillable="true" type="q101:ArrayOfRequestEmpDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeByPlanID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="filter" nillable="true" type="q102:RequestDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeByPlanIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetEmployeeByPlanIDResult" nillable="true" type="q103:ArrayOfRequestEmpDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="Request" nillable="true" type="q104:RequestDTO" />
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstEmp" nillable="true" type="q105:ArrayOfRequestEmpDTO" />
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q106:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertRequestResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="Request" nillable="true" type="q107:RequestDTO" />
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstEmp" nillable="true" type="q108:ArrayOfRequestEmpDTO" />
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q109:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyRequestResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStatusTrainingRequests">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q110:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="status" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStatusTrainingRequestsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateStatusTrainingRequestsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTrainingRequests">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstRequestID" nillable="true" type="q111:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTrainingRequestsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteTrainingRequestsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlanRequestByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlanRequestByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetPlanRequestByIDResult" nillable="true" type="q112:PlanDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestsForProgram">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReqID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestsForProgramResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetRequestsForProgramResult" nillable="true" type="q113:RequestDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrograms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="filter" nillable="true" type="q114:ProgramDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q115="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_param" nillable="true" type="q115:ParamDTO" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q116="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q116:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetProgramsResult" nillable="true" type="q117:ArrayOfProgramDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlan_Cost_Detail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlan_Cost_DetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetPlan_Cost_DetailResult" nillable="true" type="q118:ArrayOfCostDetailDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetProgramByIdResult" nillable="true" type="q119:ProgramDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramByChooseFormId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramByChooseFormIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetProgramByChooseFormIdResult" nillable="true" type="q120:ProgramDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertProgram">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="Program" nillable="true" type="q121:ProgramDTO" />
+        <xs:element xmlns:q122="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q122:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertProgramResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertProgramResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyProgram">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="Program" nillable="true" type="q123:ProgramDTO" />
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q124:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyProgramResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyProgramResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePrograms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstId" nillable="true" type="q125:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteProgramsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteProgramsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrepare">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q126:ProgramPrepareDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrepareResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q127="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetPrepareResult" nillable="true" type="q127:ArrayOfProgramPrepareDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPrepare">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q128="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objPrepare" nillable="true" type="q128:ProgramPrepareDTO" />
+        <xs:element xmlns:q129="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q129:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPrepareResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPrepareResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPrepare">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q130="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objPrepare" nillable="true" type="q130:ProgramPrepareDTO" />
+        <xs:element xmlns:q131="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q131:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPrepareResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyPrepareResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePrepare">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstPrepare" nillable="true" type="q132:ArrayOfProgramPrepareDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePrepareResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePrepareResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q133:ProgramClassDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q134="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetClassResult" nillable="true" type="q134:ArrayOfProgramClassDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q135:ProgramClassDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetClassByIDResult" nillable="true" type="q136:ProgramClassDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q137="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objClass" nillable="true" type="q137:ProgramClassDTO" />
+        <xs:element xmlns:q138="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q138:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertClassResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCriteriaGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCriteriaGroup" nillable="true" type="q139:CriteriaGroupDTO" />
+        <xs:element xmlns:q140="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q140:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCriteriaGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCriteriaGroupResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCriteriaGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCriteriaGroup" nillable="true" type="q141:CriteriaGroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCriteriaGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateCriteriaGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCriteriaGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCriteriaGroup" nillable="true" type="q142:CriteriaGroupDTO" />
+        <xs:element xmlns:q143="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q143:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCriteriaGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyCriteriaGroupResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCriteriaGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q144:ArrayOfdecimal" />
+        <xs:element xmlns:q145="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q145:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCriteriaGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveCriteriaGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCriteriaGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstCriteriaGroup" nillable="true" type="q146:ArrayOfCriteriaGroupDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCriteriaGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCriteriaGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssessmentRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q147:AssessmentRateDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssessmentRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q148="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetAssessmentRateResult" nillable="true" type="q148:ArrayOfAssessmentRateDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAssessmentRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objAssessmentRate" nillable="true" type="q149:AssessmentRateDTO" />
+        <xs:element xmlns:q150="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q150:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAssessmentRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAssessmentRateResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyAssessmentRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objAssessmentRate" nillable="true" type="q151:AssessmentRateDTO" />
+        <xs:element xmlns:q152="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q152:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyAssessmentRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyAssessmentRateResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveAssessmentRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q153="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q153:ArrayOfdecimal" />
+        <xs:element xmlns:q154="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q154:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveAssessmentRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveAssessmentRateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAssessmentRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q155="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstAssessmentRate" nillable="true" type="q155:ArrayOfAssessmentRateDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAssessmentRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAssessmentRateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssessmentForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q156:AssessmentFormDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssessmentFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q157="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetAssessmentFormResult" nillable="true" type="q157:ArrayOfAssessmentFormDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAssessmentForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q158="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objAssessmentForm" nillable="true" type="q158:AssessmentFormDTO" />
+        <xs:element xmlns:q159="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q159:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAssessmentFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAssessmentFormResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyAssessmentForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q160="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objAssessmentForm" nillable="true" type="q160:AssessmentFormDTO" />
+        <xs:element xmlns:q161="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q161:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyAssessmentFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyAssessmentFormResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAssessmentForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q162="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstAssessmentForm" nillable="true" type="q162:ArrayOfAssessmentFormDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAssessmentFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAssessmentFormResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaGroupNotByFormID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q163="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q163:SettingAssFormDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaGroupNotByFormIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q164="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCriteriaGroupNotByFormIDResult" nillable="true" type="q164:ArrayOfSettingAssFormDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaGroupByFormID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q165="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q165:SettingAssFormDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaGroupByFormIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCriteriaGroupByFormIDResult" nillable="true" type="q166:ArrayOfSettingAssFormDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSettingAssForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q167="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lst" nillable="true" type="q167:ArrayOfSettingAssFormDTO" />
+        <xs:element xmlns:q168="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q168:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSettingAssFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSettingAssFormResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSettingAssForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q169="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q169:ArrayOfdecimal" />
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q170:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSettingAssFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSettingAssFormResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaNotByGroupID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q171="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q171:SettingCriteriaGroupDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaNotByGroupIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q172="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCriteriaNotByGroupIDResult" nillable="true" type="q172:ArrayOfSettingCriteriaGroupDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaByGroupID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q173="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q173:SettingCriteriaGroupDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaByGroupIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q174="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCriteriaByGroupIDResult" nillable="true" type="q174:ArrayOfSettingCriteriaGroupDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSettingCriteriaGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q175="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lst" nillable="true" type="q175:ArrayOfSettingCriteriaGroupDTO" />
+        <xs:element xmlns:q176="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q176:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSettingCriteriaGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSettingCriteriaGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSettingCriteriaGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q177="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q177:ArrayOfdecimal" />
+        <xs:element xmlns:q178="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q178:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSettingCriteriaGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSettingCriteriaGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCourseList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCourseListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q179="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCourseListResult" nillable="true" type="q179:ArrayOfCourseDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitlesByOrgs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q180="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orgIds" nillable="true" type="q180:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="langCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitlesByOrgsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q181="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetTitlesByOrgsResult" nillable="true" type="q181:ArrayOfPlanTitleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWIByTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q182="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orgIds" nillable="true" type="q182:ArrayOfdecimal" />
+        <xs:element minOccurs="0" name="langCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWIByTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q183="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetWIByTitleResult" nillable="true" type="q183:ArrayOfPlanTitleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEntryAndFormByCourseID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CourseId" type="xs:decimal" />
+        <xs:element minOccurs="0" name="langCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEntryAndFormByCourseIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q184="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetEntryAndFormByCourseIDResult" nillable="true" type="q184:CourseDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCenters">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCentersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q185="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCentersResult" nillable="true" type="q185:ArrayOfCenterDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q186="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="filter" nillable="true" type="q186:PlanDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element xmlns:q187="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_param" nillable="true" type="q187:ParamDTO" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+        <xs:element xmlns:q188="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q188:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlansResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q189="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetPlansResult" nillable="true" type="q189:ArrayOfPlanDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q190="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCourse" nillable="true" type="q190:CourseDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateCourseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q191="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCourse" nillable="true" type="q191:CourseDTO" />
+        <xs:element xmlns:q192="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q192:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyCourseResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q193="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q193:ArrayOfdecimal" />
+        <xs:element xmlns:q194="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q194:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveCourseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q195="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstCourse" nillable="true" type="q195:ArrayOfCourseDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCourseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q196="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q196:CenterDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q197="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCenterResult" nillable="true" type="q197:ArrayOfCenterDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q198="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCenter" nillable="true" type="q198:CenterDTO" />
+        <xs:element xmlns:q199="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q199:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCenterResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q200="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCenter" nillable="true" type="q200:CenterDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateCenterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q201="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCenter" nillable="true" type="q201:CenterDTO" />
+        <xs:element xmlns:q202="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q202:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyCenterResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q203="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q203:ArrayOfdecimal" />
+        <xs:element xmlns:q204="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q204:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveCenterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q205="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstCenter" nillable="true" type="q205:ArrayOfCenterDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCenterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLecture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q206="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q206:LectureDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLectureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q207="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetLectureResult" nillable="true" type="q207:ArrayOfLectureDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLecture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q208="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objLecture" nillable="true" type="q208:LectureDTO" />
+        <xs:element xmlns:q209="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q209:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLectureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertLectureResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateLecture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q210="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objLecture" nillable="true" type="q210:LectureDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateLectureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateLectureResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyLecture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q211="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objLecture" nillable="true" type="q211:LectureDTO" />
+        <xs:element xmlns:q212="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q212:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyLectureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyLectureResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveLecture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q213="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q213:ArrayOfdecimal" />
+        <xs:element xmlns:q214="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q214:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveLectureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveLectureResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLecture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q215="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstLecture" nillable="true" type="q215:ArrayOfLectureDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLectureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteLectureResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommitAfterTrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q216="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q216:CommitAfterTrainDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommitAfterTrainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q217="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCommitAfterTrainResult" nillable="true" type="q217:ArrayOfCommitAfterTrainDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCommitAfterTrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q218="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCommitAfterTrain" nillable="true" type="q218:CommitAfterTrainDTO" />
+        <xs:element xmlns:q219="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q219:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCommitAfterTrainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCommitAfterTrainResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCommitAfterTrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q220="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCommitAfterTrain" nillable="true" type="q220:CommitAfterTrainDTO" />
+        <xs:element xmlns:q221="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q221:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCommitAfterTrainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyCommitAfterTrainResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCommitAfterTrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q222="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q222:ArrayOfdecimal" />
+        <xs:element xmlns:q223="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q223:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCommitAfterTrainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveCommitAfterTrainResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCommitAfterTrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q224="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstCommitAfterTrain" nillable="true" type="q224:ArrayOfCommitAfterTrainDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCommitAfterTrainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCommitAfterTrainResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q225="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q225:CriteriaDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q226="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCriteriaResult" nillable="true" type="q226:ArrayOfCriteriaDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q227="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCriteria" nillable="true" type="q227:CriteriaDTO" />
+        <xs:element xmlns:q228="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q228:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCriteriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCriteriaResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q229="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCriteria" nillable="true" type="q229:CriteriaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCriteriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateCriteriaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q230="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCriteria" nillable="true" type="q230:CriteriaDTO" />
+        <xs:element xmlns:q231="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q231:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCriteriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyCriteriaResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q232="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q232:ArrayOfdecimal" />
+        <xs:element xmlns:q233="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q233:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCriteriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveCriteriaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q234="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstCriteria" nillable="true" type="q234:ArrayOfCriteriaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCriteriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCriteriaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q235="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q235:CriteriaGroupDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCriteriaGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q236="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCriteriaGroupResult" nillable="true" type="q236:ArrayOfCriteriaGroupDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetOtherListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrCertificateList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dGroupID" type="xs:decimal" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrCertificateListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrCertificateListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrCenterList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrCenterListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrCenterListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrPlanByYearOrg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+        <xs:element minOccurs="0" name="dYear" type="xs:decimal" />
+        <xs:element minOccurs="0" name="dOrg" type="xs:decimal" />
+        <xs:element xmlns:q237="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q237:UserLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrPlanByYearOrgResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrPlanByYearOrgResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrPlanByYearOrg2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+        <xs:element minOccurs="0" name="dYear" type="xs:decimal" />
+        <xs:element minOccurs="0" name="dOrg" type="xs:decimal" />
+        <xs:element xmlns:q238="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q238:UserLog" />
+        <xs:element minOccurs="0" name="isIrregularly" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrPlanByYearOrg2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrPlanByYearOrg2Result" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrLectureList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isLocal" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrLectureListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrLectureListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHuProvinceList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHuProvinceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHuProvinceListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHuDistrictList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="provinceID" type="xs:decimal" />
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHuDistrictListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHuDistrictListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHuContractTypeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHuContractTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHuContractTypeListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrProgramByYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+        <xs:element minOccurs="0" name="dYear" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrProgramByYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrProgramByYearResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrCriteriaGroupList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrCriteriaGroupListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrCriteriaGroupListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrAssFormList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrAssFormListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrAssFormListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrChooseProgramFormByYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBlank" type="xs:boolean" />
+        <xs:element minOccurs="0" name="dYear" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrChooseProgramFormByYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrChooseProgramFormByYearResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q239="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q239:CostCenterDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q240="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCostCenterResult" nillable="true" type="q240:ArrayOfCostCenterDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q241="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCostCenter" nillable="true" type="q241:CostCenterDTO" />
+        <xs:element xmlns:q242="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q242:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCostCenterResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q243="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCostCenter" nillable="true" type="q243:CostCenterDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateCostCenterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q244="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCostCenter" nillable="true" type="q244:CostCenterDTO" />
+        <xs:element xmlns:q245="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q245:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyCostCenterResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q246="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q246:ArrayOfdecimal" />
+        <xs:element xmlns:q247="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q247:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveCostCenterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCostCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q248="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q248:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCostCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCostCenterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCertificate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q249="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q249:CertificateDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCertificateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q250="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCertificateResult" nillable="true" type="q250:ArrayOfCertificateDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCertificate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q251="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCertificate" nillable="true" type="q251:CertificateDTO" />
+        <xs:element xmlns:q252="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q252:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCertificateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCertificateResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCertificate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q253="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCertificate" nillable="true" type="q253:CertificateDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateCertificateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateCertificateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCertificate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q254="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCertificate" nillable="true" type="q254:CertificateDTO" />
+        <xs:element xmlns:q255="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q255:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCertificateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyCertificateResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCertificate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q256="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstID" nillable="true" type="q256:ArrayOfdecimal" />
+        <xs:element xmlns:q257="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q257:UserLog" />
+        <xs:element minOccurs="0" name="bActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveCertificateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActiveCertificateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCertificate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q258="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="lstCertificate" nillable="true" type="q258:ArrayOfCertificateDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCertificateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCertificateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q259="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="_filter" nillable="true" type="q259:CourseDTO" />
+        <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+        <xs:element minOccurs="0" name="Sorts" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q260="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="GetCourseResult" nillable="true" type="q260:ArrayOfCourseDTO" />
+        <xs:element minOccurs="0" name="Total" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q261="http://schemas.datacontract.org/2004/07/TrainingDAL" minOccurs="0" name="objCourse" nillable="true" type="q261:CourseDTO" />
+        <xs:element xmlns:q262="http://schemas.datacontract.org/2004/07/Framework.Data" minOccurs="0" name="log" nillable="true" type="q262:UserLog" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCourseResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="gID" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

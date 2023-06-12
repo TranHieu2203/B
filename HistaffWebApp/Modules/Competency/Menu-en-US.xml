@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Business"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_CompetencyAss" Text="Employee competency assessment" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyAss&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+    <Item Text="Report" PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_Competency_RadarReport" Text="Chart radar competency" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_Competency_RadarReport&amp;group=report" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Competency_RadarReportGaps" Text="Gaps history Chart employee competency" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_Competency_RadarReportGaps&amp;group=report" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Competency_RadarGapsBetweenPos" Text="Gaps history Chart between ranks" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_Competency_RadarGapsBetweenPos&amp;group=report" CheckPermission="true" CausesValidation="False" />
+      </Group>
+    </Item>
+    <Item Text="Institute"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_CompetencyAppendix" Text="Competency standards for titles" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyAppendix&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_CompetencyEmp" Text="Employee competency" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyEmp&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_CompetencyCourse" Text="Tiêu chuẩn đánh giá với khóa học" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyCourse&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+    <Item Text="Category" PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_CompetencyGroup" Text="Competence group" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyGroup&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_Competency" Text="Competence" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_Competency&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_CompetencyBuild" Text="Competence building dictionary" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyBuild&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_CompetencyPeriod" Text="Competence assessment" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyPeriod&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

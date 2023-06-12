@@ -1,0 +1,45 @@
+﻿Public Class SHIFT_DTO
+    Public Property ID As Decimal
+    Public Property AT_SIGN_CODE As String
+    Public Property AT_SIGN_NAME As String
+    Public Property AT_SIGN_ID As Decimal
+    Public Property NAME As String
+    Public Property WORK_START As Date?
+    Public Property WORK_END As Date?
+    Public Property WORK_TIME As Decimal?
+    Public Property BREAK_START As Date?
+    Public Property BREAK_END As Date?
+    Public Property BREAK_TIME As Decimal?
+    Public Property VARIOUS_HOUR_IN As Decimal?
+    Public Property LATE_ACCEPT As Decimal?
+    Public Property LATE_ROUND_VALUE As Decimal?
+    Public Property VARIOUS_HOUR_OUT As Decimal?
+    Public Property SOON_ACCEPT As Decimal?
+    Public Property SOON_ROUND_VALUE As Decimal?
+    Public Property IS_SHIFT_BEGIN As Boolean?
+    Public Property TIME_NIGHT As Decimal?
+    Public Property TIME_OT_IN As Decimal?
+    Public Property TIME_OT_OUT As Decimal?
+    Public Property LEAVE_TYPE_ID As Decimal?
+    Public Property LEAVE_TYPE_NAME As String
+    Public Property EFFECT_FROM_DATE As Date?
+    Public Property EFFECT_TO_DATE As Date?
+    Public Property NOTE As String
+    Public Property STATUS As Boolean?
+    Public Property CREATED_DATE As Date?
+    Public Property CREATED_BY As String
+    Public Property CREATED_LOG As String
+    Public Property MODIFIED_BY As String
+    Public Property MODIFIED_DATE As Date?
+    Public Property MODIFIED_LOG As String
+    Public Property NAME_SIGN As String
+    Public Property TIME_SIGN As Decimal?
+    Public Property IMPORT_SIGN As Boolean?
+    Public Property TIME_SIGNNEW As String
+    Public Property CODE_SIGN As String
+
+    Public Property SHIFT_NIGHT As Boolean?
+    Public Property MINUS_HOUR_START As Boolean?
+    Public Property LUNCH_BREAK_START As Date?
+    Public Property LUNCH_BREAK_END As Date?
+End Class

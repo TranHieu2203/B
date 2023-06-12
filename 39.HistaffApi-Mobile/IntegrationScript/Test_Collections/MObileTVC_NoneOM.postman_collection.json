@@ -1,0 +1,2755 @@
+{
+	"info": {
+		"_postman_id": "559a41a2-20e9-4b34-a017-991a44d6d9d0",
+		"name": "MObileTVC_NoneOM",
+		"description": "This is api of HiStaff app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login SCREEN",
+			"item": [
+				{
+					"name": "Login request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserName\": \"CONSULTING.TVC@GMAIL.COM\", \n\t\"Password\": \"123456\", \n\t\"DeviceID\": \"30281833-B62A-483E-B9A9-92013C2D1084\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Login",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Login"
+							]
+						},
+						"description": "Post"
+					},
+					"response": []
+				},
+				{
+					"name": "checkToken request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKeyMng}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/LoginWithToken",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"LoginWithToken"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Login screen of app",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "RegisterLeave SCREEN",
+			"item": [
+				{
+					"name": "ListRegisterLeave",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1,\n\t\"Status\": \"0,1\",\n\t\"ManagerStatus\":-1,\n\t\"Page\":1,\n\t\"PageSize\":5\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/ListRegisterLeave",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"ListRegisterLeave"
+							]
+						},
+						"description": "get list register leave"
+					},
+					"response": []
+				},
+				{
+					"name": "TypeLeave request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/TypeLeave",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"TypeLeave"
+							]
+						},
+						"description": "get list type leave"
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterLeave request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserID\": 1,\n    \"LeaveFrom\": \"10/22/2020\", \n    \"LeaveTo\": \"10/22/2020\",\n    \"FromHour\": \"12\",\n    \"ToHour\": \"13\",\n    \"Remark\": \"Thich nghi\",\n    \"SymbolId\": \"42\"\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/RegisterLeave",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"RegisterLeave"
+							]
+						},
+						"description": "create register leave request"
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterLeaveInfo request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/RegisterLeaveInfo",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"RegisterLeaveInfo"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "RegisterWLEO SCREEN",
+			"item": [
+				{
+					"name": "ListRegisterWLEO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1,\n\t\"Status\": \"0,1,2,3\",\n\t\"ManagerStatus\":-1,\n\t\"Page\":1,\n\t\"PageSize\":5\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/ListRegisterWLEO",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"ListRegisterWLEO"
+							]
+						},
+						"description": "get list register leave"
+					},
+					"response": []
+				},
+				{
+					"name": "TypeWLEO request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/TypeWLEO",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"TypeWLEO"
+							]
+						},
+						"description": "get list type leave"
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterWLEO request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserID\": 1,\n    \"LeaveFrom\": \"10/24/2020\", \n    \"LeaveTo\": \"10/24/2020\",\n    \"FromHour\": \"08\",\n    \"ToHour\": \"09\",\n    \"Remark\": \"Tắc đường\",\n    \"SymbolId\": \"42\"\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/RegisterWLEO",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"RegisterWLEO"
+							]
+						},
+						"description": "create register leave request"
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterWLEOInfo request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/RegisterWLEOInfo",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"RegisterWLEOInfo"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "RegisterOT SCREEN",
+			"item": [
+				{
+					"name": "ListRegisterOT",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserID\": \"1\",\n    \"Status\": \"0,1,2,3\",\n    \"ManagerStatus\": -1,\n    \"Page\": 1,\n    \"PageSize\": 10\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/ListRegisterOT",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"ListRegisterOT"
+							]
+						},
+						"description": "get list register overtime"
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterOT request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"Reason\": \"Theo kế hoạch cần thêm time\",\n        \"FromDate\": \"11/25/2020\",\n        \"ToDate\": \"11/25/2020\",\n        \"FromHour\": \"18\",\n        \"ToHour\": \"20\",\n        \"Type\": \"4236\"\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/RegisterOT",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"RegisterOT"
+							]
+						},
+						"description": "register Overtime"
+					},
+					"response": []
+				},
+				{
+					"name": "TypeOT request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/TypeOT",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"TypeOT"
+							]
+						},
+						"description": "get list type OT"
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterOTInfo request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/RegisterOTInfo",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"RegisterOTInfo"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "register work over time",
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "MzAyODE4MzMtQjYyQS00ODNFLUI5QTktOTIwMTNDMkQxMDg0XlRWR144Mjg1MTReMjAyMDAxMDMxNDIzNTIzNTMuZDFhYzRmMWJhNjkwMTU3NGNhMTUxNDBjODExYjIwODg=",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a2c5ac05-524a-4e5d-bbf3-aebab470c506",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "90218825-d70d-4731-b71c-228c6fcc4975",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Dashboard SCREEN",
+			"item": [
+				{
+					"name": "Dashboard request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Dashboard",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Dashboard"
+							]
+						},
+						"description": "get data "
+					},
+					"response": []
+				}
+			],
+			"description": "Screen Dashboard",
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "MjdFOENBMkYtQzA1Qi00NkY0LUEyQjItRkU5NUZFOTQ1MkE3XlRWR144Mjg1MTReMjAxOTEyMTkxNDI1MDk0MjAuMWJlODY0M2FjOTU4YzEwNDIyZmYxMjM3NGM5ZmVlOWI=",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Staff SCREEN",
+			"item": [
+				{
+					"name": "PersonalRelations",
+					"item": [
+						{
+							"name": "Family request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"UserID\": \"1\",\n      \"EmployeeID\": \"42\",\n      \"Page\": 1,\n      \"PageSize\": 5\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/Family",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"Family"
+									]
+								},
+								"description": "lấy danh sách người thân theo id nhân viên"
+							},
+							"response": []
+						}
+					],
+					"description": "quan hệ người thân với nhân viên cùng phòng với người dùng",
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "MzAyODE4MzMtQjYyQS00ODNFLUI5QTktOTIwMTNDMkQxMDg0XlRFU1ReNzY1ODM1XjIwMjAwMTA2MTIwNTE4LmFmNmFmOWRkZTY0OGI0NjE4OTU0OTQ0MzU3OWIyZDI1",
+								"type": "string"
+							}
+						]
+					},
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "WorkingBefore",
+					"item": [
+						{
+							"name": "WorkingOld request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"UserID\": \"1\",\n      \"EmployeeID\": \"1\",\n      \"Page\": 1,\n      \"PageSize\": 100\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/WorkingOld",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"WorkingOld"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"description": "thông tin làm việc trước đây của nhân viên",
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "MzAyODE4MzMtQjYyQS00ODNFLUI5QTktOTIwMTNDMkQxMDg0XlRFU1ReNzY1ODM1XjIwMjAwMTA2MTIwNTE4LmFmNmFmOWRkZTY0OGI0NjE4OTU0OTQ0MzU3OWIyZDI1",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2da7770e-f48d-4c7f-a6a5-e8eb3cba5809",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "41b20471-8d0f-4a33-8bc3-48be03634765",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Info",
+					"item": [],
+					"description": "thông tin của nhân viên ",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "WorkingNow",
+					"item": [
+						{
+							"name": "getWorkingNow",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": \"999999\",\n\t\"EmployeeID\": \"999999\",\n\t\"Page\": 1,\n\t\"PageSize\": 100\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/Working",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"Working"
+									]
+								},
+								"description": "thông tin của nhân viên theo Id"
+							},
+							"response": []
+						}
+					],
+					"description": "thông tin của nhân viên đang làm ",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "getListEmployee request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"UserID\": 1,\n      \"Page\": 1,\n      \"PageSize\": 5\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/ListEmployee",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"ListEmployee"
+							]
+						},
+						"description": "lấy danh sách những người làm cùng với người dùng"
+					},
+					"response": []
+				}
+			],
+			"description": "màn hình nhân viên ",
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "MzAyODE4MzMtQjYyQS00ODNFLUI5QTktOTIwMTNDMkQxMDg0XlRWR145OTk5OTleMjAyMDAxMDYxNTM5NDMuZDhkZjJiMDdmOGZhZmUyYWYwOTYxNTcxNDY5MDVlYjk=",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0dc3dc7e-b27e-498a-861d-d7e48974f0f0",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "e1a461e8-fbe2-4bdf-abcb-c1515be8eaca",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "TimeSheets SCREEN",
+			"item": [
+				{
+					"name": "getPeriods request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"Year\": 2020,\n      \"Page\": 1,\n      \"PageSize\": 10\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Period",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Period"
+							]
+						},
+						"description": "lấy ngày tháng"
+					},
+					"response": []
+				},
+				{
+					"name": "GetTimeSheets request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 2,\n\t\"Period\": 85\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/GetTimeSheets",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"GetTimeSheets"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "bảng công của người dùng",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Salary SCREEN",
+			"item": [
+				{
+					"name": "getSalaryStaff request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1,\n\t\"Period\": 85\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/GetSalarys",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"GetSalarys"
+							]
+						},
+						"description": "lấy thồn tin lương của nhân viên"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Review SCREEN",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Notification SCREEN",
+			"item": [
+				{
+					"name": "getNotification request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1,\n\t\"Page\": 1,\n\t\"PageSize\": 20\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Notification",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Notification"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "RecordHr SCREEN",
+			"item": [
+				{
+					"name": "getProfile request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1,\n\t\"EmployeeID\": -1\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Profile",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Profile"
+							]
+						},
+						"description": "lấy thông tin của người dùng"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Logout",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Logout"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "MzAyODE4MzMtQjYyQS00ODNFLUI5QTktOTIwMTNDMkQxMDg0XlRWR145OTk5OTleMjAyMDAxMDYxNjA4NDMuYWRjYmE5ZGQ0YTc4MmY4MzNiN2JhNWI0N2Y4YzdjZmY=",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "566e9aa3-b343-4e55-b8da-a1dfb8f1f729",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ae566a2-39d8-4329-894a-dae7a789c185",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Contract SCREEN",
+			"item": [
+				{
+					"name": "Contract request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1,\n\t\"EmployeeID\": 001042,\n\t\"Page\": 1,\n\t\"PageSize\": 10\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Contract",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Contract"
+							]
+						},
+						"description": "lấy thông tin về hợp đồng của người dùng "
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "TrainOut SCREEN",
+			"item": [
+				{
+					"name": "getTrainOut request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1,\n\t\"EmployeeID\": 40,\n\t\"Page\": 1,\n\t\"PageSize\": 5\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/TrainOut",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"TrainOut"
+							]
+						},
+						"description": "lấy thông tin về đào tạo bên ngoài"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "MzAyODE4MzMtQjYyQS00ODNFLUI5QTktOTIwMTNDMkQxMDg0XlRWR145OTk5OTleMjAyMDAxMDYxNjA4NDMuYWRjYmE5ZGQ0YTc4MmY4MzNiN2JhNWI0N2Y4YzdjZmY=",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ApproveLeave SCREEN",
+			"item": [
+				{
+					"name": "ApprovePending",
+					"item": [
+						{
+							"name": "getApproveLeave request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKeyMng}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 2,\n\t\"Status\": \"0,1\",\n\t\"Type\": 42,\n\t\"FromDate\": \"01/01/2019\",\n\t\"ToDate\": \"12/31/2020\",\n\t\"KeyEmployee\": \"\",\n\t\"Page\": 1,\n\t\"PageSize\": 2\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ListRegisterLeaveManager",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ListRegisterLeaveManager"
+									]
+								},
+								"description": "lấy danh sách phê duyệt nghỉ"
+							},
+							"response": []
+						},
+						{
+							"name": "ApproveRegisterLeave request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKeyMng}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 1,\n\t\"RegisterID\": \"3093\",\n\t\"Comment\": \"opinion 3092\"\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ApproveRegisterLeave",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ApproveRegisterLeave"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CancelRegisterLeave request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKeyMng}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 1,\n\t\"RegisterID\": \"3079\",\n\t\"Comment\": \"Ngày này cần gấp không nghỉ được. đã accept 3078.\"\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/CancelRegisterLeave",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"CancelRegisterLeave"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Approved",
+					"item": [
+						{
+							"name": "ListRegisterLeaveManager request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 1,\n\t\"Status\": \"2\",\n\t\"Type\": \"-1\",\n\t\"FromDate\": \"01/01/1900\",\n\t\"ToDate\": \"01/01/1900\",\n\t\"KeyEmployee\": \"employee\",\n\t\"Page\": 1,\n\t\"PageSize\": 2\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ListRegisterLeaveManager",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ListRegisterLeaveManager"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ApproveLeave SCREEN",
+					"item": [
+						{
+							"name": "ApprovePending",
+							"item": [
+								{
+									"name": "getApproveLeave request",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AuthorKey}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"UserID\": 2,\n\t\"Status\": \"0,1,2\",\n\t\"Type\": -1,\n\t\"FromDate\": \"01/01/2019\",\n\t\"ToDate\": \"04/04/2020\",\n\t\"KeyEmployee\": \"\",\n\t\"Page\": 1,\n\t\"PageSize\": 2\n}"
+										},
+										"url": {
+											"raw": "{{HostLink}}/API/Mobile/ListRegisterLeaveManager",
+											"host": [
+												"{{HostLink}}"
+											],
+											"path": [
+												"API",
+												"Mobile",
+												"ListRegisterLeaveManager"
+											]
+										},
+										"description": "lấy danh sách phê duyệt nghỉ"
+									},
+									"response": []
+								},
+								{
+									"name": "ApproveRegisterLeave request",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AuthorKey}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"UserID\": 1,\n\t\"RegisterID\": \"1\",\n\t\"Comment\": \"opinion\"\n}"
+										},
+										"url": {
+											"raw": "{{HostLink}}/API/Mobile/ApproveRegisterLeave",
+											"host": [
+												"{{HostLink}}"
+											],
+											"path": [
+												"API",
+												"Mobile",
+												"ApproveRegisterLeave"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Approved",
+							"item": [
+								{
+									"name": "ListRegisterLeaveManager request",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AuthorKey}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"UserID\": 1,\n\t\"Status\": \"2\",\n\t\"Type\": \"-1\",\n\t\"FromDate\": \"01/01/1900\",\n\t\"ToDate\": \"01/01/1900\",\n\t\"KeyEmployee\": \"employee\",\n\t\"Page\": 1,\n\t\"PageSize\": 2\n}"
+										},
+										"url": {
+											"raw": "{{HostLink}}/API/Mobile/ListRegisterLeaveManager",
+											"host": [
+												"{{HostLink}}"
+											],
+											"path": [
+												"API",
+												"Mobile",
+												"ListRegisterLeaveManager"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						}
+					],
+					"description": "phê duyệt nghỉ",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"description": "phê duyệt nghỉ",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ApproveWLEO SCREEN",
+			"item": [
+				{
+					"name": "ApprovePending",
+					"item": [
+						{
+							"name": "getApproveWLEOLeave request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKeyMng}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 7771,\n\t\"Status\": \"0,1\",\n\t\"Type\": -1,\n\t\"FromDate\": \"01/01/2020\",\n\t\"ToDate\": \"12/31/2020\",\n\t\"KeyEmployee\": \"\",\n\t\"Page\": 1,\n\t\"PageSize\": 5\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ListRegisterWLEOManager",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ListRegisterWLEOManager"
+									]
+								},
+								"description": "lấy danh sách phê duyệt nghỉ"
+							},
+							"response": []
+						},
+						{
+							"name": "ApproveRegisterWLEO request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKeyMng}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 19,\n\t\"RegisterID\": \"3073\",\n\t\"Comment\": \"opinion\"\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ApproveWLEO",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ApproveWLEO"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CancelRegisterWLEO request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKeyMng}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 19,\n\t\"RegisterID\": \"3073\",\n\t\"Comment\": \"opinion\"\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ApproveWLEO",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ApproveWLEO"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Approved",
+					"item": [
+						{
+							"name": "ListRegisterLeaveManager request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 1,\n\t\"Status\": \"2\",\n\t\"Type\": \"-1\",\n\t\"FromDate\": \"01/01/1900\",\n\t\"ToDate\": \"01/01/1900\",\n\t\"KeyEmployee\": \"employee\",\n\t\"Page\": 1,\n\t\"PageSize\": 2\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ListRegisterLeaveManager",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ListRegisterLeaveManager"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ApproveLeave SCREEN",
+					"item": [
+						{
+							"name": "ApprovePending",
+							"item": [
+								{
+									"name": "getApproveLeave request",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AuthorKey}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"UserID\": 2,\n\t\"Status\": \"0,1,2\",\n\t\"Type\": -1,\n\t\"FromDate\": \"01/01/2019\",\n\t\"ToDate\": \"04/04/2020\",\n\t\"KeyEmployee\": \"\",\n\t\"Page\": 1,\n\t\"PageSize\": 2\n}"
+										},
+										"url": {
+											"raw": "{{HostLink}}/API/Mobile/ListRegisterLeaveManager",
+											"host": [
+												"{{HostLink}}"
+											],
+											"path": [
+												"API",
+												"Mobile",
+												"ListRegisterLeaveManager"
+											]
+										},
+										"description": "lấy danh sách phê duyệt nghỉ"
+									},
+									"response": []
+								},
+								{
+									"name": "ApproveRegisterLeave request",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AuthorKey}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"UserID\": 1,\n\t\"RegisterID\": \"1\",\n\t\"Comment\": \"opinion\"\n}"
+										},
+										"url": {
+											"raw": "{{HostLink}}/API/Mobile/ApproveRegisterLeave",
+											"host": [
+												"{{HostLink}}"
+											],
+											"path": [
+												"API",
+												"Mobile",
+												"ApproveRegisterLeave"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Approved",
+							"item": [
+								{
+									"name": "ListRegisterLeaveManager request",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AuthorKey}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"UserID\": 1,\n\t\"Status\": \"2\",\n\t\"Type\": \"-1\",\n\t\"FromDate\": \"01/01/1900\",\n\t\"ToDate\": \"01/01/1900\",\n\t\"KeyEmployee\": \"employee\",\n\t\"Page\": 1,\n\t\"PageSize\": 2\n}"
+										},
+										"url": {
+											"raw": "{{HostLink}}/API/Mobile/ListRegisterLeaveManager",
+											"host": [
+												"{{HostLink}}"
+											],
+											"path": [
+												"API",
+												"Mobile",
+												"ListRegisterLeaveManager"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						}
+					],
+					"description": "phê duyệt nghỉ",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"description": "phê duyệt nghỉ",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ApproveOT SCREEN",
+			"item": [
+				{
+					"name": "OverTimePending",
+					"item": [
+						{
+							"name": "getApproveOT request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKey}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 1,\n\t\"Status\": \"1\",\n\t\"Type\": -1,\n\t\"FromDate\": \"01/01/2019\",\n\t\"ToDate\": \"01/01/2021\",\n\t\"KeyEmployee\": \"\",\n\t\"Page\": 1,\n\t\"PageSize\": 5\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ListRegisterOTManager",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ListRegisterOTManager"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "approveOT request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKeyMng}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 2,\n\t\"RegisterID\": 29,\n\t\"Comment\": \"Comment+\"\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ApproveRegisterOT",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ApproveRegisterOT"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CancelOT request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AuthorKeyMng}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UserID\": 2,\n\t\"RegisterID\": 29,\n\t\"Comment\": \"Comment+\"\n}"
+								},
+								"url": {
+									"raw": "{{HostLink}}/API/Mobile/ApproveRegisterOT",
+									"host": [
+										"{{HostLink}}"
+									],
+									"path": [
+										"API",
+										"Mobile",
+										"ApproveRegisterOT"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "WorkingNow SCREEN",
+			"item": [
+				{
+					"name": "Working request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1,\n\t\"EmployeeID\": 760756,\n\t\"Page\": 1,\n\t\"PageSize\": 10\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Working",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Working"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "WorkingBefore SCREEN",
+			"item": [
+				{
+					"name": "WorkingOld request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 1,\n\t\"EmployeeID\": -1,\n\t\"Page\": 1,\n\t\"PageSize\": 5\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Working",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Working"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PersonalRelations SCREEN",
+			"item": [
+				{
+					"name": "getPersonalRelations request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserID\": 3,\n\t\"EmployeeID\": -1,\n\t\"Page\": 1,\n\t\"PageSize\": 5\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/Family",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"Family"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Logger Error",
+			"item": [
+				{
+					"name": "logger error request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"ErrorCode\": \"1\",\n\t\"ErrorTitle\": \"test\",\n\t\"ErrorDetail\": \"test\",\n\t\"UserInfo\": \"info\",\n\t\"UserID\": 2\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/loggerError",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"loggerError"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ORG_EMP",
+			"item": [
+				{
+					"name": "GetListOrg_Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Keyword\": \"Ban\"\r\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/GetListOrg",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"GetListOrg"
+							]
+						},
+						"description": "get list type OT"
+					},
+					"response": []
+				},
+				{
+					"name": "GetEmployeeInfo_Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"EmployeeID\": 1\r\n\r\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/GetEmployeeInfo",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"GetEmployeeInfo"
+							]
+						},
+						"description": "get list type OT"
+					},
+					"response": []
+				},
+				{
+					"name": "GetListPosition_Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AuthorKey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Keyword\": \"Văn T\",\r\n    \"Language\": \"vi-VN\",\r\n    \"OrgID\": 46,\r\n    \"Page\": 1,\r\n    \"PageSize\": 10\r\n}"
+						},
+						"url": {
+							"raw": "{{HostLink}}/API/Mobile/GetListPosition",
+							"host": [
+								"{{HostLink}}"
+							],
+							"path": [
+								"API",
+								"Mobile",
+								"GetListPosition"
+							]
+						},
+						"description": "get list type OT"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "MzAyODE4MzMtQjYyQS00ODNFLUI5QTktOTIwMTNDMkQxMDg0XiBeMV4yMDIwMDkyMDAxMDAyMy41Q0ZFMDdCNTg1MTlBNUQzMTNCMjg0RjNENTY2RjYxMw==",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "46a86375-cfa4-4dd4-8a1d-3fedcfb2e27b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a9bfc13f-b364-48dd-b7c5-a38dfbbfb4a4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "e0696005-f0a0-4aa0-a3bf-0537b213c04c",
+			"key": "domanPath",
+			"value": "http://localhost:44313"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,40 @@
+﻿Public Class TrainningEvaluateDTO
+    Public Property ID As Decimal
+    Public Property ORG_ID As Decimal
+    Public Property ORG_IDS As List(Of Decimal)
+    Public Property ORG_CODE As String
+    Public Property ORG_NAME As String
+    Public Property ORG_DESC As String
+    Public Property FROM_DATE As Date?
+    Public Property TO_DATE As Date?
+    Public Property SIGN_ID As Decimal?
+    Public Property SIGNER_TITLE As String
+    Public Property SIGNER_NAME As String
+    Public Property SIGN_DATE As Date?
+    Public Property EFFECT_DATE As Date?
+    Public Property EMPLOYEE_ID As Decimal
+    Public Property EMPLOYEE_CODE As String
+    Public Property EMPLOYEE_NAME As String
+    Public Property WORK_STATUS As Decimal?
+    Public Property IS_TER As Boolean
+    Public Property TITLE_NAME As String
+    Public Property REMARK As String
+    Public Property CREATED_DATE As Date
+    Public Property CREATED_BY As String
+    Public Property CREATED_LOG As String
+    Public Property MODIFIED_DATE As Date
+    Public Property MODIFIED_BY As String
+    Public Property MODIFIED_LOG As String
+    Public Property CONTENT As String
+    Public Property DECISION_NO As String
+    Public Property WORKING_ID As Decimal?
+    Public Property TITLE_ID As Decimal?
+    Public Property Working As WorkingDTO
+    Public Property EVALUATE_ID As Decimal?
+    Public Property EVALUATE_NAME As String
+    Public Property RANK_ID As Decimal?
+    Public Property RANK_NAME As String
+    Public Property CAPACITY_ID As Decimal?
+    Public Property CAPACITY_NAME As String
+    Public Property YEAR As Decimal?
+End Class

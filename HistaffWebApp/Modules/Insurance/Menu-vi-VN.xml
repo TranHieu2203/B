@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Nghiệp vụ" PostBack="False">
+      <Group>
+        <Item Value="ctrlInsArising" Text="Khai báo biến động bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsArising&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlInsInformationsMng" Text="Quản lý thông tin bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsInformationsMng&amp;group=Business" CheckPermission="true" />
+		    <Item Value="ctrlInsArisingManualMng" Text="Quản lý biến động bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsArisingManualMng&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlInsTotalSalary" Text="Tổng quỹ lương" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsTotalSalary&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlInsRegimesMng" Text="Quản lý thông tin hưởng chế độ" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsRegimesMng&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlInsMaternityMng" Text="Quản lý thai sản" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsMaternityMng&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlInsManagerHeathIns" Text="Quản lý bảo hiểm sức khỏe cá nhân, người thân" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsManagerHeathIns&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlInsWorkingBefore" Text="Quá trình bảo hiểm trước khi vào công ty" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsWorkingBefore&amp;group=Business" CheckPermission="true"/>
+      </Group>
+    </Item>
+    
+    <Item Text="Thiết lập"  PostBack="False">
+      <Group>
+        <Item Value="ctrlDMRegion" Text="Vùng bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlDMRegion&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlInsListParamInsurance" Text="Quy định tỷ lệ đóng bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsListParamInsurance&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlInsObjectPayInsurrance" Text="Quy định đối tượng đóng bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsObjectPayInsurrance&amp;group=List" CheckPermission="True"/>
+      </Group>
+    </Item>
+    
+    <Item Text="Danh mục" PostBack="False">
+      <Group>
+        <Item Value="ctrlDMGroupRegimes" Text="Nhóm chế độ bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlDMGroupRegimes&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlInsListRegimes" Text="Chế độ bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsListRegimes&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlInsListArisingType" Text="Biến động bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsListArisingType&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlDMNoiKhamChuaBenh" Text="Nơi khám chữa bệnh" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlDMNoiKhamChuaBenh&amp;group=List" CheckPermission="True"/>
+        <Item Value="ctrlInsListOrgInsurance" Text="Đơn vị bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsListOrgInsurance&amp;group=list" CheckPermission="true"/>
+        <Item Value="ctrlInsTypechange" Text="Loại thay đổi" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsTypechange&amp;group=list" CheckPermission="true"/>
+        <Item Value="ctrlInsList" Text="Chương trình bảo hiểm" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsList&amp;group=List" CheckPermission="True"/>
+		<Item Value="ctrlInsListContract" Text="HĐ bảo hiểm sức khỏe" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlInsListContract&amp;group=List" CheckPermission="True"/>
+		<Item Value="ctrlOtherList" Text="Tham số hệ thống" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlOtherList&amp;group=list" CheckPermission="true" CausesValidation="True"/>
+	  </Group>
+    </Item>
+
+    <Item Text="Báo cáo" PostBack="False">
+      <Group>
+        <Item Value="ctrlREPORT" Text="Danh sách báo cáo" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlREPORT&amp;moduleID=9" CheckPermission="true" />
+      </Group>
+    </Item>
+  </Group>
+</Menu>

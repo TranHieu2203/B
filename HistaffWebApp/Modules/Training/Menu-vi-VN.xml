@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+	<Group>
+		<Item Text="Nghiệp vụ" PostBack="False">
+			<Group>
+				<Item Value="ctrlTR_Request" Text="Khai báo yêu cầu đào tạo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Request&amp;group=Business" CheckPermission="TRUE"/>
+				<Item Value="ctrlTR_Plan" Text="Kế hoạch đào tạo năm" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Plan&amp;group=Business" CheckPermission="TRUE"/>
+				<Item Value="ctrlTR_Program" Text="Tổ chức đào tạo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Program&amp;group=Business" CheckPermission="TRUE"/>
+				<Item Value="ctrlTR_ReimbursementNew" Text="Bồi hoàn đào tạo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_ReimbursementNew&amp;group=Business" CheckPermission="TRUE"/>
+				<Item Value="ctrlTR_AssessmentResult" Text="Đánh giá khóa học" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_AssessmentResult&amp;group=Business" CheckPermission="TRUE"/>
+				<Item Value="ctrlTR_TrainningRecord" Text="Hồ sơ đào tạo nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_TranningRecord&amp;group=Business" CheckPermission="TRUE"/>
+			</Group>
+		</Item>
+
+		<Item Text="Thiết lập"  PostBack="False">
+			<Group>
+				<Item  Value="ctrlPE_SettingCriteriaCourse"  Text="Tiêu chí đánh giá theo khóa đào tạo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlPE_SettingCriteriaCourse&amp;group=Setting" CheckPermission="true"/>
+				<Item Value="ctrlTR_Classification" Text="Thiết lập xếp loại theo kết quả" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Classification&amp;group=List" CheckPermission="true"/>
+				<Item Value="ctrlTR_TitleCourse" Text="Khóa đào tạo theo chuẩn chức danh" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_TitleCourse&amp;group=Setting" CheckPermission="true"/>
+			</Group>
+		</Item>
+
+		<Item Text="Danh mục"  PostBack="False">
+			<Group>
+				<Item Value="ctrlTR_Course" Text="Khóa đào tạo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Course&amp;group=List" CheckPermission="true"/>
+				<Item Value="ctrlTR_Center" Text="Trung tâm đào tạo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Center&amp;group=List" CheckPermission="true"/>
+				<Item Value="ctrlTR_Lecture" Text="Giảng viên đào tạo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Lecture&amp;group=List" CheckPermission="true"/>
+				<Item Value="ctrlTR_Criteria" Text="Tiêu chí" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Criteria&amp;group=List" CheckPermission="true"/>
+				<Item Value="ctrlOtherList" Text="Tham số hệ thống" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlOtherList&amp;group=List" CheckPermission="true"/>
+			</Group>
+		</Item>
+
+		<Item Text="Báo cáo" PostBack="False">
+			<Group>
+				<Item Value="ctrlTR_ReportList" Text="Danh sách báo cáo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_ReportList&amp;group=report" CheckPermission="true"/>
+			</Group>
+		</Item>
+	</Group>
+</Menu>
+<!--<Item Value="ctrlTR_SettingCriteriaGroup" Text="Nhóm tiêu chí" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_SettingCriteriaGroup&amp;group=Setting" CheckPermission="true"/>-->
+<!--<Item Value="ctrlTR_CriteriaGroup" Text="Nhóm tiêu chí" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_CriteriaGroup&amp;group=List" CheckPermission="true"/>-->
+<!--<Item Value="ctrlTR_ChooseForm" Text="Lựa chọn biểu mẫu đánh giá" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_ChooseForm&amp;group=Business" CheckPermission="TRUE"/>
+<Item Value="ctrlTR_ManaTitleCourse" Text="QL khóa đào tạo của nhân viên theo chuẩn chức danh" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_ManaTitleCourse&amp;group=Business" CheckPermission="TRUE"/>
+<Item Value="ctrlTR_SettingAssessmentForm" Text="Biểu mẫu đánh giá" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_SettingAssessmentForm&amp;group=Setting" CheckPermission="true"/>
+<Item Value="ctrlTR_Certificate" Text="Chứng chỉ" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Certificate&amp;group=List" CheckPermission="true"/>
+<Item Value="ctrlTR_ProgramGroup" Text="Nhóm chương trình" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_ProgramGroup&amp;group=List" CheckPermission="true"/>
+<Item Value="ctrlTR_Unit" Text="Đơn vị chủ trì đào tạo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Unit&amp;group=List" CheckPermission="true"/>
+<Item Value="ctrlTR_CommitAfterTrain" Text="Cam kết sau đào tạo" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_CommitAfterTrain&amp;group=List" CheckPermission="true"/>
+<Item Value="ctrlTR_AssessmentRate" Text="Thang điểm đánh giá" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_AssessmentRate&amp;group=List" CheckPermission="true"/>
+<Item Value="ctrlTR_AssessmentForm" Text="Biểu mẫu đánh giá" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_AssessmentForm&amp;group=List" CheckPermission="true"/>-->

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE sqlMap SYSTEM "SqlMap.dtd">
+<sqlMap>
+  <delete id="HU_DELETE_ALDATA">
+    DELETE at_aldata e WHERE e.hu_employeeid = '$EMPLOYEE_ID$' AND e.workingday >= #START_DATE#
+  </delete>
+</sqlMap>

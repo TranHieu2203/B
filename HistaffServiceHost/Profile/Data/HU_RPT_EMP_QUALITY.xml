@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE sqlMap SYSTEM "SqlMap.dtd">
+<sqlMap>
+  <update id="HU_RPT_EMP_QUALITY">
+    SELECT O.NAME_C1,
+    O.ID_C1,
+    O.ID_C2,
+    O.NAME_C2,
+    o.ORG_LINK, O.ORG_LINK_NAME,
+    SUM(CASE
+    WHEN EMP_CV.GENDER = 565 THEN
+    1
+    ELSE
+    0
+    END) NAM,
+    SUM(CASE
+    WHEN EMP_CV.GENDER = 566 THEN
+    1
+    ELSE
+    0
+    END) NU,
+    SUM(CASE
+    WHEN extract(year from
+    <isPropertyAvailable property ="CURRENT_DATE">
+      <isNotEmpty property="CURRENT_DATE">
+        TRUNC(#CURRENT_DATE#)
+      </isNotEmpty>
+    </isPropertyAvailable>
+    )  - extract(year from EMP_CV.BIRTH_DATE) &lt; 25 THEN
+    1
+    ELSE
+    0
+    END) AGE_25,
+    SUM(CASE
+    WHEN extract(year from
+    <isPropertyAvailable property ="CURRENT_DATE">
+      <isNotEmpty property="CURRENT_DATE">
+        TRUNC(#CURRENT_DATE#)
+      </isNotEmpty>
+    </isPropertyAvailable>
+    )  - extract(year from EMP_CV.BIRTH_DATE) >= 25 AND
+    extract(year from
+    <isPropertyAvailable property ="CURRENT_DATE">
+      <isNotEmpty property="CURRENT_DATE">
+        TRUNC(#CURRENT_DATE#)
+      </isNotEmpty>
+    </isPropertyAvailable>
+    )  - extract(year from EMP_CV.BIRTH_DATE) &lt;= 30 THEN
+    1
+    ELSE
+    0
+    END) AGE_25_30,
+    SUM(CASE
+    WHEN extract(year from
+    <isPropertyAvailable property ="CURRENT_DATE">
+      <isNotEmpty property="CURRENT_DATE">
+        TRUNC(#CURRENT_DATE#)
+      </isNotEmpty>
+    </isPropertyAvailable>
+    )  - extract(year from EMP_CV.BIRTH_DATE) > 30 AND
+    extract(year from
+    <isPropertyAvailable property ="CURRENT_DATE">
+      <isNotEmpty property="CURRENT_DATE">
+        TRUNC(#CURRENT_DATE#)
+      </isNotEmpty>
+    </isPropertyAvailable>
+    )  - extract(year from EMP_CV.BIRTH_DATE) &lt;= 40 THEN
+    1
+    ELSE
+    0
+    END) AGE_30_40,
+    SUM(CASE
+    WHEN extract(year from
+    <isPropertyAvailable property ="CURRENT_DATE">
+      <isNotEmpty property="CURRENT_DATE">
+        TRUNC(#CURRENT_DATE#)
+      </isNotEmpty>
+    </isPropertyAvailable>
+    )  - extract(year from EMP_CV.BIRTH_DATE) > 40 THEN
+    1
+    ELSE
+    0
+    END) AGE_40,
+    SUM(CASE
+    WHEN EMP_TRAIN.LEARNING_LEVEL = 12 OR EMP_TRAIN.LEARNING_LEVEL = 6 THEN
+    1
+    ELSE
+    0
+    END) TH_TC,
+    SUM(CASE
+    WHEN EMP_TRAIN.LEARNING_LEVEL = 4 THEN
+    1
+    ELSE
+    0
+    END) CD,
+    SUM(CASE
+    WHEN EMP_TRAIN.LEARNING_LEVEL = 3 THEN
+    1
+    ELSE
+    0
+    END) DH,
+    SUM(CASE
+    WHEN EMP_TRAIN.LEARNING_LEVEL = 7 THEN
+    1
+    ELSE
+    0
+    END) THS,
+    SUM(CASE
+    WHEN EMP_TRAIN.LEARNING_LEVEL = 8 THEN
+    1
+    ELSE
+    0
+    END) TS,
+    SUM(CASE
+    WHEN T.Title_Level = 694 THEN
+    1
+    ELSE
+    0
+    END) NHANVIEN,
+    SUM(CASE
+    WHEN T.Title_Level = 695 THEN
+    1
+    ELSE
+    0
+    END) CBQL,
+    SUM(CASE
+    WHEN T.Title_Level = 696 THEN
+    1
+    ELSE
+    0
+    END) LANHDAO
+    FROM (SELECT NAME_C1,
+    NAME_C2,
+    NAME_C3,
+    NAME_C4,
+    ID_C1,
+    ID_C2,
+    ID_C3,
+    ID_C4,
+    CASE
+    WHEN ID_C2 IS NOT NULL THEN
+    ID_C2
+    WHEN ID_C1 IS NOT NULL THEN
+    ID_C1
+    END ORG_LINK,
+    CASE
+    WHEN ID_C2 IS NOT NULL THEN
+    NAME_C2
+    WHEN ID_C1 IS NOT NULL THEN
+    NAME_C1
+    END ORG_LINK_NAME,
+    ID,
+    DESCRIPTION_PATH
+    FROM (SELECT SUBSTR(REGEXP_SUBSTR(ORG_NAME, '![^!]*', 1, 1), 2) AS NAME_C1,
+    SUBSTR(REGEXP_SUBSTR(ORG_NAME, '![^!]*', 1, 2), 2) AS NAME_C2,
+    SUBSTR(REGEXP_SUBSTR(ORG_NAME, '![^!]*', 1, 3), 2) AS NAME_C3,
+    SUBSTR(REGEXP_SUBSTR(ORG_NAME, '![^!]*', 1, 4), 2) AS NAME_C4,
+    SUBSTR(REGEXP_SUBSTR(IDS, '![^!]*', 1, 1), 2) AS ID_C1,
+    SUBSTR(REGEXP_SUBSTR(IDS, '![^!]*', 1, 2), 2) AS ID_C2,
+    SUBSTR(REGEXP_SUBSTR(IDS, '![^!]*', 1, 3), 2) AS ID_C3,
+    SUBSTR(REGEXP_SUBSTR(IDS, '![^!]*', 1, 4), 2) AS ID_C4,
+    DESCRIPTION_PATH,
+    ID
+    FROM (SELECT O.ID,
+    O.DESCRIPTION_PATH,
+    SYS_CONNECT_BY_PATH(O.NAME_VN, '!') ORG_NAME,
+    SYS_CONNECT_BY_PATH(O.ID, '!') IDS
+    FROM HU_ORGANIZATION O
+    START WITH O.PARENT_ID IS NULL
+    CONNECT BY PRIOR O.ID = O.PARENT_ID)) O
+    WHERE NAME_C2 IS NOT NULL
+    <isPropertyAvailable property ="ORGLISTID">
+      <isNotEmpty property="ORGLISTID">
+        AND ID IN ($ORGLISTID$)
+      </isNotEmpty>
+    </isPropertyAvailable>
+    ORDER BY O.DESCRIPTION_PATH) O
+
+    LEFT JOIN HU_EMPLOYEE EMP
+    ON O.ID = EMP.Org_Id
+    LEFT JOIN HU_EMPLOYEE_CV EMP_CV
+    ON EMP.ID = EMP_CV.EMPLOYEE_ID
+    LEFT JOIN HU_TITLE T ON EMP.Title_Id = T.Id
+    LEFT JOIN ( select * from HU_EMPLOYEE_TRAIN E_TRAIN
+    where E_TRAIN.Highest_Level = -1 ) EMP_TRAIN
+    ON EMP.ID = EMP_TRAIN.EMPLOYEE_ID
+    WHERE (EMP.JOIN_DATE IS NOT NULL AND EMP.JOIN_DATE &lt;=
+    <isPropertyAvailable property ="CURRENT_DATE">
+    <isNotEmpty property="CURRENT_DATE">
+      TRUNC(#CURRENT_DATE#)
+    </isNotEmpty>
+  </isPropertyAvailable>    
+    ) AND
+    (EMP.TER_EFFECT_DATE IS NULL OR (EMP.TER_EFFECT_DATE IS NOT NULL AND EMP.TER_EFFECT_DATE >
+    <isPropertyAvailable property ="CURRENT_DATE">
+    <isNotEmpty property="CURRENT_DATE">
+      TRUNC(#CURRENT_DATE#)
+    </isNotEmpty>
+  </isPropertyAvailable>
+    ))
+    GROUP BY O.NAME_C1, O.ID_C1, O.NAME_C2, O.ID_C2, ORG_LINK, ORG_LINK_NAME
+    ORDER BY O.NAME_C1, O.NAME_C2 DESC
+  </update>
+</sqlMap>

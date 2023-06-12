@@ -1,0 +1,2218 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Swashbuckle.AspNetCore.5.6.0\build\Swashbuckle.AspNetCore.props" Condition="Exists('..\packages\Swashbuckle.AspNetCore.5.6.0\build\Swashbuckle.AspNetCore.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4E2789C-EA62-4987-BE05-395101560DC6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HiStaffAPI</RootNamespace>
+    <AssemblyName>HiStaffAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44313</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.9.4.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.9.4\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Extras.Quartz, Version=4.6.0.0, Culture=neutral, PublicKeyToken=595f708ada5feacc, processorArchitecture=MSIL">
+      <HintPath>packages\Autofac.Extras.Quartz.4.6.0\lib\net452\Autofac.Extras.Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autofac.Integration.WebApi, Version=4.3.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>packages\Autofac.WebApi2.4.3.1\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.10.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>packages\Portable.BouncyCastle.1.8.10\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.9.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.10\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.15.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>packages\MailKit.2.15.0\lib\net45\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.1.1.2\lib\net451\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.1.1\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.1.1\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=2.15.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>packages\MimeKit.2.15.0\lib\net45\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.9.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=3.0.7.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>packages\Quartz.3.0.7\lib\net452\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.13.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>packages\RestSharp.106.13.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>packages\Swashbuckle.Core.5.5.3\lib\net40\Swashbuckle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.3.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TVC.LDAP">
+      <HintPath>ref\TVC.LDAP.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="configOM.json" />
+    <Content Include="Areas\MobileView\Views\PayslipMobile\PayslipMobile.cshtml" />
+    <Content Include="Areas\MobileView\Views\Shared\_LayoutMobile.cshtml" />
+    <Content Include="Areas\MobileView\Views\web.config" />
+    <Content Include="Areas\Error\Views\web.config" />
+    <Content Include="Areas\Error\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Error\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Error\Views\Error\Index500.cshtml" />
+    <Content Include="Areas\MobileView\Views\TimeSheet\MonthDetail.cshtml" />
+    <Content Include="Areas\MobileView\Views\TimeSheet\MonthTotal.cshtml" />
+    <Content Include="Areas\MobileView\Views\PreviewMobile\Index.cshtml" />
+    <Content Include="Areas\MobileView\Views\DashboardChart\Index.cshtml" />
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness1.disco" />
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness1.wsdl" />
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness81.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness82.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness83.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness84.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness85.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness86.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AttendanceBusiness\AttendanceBusiness87.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_NBDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetComboboxDataAPIResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertDataInoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertLeaveSheetDailyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertWORKSIGNResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ApprovedTimeSheetRiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_DATAINOUTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_DECLARE_ENTITLEMENTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_DMVSDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_ENTITLEMENTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_FMLDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_GSIGNDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_HOLIDAYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_HOLIDAY_GENERALDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_HOLIDAY_OBJECTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_LATE_COMBACKOUTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_LEAVESHEETDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_LISTPARAM_SYSTEAMDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_PERIODDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_PORTAL_REG_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_REGISTER_OTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_SETUP_SPECIALDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_SHIFTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_SIGNDEFAULTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_SWIPE_DATADTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_TERMINALSDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_TIMESHEET_REGISTERDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_TIME_MANUALDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_TIME_RICEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_TIME_TIMESHEET_DAILYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_TIME_TIMESHEET_MACHINETDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_TIME_TIMESHEET_MONTHLYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_TIME_TIMESHEET_OTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.AT_TIME_TIMESHEET_RICEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.CheckPeriodCloseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ComboBoxDataDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetAT_DMVSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetAT_FMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetAT_GSIGNResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetAT_Holiday_ObjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetAT_SETUP_SPECIALResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetAT_SHIFTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetAT_SIGNDEFAULTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetAT_TERMINALResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetAT_TIME_MANUALResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetComboboxDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetDataInoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetDelareEntitlementNBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetDelareRiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetDSVMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetEntitlementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetHolidayGerenalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetHolidayResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetLeaveSheetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetListParamItimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetMachinesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetNBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetRegisterOTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetSwipeDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetTimeSheetPortalResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.GetTimeSheetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertAT_DMVSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertAT_FMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertAT_GSIGNResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertAT_Holiday_ObjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertAT_SETUP_SPECIALResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertAT_SHIFTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertAT_SIGNDEFAULTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertAT_TERMINALResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertAT_TIME_MANUALResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertDelareEntitlementNBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertDelareRiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertHolidayGerenalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertHOLIDAYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertLate_combackoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertLeaveSheetOtResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertLeaveSheetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertLeaveSheetRiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertListParamItimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertRegisterOTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.InsertSwipeDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyAT_DMVSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyAT_FMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyAT_GSIGNResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyAT_Holiday_ObjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyAT_SETUP_SPECIALResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyAT_SHIFTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyAT_SIGNDEFAULTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyAT_TERMINALResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyAT_TIME_MANUALResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyDataInoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyDelareEntitlementNBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyDelareRiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyHolidayGerenalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyHOLIDAYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyLate_combackoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyLeaveSheetDailyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyLeaveSheetOtResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyLeaveSheetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyLeaveSheetRiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyListParamItimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyRegisterOTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\AttendanceBusiness\HiStaffAPI.AttendanceBusiness.ModifyWORKSIGNResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\CommonBusiness\CommonBusiness1.disco" />
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.AccessLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ActionLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ApproveProcessDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ApproveSetupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ApproveSetupExtDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ApproveTemplateDetailDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ApproveTemplateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ApproveUserDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.AuditLogDtl.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ComboBoxDataDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.DeleteGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.DeleteUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.EmployeeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.EmployeePopupFindDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.EmployeePopupFindListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.FunctionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetAccessLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetActionLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetComboListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetEmployeeToPopupFind2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetEmployeeToPopupFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetFunctionListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetGroupFunctionNotPermisionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetGroupFunctionPermisionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetGroupListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetLdapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetOtherListByTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetTitleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetUserListInGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetUserListOutGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GetUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GroupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GroupFunctionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.GroupReportDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.InsertLdapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.LdapDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ModifyLdapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.ModuleDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.OrganizationDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.OrganizationStructureDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.OtherListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.OtherListGroupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.OtherListTypeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.PermissionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.SyncUserListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.TitleDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\CommonBusiness\HiStaffAPI.CommonBusiness.UserDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\CommonBusiness\CommonBusiness1.wsdl" />
+    <None Include="Connected Services\CommonBusiness\CommonBusiness6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CommonBusiness\CommonBusiness61.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CommonBusiness\CommonBusiness62.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CommonBusiness\CommonBusiness63.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="ChangeLog.txt" />
+    <None Include="Connected Services\AttendanceBusiness\configuration91.svcinfo" />
+    <None Include="Connected Services\AttendanceBusiness\configuration.svcinfo" />
+    <None Include="Connected Services\AttendanceBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\CommonBusiness\configuration91.svcinfo" />
+    <None Include="Connected Services\CommonBusiness\configuration.svcinfo" />
+    <None Include="Connected Services\CommonBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ATPeriodDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ATPriceLunchDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ComboBoxDataDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.CostCenterDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetComboboxDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetCostCenterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetHoldSalaryListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetIncentiveRankDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetIncentiveRankIdIncludeDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetIncentiveRankIncludeDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetIncentiveRankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetListSalariesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetObjectSalaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetPaymentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetPeriodListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetPriceLunchListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetSalaryGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetSalaryLevelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetSalaryLevel_UnileverResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetSalaryRankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetSalaryRank_UnileverResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetSalaryTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetSalaryType_GroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetTaxationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.IncentiveRankDetailDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.IncentiveRankDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertCostCenterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertFomulerGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertIncentiveListRankDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertIncentiveRankDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertIncentiveRankIncludeDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertIncentiveRankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertListSalariesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertObjectSalaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertPaymentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertPeriodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertPriceLunchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertSalaryGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertSalaryLevelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertSalaryLevel_UnileverResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertSalaryRankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertSalaryTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertSalaryType_GroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.InsertTaxationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyCostCenterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyFomulerGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyIncentiveRankDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyIncentiveRankIncludeDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyIncentiveRankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyListSalariesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyObjectSalaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyPaymentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyPeriodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyPriceLunchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifySalaryGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifySalaryLevelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifySalaryLevel_UnileverResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifySalaryRankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifySalaryTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifySalaryType_GroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.ModifyTaxationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.OT_OTHERLIST_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.PAFomuler.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.PAFomulerGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.PAHoldSalaryDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.PAListSalariesDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.PAObjectSalaryDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.PAPaymentListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.PATaxationDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.SalaryGroupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.SalaryLevelDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.SalaryRankDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.SalaryTypeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.SalaryType_GroupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.SaveFomulerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.SaveImportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\PayrollBusiness\configuration91.svcinfo" />
+    <None Include="Connected Services\PayrollBusiness\configuration.svcinfo" />
+    <Content Include="Connected Services\PayrollBusiness\HiStaffAPI.PayrollBusiness.GetFormularResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\PayrollBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\PortalBusiness\HiStaffAPI.PortalBusiness.EventDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\PortalBusiness\configuration91.svcinfo" />
+    <None Include="Connected Services\PortalBusiness\configuration.svcinfo" />
+    <None Include="Connected Services\PortalBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.AllowanceListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.AssetDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.AssetMngDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ATPeriodDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.BankBranchDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.BankDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ComboBoxDataDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CommendDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CommendEmpDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ContractDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ContractTypeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DeleteAssetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DeleteBankBranchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DeleteBankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DeleteDistrictResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DeleteEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DeleteNationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DeleteProvinceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DisciplineDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DisciplineEmpDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DistrictDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DownloadAttachFile_ManagerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeCVDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeEditDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeEduDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeFileDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeHealthDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeTrainDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.FamilyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.FamilyEditDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetAllowanceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetApproveEmployeeEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetApproveFamilyEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetApproveProcessTrainingEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetApproveWorkingBeforeEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetAssetMngResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetAssetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetAttachFiles_ManagerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetBankBranchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetBankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetComboListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCommendResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetContractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetContractTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetDisciplineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetDistrictResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetEmployeeAllByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetEmployeeImageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetHU_DataDynamicResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetLabourProtectionMngResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetLabourProtectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetListEmployeePagingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetNationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetOccupationalSafetyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetOrgTitleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetProcessTrainingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetProvinceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetReportByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetStaffRankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTerminate3bResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTerminateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTitleConcurrentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTitleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWelfareListAutoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWelfareListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWelfareMngResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWorking3BResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWorkingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.HuDynamicConditionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.HU_PRO_TRAIN_OUT_COMPANYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.HU_PRO_TRAIN_OUT_COMPANYDTOEDIT.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ImportChangeInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertAllowanceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertAssetMngResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertAssetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertBankBranchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertBankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCommendResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertContractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertContractTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertDisciplineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertDistrictResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertEmployeeEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertEmployeeFamilyEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertEmployeeFamilyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertEmployeeTrainResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertLabourProtectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertNationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertOrganizationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertOrgTitleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertProcessTrainingEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertProcessTrainingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertProvinceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertStaffRankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertTerminate3bResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertTerminateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertTitleConcurrentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertTitleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertWardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertWelfareListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertWorking3BResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertWorkingBeforeEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertWorkingBeforeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertWorkingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.LabourProtectionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.LabourProtectionMngDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyAllowanceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyAssetMngResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyAssetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyBankBranchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyBankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCommendResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyContractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyContractTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyDisciplineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyDistrictResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyEmployeeEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyEmployeeFamilyEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyEmployeeFamilyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyEmployeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyEmployeeTrainResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyLabourProtectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyNationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyOrganizationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyProcessTrainingEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyProcessTrainingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyProvinceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyStaffRankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyTerminate3bResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyTerminateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyTitleConcurrentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyTitleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWelfareListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWorking3BResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWorkingBeforeEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWorkingBeforeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWorkingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.NationDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.OccupationalSafetyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.OrganizationDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.OrgChartDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.OrgTitleDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.OtherListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ProvinceDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ReminderLogDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.RptDynamicColumnDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.Se_ReportDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.StaffRankDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.StatisticDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.Terminate3BDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.TerminateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.TitleConcurrentDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.TitleDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.Ward_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.WelfareListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.WelfareMngDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.WorkingAllowanceDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.WorkingBeforeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.WorkingBeforeDTOEdit.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.WorkingDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ProfileBusiness\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProfileBusiness\configuration91.svcinfo" />
+    <None Include="Connected Services\ProfileBusiness\configuration.svcinfo" />
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.FileContractDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertFileContractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.LocationDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.UpdateFileContractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CETIFICATEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CommandResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CommendFormulaDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CommendLevelDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CommendListDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CommendOrgDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyAppendixDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyAssDtlDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyAssDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyAvgEmplDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyBuildDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyCourseDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyEmpDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyGroupDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyPeriodDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.CompetencyStandardDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ContractProcedureDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DebtDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DeleteCommendFormulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DeleteCommendListResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DisciplineSalaryDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.DocumentDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeAssessmentDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeCompetencyDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeCriteriaRecordDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeCriteriaRecordResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeTrainForCompanyDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetAll_DocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetALPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetApproveEmployeeCertificateEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCertificatesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetChartEmployeeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCommendFormulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCommendLevelResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCommendListResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCompetencyAppendixResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCompetencyBuildResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCompetencyCourseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCompetencyGroupResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCompetencyPeriodResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCompetencyResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetCompetencyStandardResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetContractAppendixPagingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetContractProcedureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetDebtMngResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetDisciplineSalaryResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetEmpInfomationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetEmployeeFamily_1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetFileContract_NoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetHU_DataDynamicContractAppendixResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetHU_DataDynamicContractResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetHU_DataDynamic_MutiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetHU_DataDynamic_Muti_1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetHU_MultyDataDynamicResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetListSignerSetupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetListWorkingBeforeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetOrgBrandResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetOrgPauseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetRelationshipListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetSalaryNewResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetSingerSetupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTalentPoolResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTerminateCopyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTitleConcurrent1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTrainingEvaluateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTrainingForeignResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetTrainingManageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWorkingAllowance1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWorkingAllowanceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWorking_1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GetWorkPlaceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GET_LIST_CONCURRENTLYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.GET_LIST_CONCURRENTLY_BY_IDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.HUAllowanceDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.HuFileDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ImportCommendDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertALPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCertificateEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCommendFormulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCommendLevelResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCommendListResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCompetencyAppendixResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCompetencyBuildResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCompetencyCourseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCompetencyGroupResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCompetencyPeriodResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCompetencyResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertCompetencyStandardResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertContractProcedureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertOrgBrandResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertOrgPauseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertRelationshipListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertTrainingEvaluateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertTrainingForeignResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertTrainingManageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertWorking1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertWorkingAllowanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.InsertWorkPlaceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyALPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCertificateEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCommendFormulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCommendLevelResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCommendListResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCompetencyAppendixResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCompetencyBuildResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCompetencyCourseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCompetencyGroupResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCompetencyPeriodResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCompetencyResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyCompetencyStandardResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyRelationshipListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyTrainingEvaluateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyTrainingForeignResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyTrainingManageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWorking1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWorkingAllowanceNewResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWorkingAllowanceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ModifyWorkPlaceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.OrganizationTreeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.OrgBrandDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ORG_PAUSEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.RelationshipListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.SignerSetupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.TalentPoolDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.Temp_ConcurrentlyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.TotalDayOffDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.TrainningEvaluateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.TrainningForeignDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.TrainningManageDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.UnApproveContractResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.UnApproveWorkingResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.ValidateDisciplineSalaryResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.Welfatemng_empDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.WorkPlaceDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ProfileBusiness\HiStaffAPI.ProfileBusiness.EmployeeImageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ProfileBusiness\Framework.Data.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProfileBusiness\ProfileDAL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProfileBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <None Include="Connected Services\ProfileBusiness\service.wsdl" />
+    <None Include="Connected Services\ProfileBusiness\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProfileBusiness\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProfileBusiness\service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProfileBusiness\System.Data.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProfileBusiness\System.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IntegrationScript\00000000_InitFirst.txt" />
+    <None Include="IntegrationScript\Demo\Demo_Languages\PKG_API_MOBILE.txt" />
+    <None Include="IntegrationScript\Demo\Demo_Languages\PKG_API_MOBILE_BODY.txt" />
+    <None Include="IntegrationScript\Demo\Demo_CheckinGPS\PKG_API_MOBILE_OM_DEMO_TimeCheck.txt" />
+    <None Include="IntegrationScript\Demo\Demo_CheckinGPS\PKG_API_MOBILE_OM_BODY_DEMO_TimeCheck.txt" />
+    <None Include="IntegrationScript\Demo\Demo_FLC\PKG_API_MOBILE_OM_BODY_DEMO_FLC.txt" />
+    <None Include="IntegrationScript\PKG_ATTENDANCE_BUSINESS.txt" />
+    <None Include="IntegrationScript\Mobile_nonOM\PKG_API_MOBILE.txt" />
+    <None Include="IntegrationScript\Mobile_nonOM\PKG_API_MOBILE_BODY.txt" />
+    <None Include="IntegrationScript\PKG_API_MOBILE_OM.txt" />
+    <None Include="IntegrationScript\PKG_API_MOBILE_OM_BODY.txt" />
+    <None Include="IntegrationScript\PKG_ATTENDANCE_LIST.txt" />
+    <None Include="IntegrationScript\PKG_OMS_ATTENDANCE_BUSINESS.txt" />
+    <Content Include="IntegrationScript\Mobile_nonOM\InitFirst.txt" />
+    <Content Include="IntegrationScript\SCB\PKG_API_MOBILE.txt" />
+    <Content Include="IntegrationScript\SCB\PKG_API_MOBILE_BODY.txt" />
+    <Content Include="MobileStyle\css\adminlte.min.css" />
+    <Content Include="MobileStyle\css\bootstrap-datetimepicker\bootstrap-datetimepicker.css" />
+    <Content Include="MobileStyle\css\css\main.css" />
+    <Content Include="MobileStyle\css\kendo\Default\editor.png" />
+    <Content Include="MobileStyle\css\kendo\Default\imagebrowser.png" />
+    <Content Include="MobileStyle\css\kendo\Default\indeterminate.gif" />
+    <Content Include="MobileStyle\css\kendo\Default\loading-image.gif" />
+    <Content Include="MobileStyle\css\kendo\Default\loading.gif" />
+    <Content Include="MobileStyle\css\kendo\Default\loading_2x.gif" />
+    <Content Include="MobileStyle\css\kendo\Default\markers.png" />
+    <Content Include="MobileStyle\css\kendo\Default\markers_2x.png" />
+    <Content Include="MobileStyle\css\kendo\Default\slider-h.gif" />
+    <Content Include="MobileStyle\css\kendo\Default\slider-v.gif" />
+    <Content Include="MobileStyle\css\kendo\Default\sprite.png" />
+    <Content Include="MobileStyle\css\kendo\Default\sprite_2x.png" />
+    <Content Include="MobileStyle\css\kendo\Default\sprite_kpi.png" />
+    <Content Include="MobileStyle\css\kendo\Default\sprite_kpi_2x.png" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="MobileStyle\css\kendo\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="MobileStyle\css\kendo\fonts\glyphs\WebComponentsIcons.svg" />
+    <Content Include="MobileStyle\css\kendo\images\back.png" />
+    <Content Include="MobileStyle\css\kendo\images\kendoui.svg" />
+    <Content Include="MobileStyle\css\kendo\images\wp8_icons.png" />
+    <Content Include="MobileStyle\css\kendo\images\wp8_inverseicons.png" />
+    <Content Include="MobileStyle\css\kendo\kendo.common.min.css" />
+    <Content Include="MobileStyle\css\kendo\kendo.default.min.css" />
+    <Content Include="MobileStyle\css\kendo\kendo.mobile.all.min.css" />
+    <Content Include="MobileStyle\css\kendo\kendo.rtl.min.css" />
+    <Content Include="MobileStyle\css\main\custom.css" />
+    <Content Include="MobileStyle\css\main\custom.min.css" />
+    <Content Include="MobileStyle\css\main\main.css" />
+    <Content Include="MobileStyle\css\main\main.min.css" />
+    <Content Include="MobileStyle\css\select2\select2.min.css" />
+    <Content Include="MobileStyle\img\loading.gif" />
+    <Content Include="MobileStyle\js\adminlte.js" />
+    <Content Include="MobileStyle\js\highcharts\highcharts.js" />
+    <Content Include="MobileStyle\js\kendo-ui\jquery-1.12.4.min.js" />
+    <Content Include="MobileStyle\js\kendo-ui\jszip.min.js" />
+    <Content Include="MobileStyle\js\kendo-ui\kendo.all.min.js" />
+    <Content Include="MobileStyle\js\kendo-ui\kendo.extend.js" />
+    <Content Include="MobileStyle\js\kendo-ui\messages\kendo.messages.en-US.min.js" />
+    <Content Include="MobileStyle\js\kendo-ui\messages\kendo.messages.vi-VN.min.js" />
+    <Content Include="MobileStyle\js\select2\select2.min.js" />
+    <Content Include="MobileStyle\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Properties\PublishProfiles\ServerTestTVC.pubxml.user" />
+    <None Include="IntegrationScript\Demo\Demo_CheckinGPS\configOM.json" />
+    <None Include="IntegrationScript\Demo\Demo_Languages\configOM.json" />
+    <None Include="Properties\PublishProfiles\ServerDemo_6401_API.pubxml" />
+    <None Include="Properties\PublishProfiles\ServerDemo_Preview.pubxml" />
+    <None Include="Properties\PublishProfiles\TVC_OM_API.pubxml" />
+    <None Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.config.default" />
+    <None Include="Web.config.Debug.default">
+      <DependentUpon>Web.config.default</DependentUpon>
+    </None>
+    <None Include="Web.config.Release.default">
+      <DependentUpon>Web.config.default</DependentUpon>
+    </None>
+    <None Include="Web.config.test" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiControllers\Attendance\AttendanceApproveController.cs" />
+    <Compile Include="ApiControllers\Attendance\AttendanceTimeSheetController.cs" />
+    <Compile Include="ApiControllers\Attendance\AttendanceRegisterController.cs" />
+    <Compile Include="ApiControllers\Mobile\MobileController.cs" />
+    <Compile Include="ApiControllers\Mobile\MobileGatewayController.cs" />
+    <Compile Include="ApiControllers\Mobile\MobileRegisterController.cs" />
+    <Compile Include="ApiControllers\Mobile\MobileSystemController.cs" />
+    <Compile Include="ApiControllers\Portal\PortalController.cs" />
+    <Compile Include="ApiControllers\Payroll\PayrollController.cs" />
+    <Compile Include="ApiControllers\HomeController.cs" />
+    <Compile Include="ApiControllers\Common\CommonController.cs" />
+    <Compile Include="ApiControllers\Portal\PortalSystemController.cs" />
+    <Compile Include="ApiControllers\Attendance\AttendanceController.cs" />
+    <Compile Include="ApiControllers\Profile\ProfileRecruitment.cs" />
+    <Compile Include="ApiControllers\Profile\ProfileOrgController.cs" />
+    <Compile Include="ApiControllers\Profile\ProfileContactController.cs" />
+    <Compile Include="ApiControllers\Profile\ProfileEmpController.cs" />
+    <Compile Include="ApiControllers\Profile\ProfileController.cs" />
+    <Compile Include="AppCommon\Authen\Authen.cs" />
+    <Compile Include="AppCommon\Authen\AuthenOM.cs" />
+    <Compile Include="AppCommon\Authen\IAuthen.cs" />
+    <Compile Include="AppCommon\Authen\IAuthenOM.cs" />
+    <Compile Include="AppCommon\Authen\LDAP.cs" />
+    <Compile Include="AppCommon\Authen\MailSocket.cs" />
+    <Compile Include="AppCommon\Config\ConfigJson.cs" />
+    <Compile Include="AppCommon\DAO\CustomStoreParam.cs" />
+    <Compile Include="AppCommon\DAO\IOracleDBManager.cs" />
+    <Compile Include="AppCommon\DAO\OracleDBManager.cs" />
+    <Compile Include="AppCommon\DAO\OracleDBManagerOM.cs" />
+    <Compile Include="AppCommon\DAO\OracleTransactionScope.cs" />
+    <Compile Include="AppCommon\ExecuteResult.cs" />
+    <Compile Include="AppCommon\MobileModel\ForgotPasswordModel.cs" />
+    <Compile Include="AppCommon\MobileModel\LoginRequest.cs" />
+    <Compile Include="AppCommon\MobileModel\LogoutRequest.cs" />
+    <Compile Include="AppCommon\MobileModel\NotificationContent.cs" />
+    <Compile Include="AppCommon\MobileModel\RequestApiDTO.cs" />
+    <Compile Include="AppCommon\MobileModel\TokenApiDTO.cs" />
+    <Compile Include="AppCommon\Notification\NotifyModule.cs" />
+    <Compile Include="AppCommon\PortalModel\ChangePassRequest.cs" />
+    <Compile Include="AppCommon\PortalModel\DashboardCheckInRequest.cs" />
+    <Compile Include="AppCommon\PortalModel\ForgotPasswordModel.cs" />
+    <Compile Include="AppCommon\PortalModel\GetTimeSheetByMonthRequest.cs" />
+    <Compile Include="AppCommon\PortalModel\SelectItemRequest.cs" />
+    <Compile Include="AppCommon\PortalModel\LoginRequest.cs" />
+    <Compile Include="AppCommon\PortalModel\BaseRequest.cs" />
+    <Compile Include="AppCommon\PortalModel\RegisterLeaveRequest.cs" />
+    <Compile Include="AppCommon\PortalModel\SendEmailRequest.cs" />
+    <Compile Include="AppCommon\ResponseData.cs" />
+    <Compile Include="AppConstants\ApiName.cs" />
+    <Compile Include="AppConstants\ClientType.cs" />
+    <Compile Include="AppConstants\ProcedureName.cs" />
+    <Compile Include="AppConstants\SessionName.cs" />
+    <Compile Include="AppException\UnauthorizeException.cs" />
+    <Compile Include="AppException\WrongInputException.cs" />
+    <Compile Include="AppHelpers\ApiHelper.cs" />
+    <Compile Include="AppHelpers\EncryptData.cs" />
+    <Compile Include="AppHelpers\FaceServices.cs" />
+    <Compile Include="AppHelpers\FirebaseHelper.cs" />
+    <Compile Include="AppHelpers\JsonHelper.cs" />
+    <Compile Include="AppHelpers\LogHelper.cs" />
+    <Compile Include="AppHelpers\MailHelper.cs" />
+    <Compile Include="AppHelpers\MemoryCacheHelper.cs" />
+    <Compile Include="AppHelpers\RequestHelper.cs" />
+    <Compile Include="AppHelpers\StringHelper.cs" />
+    <Compile Include="AppHelpers\TokenHelper.cs" />
+    <Compile Include="App_Start\AutofacWebapiConfig.cs" />
+    <Compile Include="App_Start\ExceptionHandlerModule.cs" />
+    <Compile Include="App_Start\JobSchedule\SendNotification\SendNotificationJob.cs" />
+    <Compile Include="App_Start\JobSchedule\SendNotification\SendNotificationSchedule.cs" />
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Error\Controllers\ErrorController.cs" />
+    <Compile Include="Areas\Error\ErrorAreaRegistration.cs" />
+    <Compile Include="Areas\MobileView\Controllers\DashboardChartController.cs" />
+    <Compile Include="Areas\MobileView\Controllers\PayslipMobileController.cs" />
+    <Compile Include="Areas\MobileView\Controllers\PreviewMobileController.cs" />
+    <Compile Include="Areas\MobileView\Controllers\TimeSheetController.cs" />
+    <Compile Include="Areas\MobileView\MobileViewAreaRegistration.cs" />
+    <Compile Include="Areas\MobileView\Models\PayslipRequest.cs" />
+    <Compile Include="Areas\MobileView\Models\PayslipResponse.cs" />
+    <Compile Include="Attributes\ApiExceptionFilterAttribute.cs" />
+    <Compile Include="Attributes\AppExceptionFilterAttribute.cs" />
+    <Compile Include="Attributes\MobileAuthenAttribute.cs" />
+    <Compile Include="Attributes\PortalAuthorizeAttribute.cs" />
+    <Compile Include="Attributes\RequestFilterAttribute.cs" />
+    <Compile Include="Connected Services\AttendanceBusiness\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\CommonBusiness\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\PayrollBusiness\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\PortalBusiness\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ProfileBusiness\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Extension\CollectionHelper.cs" />
+    <Compile Include="Extension\ObjectExtension.cs" />
+    <Compile Include="Extension\StringExtension.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="AppCommon\PortalModel\BaseJsonResponse.cs" />
+    <Compile Include="AppCommon\PortalModel\TokenApiDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log4net.config" />
+    <Content Include="config.json" />
+    <None Include="IntegrationScript\Test_Collections\Dev.postman_environment.json" />
+    <None Include="IntegrationScript\Test_Collections\MObileTVC_NoneOM.postman_collection.json" />
+    <None Include="IntegrationScript\Test_Collections\MObileTVC_OM.postman_collection.json" />
+    <None Include="IntegrationScript\Test_Collections\Test.postman_environment.json" />
+    <Content Include="MobileStyle\css\css\main.css.map" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="MobileStyle\css\kendo\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="MobileStyle\css\kendo\fonts\glyphs\WebComponentsIcons.eot" />
+    <Content Include="MobileStyle\css\kendo\fonts\glyphs\WebComponentsIcons.ttf" />
+    <Content Include="MobileStyle\css\kendo\fonts\glyphs\WebComponentsIcons.woff" />
+    <Content Include="MobileStyle\css\kendo\images\kendoui.ttf" />
+    <Content Include="MobileStyle\css\kendo\images\kendoui.woff" />
+    <Content Include="MobileStyle\css\main\custom.scss" />
+    <Content Include="MobileStyle\css\main\main.scss" />
+    <Content Include="MobileStyle\fonts\Roboto-Black.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-BlackItalic.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-Bold.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-BoldItalic.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-Italic.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-Light.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-LightItalic.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-Medium.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-MediumItalic.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-Regular.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-Thin.ttf" />
+    <Content Include="MobileStyle\fonts\Roboto-ThinItalic.ttf" />
+    <Content Include="MobileStyle\langues\en-US.json" />
+    <Content Include="MobileStyle\langues\vi-VN.json" />
+    <None Include="packages.config" />
+    <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\LocalProject.pubxml" />
+    <None Include="Properties\PublishProfiles\ServerDemo.pubxml" />
+    <None Include="Properties\PublishProfiles\ServerTestTVC.pubxml" />
+    <None Include="Web.config.Debug.test">
+      <DependentUpon>Web.config.test</DependentUpon>
+    </None>
+    <None Include="Web.config.Release.test">
+      <DependentUpon>Web.config.test</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppCommon\Utils\" />
+    <Folder Include="Areas\Error\Data\" />
+    <Folder Include="FaceImages\" />
+    <Folder Include="Views\MobileGateway\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\AttendanceBusiness\" />
+    <WCFMetadataStorage Include="Connected Services\CommonBusiness\" />
+    <WCFMetadataStorage Include="Connected Services\PayrollBusiness\" />
+    <WCFMetadataStorage Include="Connected Services\PortalBusiness\" />
+    <WCFMetadataStorage Include="Connected Services\ProfileBusiness\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10102</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44313</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

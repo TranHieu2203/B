@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Category" PostBack="False">
+
+      <Group>
+        <Item Value="ctrlHU_Title" Text="Title category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Title&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_ContractType" Text="Type of contract category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ContractType&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlPlace" Text="City category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlPlace&amp;group=List&amp;tab=Nation" CheckPermission="true"/>
+        <Item Value="ctrlHU_Bank" Text="Bank category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Bank&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_BankBranch" Text="Bank branch category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_BankBranch&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_AllowanceList" Text="Allowance category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_AllowanceList&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_WelfareList" Text="Welfare regime category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_WelfareList&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_LabourProtection" Text="Workwear category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_LabourProtection&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_Asset" Text="Allocation asset category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Asset&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_StaffRank" Text="HR category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_StaffRank&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlOtherList" Text="General category" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlOtherList&amp;group=list" CheckPermission="true"/>
+      </Group>
+    </Item>
+    <Item Text="Institute"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_Organization" Text="Organizational chart" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Organization&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlHU_OrgTitle" Text="Unit titles" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_OrgTitle&amp;group=Setting" CheckPermission="true"/>
+        <Item Value="ctrlRemindConfig" Text="Reminder dates institute" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlRemindConfig&amp;group=Setting" CheckPermission="true"/>
+        <Item Value="ctrlPA_SalaryGroup" Text="Wage scale institute" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlPA_SalaryGroup&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlPA_SalaryLevel" Text="salaries groups institute" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlPA_SalaryLevel&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlPA_SalaryRank" Text="Pay ranges institute" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlPA_SalaryRank&amp;group=Setting" CheckPermission="true" />
+      </Group>
+    </Item>
+    <Item Text="Business"  PostBack="False">
+      <Group>
+        <Item  Value="ctrlDashboard"  Text="Table information" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlDashboard" CheckPermission="true"/>
+        <Item  Value="ctrlHU_EmployeeMng"  Text="Employee records" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_EmployeeMng&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlHU_WageMng"  Text="Records salaries management " PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_WageMng&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlHU_MissionMng"  Text="Task Management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_MissionMng&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlContract" Text="Contract management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlContract&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlDiscipline" Text="Discipline management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlDiscipline&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlCommend" Text="remunerative management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlCommend&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlWelfareMng" Text="Welfare management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlWelfareMng&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlAssetMng" Text="Asset allocation management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlAssetMng&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlTerminate" Text="Leave management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlTerminate&amp;group=Business" CheckPermission="true"/>
+      </Group>
+    </Item>
+    <Item Text="Report" PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_ReportList" Text="Report list" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ReportList&amp;group=report" CheckPermission="true"/>
+        <Item Value="ctrlDynamicReport" Text="Dynamic report" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlDynamicReport&amp;group=report" CheckPermission="true"/>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

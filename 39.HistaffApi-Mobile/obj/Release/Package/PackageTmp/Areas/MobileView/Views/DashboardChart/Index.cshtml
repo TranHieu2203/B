@@ -1,0 +1,105 @@
+﻿@using HiStaffAPI.Areas.MobileView.Models
+@{
+    Layout = "~/Areas/MobileView/Views/Shared/_LayoutMobile.cshtml";
+    var title = "EmployeeStatis";
+    var lang = ViewData["lang"] == null ? "vi-VN" : ViewData["lang"].ToString();
+    ViewData["Title"] = title;
+}
+<script src="/MobileStyle/js/highcharts/highcharts.js" type="text/javascript"></script>
+
+<div style="margin-top: 5px; text-align: center">
+
+    <select id="cboType">
+        <option value="1">1</option>
+        <option>2</option>
+    </select>
+</div>
+<div id="container" style="min-width: 220px; height: 220px; margin: 0 auto">
+</div>
+
+<script type="text/javascript">
+    var data = `
+{name: 'Hợp đồng xác định thời hạn (66)', y: 66},
+{name: 'Hợp đồng cộng tác viên 3 tháng (2)', y: 2},
+{name: 'Hợp đồng lao động vô thời hạn (19)', y: 19},
+{name: 'Hợp đồng thử việc 2 tháng (56)', y: 56},
+{name: 'Hợp đồng thực tập sinh (6)', y: 6}
+`;
+
+
+    function InIEvent() {
+        $(function () {
+            // Create the chart
+            $('#container').highcharts({
+                credits: {
+                    enabled: false
+                },
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: 'pie',
+                    style: {
+                        fontFamily: 'arial'
+                    },
+                    options3d: {
+                        enabled: true,
+                        alpha: 45,
+                        beta: 0
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        size: '75%',
+                        center: ['45%', '65%'],
+                        depth: 35,
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.percentage:.1f}% ({point.y})'
+                        },
+                        showInLegend: true
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'right',
+                    verticalAlign: 'right',
+                    y: 25,
+                    x: -10,
+                    padding: 0,
+                    itemMarginTop: 0,
+                    itemMarginBottom: 3,
+                    itemStyle: {
+                        fontSize: '11px',
+                        fontWeight: 'normal',
+                        color: '#767676'
+                    },
+                    layout: 'vertical'
+                },
+                exporting: {
+                    sourceWidth: 900,
+                    sourceHeight: 300,
+                    // scale: 2 (default)
+                    chartOptions: {
+                        subtitle: null
+                    }
+                },
+                series: [{
+                    name: '<%=name %>',
+                    colorByPoint: true,
+                    data: data
+                }],
+                title: {
+                    text: '<span style="font-weight: bold;color: #767676;font-size:12px;">Employee Statistic</span>'
+                },
+                colors: ['#D09B2C', '#EF94B3', '#006B99', '#48ADDB', '#FFF3C0', '#5292BE', '#1268A1', '#E74C3C', '#ECF0F1']
+            });
+        });
+    }
+    $(document).ready(InIEvent);
+</script>

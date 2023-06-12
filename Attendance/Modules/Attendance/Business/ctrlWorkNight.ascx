@@ -1,0 +1,521 @@
+﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="ctrlWorkNight.ascx.vb"
+    Inherits="Attendance.ctrlWorkNight" %>
+<%@ Import Namespace="Common" %>
+<Common:ctrlMessageBox ID="ctrlMessageBox" runat="server" />
+<link href="/Styles/StyleCustom.css" rel="stylesheet" type="text/css" />
+<asp:HiddenField ID="hiStartDate" runat="server" />
+<asp:HiddenField ID="hiEndDate" runat="server" />
+<tlk:RadSplitter ID="RadSplitter1" runat="server" Width="100%" Height="100%">
+    <tlk:RadPane ID="LeftPane" runat="server" MinWidth="260" Width="260px" Scrolling="None">
+        <Common:ctrlOrganization ID="ctrlOrganization" runat="server" />
+    </tlk:RadPane>
+    <tlk:RadSplitBar ID="RadSplitBar1" runat="server" CollapseMode="Forward">
+    </tlk:RadSplitBar>
+    <tlk:RadPane ID="MainPane" runat="server" Scrolling="None">
+        <tlk:RadSplitter ID="RadSplitter3" runat="server" Width="100%" Height="100%" Orientation="Horizontal">
+            <tlk:RadPane ID="RadPane2" runat="server" Height="35px" Scrolling="None">
+                <tlk:RadToolBar ID="tbarMainToolBar" runat="server" />
+            </tlk:RadPane>
+            <tlk:RadPane ID="TopPanel" runat="server" MinHeight="130" Height="55px" Scrolling="None">
+                <table class="table-form" style="padding-top: 8px;">
+                    <tr>
+                        <td>
+                            <%# Translate("Năm")%>
+                        </td>
+                        <td>
+                            <tlk:RadComboBox ID="cboYear" runat="server" SkinID="dDropdownList" AutoPostBack="true"
+                                Width="80px">
+                            </tlk:RadComboBox>
+                        </td>
+                        <td style="width: 100px; text-align: right">
+                            <%# Translate("Kỳ đăng ký")%>
+                        </td>
+                        <td>
+                            <tlk:RadComboBox ID="cboPeriodId" runat="server" SkinID="dDropdownList" AutoPostBack="true"
+                                Width="150px">
+                            </tlk:RadComboBox>
+                        </td>
+                        <td style="width: 120px; text-align: right">
+                            <%# Translate("Đối tượng nhân viên")%>
+                        </td>
+                        <td>
+                            <tlk:RadComboBox ID="cboEmpObj" runat="server" AutoPostBack="true"
+                                Width="150px">
+                            </tlk:RadComboBox>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <tlk:RadButton ID="btnSearchEmp" runat="server" Text="<%$ Translate: Tìm %>" SkinID="ButtonFind">
+                            </tlk:RadButton>
+                        </td>
+                    </tr>
+                </table>
+            </tlk:RadPane>
+            <tlk:RadPane ID="RadPane1" runat="server" Scrolling="None">
+                <tlk:RadGrid PageSize="50" ID="rgSignWork" runat="server" AutoGenerateColumns="false" AllowMultiRowEdit="True"
+                    AllowPaging="True" Height="100%"  AllowMultiRowSelection="true">
+                    <ClientSettings AllowColumnsReorder="True" EnableRowHoverStyle="true" Scrolling-AllowScroll="true"
+                                    Scrolling-SaveScrollPosition="true" Scrolling-UseStaticHeaders="true">
+                                    <Scrolling AllowScroll="True" UseStaticHeaders="True" FrozenColumnsCount="3" />
+                                    <Selecting AllowRowSelect="true" />
+                                    <Resizing AllowColumnResize="true" />
+                                </ClientSettings>
+                    <MasterTableView DataKeyNames="" ClientDataKeyNames="" FilterItemStyle-HorizontalAlign="Center" EditMode="InPlace">
+                        <Columns>
+                            <tlk:GridClientSelectColumn UniqueName="cbStatus" HeaderStyle-HorizontalAlign="Center"
+                                HeaderStyle-Width="50px" ItemStyle-HorizontalAlign="Center">
+                            </tlk:GridClientSelectColumn>
+                            <tlk:GridBoundColumn HeaderText="<%$ Translate: Mã nhân viên %>" DataField="ID"
+                                UniqueName="ID" HeaderStyle-Width="100px" SortExpression="ID" ReadOnly="true" Visible="false"/>
+                            <tlk:GridBoundColumn HeaderText="<%$ Translate: Mã nhân viên %>" DataField="EMPLOYEE_CODE"
+                                UniqueName="EMPLOYEE_CODE" HeaderStyle-Width="100px" SortExpression="EMPLOYEE_CODE" ReadOnly="true"/>
+                            <tlk:GridBoundColumn HeaderText="<%$ Translate: Họ tên %>" DataField="VN_FULLNAME"
+                                UniqueName="VN_FULLNAME" HeaderStyle-Width="120px" SortExpression="VN_FULLNAME" ReadOnly="true"/>
+                            <tlk:GridBoundColumn HeaderText="<%$ Translate: Vị trí công việc %>" DataField="TITLE_NAME"
+                                UniqueName="TITLE_NAME" HeaderStyle-Width="150px" SortExpression="TITLE_NAME" ReadOnly="true"/>
+                            <tlk:GridBoundColumn HeaderText="<%$ Translate: Đơn vị %>" DataField="ORG_NAME" UniqueName="ORG_NAME"
+                                SortExpression="ORG_NAME" HeaderStyle-Width="200px" ReadOnly="true"/>
+                            <tlk:GridTemplateColumn HeaderText="D1" AllowFiltering="false" Visible="false" UniqueName="D1" ColumnGroupName="GeneralInformation">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D1") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D1" runat="server" Checked=<%# Eval("D1") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D2" AllowFiltering="false" Visible="false" UniqueName="D2">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D2") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D2" runat="server" Checked=<%# Eval("D2") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D3" AllowFiltering="false" Visible="false" UniqueName="D3">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D3") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D3" runat="server" Checked=<%# Eval("D3") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D4" AllowFiltering="false" Visible="false" UniqueName="D4">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D4") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D4" runat="server" Checked=<%# Eval("D4") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D5" AllowFiltering="false" Visible="false" UniqueName="D5">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D5") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D5" runat="server" Checked=<%# Eval("D5") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D6" AllowFiltering="false" Visible="false" UniqueName="D6">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D6") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D6" runat="server" Checked=<%# Eval("D6") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D7" AllowFiltering="false" Visible="false" UniqueName="D7">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D7") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D7" runat="server" Checked=<%# Eval("D7") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D8" AllowFiltering="false" Visible="false" UniqueName="D8">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D8") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D8" runat="server" Checked=<%# Eval("D8") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D9" AllowFiltering="false" Visible="false" UniqueName="D9">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D9") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D9" runat="server" Checked=<%# Eval("D9") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D10" AllowFiltering="false" Visible="false" UniqueName="D10">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D10") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D10" runat="server" Checked=<%# Eval("D10") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D11" AllowFiltering="false" Visible="false" UniqueName="D11">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D11") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D11" runat="server" Checked=<%# Eval("D11") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D12" AllowFiltering="false" Visible="false" UniqueName="D12">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D12") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D12" runat="server" Checked=<%# Eval("D12") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D13" AllowFiltering="false" Visible="false" UniqueName="D13">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D13") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D13" runat="server" Checked=<%# Eval("D13") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D14" AllowFiltering="false" Visible="false" UniqueName="D14">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D14") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D14" runat="server" Checked=<%# Eval("D14") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D15" AllowFiltering="false" Visible="false" UniqueName="D15">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D15") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D15" runat="server" Checked=<%# Eval("D15") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D16" AllowFiltering="false" Visible="false" UniqueName="D16">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D16") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D16" runat="server" Checked=<%# Eval("D16") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D17" AllowFiltering="false" Visible="false" UniqueName="D17">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D17") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D17" runat="server" Checked=<%# Eval("D17") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D18" AllowFiltering="false" Visible="false" UniqueName="D18">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D18") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D18" runat="server" Checked=<%# Eval("D18") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D19" AllowFiltering="false" Visible="false" UniqueName="D19">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D19") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D19" runat="server" Checked=<%# Eval("D19") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D20" AllowFiltering="false" Visible="false" UniqueName="D20">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D20") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D20" runat="server" Checked=<%# Eval("D20") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D21" AllowFiltering="false" Visible="false" UniqueName="D21">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D21") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D21" runat="server" Checked=<%# Eval("D21") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D22" AllowFiltering="false" Visible="false" UniqueName="D22">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D22") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D22" runat="server" Checked=<%# Eval("D22") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D23" AllowFiltering="false" Visible="false" UniqueName="D23">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D23") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D23" runat="server" Checked=<%# Eval("D23") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D24" AllowFiltering="false" Visible="false" UniqueName="D24">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D24") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D24" runat="server" Checked=<%# Eval("D24") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D25" AllowFiltering="false" Visible="false" UniqueName="D25">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D25") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D25" runat="server" Checked=<%# Eval("D25") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D26" AllowFiltering="false" Visible="false" UniqueName="D26">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D26") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D26" runat="server" Checked=<%# Eval("D26") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D27" AllowFiltering="false" Visible="false" UniqueName="D27">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D27") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D27" runat="server" Checked=<%# Eval("D27") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D28" AllowFiltering="false" Visible="false" UniqueName="D28">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D28") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D28" runat="server" Checked=<%# Eval("D28") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D29" AllowFiltering="false" Visible="false" UniqueName="D29">
+                                <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D29") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D29" runat="server" Checked=<%# Eval("D29") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D30" AllowFiltering="false" Visible="false" UniqueName="D30">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D30") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D30" runat="server" Checked=<%# Eval("D30") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                            <tlk:GridTemplateColumn HeaderText="D31" AllowFiltering="false" Visible="false" UniqueName="D31">
+                                 <HeaderStyle Width="80px" />
+                                <ItemStyle HorizontalAlign="Center" />
+                                <ItemTemplate>
+                                   <asp:CheckBox runat="server" Enabled="false" Checked=<%# Eval("D31") %> /> 
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                   <asp:CheckBox ID="D31" runat="server" Checked=<%# Eval("D31") %> /> 
+                                </EditItemTemplate>
+                            </tlk:GridTemplateColumn>
+                        </Columns>
+                    </MasterTableView>
+                    <HeaderStyle HorizontalAlign="Center" Width="100px" />
+                    <ClientSettings EnableRowHoverStyle="true">
+                    </ClientSettings>
+                </tlk:RadGrid>
+            </tlk:RadPane>
+        </tlk:RadSplitter>
+    </tlk:RadPane>
+</tlk:RadSplitter>
+<tlk:RadWindowManager ID="RadWindowManager1" runat="server">
+    <Windows>
+        <tlk:RadWindow runat="server" ID="rwPopup" VisibleStatusbar="false" Width="1000"
+            Height="500px" OnClientClose="OnClientClose" EnableShadow="true" Behaviors="Close, Maximize, Move"
+            Modal="true" ShowContentDuringLoad="false" Title="<%$ Translate: Thông tin chi tiết nhân viên%>">
+        </tlk:RadWindow>
+    </Windows>
+</tlk:RadWindowManager>
+<Common:ctrlUpload ID="ctrlUpload1" runat="server" />
+<asp:PlaceHolder ID="phPopup" runat="server"></asp:PlaceHolder>
+<tlk:RadScriptBlock ID="scriptBlock" runat="server">
+    <script type="text/javascript">
+        var enableAjax = true;
+        var oldSize = 0;
+        function OnClientButtonClicking(sender, args) {
+            var item = args.get_item();
+            if (args.get_item().get_commandName() == 'CREATE') {
+                OpenEditWindow();
+                args.set_cancel(true);
+            }
+            if (args.get_item().get_commandName() == 'EDIT') {
+                //OpenEditWindow();
+                //args.set_cancel(true);
+            }
+            if (item.get_commandName() == "EXPORT") {
+                var grid = $find("<%=rgSignWork.ClientID %>");
+                var masterTable = grid.get_masterTableView();
+                var rows = masterTable.get_dataItems();
+                if (rows.length == 0) {
+                    var m = '<%= Translate(CommonMessage.MESSAGE_WARNING_EXPORT_EMPTY) %>';
+                    var n = noty({ text: m, dismissQueue: true, type: 'warning' });
+                    setTimeout(function () { $.noty.close(n.options.id); }, 5000);
+                    args.set_cancel(true);
+                    return;
+                }
+                enableAjax = false;
+            } else if (item.get_commandName() == "SAVE") {
+                // Nếu nhấn nút SAVE thì resize
+                // ResizeSplitter();
+            } else if (item.get_commandName() == "DELETE") {
+                
+            }
+            else {
+                // Nếu nhấn các nút khác thì resize default
+                //ResizeSplitterDefault();
+            }
+        }
+        function gridRowDblClick(sender, eventArgs) {
+            OpenEditWindow("Normal");
+        }
+        function OpenEditWindow() {
+            <%--var m;
+            var cbo = $find("<%# cboPeriodId.ClientID %>");
+            var periodID = cbo.get_value();
+            if (periodID.length = 0) {
+                m = '<%# Translate("Bạn phải chọn kỳ công.") %>';
+                var n = noty({ text: m, dismissQueue: true, type: 'warning' });
+                setTimeout(function () { $.noty.close(n.options.id); }, 10000);
+                return;
+            }
+            window.open('/Default.aspx?mid=Attendance&fid=ctrlSignWorkNewEdit&group=Business&FormType=1&periodid=' + periodID, "_self"); /*
+            oWindow.setSize(900, 500);
+            oWindow.center(); */--%>
+        }
+        function OpenDeleteWindow() {
+            debugger;
+            var grid = $find('<%# rgSignWork.ClientID %>');
+            var gridSelected = grid.get_masterTableView().get_selectedItems();
+            var id = 0
+            var gridSelected = grid.get_masterTableView().get_selectedItems();
+            if (gridSelected != "") {
+                id = grid.get_masterTableView().get_selectedItems()[0].getDataKeyValue('ID');
+            }
+
+//            var grid = $find('<%= rgSignWork.ClientID %>');
+//            var masterTableView = grid.get_masterTableView();
+
+//            var selectedItems = masterTableView.get_selectedItems();
+//            var result = "";
+
+//            for (var i = 0; i < selectedItems.length; i++) {
+//                var item = selectedItems[i];
+//                alert(item.getDataKeyValue('ID'))
+//            }
+
+            if (id > 0) {
+                var m;
+                var cbo = $find("<%# cboPeriodId.ClientID %>");
+                var periodID = cbo.get_value();
+                if (periodID.length = 0) {
+                    m = '<%# Translate("Bạn phải chọn kỳ công.") %>';
+                    var n = noty({ text: m, dismissQueue: true, type: 'warning' });
+                    setTimeout(function () { $.noty.close(n.options.id); }, 10000);
+                    return;
+                }
+                window.open('/Default.aspx?mid=Attendance&fid=ctrlSignWorkDelete&group=Business&FormType=1&ID=' + id + '&periodid=' + periodID, "_self"); /*
+                oWindow.setSize(500, 400);
+                oWindow.center(); */
+            }
+        }
+        function onRequestStart(sender, eventArgs) {
+            eventArgs.set_enableAjax(enableAjax);
+            enableAjax = true;
+        }
+
+        function onRequestStart(sender, eventArgs) {
+            eventArgs.set_enableAjax(enableAjax);
+            enableAjax = true;
+        }
+        function OnClientClose(sender, args) {
+            var m;
+            var arg = args.get_argument();
+            if (arg == '1') {
+                m = '<%# Translate(CommonMessage.MESSAGE_TRANSACTION_SUCCESS) %>';
+                var n = noty({ text: m, dismissQueue: true, type: 'success' });
+                setTimeout(function () { $.noty.close(n.options.id); }, 10000);
+                $find("<%= rgSignWork.ClientID %>").get_masterTableView().rebind();
+            }
+        }
+
+    </script>
+</tlk:RadScriptBlock>

@@ -1,0 +1,1948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="InsuranceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="InsuranceModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="InsuranceModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="InsuranceContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="HU_EMPLOYEE" EntityType="InsuranceModel.HU_EMPLOYEE" />
+          <EntitySet Name="HU_EMPLOYEE_EDUCATION" EntityType="InsuranceModel.HU_EMPLOYEE_EDUCATION" />
+          <EntitySet Name="HU_EMPLOYEE_FILES" EntityType="InsuranceModel.HU_EMPLOYEE_FILES" />
+          <EntitySet Name="HU_EMPLOYEE_HEALTH" EntityType="InsuranceModel.HU_EMPLOYEE_HEALTH" />
+          <EntitySet Name="HU_EMPLOYEE_OTHER_INFO" EntityType="InsuranceModel.HU_EMPLOYEE_OTHER_INFO" />
+          <EntitySet Name="HU_EMPLOYEE_SALARY" EntityType="InsuranceModel.HU_EMPLOYEE_SALARY" />
+          <EntitySet Name="HU_EMPLOYEE_TRAIN" EntityType="InsuranceModel.HU_EMPLOYEE_TRAIN" />
+          <EntitySet Name="HU_ORG_TITLE" EntityType="InsuranceModel.HU_ORG_TITLE" />
+          <EntitySet Name="HU_ORGANIZATION" EntityType="InsuranceModel.HU_ORGANIZATION" />
+          <EntitySet Name="HU_TITLE" EntityType="InsuranceModel.HU_TITLE" />
+          <EntitySet Name="HU_WORKING" EntityType="InsuranceModel.HU_WORKING" />
+          <EntitySet Name="OT_OTHER_LIST" EntityType="InsuranceModel.OT_OTHER_LIST" />
+          <EntitySet Name="OT_OTHER_LIST_GROUP" EntityType="InsuranceModel.OT_OTHER_LIST_GROUP" />
+          <EntitySet Name="OT_OTHER_LIST_TYPE" EntityType="InsuranceModel.OT_OTHER_LIST_TYPE" />
+          <AssociationSet Name="FK_FE_HEH" Association="InsuranceModel.FK_FE_HEH">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE_HEALTH" EntitySet="HU_EMPLOYEE_HEALTH" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HEE" Association="InsuranceModel.FK_HE_HEE">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE_EDUCATION" EntitySet="HU_EMPLOYEE_EDUCATION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HEF" Association="InsuranceModel.FK_HE_HEF">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE_FILES" EntitySet="HU_EMPLOYEE_FILES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HEO" Association="InsuranceModel.FK_HE_HEO">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE_OTHER_INFO" EntitySet="HU_EMPLOYEE_OTHER_INFO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HES" Association="InsuranceModel.FK_HE_HES">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE_SALARY" EntitySet="HU_EMPLOYEE_SALARY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HT" Association="InsuranceModel.FK_HE_HT">
+            <End Role="HU_TITLE" EntitySet="HU_TITLE" />
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HW" Association="InsuranceModel.FK_HE_HW">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_WORKING" EntitySet="HU_WORKING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HU_ORG_HU_EMP" Association="InsuranceModel.FK_HU_ORG_HU_EMP">
+            <End Role="HU_ORGANIZATION" EntitySet="HU_ORGANIZATION" />
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HUEMD_HUEM" Association="InsuranceModel.FK_HUEMD_HUEM">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE1" EntitySet="HU_EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HUOG_HUOT" Association="InsuranceModel.FK_HUOG_HUOT">
+            <End Role="HU_ORGANIZATION" EntitySet="HU_ORGANIZATION" />
+            <End Role="HU_ORG_TITLE" EntitySet="HU_ORG_TITLE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HUTL_HUOT" Association="InsuranceModel.FK_HUTL_HUOT">
+            <End Role="HU_TITLE" EntitySet="HU_TITLE" />
+            <End Role="HU_ORG_TITLE" EntitySet="HU_ORG_TITLE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HU_ORG_HU_ORG" Association="InsuranceModel.FK_HU_ORG_HU_ORG">
+            <End Role="HU_ORGANIZATION" EntitySet="HU_ORGANIZATION" />
+            <End Role="HU_ORGANIZATION1" EntitySet="HU_ORGANIZATION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HUOG_HUWK" Association="InsuranceModel.FK_HUOG_HUWK">
+            <End Role="HU_ORGANIZATION" EntitySet="HU_ORGANIZATION" />
+            <End Role="HU_WORKING" EntitySet="HU_WORKING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HUTL_HUWK" Association="InsuranceModel.FK_HUTL_HUWK">
+            <End Role="HU_TITLE" EntitySet="HU_TITLE" />
+            <End Role="HU_WORKING" EntitySet="HU_WORKING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OTOTL_HUWK" Association="InsuranceModel.FK_OTOTL_HUWK">
+            <End Role="OT_OTHER_LIST" EntitySet="OT_OTHER_LIST" />
+            <End Role="HU_WORKING" EntitySet="HU_WORKING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OOLT_OOL" Association="InsuranceModel.FK_OOLT_OOL">
+            <End Role="OT_OTHER_LIST_TYPE" EntitySet="OT_OTHER_LIST_TYPE" />
+            <End Role="OT_OTHER_LIST" EntitySet="OT_OTHER_LIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OOLG_OOLT" Association="InsuranceModel.FK_OOLG_OOLT">
+            <End Role="OT_OTHER_LIST_GROUP" EntitySet="OT_OTHER_LIST_GROUP" />
+            <End Role="OT_OTHER_LIST_TYPE" EntitySet="OT_OTHER_LIST_TYPE" />
+          </AssociationSet>
+          <EntitySet Name="HU_DISTRICT" EntityType="InsuranceModel.HU_DISTRICT" />
+          <EntitySet Name="HU_NATION" EntityType="InsuranceModel.HU_NATION" />
+          <EntitySet Name="HU_PROVINCE" EntityType="InsuranceModel.HU_PROVINCE" />
+          <AssociationSet Name="FK_HU_PRO_HU_DIS" Association="InsuranceModel.FK_HU_PRO_HU_DIS">
+            <End Role="HU_PROVINCE" EntitySet="HU_PROVINCE" />
+            <End Role="HU_DISTRICT" EntitySet="HU_DISTRICT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HU_NAT_HU_PRO" Association="InsuranceModel.FK_HU_NAT_HU_PRO">
+            <End Role="HU_NATION" EntitySet="HU_NATION" />
+            <End Role="HU_PROVINCE" EntitySet="HU_PROVINCE" />
+          </AssociationSet>
+          <EntitySet Name="SE_CHOSEN_ORG" EntityType="InsuranceModel.SE_CHOSEN_ORG" />
+          <EntitySet Name="HU_CONTRACT" EntityType="InsuranceModel.HU_CONTRACT" />
+          <EntitySet Name="HU_CONTRACT_TYPE" EntityType="InsuranceModel.HU_CONTRACT_TYPE" />
+          <EntitySet Name="HU_CONTRACT_MAX_V" EntityType="InsuranceModel.HU_CONTRACT_MAX_V" />
+          <EntitySet Name="HU_STAFF_RANK" EntityType="InsuranceModel.HU_STAFF_RANK" />
+          <EntitySet Name="INS_ARISING" EntityType="InsuranceModel.INS_ARISING" />
+          <EntitySet Name="INS_CHANGE" EntityType="InsuranceModel.INS_CHANGE" />
+          <EntitySet Name="INS_COST_FOLLOW_LEVER" EntityType="InsuranceModel.INS_COST_FOLLOW_LEVER" />
+          <EntitySet Name="INS_ENTITLED_TYPE" EntityType="InsuranceModel.INS_ENTITLED_TYPE" />
+          <EntitySet Name="INS_GROUP_REGIMES" EntityType="InsuranceModel.INS_GROUP_REGIMES" />
+          <EntitySet Name="INS_GROUP_SUN_CARE" EntityType="InsuranceModel.INS_GROUP_SUN_CARE" />
+          <EntitySet Name="INS_SUN_CARE" EntityType="InsuranceModel.INS_SUN_CARE" />
+          <EntitySet Name="INS_WHEREHEALTH" EntityType="InsuranceModel.INS_WHEREHEALTH" />
+          <EntitySet Name="HU_EMPLOYEE_CV" EntityType="InsuranceModel.HU_EMPLOYEE_CV" />
+          <EntitySet Name="HU_WORKING_ALLOW" EntityType="InsuranceModel.HU_WORKING_ALLOW" />
+          <EntitySet Name="HU_WORKING_MAX" EntityType="InsuranceModel.HU_WORKING_MAX" />
+          <EntitySet Name="INS_SPECIFIED_OBJECTS" EntityType="InsuranceModel.INS_SPECIFIED_OBJECTS" />
+          <EntitySet Name="HU_WORKING_ALLOW1" EntityType="InsuranceModel.HU_WORKING_ALLOW1" />
+          <EntitySet Name="INS_INFOOLD" EntityType="InsuranceModel.INS_INFOOLD" />
+          <EntitySet Name="INS_INFORMATION" EntityType="InsuranceModel.INS_INFORMATION" />
+          <EntitySet Name="INS_CHANGE_TYPE" EntityType="InsuranceModel.INS_CHANGE_TYPE" />
+          <EntitySet Name="INS_REMIGE_MANAGER" EntityType="InsuranceModel.INS_REMIGE_MANAGER" />
+          <EntitySet Name="INS_REGION" EntityType="InsuranceModel.INS_REGION" />
+          <EntitySet Name="SE_USER" EntityType="InsuranceModel.SE_USER" />
+          <EntitySet Name="SE_REPORT" EntityType="InsuranceModel.SE_REPORT" />
+          <AssociationSet Name="SE_USER_REPORT" Association="InsuranceModel.SE_USER_REPORT">
+            <End Role="SE_REPORT" EntitySet="SE_REPORT" />
+            <End Role="SE_USER" EntitySet="SE_USER" />
+          </AssociationSet>
+          <EntitySet Name="INS_LIST_PROGRAM" EntityType="InsuranceModel.INS_LIST_PROGRAM" />
+          <EntitySet Name="INS_LIST_CONTRACT" EntityType="InsuranceModel.INS_LIST_CONTRACT" />
+          <EntitySet Name="INS_LIST_CONTRACT_DETAIL" EntityType="InsuranceModel.INS_LIST_CONTRACT_DETAIL" />
+          <EntitySet Name="INS_TYPE_CHANGE" EntityType="InsuranceModel.INS_TYPE_CHANGE" />
+          <EntitySet Name="INS_LIST_INSURANCE" EntityType="InsuranceModel.INS_LIST_INSURANCE" />
+          <EntitySet Name="INS_CHANGE_INFO" EntityType="InsuranceModel.INS_CHANGE_INFO" />
+          <EntitySet Name="INS_CLAIME_INSURANCE" EntityType="InsuranceModel.INS_CLAIME_INSURANCE" />
+          <EntitySet Name="INS_HEALTH_INSURANCE" EntityType="InsuranceModel.INS_HEALTH_INSURANCE" />
+          <EntitySet Name="INS_REGIMES" EntityType="InsuranceModel.INS_REGIMES" />
+          <EntitySet Name="AT_TIME_MANUAL" EntityType="InsuranceModel.AT_TIME_MANUAL" />
+          <EntitySet Name="INS_ARISING_LEAVESHEET" EntityType="InsuranceModel.INS_ARISING_LEAVESHEET" />
+          <EntitySet Name="AT_FML" EntityType="InsuranceModel.AT_FML" />
+          <EntitySet Name="AT_TYPE_PROCESS" EntityType="InsuranceModel.AT_TYPE_PROCESS" />
+          <EntitySet Name="INS_WORKING_BEFORE" EntityType="InsuranceModel.INS_WORKING_BEFORE" />
+        </EntityContainer>
+        <EntityType Name="HU_EMPLOYEE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="EMPLOYEE_CODE" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="FIRST_NAME_VN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="LAST_NAME_VN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="FULLNAME_VN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="FIRST_NAME_EN" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LAST_NAME_EN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="FULLNAME_EN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ORG_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="WORK_STATUS" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CONTRACT_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TITLE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="JOIN_DATE" Type="DateTime" />
+          <Property Name="DIRECT_MANAGER" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="LAST_WORKING_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TER_EFFECT_DATE" Type="DateTime" />
+          <Property Name="TER_LAST_DATE" Type="DateTime" />
+          <Property Name="ITIME_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="STAFF_RANK_ID" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_EMPLOYEE_HEALTH" Relationship="InsuranceModel.FK_FE_HEH" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE_HEALTH" />
+          <NavigationProperty Name="HU_EMPLOYEE_EDUCATION" Relationship="InsuranceModel.FK_HE_HEE" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE_EDUCATION" />
+          <NavigationProperty Name="HU_EMPLOYEE_FILES" Relationship="InsuranceModel.FK_HE_HEF" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE_FILES" />
+          <NavigationProperty Name="HU_EMPLOYEE_OTHER_INFO" Relationship="InsuranceModel.FK_HE_HEO" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE_OTHER_INFO" />
+          <NavigationProperty Name="HU_EMPLOYEE_SALARY" Relationship="InsuranceModel.FK_HE_HES" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE_SALARY" />
+          <NavigationProperty Name="HU_TITLE" Relationship="InsuranceModel.FK_HE_HT" FromRole="HU_EMPLOYEE" ToRole="HU_TITLE" />
+          <NavigationProperty Name="HU_WORKING" Relationship="InsuranceModel.FK_HE_HW" FromRole="HU_EMPLOYEE" ToRole="HU_WORKING" />
+          <NavigationProperty Name="HU_ORGANIZATION" Relationship="InsuranceModel.FK_HU_ORG_HU_EMP" FromRole="HU_EMPLOYEE" ToRole="HU_ORGANIZATION" />
+          <NavigationProperty Name="HU_EMPLOYEE1" Relationship="InsuranceModel.FK_HUEMD_HUEM" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE1" />
+          <NavigationProperty Name="HU_EMPLOYEE2" Relationship="InsuranceModel.FK_HUEMD_HUEM" FromRole="HU_EMPLOYEE1" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_EDUCATION">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EMPLOYEE_ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="ACADEMY" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="MAJOR" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COMPUTER_CER1" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="COMPUTER_CER2" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="COMPUTER_CER3" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="COMPUTER_LEVEL1" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COMPUTER_LEVEL2" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COMPUTER_LEVEL3" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COMPUTER_MARK1" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="COMPUTER_MARK2" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="COMPUTER_MARK3" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="LANGUAGE1" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="LANGUAGE2" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="LANGUAGE3" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="LANGUAGE_LEVEL1" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="LANGUAGE_LEVEL2" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="LANGUAGE_LEVEL3" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="LANGUAGE_MARK1" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="LANGUAGE_MARK2" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="LANGUAGE_MARK3" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="GRADUATE_SCHOOL" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MARK_EDU" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TRAINING_FORM" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="LEARNING_LEVEL" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="InsuranceModel.FK_HE_HEE" FromRole="HU_EMPLOYEE_EDUCATION" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_FILES">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="EMPLOYEE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FILE_TYPE" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FILE_NAME" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="FILE_SIZE" Type="Int32" />
+          <Property Name="NOTE" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="UPLOAD_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="UPLOAD_DATE" Type="DateTime" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="InsuranceModel.FK_HE_HEF" FromRole="HU_EMPLOYEE_FILES" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_HEALTH">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EMPLOYEE_ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="CHIEU_CAO" Type="Double" />
+          <Property Name="CAN_NANG" Type="Double" />
+          <Property Name="NHOM_MAU" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="HUYET_AP" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="MAT_TRAI" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="MAT_PHAI" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="TAI_MUI_HONG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="RANG_HAM_MAT" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="TIM" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="PHOI_NGUC" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="VIEM_GAN_B" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="DA_HOA_LIEU" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="GHI_CHU_SUC_KHOE" Type="String" MaxLength="1023" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="LOAI_SUC_KHOE" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DU_SUC_KHOE" Type="Int16" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="InsuranceModel.FK_FE_HEH" FromRole="HU_EMPLOYEE_HEALTH" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_OTHER_INFO">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EMPLOYEE_ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NGAY_VAO_DOAN" Type="DateTime" />
+          <Property Name="NOI_VAO_DOAN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="NOI_SINH_HOAT_DOAN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="DOAN_PHI" Type="Int16" />
+          <Property Name="NGAY_VAO_DANG" Type="DateTime" />
+          <Property Name="NOI_VAO_DANG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="NOI_SINH_HOAT_DANG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="DANG_PHI" Type="Int16" />
+          <Property Name="SO_TAI_KHOAN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="NGAN_HANG" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CHI_NHANH" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NGAY_HIEU_LUC" Type="DateTime" />
+          <Property Name="NGUOI_THU_HUONG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="InsuranceModel.FK_HE_HEO" FromRole="HU_EMPLOYEE_OTHER_INFO" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_SALARY">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EMPLOYEE_ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="BASIC_SAL" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SOFT_SAL" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="OTHER_SAL" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COEFFICIENT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CONTRACTUAL_SAL" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SALARY_ENTERPRISE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="ALLOWANCE_IDS" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ALLOWANCE_SAL" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="ALLOWANCE_TOTAL" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="PERCENT_SALARY" Type="Int16" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="InsuranceModel.FK_HE_HES" FromRole="HU_EMPLOYEE_SALARY" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_TRAIN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="FROM_DATE" Type="DateTime" />
+          <Property Name="TO_DATE" Type="DateTime" />
+          <Property Name="SCHOOL_NAME" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TRAINING_FORM" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="HIGHEST_LEVEL" Type="Int16" Nullable="false" />
+          <Property Name="LEARNING_LEVEL" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="MAJOR" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="GRADUATE_YEAR" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="MARK" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TRAINING_CONTENT" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="EMPLOYEE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HU_ORG_TITLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="ORG_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TITLE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="ACTFLG" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="HU_ORGANIZATION" Relationship="InsuranceModel.FK_HUOG_HUOT" FromRole="HU_ORG_TITLE" ToRole="HU_ORGANIZATION" />
+          <NavigationProperty Name="HU_TITLE" Relationship="InsuranceModel.FK_HUTL_HUOT" FromRole="HU_ORG_TITLE" ToRole="HU_TITLE" />
+        </EntityType>
+        <EntityType Name="HU_ORGANIZATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="CODE" Type="String" MaxLength="35" Unicode="true" FixedLength="false" />
+          <Property Name="NAME_EN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="NAME_VN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="PARENT_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DISSOLVE_DATE" Type="DateTime" />
+          <Property Name="FOUNDATION_DATE" Type="DateTime" />
+          <Property Name="REMARK" Type="String" MaxLength="1023" Unicode="true" FixedLength="false" />
+          <Property Name="ACTFLG" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="HIERARCHICAL_PATH" Type="String" MaxLength="1023" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION_PATH" Type="String" MaxLength="1023" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ADDRESS" Type="String" MaxLength="1023" Unicode="true" FixedLength="false" />
+          <Property Name="FAX" Type="String" MaxLength="1023" Unicode="true" FixedLength="false" />
+          <Property Name="REPRESENTATIVE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="InsuranceModel.FK_HU_ORG_HU_EMP" FromRole="HU_ORGANIZATION" ToRole="HU_EMPLOYEE" />
+          <NavigationProperty Name="HU_ORG_TITLE" Relationship="InsuranceModel.FK_HUOG_HUOT" FromRole="HU_ORGANIZATION" ToRole="HU_ORG_TITLE" />
+          <NavigationProperty Name="HU_ORGANIZATION1" Relationship="InsuranceModel.FK_HU_ORG_HU_ORG" FromRole="HU_ORGANIZATION" ToRole="HU_ORGANIZATION1" />
+          <NavigationProperty Name="HU_ORGANIZATION2" Relationship="InsuranceModel.FK_HU_ORG_HU_ORG" FromRole="HU_ORGANIZATION1" ToRole="HU_ORGANIZATION" />
+          <NavigationProperty Name="HU_WORKING" Relationship="InsuranceModel.FK_HUOG_HUWK" FromRole="HU_ORGANIZATION" ToRole="HU_WORKING" />
+        </EntityType>
+        <EntityType Name="HU_TITLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="ACTFLG" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="CODE" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="NAME_EN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="NAME_VN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="REMARK" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="TITLE_GROUP_ID" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="InsuranceModel.FK_HE_HT" FromRole="HU_TITLE" ToRole="HU_EMPLOYEE" />
+          <NavigationProperty Name="HU_ORG_TITLE" Relationship="InsuranceModel.FK_HUTL_HUOT" FromRole="HU_TITLE" ToRole="HU_ORG_TITLE" />
+          <NavigationProperty Name="HU_WORKING" Relationship="InsuranceModel.FK_HUTL_HUWK" FromRole="HU_TITLE" ToRole="HU_WORKING" />
+        </EntityType>
+        <EntityType Name="HU_WORKING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="EMPLOYEE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TITLE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="ORG_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="STATUS_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="EFFECT_DATE" Type="DateTime" />
+          <Property Name="EXPIRE_DATE" Type="DateTime" />
+          <Property Name="DECISION_TYPE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DECISION_NO" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="SAL_GROUP_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SAL_LEVEL_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SAL_RANK_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SAL_BASIC" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="COST_SUPPORT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SIGN_DATE" Type="DateTime" />
+          <Property Name="SIGN_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SIGN_NAME" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="SIGN_TITLE" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="REMARK" Type="String" MaxLength="1023" Unicode="true" FixedLength="false" />
+          <Property Name="IS_PROCESS" Type="Int16" />
+          <Property Name="IS_MISSION" Type="Int16" />
+          <Property Name="IS_WAGE" Type="Int16" />
+          <Property Name="PERCENT_SALARY" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="InsuranceModel.FK_HE_HW" FromRole="HU_WORKING" ToRole="HU_EMPLOYEE" />
+          <NavigationProperty Name="HU_ORGANIZATION" Relationship="InsuranceModel.FK_HUOG_HUWK" FromRole="HU_WORKING" ToRole="HU_ORGANIZATION" />
+          <NavigationProperty Name="HU_TITLE" Relationship="InsuranceModel.FK_HUTL_HUWK" FromRole="HU_WORKING" ToRole="HU_TITLE" />
+          <NavigationProperty Name="OT_OTHER_LIST" Relationship="InsuranceModel.FK_OTOTL_HUWK" FromRole="HU_WORKING" ToRole="OT_OTHER_LIST" />
+        </EntityType>
+        <EntityType Name="OT_OTHER_LIST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="TYPE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NAME_VN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="NAME_EN" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ATTRIBUTE1" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ATTRIBUTE2" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ATTRIBUTE3" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ATTRIBUTE4" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ACTFLG" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CODE" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="TYPE_CODE" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="ORDERBYID" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_WORKING" Relationship="InsuranceModel.FK_OTOTL_HUWK" FromRole="OT_OTHER_LIST" ToRole="HU_WORKING" />
+          <NavigationProperty Name="OT_OTHER_LIST_TYPE" Relationship="InsuranceModel.FK_OOLT_OOL" FromRole="OT_OTHER_LIST" ToRole="OT_OTHER_LIST_TYPE" />
+        </EntityType>
+        <EntityType Name="OT_OTHER_LIST_GROUP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NAME" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ACTFLG" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="OT_OTHER_LIST_TYPE" Relationship="InsuranceModel.FK_OOLG_OOLT" FromRole="OT_OTHER_LIST_GROUP" ToRole="OT_OTHER_LIST_TYPE" />
+        </EntityType>
+        <EntityType Name="OT_OTHER_LIST_TYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="CODE" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="NAME" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ACTFLG" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="MODIFIED_LOG" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="GROUP_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="IS_SYSTEM" Type="Int16" />
+          <Property Name="TABLE_RELATION" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="OT_OTHER_LIST" Relationship="InsuranceModel.FK_OOLT_OOL" FromRole="OT_OTHER_LIST_TYPE" ToRole="OT_OTHER_LIST" />
+          <NavigationProperty Name="OT_OTHER_LIST_GROUP" Relationship="InsuranceModel.FK_OOLG_OOLT" FromRole="OT_OTHER_LIST_TYPE" ToRole="OT_OTHER_LIST_GROUP" />
+        </EntityType>
+        <Association Name="FK_FE_HEH">
+          <End Role="HU_EMPLOYEE" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="1" />
+          <End Role="HU_EMPLOYEE_HEALTH" Type="InsuranceModel.HU_EMPLOYEE_HEALTH" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE_HEALTH">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HEE">
+          <End Role="HU_EMPLOYEE" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="1" />
+          <End Role="HU_EMPLOYEE_EDUCATION" Type="InsuranceModel.HU_EMPLOYEE_EDUCATION" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE_EDUCATION">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HEF">
+          <End Role="HU_EMPLOYEE" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="0..1" />
+          <End Role="HU_EMPLOYEE_FILES" Type="InsuranceModel.HU_EMPLOYEE_FILES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE_FILES">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HEO">
+          <End Role="HU_EMPLOYEE" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="1" />
+          <End Role="HU_EMPLOYEE_OTHER_INFO" Type="InsuranceModel.HU_EMPLOYEE_OTHER_INFO" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE_OTHER_INFO">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HES">
+          <End Role="HU_EMPLOYEE" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="1" />
+          <End Role="HU_EMPLOYEE_SALARY" Type="InsuranceModel.HU_EMPLOYEE_SALARY" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE_SALARY">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HT">
+          <End Role="HU_TITLE" Type="InsuranceModel.HU_TITLE" Multiplicity="0..1" />
+          <End Role="HU_EMPLOYEE" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_TITLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE">
+              <PropertyRef Name="TITLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HW">
+          <End Role="HU_EMPLOYEE" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="0..1" />
+          <End Role="HU_WORKING" Type="InsuranceModel.HU_WORKING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_WORKING">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HU_ORG_HU_EMP">
+          <End Role="HU_ORGANIZATION" Type="InsuranceModel.HU_ORGANIZATION" Multiplicity="0..1" />
+          <End Role="HU_EMPLOYEE" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_ORGANIZATION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HUEMD_HUEM">
+          <End Role="HU_EMPLOYEE" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="0..1" />
+          <End Role="HU_EMPLOYEE1" Type="InsuranceModel.HU_EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE1">
+              <PropertyRef Name="DIRECT_MANAGER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HUOG_HUOT">
+          <End Role="HU_ORGANIZATION" Type="InsuranceModel.HU_ORGANIZATION" Multiplicity="0..1" />
+          <End Role="HU_ORG_TITLE" Type="InsuranceModel.HU_ORG_TITLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_ORGANIZATION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_ORG_TITLE">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HUTL_HUOT">
+          <End Role="HU_TITLE" Type="InsuranceModel.HU_TITLE" Multiplicity="0..1" />
+          <End Role="HU_ORG_TITLE" Type="InsuranceModel.HU_ORG_TITLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_TITLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_ORG_TITLE">
+              <PropertyRef Name="TITLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HU_ORG_HU_ORG">
+          <End Role="HU_ORGANIZATION" Type="InsuranceModel.HU_ORGANIZATION" Multiplicity="0..1" />
+          <End Role="HU_ORGANIZATION1" Type="InsuranceModel.HU_ORGANIZATION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_ORGANIZATION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_ORGANIZATION1">
+              <PropertyRef Name="PARENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HUOG_HUWK">
+          <End Role="HU_ORGANIZATION" Type="InsuranceModel.HU_ORGANIZATION" Multiplicity="0..1" />
+          <End Role="HU_WORKING" Type="InsuranceModel.HU_WORKING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_ORGANIZATION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_WORKING">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HUTL_HUWK">
+          <End Role="HU_TITLE" Type="InsuranceModel.HU_TITLE" Multiplicity="0..1" />
+          <End Role="HU_WORKING" Type="InsuranceModel.HU_WORKING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_TITLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_WORKING">
+              <PropertyRef Name="TITLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OTOTL_HUWK">
+          <End Role="OT_OTHER_LIST" Type="InsuranceModel.OT_OTHER_LIST" Multiplicity="0..1" />
+          <End Role="HU_WORKING" Type="InsuranceModel.HU_WORKING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_OTHER_LIST">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_WORKING">
+              <PropertyRef Name="STATUS_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OOLT_OOL">
+          <End Role="OT_OTHER_LIST_TYPE" Type="InsuranceModel.OT_OTHER_LIST_TYPE" Multiplicity="0..1" />
+          <End Role="OT_OTHER_LIST" Type="InsuranceModel.OT_OTHER_LIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_OTHER_LIST_TYPE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OT_OTHER_LIST">
+              <PropertyRef Name="TYPE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OOLG_OOLT">
+          <End Role="OT_OTHER_LIST_GROUP" Type="InsuranceModel.OT_OTHER_LIST_GROUP" Multiplicity="0..1" />
+          <End Role="OT_OTHER_LIST_TYPE" Type="InsuranceModel.OT_OTHER_LIST_TYPE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_OTHER_LIST_GROUP">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OT_OTHER_LIST_TYPE">
+              <PropertyRef Name="GROUP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="HU_DISTRICT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="PROVINCE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_PROVINCE" Relationship="InsuranceModel.FK_HU_PRO_HU_DIS" FromRole="HU_DISTRICT" ToRole="HU_PROVINCE" />
+        </EntityType>
+        <EntityType Name="HU_NATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_PROVINCE" Relationship="InsuranceModel.FK_HU_NAT_HU_PRO" FromRole="HU_NATION" ToRole="HU_PROVINCE" />
+        </EntityType>
+        <EntityType Name="HU_PROVINCE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="NATION_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_DISTRICT" Relationship="InsuranceModel.FK_HU_PRO_HU_DIS" FromRole="HU_PROVINCE" ToRole="HU_DISTRICT" />
+          <NavigationProperty Name="HU_NATION" Relationship="InsuranceModel.FK_HU_NAT_HU_PRO" FromRole="HU_PROVINCE" ToRole="HU_NATION" />
+        </EntityType>
+        <Association Name="FK_HU_PRO_HU_DIS">
+          <End Type="InsuranceModel.HU_PROVINCE" Role="HU_PROVINCE" Multiplicity="0..1" />
+          <End Type="InsuranceModel.HU_DISTRICT" Role="HU_DISTRICT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_PROVINCE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_DISTRICT">
+              <PropertyRef Name="PROVINCE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HU_NAT_HU_PRO">
+          <End Type="InsuranceModel.HU_NATION" Role="HU_NATION" Multiplicity="0..1" />
+          <End Type="InsuranceModel.HU_PROVINCE" Role="HU_PROVINCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_NATION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_PROVINCE">
+              <PropertyRef Name="NATION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SE_CHOSEN_ORG">
+          <Key>
+            <PropertyRef Name="ORG_ID" />
+            <PropertyRef Name="USERNAME" />
+          </Key>
+          <Property Type="Decimal" Name="ORG_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="USERNAME" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HU_CONTRACT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CONTRACT_NO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CONTRACT_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="START_DATE" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" />
+          <Property Type="String" Name="SIGNER_TITLE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SIGN_DATE" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="STATUS_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="SIGNER_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SIGN_ID" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_CHALLENGE" />
+          <Property Type="DateTime" Name="CHALLENGE_START" />
+          <Property Type="DateTime" Name="CHALLENGE_END" />
+          <Property Type="Int16" Name="CHALLENGE_MONTH" />
+          <Property Type="Decimal" Name="WORKING_ID" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="PERCENT_SALARY" />
+        </EntityType>
+        <EntityType Name="HU_CONTRACT_TYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="PERIOD" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BHXH" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BHYT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BHTN" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BHTNLD_BNN" />
+        </EntityType>
+        <EntityType Name="HU_CONTRACT_MAX_V">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CONTRACT_NO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CONTRACT_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="START_DATE" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" />
+          <Property Type="String" Name="SIGNER_TITLE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SIGN_DATE" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SIGNER_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SIGN_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="WORKING_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STATUS_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="HU_STAFF_RANK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="INS_ARISING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CHANGE_GROUP" Precision="38" Scale="0" />
+          <Property Type="String" Name="OLD_POSNAME" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NEW_POSNAME" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="OLD_ORGID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NEW_ORGID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OLD_SALARY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NEW_SALARY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ISBHXH" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ISBHYT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ISBHTN" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STATUS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DATE_CHANGE" />
+          <Property Type="DateTime" Name="EFFECTDATE" />
+          <Property Type="Decimal" Name="PKEY_REF" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REASONS" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SAL_BASE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="WORKING_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TYPE_CHANE" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="INS_CHANGE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID_INS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OLDSALARY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NEWSALARY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ISBHXH" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ISBHYT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ISBHTN" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CHANGE_TYPE" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EFFECTDATE" />
+          <Property Type="DateTime" Name="CHANGE_MONTH" />
+          <Property Type="DateTime" Name="RETURN_DATEBHXH" />
+          <Property Type="DateTime" Name="RETURN_DATEBHYT" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CLTFRMMONTH" />
+          <Property Type="DateTime" Name="CLTTOMONTH" />
+          <Property Type="Decimal" Name="CLTBHXH" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CLTBHYT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CLTBHTN" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="REPFRMMONTH" />
+          <Property Type="DateTime" Name="REPTOMONTH" />
+          <Property Type="Decimal" Name="REPBHXH" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="REPBHYT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="REPBHTN" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="INS_COST_FOLLOW_LEVER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="COST_CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COST_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="COST_MONEY" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EFFECTDATE_FROM" />
+          <Property Type="DateTime" Name="EFFECTDATE_TO" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="INS_ENTITLED_TYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CHANGE_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="GROUP_ARISING_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="DAY_OFF_SUMMARY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ENJOY_LEVEL" Precision="38" Scale="0" />
+          <Property Type="String" Name="STATUS" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="REGIME_SALARY_TYPE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="REGIME_DAY_TYPE" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" />
+        </EntityType>
+        <EntityType Name="INS_GROUP_REGIMES">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="REGIMES_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="INS_GROUP_SUN_CARE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID_OLD" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID_NEW" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STAFF_RANK_ID_OLD" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STAFF_RANK_ID_NEW" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="COST_LEVER_ID_OLD" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="COST_LEVER_ID_NEW" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EFFECTDATE_COST_NEW" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="COST_MONEY" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="INS_SUN_CARE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="START_DATE" />
+          <Property Type="DateTime" Name="END_DATE" />
+          <Property Type="Decimal" Name="LEVEL_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="COST" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STATUS" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="THOIDIEMHUONG" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="COST_SAL" />
+        </EntityType>
+        <EntityType Name="INS_WHEREHEALTH">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ID_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ID_DISTRICT" Precision="38" Scale="0" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_CV">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="GENDER" Precision="38" Scale="0" />
+          <Property Type="String" Name="IMAGE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="BIRTH_DATE" />
+          <Property Type="String" Name="BIRTH_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="MARITAL_STATUS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RELIGION" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NATIVE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NATIONALITY" Precision="38" Scale="0" />
+          <Property Type="String" Name="PER_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="PER_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="String" Name="HOME_PHONE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MOBILE_PHONE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ID_NO" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ID_DATE" />
+          <Property Type="String" Name="PASS_NO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="PASS_DATE" />
+          <Property Type="DateTime" Name="PASS_EXPIRE" />
+          <Property Type="String" Name="PASS_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VISA" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="VISA_DATE" />
+          <Property Type="DateTime" Name="VISA_EXPIRE" />
+          <Property Type="String" Name="VISA_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WORK_PERMIT" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="WORK_PERMIT_DATE" />
+          <Property Type="DateTime" Name="WORK_PERMIT_EXPIRE" />
+          <Property Type="String" Name="WORK_EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAV_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="NAV_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="String" Name="PIT_CODE" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PER_EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CONTACT_PER" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CONTACT_PER_PHONE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ID_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WORK_PERMIT_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BANK_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BANK_BRANCH_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="BANK_NO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NGAY_VAO_DOAN" />
+          <Property Type="String" Name="NOI_VAO_DOAN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CHUC_VU_DOAN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="DOAN_PHI" />
+          <Property Type="DateTime" Name="NGAY_VAO_DANG" />
+          <Property Type="String" Name="NOI_VAO_DANG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CHUC_VU_DANG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="DANG_PHI" />
+          <Property Type="String" Name="CAREER" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="PER_DISTRICT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NAV_DISTRICT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="PER_WARD" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NAV_WARD" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="HU_WORKING_ALLOW">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HU_WORKING_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ALLOWANCE_LIST_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="AMOUNT" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_INSURRANCE" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" />
+        </EntityType>
+        <EntityType Name="HU_WORKING_MAX">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" />
+          <Property Type="Decimal" Name="STATUS_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="DECISION_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="DECISION_NO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SAL_GROUP_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SAL_LEVEL_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SAL_RANK_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SAL_BASIC" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="COST_SUPPORT" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="SIGN_DATE" />
+          <Property Type="Decimal" Name="SIGN_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="SIGN_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SIGN_TITLE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_PROCESS" />
+          <Property Type="Int16" Name="IS_WAGE" />
+          <Property Type="Int16" Name="IS_MISSION" />
+          <Property Type="Decimal" Name="PERCENT_SALARY" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_3B" />
+          <Property Type="Decimal" Name="STAFF_RANK_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="DIRECT_MANAGER" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="INS_SPECIFIED_OBJECTS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LOCATION_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EFFECTIVE_DATE" />
+          <Property Type="Decimal" Name="SI" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HI" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="UI" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SI_COM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SI_EMP" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HI_COM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HI_EMP" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="UI_COM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="UI_EMP" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SICK" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MATERNITY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OFF_IN_HOUSE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OFF_TOGETHER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RETIRE_MALE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RETIRE_FEMALE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STATUS" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SALARY_MIN" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SI_DATE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HI_DATE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BHTNLD_BNN_COM" Nullable="true" />
+          <Property Type="Decimal" Name="BHTNLD_BNN_EMP" />
+          <Property Type="Decimal" Name="SI_NN" />
+          <Property Type="Decimal" Name="SI_EMP_NN" />
+          <Property Type="Decimal" Name="SI_COM_NN" />
+          <Property Type="Decimal" Name="FOREIGN" />
+        </EntityType>
+        <EntityType Name="HU_WORKING_ALLOW1">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HU_WORKING_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ALLOWANCE_LIST_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="AMOUNT" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_INSURRANCE" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" />
+        </EntityType>
+        <EntityType Name="INS_INFOOLD">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEEID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SALARY" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="SOFROM" />
+          <Property Type="DateTime" Name="SOTO" />
+          <Property Type="String" Name="SOBOOKNO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SOPRVDBOOKDAY" />
+          <Property Type="String" Name="SOWHRPRVBOOK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SOSTATUS_BHXH" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="HEFROM" />
+          <Property Type="DateTime" Name="HETO" />
+          <Property Type="String" Name="HECARDNO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="HEPRVDCARDDAY" />
+          <Property Type="String" Name="HEWHRPRVCARD" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="HESTATUS_BHYT" Precision="38" Scale="0" />
+          <Property Type="String" Name="HEWHRREGISKEY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="HECARDEFFFROM" />
+          <Property Type="DateTime" Name="HECARDEFFTO" />
+          <Property Type="DateTime" Name="UEFROM" />
+          <Property Type="DateTime" Name="UETO" />
+          <Property Type="Decimal" Name="SO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="UE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="REGISTER" Precision="38" Scale="0" />
+          <Property Type="String" Name="CONTRACTNO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SENIORITY" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ORG_ID_INS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ISBHXH" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ISBHYT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ISBHTN" Precision="38" Scale="0" />
+          <Property Type="String" Name="NOTE_BHXH" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SO_DATESENDCTY" />
+          <Property Type="DateTime" Name="DAYPAYMENTCOMPANY" />
+        </EntityType>
+        <EntityType Name="INS_INFORMATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="INSCENTERKEY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SALARY" Precision="38" Scale="0" />
+          <Property Type="String" Name="POSITIONNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ORGNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SOFROM" />
+          <Property Type="DateTime" Name="SOTO" />
+          <Property Type="String" Name="SOBOOKNO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SOPRVDBOOKDAY" />
+          <Property Type="String" Name="SOWHRPRVBOOK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SOPRVDBOOKSTATUS" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="HEFROM" />
+          <Property Type="DateTime" Name="HETO" />
+          <Property Type="String" Name="HECARDNO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="HEPRVDCARDDAY" />
+          <Property Type="String" Name="HEWHRPRVCARD" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="HEPRVDCARDSTATUS" Precision="38" Scale="0" />
+          <Property Type="String" Name="HEWHRREGISKEY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="HECARDEFFFROM" />
+          <Property Type="DateTime" Name="HECARDEFFTO" />
+          <Property Type="DateTime" Name="UEFROM" />
+          <Property Type="DateTime" Name="UETO" />
+          <Property Type="Decimal" Name="SO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="UE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="REGISTER" Precision="38" Scale="0" />
+          <Property Type="String" Name="CONTRACTNO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SENIORITY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORD_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DAYPAYMENTCOMPANY" />
+          <Property Type="String" Name="NOTE_SO" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="TOTAL_TIME_INS_BEFOR" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="INS_CHANGE_TYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ARISING_TYPE" Precision="38" Scale="0" />
+          <Property Type="String" Name="ARISING_NAME" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DISPLAY_COMBO" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SIGN_ARISING" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SIGN_ARISING_DETAIL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TYPE_DECLARE_ID" />
+          <Property Type="String" Name="CODE" />
+        </EntityType>
+        <EntityType Name="INS_REMIGE_MANAGER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ENTITLED_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="START_DATE" />
+          <Property Type="DateTime" Name="END_DATE" />
+          <Property Type="Decimal" Name="NUM_DATE" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DATE_OFF_BIRT" />
+          <Property Type="String" Name="BABY_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="NUM_BABY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ACCUMULATED_DATE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ALLOWANCE_SAL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ALLOWANCE_MONEY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ALLOWANCE_MONEY_EDIT" Precision="38" Scale="0" />
+          <Property Type="String" Name="TIME_ALLOWANCE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CONDITION_ALLOWANCE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SDESC" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="APPROVAL_INSURRANCE" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="APPROVAL_DATE" />
+          <Property Type="Decimal" Name="APPROVAL_NUM" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="IS_ATHOME" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CHANGE_MONTH" />
+        </EntityType>
+        <EntityType Name="INS_REGION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="EFFECTIVE_DATE" />
+          <Property Type="Decimal" Name="AREA_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CEILING_AMOUNT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MIN_AMOUNT" />
+        </EntityType>
+        <EntityType Name="SE_USER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" />
+          <Property Type="String" Name="USERNAME" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PASSWORD" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FULLNAME" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EMAIL" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TELEPHONE" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LOCATION" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_APP" Nullable="false" />
+          <Property Type="Int16" Name="IS_PORTAL" Nullable="false" />
+          <Property Type="String" Name="EMPLOYEE_CODE" Nullable="true" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="IS_AD" Nullable="true" />
+          <Property Type="DateTime" Name="EFFECT_DATE" Nullable="true" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" Nullable="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" />
+          <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" Nullable="false" />
+          <Property Type="String" Name="MODIFIED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" Nullable="false" DefaultValue="" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_CHANGE_PASS" Nullable="true" DefaultValue="0" />
+          <Property Type="DateTime" Name="CHANGE_PASS_DATE" Nullable="true" />
+          <Property Type="Int16" Name="REMINDER_COUNT" Nullable="true" />
+          <Property Type="String" Name="MODULE_ADMIN" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SE_REPORT" Relationship="InsuranceModel.SE_USER_REPORT" FromRole="SE_USER" ToRole="SE_REPORT" />
+        </EntityType>
+        <EntityType Name="SE_REPORT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NAME" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="MODULE_ID" Nullable="false" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" Nullable="false" />
+          <Property Type="String" Name="MODIFIED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SE_USER" Relationship="InsuranceModel.SE_USER_REPORT" FromRole="SE_REPORT" ToRole="SE_USER" />
+        </EntityType>
+        <Association Name="SE_USER_REPORT">
+          <End Type="InsuranceModel.SE_REPORT" Role="SE_REPORT" Multiplicity="*" />
+          <End Type="InsuranceModel.SE_USER" Role="SE_USER" Multiplicity="*" />
+        </Association>
+        <EntityType Name="INS_LIST_PROGRAM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="IS_DELETED" Precision="38" Scale="0" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="INS_LIST_CONTRACT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CONTRACT_INS_NO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="YEAR" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_INSURANCE" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="START_DATE" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" />
+          <Property Type="Decimal" Name="VAL_CO" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="BUY_DATE" />
+          <Property Type="String" Name="NOTE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="IS_DELETED" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="INS_LIST_CONTRACT_DETAIL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTRACT_INS_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="INS_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONEY_INS" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="IS_DELETED" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="INS_TYPE_CHANGE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="STATUS" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOTE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="IS_DELETED" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="INS_LIST_INSURANCE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TREATMENTCODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PHONE_NUMBER" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="STATUS" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PROVINCECODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOTE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="IS_DELETED" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="INS_CHANGE_INFO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TYPE_CHANGE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DATE_CHANGE" />
+          <Property Type="String" Name="CONTENT_CHANGE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OLD_INFO" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NEW_INFO" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REASON_CHANGE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MONTH_DECLARE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="INS_CLAIME_INSURANCE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SUN_CARE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EXAMINE_DATE" />
+          <Property Type="String" Name="DISEASE_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="AMOUNT_OF_CLAIMS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="AMOUNT_OF_COMPENSATION" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="COMPENSATION_DATE" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="INS_HEALTH_ID" />
+        </EntityType>
+        <EntityType Name="INS_HEALTH_INSURANCE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="YEAR" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="INS_CONTRACT_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CHECK_BHNT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="FAMYLI_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="DT_CHITRA" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="JOIN_DATE" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="Decimal" Name="MONEY_INS" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="REDUCE_DATE" />
+          <Property Type="Decimal" Name="REFUND" />
+          <Property Type="DateTime" Name="DATE_RECEIVE_MONEY" />
+          <Property Type="String" Name="EMP_RECEIVE_MONEY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOTES" MaxLength="1021" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="INS_CONTRACT_DE_ID" />
+        </EntityType>
+        <EntityType Name="INS_REGIMES">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="REGIME_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="PAY_FORM" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="FROM_DATE" />
+          <Property Type="DateTime" Name="TO_DATE" />
+          <Property Type="Decimal" Name="DAY_CALCULATOR" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="BORN_DATE" />
+          <Property Type="String" Name="NAME_CHILDREN" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CHILDREN_NO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ACCUMULATE_DAY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SUBSIDY_SALARY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SUBSIDY_AMOUNT" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="PAYROLL_DATE" />
+          <Property Type="String" Name="CONDITION" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="INS_PAY_AMOUNT" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="PAY_APPROVE_DATE" />
+          <Property Type="Decimal" Name="APPROV_DAY_NUM" Precision="38" Scale="0" />
+          <Property Type="String" Name="NOTE" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="MONEY_ADVANCE" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DECLARE_DATE" />
+          <Property Type="Decimal" Name="SUBSIDY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="IS_DELETED" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OFF_IN_HOUSE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OFF_TOGETHER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SUBSIDY_MODIFY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="REGIMES_SAL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="FORM_ALLOW" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="AT_TIME_MANUAL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="MORNING_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="AFTERNOON_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ORDER_W" Precision="38" Scale="0" />
+          <Property Type="String" Name="LIMIT_DAY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LIMIT_YEAR" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="TYPE_PROSS_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MORNING_RATE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="AFTERNOON_RATE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORDERS" Precision="38" Scale="0" />
+          <Property Type="String" Name="MAPPING_CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_OTHER" />
+          <Property Type="Decimal" Name="INS_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="INS_ARISING_LEAVESHEET">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="INS_ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MANUAL_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="LEAVE_FROM" />
+          <Property Type="DateTime" Name="LEAVE_TO" />
+          <Property Type="Decimal" Name="DAY_NUM" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="FROM_MONTH" />
+          <Property Type="DateTime" Name="TO_MONTH" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AT_FML">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="String" Name="NOTE" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="IS_LEAVE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="IS_CALHOLIDAY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HOURS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="IS_REG_SHIFT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="IS_SALARY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="DAY_NUM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="IS_BHXH" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="IS_NOTIFY" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="AT_TYPE_PROCESS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="INS_WORKING_BEFORE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="FROM_MONTH" />
+          <Property Type="DateTime" Name="TO_MONTH" />
+          <Property Type="String" Name="COMPANY" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TITLE" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="INS_SALARY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SALARY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TOXIC" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="COEFFICIENT" Precision="38" Scale="0" />
+          <Property Type="String" Name="REMARK" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+    <EntityContainerMapping StorageEntityContainer="InsuranceModelStoreContainer" CdmEntityContainer="InsuranceContext">
+        </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="DDLGenerationTemplate" Value="$(VSEFTools)\DBGen\SSDLToOracle.tt" />
+        <DesignerProperty Name="DatabaseGenerationWorkflow" Value="$(VSEFTools)\DBGen\Generate Oracle Via T4 (TPH).xaml" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="InsuranceContext" ZoomLevel="53">
+        <EntityTypeShape EntityType="InsuranceModel.HU_EMPLOYEE" Width="1.5" PointX="3" PointY="4.75" Height="0.40000000000000036" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_EMPLOYEE_EDUCATION" Width="1.5" PointX="5.25" PointY="5.875" Height="0.40000000000000036" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_EMPLOYEE_FILES" Width="2" PointX="5.25" PointY="4.75" Height="0.40000000000000036" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_EMPLOYEE_HEALTH" Width="1.75" PointX="5.25" PointY="7" Height="0.40000000000000036" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_EMPLOYEE_OTHER_INFO" Width="1.875" PointX="5.25" PointY="8.25" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_EMPLOYEE_SALARY" Width="1.875" PointX="5.25" PointY="3.625" Height="0.40000000000000036" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_EMPLOYEE_TRAIN" Width="2.25" PointX="0.75" PointY="7.875" Height="0.40000000000000036" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_ORG_TITLE" Width="1.5" PointX="3" PointY="2.75" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_ORGANIZATION" Width="1.5" PointX="0.75" PointY="2.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_TITLE" Width="1.5" PointX="0.75" PointY="4.75" Height="0.40000000000000036" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_WORKING" Width="1.5" PointX="5.25" PointY="1.75" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.OT_OTHER_LIST" Width="1.5" PointX="3" PointY="0.75" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.OT_OTHER_LIST_GROUP" Width="1.5" PointX="1.5" PointY="6.125" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.OT_OTHER_LIST_TYPE" Width="1.5" PointX="0.75" PointY="1.125" Height="0.39999999999999858" IsExpanded="false" />
+        <AssociationConnector Association="InsuranceModel.FK_FE_HEH" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.78125" PointY="5.15" />
+          <ConnectorPoint PointX="3.78125" PointY="7.2" />
+          <ConnectorPoint PointX="5.25" PointY="7.2" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HE_HEE" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="5.15" />
+          <ConnectorPoint PointX="5.25" PointY="5.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HE_HEF" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="4.9187474999999994" />
+          <ConnectorPoint PointX="5.25" PointY="4.9187474999999994" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HE_HEO" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.3906225" PointY="5.15" />
+          <ConnectorPoint PointX="3.3906225" PointY="8.45" />
+          <ConnectorPoint PointX="5.25" PointY="8.45" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HE_HES" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="4.75" />
+          <ConnectorPoint PointX="5.25" PointY="4.025" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HE_HT" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="5.03125" />
+          <ConnectorPoint PointX="2.6979166666666665" PointY="5.0312499999999991" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="5.03125" />
+          <ConnectorPoint PointX="3" PointY="5.03125" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HE_HW" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.4935384615384617" PointY="4.75" />
+          <ConnectorPoint PointX="4.875" PointY="4.37781141985799" />
+          <ConnectorPoint PointX="4.875" PointY="2.5249999999999986" />
+          <ConnectorPoint PointX="5.25" PointY="1.8918461538461533" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HU_ORG_HU_EMP" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.2499999999999996" PointY="3.15" />
+          <ConnectorPoint PointX="2.625" PointY="3.5250000000000004" />
+          <ConnectorPoint PointX="2.625" PointY="4.3746933076923078" />
+          <ConnectorPoint PointX="2.7223244349011213" PointY="4.4720177425934287" />
+          <ConnectorPoint PointX="2.8401755650988791" PointY="4.5898688727911869" />
+          <ConnectorPoint PointX="3.0003066923076918" PointY="4.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HUEMD_HUEM" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.5141538461538464" PointY="4.75" />
+          <ConnectorPoint PointX="3.5141538461538464" PointY="4.5" />
+          <ConnectorPoint PointX="3.9970769230769232" PointY="4.5" />
+          <ConnectorPoint PointX="3.9970769230769232" PointY="4.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HUOG_HUOT" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.9187475000000065" />
+          <ConnectorPoint PointX="2.6354166666666665" PointY="2.9187475000000056" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="2.9187475000000065" />
+          <ConnectorPoint PointX="3" PointY="2.9187475000000065" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HUTL_HUOT" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.2435384615384613" PointY="4.75" />
+          <ConnectorPoint PointX="2.7223244349011204" PointY="4.27121402663734" />
+          <ConnectorPoint PointX="2.8401755650988791" PointY="4.1533628964395826" />
+          <ConnectorPoint PointX="2.84375" PointY="4.1497884615384617" />
+          <ConnectorPoint PointX="2.84375" PointY="3.3062499999999986" />
+          <ConnectorPoint PointX="3" PointY="3.1499999999999986" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HU_ORG_HU_ORG" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.2641538461538462" PointY="3.15" />
+          <ConnectorPoint PointX="1.2641538461538462" PointY="3.4000000000000004" />
+          <ConnectorPoint PointX="1.747076923076923" PointY="3.4000000000000004" />
+          <ConnectorPoint PointX="1.747076923076923" PointY="3.15" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HUOG_HUWK" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="2.75" />
+          <ConnectorPoint PointX="1.5" PointY="1.9499999999999993" />
+          <ConnectorPoint PointX="2.6979166666666665" PointY="1.9499999999999986" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="1.9499999999999993" />
+          <ConnectorPoint PointX="5.25" PointY="1.9499999999999993" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HUTL_HUWK" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="4.769999" />
+          <ConnectorPoint PointX="2.71875" PointY="4.301249" />
+          <ConnectorPoint PointX="2.71875" PointY="2.0812519999999926" />
+          <ConnectorPoint PointX="5.0544866763860252" PointY="2.0812519999999921" />
+          <ConnectorPoint PointX="5.2211533430526913" PointY="2.0812519999999926" />
+          <ConnectorPoint PointX="5.25" PointY="2.0812519999999926" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_OTOTL_HUWK" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="1.1499999999999986" />
+          <ConnectorPoint PointX="5.25" PointY="1.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_OOLT_OOL" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.3249999999999993" />
+          <ConnectorPoint PointX="2.625" PointY="1.3249999999999993" />
+          <ConnectorPoint PointX="2.625" PointY="0.94999999999999929" />
+          <ConnectorPoint PointX="3" PointY="0.94999999999999929" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_OOLG_OOLT" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.78125" PointY="6.125" />
+          <ConnectorPoint PointX="2.78125" PointY="1.4562524999999926" />
+          <ConnectorPoint PointX="2.25" PointY="1.4562524999999926" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="InsuranceModel.HU_DISTRICT" Width="1.5" PointX="12.25" PointY="1" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_NATION" Width="1.5" PointX="7.75" PointY="1" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_PROVINCE" Width="1.5" PointX="10" PointY="1" Height="0.39999999999999858" IsExpanded="false" />
+        <AssociationConnector Association="InsuranceModel.FK_HU_PRO_HU_DIS" >
+          <ConnectorPoint PointX="11.5" PointY="1.1999999999999993" />
+          <ConnectorPoint PointX="12.25" PointY="1.1999999999999993" />
+        </AssociationConnector>
+        <AssociationConnector Association="InsuranceModel.FK_HU_NAT_HU_PRO" >
+          <ConnectorPoint PointX="9.25" PointY="1.1999999999999993" />
+          <ConnectorPoint PointX="10" PointY="1.1999999999999993" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="InsuranceModel.SE_CHOSEN_ORG" Width="2.125" PointX="7.75" PointY="2.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_CONTRACT" Width="1.5" PointX="7.75" PointY="4.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_CONTRACT_TYPE" Width="1.75" PointX="7.75" PointY="6.875" Height="4.0956022135416656" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_CONTRACT_MAX_V" Width="1.5" PointX="7.75" PointY="8.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_STAFF_RANK" Width="1.5" PointX="0.75" PointY="9.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_ARISING" Width="1.5" PointX="2.75" PointY="9.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_CHANGE" Width="2" PointX="9.75" PointY="4.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_COST_FOLLOW_LEVER" Width="1.875" PointX="10.75" PointY="2.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_ENTITLED_TYPE" Width="2.125" PointX="4.75" PointY="10.875" Height="4.0956022135416656" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_GROUP_REGIMES" Width="2.125" PointX="10.75" PointY="6.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_GROUP_SUN_CARE" Width="1.875" PointX="7.75" PointY="10.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_SUN_CARE" Width="1.5" PointX="2.75" PointY="12.875" Height="4.0956022135416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_WHEREHEALTH" Width="1.75" PointX="12.75" PointY="4.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_EMPLOYEE_CV" Width="2" PointX="12.75" PointY="8.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_WORKING_ALLOW" Width="1.75" PointX="12.75" PointY="10.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_WORKING_MAX" Width="2" PointX="10.75" PointY="12.875" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_SPECIFIED_OBJECTS" Width="1.5" PointX="13.75" PointY="1.625" Height="7.5570279947916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsuranceModel.HU_WORKING_ALLOW1" Width="1.5" PointX="13.375" PointY="12.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_INFOOLD" Width="1.5" PointX="10.75" PointY="10.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_INFORMATION" Width="1.875" PointX="7.75" PointY="12.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_CHANGE_TYPE" Width="1.5" PointX="16.25" PointY="5.125" Height="4.0956022135416656" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_REMIGE_MANAGER" Width="1.5" PointX="5.25" PointY="12.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_REGION" Width="1.5" PointX="0.75" PointY="12.75" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsuranceModel.SE_USER" Width="2" PointX="3.625" PointY="13.875" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="InsuranceModel.SE_REPORT" Width="1.75" PointX="0.625" PointY="13.875" IsExpanded="false" Height="0.4" />
+        <AssociationConnector Association="InsuranceModel.SE_USER_REPORT" >
+          <ConnectorPoint PointX="2.375" PointY="14.075" />
+          <ConnectorPoint PointX="2.6875" PointY="14.075" />
+          <ConnectorPoint PointX="2.6875" PointY="12.8125" />
+          <ConnectorPoint PointX="4.531249" PointY="12.8125" />
+          <ConnectorPoint PointX="4.531249" PointY="13.875" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="InsuranceModel.INS_LIST_PROGRAM" Width="1.5" PointX="6.375" PointY="14.75" Height="3.3263964843750102" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_LIST_CONTRACT" Width="1.5" PointX="8.375" PointY="14.75" Height="4.2879036458333246" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_LIST_CONTRACT_DETAIL" Width="1.5" PointX="10.375" PointY="14.75" Height="3.1340950520833246" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_TYPE_CHANGE" Width="1.5" PointX="12.375" PointY="14.75" Height="3.3263964843749818" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_LIST_INSURANCE" Width="1.5" PointX="14.375" PointY="14.75" Height="4.0956022135416674" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_CHANGE_INFO" Width="1.5" PointX="15.375" PointY="9.75" Height="3.9033007812499818" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_CLAIME_INSURANCE" Width="1.5" PointX="16.375" PointY="0.75" Height="3.9033007812499996" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_HEALTH_INSURANCE" Width="2.625" PointX="18.25" PointY="13.25" Height="5.4417122395833353" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_REGIMES" Width="1.5" PointX="0.75" PointY="17.75" Height="7.5570279947916674" />
+        <EntityTypeShape EntityType="InsuranceModel.AT_TIME_MANUAL" Width="1.5" PointX="3.375" PointY="17.75" Height="5.6340136718749818" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_ARISING_LEAVESHEET" Width="1.5" PointX="18.375" PointY="0.75" Height="4.2879036458333246" />
+        <EntityTypeShape EntityType="InsuranceModel.AT_FML" Width="1.5" PointX="18.375" PointY="6.75" Height="5.0571093749999818" />
+        <EntityTypeShape EntityType="InsuranceModel.AT_TYPE_PROCESS" Width="1.5" PointX="5.375" PointY="19.75" Height="1.5956835937499818" />
+        <EntityTypeShape EntityType="InsuranceModel.INS_WORKING_BEFORE" Width="1.5" PointX="10.375" PointY="19.75" Height="4.2879036458333246" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

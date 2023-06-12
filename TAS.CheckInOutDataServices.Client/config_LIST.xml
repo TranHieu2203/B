@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<ListView>
+  <View>
+    <View_Name>CanteenGolfTransactionTotal</View_Name>
+  </View>
+  <View>
+	  <View_Name>CanteenResortTransactionTotal</View_Name>
+  </View>
+</ListView>

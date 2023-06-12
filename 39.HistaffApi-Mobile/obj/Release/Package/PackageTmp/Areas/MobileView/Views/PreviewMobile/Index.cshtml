@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PreviewMobile</title>
+</head>
+<body>
+    <form action="/MobileView/PreviewMobile/Preview" method="post">
+        <div>
+            <span>Token </span>
+            <span> <input type="text" name="tokenstring" /> </span>
+        </div>
+        <div>
+            <span>Type </span>
+            <span>
+                <select name="typetest">
+                    <option selected value="TimeSheet">TimeSheet</option>
+                    <option value="Payslip">Payslip</option>
+                </select>
+            </span>
+        </div>
+        <div><button type="submit">Submit</button></div>
+
+    </form>
+
+
+    @*<script src="~/MobileStyle/js/kendo-ui/jquery-1.12.4.min.js"></script>*@
+</body>
+</html>

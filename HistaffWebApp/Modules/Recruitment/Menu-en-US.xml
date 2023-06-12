@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Business"  PostBack="False">
+      <Group>
+        <Item  Value="ctrlRC_PlanReg"  Text="Recruitment needs management" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_PlanReg&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_Request"  Text="Recruitment requirements management" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Request&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_Stage"  Text="Recruitment management" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Stage&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_Program"  Text="Recruitment program" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Program&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_StageCost"  Text="Recruitment costs management" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_StageCost&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_CVPool"  Text="Source candidates management" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_CVPool&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_Manning"  Text="Payroll manager" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Manning&amp;group=Business" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+    <Item Text="Report" PostBack="False">
+      <Group>
+        <Item Value="ctrlRC_ReportList" Text="Report list" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_ReportList&amp;group=report" CheckPermission="true"/>
+
+      </Group>
+    </Item>
+
+    <Item Text="Category"  PostBack="False">
+      <Group>
+        <Item Value="ctrlRC_Exams" Text="Declares recruitment exam" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Exams&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlOtherList" Text="System parameter" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlOtherList&amp;group=List" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+  </Group>
+</Menu>

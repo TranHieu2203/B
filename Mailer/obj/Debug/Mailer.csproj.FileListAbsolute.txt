@@ -1,0 +1,10 @@
+D:\GIT\BCG_DEV_NEW\Mailer\bin\Debug\Mailer.dll
+D:\GIT\BCG_DEV_NEW\Mailer\bin\Debug\Mailer.pdb
+D:\GIT\BCG_DEV_NEW\Mailer\obj\Debug\Mailer.csproj.CoreCompileInputs.cache
+D:\GIT\BCG_DEV_NEW\Mailer\obj\Debug\Mailer.dll
+D:\GIT\BCG_DEV_NEW\Mailer\obj\Debug\Mailer.pdb
+D:\GIT\BCG_DEV_NEW\Mailer\obj\Debug\Mailer.csprojAssemblyReference.cache
+E:\Source\BCG_DEV\Mailer\bin\Debug\Mailer.dll
+E:\Source\BCG_DEV\Mailer\bin\Debug\Mailer.pdb
+E:\Source\BCG_DEV\Mailer\obj\Debug\Mailer.dll
+E:\Source\BCG_DEV\Mailer\obj\Debug\Mailer.pdb

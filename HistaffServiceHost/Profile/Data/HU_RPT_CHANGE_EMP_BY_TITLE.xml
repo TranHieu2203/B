@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE sqlMap SYSTEM "SqlMap.dtd">
+<sqlMap>
+  <update id="HU_RPT_CHANGE_EMP_BY_TITLE">
+    select
+    ROW_NUMBER() OVER(PARTITION BY o_t.NAME_C1, o_t.ID_C2, o_t.NAME_C2 ORDER BY o_t.title_id, o_t.name_vn DESC) STT,
+    o_t.NAME_C1, o_t.ID_C2, o_t.NAME_C2,
+    o_t.title_id, o_t.name_vn TITLE,
+    SUM(CASE
+    WHEN EMP.FULLNAME_VN IS NOT NULL THEN
+    1
+    ELSE
+    0
+    END) TONG_NV,
+    SUM(CASE
+    WHEN EMP.FULLNAME_VN IS NOT NULL AND EMP.CONTRACTUAL_SAL IS NOT NULL THEN
+    EMP.CONTRACTUAL_SAL
+    ELSE
+    0
+    END) TONG_NV_SAL
+
+    from
+    (select e.id, e.employee_code, e.fullname_vn, W.TITLE_ID, W.ORG_ID, W.CONTRACTUAL_SAL
+    from hu_employee e
+    JOIN (SELECT *
+    FROM (SELECT T.*,
+    ROW_NUMBER() OVER(PARTITION BY T.EMPLOYEE_ID ORDER BY T.EFFECT_DATE DESC, T.CREATED_DATE DESC) STT
+    FROM HU_WORKING T
+    WHERE T.EFFECT_DATE &lt;=
+    <isNotEmpty property="END_DATE">
+      TRUNC(#END_DATE#)
+    </isNotEmpty>
+    AND ((T.EXPIRE_DATE IS NULL) OR
+    (T.EXPIRE_DATE >=
+    <isNotEmpty property="END_DATE">
+      TRUNC(#END_DATE#)
+    </isNotEmpty>
+    ))
+    AND T.STATUS = 447)
+    WHERE STT = 1) W
+    ON e.ID = W.EMPLOYEE_ID
+    LEFT JOIN (SELECT *
+    FROM (SELECT T.*,
+    ROW_NUMBER() OVER(PARTITION BY T.EMPLOYEE_ID ORDER BY T.EFFECT_DATE DESC, T.CREATED_DATE DESC) STT
+    FROM HU_WORKING T
+    WHERE T.EFFECT_DATE &lt;=
+    <isNotEmpty property="END_DATE_LAST_MONTH">
+      TRUNC(#END_DATE_LAST_MONTH#)
+    </isNotEmpty>
+    AND ((T.EXPIRE_DATE IS NULL) OR
+    (T.EXPIRE_DATE >=
+    <isNotEmpty property="END_DATE_LAST_MONTH">
+      TRUNC(#END_DATE_LAST_MONTH#)
+    </isNotEmpty>
+    ))
+    AND T.STATUS = 447)
+    WHERE STT = 1) W1
+    ON W.EMPLOYEE_ID = W1.EMPLOYEE_ID
+    WHERE e.JOIN_DATE IS NOT NULL
+    OR (e.TER_EFFECT_DATE IS NOT NULL)) EMP
+
+    RIGHT JOIN (
+    select o_t.title_id, o_t.org_id, t.name_vn, O.NAME_C1, O.ID_C2, O.NAME_C2, O.NAME_C3, O.NAME_C4, O.ORG_LINK, O.ORG_LINK_NAME
+    from hu_org_title o_t
+    join hu_title t on o_t.title_id = t.id
+    --------
+    LEFT  join (SELECT NAME_C1,
+    NAME_C2,
+    NAME_C3,
+    NAME_C4,
+    ID_C1,
+    ID_C2,
+    ID_C3,
+    ID_C4,
+    CASE
+    WHEN ID_C4 IS NOT NULL THEN
+    ID_C4
+    WHEN ID_C3 IS NOT NULL THEN
+    ID_C3
+    WHEN ID_C2 IS NOT NULL THEN
+    ID_C2
+    WHEN ID_C1 IS NOT NULL THEN
+    ID_C1
+    END ORG_LINK,
+    CASE
+    WHEN ID_C4 IS NOT NULL THEN
+    NAME_C4
+    WHEN ID_C3 IS NOT NULL THEN
+    NAME_C3
+    WHEN ID_C2 IS NOT NULL THEN
+    NAME_C2
+    WHEN ID_C1 IS NOT NULL THEN
+    NAME_C1
+    END ORG_LINK_NAME,
+    ID,
+    DESCRIPTION_PATH
+    FROM (SELECT SUBSTR(REGEXP_SUBSTR(ORG_NAME, '![^!]*', 1, 1), 2) AS NAME_C1,
+    SUBSTR(REGEXP_SUBSTR(ORG_NAME, '![^!]*', 1, 2), 2) AS NAME_C2,
+    SUBSTR(REGEXP_SUBSTR(ORG_NAME, '![^!]*', 1, 3), 2) AS NAME_C3,
+    SUBSTR(REGEXP_SUBSTR(ORG_NAME, '![^!]*', 1, 4), 2) AS NAME_C4,
+    SUBSTR(REGEXP_SUBSTR(IDS, '![^!]*', 1, 1), 2) AS ID_C1,
+    SUBSTR(REGEXP_SUBSTR(IDS, '![^!]*', 1, 2), 2) AS ID_C2,
+    SUBSTR(REGEXP_SUBSTR(IDS, '![^!]*', 1, 3), 2) AS ID_C3,
+    SUBSTR(REGEXP_SUBSTR(IDS, '![^!]*', 1, 4), 2) AS ID_C4,
+    DESCRIPTION_PATH,
+    ID
+    FROM (SELECT O.ID,
+    O.DESCRIPTION_PATH,
+    SYS_CONNECT_BY_PATH(O.NAME_VN, '!') ORG_NAME,
+    SYS_CONNECT_BY_PATH(O.ID, '!') IDS
+    FROM HU_ORGANIZATION O
+    START WITH O.PARENT_ID IS NULL
+    CONNECT BY PRIOR O.ID = O.PARENT_ID)) O
+    WHERE NAME_C2 IS NOT NULL
+    <isPropertyAvailable property ="ORGLISTID">
+      <isNotEmpty property="ORGLISTID">
+        AND ID IN ($ORGLISTID$)
+      </isNotEmpty>
+    </isPropertyAvailable>
+    ORDER BY O.DESCRIPTION_PATH) O
+    on o_t.ORG_ID = O.ID) o_t
+    ON EMP.TITLE_ID = o_t.title_id AND EMP.ORG_ID = o_t.ORG_ID
+
+    WHERE ORG_LINK IS NOT NULL
+
+    GROUP BY o_t.NAME_C1, o_t.ID_C2, o_t.NAME_C2, o_t.title_id, o_t.name_vn
+    ORDER BY o_t.NAME_C1, o_t.ID_C2, o_t.NAME_C2 ASC, o_t.title_id, o_t.name_vn ASC
+  </update>
+</sqlMap>

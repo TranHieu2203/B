@@ -1,0 +1,3311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PayrollBusiness" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IPayrollBusiness_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="1800000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayrollDAL" />
+      <xsd:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Framework.Data" />
+      <xsd:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+      <xsd:import schemaLocation="http://localhost:9999/PayrollBusiness.svc?xsd=xsd7" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPayrollBusiness_DeleteWorkFactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkFactor" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteWorkFactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkFactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateWorkFactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateWorkFactor" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateWorkFactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateWorkFactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryLevel_Unilever_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryLevel_Unilever" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryLevel_Unilever_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryLevel_UnileverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryLevel_Unilever_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryLevel_Unilever" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryLevel_Unilever_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryLevel_UnileverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryLevel_Unilever_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryLevel_Unilever" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryLevel_Unilever_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryLevel_UnileverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryRank_Unilever_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryRank_Unilever" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryRank_Unilever_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryRank_UnileverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryRankCombo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryRankCombo" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryRankCombo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryRankComboResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetIncentiveRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncentiveRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetIncentiveRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncentiveRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetIncentiveRankDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncentiveRankDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetIncentiveRankDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncentiveRankDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetIncentiveRankIncludeDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncentiveRankIncludeDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetIncentiveRankIncludeDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncentiveRankIncludeDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetIncentiveRankIdIncludeDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncentiveRankIdIncludeDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetIncentiveRankIdIncludeDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncentiveRankIdIncludeDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertIncentiveRankIncludeDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncentiveRankIncludeDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertIncentiveRankIncludeDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncentiveRankIncludeDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertIncentiveRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncentiveRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertIncentiveRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncentiveRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertIncentiveRankDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncentiveRankDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertIncentiveRankDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncentiveRankDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertIncentiveListRankDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncentiveListRankDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertIncentiveListRankDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncentiveListRankDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyIncentiveRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyIncentiveRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyIncentiveRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyIncentiveRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyIncentiveRankDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyIncentiveRankDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyIncentiveRankDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyIncentiveRankDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyIncentiveRankIncludeDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyIncentiveRankIncludeDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyIncentiveRankIncludeDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyIncentiveRankIncludeDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateIncentiveRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateIncentiveRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateIncentiveRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateIncentiveRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveIncentiveRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveIncentiveRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveIncentiveRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveIncentiveRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteIncentiveRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIncentiveRank" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteIncentiveRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIncentiveRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveIncentiveRankDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveIncentiveRankDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveIncentiveRankDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveIncentiveRankDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteIncentiveRankDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIncentiveRankDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteIncentiveRankDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIncentiveRankDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryType_Group_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryType_Group" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryType_Group_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryType_GroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryType_Group_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryType_Group" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryType_Group_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryType_GroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryType_Group_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryType_Group" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryType_Group_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryType_GroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryType_Group_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryType_Group" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryType_Group_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryType_GroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryType_Group_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryType_Group" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryType_Group_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryType_GroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryType_GroupStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryType_GroupStatus" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryType_GroupStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryType_GroupStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryType_Group_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryType_Group" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryType_Group_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryType_GroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryType_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryType" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryType_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryType" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryType_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryType" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryType_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryType" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryType" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryType_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryType" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryTypebyIncentive_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryTypebyIncentive" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryTypebyIncentive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryTypebyIncentiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListSalaries_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSalaries" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListSalaries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSalariesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertListSalaries_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertListSalaries" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertListSalaries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertListSalariesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyListSalaries_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyListSalaries" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyListSalaries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyListSalariesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveListSalaries_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveListSalaries" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveListSalaries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveListSalariesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteListSalariesStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteListSalariesStatus" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteListSalariesStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteListSalariesStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteListSalaries_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteListSalaries" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteListSalaries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteListSalariesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListSal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSal" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListSal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertListSal_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertListSal" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertListSal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertListSalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyListSal_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyListSal" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyListSal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyListSalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveListSal_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveListSal" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveListSal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveListSalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteListSal_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteListSal" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteListSal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteListSalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPriceLunchList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceLunchList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPriceLunchList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceLunchListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPriceLunch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceLunch" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPriceLunch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceLunchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertPriceLunch_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPriceLunch" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertPriceLunch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPriceLunchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyPriceLunch_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPriceLunch" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyPriceLunch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPriceLunchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeletePriceLunch_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePriceLunch" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeletePriceLunch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePriceLunchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateATPriceLunch_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateATPriceLunch" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateATPriceLunch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateATPriceLunchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateATPriceLunchOrg_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateATPriceLunchOrg" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateATPriceLunchOrg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateATPriceLunchOrgResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteCostCenterStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCostCenterStatus" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteCostCenterStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCostCenterStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_TestService_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestService" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_TestService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetComboboxData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComboboxData" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetComboboxData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComboboxDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPayrollSheetSum_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayrollSheetSum" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPayrollSheetSum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayrollSheetSumResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_CheckPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_CheckPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetOrgBonus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgBonus" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetOrgBonus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgBonusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertOrgBonus_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrgBonus" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertOrgBonus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrgBonusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyOrgBonus_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyOrgBonus" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyOrgBonus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyOrgBonusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveOrgBonus_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveOrgBonus" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveOrgBonus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveOrgBonusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteOrgBonus_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrgBonus" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteOrgBonus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrgBonusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateOrgBonus_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateOrgBonus" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateOrgBonus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateOrgBonusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPaymentSources_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentSources" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPaymentSources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentSourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertPaymentSources_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPaymentSources" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertPaymentSources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPaymentSourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyPaymentSources_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPaymentSources" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyPaymentSources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPaymentSourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActivePaymentSources_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivePaymentSources" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActivePaymentSources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivePaymentSourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeletePaymentSources_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePaymentSources" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeletePaymentSources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePaymentSourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetWorkFactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkFactor" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetWorkFactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkFactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertWorkFactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWorkFactor" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertWorkFactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWorkFactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyWorkFactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyWorkFactor" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyWorkFactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyWorkFactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveWorkFactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveWorkFactor" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveWorkFactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveWorkFactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetAllowanceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllowanceList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetAllowanceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllowanceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertAllowance_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAllowance" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertAllowance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAllowanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyAllowance_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAllowance" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyAllowance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAllowanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveAllowance_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveAllowance" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveAllowance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveAllowanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteAllowance_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllowance" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteAllowance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllowanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_CheckExistInDatabase_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExistInDatabase" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_CheckExistInDatabase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExistInDatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetOtherList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetOtherList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Load_Calculate_Load_InputMessage">
+    <wsdl:part name="parameters" element="tns:Load_Calculate_Load" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Load_Calculate_Load_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Load_Calculate_LoadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Load_data_sum_InputMessage">
+    <wsdl:part name="parameters" element="tns:Load_data_sum" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Load_data_sum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Load_data_sumResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Calculate_data_sum_InputMessage">
+    <wsdl:part name="parameters" element="tns:Calculate_data_sum" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Calculate_data_sum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Calculate_data_sumResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Load_data_calculate_InputMessage">
+    <wsdl:part name="parameters" element="tns:Load_data_calculate" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Load_data_calculate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Load_data_calculateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Calculate_data_temp_InputMessage">
+    <wsdl:part name="parameters" element="tns:Calculate_data_temp" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_Calculate_data_temp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Calculate_data_tempResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListSalaryVisibleCol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSalaryVisibleCol" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListSalaryVisibleCol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSalaryVisibleColResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetLitsCalculate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLitsCalculate" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetLitsCalculate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLitsCalculateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetImportSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImportSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetImportSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImportSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryList_TYPE_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryList_TYPE" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryList_TYPE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryList_TYPEResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_SaveImport_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImport" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_SaveImport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetHoldSalaryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHoldSalaryList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetHoldSalaryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHoldSalaryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertHoldSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHoldSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertHoldSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHoldSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteHoldSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHoldSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteHoldSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHoldSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetTaxation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxation" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetTaxation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertTaxation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTaxation" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertTaxation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTaxationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyTaxation_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyTaxation" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyTaxation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyTaxationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveTaxation_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveTaxation" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveTaxation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveTaxationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteTaxation_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTaxation" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteTaxation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTaxationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPaymentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPaymentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPaymentListAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentListAll" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPaymentListAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentListAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertPaymentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPaymentList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertPaymentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPaymentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyPaymentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPaymentList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyPaymentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPaymentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActivePaymentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivePaymentList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActivePaymentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivePaymentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeletePaymentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePaymentList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeletePaymentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePaymentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetObjectSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetObjectSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetObjectSalaryAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectSalaryAll" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetObjectSalaryAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectSalaryAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertObjectSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertObjectSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertObjectSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertObjectSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateObjectSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateObjectSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateObjectSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateObjectSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyObjectSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyObjectSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyObjectSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyObjectSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveObjectSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveObjectSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveObjectSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveObjectSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteObjectSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteObjectSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteObjectSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteObjectSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPeriodList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriodList" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPeriodList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriodListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPeriodbyYear_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriodbyYear" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetPeriodbyYear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeriodbyYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeletePeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeletePeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateATPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateATPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateATPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateATPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateATPeriodDay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateATPeriodDay" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateATPeriodDay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateATPeriodDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActivePeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivePeriod" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActivePeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivePeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetWorkStandard_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkStandard" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetWorkStandard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkStandardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetWorkStandardbyYear_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkStandardbyYear" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetWorkStandardbyYear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkStandardbyYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertWorkStandard_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWorkStandard" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertWorkStandard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWorkStandardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyWorkStandard_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyWorkStandard" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyWorkStandard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyWorkStandardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteWorkStandard_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkStandard" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteWorkStandard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkStandardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateWorkStandard_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateWorkStandard" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateWorkStandard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateWorkStandardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveWorkStandard_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveWorkStandard" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveWorkStandard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveWorkStandardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteFomulerGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFomulerGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteFomulerGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFomulerGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyFomulerGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyFomulerGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifyFomulerGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyFomulerGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertFomulerGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFomulerGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertFomulerGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFomulerGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetAllFomulerGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFomulerGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetAllFomulerGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFomulerGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListAllSalary_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListAllSalary" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListAllSalary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListAllSalaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetObjectSalaryColumn_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectSalaryColumn" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetObjectSalaryColumn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetObjectSalaryColumnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListSalColunm_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSalColunm" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListSalColunm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSalColunmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListInputColumn_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListInputColumn" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListInputColumn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListInputColumnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListCalculation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCalculation" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetListCalculation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCalculationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_CopyFomuler_InputMessage">
+    <wsdl:part name="parameters" element="tns:CopyFomuler" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_CopyFomuler_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CopyFomulerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_SaveFomuler_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFomuler" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_SaveFomuler_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFomulerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_CheckFomuler_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFomuler" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_CheckFomuler_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFomulerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveFolmulerGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveFolmulerGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveFolmulerGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveFolmulerGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryGroupCombo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryGroupCombo" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryGroupCombo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryGroupComboResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetEffectSalaryGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEffectSalaryGroup" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetEffectSalaryGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEffectSalaryGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryLevel" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryLevel" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryLevel" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryLevel" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ModifySalaryLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifySalaryLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryLevel" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ActiveSalaryLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveSalaryLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryLevel" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_DeleteSalaryLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalaryLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryLevel_Unilever_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryLevel_Unilever" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryLevel_Unilever_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryLevel_UnileverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryLevelCombo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryLevelCombo" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_GetSalaryLevelCombo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalaryLevelComboResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryLevel_Unilever_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryLevel_Unilever" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_InsertSalaryLevel_Unilever_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSalaryLevel_UnileverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryLevel_Unilever_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryLevel_Unilever" />
+  </wsdl:message>
+  <wsdl:message name="IPayrollBusiness_ValidateSalaryLevel_Unilever_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSalaryLevel_UnileverResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPayrollBusiness">
+    <wsdl:operation name="DeleteWorkFactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteWorkFactor" message="tns:IPayrollBusiness_DeleteWorkFactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteWorkFactorResponse" message="tns:IPayrollBusiness_DeleteWorkFactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateWorkFactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateWorkFactor" message="tns:IPayrollBusiness_ValidateWorkFactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateWorkFactorResponse" message="tns:IPayrollBusiness_ValidateWorkFactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryLevel_Unilever">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryLevel_Unilever" message="tns:IPayrollBusiness_ModifySalaryLevel_Unilever_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryLevel_UnileverResponse" message="tns:IPayrollBusiness_ModifySalaryLevel_Unilever_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryLevel_Unilever">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryLevel_Unilever" message="tns:IPayrollBusiness_ActiveSalaryLevel_Unilever_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryLevel_UnileverResponse" message="tns:IPayrollBusiness_ActiveSalaryLevel_Unilever_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryLevel_Unilever">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryLevel_Unilever" message="tns:IPayrollBusiness_DeleteSalaryLevel_Unilever_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryLevel_UnileverResponse" message="tns:IPayrollBusiness_DeleteSalaryLevel_Unilever_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryRank" message="tns:IPayrollBusiness_GetSalaryRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryRankResponse" message="tns:IPayrollBusiness_GetSalaryRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryRank_Unilever">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryRank_Unilever" message="tns:IPayrollBusiness_GetSalaryRank_Unilever_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryRank_UnileverResponse" message="tns:IPayrollBusiness_GetSalaryRank_Unilever_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryRankCombo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryRankCombo" message="tns:IPayrollBusiness_GetSalaryRankCombo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryRankComboResponse" message="tns:IPayrollBusiness_GetSalaryRankCombo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryRank" message="tns:IPayrollBusiness_InsertSalaryRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryRankResponse" message="tns:IPayrollBusiness_InsertSalaryRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryRank" message="tns:IPayrollBusiness_ValidateSalaryRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryRankResponse" message="tns:IPayrollBusiness_ValidateSalaryRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryRank" message="tns:IPayrollBusiness_ModifySalaryRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryRankResponse" message="tns:IPayrollBusiness_ModifySalaryRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryRank" message="tns:IPayrollBusiness_ActiveSalaryRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryRankResponse" message="tns:IPayrollBusiness_ActiveSalaryRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryRank" message="tns:IPayrollBusiness_DeleteSalaryRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryRankResponse" message="tns:IPayrollBusiness_DeleteSalaryRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncentiveRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetIncentiveRank" message="tns:IPayrollBusiness_GetIncentiveRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetIncentiveRankResponse" message="tns:IPayrollBusiness_GetIncentiveRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncentiveRankDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetIncentiveRankDetail" message="tns:IPayrollBusiness_GetIncentiveRankDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetIncentiveRankDetailResponse" message="tns:IPayrollBusiness_GetIncentiveRankDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncentiveRankIncludeDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetIncentiveRankIncludeDetail" message="tns:IPayrollBusiness_GetIncentiveRankIncludeDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetIncentiveRankIncludeDetailResponse" message="tns:IPayrollBusiness_GetIncentiveRankIncludeDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncentiveRankIdIncludeDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetIncentiveRankIdIncludeDetail" message="tns:IPayrollBusiness_GetIncentiveRankIdIncludeDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetIncentiveRankIdIncludeDetailResponse" message="tns:IPayrollBusiness_GetIncentiveRankIdIncludeDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncentiveRankIncludeDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertIncentiveRankIncludeDetail" message="tns:IPayrollBusiness_InsertIncentiveRankIncludeDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertIncentiveRankIncludeDetailResponse" message="tns:IPayrollBusiness_InsertIncentiveRankIncludeDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncentiveRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertIncentiveRank" message="tns:IPayrollBusiness_InsertIncentiveRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertIncentiveRankResponse" message="tns:IPayrollBusiness_InsertIncentiveRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncentiveRankDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertIncentiveRankDetail" message="tns:IPayrollBusiness_InsertIncentiveRankDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertIncentiveRankDetailResponse" message="tns:IPayrollBusiness_InsertIncentiveRankDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncentiveListRankDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertIncentiveListRankDetail" message="tns:IPayrollBusiness_InsertIncentiveListRankDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertIncentiveListRankDetailResponse" message="tns:IPayrollBusiness_InsertIncentiveListRankDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyIncentiveRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyIncentiveRank" message="tns:IPayrollBusiness_ModifyIncentiveRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyIncentiveRankResponse" message="tns:IPayrollBusiness_ModifyIncentiveRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyIncentiveRankDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyIncentiveRankDetail" message="tns:IPayrollBusiness_ModifyIncentiveRankDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyIncentiveRankDetailResponse" message="tns:IPayrollBusiness_ModifyIncentiveRankDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyIncentiveRankIncludeDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyIncentiveRankIncludeDetail" message="tns:IPayrollBusiness_ModifyIncentiveRankIncludeDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyIncentiveRankIncludeDetailResponse" message="tns:IPayrollBusiness_ModifyIncentiveRankIncludeDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateIncentiveRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateIncentiveRank" message="tns:IPayrollBusiness_ValidateIncentiveRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateIncentiveRankResponse" message="tns:IPayrollBusiness_ValidateIncentiveRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveIncentiveRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveIncentiveRank" message="tns:IPayrollBusiness_ActiveIncentiveRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveIncentiveRankResponse" message="tns:IPayrollBusiness_ActiveIncentiveRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIncentiveRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteIncentiveRank" message="tns:IPayrollBusiness_DeleteIncentiveRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteIncentiveRankResponse" message="tns:IPayrollBusiness_DeleteIncentiveRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveIncentiveRankDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveIncentiveRankDetail" message="tns:IPayrollBusiness_ActiveIncentiveRankDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveIncentiveRankDetailResponse" message="tns:IPayrollBusiness_ActiveIncentiveRankDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIncentiveRankDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteIncentiveRankDetail" message="tns:IPayrollBusiness_DeleteIncentiveRankDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteIncentiveRankDetailResponse" message="tns:IPayrollBusiness_DeleteIncentiveRankDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryType_Group">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryType_Group" message="tns:IPayrollBusiness_GetSalaryType_Group_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryType_GroupResponse" message="tns:IPayrollBusiness_GetSalaryType_Group_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryType_Group">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryType_Group" message="tns:IPayrollBusiness_InsertSalaryType_Group_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryType_GroupResponse" message="tns:IPayrollBusiness_InsertSalaryType_Group_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryType_Group">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryType_Group" message="tns:IPayrollBusiness_ModifySalaryType_Group_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryType_GroupResponse" message="tns:IPayrollBusiness_ModifySalaryType_Group_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryType_Group">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryType_Group" message="tns:IPayrollBusiness_ValidateSalaryType_Group_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryType_GroupResponse" message="tns:IPayrollBusiness_ValidateSalaryType_Group_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryType_Group">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryType_Group" message="tns:IPayrollBusiness_ActiveSalaryType_Group_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryType_GroupResponse" message="tns:IPayrollBusiness_ActiveSalaryType_Group_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryType_GroupStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryType_GroupStatus" message="tns:IPayrollBusiness_DeleteSalaryType_GroupStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryType_GroupStatusResponse" message="tns:IPayrollBusiness_DeleteSalaryType_GroupStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryType_Group">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryType_Group" message="tns:IPayrollBusiness_DeleteSalaryType_Group_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryType_GroupResponse" message="tns:IPayrollBusiness_DeleteSalaryType_Group_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryType" message="tns:IPayrollBusiness_DeleteSalaryType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryTypeResponse" message="tns:IPayrollBusiness_DeleteSalaryType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryType" message="tns:IPayrollBusiness_ModifySalaryType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryTypeResponse" message="tns:IPayrollBusiness_ModifySalaryType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryType" message="tns:IPayrollBusiness_ValidateSalaryType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryTypeResponse" message="tns:IPayrollBusiness_ValidateSalaryType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryType" message="tns:IPayrollBusiness_InsertSalaryType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryTypeResponse" message="tns:IPayrollBusiness_InsertSalaryType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryType" message="tns:IPayrollBusiness_GetSalaryType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryTypeResponse" message="tns:IPayrollBusiness_GetSalaryType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryType" message="tns:IPayrollBusiness_ActiveSalaryType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryTypeResponse" message="tns:IPayrollBusiness_ActiveSalaryType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryTypebyIncentive">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryTypebyIncentive" message="tns:IPayrollBusiness_GetSalaryTypebyIncentive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryTypebyIncentiveResponse" message="tns:IPayrollBusiness_GetSalaryTypebyIncentive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSalaries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListSalaries" message="tns:IPayrollBusiness_GetListSalaries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListSalariesResponse" message="tns:IPayrollBusiness_GetListSalaries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertListSalaries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertListSalaries" message="tns:IPayrollBusiness_InsertListSalaries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertListSalariesResponse" message="tns:IPayrollBusiness_InsertListSalaries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyListSalaries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyListSalaries" message="tns:IPayrollBusiness_ModifyListSalaries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyListSalariesResponse" message="tns:IPayrollBusiness_ModifyListSalaries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveListSalaries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveListSalaries" message="tns:IPayrollBusiness_ActiveListSalaries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveListSalariesResponse" message="tns:IPayrollBusiness_ActiveListSalaries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteListSalariesStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteListSalariesStatus" message="tns:IPayrollBusiness_DeleteListSalariesStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteListSalariesStatusResponse" message="tns:IPayrollBusiness_DeleteListSalariesStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteListSalaries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteListSalaries" message="tns:IPayrollBusiness_DeleteListSalaries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteListSalariesResponse" message="tns:IPayrollBusiness_DeleteListSalaries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListSal" message="tns:IPayrollBusiness_GetListSal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListSalResponse" message="tns:IPayrollBusiness_GetListSal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertListSal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertListSal" message="tns:IPayrollBusiness_InsertListSal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertListSalResponse" message="tns:IPayrollBusiness_InsertListSal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyListSal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyListSal" message="tns:IPayrollBusiness_ModifyListSal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyListSalResponse" message="tns:IPayrollBusiness_ModifyListSal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveListSal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveListSal" message="tns:IPayrollBusiness_ActiveListSal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveListSalResponse" message="tns:IPayrollBusiness_ActiveListSal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteListSal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteListSal" message="tns:IPayrollBusiness_DeleteListSal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteListSalResponse" message="tns:IPayrollBusiness_DeleteListSal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceLunchList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPriceLunchList" message="tns:IPayrollBusiness_GetPriceLunchList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPriceLunchListResponse" message="tns:IPayrollBusiness_GetPriceLunchList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceLunch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPriceLunch" message="tns:IPayrollBusiness_GetPriceLunch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPriceLunchResponse" message="tns:IPayrollBusiness_GetPriceLunch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPriceLunch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertPriceLunch" message="tns:IPayrollBusiness_InsertPriceLunch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertPriceLunchResponse" message="tns:IPayrollBusiness_InsertPriceLunch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPriceLunch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyPriceLunch" message="tns:IPayrollBusiness_ModifyPriceLunch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyPriceLunchResponse" message="tns:IPayrollBusiness_ModifyPriceLunch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePriceLunch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeletePriceLunch" message="tns:IPayrollBusiness_DeletePriceLunch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeletePriceLunchResponse" message="tns:IPayrollBusiness_DeletePriceLunch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateATPriceLunch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateATPriceLunch" message="tns:IPayrollBusiness_ValidateATPriceLunch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateATPriceLunchResponse" message="tns:IPayrollBusiness_ValidateATPriceLunch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateATPriceLunchOrg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateATPriceLunchOrg" message="tns:IPayrollBusiness_ValidateATPriceLunchOrg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateATPriceLunchOrgResponse" message="tns:IPayrollBusiness_ValidateATPriceLunchOrg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetCostCenter" message="tns:IPayrollBusiness_GetCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetCostCenterResponse" message="tns:IPayrollBusiness_GetCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertCostCenter" message="tns:IPayrollBusiness_InsertCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertCostCenterResponse" message="tns:IPayrollBusiness_InsertCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyCostCenter" message="tns:IPayrollBusiness_ModifyCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyCostCenterResponse" message="tns:IPayrollBusiness_ModifyCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateCostCenter" message="tns:IPayrollBusiness_ValidateCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateCostCenterResponse" message="tns:IPayrollBusiness_ValidateCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveCostCenter" message="tns:IPayrollBusiness_ActiveCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveCostCenterResponse" message="tns:IPayrollBusiness_ActiveCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenterStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteCostCenterStatus" message="tns:IPayrollBusiness_DeleteCostCenterStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteCostCenterStatusResponse" message="tns:IPayrollBusiness_DeleteCostCenterStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteCostCenter" message="tns:IPayrollBusiness_DeleteCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteCostCenterResponse" message="tns:IPayrollBusiness_DeleteCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/TestService" message="tns:IPayrollBusiness_TestService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/TestServiceResponse" message="tns:IPayrollBusiness_TestService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComboboxData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetComboboxData" message="tns:IPayrollBusiness_GetComboboxData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetComboboxDataResponse" message="tns:IPayrollBusiness_GetComboboxData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayrollSheetSum">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPayrollSheetSum" message="tns:IPayrollBusiness_GetPayrollSheetSum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPayrollSheetSumResponse" message="tns:IPayrollBusiness_GetPayrollSheetSum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/CheckPeriod" message="tns:IPayrollBusiness_CheckPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/CheckPeriodResponse" message="tns:IPayrollBusiness_CheckPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgBonus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetOrgBonus" message="tns:IPayrollBusiness_GetOrgBonus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetOrgBonusResponse" message="tns:IPayrollBusiness_GetOrgBonus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertOrgBonus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertOrgBonus" message="tns:IPayrollBusiness_InsertOrgBonus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertOrgBonusResponse" message="tns:IPayrollBusiness_InsertOrgBonus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyOrgBonus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyOrgBonus" message="tns:IPayrollBusiness_ModifyOrgBonus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyOrgBonusResponse" message="tns:IPayrollBusiness_ModifyOrgBonus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveOrgBonus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveOrgBonus" message="tns:IPayrollBusiness_ActiveOrgBonus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveOrgBonusResponse" message="tns:IPayrollBusiness_ActiveOrgBonus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrgBonus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteOrgBonus" message="tns:IPayrollBusiness_DeleteOrgBonus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteOrgBonusResponse" message="tns:IPayrollBusiness_DeleteOrgBonus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateOrgBonus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateOrgBonus" message="tns:IPayrollBusiness_ValidateOrgBonus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateOrgBonusResponse" message="tns:IPayrollBusiness_ValidateOrgBonus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentSources">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPaymentSources" message="tns:IPayrollBusiness_GetPaymentSources_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPaymentSourcesResponse" message="tns:IPayrollBusiness_GetPaymentSources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPaymentSources">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertPaymentSources" message="tns:IPayrollBusiness_InsertPaymentSources_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertPaymentSourcesResponse" message="tns:IPayrollBusiness_InsertPaymentSources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPaymentSources">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyPaymentSources" message="tns:IPayrollBusiness_ModifyPaymentSources_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyPaymentSourcesResponse" message="tns:IPayrollBusiness_ModifyPaymentSources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivePaymentSources">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActivePaymentSources" message="tns:IPayrollBusiness_ActivePaymentSources_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActivePaymentSourcesResponse" message="tns:IPayrollBusiness_ActivePaymentSources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePaymentSources">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeletePaymentSources" message="tns:IPayrollBusiness_DeletePaymentSources_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeletePaymentSourcesResponse" message="tns:IPayrollBusiness_DeletePaymentSources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkFactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetWorkFactor" message="tns:IPayrollBusiness_GetWorkFactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetWorkFactorResponse" message="tns:IPayrollBusiness_GetWorkFactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertWorkFactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertWorkFactor" message="tns:IPayrollBusiness_InsertWorkFactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertWorkFactorResponse" message="tns:IPayrollBusiness_InsertWorkFactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyWorkFactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyWorkFactor" message="tns:IPayrollBusiness_ModifyWorkFactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyWorkFactorResponse" message="tns:IPayrollBusiness_ModifyWorkFactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveWorkFactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveWorkFactor" message="tns:IPayrollBusiness_ActiveWorkFactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveWorkFactorResponse" message="tns:IPayrollBusiness_ActiveWorkFactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllowanceList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetAllowanceList" message="tns:IPayrollBusiness_GetAllowanceList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetAllowanceListResponse" message="tns:IPayrollBusiness_GetAllowanceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAllowance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertAllowance" message="tns:IPayrollBusiness_InsertAllowance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertAllowanceResponse" message="tns:IPayrollBusiness_InsertAllowance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAllowance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyAllowance" message="tns:IPayrollBusiness_ModifyAllowance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyAllowanceResponse" message="tns:IPayrollBusiness_ModifyAllowance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveAllowance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveAllowance" message="tns:IPayrollBusiness_ActiveAllowance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveAllowanceResponse" message="tns:IPayrollBusiness_ActiveAllowance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllowance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteAllowance" message="tns:IPayrollBusiness_DeleteAllowance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteAllowanceResponse" message="tns:IPayrollBusiness_DeleteAllowance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistInDatabase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/CheckExistInDatabase" message="tns:IPayrollBusiness_CheckExistInDatabase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/CheckExistInDatabaseResponse" message="tns:IPayrollBusiness_CheckExistInDatabase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetOtherList" message="tns:IPayrollBusiness_GetOtherList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetOtherListResponse" message="tns:IPayrollBusiness_GetOtherList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Load_Calculate_Load">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/Load_Calculate_Load" message="tns:IPayrollBusiness_Load_Calculate_Load_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/Load_Calculate_LoadResponse" message="tns:IPayrollBusiness_Load_Calculate_Load_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Load_data_sum">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/Load_data_sum" message="tns:IPayrollBusiness_Load_data_sum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/Load_data_sumResponse" message="tns:IPayrollBusiness_Load_data_sum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Calculate_data_sum">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/Calculate_data_sum" message="tns:IPayrollBusiness_Calculate_data_sum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/Calculate_data_sumResponse" message="tns:IPayrollBusiness_Calculate_data_sum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Load_data_calculate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/Load_data_calculate" message="tns:IPayrollBusiness_Load_data_calculate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/Load_data_calculateResponse" message="tns:IPayrollBusiness_Load_data_calculate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Calculate_data_temp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/Calculate_data_temp" message="tns:IPayrollBusiness_Calculate_data_temp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/Calculate_data_tempResponse" message="tns:IPayrollBusiness_Calculate_data_temp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSalaryVisibleCol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListSalaryVisibleCol" message="tns:IPayrollBusiness_GetListSalaryVisibleCol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListSalaryVisibleColResponse" message="tns:IPayrollBusiness_GetListSalaryVisibleCol_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLitsCalculate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetLitsCalculate" message="tns:IPayrollBusiness_GetLitsCalculate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetLitsCalculateResponse" message="tns:IPayrollBusiness_GetLitsCalculate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImportSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetImportSalary" message="tns:IPayrollBusiness_GetImportSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetImportSalaryResponse" message="tns:IPayrollBusiness_GetImportSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryList" message="tns:IPayrollBusiness_GetSalaryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryListResponse" message="tns:IPayrollBusiness_GetSalaryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryList_TYPE">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryList_TYPE" message="tns:IPayrollBusiness_GetSalaryList_TYPE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryList_TYPEResponse" message="tns:IPayrollBusiness_GetSalaryList_TYPE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/SaveImport" message="tns:IPayrollBusiness_SaveImport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/SaveImportResponse" message="tns:IPayrollBusiness_SaveImport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHoldSalaryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetHoldSalaryList" message="tns:IPayrollBusiness_GetHoldSalaryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetHoldSalaryListResponse" message="tns:IPayrollBusiness_GetHoldSalaryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertHoldSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertHoldSalary" message="tns:IPayrollBusiness_InsertHoldSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertHoldSalaryResponse" message="tns:IPayrollBusiness_InsertHoldSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHoldSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteHoldSalary" message="tns:IPayrollBusiness_DeleteHoldSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteHoldSalaryResponse" message="tns:IPayrollBusiness_DeleteHoldSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetTaxation" message="tns:IPayrollBusiness_GetTaxation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetTaxationResponse" message="tns:IPayrollBusiness_GetTaxation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTaxation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertTaxation" message="tns:IPayrollBusiness_InsertTaxation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertTaxationResponse" message="tns:IPayrollBusiness_InsertTaxation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyTaxation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyTaxation" message="tns:IPayrollBusiness_ModifyTaxation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyTaxationResponse" message="tns:IPayrollBusiness_ModifyTaxation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveTaxation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveTaxation" message="tns:IPayrollBusiness_ActiveTaxation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveTaxationResponse" message="tns:IPayrollBusiness_ActiveTaxation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTaxation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteTaxation" message="tns:IPayrollBusiness_DeleteTaxation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteTaxationResponse" message="tns:IPayrollBusiness_DeleteTaxation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPaymentList" message="tns:IPayrollBusiness_GetPaymentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPaymentListResponse" message="tns:IPayrollBusiness_GetPaymentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentListAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPaymentListAll" message="tns:IPayrollBusiness_GetPaymentListAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPaymentListAllResponse" message="tns:IPayrollBusiness_GetPaymentListAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPaymentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertPaymentList" message="tns:IPayrollBusiness_InsertPaymentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertPaymentListResponse" message="tns:IPayrollBusiness_InsertPaymentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPaymentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyPaymentList" message="tns:IPayrollBusiness_ModifyPaymentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyPaymentListResponse" message="tns:IPayrollBusiness_ModifyPaymentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivePaymentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActivePaymentList" message="tns:IPayrollBusiness_ActivePaymentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActivePaymentListResponse" message="tns:IPayrollBusiness_ActivePaymentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePaymentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeletePaymentList" message="tns:IPayrollBusiness_DeletePaymentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeletePaymentListResponse" message="tns:IPayrollBusiness_DeletePaymentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetObjectSalary" message="tns:IPayrollBusiness_GetObjectSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetObjectSalaryResponse" message="tns:IPayrollBusiness_GetObjectSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectSalaryAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetObjectSalaryAll" message="tns:IPayrollBusiness_GetObjectSalaryAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetObjectSalaryAllResponse" message="tns:IPayrollBusiness_GetObjectSalaryAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertObjectSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertObjectSalary" message="tns:IPayrollBusiness_InsertObjectSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertObjectSalaryResponse" message="tns:IPayrollBusiness_InsertObjectSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateObjectSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateObjectSalary" message="tns:IPayrollBusiness_ValidateObjectSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateObjectSalaryResponse" message="tns:IPayrollBusiness_ValidateObjectSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyObjectSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyObjectSalary" message="tns:IPayrollBusiness_ModifyObjectSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyObjectSalaryResponse" message="tns:IPayrollBusiness_ModifyObjectSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveObjectSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveObjectSalary" message="tns:IPayrollBusiness_ActiveObjectSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveObjectSalaryResponse" message="tns:IPayrollBusiness_ActiveObjectSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteObjectSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteObjectSalary" message="tns:IPayrollBusiness_DeleteObjectSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteObjectSalaryResponse" message="tns:IPayrollBusiness_DeleteObjectSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPeriodList" message="tns:IPayrollBusiness_GetPeriodList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPeriodListResponse" message="tns:IPayrollBusiness_GetPeriodList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodbyYear">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPeriodbyYear" message="tns:IPayrollBusiness_GetPeriodbyYear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetPeriodbyYearResponse" message="tns:IPayrollBusiness_GetPeriodbyYear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertPeriod" message="tns:IPayrollBusiness_InsertPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertPeriodResponse" message="tns:IPayrollBusiness_InsertPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyPeriod" message="tns:IPayrollBusiness_ModifyPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyPeriodResponse" message="tns:IPayrollBusiness_ModifyPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeletePeriod" message="tns:IPayrollBusiness_DeletePeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeletePeriodResponse" message="tns:IPayrollBusiness_DeletePeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateATPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateATPeriod" message="tns:IPayrollBusiness_ValidateATPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateATPeriodResponse" message="tns:IPayrollBusiness_ValidateATPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateATPeriodDay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateATPeriodDay" message="tns:IPayrollBusiness_ValidateATPeriodDay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateATPeriodDayResponse" message="tns:IPayrollBusiness_ValidateATPeriodDay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivePeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActivePeriod" message="tns:IPayrollBusiness_ActivePeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActivePeriodResponse" message="tns:IPayrollBusiness_ActivePeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkStandard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetWorkStandard" message="tns:IPayrollBusiness_GetWorkStandard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetWorkStandardResponse" message="tns:IPayrollBusiness_GetWorkStandard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkStandardbyYear">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetWorkStandardbyYear" message="tns:IPayrollBusiness_GetWorkStandardbyYear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetWorkStandardbyYearResponse" message="tns:IPayrollBusiness_GetWorkStandardbyYear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertWorkStandard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertWorkStandard" message="tns:IPayrollBusiness_InsertWorkStandard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertWorkStandardResponse" message="tns:IPayrollBusiness_InsertWorkStandard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyWorkStandard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyWorkStandard" message="tns:IPayrollBusiness_ModifyWorkStandard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyWorkStandardResponse" message="tns:IPayrollBusiness_ModifyWorkStandard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkStandard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteWorkStandard" message="tns:IPayrollBusiness_DeleteWorkStandard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteWorkStandardResponse" message="tns:IPayrollBusiness_DeleteWorkStandard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateWorkStandard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateWorkStandard" message="tns:IPayrollBusiness_ValidateWorkStandard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateWorkStandardResponse" message="tns:IPayrollBusiness_ValidateWorkStandard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveWorkStandard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveWorkStandard" message="tns:IPayrollBusiness_ActiveWorkStandard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveWorkStandardResponse" message="tns:IPayrollBusiness_ActiveWorkStandard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFomulerGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteFomulerGroup" message="tns:IPayrollBusiness_DeleteFomulerGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteFomulerGroupResponse" message="tns:IPayrollBusiness_DeleteFomulerGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyFomulerGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyFomulerGroup" message="tns:IPayrollBusiness_ModifyFomulerGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifyFomulerGroupResponse" message="tns:IPayrollBusiness_ModifyFomulerGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFomulerGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertFomulerGroup" message="tns:IPayrollBusiness_InsertFomulerGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertFomulerGroupResponse" message="tns:IPayrollBusiness_InsertFomulerGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFomulerGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetAllFomulerGroup" message="tns:IPayrollBusiness_GetAllFomulerGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetAllFomulerGroupResponse" message="tns:IPayrollBusiness_GetAllFomulerGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListAllSalary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListAllSalary" message="tns:IPayrollBusiness_GetListAllSalary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListAllSalaryResponse" message="tns:IPayrollBusiness_GetListAllSalary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectSalaryColumn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetObjectSalaryColumn" message="tns:IPayrollBusiness_GetObjectSalaryColumn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetObjectSalaryColumnResponse" message="tns:IPayrollBusiness_GetObjectSalaryColumn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSalColunm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListSalColunm" message="tns:IPayrollBusiness_GetListSalColunm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListSalColunmResponse" message="tns:IPayrollBusiness_GetListSalColunm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListInputColumn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListInputColumn" message="tns:IPayrollBusiness_GetListInputColumn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListInputColumnResponse" message="tns:IPayrollBusiness_GetListInputColumn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListCalculation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListCalculation" message="tns:IPayrollBusiness_GetListCalculation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetListCalculationResponse" message="tns:IPayrollBusiness_GetListCalculation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyFomuler">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/CopyFomuler" message="tns:IPayrollBusiness_CopyFomuler_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/CopyFomulerResponse" message="tns:IPayrollBusiness_CopyFomuler_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveFomuler">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/SaveFomuler" message="tns:IPayrollBusiness_SaveFomuler_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/SaveFomulerResponse" message="tns:IPayrollBusiness_SaveFomuler_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckFomuler">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/CheckFomuler" message="tns:IPayrollBusiness_CheckFomuler_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/CheckFomulerResponse" message="tns:IPayrollBusiness_CheckFomuler_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveFolmulerGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveFolmulerGroup" message="tns:IPayrollBusiness_ActiveFolmulerGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveFolmulerGroupResponse" message="tns:IPayrollBusiness_ActiveFolmulerGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryGroup" message="tns:IPayrollBusiness_GetSalaryGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryGroupResponse" message="tns:IPayrollBusiness_GetSalaryGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryGroupCombo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryGroupCombo" message="tns:IPayrollBusiness_GetSalaryGroupCombo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryGroupComboResponse" message="tns:IPayrollBusiness_GetSalaryGroupCombo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryGroup" message="tns:IPayrollBusiness_InsertSalaryGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryGroupResponse" message="tns:IPayrollBusiness_InsertSalaryGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryGroup" message="tns:IPayrollBusiness_ValidateSalaryGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryGroupResponse" message="tns:IPayrollBusiness_ValidateSalaryGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryGroup" message="tns:IPayrollBusiness_ModifySalaryGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryGroupResponse" message="tns:IPayrollBusiness_ModifySalaryGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryGroup" message="tns:IPayrollBusiness_ActiveSalaryGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryGroupResponse" message="tns:IPayrollBusiness_ActiveSalaryGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryGroup" message="tns:IPayrollBusiness_DeleteSalaryGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryGroupResponse" message="tns:IPayrollBusiness_DeleteSalaryGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEffectSalaryGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetEffectSalaryGroup" message="tns:IPayrollBusiness_GetEffectSalaryGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetEffectSalaryGroupResponse" message="tns:IPayrollBusiness_GetEffectSalaryGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryLevel" message="tns:IPayrollBusiness_GetSalaryLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryLevelResponse" message="tns:IPayrollBusiness_GetSalaryLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryLevel" message="tns:IPayrollBusiness_InsertSalaryLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryLevelResponse" message="tns:IPayrollBusiness_InsertSalaryLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryLevel" message="tns:IPayrollBusiness_ValidateSalaryLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryLevelResponse" message="tns:IPayrollBusiness_ValidateSalaryLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryLevel" message="tns:IPayrollBusiness_ModifySalaryLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ModifySalaryLevelResponse" message="tns:IPayrollBusiness_ModifySalaryLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryLevel" message="tns:IPayrollBusiness_ActiveSalaryLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ActiveSalaryLevelResponse" message="tns:IPayrollBusiness_ActiveSalaryLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryLevel" message="tns:IPayrollBusiness_DeleteSalaryLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/DeleteSalaryLevelResponse" message="tns:IPayrollBusiness_DeleteSalaryLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryLevel_Unilever">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryLevel_Unilever" message="tns:IPayrollBusiness_GetSalaryLevel_Unilever_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryLevel_UnileverResponse" message="tns:IPayrollBusiness_GetSalaryLevel_Unilever_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryLevelCombo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryLevelCombo" message="tns:IPayrollBusiness_GetSalaryLevelCombo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/GetSalaryLevelComboResponse" message="tns:IPayrollBusiness_GetSalaryLevelCombo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryLevel_Unilever">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryLevel_Unilever" message="tns:IPayrollBusiness_InsertSalaryLevel_Unilever_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/InsertSalaryLevel_UnileverResponse" message="tns:IPayrollBusiness_InsertSalaryLevel_Unilever_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryLevel_Unilever">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryLevel_Unilever" message="tns:IPayrollBusiness_ValidateSalaryLevel_Unilever_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPayrollBusiness/ValidateSalaryLevel_UnileverResponse" message="tns:IPayrollBusiness_ValidateSalaryLevel_Unilever_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IPayrollBusiness" type="tns:IPayrollBusiness">
+    <wsp:PolicyReference URI="#WSHttpBinding_IPayrollBusiness_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteWorkFactor">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteWorkFactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateWorkFactor">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateWorkFactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryLevel_Unilever">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifySalaryLevel_Unilever" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryLevel_Unilever">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveSalaryLevel_Unilever" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryLevel_Unilever">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteSalaryLevel_Unilever" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryRank_Unilever">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryRank_Unilever" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryRankCombo">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryRankCombo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertSalaryRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateSalaryRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifySalaryRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveSalaryRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteSalaryRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncentiveRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetIncentiveRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncentiveRankDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetIncentiveRankDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncentiveRankIncludeDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetIncentiveRankIncludeDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncentiveRankIdIncludeDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetIncentiveRankIdIncludeDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncentiveRankIncludeDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertIncentiveRankIncludeDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncentiveRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertIncentiveRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncentiveRankDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertIncentiveRankDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncentiveListRankDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertIncentiveListRankDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyIncentiveRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyIncentiveRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyIncentiveRankDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyIncentiveRankDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyIncentiveRankIncludeDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyIncentiveRankIncludeDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateIncentiveRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateIncentiveRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveIncentiveRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveIncentiveRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIncentiveRank">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteIncentiveRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveIncentiveRankDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveIncentiveRankDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIncentiveRankDetail">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteIncentiveRankDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryType_Group">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryType_Group" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryType_Group">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertSalaryType_Group" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryType_Group">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifySalaryType_Group" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryType_Group">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateSalaryType_Group" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryType_Group">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveSalaryType_Group" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryType_GroupStatus">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteSalaryType_GroupStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryType_Group">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteSalaryType_Group" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryType">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteSalaryType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryType">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifySalaryType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryType">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateSalaryType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryType">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertSalaryType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryType">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryType">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveSalaryType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryTypebyIncentive">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryTypebyIncentive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSalaries">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetListSalaries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertListSalaries">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertListSalaries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyListSalaries">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyListSalaries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveListSalaries">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveListSalaries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteListSalariesStatus">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteListSalariesStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteListSalaries">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteListSalaries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSal">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetListSal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertListSal">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertListSal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyListSal">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyListSal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveListSal">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveListSal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteListSal">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteListSal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceLunchList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetPriceLunchList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceLunch">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetPriceLunch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPriceLunch">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertPriceLunch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPriceLunch">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyPriceLunch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePriceLunch">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeletePriceLunch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateATPriceLunch">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateATPriceLunch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateATPriceLunchOrg">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateATPriceLunchOrg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenterStatus">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteCostCenterStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/TestService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComboboxData">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetComboboxData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayrollSheetSum">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetPayrollSheetSum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/CheckPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgBonus">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetOrgBonus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertOrgBonus">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertOrgBonus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyOrgBonus">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyOrgBonus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveOrgBonus">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveOrgBonus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrgBonus">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteOrgBonus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateOrgBonus">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateOrgBonus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentSources">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetPaymentSources" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPaymentSources">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertPaymentSources" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPaymentSources">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyPaymentSources" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivePaymentSources">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActivePaymentSources" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePaymentSources">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeletePaymentSources" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkFactor">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetWorkFactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertWorkFactor">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertWorkFactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyWorkFactor">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyWorkFactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveWorkFactor">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveWorkFactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllowanceList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetAllowanceList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAllowance">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertAllowance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAllowance">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyAllowance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveAllowance">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveAllowance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllowance">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteAllowance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistInDatabase">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/CheckExistInDatabase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetOtherList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Load_Calculate_Load">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/Load_Calculate_Load" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Load_data_sum">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/Load_data_sum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Calculate_data_sum">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/Calculate_data_sum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Load_data_calculate">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/Load_data_calculate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Calculate_data_temp">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/Calculate_data_temp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSalaryVisibleCol">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetListSalaryVisibleCol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLitsCalculate">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetLitsCalculate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImportSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetImportSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryList_TYPE">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryList_TYPE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImport">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/SaveImport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHoldSalaryList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetHoldSalaryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertHoldSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertHoldSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHoldSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteHoldSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxation">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetTaxation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTaxation">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertTaxation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyTaxation">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyTaxation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveTaxation">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveTaxation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTaxation">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteTaxation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetPaymentList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentListAll">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetPaymentListAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPaymentList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertPaymentList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPaymentList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyPaymentList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivePaymentList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActivePaymentList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePaymentList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeletePaymentList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetObjectSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectSalaryAll">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetObjectSalaryAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertObjectSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertObjectSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateObjectSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateObjectSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyObjectSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyObjectSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveObjectSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveObjectSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteObjectSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteObjectSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodList">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetPeriodList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodbyYear">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetPeriodbyYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeletePeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateATPeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateATPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateATPeriodDay">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateATPeriodDay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivePeriod">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActivePeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkStandard">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetWorkStandard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkStandardbyYear">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetWorkStandardbyYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertWorkStandard">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertWorkStandard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyWorkStandard">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyWorkStandard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkStandard">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteWorkStandard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateWorkStandard">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateWorkStandard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveWorkStandard">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveWorkStandard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFomulerGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteFomulerGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyFomulerGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifyFomulerGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFomulerGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertFomulerGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFomulerGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetAllFomulerGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListAllSalary">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetListAllSalary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectSalaryColumn">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetObjectSalaryColumn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSalColunm">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetListSalColunm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListInputColumn">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetListInputColumn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListCalculation">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetListCalculation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyFomuler">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/CopyFomuler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFomuler">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/SaveFomuler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckFomuler">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/CheckFomuler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveFolmulerGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveFolmulerGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryGroupCombo">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryGroupCombo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertSalaryGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateSalaryGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifySalaryGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveSalaryGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteSalaryGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEffectSalaryGroup">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetEffectSalaryGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryLevel">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryLevel">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertSalaryLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryLevel">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateSalaryLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifySalaryLevel">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ModifySalaryLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveSalaryLevel">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ActiveSalaryLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalaryLevel">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/DeleteSalaryLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryLevel_Unilever">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryLevel_Unilever" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalaryLevelCombo">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/GetSalaryLevelCombo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSalaryLevel_Unilever">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/InsertSalaryLevel_Unilever" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSalaryLevel_Unilever">
+      <soap12:operation soapAction="http://tempuri.org/IPayrollBusiness/ValidateSalaryLevel_Unilever" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PayrollBusiness">
+    <wsdl:port name="WSHttpBinding_IPayrollBusiness" binding="tns:WSHttpBinding_IPayrollBusiness">
+      <soap12:address location="http://localhost:9999/PayrollBusiness.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:9999/PayrollBusiness.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

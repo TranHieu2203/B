@@ -1,0 +1,1618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{57D651FD-0B2D-4283-87F8-5ACFA7B7E588}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Payroll</RootNamespace>
+    <AssemblyName>Payroll</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Payroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Optimize>false</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Payroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.0.3.0, Culture=neutral, PublicKeyToken=12d8fa3d810c48da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\HistaffFrameworkPublic\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\bin\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="HistaffFramework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\HistaffFrameworkPublic\HistaffFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="HistaffFrameworkPublic, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\HistaffFrameworkPublic\HistaffFrameworkPublic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.zkemkeeper">
+      <HintPath>..\ref\Interop.zkemkeeper.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.Design, Version=2012.1.215.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik New\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\ref\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.1.424.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik New\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="TVC.DAL">
+      <HintPath>..\ref\TVC.DAL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modules\Payroll\Business\ctrlPA_DocumentPIT.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DocumentPITDetail.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DocumentPITNewEdit.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_PayrollAdvance.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_SalaryPITCode.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Award13Month.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlImportSalary.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_BrandRate.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_AccountingSubsidize.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_MA_SCP_QLCH.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_PayrollSheetLock.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_SumCHTom.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_LDT_VP.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DTTD_ECD.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DTTD_DTPB.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_AccountingOvertime.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_ManageDTTDDaily.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Salary_Detention.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Salary_DetentionNewEdit.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_StoreDTTD.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_TARGET_DTTD_LABEL.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_STORE_SUBSIDIZE.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Target_Store.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_TaxIncomeYear.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Vehicle_Norm.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_AccountingTime.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_BenefitSeniority.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_ADDTAX.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_ADDTAXNewEdit.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DelegacyTax.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_AccountingAdjust.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_ViewEmpSalary.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_Employee_QuyLuong.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_Salary_QuyLuong.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_DonVi_QuyLuong.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPAFRAME_PRODUCTIVITY.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_FRAME_SALARY.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SETUP_BONUS_KPI_PRODUCT_TYPE.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SETUP_FRAMEWORK_KPI.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SETUP_FRAMEWORK_OFFICE.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SETUP_FRAMEWORK_ECD.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SETUP_COMPLETION_KPI_SHOPMANAGER.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SETUP_RATE.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SETUP_SHOP_GRADE.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Classification.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_EmpFormuler.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SetupNKL.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_HeSoMR_NV_QLCH.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_AOMs_TOMByManage.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_MR_BQN.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_Rate_DTTT.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_HSTDT.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_Index.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_LDTTT_NV_QLCH.ascx" />
+    <None Include="Service References\PayrollBusiness\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Arrays9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Framework.Data9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.AllowanceDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.AllowanceListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.ATPeriodDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.ATPriceLunchDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.ComboBoxDataDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.CostCenterDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.IncentiveRankDetailDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.IncentiveRankDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.NormDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.OrgBonusDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.OT_OTHERLIST_DTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PaBenefitSeniorityDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PAFomuler1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PAFomulerGroup1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PAHoldSalaryDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PAListSalariesDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PAListSalDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PAObjectSalaryDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PAPaymentListDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PASalaryFundDTO2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PASalaryPlanningDTO2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PATaxationDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PATitleCostDTO2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PaymentSourcesDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_AccountingSubsidizeDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Accounting_AdjustingDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Accounting_OvertimeDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Accounting_TimeDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_ADDTAXDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_AOMS_TOM_MNG_DTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Award_13MonthDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_BrandRate_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Delegacy_TaxDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_DTTD_DTPB_EMPDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_DTTD_ECDDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_EMP_FORMULER_DTO2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_FRAME_SALARYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_LDT_VPDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_ManageDTTDDailyDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_MA_SCP_QLCHDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_PayrollSheetLockDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Salary_DetentionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_ManageDTTDDailyDTO2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_MA_SCP_QLCHDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_PayrollSheetLockDTO2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Salary_DetentionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Award_13MonthDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Salary_DetentionDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Salary_PITCodeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_BONUS_KPI_PRODUCTTYPE_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_COMPLETION_KPI_SHOPMANAGERDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_FRAMEWORK_ECDDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_FRAMEWORK_KPIDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_FRAMEWORK_OFFICEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_HESOMR_NV_QLCH_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_HSTDT_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_INDEX_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_LDTTT_NV_QLCH_DTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_MR_BQN_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_NKLDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_RATE_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_RATE_DTTT_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SETUP_SHOP_GRADEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Modules\Portal\ctrlPA_PortalSalarys.ascx" />
+    <Content Include="Modules\Portal\ctrlPA_PortalPayslip.ascx" />
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_STORE_DTTDDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_STORE_SUBSIDIZEDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SumCHTomDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_SYSTEM_CRITERIADTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_TARGET_DTTD_LABELDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_TARGET_STOREDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_TAXINCOME_YEARDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.PA_Vehicle_NormDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.SalaryGroupDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.SalaryLevelDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.SalaryRankDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.SalaryTypeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.SalaryType_GroupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.SaleCommisionDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.StatisticDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.WorkFactorDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\Payroll.PayrollBusiness.Work_StandardDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\PayrollDAL9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Modules\Payroll\Business\ctrlImportQuyThuongHQCV.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlAllowance.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlAlowance.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlImportLuong.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlImportThueTNCN.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlImportThuongHQCV.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlSendMailLuong.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlSendMailThuongHQCV.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlTinhLuong.ascx" />
+    <Content Include="Modules\Payroll\DashboardPL\ctrlDashboardPlanning.ascx" />
+    <Content Include="Modules\Payroll\DashboardPL\ctrlPL_DBEmployee.ascx" />
+    <Content Include="Modules\Payroll\DashboardPL\ctrlPL_DBSalary.ascx" />
+    <Content Include="Modules\Payroll\DashboardPL\ctrlDashboardPLSixCell.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryAverage.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryIncome.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryRange.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlPA_DBSalary.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_ListSal.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_ListSalaries.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_ObjectSalary.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_OrgBonus.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_PaymentSources.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SaleCommision.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_WorkFactor.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_WorkStandard.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Norm.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_System_Criteria.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_PaymentsList.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryType.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_TaxationList.ascx" />
+    <Content Include="Modules\Payroll\Report\ctrlPA_ReportList.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_CostCenter.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SalaryEmpTracker.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SalaryFund.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SalaryPlan.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SalaryPlanNewEdit.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SalaryTracker.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SalaryType_Group.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_IncentiveRank.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryLevel_Unilever.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_PriceLunch.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_HoldSalaryList.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Period.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_FormulaDetail.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Formula.ascx" />
+    <Content Include="Modules\Common\ctrlEditComment.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindOrgPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopup.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Common\ctrlOrganization.ascx" />
+    <Content Include="Modules\Common\ctrlOrganizationPopup.ascx" />
+    <Content Include="Modules\Common\ctrlToolBar.ascx" />
+    <Content Include="Modules\Common\ctrlUpload.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryGroup.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryLevel.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryRank.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_TitleCost.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlSalaryFuncMapping.ascx" />
+    <Content Include="Modules\Portal\ctrlPA_PortalSalary.ascx" />
+    <None Include="Service References\PayrollBusiness\configuration91.svcinfo" />
+    <None Include="Service References\PayrollBusiness\configuration.svcinfo" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\PayrollBusiness\service.wsdl" />
+    <None Include="Service References\PayrollBusiness\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service10.wsdl" />
+    <None Include="Service References\PayrollBusiness\service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service12.wsdl" />
+    <None Include="Service References\PayrollBusiness\service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service2.wsdl" />
+    <None Include="Service References\PayrollBusiness\service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service3.wsdl" />
+    <None Include="Service References\PayrollBusiness\service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service4.wsdl" />
+    <None Include="Service References\PayrollBusiness\service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service5.wsdl" />
+    <None Include="Service References\PayrollBusiness\service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service6.wsdl" />
+    <None Include="Service References\PayrollBusiness\service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service7.wsdl" />
+    <None Include="Service References\PayrollBusiness\service7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service8.wsdl" />
+    <None Include="Service References\PayrollBusiness\service8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\service9.wsdl" />
+    <None Include="Service References\PayrollBusiness\service9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data.Objects.DataClasses.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data.Objects.DataClasses1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data.Objects.DataClasses2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data.Objects.DataClasses3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PayrollBusiness\System.Data9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="System.Data.DataSet.datasource" />
+    <None Include="System.Data.DataTable.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DocumentPIT.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DocumentPIT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DocumentPIT.ascx.vb">
+      <DependentUpon>ctrlPA_DocumentPIT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DocumentPITDetail.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DocumentPITDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DocumentPITDetail.ascx.vb">
+      <DependentUpon>ctrlPA_DocumentPITDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DocumentPITNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DocumentPITNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DocumentPITNewEdit.ascx.vb">
+      <DependentUpon>ctrlPA_DocumentPITNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_PayrollAdvance.ascx.designer.vb">
+      <DependentUpon>ctrlPA_PayrollAdvance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_PayrollAdvance.ascx.vb">
+      <DependentUpon>ctrlPA_PayrollAdvance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_SalaryPITCode.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryPITCode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_SalaryPITCode.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryPITCode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Award13Month.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Award13Month.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Award13Month.ascx.vb">
+      <DependentUpon>ctrlPA_Award13Month.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlImportSalary.ascx.designer.vb">
+      <DependentUpon>ctrlImportSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlImportSalary.ascx.vb">
+      <DependentUpon>ctrlImportSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_BrandRate.ascx.designer.vb">
+      <DependentUpon>ctrlPA_BrandRate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_BrandRate.ascx.vb">
+      <DependentUpon>ctrlPA_BrandRate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_AccountingSubsidize.ascx.designer.vb">
+      <DependentUpon>ctrlPA_AccountingSubsidize.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_AccountingSubsidize.ascx.vb">
+      <DependentUpon>ctrlPA_AccountingSubsidize.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_MA_SCP_QLCH.ascx.designer.vb">
+      <DependentUpon>ctrlPA_MA_SCP_QLCH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_MA_SCP_QLCH.ascx.vb">
+      <DependentUpon>ctrlPA_MA_SCP_QLCH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_PayrollSheetLock.ascx.designer.vb">
+      <DependentUpon>ctrlPA_PayrollSheetLock.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_PayrollSheetLock.ascx.vb">
+      <DependentUpon>ctrlPA_PayrollSheetLock.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_SumCHTom.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SumCHTom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_SumCHTom.ascx.vb">
+      <DependentUpon>ctrlPA_SumCHTom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_LDT_VP.ascx.designer.vb">
+      <DependentUpon>ctrlPA_LDT_VP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_LDT_VP.ascx.vb">
+      <DependentUpon>ctrlPA_LDT_VP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DTTD_ECD.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DTTD_ECD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DTTD_ECD.ascx.vb">
+      <DependentUpon>ctrlPA_DTTD_ECD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DTTD_DTPB.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DTTD_DTPB.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DTTD_DTPB.ascx.vb">
+      <DependentUpon>ctrlPA_DTTD_DTPB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_AccountingOvertime.ascx.designer.vb">
+      <DependentUpon>ctrlPA_AccountingOvertime.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_AccountingOvertime.ascx.vb">
+      <DependentUpon>ctrlPA_AccountingOvertime.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_ManageDTTDDaily.ascx.designer.vb">
+      <DependentUpon>ctrlPA_ManageDTTDDaily.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_ManageDTTDDaily.ascx.vb">
+      <DependentUpon>ctrlPA_ManageDTTDDaily.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Salary_Detention.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Salary_Detention.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Salary_Detention.ascx.vb">
+      <DependentUpon>ctrlPA_Salary_Detention.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Salary_DetentionNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Salary_DetentionNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Salary_DetentionNewEdit.ascx.vb">
+      <DependentUpon>ctrlPA_Salary_DetentionNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_StoreDTTD.ascx.designer.vb">
+      <DependentUpon>ctrlPA_StoreDTTD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_StoreDTTD.ascx.vb">
+      <DependentUpon>ctrlPA_StoreDTTD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_TARGET_DTTD_LABEL.ascx.designer.vb">
+      <DependentUpon>ctrlPA_TARGET_DTTD_LABEL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_TARGET_DTTD_LABEL.ascx.vb">
+      <DependentUpon>ctrlPA_TARGET_DTTD_LABEL.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_STORE_SUBSIDIZE.ascx.designer.vb">
+      <DependentUpon>ctrlPA_STORE_SUBSIDIZE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_STORE_SUBSIDIZE.ascx.vb">
+      <DependentUpon>ctrlPA_STORE_SUBSIDIZE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Target_Store.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Target_Store.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Target_Store.ascx.vb">
+      <DependentUpon>ctrlPA_Target_Store.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_TaxIncomeYear.ascx.designer.vb">
+      <DependentUpon>ctrlPA_TaxIncomeYear.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_TaxIncomeYear.ascx.vb">
+      <DependentUpon>ctrlPA_TaxIncomeYear.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Vehicle_Norm.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Vehicle_Norm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_Vehicle_Norm.ascx.vb">
+      <DependentUpon>ctrlPA_Vehicle_Norm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_AccountingTime.ascx.designer.vb">
+      <DependentUpon>ctrlPA_AccountingTime.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_AccountingTime.ascx.vb">
+      <DependentUpon>ctrlPA_AccountingTime.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_BenefitSeniority.ascx.designer.vb">
+      <DependentUpon>ctrlPA_BenefitSeniority.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_BenefitSeniority.ascx.vb">
+      <DependentUpon>ctrlPA_BenefitSeniority.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_ADDTAX.ascx.designer.vb">
+      <DependentUpon>ctrlPA_ADDTAX.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_ADDTAX.ascx.vb">
+      <DependentUpon>ctrlPA_ADDTAX.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_ADDTAXNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlPA_ADDTAXNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_ADDTAXNewEdit.ascx.vb">
+      <DependentUpon>ctrlPA_ADDTAXNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DelegacyTax.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DelegacyTax.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_DelegacyTax.ascx.vb">
+      <DependentUpon>ctrlPA_DelegacyTax.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_AccountingAdjust.ascx.designer.vb">
+      <DependentUpon>ctrlPA_AccountingAdjust.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_AccountingAdjust.ascx.vb">
+      <DependentUpon>ctrlPA_AccountingAdjust.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_ViewEmpSalary.ascx.designer.vb">
+      <DependentUpon>ctrlPA_ViewEmpSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlPA_ViewEmpSalary.ascx.vb">
+      <DependentUpon>ctrlPA_ViewEmpSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_Employee_QuyLuong.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Employee_QuyLuong.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_Employee_QuyLuong.ascx.vb">
+      <DependentUpon>ctrlPA_Employee_QuyLuong.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_Salary_QuyLuong.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Salary_QuyLuong.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_Salary_QuyLuong.ascx.vb">
+      <DependentUpon>ctrlPA_Salary_QuyLuong.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_DonVi_QuyLuong.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DonVi_QuyLuong.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_DonVi_QuyLuong.ascx.vb">
+      <DependentUpon>ctrlPA_DonVi_QuyLuong.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPAFRAME_PRODUCTIVITY.ascx.designer.vb">
+      <DependentUpon>ctrlPAFRAME_PRODUCTIVITY.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPAFRAME_PRODUCTIVITY.ascx.vb">
+      <DependentUpon>ctrlPAFRAME_PRODUCTIVITY.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_FRAME_SALARY.ascx.designer.vb">
+      <DependentUpon>ctrlPA_FRAME_SALARY.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_FRAME_SALARY.ascx.vb">
+      <DependentUpon>ctrlPA_FRAME_SALARY.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_SHOP_GRADE.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SETUP_SHOP_GRADE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_SHOP_GRADE.ascx.vb">
+      <DependentUpon>ctrlPA_SETUP_SHOP_GRADE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\PayrollStoreProcedure.vb" />
+    <Compile Include="Modules\Payroll\DashboardPL\ctrlDashboardPlanning.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardPlanning.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\DashboardPL\ctrlDashboardPlanning.ascx.vb">
+      <DependentUpon>ctrlDashboardPlanning.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\DashboardPL\ctrlPL_DBEmployee.ascx.designer.vb">
+      <DependentUpon>ctrlPL_DBEmployee.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\DashboardPL\ctrlPL_DBEmployee.ascx.vb">
+      <DependentUpon>ctrlPL_DBEmployee.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\DashboardPL\ctrlPL_DBSalary.ascx.designer.vb">
+      <DependentUpon>ctrlPL_DBSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\DashboardPL\ctrlPL_DBSalary.ascx.vb">
+      <DependentUpon>ctrlPL_DBSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\DashboardPL\ctrlDashboardPLSixCell.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardPLSixCell.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\DashboardPL\ctrlDashboardPLSixCell.ascx.vb">
+      <DependentUpon>ctrlDashboardPLSixCell.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlDashboardSixCell.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlDashboardSixCell.ascx.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryAverage.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DBSalaryAverage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryAverage.ascx.vb">
+      <DependentUpon>ctrlPA_DBSalaryAverage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryIncome.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DBSalaryIncome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryIncome.ascx.vb">
+      <DependentUpon>ctrlPA_DBSalaryIncome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlDashboard.ascx.designer.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryRange.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DBSalaryRange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryRange.ascx.vb">
+      <DependentUpon>ctrlPA_DBSalaryRange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlPA_DBSalary.ascx.designer.vb">
+      <DependentUpon>ctrlPA_DBSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlPA_DBSalary.ascx.vb">
+      <DependentUpon>ctrlPA_DBSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Dashboard\ctrlDashboard.ascx.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_BONUS_KPI_PRODUCT_TYPE.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SETUP_BONUS_KPI_PRODUCT_TYPE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_BONUS_KPI_PRODUCT_TYPE.ascx.vb">
+      <DependentUpon>ctrlPA_SETUP_BONUS_KPI_PRODUCT_TYPE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_FRAMEWORK_KPI.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SETUP_FRAMEWORK_KPI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_FRAMEWORK_KPI.ascx.vb">
+      <DependentUpon>ctrlPA_SETUP_FRAMEWORK_KPI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SaleCommision.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SaleCommision.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SaleCommision.ascx.vb">
+      <DependentUpon>ctrlPA_SaleCommision.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_FRAMEWORK_OFFICE.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SETUP_FRAMEWORK_OFFICE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_FRAMEWORK_OFFICE.ascx.vb">
+      <DependentUpon>ctrlPA_SETUP_FRAMEWORK_OFFICE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_FRAMEWORK_ECD.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SETUP_FRAMEWORK_ECD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_FRAMEWORK_ECD.ascx.vb">
+      <DependentUpon>ctrlPA_SETUP_FRAMEWORK_ECD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_COMPLETION_KPI_SHOPMANAGER.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SETUP_COMPLETION_KPI_SHOPMANAGER.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_COMPLETION_KPI_SHOPMANAGER.ascx.vb">
+      <DependentUpon>ctrlPA_SETUP_COMPLETION_KPI_SHOPMANAGER.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_RATE.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SETUP_RATE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SETUP_RATE.ascx.vb">
+      <DependentUpon>ctrlPA_SETUP_RATE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\PayrollRepository.Dashboard.vb" />
+    <Compile Include="Modules\Payroll\BusinessObjects\MessageDTO.vb" />
+    <Compile Include="Modules\Payroll\Business\ctrlImportQuyThuongHQCV.ascx.designer.vb">
+      <DependentUpon>ctrlImportQuyThuongHQCV.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlImportQuyThuongHQCV.ascx.vb">
+      <DependentUpon>ctrlImportQuyThuongHQCV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlAllowance.ascx.designer.vb">
+      <DependentUpon>ctrlAllowance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlAllowance.ascx.vb">
+      <DependentUpon>ctrlAllowance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlAlowance.ascx.designer.vb">
+      <DependentUpon>ctrlAlowance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlAlowance.ascx.vb">
+      <DependentUpon>ctrlAlowance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlImportLuong.ascx.designer.vb">
+      <DependentUpon>ctrlImportLuong.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlImportLuong.ascx.vb">
+      <DependentUpon>ctrlImportLuong.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlImportThueTNCN.ascx.designer.vb">
+      <DependentUpon>ctrlImportThueTNCN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlImportThueTNCN.ascx.vb">
+      <DependentUpon>ctrlImportThueTNCN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlImportThuongHQCV.ascx.designer.vb">
+      <DependentUpon>ctrlImportThuongHQCV.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlImportThuongHQCV.ascx.vb">
+      <DependentUpon>ctrlImportThuongHQCV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlSendMailLuong.ascx.designer.vb">
+      <DependentUpon>ctrlSendMailLuong.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlSendMailLuong.ascx.vb">
+      <DependentUpon>ctrlSendMailLuong.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlSendMailThuongHQCV.ascx.designer.vb">
+      <DependentUpon>ctrlSendMailThuongHQCV.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlSendMailThuongHQCV.ascx.vb">
+      <DependentUpon>ctrlSendMailThuongHQCV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlTinhLuong.ascx.designer.vb">
+      <DependentUpon>ctrlTinhLuong.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Business\ctrlTinhLuong.ascx.vb">
+      <DependentUpon>ctrlTinhLuong.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_ListSal.ascx.designer.vb">
+      <DependentUpon>ctrlPA_ListSal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_ListSal.ascx.vb">
+      <DependentUpon>ctrlPA_ListSal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_OrgBonus.ascx.designer.vb">
+      <DependentUpon>ctrlPA_OrgBonus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_OrgBonus.ascx.vb">
+      <DependentUpon>ctrlPA_OrgBonus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_PaymentSources.ascx.designer.vb">
+      <DependentUpon>ctrlPA_PaymentSources.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_PaymentSources.ascx.vb">
+      <DependentUpon>ctrlPA_PaymentSources.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_WorkFactor.ascx.designer.vb">
+      <DependentUpon>ctrlPA_WorkFactor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_WorkFactor.ascx.vb">
+      <DependentUpon>ctrlPA_WorkFactor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_WorkStandard.ascx.designer.vb">
+      <DependentUpon>ctrlPA_WorkStandard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_WorkStandard.ascx.vb">
+      <DependentUpon>ctrlPA_WorkStandard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\PayrollRepository.SalaryType.vb" />
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryType.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryType.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\PayrollBusiness.IncentiveRank.vb" />
+    <Compile Include="Modules\Payroll\PayrollRepository.SalaryLevel_Unilever.vb" />
+    <Compile Include="Modules\Payroll\List\ctrlPA_ListSalaries.ascx.designer.vb">
+      <DependentUpon>ctrlPA_ListSalaries.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_ListSalaries.ascx.vb">
+      <DependentUpon>ctrlPA_ListSalaries.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\PayrollRepository.Business.vb" />
+    <Compile Include="Modules\Payroll\List\ctrlPA_ObjectSalary.ascx.designer.vb">
+      <DependentUpon>ctrlPA_ObjectSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_ObjectSalary.ascx.vb">
+      <DependentUpon>ctrlPA_ObjectSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Classification.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Classification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Classification.ascx.vb">
+      <DependentUpon>ctrlPA_Classification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_EmpFormuler.ascx.designer.vb">
+      <DependentUpon>ctrlPA_EmpFormuler.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_EmpFormuler.ascx.vb">
+      <DependentUpon>ctrlPA_EmpFormuler.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SetupNKL.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SetupNKL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SetupNKL.ascx.vb">
+      <DependentUpon>ctrlPA_SetupNKL.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_HeSoMR_NV_QLCH.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Setup_HeSoMR_NV_QLCH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_HeSoMR_NV_QLCH.ascx.vb">
+      <DependentUpon>ctrlPA_Setup_HeSoMR_NV_QLCH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_AOMs_TOMByManage.ascx.designer.vb">
+      <DependentUpon>ctrlPA_AOMs_TOMByManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_AOMs_TOMByManage.ascx.vb">
+      <DependentUpon>ctrlPA_AOMs_TOMByManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_MR_BQN.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Setup_MR_BQN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_MR_BQN.ascx.vb">
+      <DependentUpon>ctrlPA_Setup_MR_BQN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_Rate_DTTT.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Setup_Rate_DTTT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_Rate_DTTT.ascx.vb">
+      <DependentUpon>ctrlPA_Setup_Rate_DTTT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_HSTDT.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Setup_HSTDT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_HSTDT.ascx.vb">
+      <DependentUpon>ctrlPA_Setup_HSTDT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_Index.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Setup_Index.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_Index.ascx.vb">
+      <DependentUpon>ctrlPA_Setup_Index.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Norm.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Norm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Norm.ascx.vb">
+      <DependentUpon>ctrlPA_Norm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_LDTTT_NV_QLCH.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Setup_LDTTT_NV_QLCH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Setup_LDTTT_NV_QLCH.ascx.vb">
+      <DependentUpon>ctrlPA_Setup_LDTTT_NV_QLCH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_System_Criteria.ascx.designer.vb">
+      <DependentUpon>ctrlPA_System_Criteria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_System_Criteria.ascx.vb">
+      <DependentUpon>ctrlPA_System_Criteria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_PaymentsList.ascx.designer.vb">
+      <DependentUpon>ctrlPA_PaymentsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_PaymentsList.ascx.vb">
+      <DependentUpon>ctrlPA_PaymentsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_TaxationList.ascx.designer.vb">
+      <DependentUpon>ctrlPA_TaxationList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_TaxationList.ascx.vb">
+      <DependentUpon>ctrlPA_TaxationList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\PayrollRepository.List.vb" />
+    <Compile Include="Modules\Payroll\PayrollRepository.Setting.vb" />
+    <Compile Include="Modules\Payroll\Report\ctrlPA_ReportList.ascx.designer.vb">
+      <DependentUpon>ctrlPA_ReportList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Report\ctrlPA_ReportList.ascx.vb">
+      <DependentUpon>ctrlPA_ReportList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_CostCenter.ascx.designer.vb">
+      <DependentUpon>ctrlPA_CostCenter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_CostCenter.ascx.vb">
+      <DependentUpon>ctrlPA_CostCenter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryEmpTracker.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryEmpTracker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryEmpTracker.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryEmpTracker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryFund.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryFund.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryFund.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryFund.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryPlan.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryPlan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryPlan.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryPlan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryPlanNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryPlanNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryPlanNewEdit.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryPlanNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryTracker.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryTracker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryTracker.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryTracker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryType_Group.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryType_Group.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_SalaryType_Group.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryType_Group.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_IncentiveRank.ascx.designer.vb">
+      <DependentUpon>ctrlPA_IncentiveRank.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_IncentiveRank.ascx.vb">
+      <DependentUpon>ctrlPA_IncentiveRank.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryLevel_Unilever.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryLevel_Unilever.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryLevel_Unilever.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryLevel_Unilever.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_PriceLunch.ascx.designer.vb">
+      <DependentUpon>ctrlPA_PriceLunch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_PriceLunch.ascx.vb">
+      <DependentUpon>ctrlPA_PriceLunch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_HoldSalaryList.ascx.designer.vb">
+      <DependentUpon>ctrlPA_HoldSalaryList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_HoldSalaryList.ascx.vb">
+      <DependentUpon>ctrlPA_HoldSalaryList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Period.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Period.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Period.ascx.vb">
+      <DependentUpon>ctrlPA_Period.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_FormulaDetail.ascx.designer.vb">
+      <DependentUpon>ctrlPA_FormulaDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_FormulaDetail.ascx.vb">
+      <DependentUpon>ctrlPA_FormulaDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Formula.ascx.designer.vb">
+      <DependentUpon>ctrlPA_Formula.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_Formula.ascx.vb">
+      <DependentUpon>ctrlPA_Formula.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\PayrollRepository.SalaryRank.vb" />
+    <Compile Include="Modules\Payroll\PayrollRepository.SalaryLevel.vb" />
+    <Compile Include="Modules\Payroll\PayrollRepository.SalaryGroup.vb" />
+    <Compile Include="Modules\Payroll\PAConstant.vb" />
+    <Compile Include="Modules\Payroll\PayrollRepository.vb" />
+    <Compile Include="Modules\Payroll\PayrollRepositoryBase.vb" />
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryGroup.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryGroup.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryLevel.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryLevel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryLevel.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryLevel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryRank.ascx.designer.vb">
+      <DependentUpon>ctrlPA_SalaryRank.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\List\ctrlPA_SalaryRank.ascx.vb">
+      <DependentUpon>ctrlPA_SalaryRank.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_TitleCost.ascx.designer.vb">
+      <DependentUpon>ctrlPA_TitleCost.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlPA_TitleCost.ascx.vb">
+      <DependentUpon>ctrlPA_TitleCost.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlSalaryFuncMapping.ascx.designer.vb">
+      <DependentUpon>ctrlSalaryFuncMapping.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Payroll\Setting\ctrlSalaryFuncMapping.ascx.vb">
+      <DependentUpon>ctrlSalaryFuncMapping.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Payroll\Util.vb" />
+    <Compile Include="Modules\Portal\ctrlPA_PortalSalarys.ascx.designer.vb">
+      <DependentUpon>ctrlPA_PortalSalarys.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPA_PortalSalarys.ascx.vb">
+      <DependentUpon>ctrlPA_PortalSalarys.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPA_PortalPayslip.ascx.designer.vb">
+      <DependentUpon>ctrlPA_PortalPayslip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPA_PortalPayslip.ascx.vb">
+      <DependentUpon>ctrlPA_PortalPayslip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPA_PortalSalary.ascx.designer.vb">
+      <DependentUpon>ctrlPA_PortalSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPA_PortalSalary.ascx.vb">
+      <DependentUpon>ctrlPA_PortalSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\PayrollBusiness\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Attendance\Attendance.vbproj">
+      <Project>{3d295273-0668-43f1-9c39-4010771f6a9d}</Project>
+      <Name>Attendance %28Attendance\Attendance%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.UI.vbproj">
+      <Project>{514CC57F-03AA-4D18-9BF2-3F7B66F6AD9B}</Project>
+      <Name>Framework.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Profile\Profile.vbproj">
+      <Project>{b8148ab7-8752-487b-aba0-dda56b917e35}</Project>
+      <Name>Profile %28Profile\Profile%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAppLog\WebAppLog.vbproj">
+      <Project>{780365C3-C031-4841-9B4C-B39840797596}</Project>
+      <Name>WebAppLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\PayrollBusiness\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>64234</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

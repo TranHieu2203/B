@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="System management"  PostBack="False">
+      <Group>
+        <Item Value="ctrlListUser" Text="Account Management" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlListUser&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlListGroup" Text="Account group management" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlListGroup&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlGroup" Text="Distribution rights for group" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlGroup&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlUser" Text="Decentralization for acount" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlUser&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlActionLog" Text="Log management operations" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlActionLog&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlOnlineUser" Text="List user online" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlOnlineUser&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlAccessLog" Text="History log" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlAccessLog&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlSE_MailConfiguration" Text="Mail configuration management" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlSE_MailConfiguration&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlSE_LdapConfiguration" Text="Ldap configuration management" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlSE_LdapConfiguration&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlSE_Configuration" Text="Common configuration management" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlSE_Configuration&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlLanguageManagement" Text="Manage language" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlLanguageManagement" CheckPermission="true"/>
+        <Item Value="ctrlControlsManage" Text="Configuration management" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlControlsManage&amp;group=Secure" CheckPermission="true"/>
+      </Group>
+    </Item>
+    <Item Text="Define" PostBack="True">
+      <Group>
+        <Item Value="ctrlValueSet" Text="Value Collection" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlValueSet&amp;group=Define" CheckPermission="TRUE">
+        </Item>
+        <Item Value="ctrlPrograms" Text="Program" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlPrograms&amp;group=Define" CheckPermission="TRUE">
+        </Item>
+      </Group>
+    </Item>
+    <Item Text="Thiết lập"  PostBack="False">
+      <Group>
+        <Item Value="ctrlApproveProcess" Text="Approval process" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveProcess&amp;group=ApproveProcess" CheckPermission="true"/>
+        <Item Value="ctrlApproveTemplate" Text="Template approval" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveTemplate&amp;group=ApproveProcess" CheckPermission="true"/>
+        <Item Value="ctrlApproveSetupOrg" Text="Approval for departments" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveSetupOrg&amp;group=ApproveProcess" CheckPermission="true"/>
+        <Item Value="ctrlApproveSetupEmp" Text="Approval for employee" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveSetupEmp&amp;group=ApproveProcess" CheckPermission="true"/>
+        <Item Value="ctrlApproveSetupExt" Text="Approved replacement" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveSetupExt&amp;group=ApproveProcess" CheckPermission="true"/>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

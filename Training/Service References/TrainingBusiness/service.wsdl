@@ -1,0 +1,3063 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TrainingBusiness" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ITrainingBusiness_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="1800000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/TrainingDAL" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Framework.Data" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITrainingBusiness_DeleteChooseForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteChooseForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteChooseForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteChooseFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeAssessmentResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeAssessmentResult" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeAssessmentResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeAssessmentResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetAssessmentResultByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessmentResultByID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetAssessmentResultByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessmentResultByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateAssessmentResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAssessmentResult" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateAssessmentResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAssessmentResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetListEmployeePaging_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListEmployeePaging" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetListEmployeePaging_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListEmployeePagingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeRecord" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_test_InputMessage">
+    <wsdl:part name="parameters" element="tns:test" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTitleCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTitleCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateTitleCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTitleCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateTitleCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTitleCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteTitleCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTitleCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteTitleCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTitleCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTitleByList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleByList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTitleByList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleByListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCourseByList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCourseByList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCourseByList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCourseByListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeTitleCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeTitleCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeTitleCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeTitleCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ExportReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExportReport" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ExportReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExportReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetReportById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportById" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetReportById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetStatisticCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetStatisticCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetStatisticFormCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticFormCost" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetStatisticFormCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticFormCostResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetStatisticDiligence_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticDiligence" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetStatisticDiligence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticDiligenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetStatisticRank_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticRank" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetStatisticRank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyClass" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClass" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeNotByClassID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeNotByClassID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeNotByClassID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeNotByClassIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeByClassID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByClassID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeByClassID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByClassIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertClassStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassStudent" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertClassStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteClassStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassStudent" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteClassStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetClassSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassSchedule" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetClassSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetClassScheduleByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassScheduleByID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetClassScheduleByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassScheduleByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertClassSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassSchedule" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertClassSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyClassSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyClassSchedule" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyClassSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyClassScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteClassSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassSchedule" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteClassSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramResult" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateProgramResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramResult" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateProgramResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramCommit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramCommit" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramCommit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramCommitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateProgramCommit_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramCommit" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateProgramCommit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramCommitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramCost" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramCostResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertProgramCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertProgramCost" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertProgramCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertProgramCostResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateProgramCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateProgramCost" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateProgramCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateProgramCostResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyProgramCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProgramCost" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyProgramCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProgramCostResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteProgramCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProgramCost" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteProgramCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProgramCostResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetReimbursement_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReimbursement" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetReimbursement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReimbursementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertReimbursement_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertReimbursement" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertReimbursement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertReimbursementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateReimbursement_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateReimbursement" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateReimbursement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateReimbursementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyReimbursement_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyReimbursement" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyReimbursement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyReimbursementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetChooseForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChooseForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetChooseForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChooseFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertChooseForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertChooseForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertChooseForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertChooseFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateChooseForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateChooseForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateChooseForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateChooseFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyChooseForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyChooseForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyChooseForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyChooseFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPlanById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanById" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPlanById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertPlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPlan" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertPlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyPlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPlan" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyPlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeletePlans_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlans" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeletePlans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlansResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrainingRequests_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrainingRequests" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrainingRequests_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrainingRequestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrainingRequestsByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrainingRequestsByID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrainingRequestsByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrainingRequestsByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeByImportRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByImportRequest" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeByImportRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByImportRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeByPlanID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByPlanID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEmployeeByPlanID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByPlanIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequest" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyRequest" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateStatusTrainingRequests_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusTrainingRequests" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_UpdateStatusTrainingRequests_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusTrainingRequestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteTrainingRequests_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTrainingRequests" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteTrainingRequests_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTrainingRequestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPlanRequestByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRequestByID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPlanRequestByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRequestByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetRequestsForProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestsForProgram" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetRequestsForProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestsForProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPrograms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrograms" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPrograms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPlan_Cost_Detail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlan_Cost_Detail" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPlan_Cost_Detail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlan_Cost_DetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramById" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramByChooseFormId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramByChooseFormId" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetProgramByChooseFormId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramByChooseFormIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertProgram" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProgram" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeletePrograms_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePrograms" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeletePrograms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProgramsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPrepare_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrepare" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPrepare_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrepareResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertPrepare_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPrepare" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertPrepare_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPrepareResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyPrepare_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPrepare" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyPrepare_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPrepareResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeletePrepare_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePrepare" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeletePrepare_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePrepareResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClass" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetClassByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassByID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetClassByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClass" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCriteriaGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCriteriaGroup" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCriteriaGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCriteriaGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCriteriaGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCriteriaGroup" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCriteriaGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCriteriaGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCriteriaGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCriteriaGroup" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCriteriaGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCriteriaGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCriteriaGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCriteriaGroup" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCriteriaGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCriteriaGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCriteriaGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriteriaGroup" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCriteriaGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriteriaGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetAssessmentRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessmentRate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetAssessmentRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessmentRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertAssessmentRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssessmentRate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertAssessmentRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssessmentRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyAssessmentRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAssessmentRate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyAssessmentRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAssessmentRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveAssessmentRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveAssessmentRate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveAssessmentRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveAssessmentRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteAssessmentRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAssessmentRate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteAssessmentRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAssessmentRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetAssessmentForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessmentForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetAssessmentForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssessmentFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertAssessmentForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssessmentForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertAssessmentForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssessmentFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyAssessmentForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAssessmentForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyAssessmentForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAssessmentFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteAssessmentForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAssessmentForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteAssessmentForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAssessmentFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaGroupNotByFormID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaGroupNotByFormID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaGroupNotByFormID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaGroupNotByFormIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaGroupByFormID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaGroupByFormID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaGroupByFormID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaGroupByFormIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertSettingAssForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSettingAssForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertSettingAssForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSettingAssFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteSettingAssForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSettingAssForm" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteSettingAssForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSettingAssFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaNotByGroupID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaNotByGroupID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaNotByGroupID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaNotByGroupIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaByGroupID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaByGroupID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaByGroupID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaByGroupIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertSettingCriteriaGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSettingCriteriaGroup" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertSettingCriteriaGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSettingCriteriaGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteSettingCriteriaGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSettingCriteriaGroup" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteSettingCriteriaGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSettingCriteriaGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCourseList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCourseList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCourseList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCourseListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTitlesByOrgs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitlesByOrgs" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTitlesByOrgs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitlesByOrgsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetWIByTitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWIByTitle" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetWIByTitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWIByTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEntryAndFormByCourseID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntryAndFormByCourseID" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetEntryAndFormByCourseID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntryAndFormByCourseIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCenters_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCenters" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCenters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCentersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPlans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlans" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetPlans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlansResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetLecture_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecture" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetLecture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLectureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertLecture_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLecture" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertLecture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLectureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateLecture_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateLecture" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateLecture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateLectureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyLecture_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyLecture" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyLecture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyLectureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveLecture_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveLecture" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveLecture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveLectureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteLecture_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLecture" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteLecture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLectureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCommitAfterTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCommitAfterTrain" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCommitAfterTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCommitAfterTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCommitAfterTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCommitAfterTrain" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCommitAfterTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCommitAfterTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCommitAfterTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCommitAfterTrain" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCommitAfterTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCommitAfterTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCommitAfterTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCommitAfterTrain" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCommitAfterTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCommitAfterTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCommitAfterTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCommitAfterTrain" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCommitAfterTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCommitAfterTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteria" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCriteria" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCriteria" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCriteria" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCriteria" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriteria" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaGroup" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCriteriaGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCriteriaGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_TestService_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestService" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_TestService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetOtherList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetOtherList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrCertificateList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrCertificateList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrCertificateList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrCertificateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrCenterList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrCenterList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrCenterList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrCenterListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrPlanByYearOrg_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrPlanByYearOrg" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrPlanByYearOrg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrPlanByYearOrgResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrPlanByYearOrg2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrPlanByYearOrg2" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrPlanByYearOrg2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrPlanByYearOrg2Response" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrLectureList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrLectureList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrLectureList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrLectureListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetHuProvinceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuProvinceList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetHuProvinceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuProvinceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetHuDistrictList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuDistrictList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetHuDistrictList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuDistrictListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetHuContractTypeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuContractTypeList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetHuContractTypeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuContractTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrProgramByYear_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrProgramByYear" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrProgramByYear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrProgramByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrCriteriaGroupList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrCriteriaGroupList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrCriteriaGroupList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrCriteriaGroupListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrAssFormList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrAssFormList" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrAssFormList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrAssFormListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrChooseProgramFormByYear_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrChooseProgramFormByYear" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetTrChooseProgramFormByYear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrChooseProgramFormByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCertificate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCertificate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCertificate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCertificate_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCertificate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCertificate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCertificate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCertificate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ValidateCertificate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCertificate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCertificate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ModifyCertificate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCertificate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCertificate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_ActiveCertificate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCertificate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCertificate" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_DeleteCertificate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_GetCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCourse" />
+  </wsdl:message>
+  <wsdl:message name="ITrainingBusiness_InsertCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCourseResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITrainingBusiness">
+    <wsdl:operation name="DeleteChooseForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteChooseForm" message="tns:ITrainingBusiness_DeleteChooseForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteChooseFormResponse" message="tns:ITrainingBusiness_DeleteChooseForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeAssessmentResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeAssessmentResult" message="tns:ITrainingBusiness_GetEmployeeAssessmentResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeAssessmentResultResponse" message="tns:ITrainingBusiness_GetEmployeeAssessmentResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessmentResultByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetAssessmentResultByID" message="tns:ITrainingBusiness_GetAssessmentResultByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetAssessmentResultByIDResponse" message="tns:ITrainingBusiness_GetAssessmentResultByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAssessmentResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateAssessmentResult" message="tns:ITrainingBusiness_UpdateAssessmentResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateAssessmentResultResponse" message="tns:ITrainingBusiness_UpdateAssessmentResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeePaging">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetListEmployeePaging" message="tns:ITrainingBusiness_GetListEmployeePaging_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetListEmployeePagingResponse" message="tns:ITrainingBusiness_GetListEmployeePaging_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeRecord" message="tns:ITrainingBusiness_GetEmployeeRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeRecordResponse" message="tns:ITrainingBusiness_GetEmployeeRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/test" message="tns:ITrainingBusiness_test_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/testResponse" message="tns:ITrainingBusiness_test_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTitleCourse" message="tns:ITrainingBusiness_GetTitleCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTitleCourseResponse" message="tns:ITrainingBusiness_GetTitleCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTitleCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateTitleCourse" message="tns:ITrainingBusiness_UpdateTitleCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateTitleCourseResponse" message="tns:ITrainingBusiness_UpdateTitleCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTitleCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteTitleCourse" message="tns:ITrainingBusiness_DeleteTitleCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteTitleCourseResponse" message="tns:ITrainingBusiness_DeleteTitleCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleByList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTitleByList" message="tns:ITrainingBusiness_GetTitleByList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTitleByListResponse" message="tns:ITrainingBusiness_GetTitleByList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseByList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCourseByList" message="tns:ITrainingBusiness_GetCourseByList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCourseByListResponse" message="tns:ITrainingBusiness_GetCourseByList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeTitleCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeTitleCourse" message="tns:ITrainingBusiness_GetEmployeeTitleCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeTitleCourseResponse" message="tns:ITrainingBusiness_GetEmployeeTitleCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ExportReport" message="tns:ITrainingBusiness_ExportReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ExportReportResponse" message="tns:ITrainingBusiness_ExportReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetReportById" message="tns:ITrainingBusiness_GetReportById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetReportByIdResponse" message="tns:ITrainingBusiness_GetReportById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetStatisticCourse" message="tns:ITrainingBusiness_GetStatisticCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetStatisticCourseResponse" message="tns:ITrainingBusiness_GetStatisticCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticFormCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetStatisticFormCost" message="tns:ITrainingBusiness_GetStatisticFormCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetStatisticFormCostResponse" message="tns:ITrainingBusiness_GetStatisticFormCost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticDiligence">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetStatisticDiligence" message="tns:ITrainingBusiness_GetStatisticDiligence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetStatisticDiligenceResponse" message="tns:ITrainingBusiness_GetStatisticDiligence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticRank">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetStatisticRank" message="tns:ITrainingBusiness_GetStatisticRank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetStatisticRankResponse" message="tns:ITrainingBusiness_GetStatisticRank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyClass" message="tns:ITrainingBusiness_ModifyClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyClassResponse" message="tns:ITrainingBusiness_ModifyClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteClass" message="tns:ITrainingBusiness_DeleteClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteClassResponse" message="tns:ITrainingBusiness_DeleteClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeNotByClassID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeNotByClassID" message="tns:ITrainingBusiness_GetEmployeeNotByClassID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeNotByClassIDResponse" message="tns:ITrainingBusiness_GetEmployeeNotByClassID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByClassID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeByClassID" message="tns:ITrainingBusiness_GetEmployeeByClassID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeByClassIDResponse" message="tns:ITrainingBusiness_GetEmployeeByClassID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertClassStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertClassStudent" message="tns:ITrainingBusiness_InsertClassStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertClassStudentResponse" message="tns:ITrainingBusiness_InsertClassStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteClassStudent" message="tns:ITrainingBusiness_DeleteClassStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteClassStudentResponse" message="tns:ITrainingBusiness_DeleteClassStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetClassSchedule" message="tns:ITrainingBusiness_GetClassSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetClassScheduleResponse" message="tns:ITrainingBusiness_GetClassSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassScheduleByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetClassScheduleByID" message="tns:ITrainingBusiness_GetClassScheduleByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetClassScheduleByIDResponse" message="tns:ITrainingBusiness_GetClassScheduleByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertClassSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertClassSchedule" message="tns:ITrainingBusiness_InsertClassSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertClassScheduleResponse" message="tns:ITrainingBusiness_InsertClassSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyClassSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyClassSchedule" message="tns:ITrainingBusiness_ModifyClassSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyClassScheduleResponse" message="tns:ITrainingBusiness_ModifyClassSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteClassSchedule" message="tns:ITrainingBusiness_DeleteClassSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteClassScheduleResponse" message="tns:ITrainingBusiness_DeleteClassSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramResult" message="tns:ITrainingBusiness_GetProgramResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramResultResponse" message="tns:ITrainingBusiness_GetProgramResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateProgramResult" message="tns:ITrainingBusiness_UpdateProgramResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateProgramResultResponse" message="tns:ITrainingBusiness_UpdateProgramResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramCommit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramCommit" message="tns:ITrainingBusiness_GetProgramCommit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramCommitResponse" message="tns:ITrainingBusiness_GetProgramCommit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramCommit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateProgramCommit" message="tns:ITrainingBusiness_UpdateProgramCommit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateProgramCommitResponse" message="tns:ITrainingBusiness_UpdateProgramCommit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramCost" message="tns:ITrainingBusiness_GetProgramCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramCostResponse" message="tns:ITrainingBusiness_GetProgramCost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertProgramCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertProgramCost" message="tns:ITrainingBusiness_InsertProgramCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertProgramCostResponse" message="tns:ITrainingBusiness_InsertProgramCost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateProgramCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateProgramCost" message="tns:ITrainingBusiness_ValidateProgramCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateProgramCostResponse" message="tns:ITrainingBusiness_ValidateProgramCost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProgramCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyProgramCost" message="tns:ITrainingBusiness_ModifyProgramCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyProgramCostResponse" message="tns:ITrainingBusiness_ModifyProgramCost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProgramCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteProgramCost" message="tns:ITrainingBusiness_DeleteProgramCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteProgramCostResponse" message="tns:ITrainingBusiness_DeleteProgramCost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReimbursement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetReimbursement" message="tns:ITrainingBusiness_GetReimbursement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetReimbursementResponse" message="tns:ITrainingBusiness_GetReimbursement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertReimbursement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertReimbursement" message="tns:ITrainingBusiness_InsertReimbursement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertReimbursementResponse" message="tns:ITrainingBusiness_InsertReimbursement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateReimbursement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateReimbursement" message="tns:ITrainingBusiness_ValidateReimbursement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateReimbursementResponse" message="tns:ITrainingBusiness_ValidateReimbursement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyReimbursement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyReimbursement" message="tns:ITrainingBusiness_ModifyReimbursement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyReimbursementResponse" message="tns:ITrainingBusiness_ModifyReimbursement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetChooseForm" message="tns:ITrainingBusiness_GetChooseForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetChooseFormResponse" message="tns:ITrainingBusiness_GetChooseForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertChooseForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertChooseForm" message="tns:ITrainingBusiness_InsertChooseForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertChooseFormResponse" message="tns:ITrainingBusiness_InsertChooseForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateChooseForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateChooseForm" message="tns:ITrainingBusiness_ValidateChooseForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateChooseFormResponse" message="tns:ITrainingBusiness_ValidateChooseForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyChooseForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyChooseForm" message="tns:ITrainingBusiness_ModifyChooseForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyChooseFormResponse" message="tns:ITrainingBusiness_ModifyChooseForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPlanById" message="tns:ITrainingBusiness_GetPlanById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPlanByIdResponse" message="tns:ITrainingBusiness_GetPlanById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertPlan" message="tns:ITrainingBusiness_InsertPlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertPlanResponse" message="tns:ITrainingBusiness_InsertPlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyPlan" message="tns:ITrainingBusiness_ModifyPlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyPlanResponse" message="tns:ITrainingBusiness_ModifyPlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlans">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeletePlans" message="tns:ITrainingBusiness_DeletePlans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeletePlansResponse" message="tns:ITrainingBusiness_DeletePlans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingRequests">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrainingRequests" message="tns:ITrainingBusiness_GetTrainingRequests_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrainingRequestsResponse" message="tns:ITrainingBusiness_GetTrainingRequests_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingRequestsByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrainingRequestsByID" message="tns:ITrainingBusiness_GetTrainingRequestsByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrainingRequestsByIDResponse" message="tns:ITrainingBusiness_GetTrainingRequestsByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByImportRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeByImportRequest" message="tns:ITrainingBusiness_GetEmployeeByImportRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeByImportRequestResponse" message="tns:ITrainingBusiness_GetEmployeeByImportRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByPlanID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeByPlanID" message="tns:ITrainingBusiness_GetEmployeeByPlanID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEmployeeByPlanIDResponse" message="tns:ITrainingBusiness_GetEmployeeByPlanID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertRequest" message="tns:ITrainingBusiness_InsertRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertRequestResponse" message="tns:ITrainingBusiness_InsertRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyRequest" message="tns:ITrainingBusiness_ModifyRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyRequestResponse" message="tns:ITrainingBusiness_ModifyRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusTrainingRequests">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateStatusTrainingRequests" message="tns:ITrainingBusiness_UpdateStatusTrainingRequests_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/UpdateStatusTrainingRequestsResponse" message="tns:ITrainingBusiness_UpdateStatusTrainingRequests_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTrainingRequests">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteTrainingRequests" message="tns:ITrainingBusiness_DeleteTrainingRequests_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteTrainingRequestsResponse" message="tns:ITrainingBusiness_DeleteTrainingRequests_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRequestByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPlanRequestByID" message="tns:ITrainingBusiness_GetPlanRequestByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPlanRequestByIDResponse" message="tns:ITrainingBusiness_GetPlanRequestByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestsForProgram">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetRequestsForProgram" message="tns:ITrainingBusiness_GetRequestsForProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetRequestsForProgramResponse" message="tns:ITrainingBusiness_GetRequestsForProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrograms">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPrograms" message="tns:ITrainingBusiness_GetPrograms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramsResponse" message="tns:ITrainingBusiness_GetPrograms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlan_Cost_Detail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPlan_Cost_Detail" message="tns:ITrainingBusiness_GetPlan_Cost_Detail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPlan_Cost_DetailResponse" message="tns:ITrainingBusiness_GetPlan_Cost_Detail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramById" message="tns:ITrainingBusiness_GetProgramById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramByIdResponse" message="tns:ITrainingBusiness_GetProgramById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramByChooseFormId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramByChooseFormId" message="tns:ITrainingBusiness_GetProgramByChooseFormId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetProgramByChooseFormIdResponse" message="tns:ITrainingBusiness_GetProgramByChooseFormId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertProgram">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertProgram" message="tns:ITrainingBusiness_InsertProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertProgramResponse" message="tns:ITrainingBusiness_InsertProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProgram">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyProgram" message="tns:ITrainingBusiness_ModifyProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyProgramResponse" message="tns:ITrainingBusiness_ModifyProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrograms">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeletePrograms" message="tns:ITrainingBusiness_DeletePrograms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteProgramsResponse" message="tns:ITrainingBusiness_DeletePrograms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrepare">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPrepare" message="tns:ITrainingBusiness_GetPrepare_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPrepareResponse" message="tns:ITrainingBusiness_GetPrepare_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPrepare">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertPrepare" message="tns:ITrainingBusiness_InsertPrepare_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertPrepareResponse" message="tns:ITrainingBusiness_InsertPrepare_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPrepare">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyPrepare" message="tns:ITrainingBusiness_ModifyPrepare_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyPrepareResponse" message="tns:ITrainingBusiness_ModifyPrepare_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrepare">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeletePrepare" message="tns:ITrainingBusiness_DeletePrepare_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeletePrepareResponse" message="tns:ITrainingBusiness_DeletePrepare_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetClass" message="tns:ITrainingBusiness_GetClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetClassResponse" message="tns:ITrainingBusiness_GetClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetClassByID" message="tns:ITrainingBusiness_GetClassByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetClassByIDResponse" message="tns:ITrainingBusiness_GetClassByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertClass" message="tns:ITrainingBusiness_InsertClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertClassResponse" message="tns:ITrainingBusiness_InsertClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCriteriaGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCriteriaGroup" message="tns:ITrainingBusiness_InsertCriteriaGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCriteriaGroupResponse" message="tns:ITrainingBusiness_InsertCriteriaGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCriteriaGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCriteriaGroup" message="tns:ITrainingBusiness_ValidateCriteriaGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCriteriaGroupResponse" message="tns:ITrainingBusiness_ValidateCriteriaGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCriteriaGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCriteriaGroup" message="tns:ITrainingBusiness_ModifyCriteriaGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCriteriaGroupResponse" message="tns:ITrainingBusiness_ModifyCriteriaGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCriteriaGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCriteriaGroup" message="tns:ITrainingBusiness_ActiveCriteriaGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCriteriaGroupResponse" message="tns:ITrainingBusiness_ActiveCriteriaGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriteriaGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCriteriaGroup" message="tns:ITrainingBusiness_DeleteCriteriaGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCriteriaGroupResponse" message="tns:ITrainingBusiness_DeleteCriteriaGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessmentRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetAssessmentRate" message="tns:ITrainingBusiness_GetAssessmentRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetAssessmentRateResponse" message="tns:ITrainingBusiness_GetAssessmentRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssessmentRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertAssessmentRate" message="tns:ITrainingBusiness_InsertAssessmentRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertAssessmentRateResponse" message="tns:ITrainingBusiness_InsertAssessmentRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAssessmentRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyAssessmentRate" message="tns:ITrainingBusiness_ModifyAssessmentRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyAssessmentRateResponse" message="tns:ITrainingBusiness_ModifyAssessmentRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveAssessmentRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveAssessmentRate" message="tns:ITrainingBusiness_ActiveAssessmentRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveAssessmentRateResponse" message="tns:ITrainingBusiness_ActiveAssessmentRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAssessmentRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteAssessmentRate" message="tns:ITrainingBusiness_DeleteAssessmentRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteAssessmentRateResponse" message="tns:ITrainingBusiness_DeleteAssessmentRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessmentForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetAssessmentForm" message="tns:ITrainingBusiness_GetAssessmentForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetAssessmentFormResponse" message="tns:ITrainingBusiness_GetAssessmentForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssessmentForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertAssessmentForm" message="tns:ITrainingBusiness_InsertAssessmentForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertAssessmentFormResponse" message="tns:ITrainingBusiness_InsertAssessmentForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAssessmentForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyAssessmentForm" message="tns:ITrainingBusiness_ModifyAssessmentForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyAssessmentFormResponse" message="tns:ITrainingBusiness_ModifyAssessmentForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAssessmentForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteAssessmentForm" message="tns:ITrainingBusiness_DeleteAssessmentForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteAssessmentFormResponse" message="tns:ITrainingBusiness_DeleteAssessmentForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaGroupNotByFormID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaGroupNotByFormID" message="tns:ITrainingBusiness_GetCriteriaGroupNotByFormID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaGroupNotByFormIDResponse" message="tns:ITrainingBusiness_GetCriteriaGroupNotByFormID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaGroupByFormID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaGroupByFormID" message="tns:ITrainingBusiness_GetCriteriaGroupByFormID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaGroupByFormIDResponse" message="tns:ITrainingBusiness_GetCriteriaGroupByFormID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSettingAssForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertSettingAssForm" message="tns:ITrainingBusiness_InsertSettingAssForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertSettingAssFormResponse" message="tns:ITrainingBusiness_InsertSettingAssForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSettingAssForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteSettingAssForm" message="tns:ITrainingBusiness_DeleteSettingAssForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteSettingAssFormResponse" message="tns:ITrainingBusiness_DeleteSettingAssForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaNotByGroupID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaNotByGroupID" message="tns:ITrainingBusiness_GetCriteriaNotByGroupID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaNotByGroupIDResponse" message="tns:ITrainingBusiness_GetCriteriaNotByGroupID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaByGroupID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaByGroupID" message="tns:ITrainingBusiness_GetCriteriaByGroupID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaByGroupIDResponse" message="tns:ITrainingBusiness_GetCriteriaByGroupID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSettingCriteriaGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertSettingCriteriaGroup" message="tns:ITrainingBusiness_InsertSettingCriteriaGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertSettingCriteriaGroupResponse" message="tns:ITrainingBusiness_InsertSettingCriteriaGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSettingCriteriaGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteSettingCriteriaGroup" message="tns:ITrainingBusiness_DeleteSettingCriteriaGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteSettingCriteriaGroupResponse" message="tns:ITrainingBusiness_DeleteSettingCriteriaGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCourseList" message="tns:ITrainingBusiness_GetCourseList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCourseListResponse" message="tns:ITrainingBusiness_GetCourseList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTitlesByOrgs">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTitlesByOrgs" message="tns:ITrainingBusiness_GetTitlesByOrgs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTitlesByOrgsResponse" message="tns:ITrainingBusiness_GetTitlesByOrgs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWIByTitle">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetWIByTitle" message="tns:ITrainingBusiness_GetWIByTitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetWIByTitleResponse" message="tns:ITrainingBusiness_GetWIByTitle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntryAndFormByCourseID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEntryAndFormByCourseID" message="tns:ITrainingBusiness_GetEntryAndFormByCourseID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetEntryAndFormByCourseIDResponse" message="tns:ITrainingBusiness_GetEntryAndFormByCourseID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCenters">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCenters" message="tns:ITrainingBusiness_GetCenters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCentersResponse" message="tns:ITrainingBusiness_GetCenters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlans">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPlans" message="tns:ITrainingBusiness_GetPlans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetPlansResponse" message="tns:ITrainingBusiness_GetPlans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCourse" message="tns:ITrainingBusiness_ValidateCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCourseResponse" message="tns:ITrainingBusiness_ValidateCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCourse" message="tns:ITrainingBusiness_ModifyCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCourseResponse" message="tns:ITrainingBusiness_ModifyCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCourse" message="tns:ITrainingBusiness_ActiveCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCourseResponse" message="tns:ITrainingBusiness_ActiveCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCourse" message="tns:ITrainingBusiness_DeleteCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCourseResponse" message="tns:ITrainingBusiness_DeleteCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCenter" message="tns:ITrainingBusiness_GetCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCenterResponse" message="tns:ITrainingBusiness_GetCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCenter" message="tns:ITrainingBusiness_InsertCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCenterResponse" message="tns:ITrainingBusiness_InsertCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCenter" message="tns:ITrainingBusiness_ValidateCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCenterResponse" message="tns:ITrainingBusiness_ValidateCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCenter" message="tns:ITrainingBusiness_ModifyCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCenterResponse" message="tns:ITrainingBusiness_ModifyCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCenter" message="tns:ITrainingBusiness_ActiveCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCenterResponse" message="tns:ITrainingBusiness_ActiveCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCenter" message="tns:ITrainingBusiness_DeleteCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCenterResponse" message="tns:ITrainingBusiness_DeleteCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLecture">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetLecture" message="tns:ITrainingBusiness_GetLecture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetLectureResponse" message="tns:ITrainingBusiness_GetLecture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLecture">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertLecture" message="tns:ITrainingBusiness_InsertLecture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertLectureResponse" message="tns:ITrainingBusiness_InsertLecture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateLecture">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateLecture" message="tns:ITrainingBusiness_ValidateLecture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateLectureResponse" message="tns:ITrainingBusiness_ValidateLecture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyLecture">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyLecture" message="tns:ITrainingBusiness_ModifyLecture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyLectureResponse" message="tns:ITrainingBusiness_ModifyLecture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveLecture">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveLecture" message="tns:ITrainingBusiness_ActiveLecture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveLectureResponse" message="tns:ITrainingBusiness_ActiveLecture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLecture">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteLecture" message="tns:ITrainingBusiness_DeleteLecture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteLectureResponse" message="tns:ITrainingBusiness_DeleteLecture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommitAfterTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCommitAfterTrain" message="tns:ITrainingBusiness_GetCommitAfterTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCommitAfterTrainResponse" message="tns:ITrainingBusiness_GetCommitAfterTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCommitAfterTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCommitAfterTrain" message="tns:ITrainingBusiness_InsertCommitAfterTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCommitAfterTrainResponse" message="tns:ITrainingBusiness_InsertCommitAfterTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCommitAfterTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCommitAfterTrain" message="tns:ITrainingBusiness_ModifyCommitAfterTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCommitAfterTrainResponse" message="tns:ITrainingBusiness_ModifyCommitAfterTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCommitAfterTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCommitAfterTrain" message="tns:ITrainingBusiness_ActiveCommitAfterTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCommitAfterTrainResponse" message="tns:ITrainingBusiness_ActiveCommitAfterTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCommitAfterTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCommitAfterTrain" message="tns:ITrainingBusiness_DeleteCommitAfterTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCommitAfterTrainResponse" message="tns:ITrainingBusiness_DeleteCommitAfterTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteria" message="tns:ITrainingBusiness_GetCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaResponse" message="tns:ITrainingBusiness_GetCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCriteria" message="tns:ITrainingBusiness_InsertCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCriteriaResponse" message="tns:ITrainingBusiness_InsertCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCriteria" message="tns:ITrainingBusiness_ValidateCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCriteriaResponse" message="tns:ITrainingBusiness_ValidateCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCriteria" message="tns:ITrainingBusiness_ModifyCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCriteriaResponse" message="tns:ITrainingBusiness_ModifyCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCriteria" message="tns:ITrainingBusiness_ActiveCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCriteriaResponse" message="tns:ITrainingBusiness_ActiveCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCriteria" message="tns:ITrainingBusiness_DeleteCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCriteriaResponse" message="tns:ITrainingBusiness_DeleteCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaGroup" message="tns:ITrainingBusiness_GetCriteriaGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCriteriaGroupResponse" message="tns:ITrainingBusiness_GetCriteriaGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/TestService" message="tns:ITrainingBusiness_TestService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/TestServiceResponse" message="tns:ITrainingBusiness_TestService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetOtherList" message="tns:ITrainingBusiness_GetOtherList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetOtherListResponse" message="tns:ITrainingBusiness_GetOtherList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrCertificateList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrCertificateList" message="tns:ITrainingBusiness_GetTrCertificateList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrCertificateListResponse" message="tns:ITrainingBusiness_GetTrCertificateList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrCenterList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrCenterList" message="tns:ITrainingBusiness_GetTrCenterList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrCenterListResponse" message="tns:ITrainingBusiness_GetTrCenterList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrPlanByYearOrg">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrPlanByYearOrg" message="tns:ITrainingBusiness_GetTrPlanByYearOrg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrPlanByYearOrgResponse" message="tns:ITrainingBusiness_GetTrPlanByYearOrg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrPlanByYearOrg2">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrPlanByYearOrg2" message="tns:ITrainingBusiness_GetTrPlanByYearOrg2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrPlanByYearOrg2Response" message="tns:ITrainingBusiness_GetTrPlanByYearOrg2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrLectureList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrLectureList" message="tns:ITrainingBusiness_GetTrLectureList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrLectureListResponse" message="tns:ITrainingBusiness_GetTrLectureList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHuProvinceList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetHuProvinceList" message="tns:ITrainingBusiness_GetHuProvinceList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetHuProvinceListResponse" message="tns:ITrainingBusiness_GetHuProvinceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHuDistrictList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetHuDistrictList" message="tns:ITrainingBusiness_GetHuDistrictList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetHuDistrictListResponse" message="tns:ITrainingBusiness_GetHuDistrictList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHuContractTypeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetHuContractTypeList" message="tns:ITrainingBusiness_GetHuContractTypeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetHuContractTypeListResponse" message="tns:ITrainingBusiness_GetHuContractTypeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrProgramByYear">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrProgramByYear" message="tns:ITrainingBusiness_GetTrProgramByYear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrProgramByYearResponse" message="tns:ITrainingBusiness_GetTrProgramByYear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrCriteriaGroupList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrCriteriaGroupList" message="tns:ITrainingBusiness_GetTrCriteriaGroupList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrCriteriaGroupListResponse" message="tns:ITrainingBusiness_GetTrCriteriaGroupList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrAssFormList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrAssFormList" message="tns:ITrainingBusiness_GetTrAssFormList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrAssFormListResponse" message="tns:ITrainingBusiness_GetTrAssFormList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrChooseProgramFormByYear">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrChooseProgramFormByYear" message="tns:ITrainingBusiness_GetTrChooseProgramFormByYear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetTrChooseProgramFormByYearResponse" message="tns:ITrainingBusiness_GetTrChooseProgramFormByYear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCostCenter" message="tns:ITrainingBusiness_GetCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCostCenterResponse" message="tns:ITrainingBusiness_GetCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCostCenter" message="tns:ITrainingBusiness_InsertCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCostCenterResponse" message="tns:ITrainingBusiness_InsertCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCostCenter" message="tns:ITrainingBusiness_ValidateCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCostCenterResponse" message="tns:ITrainingBusiness_ValidateCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCostCenter" message="tns:ITrainingBusiness_ModifyCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCostCenterResponse" message="tns:ITrainingBusiness_ModifyCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCostCenter" message="tns:ITrainingBusiness_ActiveCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCostCenterResponse" message="tns:ITrainingBusiness_ActiveCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCostCenter" message="tns:ITrainingBusiness_DeleteCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCostCenterResponse" message="tns:ITrainingBusiness_DeleteCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCertificate" message="tns:ITrainingBusiness_GetCertificate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCertificateResponse" message="tns:ITrainingBusiness_GetCertificate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCertificate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCertificate" message="tns:ITrainingBusiness_InsertCertificate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCertificateResponse" message="tns:ITrainingBusiness_InsertCertificate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCertificate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCertificate" message="tns:ITrainingBusiness_ValidateCertificate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ValidateCertificateResponse" message="tns:ITrainingBusiness_ValidateCertificate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCertificate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCertificate" message="tns:ITrainingBusiness_ModifyCertificate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ModifyCertificateResponse" message="tns:ITrainingBusiness_ModifyCertificate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCertificate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCertificate" message="tns:ITrainingBusiness_ActiveCertificate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/ActiveCertificateResponse" message="tns:ITrainingBusiness_ActiveCertificate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCertificate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCertificate" message="tns:ITrainingBusiness_DeleteCertificate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/DeleteCertificateResponse" message="tns:ITrainingBusiness_DeleteCertificate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCourse" message="tns:ITrainingBusiness_GetCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/GetCourseResponse" message="tns:ITrainingBusiness_GetCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCourse" message="tns:ITrainingBusiness_InsertCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrainingBusiness/InsertCourseResponse" message="tns:ITrainingBusiness_InsertCourse_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ITrainingBusiness" type="tns:ITrainingBusiness">
+    <wsp:PolicyReference URI="#WSHttpBinding_ITrainingBusiness_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteChooseForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteChooseForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeAssessmentResult">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetEmployeeAssessmentResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessmentResultByID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetAssessmentResultByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAssessmentResult">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/UpdateAssessmentResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeePaging">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetListEmployeePaging" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeRecord">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetEmployeeRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTitleCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTitleCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/UpdateTitleCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTitleCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteTitleCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleByList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTitleByList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseByList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCourseByList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeTitleCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetEmployeeTitleCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportReport">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ExportReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportById">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetReportById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetStatisticCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticFormCost">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetStatisticFormCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticDiligence">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetStatisticDiligence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticRank">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetStatisticRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyClass">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClass">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeNotByClassID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetEmployeeNotByClassID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByClassID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetEmployeeByClassID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertClassStudent">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertClassStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassStudent">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteClassStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassSchedule">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetClassSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassScheduleByID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetClassScheduleByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertClassSchedule">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertClassSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyClassSchedule">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyClassSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassSchedule">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteClassSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramResult">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetProgramResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramResult">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/UpdateProgramResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramCommit">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetProgramCommit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramCommit">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/UpdateProgramCommit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramCost">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetProgramCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertProgramCost">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertProgramCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateProgramCost">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateProgramCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProgramCost">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyProgramCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProgramCost">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteProgramCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReimbursement">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetReimbursement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertReimbursement">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertReimbursement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateReimbursement">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateReimbursement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyReimbursement">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyReimbursement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetChooseForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertChooseForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertChooseForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateChooseForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateChooseForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyChooseForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyChooseForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanById">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetPlanById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPlan">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertPlan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPlan">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyPlan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlans">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeletePlans" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingRequests">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrainingRequests" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrainingRequestsByID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrainingRequestsByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByImportRequest">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetEmployeeByImportRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByPlanID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetEmployeeByPlanID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequest">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyRequest">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusTrainingRequests">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/UpdateStatusTrainingRequests" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTrainingRequests">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteTrainingRequests" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRequestByID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetPlanRequestByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestsForProgram">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetRequestsForProgram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrograms">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetPrograms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlan_Cost_Detail">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetPlan_Cost_Detail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramById">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetProgramById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramByChooseFormId">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetProgramByChooseFormId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertProgram">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertProgram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProgram">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyProgram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrograms">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeletePrograms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrepare">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetPrepare" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPrepare">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertPrepare" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPrepare">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyPrepare" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrepare">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeletePrepare" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClass">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassByID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetClassByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertClass">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertClass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCriteriaGroup">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertCriteriaGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCriteriaGroup">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateCriteriaGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCriteriaGroup">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyCriteriaGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCriteriaGroup">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ActiveCriteriaGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriteriaGroup">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteCriteriaGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessmentRate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetAssessmentRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssessmentRate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertAssessmentRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAssessmentRate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyAssessmentRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveAssessmentRate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ActiveAssessmentRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAssessmentRate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteAssessmentRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssessmentForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetAssessmentForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssessmentForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertAssessmentForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAssessmentForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyAssessmentForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAssessmentForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteAssessmentForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaGroupNotByFormID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCriteriaGroupNotByFormID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaGroupByFormID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCriteriaGroupByFormID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSettingAssForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertSettingAssForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSettingAssForm">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteSettingAssForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaNotByGroupID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCriteriaNotByGroupID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaByGroupID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCriteriaByGroupID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSettingCriteriaGroup">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertSettingCriteriaGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSettingCriteriaGroup">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteSettingCriteriaGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCourseList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTitlesByOrgs">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTitlesByOrgs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWIByTitle">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetWIByTitle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntryAndFormByCourseID">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetEntryAndFormByCourseID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCenters">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCenters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlans">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetPlans" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ActiveCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ActiveCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLecture">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetLecture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLecture">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertLecture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateLecture">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateLecture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyLecture">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyLecture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveLecture">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ActiveLecture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLecture">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteLecture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommitAfterTrain">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCommitAfterTrain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCommitAfterTrain">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertCommitAfterTrain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCommitAfterTrain">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyCommitAfterTrain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCommitAfterTrain">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ActiveCommitAfterTrain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCommitAfterTrain">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteCommitAfterTrain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteria">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCriteria">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCriteria">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCriteria">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCriteria">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ActiveCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCriteria">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteCriteria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCriteriaGroup">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCriteriaGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/TestService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetOtherList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrCertificateList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrCertificateList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrCenterList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrCenterList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrPlanByYearOrg">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrPlanByYearOrg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrPlanByYearOrg2">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrPlanByYearOrg2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrLectureList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrLectureList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuProvinceList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetHuProvinceList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuDistrictList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetHuDistrictList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuContractTypeList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetHuContractTypeList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrProgramByYear">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrProgramByYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrCriteriaGroupList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrCriteriaGroupList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrAssFormList">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrAssFormList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrChooseProgramFormByYear">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetTrChooseProgramFormByYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ActiveCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCertificate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCertificate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ValidateCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCertificate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ModifyCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCertificate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/ActiveCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCertificate">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/DeleteCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/GetCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCourse">
+      <soap12:operation soapAction="http://tempuri.org/ITrainingBusiness/InsertCourse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TrainingBusiness">
+    <wsdl:port name="WSHttpBinding_ITrainingBusiness" binding="tns:WSHttpBinding_ITrainingBusiness">
+      <soap12:address location="http://localhost:9999/TrainingBusiness.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:9999/TrainingBusiness.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

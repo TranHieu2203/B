@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Report" PostBack="False">
+      <Group>
+        <Item  Value="ctrlPE_DirectViewKPIEmp"  Text="HR view KPI of Employee" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_DirectViewKPIEmp&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlPE_CBNSViewRating"  Text="HR viewing the chart ranking employee" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_CBNSViewRating&amp;group=Business" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+    <Item Text="Institute" PostBack="False">
+      <Group>
+        <Item  Value="ctrlPE_ObjectGroupPeriod"  Text="The target group of the periodic assessment evaluation" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_ObjectGroupPeriod&amp;group=Setting" CheckPermission="true"/>
+        <Item  Value="ctrlPE_CriteriaObjectGroup"  Text="Evaluation criteria for each group of subjects assessed" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_CriteriaObjectGroup&amp;group=Setting" CheckPermission="true"/>
+        <Item  Value="ctrlPE_EmployeeAssessment"  Text="Employee for evaluation groups" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_EmployeeAssessment&amp;group=Setting" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+    <Item Text="Category" PostBack="False">
+      <Group>
+        <Item  Value="ctrlPE_Criteria"  Text="Evaluation Criteria" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_Criteria&amp;group=List" CheckPermission="true"/>
+        <Item  Value="ctrlPE_ObjectGroup"  Text="The target group evaluation" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_ObjectGroup&amp;group=List" CheckPermission="true"/>
+        <Item  Value="ctrlPE_Period"  Text="Evaluations" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_Period&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlPE_Classification" Text="Rank results" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_Classification&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlOtherList" Text="System Parameters" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlOtherList&amp;group=List" CheckPermission="true"/>
+        <Item  Value="ctrlPE_Criteria_HTCH"  Text="Evaluation Criteria HTCH" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_Criteria_HTCH&amp;group=List" CheckPermission="true"/>
+        <Item  Value="ctrlPE_Period_HTCH"  Text="Evaluations HTCH" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_Period_HTCH&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlPE_Classification_HTCH" Text="Xếp loại đánh giá HTCH" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlPE_Classification_HTCH&amp;group=List" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+  </Group>
+</Menu>
+

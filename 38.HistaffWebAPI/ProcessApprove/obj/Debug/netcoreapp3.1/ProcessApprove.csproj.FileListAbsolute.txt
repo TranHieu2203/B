@@ -1,0 +1,153 @@
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/ProcessApprove.deps.json
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/ProcessApprove.runtimeconfig.json
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/ProcessApprove.runtimeconfig.dev.json
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/ProcessApprove.dll
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/ProcessApprove.pdb
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/ProcessApprove.Views.dll
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/ProcessApprove.Views.pdb
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.csprojAssemblyReference.cache
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.MvcApplicationPartsAssemblyInfo.cache
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.RazorAssemblyInfo.cache
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.RazorAssemblyInfo.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.AssemblyInfoInputs.cache
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.AssemblyInfo.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.TagHelpers.input.cache
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.TagHelpers.output.cache
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.RazorCoreGenerate.cache
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.RazorTargetAssemblyInfo.cache
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.RazorTargetAssemblyInfo.cs
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.Views.pdb
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/staticwebassets/ProcessApprove.StaticWebAssets.Manifest.cache
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/staticwebassets/ProcessApprove.StaticWebAssets.xml
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.dll
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.pdb
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/ProcessApprove.csproj.CopyComplete
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/chiennguyen/Documents/workspaces/API/ProcessApprove/obj/Debug/netcoreapp3.1/Razor/Views/Home/CalAppProces.cshtml.g.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\appsettings.json
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.exe
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.deps.json
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.runtimeconfig.json
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.runtimeconfig.dev.json
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.dll
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.pdb
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.Views.dll
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.Views.pdb
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.csprojAssemblyReference.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.csproj.CoreCompileInputs.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.MvcApplicationPartsAssemblyInfo.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorAssemblyInfo.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorAssemblyInfo.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.AssemblyInfoInputs.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.AssemblyInfo.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.TagHelpers.input.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.TagHelpers.output.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorCoreGenerate.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Home\CalAppProces.cshtml.g.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorTargetAssemblyInfo.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorTargetAssemblyInfo.cs
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.Views.pdb
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.csproj.CopyComplete
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\staticwebassets\ProcessApprove.StaticWebAssets.Manifest.cache
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\staticwebassets\ProcessApprove.StaticWebAssets.xml
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.dll
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.pdb
+D:\L\DỰ ÁN-SP\TNG\API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.genruntimeconfig.cache
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\appsettings.json
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.exe
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.deps.json
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.runtimeconfig.json
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.runtimeconfig.dev.json
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.dll
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.pdb
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.Views.dll
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.Views.pdb
+E:\TVC\TNG_API\ProcessApprove\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.csprojAssemblyReference.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.AssemblyInfoInputs.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.AssemblyInfo.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.csproj.CoreCompileInputs.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.MvcApplicationPartsAssemblyInfo.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorAssemblyInfo.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorAssemblyInfo.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.TagHelpers.input.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.TagHelpers.output.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorCoreGenerate.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Home\CalAppProces.cshtml.g.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorTargetAssemblyInfo.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorTargetAssemblyInfo.cs
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.Views.pdb
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.csproj.CopyComplete
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\staticwebassets\ProcessApprove.StaticWebAssets.Manifest.cache
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\staticwebassets\ProcessApprove.StaticWebAssets.xml
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.dll
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.pdb
+E:\TVC\TNG_API\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.genruntimeconfig.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\appsettings.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.exe
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.deps.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.runtimeconfig.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.runtimeconfig.dev.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.dll
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.pdb
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.Views.dll
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\ProcessApprove.Views.pdb
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.csprojAssemblyReference.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.AssemblyInfoInputs.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.AssemblyInfo.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.MvcApplicationPartsAssemblyInfo.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorAssemblyInfo.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorAssemblyInfo.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.TagHelpers.input.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.TagHelpers.output.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorCoreGenerate.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Home\CalAppProces.cshtml.g.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorTargetAssemblyInfo.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.RazorTargetAssemblyInfo.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.Views.pdb
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.csproj.CopyComplete
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\staticwebassets\ProcessApprove.StaticWebAssets.Manifest.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\staticwebassets\ProcessApprove.StaticWebAssets.xml
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.dll
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.pdb
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.csproj.CoreCompileInputs.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\ProcessApprove\obj\Debug\netcoreapp3.1\ProcessApprove.genruntimeconfig.cache

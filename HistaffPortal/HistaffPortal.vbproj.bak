@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{A7D11371-B91A-47AE-B015-4744F3BCDF83}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HistaffPortal</RootNamespace>
+    <AssemblyName>HistaffPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HistaffPortal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HistaffPortal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.Design, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik New\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik New\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik New\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\Login.aspx" />
+	<Content Include="Modules\Common\ctrlUpload.ascx" />
+    <Content Include="Modules\Recruitment\ctrlRC_RequestPortalNewEdit.ascx" />
+    <Content Include="Modules\Training\ctrlTR_RequestPortalNewEdit.ascx" />
+    <Content Include="ProcessApprove.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Dialog.aspx" />
+    <Content Include="GetFile.aspx" />
+    <Content Include="Languages\en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Languages\vi-VN.xml" />
+    <Content Include="Modules\Attendance\ctrlDMVSApprove.ascx" />
+    <Content Include="Modules\Attendance\ctrlDMVSRegister.ascx" />
+    <Content Include="Modules\Attendance\ctrlLeaveApprove.ascx" />
+    <Content Include="Modules\Attendance\ctrlLeaveDisplay.ascx" />
+    <Content Include="Modules\Attendance\ctrlLeaveHistory.ascx" />
+    <Content Include="Modules\Attendance\ctrlLeaveRegister.ascx" />
+    <Content Include="Modules\Attendance\ctrlOTApprove.ascx" />
+    <Content Include="Modules\Attendance\ctrlOTRegister.ascx" />
+    <Content Include="Modules\Attendance\ctrlPortalTimeTimesheetDetails.ascx" />
+    <Content Include="Modules\Attendance\ctrlRegisterLeave.ascx" />
+    <Content Include="Modules\Common\ctrlGuide.ascx" />
+    <Content Include="Modules\Dashboard\ctrlDashboardPortal.ascx" />
+    <Content Include="Modules\Dashboard\ctrlDashboardPortalSixCell.ascx" />
+    <Content Include="Modules\Dashboard\ctrlDBCertificateExpires.ascx" />
+    <Content Include="Modules\Dashboard\ctrlDBEmployeePaper.ascx" />
+    <Content Include="Modules\Dashboard\ctrlDBEmployeeReg.ascx" />
+    <Content Include="Modules\Dashboard\ctrlDBInfoLeave.ascx" />
+    <Content Include="Modules\Dashboard\ctrlDBRegApp.ascx" />
+    <Content Include="Modules\Dashboard\ctrlEvent.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopupFilter.ascx" />
+    <Content Include="Modules\Common\ctrlFindOrgPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Common\ctrlOrganization.ascx" />
+    <Content Include="Modules\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Dashboard\ctrlPortalCompetencyCourse.ascx" />
+    <Content Include="Modules\Payroll\ctrlPA_PortalSalary.ascx" />
+    <Content Include="Modules\Performance\ctrlPE_Assess.ascx" />
+    <Content Include="Modules\Performance\ctrlPE_DirectViewRating.ascx" />
+    <Content Include="Modules\Performance\ctrlPortalAssessmentDirect.ascx" />
+    <Content Include="Modules\Performance\ctrlPortalViewAssessEmp.ascx" />
+    <Content Include="Modules\Portal\ctrlConfiguration.ascx" />
+    <Content Include="Modules\Portal\ctrlEventManager.ascx" />
+    <Content Include="Modules\Portal\ctrlEventNewEdit.ascx" />
+    <Content Include="Modules\Common\ctrlLanguageManagement.ascx" />
+    <Content Include="Modules\Portal\ctrlRegisterLeave.ascx" />
+    <Content Include="Modules\Profile\ctrlDBCertificateExpires.ascx" />
+    <Content Include="Modules\Profile\ctrlEmployeeInfo.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalCommend.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalCompetencyCourse.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalContract.ascx" />
+    <Content Include="Modules\Direct\ctrlPortalDirectManagement.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalDiscipline.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalEmpDtlCompetency.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalEmpDtlViewKPI.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalEmpProfile.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalEmpProfile_Edit.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalFamily_Edit.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalSalary.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalTraining.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalTrainingOutCompany_Edit.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalWorking.ascx" />
+    <Content Include="Modules\Profile\ctrlPortalWorkingBefore_Edit.ascx" />
+    <Content Include="Modules\Timesheet\ctrlAT_PortalSign.ascx" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\DateTimeFormat.js" />
+    <Content Include="Scripts\highcharts\highcharts-more.js" />
+    <Content Include="Scripts\highcharts\highcharts.js" />
+    <Content Include="Scripts\highcharts\modules\exporting.js" />
+    <Content Include="Scripts\highcharts\modules\exporting.src.js" />
+    <Content Include="Scripts\jMenu.jquery.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery.tip.js" />
+    <Content Include="Scripts\noty\jquery.noty.js" />
+    <Content Include="Scripts\noty\layouts\center.js" />
+    <Content Include="Scripts\noty\layouts\topCenter.js" />
+    <Content Include="Scripts\noty\themes\default.js" />
+    <Content Include="Scripts\PreventBackSpace.js" />
+    <Content Include="Scripts\top.js" />
+    <Content Include="Static\Images\back.png" />
+    <Content Include="Static\Images\backHov.png" />
+    <Content Include="Static\Images\fav-icon.ico" />
+    <Content Include="Static\Images\fav-icon.png" />
+    <Content Include="Static\Images\header.jpg" />
+    <Content Include="Static\Images\loginbackground.jpg" />
+    <Content Include="Static\Images\logo_company.png" />
+    <Content Include="ReportTemplates\Payroll\Report\PhieuLuong.docx" />
+    <Content Include="Static\Images\logo_largest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Static\Images\logo_largest1.png" />
+    <Content Include="Static\Images\logo_transparent.png" />
+    <Content Include="Static\Images\Menu\arrow.gif" />
+    <Content Include="Static\Images\Menu\arrow_right.png" />
+    <Content Include="Static\Images\Menu\Module\Profile.png" />
+    <Content Include="Static\Images\Menu\Module\Secure.png" />
+    <Content Include="Static\Images\Menu\Module\Time.png" />
+    <Content Include="Static\Images\Menu\rmSprite.png" />
+    <Content Include="Static\Images\Menu\rmVSprite.png" />
+    <Content Include="Static\Images\next.png" />
+    <Content Include="Static\Images\nextHov.png" />
+    <Content Include="Static\Images\sperator.png" />
+    <Content Include="Static\Images\support-icon.png" />
+    <Content Include="Static\Images\tvc_logo.png" />
+    <Content Include="Static\PanelBar_en-US.xml" />
+    <Content Include="Static\Images\change_password.jpg" />
+    <Content Include="Static\Images\Icons\16\document_attachment.png" />
+    <Content Include="Static\Images\Icons\16\download.png" />
+    <Content Include="Static\Images\Icons\16\fill_data.png" />
+    <Content Include="Static\Images\Icons\16\find.png" />
+    <Content Include="Static\Images\Icons\16\view.png" />
+    <Content Include="Static\Images\icon_en.png" />
+    <Content Include="Static\Images\icon_vi.png" />
+    <Content Include="Static\Images\indicator.gif" />
+    <Content Include="Static\Images\logo-pepsico.jpg" />
+    <Content Include="Static\Images\logo_large.png" />
+    <Content Include="Static\Images\logo_small.png" />
+    <Content Include="Static\Images\no_avatar.jpg" />
+    <Content Include="Static\Images\panel_title.png" />
+    <Content Include="Static\Images\RibbonBar\allowance.png" />
+    <Content Include="Static\Images\RibbonBar\approve.png" />
+    <Content Include="Static\Images\RibbonBar\commend.png" />
+    <Content Include="Static\Images\RibbonBar\configuration.png" />
+    <Content Include="Static\Images\RibbonBar\contract.png" />
+    <Content Include="Static\Images\RibbonBar\discipline.png" />
+    <Content Include="Static\Images\RibbonBar\event.png" />
+    <Content Include="Static\Images\RibbonBar\event_add.png" />
+    <Content Include="Static\Images\RibbonBar\family.png" />
+    <Content Include="Static\Images\RibbonBar\late.png" />
+    <Content Include="Static\Images\RibbonBar\leave.png" />
+    <Content Include="Static\Images\RibbonBar\no_icon.png" />
+    <Content Include="Static\Images\RibbonBar\ot.png" />
+    <Content Include="Static\Images\RibbonBar\reward.png" />
+    <Content Include="Static\Images\RibbonBar\salary.png" />
+    <Content Include="Static\Images\RibbonBar\time_add.png" />
+    <Content Include="Static\Images\RibbonBar\time_approve.png" />
+    <Content Include="Static\Images\RibbonBar\time_minus.png" />
+    <Content Include="Static\Images\RibbonBar\time_rest.png" />
+    <Content Include="Static\Images\RibbonBar\user.png" />
+    <Content Include="Static\Images\RibbonBar\welfare.png" />
+    <Content Include="Static\Images\RibbonBar\working.png" />
+    <Content Include="Static\Images\RibbonBar\working_before.png" />
+    <Content Include="Static\Images\Toolbar\add.png" />
+    <Content Include="Static\Images\Toolbar\calculator.png" />
+    <Content Include="Static\Images\Toolbar\calendar.png" />
+    <Content Include="Static\Images\Toolbar\delete.png" />
+    <Content Include="Static\Images\Toolbar\disk_blue.png" />
+    <Content Include="Static\Images\Toolbar\disk_blue_error.png" />
+    <Content Include="Static\Images\Toolbar\document_error.png" />
+    <Content Include="Static\Images\Toolbar\document_ok.png" />
+    <Content Include="Static\Images\Toolbar\edit.png" />
+    <Content Include="Static\Images\Toolbar\export1.png" />
+    <Content Include="Static\Images\Toolbar\find.png" />
+    <Content Include="Static\Images\Toolbar\import1.png" />
+    <Content Include="Static\Images\Toolbar\lock.png" />
+    <Content Include="Static\Images\Toolbar\lock_open.png" />
+    <Content Include="Static\Images\Toolbar\next.png" />
+    <Content Include="Static\Images\Toolbar\previous.png" />
+    <Content Include="Static\Images\Toolbar\printer.png" />
+    <Content Include="Static\Images\Toolbar\refresh.png" />
+    <Content Include="Static\Images\user_login.png" />
+    <Content Include="Static\Images\Validate\bg.gif" />
+    <Content Include="Static\Images\Validate\Exclamation.gif" />
+    <Content Include="Static\Images\Validate\info.png" />
+    <Content Include="Static\Images\Validate\Warning.gif" />
+    <Content Include="Static\Images\Validate\WarningHeader.gif" />
+    <Content Include="Static\PanelBar_vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Styles\font-awesome.css" />
+    <Content Include="Styles\img\item2.png" />
+    <Content Include="Styles\jMenu.jquery.css" />
+    <Content Include="Styles\Layout.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\reset.css" />
+    <Content Include="Styles\Scheduler.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <None Include="Styles\fontawesome-webfont.woff" />
+    <None Include="Styles\fontawesome-webfont.woff2" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dialog.aspx.designer.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog.aspx.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+	<Compile Include="ProcessApprove.aspx.designer.vb">
+      <DependentUpon>ProcessApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessApprove.aspx.vb">
+      <DependentUpon>ProcessApprove.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>    
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="App_Themes\Classic\Classic.skin" />
+    <Content Include="Guide\iPortal.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="ReportTemplates\RPT_BangCongTongHop.xlsx" />
+    <Content Include="ReportTemplates\Profile\ctrlDBReminder.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="EmployeeImage\" />
+    <Folder Include="Static\Images\Icons\32\" />
+    <Folder Include="Static\Images\Icons\48\" />
+    <Folder Include="Static\Images\Menu\Business\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Attendance\Attendance.vbproj">
+      <Project>{3D295273-0668-43F1-9C39-4010771F6A9D}</Project>
+      <Name>Attendance %28Attendance\Attendance%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.vbproj">
+      <Project>{4B2EF214-7880-45F2-BB79-B394E552B4BE}</Project>
+      <Name>Common %28Common\Common%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.UI.vbproj">
+      <Project>{514CC57F-03AA-4D18-9BF2-3F7B66F6AD9B}</Project>
+      <Name>Framework.UI</Name>
+    </ProjectReference>
+	<ProjectReference Include="..\HistaffFrameworkPublic\HistaffFrameworkPublic.vbproj">
+      <Project>{5D0CFFD8-3EF0-4584-818F-3F165BD8DE0C}</Project>
+      <Name>HistaffFrameworkPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFramework\HistaffFramework.vbproj">
+      <Project>{FB51763C-4CE7-4417-BBD9-5FF784FCE7A7}</Project>
+      <Name>HistaffFramework %28HistaffFramework\HistaffFramework%29</Name>
+    </ProjectReference>    
+    <ProjectReference Include="..\Payroll\Payroll.vbproj">
+      <Project>{57D651FD-0B2D-4283-87F8-5ACFA7B7E588}</Project>
+      <Name>Payroll %28Payroll\Payroll%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Performance\Performance.vbproj">
+      <Project>{9A0201DC-A6FE-41DD-874E-6D2761378853}</Project>
+      <Name>Performance %28Performance\Performance%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Portal\Portal.vbproj">
+      <Project>{AA1552C0-BE1F-4AA5-9C3B-B8D6AA7A5B2A}</Project>
+      <Name>Portal %28Portal\Portal%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Profile\Profile.vbproj">
+      <Project>{B8148AB7-8752-487B-ABA0-DDA56B917E35}</Project>
+      <Name>Profile %28Profile\Profile%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>7777</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

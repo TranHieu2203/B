@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Nghiệp vụ"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHomeDashboard"  Text="Bảng thông tin" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHomeDashboard&amp;group=Shared" CheckPermission="true" CausesValidation="False" />
+
+        <Item Text="Quản lý thông tin nhân viên"  PostBack="False">
+          <Group>
+            <Item Value="ctrlHU_EmployeeMng"  Text="Hồ sơ nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_EmployeeMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_WageMng"  Text="Thông tin lương" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_WageMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_Allowance" Text="Phụ cấp" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Allowance&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_Contract" Text="Thông tin hợp đồng" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Contract&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_EmpBank" Text="Danh sách tài khoản ngân hàng nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_EmpBank&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_ContractAppendix" Text="Thông tin phụ lục hợp đồng" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ContractAppendix&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_ChangeInfoMng"  Text="Thông tin quá trình công tác" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ChangeInfoMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_Commend" Text="Thông tin khen thưởng" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Commend&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlHU_Discipline" Text="Thông tin kỷ luật" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Discipline&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlHU_Family" Text="Thông tin người thân" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Family&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_Certificates"  Text="Thông tin bằng cấp - chứng chỉ" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Certificates&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+			  <Item Value="ctrlHU_WorkInfo" Text="Kinh nghiệm làm việc" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_WorkInfo&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_EmpCuriculumVitae" Text="Lý lịch trích ngang" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_EmpCuriculumVitae&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_EmployeeNPT" Text="Danh sách người phụ thuộc nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_EmployeeNPT&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+          </Group>
+        </Item>
+		  <Item Value="ctrlHU_Stocks" Text="Quản lý hồ sơ lương cổ phiếu" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Stocks&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+		  <Item Value="ctrlHU_StocksTransaction" Text="Quản lý thanh toán cổ phiếu" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_StocksTransaction&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+
+		  <Item Value="ctrlHU_Commitee" Text="Quản lý thông tin thành viên Hội đồng, Ủy ban" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Commitee&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+
+   
+        <Item Value="ctrlHU_Terminate" Text="Thông tin nghỉ việc" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Terminate&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_TerminateCopy" Text="Sao chép nhân viên nghỉ việc" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_TerminateCopy&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_BlackList" Text="Quản lý Danh sách đen" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_BlackList&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Template" Text="Quản lý biểu mẫu động" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Template&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Abroad" Text="Quản lý thông tin công tác nước ngoài" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Abroad&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Travel" Text="Quản lý thông tin tàu xe" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Travel&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_SeveranceSettlement" Text="Quyết toán thôi việc" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_SeveranceSettlement&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_PensionBenefits" Text="Quản lý trợ cấp hưu trí" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_PensionBenefits&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+		  <Item Value="ctrlHU_MngProfileSaved" Text="Quản lý thông tin hồ sơ lưu trữ" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_MngProfileSaved&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+		  <Item Value="ctrlHU_Concurrently" Text="Quản lý kiêm nhiệm" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Concurrently&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Text="Phê duyệt Portal"  PostBack="False">
+          <Group>
+            <Item Value="ctrlHU_ApproveFamily_Edit" Text="Phê duyệt thông tin nhân thân" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ApproveFamily_Edit&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlHU_ApproveEmployee_Edit" Text="Phê duyệt hồ sơ nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ApproveEmployee_Edit&amp;group=Business" CheckPermission="true"/>
+			<Item Value="ctrlHU_ApproveWorkingBefore_Edit" Text="Phê duyệt kinh nghiệm làm việc" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ApproveWorkingBefore_Edit&amp;group=Business" CheckPermission="true"/>
+			<Item Value="ctrlHU_ApproveCertificateEmployee" Text="Phê duyệt Bằng cấp/Chứng chỉ" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ApproveCertificateEmployee&amp;group=Business" CheckPermission="true"/>
+          </Group>
+        </Item>
+
+      </Group>
+    </Item>
+
+    <Item Text="Thiết lập"  PostBack="False">
+      <Group>
+        <Item Value="ctrlOrgChartHR" Text="Xem Org-Chart của tổ chức" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlOrgChartHR&amp;group=Setting" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHu_Contract_Procedure" Text="Thiết lập quy trình hợp đồng" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHu_Contract_Procedure&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlRemindConfig" Text="Số ngày nhắc nhở" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlRemindConfig&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHRGeneralSetting" Text="HR cấu hình hệ thống" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHRGeneralSetting&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_SalItemsPercent" Text="Thiết lập cơ cấu lương theo công ty" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_SalItemsPercent&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+
+    <Item Text="Danh mục" PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_SignerSetup" Text="Thông tin người ký" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_SignerSetup&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_ContractType" Text="Loại hợp đồng" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ContractType&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_Document" Text="Loại tài liệu" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Document&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_WorkPlace" Text="Nơi làm việc" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_WorkPlace&amp;group=list" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_Place" Text="Tỉnh thành" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Place&amp;group=List&amp;tab=Nation" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_Bank" Text="Ngân hàng" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Bank&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_BankBranch" Text="Chi nhánh ngân hàng" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_BankBranch&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_Commend_List" Text="Khen thưởng" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Commend_List&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_Discipline_List" Text="Kỷ luật" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Discipline_List&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_RelationshipList" Text="Mối quan hệ" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_RelationshipList&amp;group=list" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_AllowanceList" Text="Phụ cấp" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_AllowanceList&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+		  <Item Value="ctrlHU_Reminder" Text="Loại nhắc nhở" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Reminder&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlOtherList" Text="Tham số hệ thống" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlOtherList&amp;group=list" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+
+    <Item Text="Báo cáo" PostBack="False">
+      <Group>
+        <Item Value="ctrlREPORT" Text="Danh sách báo cáo" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlREPORT&amp;moduleID=3" CheckPermission="true" />
+        <Item Value="ctrlHU_DynamicReport" Text="Báo cáo động" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_DynamicReport&amp;group=report" CheckPermission="true" CausesValidation="False" />
+      </Group>
+    </Item>
+  </Group>
+</Menu>

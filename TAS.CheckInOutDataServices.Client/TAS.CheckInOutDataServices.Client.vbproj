@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C092F3A2-75DB-4170-AF22-0788537A4881}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>img\TraiDat_s.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>TAS.CheckInOutDataServices.Client</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>TAS.CheckInOutDataServices.Client</RootNamespace>
+    <StartupObject>TAS.CheckInOutDataServices.Client.frmMain_MCC</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TAS.CheckInOutDataServices.Client.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TAS.CheckInOutDataServices.Client.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.zkemkeeper">
+      <HintPath>..\ref\Interop.zkemkeeper.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaloonNotify_MCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfig_MCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain_MCC.Designer.vb">
+      <DependentUpon>frmMain_MCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain_MCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlUICommonFunction.vb" />
+    <Compile Include="mdlUtil.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service References\AttendaceBusiness\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SQLHelper.vb" />
+    <Compile Include="WriteLog.vb" />
+    <Content Include="config_MCC.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config_MCC_LIST.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="config_LIST.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\app_start.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\app_stop.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Query\InsertOracleQuery_MCC.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Query\InsertOracleQuery.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Query\SelectCheckInOutData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Query\SQLSelectDuLieuChamCom.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Query\UpdateIsTranferInOutData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="My Project\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\AttendaceBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\AttendaceBusiness\configuration.svcinfo" />
+    <None Include="Service References\AttendaceBusiness\configuration91.svcinfo" />
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness.disco" />
+    <None Include="img\app.config" />
+    <EmbeddedResource Include="frmConfig_MCC.resx">
+      <DependentUpon>frmConfig_MCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain_MCC.resx">
+      <DependentUpon>frmMain_MCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="img\TraiDat_s.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness.wsdl" />
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AttendaceBusiness\AttendanceBusiness7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_ACTION_LOGDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_COMPENSATORYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_DATAINOUTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_DECLARE_ENTITLEMENTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_DMVSDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_ENTITLEMENTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_FMLDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_GSIGNDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_HOLIDAYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_HOLIDAY_GENERALDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_HOLIDAY_OBJECTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_LATE_COMBACKOUTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_LEAVESHEETDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_LISTPARAM_SYSTEAMDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_PERIODDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_PORTAL_REG_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_REGISTER_OTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_SETUP_SPECIALDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_SETUP_TIME_EMPDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_SHIFTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_SIGNDEFAULTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_SWIPE_DATADTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_TERMINALSDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_TIMESHEET_REGISTERDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_TIME_MANUALDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_TIME_RICEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_TIME_TIMESHEET_DAILYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_TIME_TIMESHEET_MACHINETDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_TIME_TIMESHEET_MONTHLYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_TIME_TIMESHEET_OTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.AT_TIME_TIMESHEET_RICEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.ComboBoxDataDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AttendaceBusiness\TAS.CheckInOutDataServices.Client.AttendaceBusiness.Se_ReportDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LogMCC\" />
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AttendaceBusiness\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

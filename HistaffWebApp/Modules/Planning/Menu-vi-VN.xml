@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Nghiệp vụ"  PostBack="False">
+      <Group>        
+        <Item Value="ctrlPA_SalaryPlan" Text="Xây dựng quỹ lương theo định biên" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_SalaryPlan&amp;group=Business" CheckPermission="true" />
+      </Group>
+    </Item>
+    
+    <Item Text="Báo cáo"  PostBack="False">
+      <Group>
+        <Item Value="ctrlPA_SalaryTracker" Text="Theo dõi tình hình quỹ lương" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_SalaryTracker&amp;group=Report" CheckPermission="true" />
+        <Item Value="ctrlPA_SalaryEmpTracker" Text="Biểu đồ theo dõi quỹ lương" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_SalaryEmpTracker&amp;group=Report" CheckPermission="true" />
+      </Group>
+    </Item>
+    
+    <Item Text="Thiết lập"  PostBack="False">
+      <Group>
+        <Item Value="ctrlPA_SalaryFund" Text="Tổng quỹ lương" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_SalaryFund&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlPA_TitleCost" Text="Chi phí cho chức danh" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlPA_TitleCost&amp;group=Setting" CheckPermission="true" />
+      </Group>
+    </Item>
+  </Group>
+</Menu>

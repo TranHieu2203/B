@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Module">
+      <Group>
+        <Item Value="Organize" Text="Organize" PostBack="True" NavigateUrl="/Default.aspx?mid=Organize&amp;fid=ctrlDashboard"/>
+        <Item Value="Planning" Text="Planning" PostBack="True" NavigateUrl="Default.aspx?mid=Planning&amp;fid=ctrlDashboardPlanning&amp;group=Dashboard"/>
+        <Item Value="Recruitment" Text="Recruitment" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Dashboard&amp;group=Dashboard" />
+        <Item Value="Profile" Text="Profile" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlDashboardProfile&amp;group=Dashboard"/>
+        <Item Value="Insurance" Text="Insurance" PostBack="True" NavigateUrl="Default.aspx?mid=Insurance&amp;fid=ctrlDashboard&amp;group=Dashboard"/>
+        <Item Value="Attendance" Text="Time" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDashboard&amp;group=Dashboard"/>
+        <Item Value="Payroll" Text="Payroll" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlDashboard&amp;group=Dashboard" />
+        <Item Value="Training" Text="Training" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlDashboard&amp;group=Dashboard" />
+        <Item Value="Performance" Text="Performance" PostBack="True" NavigateUrl="Default.aspx?mid=Performance&amp;fid=ctrlDashboard&amp;group=Dashboard" />
+        <Item Value="Competency" Text="Competency" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlDashboard&amp;group=Dashboard" />
+        <Item Value="Common" Text="Secure" PostBack="True" NavigateUrl="/Default.aspx?mid=Secure&amp;fid=ctrlDashboard" />
+      </Group>
+    </Item>
+  </Group>
+</Menu>

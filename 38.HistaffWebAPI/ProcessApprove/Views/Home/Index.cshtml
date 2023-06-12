@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Approve leave";
+}
+@* @model IEnumerable<InfApprove> *@
+@model InfApprove
+<div class="text-center">
+    <img class="clientLogo" src="https://www.upsieutoc.com/images/2020/06/25/logo_TNG.jpg" align="middle" alt="">
+    <form id="subscribeform" method="post" name="subscribeform" asp-action="CalAppProces" style="line-height:26px;padding:15px;text-align:center;">
+         <div class="unsubscribeContent">
+            <div class="mailSubscribe">
+                <strong>@Model?.FULLNAME_VN</strong><br>
+                Gửi yêu cầu nghỉ phép </div>
+               <label for="LEAVE_FROM">Từ @Model?.LEAVE_FROM.ToString("MMMM dd, yyyy")</label><br>
+               <label for="LEAVE_TO">đến @Model?.LEAVE_TO.ToString("MMMM dd, yyyy")</label><br>
+               <label for="LEAVE_TYPE">@Model?.LEAVE_TYPE</label><br>
+               <input type="hidden" name="EMPLOYEE_APPROVED" value="@Model?.EMPLOYEE_APPROVED"><input type="hidden" name="mid" value="258">
+               <input type="hidden" name="EMPLOYEE_ID" value="@Model?.EMPLOYEE_ID"><input type="hidden" name="mid" value="258">
+               <input type="hidden" name="PE_PERIOD_ID" value=@Model?.PE_PERIOD_ID><input type="hidden" name="mid" value="258">
+               <input type="hidden" name="APP_STATUS" value=@Model?.APP_STATUS><input type="hidden" name="mid" value="258">
+               <input type="hidden" name="PROCESS_TYPE" value="@Model?.PROCESS_TYPE"><input type="hidden" name="mid" value="258">
+               <input type="hidden" name="ID_REGGROUP" value=@Model?.ID_REGGROUP><input type="hidden" name="mid" value="258">
+               <input type="hidden" name="FULLNAME_VN" value="@Model?.FULLNAME_VN"><input type="hidden" name="mid" value="258">
+               <input id="APP_NOTES" type="text" class="form-control" name="APP_NOTES" placeholder="Lý do"  >
+               <br><br>
+            @if (@Model?.APP_STATUS == "2" || @Model?.APP_STATUS == "1") {
+            <div style="text-align:center">                 
+                 <input class="primaryBtn" type="submit" name="unsubscribe" value="@Model?.ACTION">  
+           </div>
+            }
+        
+        </div>        
+    </form>
+</div>

@@ -1,0 +1,692 @@
+﻿Imports Framework.UI
+Imports Common
+Imports Common.CommonBusiness
+Imports Telerik.Web.UI
+Imports System.Reflection
+Imports Profile.ProfileBusiness
+Imports System.IO
+Imports Framework.UI.Utilities
+Imports WebAppLog
+
+Public Class ctrlHU_DynamicReport
+    Inherits CommonView
+    Public Shared _myLog As New MyLog()
+    Dim _pathLog As String = _myLog._pathLog
+    Public Shared _classPath As String = "Profile/Modules/Profile/Report/ctrlHU_DynamicReport"
+    Public WithEvents AjaxManager As RadAjaxManager
+    Public Property AjaxManagerId As String
+    Dim sExpression As String
+
+#Region "Property"
+
+    Public Property lstColumn As List(Of RptDynamicColumnDTO)
+        Get
+            Return ViewState(Me.ID & "_lstColumn")
+        End Get
+        Set(ByVal value As List(Of RptDynamicColumnDTO))
+            ViewState(Me.ID & "_lstColumn") = value
+        End Set
+    End Property
+
+    Public Property lstFilterColumn As List(Of RptDynamicColumnDTO)
+        Get
+            Return ViewState(Me.ID & "_lstFilterColumn")
+        End Get
+        Set(ByVal value As List(Of RptDynamicColumnDTO))
+            ViewState(Me.ID & "_lstFilterColumn") = value
+        End Set
+    End Property
+
+    Public Property filters As String
+        Get
+            Return ViewState(Me.ID & "filters")
+        End Get
+        Set(value As String)
+            ViewState(Me.ID & "filters") = value
+        End Set
+    End Property
+
+#End Region
+
+#Region "Page"
+
+    Public Overrides Sub ViewInit(ByVal e As System.EventArgs)
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            AjaxManager = CType(Me.Page, AjaxPage).AjaxManager
+            AjaxManagerId = AjaxManager.ClientID
+            Common.Common.BuildToolbar(tbarExport, ToolbarItem.Export, ToolbarItem.Approve, ToolbarItem.Save, ToolbarItem.Delete)
+            tbarExport.Items(0).Text = Translate("Xuất excel")
+            tbarExport.Items(1).Text = Translate("Xuất pdf")
+            tbarExport.OnClientButtonClicking = "OnClientButtonClicking"
+            AjaxManager.ClientEvents.OnRequestStart = "onRequestStart"
+            ctrlOrganization.AutoPostBack = False
+            ctrlOrganization.LoadDataAfterLoaded = True
+            ctrlOrganization.OrganizationType = OrganizationType.OrganizationLocation
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                               CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+            Throw ex
+        End Try
+    End Sub
+
+    Public Overrides Sub ViewLoad(ByVal e As System.EventArgs)
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            rgData.AllowMultiRowSelection = False
+            rgData.ClientSettings.EnablePostBackOnRowClick = True
+            Refresh()
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+        End Try
+    End Sub
+
+    Public Overrides Sub Refresh(Optional ByVal Message As String = "")
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            Common.Common.DynamicReportDataSession = Nothing
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+            DisplayException(Me.ViewName, Me.ID, ex)
+        End Try
+    End Sub
+
+    Public Overrides Sub BindData()
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            'AccessPanelBar()
+            GetcomboReport()
+            Dim rep As New ProfileReportRepositoty
+
+            If cboReport.Items.Count > 0 Then
+                'cboReport.SelectedIndex = 0
+                If cboReport.SelectedValue <> "" Then
+                    lstColumn = rep.GetDynamicReportColumn(cboReport.SelectedValue)
+                    lstColumns.Items.Clear()
+                    For Each item As RptDynamicColumnDTO In lstColumn
+                        lstColumns.Items.Add(New RadListBoxItem(Translate(item.TRANSLATE), item.COLUMN_NAME))
+                    Next
+
+                    CreateFilter(lstColumn, RadFilter1)
+                End If
+            End If
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+        End Try
+    End Sub
+
+    Private Sub GetcomboReport()
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            Dim rep2 As New ProfileReportRepositoty
+            Dim lstReport As Dictionary(Of Decimal, String) = rep2.GetDynamicReportList(Request.Params("MID"))
+
+            For Each item In lstReport
+                cboReport.Items.Add(New RadComboBoxItem(Translate(item.Value), item.Key.ToString))
+            Next
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+        End Try
+    End Sub
+
+    Public Sub AccessPanelBar()
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            Dim rep2 As New ProfileReportRepositoty
+            Dim lstReport As Dictionary(Of Decimal, String) = rep2.GetDynamicReportList(Request.Params("MID"))
+
+            For Each item In lstReport
+                cboReport.Items.Add(New RadComboBoxItem(Translate(item.Value), item.Key.ToString))
+            Next
+
+            Dim i As Integer = 0
+            ' lặp item của RadPanelBar
+            While (i < cboReport.Items.Count)
+                ' lấy item của đang lặp
+                Dim itm As String = cboReport.Items(i).Value
+                Using rep As New CommonRepository
+                    ' lấy thông tin user đang đăng nhập
+                    Dim user = LogHelper.CurrentUser
+                    ' check xem có phải admin không
+                    Dim GroupAdmin As Boolean = rep.CheckGroupAdmin(Common.Common.GetUsername)
+                    ' nếu không phải admin
+                    If GroupAdmin = False Then
+                        ' lấy quyền của user
+                        Dim permissions As List(Of PermissionDTO) = rep.GetUserPermissions(Common.Common.GetUsername)
+                        ' nếu có quyền
+                        If permissions IsNot Nothing Then
+                            ' kiểm tra các chức năng ngoại trừ chức năng là báo cáo
+                            ' thay vì .value e phải xài .ID đúng không nào ;)
+                            Dim isPermissions = (From p In permissions Where (p.GroupID <> 3 Or p.GroupID <> 1) And p.FID = itm).Any
+                            ' nếu không tồn tại --> xóa item
+                            If Not isPermissions Then
+                                cboReport.Items.Remove(i)
+                                Continue While
+                            End If
+                        End If
+                    Else
+                        ' nếu là admin + có quyền
+                        If user.MODULE_ADMIN = "*" OrElse (user.MODULE_ADMIN IsNot Nothing AndAlso user.MODULE_ADMIN.Contains(Me.ModuleName)) Then
+                        Else
+                            ' xóa nếu admin không có quyền
+                            lstReport.Remove(i)
+                            Continue While
+                        End If
+                    End If
+                End Using
+                i = i + 1
+            End While
+            ' làm tưởng tự tabstrip
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+            Throw ex
+        End Try
+
+
+    End Sub
+
+#End Region
+
+#Region "Event"
+
+    Private Sub tbarExport_ButtonClick(ByVal sender As Object, ByVal e As Telerik.Web.UI.RadToolBarEventArgs) Handles tbarExport.ButtonClick
+        Dim _error As Integer = 0
+        Dim dtData As DataTable
+        Dim sType As Object = Nothing
+        Dim column As New List(Of String)
+        Dim columnType As New List(Of String)
+        Dim columnText As New Dictionary(Of String, String)
+        Dim lstConditionCol As New List(Of HuConditionColDTO)
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            If CType(e.Item, Telerik.Web.UI.RadToolBarButton).CommandName <> CommonMessage.TOOLBARITEM_DELETE Then
+                If lstColumnSelected.Items Is Nothing OrElse lstColumnSelected.Items.Count = 0 Then
+                    ShowMessage(Translate("Bạn chưa chọn cột dữ liệu hiển thị"), Utilities.NotifyType.Error)
+                    Exit Sub
+                End If
+                RadFilter1.FireApplyCommand()
+                For Each item As RadListBoxItem In lstColumnSelected.Items
+                    column.Add(item.Value)
+                    columnText.Add(item.Value.ToUpper, item.Text)
+                    columnType.Add((From p In lstColumn Where p.COLUMN_NAME = item.Value Select p.COLUMN_TYPE).FirstOrDefault)
+                    Dim obj As New HuConditionColDTO
+                    obj.COL_ID = (From p In lstColumn Where p.COLUMN_NAME = item.Value Select p.ID).FirstOrDefault
+                    lstConditionCol.Add(obj)
+                Next
+            End If
+            Using rep As New ProfileReportRepositoty
+                Using xls As New ExcelCommon
+                    Select Case CType(e.Item, Telerik.Web.UI.RadToolBarButton).CommandName
+                        Case CommonMessage.TOOLBARITEM_EXPORT
+                            If ctrlOrganization.CurrentValue = "" Then
+                                ShowMessage(Translate(CommonMessage.MESSAGE_NOT_SELECT_ORG), Utilities.NotifyType.Error)
+                                Exit Sub
+                            End If
+                            sType = ExcelCommon.ExportType.Excel
+                        Case CommonMessage.TOOLBARITEM_APPROVE
+                            If ctrlOrganization.CurrentValue = "" Then
+                                ShowMessage(Translate(CommonMessage.MESSAGE_NOT_SELECT_ORG), Utilities.NotifyType.Error)
+                                Exit Sub
+                            End If
+                            sType = ExcelCommon.ExportType.PDF
+
+                        Case CommonMessage.TOOLBARITEM_SAVE
+                            If txtReportName.Text = "" Then
+                                ShowMessage(Translate("Bạn phải nhập Tên báo cáo"), Utilities.NotifyType.Error)
+                                Exit Sub
+                            End If
+                            Dim SaveReport As New HuDynamicConditionDTO
+                            SaveReport.VIEW_ID = cboReport.SelectedValue
+                            SaveReport.REPORT_NAME = txtReportName.Text
+                            SaveReport.CONDITION = RadFilter1.SaveSettings()
+                            If rep.SaveDynamicReport(SaveReport, lstConditionCol) Then
+                                ShowMessage(Translate(CommonMessage.MESSAGE_TRANSACTION_SUCCESS), NotifyType.Success)
+                                rgData.Rebind()
+                            Else
+                                ShowMessage(Translate(CommonMessage.MESSAGE_TRANSACTION_FAIL), NotifyType.Warning)
+                            End If
+                        Case CommonMessage.TOOLBARITEM_DELETE
+                            If rgData.SelectedValue Is Nothing Then
+                                Exit Sub
+                            End If
+                            If rep.DeleteDynamicReport(rgData.SelectedValue) Then
+                                ShowMessage(Translate(CommonMessage.MESSAGE_TRANSACTION_SUCCESS), NotifyType.Success)
+                                rgData.Rebind()
+                            Else
+                                ShowMessage(Translate(CommonMessage.MESSAGE_TRANSACTION_FAIL), NotifyType.Warning)
+                            End If
+                    End Select
+
+                    If sType IsNot Nothing Then
+                        dtData = rep.GetDynamicReport(cboReport.SelectedValue,
+                                                      ctrlOrganization.CurrentValue,
+                                                      column, sExpression)
+                        Dim i As Integer = 0
+                        For Each dc As DataColumn In dtData.Columns
+                            dc.Caption = columnText(dc.ColumnName)
+                            i = i + 1
+                        Next
+                        Dim bCheck = xls.ExportExcelNoTemplate(Server.MapPath("~/ReportTemplates//" &
+                                                                              Request.Params("mid") & "/" &
+                                                                              Request.Params("group") & "/Dynamic.xls"),
+                                                                          "Dynamic", dtData, Response, _error, sType, 0, txtReportName.Text)
+                        If Not bCheck Then
+                            Select Case _error
+                                Case 1
+                                    ShowMessage(Translate("Mẫu báo cáo không tồn tại"), NotifyType.Warning)
+                                Case 2
+                                    ShowMessage(Translate("Dữ liệu không tồn tại"), NotifyType.Warning)
+                            End Select
+                            Exit Sub
+                        End If
+                    End If
+
+                End Using
+            End Using
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+            ShowMessage(ex.Message, Framework.UI.Utilities.NotifyType.Error)
+        End Try
+    End Sub
+
+    Private Sub RadFilter1_ApplyExpressions(ByVal sender As Object, ByVal e As Telerik.Web.UI.RadFilterApplyExpressionsEventArgs) Handles RadFilter1.ApplyExpressions
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            If ctrlOrganization.CurrentValue = "" Then
+                ShowMessage(Translate(CommonMessage.MESSAGE_NOT_SELECT_ORG), Utilities.NotifyType.Error)
+                Exit Sub
+            End If
+            If lstColumnSelected.Items Is Nothing OrElse lstColumnSelected.Items.Count = 0 Then
+                ShowMessage(Translate("Bạn chưa chọn cột dữ liệu nào"), Utilities.NotifyType.Error)
+                Exit Sub
+            End If
+            Dim provider2 As New RadFilterSqlQueryProvider()
+            provider2.ProcessGroup(e.ExpressionRoot)
+            sExpression = provider2.Result
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+        End Try
+
+    End Sub
+
+    Private Sub RadFilter1_FieldEditorCreating(ByVal sender As Object, ByVal e As Telerik.Web.UI.RadFilterFieldEditorCreatingEventArgs) Handles RadFilter1.FieldEditorCreating
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            If e.EditorType = "RadFilterDateTimeEditor" Then
+                e.Editor = New RadFilterDateTimeEditor()
+            ElseIf e.EditorType = "RadFilterStringEditor" Then
+                e.Editor = New RadFilterStringEditor()
+            End If
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+        End Try
+
+    End Sub
+
+    Private Sub AjaxManager_AjaxRequest(ByVal sender As Object, ByVal e As Telerik.Web.UI.AjaxRequestEventArgs) Handles AjaxManager.AjaxRequest
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            If e.Argument = "Close" Then
+                rwReport.VisibleOnPageLoad = False
+                rwReport.Visible = False
+            End If
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+        End Try
+
+    End Sub
+
+    Private Sub cboReport_SelectedIndexChanged(ByVal sender As Object, ByVal e As RadComboBoxSelectedIndexChangedEventArgs) Handles cboReport.SelectedIndexChanged
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            If cboReport.SelectedValue <> "" Then
+                Dim rep As New ProfileReportRepositoty
+                Dim id As Decimal = Decimal.Parse(cboReport.SelectedValue)
+                lstColumn = rep.GetDynamicReportColumn(id)
+                txtFilter.Text = ""
+                lstColumns.Items.Clear()
+                lstColumnSelected.Items.Clear()
+                RadFilter1.RootGroup.Expressions.Clear()
+                RadFilter1.RecreateControl()
+
+                For Each item As RptDynamicColumnDTO In lstColumn
+                    lstColumns.Items.Add(New RadListBoxItem(Translate(item.TRANSLATE), item.COLUMN_NAME))
+                Next
+                CreateFilter(lstColumn, RadFilter1)
+            Else
+                txtFilter.Text = ""
+                lstColumns.Items.Clear()
+                lstColumnSelected.Items.Clear()
+                RadFilter1.RootGroup.Expressions.Clear()
+                RadFilter1.RecreateControl()
+                RadFilter1.FieldEditors.Clear()
+            End If
+            rgData.Rebind()
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+            DisplayException(Me.ViewName, Me.ID, ex)
+        End Try
+    End Sub
+
+    Private Sub rgData_NeedDataSource(sender As Object, e As Telerik.Web.UI.GridNeedDataSourceEventArgs) Handles rgData.NeedDataSource
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            If cboReport.SelectedValue <> "" Then
+                Using rep As New ProfileReportRepositoty
+                    rgData.DataSource = rep.GetListReportName(cboReport.SelectedValue)
+                End Using
+            Else
+                rgData.DataSource = New List(Of HuDynamicConditionDTO)
+            End If
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+            DisplayException(Me.ViewName, Me.ID, ex)
+        End Try
+    End Sub
+
+    Private Sub rgData_SelectedIndexChanged(sender As Object, e As System.EventArgs) Handles rgData.SelectedIndexChanged
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            If rgData.SelectedItems.Count > 0 Then
+                Dim item = rgData.SelectedValues
+                If item IsNot Nothing Then
+                    txtReportName.Text = item.Item("REPORT_NAME").ToString
+                    RadFilter1.LoadSettings(item.Item("CONDITION").ToString)
+                    Using rep As New ProfileReportRepositoty
+                        lstColumnSelected.DataSource = rep.GetConditionColumn(item.Item("ID"))
+                        lstColumnSelected.DataTextField = "TRANSLATE"
+                        lstColumnSelected.DataValueField = "COLUMN_NAME"
+                        lstColumnSelected.DataBind()
+                    End Using
+                End If
+            End If
+
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                               CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+            DisplayException(Me.ViewName, Me.ID, ex)
+        End Try
+    End Sub
+
+#End Region
+
+#Region "Custom"
+    Public Sub CreateFilter(ByVal _lstColumn As List(Of RptDynamicColumnDTO), ByVal _filter As RadFilter)
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            _filter.FieldEditors.Clear()
+            If _lstColumn Is Nothing Then
+                Exit Sub
+            End If
+            For Each p In _lstColumn
+                If p.COLUMN_TYPE.ToUpper.Contains("VARCHAR") Then
+                    Dim textFieldEditor As New RadFilterStringEditor()
+                    _filter.FieldEditors.Add(textFieldEditor)
+                    textFieldEditor.FieldName = p.COLUMN_NAME
+                    textFieldEditor.DisplayName = Translate(p.TRANSLATE)
+                    textFieldEditor.DataType = GetType(String)
+                ElseIf p.COLUMN_TYPE.ToUpper.Contains("NUMBER") Then
+                    Dim numFieldEditor As New RadFilterNumericFieldEditor()
+                    _filter.FieldEditors.Add(numFieldEditor)
+                    numFieldEditor.FieldName = p.COLUMN_NAME
+                    numFieldEditor.DisplayName = Translate(p.TRANSLATE)
+                    numFieldEditor.DataType = GetType(Decimal)
+                ElseIf p.COLUMN_TYPE.ToUpper.Contains("DATE") Then
+                    Dim dateFieldEditor As New RadFilterDateTimeEditor()
+                    _filter.FieldEditors.Add(dateFieldEditor)
+                    dateFieldEditor.FieldName = p.COLUMN_NAME
+                    dateFieldEditor.DisplayName = Translate(p.TRANSLATE)
+                    dateFieldEditor.DataType = GetType(Object)
+                End If
+            Next
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                               CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+        End Try
+
+    End Sub
+#End Region
+
+#Region "Rad Custome Filter Class"
+    Public Class RadFilterDateTimeEditor
+        Inherits RadFilterDataFieldEditor
+        Protected Overrides Sub CopySettings(ByVal baseEditor As RadFilterDataFieldEditor)
+            Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+            Try
+                Dim startTime As DateTime = DateTime.UtcNow
+                MyBase.CopySettings(baseEditor)
+                Dim editor = TryCast(baseEditor, RadFilterDateTimeEditor)
+                _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+            Catch ex As Exception
+                _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+            End Try
+
+        End Sub
+
+        Public Overrides Function ExtractValues() As System.Collections.ArrayList
+            Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+            Dim list As New ArrayList()
+            Try
+                Dim startTime As DateTime = DateTime.UtcNow
+                If _date1.SelectedDate IsNot Nothing Then
+                    Dim strDate1 As String = _date1.SelectedDate.Value.ToString("dd-MMM-yyyy")
+                    list.Add(strDate1)
+                End If
+                _myLog.WriteLog(_myLog._info, _classPath, method,
+                               CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+            Catch ex As Exception
+                _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+            End Try
+            Return list
+        End Function
+
+        Public Overrides Sub InitializeEditor(ByVal container As System.Web.UI.Control)
+            Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+            Try
+                Dim startTime As DateTime = DateTime.UtcNow
+                _date1 = New RadDatePicker()
+                _date1.ID = "MyDatePicker1"
+                _date1.MinDate = New Date(1900, 1, 1)
+                _date1.MaxDate = New Date(3000, 1, 1)
+                _date1.Width = 100
+                container.Controls.Add(_date1)
+                _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+            Catch ex As Exception
+                _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+            End Try
+
+        End Sub
+
+        Public Overrides Sub SetEditorValues(ByVal values As System.Collections.ArrayList)
+            Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+            Try
+                Dim startTime As DateTime = DateTime.UtcNow
+                If values IsNot Nothing AndAlso values.Count > 0 Then
+                    If values(0) Is Nothing Then
+                        Return
+                    End If
+                    _date1.SelectedDate = CDate(values(0))
+                End If
+                _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+            Catch ex As Exception
+                _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+            End Try
+
+        End Sub
+
+        Private _date1 As RadDatePicker
+    End Class
+
+    Public Class RadFilterStringEditor
+        Inherits RadFilterDataFieldEditor
+        Protected Overrides Sub CopySettings(ByVal baseEditor As RadFilterDataFieldEditor)
+            Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+            Try
+                Dim startTime As DateTime = DateTime.UtcNow
+                MyBase.CopySettings(baseEditor)
+                Dim editor = TryCast(baseEditor, RadFilterStringEditor)
+                _myLog.WriteLog(_myLog._info, _classPath, method,
+                                CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+            Catch ex As Exception
+                _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+            End Try
+
+        End Sub
+
+        Public Overrides Function ExtractValues() As System.Collections.ArrayList
+            Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+            Dim list As New ArrayList()
+            Try
+                Dim startTime As DateTime = DateTime.UtcNow
+                list.Add(_textbox1.Text.ToUpper)
+                _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+            Catch ex As Exception
+                _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+                list = Nothing
+            End Try
+            Return list
+        End Function
+
+        Public Overrides Sub InitializeEditor(ByVal container As System.Web.UI.Control)
+            Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+            Try
+                Dim startTime As DateTime = DateTime.UtcNow
+                _textbox1 = New RadTextBox()
+                _textbox1.ID = "MyTextbox1"
+                _textbox1.Width = 100
+                container.Controls.Add(_textbox1)
+                _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+            Catch ex As Exception
+                _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+            End Try
+
+        End Sub
+
+        Public Overrides Sub SetEditorValues(ByVal values As System.Collections.ArrayList)
+            Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+            Try
+                Dim startTime As DateTime = DateTime.UtcNow
+                If values IsNot Nothing AndAlso values.Count > 0 Then
+                    If values(0) Is Nothing Then
+                        Return
+                    End If
+                    _textbox1.Text = CStr(values(0))
+                End If
+                _myLog.WriteLog(_myLog._info, _classPath, method,
+                              CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+            Catch ex As Exception
+                _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+            End Try
+
+        End Sub
+
+        Private _textbox1 As RadTextBox
+    End Class
+#End Region
+
+    Private Sub RadFilter1_PreRender(ByVal sender As Object, ByVal e As EventArgs) Handles RadFilter1.PreRender
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            Dim menu = TryCast(RadFilter1.FindControl("rfContextMenu"), RadContextMenu)
+            menu.DefaultGroupSettings.Height = Unit.Pixel(300)
+            menu.EnableAutoScroll = True
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                               CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+        End Try
+
+    End Sub
+
+    Protected Sub Button1_Click(sender As Object, e As System.EventArgs)
+        Dim method As String = System.Reflection.MethodBase.GetCurrentMethod().Name.ToString()
+        Try
+            Dim startTime As DateTime = DateTime.UtcNow
+            lstColumns.Items.Clear()
+            If txtFilter.Text.Trim() <> "" Then
+                Dim lstSelect As List(Of String) = (From p In lstColumnSelected.Items Select p.Value).ToList
+                lstFilterColumn = (From p In lstColumn
+                                   Where p.TRANSLATE.ToUpper.Contains(txtFilter.Text.Trim().ToUpper)).ToList
+                For Each item As RptDynamicColumnDTO In lstFilterColumn
+                    If Not lstSelect.Contains(item.COLUMN_NAME) Then
+                        lstColumns.Items.Add(New RadListBoxItem(Translate(item.TRANSLATE), item.COLUMN_NAME))
+                    End If
+                Next
+                CreateFilter(lstFilterColumn, RadFilter1)
+            Else
+                Dim lstSelect As List(Of String) = (From p In lstColumnSelected.Items Select p.Value).ToList
+                For Each item As RptDynamicColumnDTO In lstColumn
+                    If Not lstSelect.Contains(item.COLUMN_NAME) Then
+                        lstColumns.Items.Add(New RadListBoxItem(Translate(item.TRANSLATE), item.COLUMN_NAME))
+                    End If
+                Next
+                CreateFilter(lstColumn, RadFilter1)
+            End If
+            _myLog.WriteLog(_myLog._info, _classPath, method,
+                               CLng(DateTime.UtcNow.Subtract(startTime).TotalSeconds).ToString(), Nothing, "")
+        Catch ex As Exception
+            _myLog.WriteLog(_myLog._error, _classPath, method, 0, ex, "")
+
+        End Try
+
+    End Sub
+End Class

@@ -1,0 +1,807 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{A6FC8CA6-5142-418E-888D-2E05B190FF9A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Insurance</RootNamespace>
+    <AssemblyName>Insurance</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Insurance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Insurance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.0.3.0, Culture=neutral, PublicKeyToken=12d8fa3d810c48da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\ref\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\ref\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.Design, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\ref\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\ref\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InsuranceRepository.Dashboard.vb" />
+    <Compile Include="InsuranceRepository.Business.vb" />
+    <Compile Include="InsuranceRepository.Common.vb" />
+    <Compile Include="InsuranceRepository.List.vb" />
+    <Compile Include="InsuranceRepositoryBase.vb" />
+    <Compile Include="InsuranceRepositoryStatic.vb" />
+    <Compile Include="InsuranceRepository.vb" />
+    <Compile Include="Modules\Business\ctrlInsArisingLeaveSheet.ascx.designer.vb">
+      <DependentUpon>ctrlInsArisingLeaveSheet.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsArisingLeaveSheet.ascx.vb">
+      <DependentUpon>ctrlInsArisingLeaveSheet.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerChangeNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlInsManagerChangeNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerChangeNewEdit.ascx.vb">
+      <DependentUpon>ctrlInsManagerChangeNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerChange.ascx.designer.vb">
+      <DependentUpon>ctrlInsManagerChange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerChange.ascx.vb">
+      <DependentUpon>ctrlInsManagerChange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsArising.ascx.designer.vb">
+      <DependentUpon>ctrlInsArising.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsArising.ascx.vb">
+      <DependentUpon>ctrlInsArising.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsArisingManual.ascx.designer.vb">
+      <DependentUpon>ctrlInsArisingManual.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsArisingManual.ascx.vb">
+      <DependentUpon>ctrlInsArisingManual.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsArisingManualMng.ascx.designer.vb">
+      <DependentUpon>ctrlInsArisingManualMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsArisingManualMng.ascx.vb">
+      <DependentUpon>ctrlInsArisingManualMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsHealthExt.ascx.designer.vb">
+      <DependentUpon>ctrlInsHealthExt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsHealthExt.ascx.vb">
+      <DependentUpon>ctrlInsHealthExt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsHealthImport.ascx.designer.vb">
+      <DependentUpon>ctrlInsHealthImport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsHealthImport.ascx.vb">
+      <DependentUpon>ctrlInsHealthImport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsInformations.ascx.designer.vb">
+      <DependentUpon>ctrlInsInformations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsInformations.ascx.vb">
+      <DependentUpon>ctrlInsInformations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsInformationsMng.ascx.designer.vb">
+      <DependentUpon>ctrlInsInformationsMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsInformationsMng.ascx.vb">
+      <DependentUpon>ctrlInsInformationsMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsWorkingBefore.ascx.designer.vb">
+      <DependentUpon>ctrlInsWorkingBefore.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsWorkingBefore.ascx.vb">
+      <DependentUpon>ctrlInsWorkingBefore.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerHeathIns.ascx.designer.vb">
+      <DependentUpon>ctrlInsManagerHeathIns.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerHeathIns.ascx.vb">
+      <DependentUpon>ctrlInsManagerHeathIns.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerSunCareNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlInsManagerSunCareNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerSunCareNewEdit.ascx.vb">
+      <DependentUpon>ctrlInsManagerSunCareNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsMaternityDetail.ascx.designer.vb">
+      <DependentUpon>ctrlInsMaternityDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsMaternityDetail.ascx.vb">
+      <DependentUpon>ctrlInsMaternityDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsMaternityMng.ascx.designer.vb">
+      <DependentUpon>ctrlInsMaternityMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsMaternityMng.ascx.vb">
+      <DependentUpon>ctrlInsMaternityMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsModifyInfor.ascx.designer.vb">
+      <DependentUpon>ctrlInsModifyInfor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsModifyInfor.ascx.vb">
+      <DependentUpon>ctrlInsModifyInfor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsRegimes.ascx.designer.vb">
+      <DependentUpon>ctrlInsRegimes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsRegimes.ascx.vb">
+      <DependentUpon>ctrlInsRegimes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsRegimesMng.ascx.designer.vb">
+      <DependentUpon>ctrlInsRegimesMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsRegimesMng.ascx.vb">
+      <DependentUpon>ctrlInsRegimesMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsTotalSalary.ascx.designer.vb">
+      <DependentUpon>ctrlInsTotalSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsTotalSalary.ascx.vb">
+      <DependentUpon>ctrlInsTotalSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlManGroupSunCareNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlManGroupSunCareNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlManGroupSunCareNewEdit.ascx.vb">
+      <DependentUpon>ctrlManGroupSunCareNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlManGroupSunCare.ascx.designer.vb">
+      <DependentUpon>ctrlManGroupSunCare.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlManGroupSunCare.ascx.vb">
+      <DependentUpon>ctrlManGroupSunCare.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerHeathInsNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlInsManagerHeathInsNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerHeathInsNewEdit.ascx.vb">
+      <DependentUpon>ctrlInsManagerHeathInsNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsRemigeManager.ascx.designer.vb">
+      <DependentUpon>ctrlInsRemigeManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsRemigeManager.ascx.vb">
+      <DependentUpon>ctrlInsRemigeManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlImport_ManagerInfo.ascx.designer.vb">
+      <DependentUpon>ctrlImport_ManagerInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlImport_ManagerInfo.ascx.vb">
+      <DependentUpon>ctrlImport_ManagerInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsChange.ascx.designer.vb">
+      <DependentUpon>ctrlInsChange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsChange.ascx.vb">
+      <DependentUpon>ctrlInsChange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsChangeNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlInsChangeNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsChangeNewEdit.ascx.vb">
+      <DependentUpon>ctrlInsChangeNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsInfoOld.ascx.designer.vb">
+      <DependentUpon>ctrlInsInfoOld.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsInfoOld.ascx.vb">
+      <DependentUpon>ctrlInsInfoOld.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsInfoOldNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlInsInfoOldNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsInfoOldNewEdit.ascx.vb">
+      <DependentUpon>ctrlInsInfoOldNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsClosedNew.ascx.designer.vb">
+      <DependentUpon>ctrlInsClosedNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsClosedNew.ascx.vb">
+      <DependentUpon>ctrlInsClosedNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsRemigeManagerNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlInsRemigeManagerNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsRemigeManagerNewEdit.ascx.vb">
+      <DependentUpon>ctrlInsRemigeManagerNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlManInfoIns.ascx.designer.vb">
+      <DependentUpon>ctrlManInfoIns.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlManInfoIns.ascx.vb">
+      <DependentUpon>ctrlManInfoIns.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlManInfoInsNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlManInfoInsNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlManInfoInsNewEdit.ascx.vb">
+      <DependentUpon>ctrlManInfoInsNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerSunCare.ascx.designer.vb">
+      <DependentUpon>ctrlInsManagerSunCare.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Business\ctrlInsManagerSunCare.ascx.vb">
+      <DependentUpon>ctrlInsManagerSunCare.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Business\Store_Insurance_Business.vb" />
+    <Compile Include="Modules\Dashboard\ctrlDashboardSixCell.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlDashboardSixCell.ascx.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlIns_DBInsPayFundDetail.ascx.designer.vb">
+      <DependentUpon>ctrlIns_DBInsPayFundDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlIns_DBInsPayFundDetail.ascx.vb">
+      <DependentUpon>ctrlIns_DBInsPayFundDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlDashboard.ascx.designer.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlDashboard.ascx.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlIns_DBInsCeiling.ascx.designer.vb">
+      <DependentUpon>ctrlIns_DBInsCeiling.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlIns_DBInsCeiling.ascx.vb">
+      <DependentUpon>ctrlIns_DBInsCeiling.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlIns_DBInsRate.ascx.designer.vb">
+      <DependentUpon>ctrlIns_DBInsRate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlIns_DBInsRate.ascx.vb">
+      <DependentUpon>ctrlIns_DBInsRate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlIns_DBInsPayFund.ascx.designer.vb">
+      <DependentUpon>ctrlIns_DBInsPayFund.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Dashboard\ctrlIns_DBInsPayFund.ascx.vb">
+      <DependentUpon>ctrlIns_DBInsPayFund.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\InsCommon.vb" />
+    <Compile Include="Modules\List\ctrlInsTypechange.ascx.designer.vb">
+      <DependentUpon>ctrlInsTypechange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsTypechange.ascx.vb">
+      <DependentUpon>ctrlInsTypechange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlDMGroupRegimes.ascx.designer.vb">
+      <DependentUpon>ctrlDMGroupRegimes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlDMGroupRegimes.ascx.vb">
+      <DependentUpon>ctrlDMGroupRegimes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlDMCostLever.ascx.designer.vb">
+      <DependentUpon>ctrlDMCostLever.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlDMCostLever.ascx.vb">
+      <DependentUpon>ctrlDMCostLever.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlDMRegion.ascx.designer.vb">
+      <DependentUpon>ctrlDMRegion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlDMRegion.ascx.vb">
+      <DependentUpon>ctrlDMRegion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsList.ascx.designer.vb">
+      <DependentUpon>ctrlInsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsList.ascx.vb">
+      <DependentUpon>ctrlInsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListOrgInsurance.ascx.designer.vb">
+      <DependentUpon>ctrlInsListOrgInsurance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListOrgInsurance.ascx.vb">
+      <DependentUpon>ctrlInsListOrgInsurance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListContract.ascx.designer.vb">
+      <DependentUpon>ctrlInsListContract.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListContract.ascx.vb">
+      <DependentUpon>ctrlInsListContract.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListContractNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlInsListContractNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListContractNewEdit.ascx.vb">
+      <DependentUpon>ctrlInsListContractNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsObjectPayInsurrance.ascx.designer.vb">
+      <DependentUpon>ctrlInsObjectPayInsurrance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsObjectPayInsurrance.ascx.vb">
+      <DependentUpon>ctrlInsObjectPayInsurrance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlDMNoiKhamChuaBenh.ascx.designer.vb">
+      <DependentUpon>ctrlDMNoiKhamChuaBenh.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlDMNoiKhamChuaBenh.ascx.vb">
+      <DependentUpon>ctrlDMNoiKhamChuaBenh.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListArisingType.ascx.designer.vb">
+      <DependentUpon>ctrlInsListArisingType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListArisingType.ascx.vb">
+      <DependentUpon>ctrlInsListArisingType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListParamInsurance.ascx.designer.vb">
+      <DependentUpon>ctrlInsListParamInsurance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListParamInsurance.ascx.vb">
+      <DependentUpon>ctrlInsListParamInsurance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListRegimes.ascx.designer.vb">
+      <DependentUpon>ctrlInsListRegimes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\List\ctrlInsListRegimes.ascx.vb">
+      <DependentUpon>ctrlInsListRegimes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\List\Store_Insurance_List.vb" />
+    <Compile Include="Modules\Report\ctrlINS_ReportList.ascx.designer.vb">
+      <DependentUpon>ctrlINS_ReportList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Report\ctrlINS_ReportList.ascx.vb">
+      <DependentUpon>ctrlINS_ReportList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\InsuranceBusiness\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="My Project\DataSources\System.Data.DataTable.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Modules\Business\ctrlInsArisingLeaveSheet.ascx" />
+    <Content Include="Modules\Business\ctrlInsManagerChangeNewEdit.ascx" />
+    <Content Include="Modules\Business\ctrlInsManagerChange.ascx" />
+    <Content Include="Modules\Business\ctrlInsArising.ascx" />
+    <Content Include="Modules\Business\ctrlInsArisingManual.ascx" />
+    <Content Include="Modules\Business\ctrlInsArisingManualMng.ascx" />
+    <Content Include="Modules\Business\ctrlInsHealthExt.ascx" />
+    <Content Include="Modules\Business\ctrlInsHealthImport.ascx" />
+    <Content Include="Modules\Business\ctrlInsInformations.ascx" />
+    <Content Include="Modules\Business\ctrlInsInformationsMng.ascx" />
+    <Content Include="Modules\Business\ctrlInsWorkingBefore.ascx" />
+    <Content Include="Modules\Business\ctrlInsManagerHeathIns.ascx" />
+    <Content Include="Modules\Business\ctrlInsManagerSunCareNewEdit.ascx" />
+    <Content Include="Modules\Business\ctrlInsMaternityDetail.ascx" />
+    <Content Include="Modules\Business\ctrlInsMaternityMng.ascx" />
+    <Content Include="Modules\Business\ctrlInsModifyInfor.ascx" />
+    <Content Include="Modules\Business\ctrlInsRegimes.ascx" />
+    <Content Include="Modules\Business\ctrlInsRegimesMng.ascx" />
+    <Content Include="Modules\Business\ctrlInsTotalSalary.ascx" />
+    <Content Include="Modules\Business\ctrlManGroupSunCareNewEdit.ascx" />
+    <Content Include="Modules\Business\ctrlManGroupSunCare.ascx" />
+    <Content Include="Modules\Business\ctrlInsManagerHeathInsNewEdit.ascx" />
+    <Content Include="Modules\Business\ctrlInsRemigeManager.ascx" />
+    <Content Include="Modules\Business\ctrlImport_ManagerInfo.ascx" />
+    <Content Include="Modules\Business\ctrlInsChange.ascx" />
+    <Content Include="Modules\Business\ctrlInsChangeNewEdit.ascx" />
+    <Content Include="Modules\Business\ctrlInsInfoOld.ascx" />
+    <Content Include="Modules\Business\ctrlInsInfoOldNewEdit.ascx" />
+    <Content Include="Modules\Business\ctrlInsClosedNew.ascx" />
+    <Content Include="Modules\Business\ctrlInsRemigeManagerNewEdit.ascx" />
+    <Content Include="Modules\Business\ctrlManInfoIns.ascx" />
+    <Content Include="Modules\Business\ctrlManInfoInsNewEdit.ascx" />
+    <Content Include="Modules\Business\ctrlInsManagerSunCare.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindOrgPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopup.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Common\ctrlOrganization.ascx" />
+    <Content Include="Modules\Common\ctrlUpload.ascx" />
+    <None Include="Service References\InsuranceBusiness\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\configuration91.svcinfo" />
+    <None Include="Service References\InsuranceBusiness\configuration.svcinfo" />
+    <None Include="Service References\InsuranceBusiness\Framework.Data.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.ComboBoxDataDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.EmployeeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_ARISINGDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_ARISING_LEAVESHEET_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_CHANGEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_CHANGE_INFO_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_CHANGE_TYPEDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_CLAIME_INSURANCEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_COST_FOLLOW_LEVERDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_ENTITLED_TYPE_DTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_GROUP_REGIMESDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_GROUP_SUN_CAREDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_HEALTH_INSURANCE_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_INFOOLDDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_INFORMATIONDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Modules\List\ctrlInsTypechange.ascx" />
+    <Content Include="Modules\List\ctrlInsList.ascx" />
+    <Content Include="Modules\List\ctrlInsListContract.ascx" />
+    <Content Include="Modules\List\ctrlInsListContractNewEdit.ascx" />
+    <Content Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_LIST_PROGRAMDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_LIST_CONTRACTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_LIST_CONTRACT_DETAILDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_REGION_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_REMIGE_MANAGER_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_SPECIFIED_OBJECTS_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_SPECIFIED_OBJECTS_DTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_SUN_CARE_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_WHEREHEALTHDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.INS_WORKING_BEFOREDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.Se_ReportDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.StatisticDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.StatisticInsCeilingDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Insurance.InsuranceBusiness.StatisticInsRateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InsuranceBusiness\InsuranceBusiness.wsdl" />
+    <None Include="Service References\InsuranceBusiness\InsuranceBusiness.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\InsuranceBusiness1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\InsuranceBusiness2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\InsuranceBusiness3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\InsuranceBusiness4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\InsuranceBusiness5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\InsuranceBusiness6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\InsuranceDAL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InsuranceBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Modules\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Dashboard\ctrlIns_DBInsPayFundDetail.ascx" />
+    <Content Include="Modules\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Dashboard\ctrlIns_DBInsCeiling.ascx" />
+    <Content Include="Modules\Dashboard\ctrlIns_DBInsRate.ascx" />
+    <Content Include="Modules\Dashboard\ctrlIns_DBInsPayFund.ascx" />
+    <Content Include="Modules\List\ctrlDMGroupRegimes.ascx" />
+    <Content Include="Modules\List\ctrlDMCostLever.ascx" />
+    <Content Include="Modules\List\ctrlDMRegion.ascx" />
+    <Content Include="Modules\List\ctrlInsListOrgInsurance.ascx" />
+    <Content Include="Modules\List\ctrlInsObjectPayInsurrance.ascx" />
+    <Content Include="Modules\List\ctrlDMNoiKhamChuaBenh.ascx" />
+    <None Include="Service References\InsuranceBusiness\InsuranceBusiness.disco" />
+    <Content Include="Modules\List\ctrlInsListArisingType.ascx" />
+    <Content Include="Modules\List\ctrlInsListParamInsurance.ascx" />
+    <Content Include="Modules\List\ctrlInsListRegimes.ascx" />
+    <Content Include="Modules\Report\ctrlINS_ReportList.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vbproj">
+      <Project>{4b2ef214-7880-45f2-bb79-b394e552b4be}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.UI.vbproj">
+      <Project>{514CC57F-03AA-4D18-9BF2-3F7B66F6AD9B}</Project>
+      <Name>Framework.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFrameworkPublic\HistaffFrameworkPublic.vbproj">
+      <Project>{5d0cffd8-3ef0-4584-818f-3f165bd8de0c}</Project>
+      <Name>HistaffFrameworkPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Profile\Profile.vbproj">
+      <Project>{B8148AB7-8752-487B-ABA0-DDA56B917E35}</Project>
+      <Name>Profile %28Profile\Profile%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAppLog\WebAppLog.vbproj">
+      <Project>{780365C3-C031-4841-9B4C-B39840797596}</Project>
+      <Name>WebAppLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\InsuranceBusiness\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4560</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/ins</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

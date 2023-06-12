@@ -1,0 +1,33 @@
+﻿Public Class AT_DMVSDTO
+    Public Property ID As Decimal
+    Public Property PERIOD_ID As Decimal?
+    Public Property CODE As String
+    Public Property NAME_VN As String
+    Public Property MUC1 As Decimal?
+    Public Property LOAIPHAT1 As Decimal?
+    Public Property LOAIPHAT1_NAME As String
+    Public Property GIATRI1 As Decimal?
+    Public Property MUC2 As Decimal?
+    Public Property LOAIPHAT2 As Decimal?
+    Public Property LOAIPHAT2_NAME As String
+    Public Property GIATRI2 As Decimal?
+    Public Property MUC3 As Decimal?
+    Public Property LOAIPHAT3 As Decimal?
+    Public Property LOAIPHAT3_NAME As String
+    Public Property GIATRI3 As Decimal?
+    Public Property MUC4 As Decimal?
+    Public Property LOAIPHAT4 As Decimal?
+    Public Property LOAIPHAT4_NAME As String
+    Public Property GIATRI4 As Decimal?
+    Public Property MUC5 As Decimal?
+    Public Property LOAIPHAT5 As Decimal?
+    Public Property LOAIPHAT5_NAME As String
+    Public Property GIATRI5 As Decimal?
+    Public Property ACTFLG As String
+    Public Property CREATED_DATE As Date?
+    Public Property CREATED_BY As String
+    Public Property CREATED_LOG As String
+    Public Property MODIFIED_DATE As Date?
+    Public Property MODIFIED_BY As String
+    Public Property MODIFIED_LOG As String
+End Class

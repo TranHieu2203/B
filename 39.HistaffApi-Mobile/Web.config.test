@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="oracle.manageddataaccess.client" type="OracleInternal.Common.ODPMSectionHandler, Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342"/>
+  </configSections>
+  <appSettings>
+    <add key="DbConnection" value="Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.60.22)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)));User ID=HISTAFF_OMS_R3_DEMO;Password=hrm;"/>
+    <add key="DbOMConnection" value="Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.60.22)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)));User ID=HISTAFF_OMS_R3_DEMO;Password=hrm;"/>
+    <add key="webpages:Version" value="3.0.0.0"/>
+    <add key="webpages:Enabled" value="false"/>
+    <add key="ClientValidationEnabled" value="true"/>
+    <add key="UnobtrusiveJavaScriptEnabled" value="true"/>
+    <add key="PortalUrl" value="http://demo.tinhvanconsulting.com"/>
+    <add key="PortalPort" value="6427"/>
+    <add key="DomainEmail" value="@tinhvan.com"/>
+    <add key="FilebaseApiNotify" value="https://fcm.googleapis.com/fcm/send"/>
+    <add key="FilebaseApiKey" value="key=AAAAx1H7Hqk:APA91bEg3MWvoR1KLzIsT2XYzL9CWBLfrD5wnzCPXvcOlmY4jCGi4ysQztVVBp84hzcWe43qTzqWBY6twElam2DbZhJRsFdrZoIdggkLAKKmj45jJftSJjKn5hAAsf7zcxPcjQsIoQ3M"/>
+  </appSettings>
+  <system.serviceModel>
+    <bindings>
+      <wsHttpBinding>
+        <binding name="WSHttpBinding_IAttendanceBusiness" closeTimeout="00:05:00"
+          openTimeout="00:05:00" receiveTimeout="00:10:00" sendTimeout="00:05:00"
+          bypassProxyOnLocal="false" maxBufferPoolSize="0" maxReceivedMessageSize="2147483647"
+          useDefaultWebProxy="true" allowCookies="false">
+          <reliableSession inactivityTimeout="00:30:00" enabled="true" />
+          <security mode="None" />
+        </binding>
+        <binding name="WSHttpBinding_ICommonBusiness" closeTimeout="00:05:00"
+          openTimeout="00:05:00" receiveTimeout="00:10:00" sendTimeout="00:05:00"
+          bypassProxyOnLocal="false" maxBufferPoolSize="0" maxReceivedMessageSize="655360000"
+          useDefaultWebProxy="true" allowCookies="false">
+          <reliableSession inactivityTimeout="00:30:00" enabled="true" />
+          <security mode="None" />
+        </binding>
+        <binding name="WSHttpBinding_IProfileBusiness" closeTimeout="00:05:00"
+          openTimeout="00:05:00" receiveTimeout="00:10:00" sendTimeout="00:05:00"
+          bypassProxyOnLocal="false" maxBufferPoolSize="0" maxReceivedMessageSize="655360000"
+          useDefaultWebProxy="true" allowCookies="false">
+          <reliableSession inactivityTimeout="00:30:00" enabled="true" />
+          <security mode="None" />
+        </binding>
+        <binding name="WSHttpBinding_IPayrollBusiness" closeTimeout="00:05:00"
+          openTimeout="00:05:00" receiveTimeout="00:10:00" sendTimeout="00:05:00"
+          bypassProxyOnLocal="false" maxBufferPoolSize="0" maxReceivedMessageSize="2147483647"
+          useDefaultWebProxy="true" allowCookies="false">
+          <reliableSession inactivityTimeout="00:30:00" enabled="true" />
+          <security mode="None" />
+        </binding>
+        <binding name="WSHttpBinding_IPortalBusiness" closeTimeout="00:05:00"
+          openTimeout="00:05:00" receiveTimeout="00:10:00" sendTimeout="00:05:00"
+          bypassProxyOnLocal="false" maxBufferPoolSize="0" maxReceivedMessageSize="2147483647"
+          useDefaultWebProxy="true" allowCookies="false">
+          <reliableSession inactivityTimeout="00:30:00" enabled="true" />
+          <security mode="None" />
+        </binding>
+      </wsHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://demo.tinhvanconsulting.com:6425/CommonBusiness.svc"
+        binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_ICommonBusiness"
+        contract="CommonBusiness.ICommonBusiness" name="WSHttpBinding_ICommonBusiness">
+        <identity>
+          <servicePrincipalName value="HistaffService" />
+        </identity>
+      </endpoint>
+      <endpoint address="http://demo.tinhvanconsulting.com:6425/PayrollBusiness.svc"
+        binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_IPayrollBusiness"
+        contract="PayrollBusiness.IPayrollBusiness" name="WSHttpBinding_IPayrollBusiness">
+        <identity>
+          <dns value="localhost" />
+        </identity>
+      </endpoint>
+      <endpoint address="http://demo.tinhvanconsulting.com:6425/ProfileBusiness.svc"
+        binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_IProfileBusiness"
+        contract="ProfileBusiness.IProfileBusiness" name="WSHttpBinding_IProfileBusiness">
+        <identity>
+          <dns value="localhost" />
+        </identity>
+      </endpoint>
+      <endpoint address="http://demo.tinhvanconsulting.com:6425/PortalBusiness.svc"
+        binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_IPortalBusiness"
+        contract="PortalBusiness.IPortalBusiness" name="WSHttpBinding_IPortalBusiness">
+        <identity>
+          <dns value="localhost" />
+        </identity>
+      </endpoint>
+      <endpoint address="http://demo.tinhvanconsulting.com:6425/AttendanceBusiness.svc"
+        binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_IAttendanceBusiness"
+        contract="AttendanceBusiness.IAttendanceBusiness" name="WSHttpBinding_IAttendanceBusiness" />
+    </client>
+  </system.serviceModel>
+  <system.web>
+    <compilation debug="true" targetFramework="4.5.2"/>
+    <httpRuntime targetFramework="4.5"/>
+  </system.web>
+  <system.codedom>
+    <compilers>
+      <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:6 /nowarn:1659;1699;1701"/>
+      <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:14 /nowarn:41008 /define:_MYTYPE=\&quot;Web\&quot; /optionInfer+"/>
+    </compilers>
+  </system.codedom>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			<dependentAssembly>
+				<assemblyIdentity name="System.Web.Mvc" publicKeyToken="31BF3856AD364E35" culture="neutral"/>
+				<bindingRedirect oldVersion="0.0.0.0-5.2.7.0" newVersion="5.2.7.0"/>
+			</dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Autofac" publicKeyToken="17863af14b0044da" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-4.9.4.0" newVersion="4.9.4.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-7.0.0.0" newVersion="7.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Http" publicKeyToken="31bf3856ad364e35" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-5.2.7.0" newVersion="5.2.7.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Net.Http.Formatting" publicKeyToken="31bf3856ad364e35" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-5.2.7.0" newVersion="5.2.7.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <publisherPolicy apply="no"/>
+        <assemblyIdentity name="Oracle.ManagedDataAccess" publicKeyToken="89b483f429c47342" culture="neutral"/>
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.webServer>
+    <handlers>
+      <remove name="ExtensionlessUrlHandler-Integrated-4.0"/>
+      <remove name="OPTIONSVerbHandler"/>
+      <remove name="TRACEVerbHandler"/>
+      <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*." verb="*" type="System.Web.Handlers.TransferRequestHandler" preCondition="integratedMode,runtimeVersionv4.0"/>
+    </handlers>
+  </system.webServer>
+  <system.data>
+    <DbProviderFactories>
+      <remove invariant="Oracle.ManagedDataAccess.Client"/>
+      <add name="ODP.NET, Managed Driver" invariant="Oracle.ManagedDataAccess.Client" description="Oracle Data Provider for .NET, Managed Driver" type="Oracle.ManagedDataAccess.Client.OracleClientFactory, Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342"/>
+    </DbProviderFactories>
+  </system.data>
+  <!--<oracle.manageddataaccess.client>
+    <version number="*">
+      <dataSources>
+        <dataSource alias="SampleDataSource" descriptor="(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCL))) "/>
+      </dataSources>
+    </version>
+  </oracle.manageddataaccess.client>-->
+</configuration>

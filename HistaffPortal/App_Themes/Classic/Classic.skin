@@ -1,0 +1,196 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+   
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+<asp:GridView runat="server" SkinID=""
+        CellPadding="4" ForeColor="#333333" GridLines="None">
+    <FooterStyle BackColor="#F1F1F1" Font-Bold="True" ForeColor="White" />
+    <RowStyle BackColor="#EFF3FB" />
+    <PagerStyle BackColor="#2461BF" ForeColor="White" 
+        HorizontalAlign="Center" />
+    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" 
+        ForeColor="#333333" />
+    <HeaderStyle BackColor="#F1F1F1" Font-Bold="True" ForeColor="White" />
+    <EditRowStyle BackColor="#2461BF" />
+    <AlternatingRowStyle BackColor="White" />
+</asp:GridView>
+--%>
+<tlk:RadMenu runat ="server" SkinID="Module"></tlk:RadMenu>
+<tlk:RadMenu runat ="server"></tlk:RadMenu>
+<tlk:RadToolBar runat ="server" SkinID="QuickLaunch" CausesValidation="false" Width="100%"></tlk:RadToolBar>
+
+<tlk:RadToolBar SkinID ="" EnableRoundedCorners="true" EnableShadows="false" runat ="Server" Width="100%"></tlk:RadToolBar>
+
+<tlk:RadComboBox runat="server"  AllowCustomText="true" MarkFirstMatch="true" Filter="Contains" DropDownAutoWidth="Enabled" />
+
+<tlk:RadComboBox runat="server" SkinID="dDropdownList" DropDownAutoWidth="Enabled"/>
+
+<tlk:RadComboBox runat="server" MaxHeight="200px"  DropDownAutoWidth="Enabled"  
+EnableLoadOnDemand="True" EnableVirtualScrolling="true" ItemsPerRequest="20" SkinID="LoadDemand"
+ Filter=None />
+
+<tlk:RadFormDecorator runat="server" SkinID="">
+</tlk:RadFormDecorator>
+
+<tlk:RadGrid runat="server" 
+    AllowPaging="true"
+    AllowSorting="true"
+    GridLines ="Both"
+     
+    AutoGenerateColumns="false"
+    AllowMultiRowSelection="true"
+    PagerStyle-AlwaysVisible="true">
+    <GroupingSettings CaseSensitive="false"></GroupingSettings>
+    <ExportSettings ExportOnlyData="true" IgnorePaging="true" HideStructureColumns="true"></ExportSettings>
+    <ClientSettings ReorderColumnsOnClient="True" EnableRowHoverStyle="true">
+        <Selecting AllowRowSelect="True" />
+        <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="True">
+        </Scrolling>
+        <Resizing AllowColumnResize="true" />
+        <ClientEvents OnFilterMenuShowing ="FilterMenuShowing" />
+    </ClientSettings>
+    <MasterTableView TableLayout="Fixed" ShowHeadersWhenNoRecords="true" HeaderStyle-HorizontalAlign="Center">
+        <PagerStyle Mode="NextPrevAndNumeric" PageSizes="10,20,50,100,200,500" />
+    </MasterTableView>
+</tlk:RadGrid>
+
+<tlk:RadGrid runat="server" SkinID="GridSingleSelect"
+    AllowPaging="true"
+    AllowSorting="true"
+    GridLines ="Both" 
+     
+    AutoGenerateColumns="false"
+    AllowMultiRowSelection="false"
+    PagerStyle-AlwaysVisible="true">
+    <GroupingSettings CaseSensitive="false"></GroupingSettings>
+    <ExportSettings ExportOnlyData="true" IgnorePaging="true" HideStructureColumns="true"></ExportSettings>
+    <ClientSettings ReorderColumnsOnClient="True" EnableRowHoverStyle="true">
+        <Selecting AllowRowSelect="True" />
+        <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="True">
+        </Scrolling>
+        <Resizing AllowColumnResize="true" />
+        <ClientEvents OnFilterMenuShowing ="FilterMenuShowing" />
+    </ClientSettings>
+    <MasterTableView TableLayout="Fixed" ShowHeadersWhenNoRecords="true" HeaderStyle-HorizontalAlign="Center">
+        <PagerStyle Mode="NextPrevAndNumeric" PageSizes="10,20,50,100,200,500" />
+    </MasterTableView>
+</tlk:RadGrid>
+
+<tlk:RadGrid runat="server" SkinID="GridNotSelect"
+    AllowPaging="true"
+    AllowSorting="true"
+    GridLines ="Both" 
+     
+    AutoGenerateColumns="false"
+    AllowMultiRowSelection="false"
+    PagerStyle-AlwaysVisible="true">
+    <GroupingSettings CaseSensitive="false"></GroupingSettings>
+    <ExportSettings ExportOnlyData="true" IgnorePaging="true" HideStructureColumns="true"></ExportSettings>
+    <ClientSettings ReorderColumnsOnClient="True" EnableRowHoverStyle="False">
+        <Selecting AllowRowSelect="False" />
+        <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="True">
+        </Scrolling>
+        <Resizing AllowColumnResize="true" />
+        <ClientEvents OnFilterMenuShowing ="FilterMenuShowing" />
+    </ClientSettings>
+    <MasterTableView TableLayout="Fixed" ShowHeadersWhenNoRecords="true" HeaderStyle-HorizontalAlign="Center">
+        <PagerStyle Mode="NextPrevAndNumeric" PageSizes="10,20,50,100,200,500" />
+    </MasterTableView>
+</tlk:RadGrid>
+
+<tlk:RadGrid runat="server" SkinID="GridNotPaging"
+    AllowPaging="false"
+    AllowSorting="true"
+    GridLines ="Both" 
+     
+    AutoGenerateColumns="false"
+    AllowMultiRowSelection="false"
+    PagerStyle-AlwaysVisible="true">
+    <GroupingSettings CaseSensitive="false"></GroupingSettings>
+    <ExportSettings ExportOnlyData="true" IgnorePaging="true" HideStructureColumns="true"></ExportSettings>
+    <ClientSettings ReorderColumnsOnClient="True" EnableRowHoverStyle="true">
+        <Selecting AllowRowSelect="True" />
+        <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="True">
+        </Scrolling>
+        <Resizing AllowColumnResize="true" />
+        <ClientEvents OnFilterMenuShowing ="FilterMenuShowing" />
+    </ClientSettings>
+    <MasterTableView TableLayout="Fixed" ShowHeadersWhenNoRecords="true" HeaderStyle-HorizontalAlign="Center">
+        <PagerStyle Mode="NextPrevAndNumeric" />
+    </MasterTableView>
+</tlk:RadGrid>
+
+<tlk:RadDatePicker runat="server" DateInput-DateFormat="dd/MM/yyyy" MinDate="1/1/1900" Culture="vi-VN" MaxDate="1/1/2099">
+    <Calendar CultureInfo="vi-VN">
+        <SpecialDays>
+            <tlk:RadCalendarDay Repeatable="Today" ItemStyle-CssClass="rcToday"></tlk:RadCalendarDay>
+        </SpecialDays>
+    </Calendar>
+</tlk:RadDatePicker> 
+<tlk:RadDatePicker runat="server" SkinID="MMYYYY" DateInput-DateFormat="MM/yyyy" MinDate="1/1900" Culture="vi-VN" MaxDate="1/2099">
+    <Calendar CultureInfo="vi-VN">
+        <SpecialDays>
+            <tlk:RadCalendarDay  ItemStyle-CssClass="rcToday"></tlk:RadCalendarDay>
+        </SpecialDays>
+    </Calendar>
+</tlk:RadDatePicker> 
+ <tlk:RadTimePicker runat="server" DateInput-DateFormat="HH:mm"  TimeView-TimeFormat="HH:mm">
+</tlk:RadTimePicker>
+ <tlk:RadDateTimePicker runat="server" Culture="vi-VN">
+    <DateInput DisplayDateFormat="dd/MM/yyyy HH:mm" DateFormat="dd/MM/yyyy HH:mm"></DateInput>  
+</tlk:RadDateTimePicker>
+<asp:RequiredFieldValidator runat="server" Text ="<span class='validate_control'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" Display="dynamic">
+</asp:RequiredFieldValidator>
+<asp:CompareValidator runat="server" Text="<span class='validate_control'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" Display="dynamic">
+</asp:CompareValidator>
+<asp:CustomValidator runat="server" Text="<span class='validate_control'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" Display="dynamic">
+</asp:CustomValidator>
+<asp:RegularExpressionValidator runat="server" Text="<span class='validate_control'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" Display="dynamic">
+</asp:RegularExpressionValidator>
+<asp:ValidationSummary runat="server" DisplayMode="BulletList" CssClass="validationsummary" />
+
+<tlk:RadTextBox  runat="server" MaxLength="15" SkinID ="Textbox15"></tlk:RadTextBox>
+<tlk:RadTextBox  runat="server" MaxLength="35" SkinID ="Textbox35"></tlk:RadTextBox>
+<tlk:RadTextBox  runat="server" MaxLength="50" SkinID ="Textbox50"></tlk:RadTextBox>
+<tlk:RadTextBox  runat="server" MaxLength="255"></tlk:RadTextBox>
+<tlk:RadTextBox  runat="server" MaxLength="1023" TextMode="MultiLine" SkinID="Textbox1023"></tlk:RadTextBox>
+<tlk:RadTextBox  runat="server" MaxLength="255" TextMode="Password" SkinID="TextboxPassword" EnableSingleInputRendering="false">
+    <PasswordStrengthSettings ShowIndicator="true" 
+    IndicatorElementBaseStyle="PasswordStrengthBase" 
+    TextStrengthDescriptionStyles="PasswordStrengthL0;PasswordStrengthL1;PasswordStrengthL2;PasswordStrengthL3;PasswordStrengthL4;PasswordStrengthL5"
+    TextStrengthDescriptions="Yếu;Trung bình;Khá;Tốt;Cực tốt"
+    RequiresUpperAndLowerCaseCharacters="true" PreferredPasswordLength="4" MinimumSymbolCharacters="1"
+    MinimumLowerCaseCharacters="1" MinimumNumericCharacters="1" MinimumUpperCaseCharacters="1"
+    CalculationWeightings="50;15;15;20" />
+</tlk:RadTextBox>
+<tlk:RadNumericTextBox runat="server" NumberFormat-DecimalDigits="0" NumberFormat-GroupSeparator="," EnabledStyle-HorizontalAlign="Right"  MaxLength="38" > 
+</tlk:RadNumericTextBox>
+<tlk:RadNumericTextBox runat="server" NumberFormat-DecimalDigits="0" NumberFormat-GroupSeparator="" SkinID="Number" MinValue="0" EnabledStyle-HorizontalAlign="Right" MaxLength="38"> 
+</tlk:RadNumericTextBox>
+<tlk:RadNumericTextBox runat="server" NumberFormat-DecimalDigits="2" NumberFormat-GroupSeparator="" SkinID="Decimal" MinValue="0" EnabledStyle-HorizontalAlign="Right" MaxLength="38">
+</tlk:RadNumericTextBox>
+<tlk:RadNumericTextBox runat="server" NumberFormat-DecimalDigits="0" NumberFormat-GroupSeparator="," SkinID="Money" MinValue="0" EnabledStyle-HorizontalAlign="Right" MaxLength="38">
+</tlk:RadNumericTextBox>
+
+<tlk:RadButton runat ="server" Width ="24px" SkinID="ButtonView" style="margin-top:0px" >
+    <Icon PrimaryIconUrl ="~/Static/Images/Icons/16/view.png" />
+</tlk:RadButton>
+<tlk:RadButton runat ="server" Width ="24px" SkinID="ButtonFill" style="margin-top:-0px" >
+    <Icon PrimaryIconUrl ="~/Static/Images/Icons/16/fill_data.png"/>
+</tlk:RadButton>
+<tlk:RadButton runat ="server" Width ="24px" SkinID="ButtonAttach" style="margin-top:-0px" >
+    <Icon PrimaryIconUrl ="~/Static/Images/Icons/16/document_attachment.png" />
+</tlk:RadButton>
+<tlk:RadButton runat ="server" Width ="85px" SkinID="ButtonFind" style="margin-top:-0px;" >
+    <Icon PrimaryIconUrl ="~/Static/Images/Icons/16/find.png" />
+</tlk:RadButton>
+
+<tlk:RadButton runat="server" style="margin-top:-2px"></tlk:RadButton>

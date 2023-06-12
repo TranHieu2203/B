@@ -1,0 +1,33 @@
+﻿Public Class PA_AccountingSubsidizeDTO
+    Public Property ID As Decimal
+    Public Property EMPLOYEE_CODE As String
+    Public Property EMPLOYEE_ID As Decimal?
+    Public Property EMPLOYEE_NAME As String
+    Public Property TITLE_ID As Decimal?
+    Public Property TITLE_NAME As String
+    Public Property ORG_ID As Decimal?
+    Public Property ORG_NAME As String
+    Public Property ORG_DESC As String
+    Public Property ORG_CODE As String
+    Public Property PERIOD_ID As Decimal?
+    Public Property PERIOD_NAME As String
+    Public Property ORG_SET_ID As Decimal?
+    Public Property ORG_SET_NAME As String
+    Public Property OBJ_EMPLOYEE_ID As Decimal?
+    Public Property SUBSIDIZE_TYPE As Decimal?
+    Public Property SUBSIDIZE_TYPE_NAME As String
+    Public Property REMARK As String
+    Public Property NUMBERDAY_PERIOD As Decimal?
+    Public Property NUMBERWORKING_PERIOD As Decimal?
+    Public Property NORM_MONEY As Decimal?
+    Public Property VALUE As Decimal?
+    Public Property BHXH As Decimal?
+    Public Property IS_KIEMNHIEM As Boolean?
+    Public Property IS_LOCK As Boolean?
+    Public Property CREATED_DATE As Date?
+    Public Property CREATED_BY As String
+    Public Property CREATED_LOG As String
+    Public Property MODIFIED_DATE As Date?
+    Public Property MODIFIED_BY As String
+    Public Property MODIFIED_LOG As String
+End Class

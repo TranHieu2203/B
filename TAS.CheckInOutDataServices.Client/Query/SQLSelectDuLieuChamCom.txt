@@ -1,0 +1,23 @@
+﻿INSERT INTO [CHECKINOUT]
+           ([EmployeeID]
+           ,[Date]
+           ,[Time]
+           ,[Status]
+           ,[MachineCode]
+           ,[IsTransfer])
+select *
+from           
+	(select EmployeeID,
+		   CONVERT(DATE,TimeScan, 111) WORKING_DAY, 
+		   TimeScan IN_OUT_VALUE, 
+		   1 [STATUS],
+		   MachineID,
+		   0 [IsTransfer]
+	from {0}
+	where CONVERT(DATE,TimeScan, 111) >= CONVERT(DATE,'{1}', 103)
+	and CONVERT(DATE,TimeScan, 111) <= CONVERT(DATE,'{2}', 103)) A
+where not exists (SELECT EmployeeID
+				  FROM CHECKINOUT B
+				  WHERE A.EmployeeID = B.EmployeeID
+				  AND A.MachineID = B.MachineCode
+				  AND A.WORKING_DAY = B.Date)

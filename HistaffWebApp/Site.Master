@@ -1,0 +1,870 @@
+﻿<%@ master language="VB" autoeventwireup="false" codebehind="Site.master.vb" inherits="HistaffWebApp.Site" %>
+
+<%@ import namespace="Framework.UI" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE" />
+    <title></title>
+    <link type="image/x-icon" rel="shortcut icon" href="/Static/images/fav-icon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <%--    <script type="text/javascript" src="/Scripts/jquery-1.7.1.min.js"></script>--%>
+    <script type="text/javascript" src="/Scripts/jquery-3.3.1.min.js"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="overflow: hidden;">
+    <form id="Form1" runat="server">
+        <tlk:radstylesheetmanager id="RadStyleSheetManager1" runat="server">
+            <stylesheets>
+                <tlk:stylesheetreference path="~/Styles/reset.css" />
+                <tlk:stylesheetreference path="~/Styles/Site.css" />
+                <tlk:stylesheetreference path="~/Styles/Layout.css" />
+                <tlk:stylesheetreference path="~/Styles/jMenu.jquery.css" />
+                <tlk:stylesheetreference path="~/Styles/RadGrid.css" />
+                <tlk:stylesheetreference path="~/Styles/Scheduler.css" />
+                <tlk:stylesheetreference path="~/Styles/RadOrgChart.css" />
+                <tlk:stylesheetreference path="~/Styles/RadWindow.css" />
+                <tlk:stylesheetreference path="~/Styles/font-awesome.css" />
+                <tlk:stylesheetreference path="~/Styles/Config.jquery.css" />
+                <tlk:stylesheetreference path="~/Styles/ImgConfig.jquery.css" />
+                <tlk:stylesheetreference path="~/Styles/userCustom.css" />
+            </stylesheets>
+        </tlk:radstylesheetmanager>
+        <tlk:radscriptmanager id="RadScriptManager1" runat="server" asyncpostbacktimeout="360000">
+            <scripts>
+                <tlk:radscriptreference path="~/Scripts/jquery-1.7.1.min.js" />
+                <%--<tlk:RadScriptReference Path="~/Scripts/jquery-3.3.1.min.js" />--%>
+                <tlk:radscriptreference path="~/Scripts/highcharts/highcharts.js" />
+                <tlk:radscriptreference path="~/Scripts/svg2pdf.js" />
+                <tlk:radscriptreference path="~/Scripts/jspdf.min.js" />
+                <tlk:radscriptreference path="~/Scripts/jspdf.debug.js" />
+                <tlk:radscriptreference path="~/Scripts/highcharts/modules/exporting.js" />
+                <tlk:radscriptreference path="~/Scripts/highcharts/offline-exporting.js" />
+                <tlk:radscriptreference path="~/Scripts/PreventBackSpace.js" />
+                <tlk:radscriptreference path="~/Scripts/noty/jquery.noty.js" />
+                <tlk:radscriptreference path="~/Scripts/noty/layouts/center.js" />
+                <tlk:radscriptreference path="~/Scripts/noty/layouts/topCenter.js" />
+                <tlk:radscriptreference path="~/Scripts/noty/themes/default.js" />
+                <tlk:radscriptreference path="~/Scripts/jMenu.jquery.js" />
+                <tlk:radscriptreference path="~/Scripts/common.js" />
+                <tlk:radscriptreference path="~/Scripts/jquery-ui-1.8.16.custom.min.js" />
+                <tlk:radscriptreference path="~/Scripts/DateTimeFormat.js" />
+                <tlk:radscriptreference path="~/Scripts/chosen-jquery.js" />
+                <tlk:radscriptreference path="~/Scripts/jquery.accessibleList.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+                <%--<tlk:RadScriptReference Path="http://code.jquery.com/jquery-1.9.0.js"/>
+            <tlk:RadScriptReference Path="http://code.jquery.com/jquery-migrate-1.2.1.js"/>--%>
+                <%--<tlk:RadScriptReference Path="~/Scripts/highcharts/highcharts.js" />
+            <tlk:RadScriptReference Path="~/Scripts/highcharts/highcharts-more.js" />
+            <tlk:RadScriptReference Path="~/Scripts/highcharts/modules/exporting.js" />--%>
+                <tlk:radscriptreference path="~/Scripts/top.js" />
+            </scripts>
+        </tlk:radscriptmanager>
+        <tlk:radinputmanager id="RadInputManager1" runat="server">
+        </tlk:radinputmanager>
+        <div class="clear">
+        </div>
+        <div id="header">
+            <div id="logo1">
+                <a href="/Default.aspx?mid=Dashboard&fid=ctrlDashboard" style="line-height: 50px;">
+                    <img alt="" id="imglogo1" runat="server" src="Static/Images/logo_large.png" style="height: 22px;" /></a>
+            </div>
+            <div id="menu">
+                <ul class="mlddm">
+                    <%=BuildMainMenu()%>
+                </ul>
+            </div>
+            <div style="position: absolute; top: 0px; right: 50px;">
+                <asp:Button ID="btnNotiTimerApproveProfile" runat="server" Text="Button" Style="display: none" />
+                <asp:UpdatePanel runat="server" ID="udTimePnApproveProfile" UpdateMode="Conditional">
+                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="btnNotiTimerApproveProfile" EventName="Click" />
+                    </Triggers>
+                    <ContentTemplate>
+                        <div class='box3 approveProfile' style="background: url('Styles/img/item4.png') no-repeat 0 2px !important; background-size: 18px 20px !important;">
+                            <span>
+                                <asp:Literal ID="ltrNumberRocordApproveProfile" runat="server" Text="0"></asp:Literal></span>
+                        </div>
+                        <div class='box23 approveProfile' style="height: 300px; right: 6px !important">
+                                <div class="arrow-top"></div>
+                            <div class="rtCallout rtCalloutTopCenter" style="visibility: visible;">
+                                &nbsp;
+                            </div>
+                            <div class="box2 icon-before">
+                                <a class='box24'><%# Translate("Thông báo")%></a>
+                                <div class='box1' style="height: 250px; overflow-y: scroll;">
+                                    <div id="dApproveHSNV" runat="server" class='box48' data="41">
+                                       <asp:Label ID="lb41" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbApproveHSNV" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-41" style="display: none;">
+                                    </div>
+
+                                    <div id="dApproveWorkBefore" runat="server" class='box48' data="42">
+                                       <asp:Label ID="lb42" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbApproveWorkBefore" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-42" style="display: none;">
+                                    </div>
+
+                                    <div id="dApproveFamily" runat="server" class='box48' data="43">
+                                       <asp:Label ID="lb43" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbApproveFamily" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-43" style="display: none;">
+                                    </div>
+
+                                    <div id="dApproveCertificate" runat="server" class='box48' data="44">
+                                       <asp:Label ID="lb44" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbApproveCertificate" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-44" style="display: none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+            <div style="position: absolute; top: 0px; right: 10px; width: 36px;">
+                <asp:Button ID="btnNotiTimer" runat="server" Text="Button" Style="display: none" />
+                <asp:UpdatePanel runat="server" ID="udTimePn" UpdateMode="Conditional">
+                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="btnNotiTimer" EventName="Click" />
+                    </Triggers>
+                    <ContentTemplate>
+                        <div class='box3 All'>
+                            <span>
+                                <asp:Literal ID="ltrNumberRocord" runat="server" Text="0"></asp:Literal></span>
+                        </div>
+                        <div class='box23 All' style="height: 300px;">
+                                <div class="arrow-top"></div>
+                            <div class="box2 icon-before">
+                                <a class='box24'><%# Translate("Thông báo")%></a>
+                                <div class='box1' style="height: 250px; overflow-y: scroll;">
+
+
+                                    <div id="dcontractRemind" runat="server" class='box48' data="1">
+                                       <asp:Label ID="lb1" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblWLEO" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-1" style="display: none;">
+                                        <%--list view sap het han hop dong--%>
+                                        <%-- <asp:ListView ID="ltrWLEO" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_ContractNewEdit&group=Business&IDSelect=<%# Eval("VALUE")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dbirthdayRemind" runat="server" class='box48' data="2">
+                                        <asp:Label ID="lb2" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblTime_LEAVE" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-2" style="display: none;">
+                                        <%--<asp:ListView ID="ltrTime_LEAVE" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_EmpDtl&group=Business&emp=<%# Eval("EMPLOYEE_ID")%>&state=Normal'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dnoPaperRemind" runat="server" class='box48' data="16">
+                                        <asp:Label ID="lb16" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblTime_GiayTo" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-16" style="display: none;">
+                                        <%--<asp:ListView ID="ltrTime_GiayTo" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_EmpDtl&group=Business&emp=<%# Eval("EMPLOYEE_ID")%>&state=Normal'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dvisaRemind" runat="server" class='box48' data="10">
+                                        <asp:Label ID="lb10" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblTime_Visa" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-10" style="display: none;">
+                                        <%--<asp:ListView ID="ltrTime_Visa" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_EmpDtl&group=Business&empid=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dvisaRemind1" runat="server" class='box48' data="13">
+                                        <asp:Label ID="lb13" CssClass="lblNotiItem" runat="server"></asp:Label>(<asp:Label ID="lblTime_ToTrinh" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-13" style="display: none;">
+                                        <%-- <asp:ListView ID="ltrTime_ToTrinh" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_ChangeInfoNewEdit&group=Business&empid=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dworPermitRemind" runat="server" class='box48' data="19">
+                                        <asp:Label ID="lb19" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblTime_GiayPhepLaoDong" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-19" style="display: none;">
+                                        <%--<asp:ListView ID="ltrTime_GiayPhepLaoDong" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_EmpDtl&group=Business&empid=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <%-- <div id="dcertificateRemind" runat="server" class='box48' data="7" style="display: none;">
+                                    <%# Translate("Chứng chỉ lao động")%> (<asp:Label ID="lblTime_ChungChi" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                </div>
+                                <div id="collapse-7" style="display: none;">
+                                    <asp:ListView ID="ltrTime_ChungChi" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_EmpDtl&group=Business&empid=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>
+                                </div>--%>
+                                    <div id="dterminateRemind" runat="server" class='box48' data="14">
+                                        <asp:Label ID="lb14" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblTime_NghiViec" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-14" style="display: none;">
+                                        <%--<asp:ListView ID="ltrTime_NghiViec" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_TransferTripartiteNewEdit&group=Business&empid=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <%--<div id="dworkingRemind1" runat="server" class='box48' data="9">
+                                    <%# Translate("Tờ trình chưa phê duyệt")%> (<asp:Label ID="lblTime_ToTrinhPheDuyet" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                </div>
+                                <div id="collapse-9" style="display: none;">
+                                    <asp:ListView ID="ltrTime_ToTrinhPheDuyet" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_WageNewEdit&group=Business&empid=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>
+                                </div>--%>
+                                    <div id="dExpireTerminateDebt" runat="server" class='box48' data="15">
+                                        <asp:Label ID="lb15" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbExpireTerminateDebt" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-15" style="display: none;"></div>
+
+                                    <div id="dProbationRemind" runat="server" class='box48' data="20">
+                                        <asp:Label ID="lb20" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblProbation" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-20" style="display: none;">
+                                        <%--list view sap het han hop dong thu viec--%>
+                                        <%--<asp:ListView ID="ltrProbation" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_ContractNewEdit&group=Business&IDSelect=<%# Eval("VALUE")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dApproveRemind" runat="server" class='box48' data="21">
+                                        <asp:Label ID="lb21" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblApprove" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-21" style="display: none;">
+                                        <%--<asp:ListView ID="ltrApprove" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_ChangeInfoNewEdit&group=Business&ID=<%# Eval("VALUE")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dApproveHDLDRemind" runat="server" class='box48' data="22">
+                                        <asp:Label ID="lb22" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblApproveHDLD" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-22" style="display: none;">
+                                        <%--<asp:ListView ID="ltrApproveHDLD" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_ChangeInfoNewEdit&group=Business&ID=<%# Eval("VALUE")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dApproveTHHDRemind" runat="server" class='box48' data="23">
+                                        <asp:Label ID="lb23" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblApproveTHHD" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-23" style="display: none;">
+                                        <%--<asp:ListView ID="ltrApproveTHHD" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_ChangeInfoNewEdit&group=Business&ID=<%# Eval("VALUE")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dMaternitiRemind" runat="server" class='box48' data="24">
+                                        <asp:Label ID="lb24" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblMaterniti" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-24" style="display: none;">
+                                        <%--<asp:ListView ID="ltrMaterniti" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Insurance&fid=ctrlInsMaternityDetail&group=Business&Status=1&IDSelect=<%# Eval("VALUE")%>&EmployeeID=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dRetirementRemind" runat="server" class='box48' data="25">
+                                        <asp:Label ID="lb25" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblRetirement" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-25" style="display: none;">
+                                        <%--<asp:ListView ID="ltrRetirement" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_EmpDtl&group=Business&emp=<%# Eval("EMPLOYEE_ID")%>&state=Normal'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <div id="dNoneSalaryRemind" runat="server" class='box48' data="26">
+                                        <asp:Label ID="lb26" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lblNoneSalary" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-26" style="display: none;">
+                                        <%--<asp:ListView ID="ltrNoneSalary" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Attendance&fid=ctrlRegisterCONewEdit&group=Business&VIEW=TRUE&FormType=0&ID=<%# Eval("VALUE")%>&periodid=91'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+                                    <%--<div id="dBIRTHDAY_LD" runat="server" class='box48' data="18" style="display:none">
+                                    <%# Translate("Sinh nhật lãnh đạo")%> (<asp:Label ID="lbBIRTHDAY_LD" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                </div>
+                                <div id="collapse-18" style="display: none;">
+                                    <asp:ListView ID="ltrBIRTHDAY_LD" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_EmpDtl&group=Business&emp=<%# Eval("EMPLOYEE_ID")%>&state=Normal'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>
+                                </div>--%>
+
+                                    <%---------------------%>
+
+                                    <%----------------%>
+
+                                    <div id="dConcurrently" runat="server" class='box48' data="29">
+                                        <asp:Label ID="lb29" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbConcurrently" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-29" style="display: none;">
+                                        <%--<asp:ListView ID="ltrConcurrently" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='/Default.aspx?mid=Profile&fid=ctrlHU_ConcurrentlyNewEdit&group=Business&noscroll=1&Is_con=1&FormType=1&empID=<%# Eval("EMPLOYEE_ID")%>&IDSelect=<%# Eval("VALUE")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+
+                                    <%---------------------%>
+
+                                    <%----------------%>
+
+                                    <div id="dEmpDtlFamily" runat="server" class='box48' data="30">
+                                        <asp:Label ID="lb30" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbEmpDtlFamily" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-30" style="display: none;">
+                                        <%--<asp:ListView ID="ltrEmpDtlFamily" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='Default.aspx?mid=Profile&fid=ctrlHU_EmpDtl&group=Business&emp=<%# Eval("EMPLOYEE_ID")%>&Place=ctrlHU_EmpDtlFamily&state=Normal'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+
+                                    <%---------------------%>
+
+                                    <%----------------%>
+
+                                    <div id="dOverRegDate" runat="server" class='box48' data="31">
+                                        <asp:Label ID="lb31" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbOverRegDate" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-31" style="display: none;">
+                                        <%--<asp:ListView ID="ltrOverRegDate" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='Default.aspx?mid=Insurance&fid=ctrlInsArisingManual&group=Business&Status=0&EmployeeID=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+
+                                    <%---------------------%>
+
+                                    <%----------------%>
+
+                                    <div id="dExpDiscipline" runat="server" class='box48' data="33">
+                                        <asp:Label ID="lb33" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbExpDiscipline" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-33" style="display: none;">
+                                        <%--<asp:ListView ID="ltrExpDiscipline" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='Default.aspx?mid=Profile&fid=ctrlHU_DisciplineNewEdit&group=Business&noscroll=1&FormType=1&ID=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+
+                                    <%---------------------%>
+
+                                    <%----------------%>
+
+                                    <div id="dInsArising" runat="server" class='box48' data="34">
+                                        <asp:Label ID="lb34" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbInsArising" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-34" style="display: none;">
+                                        <%--<asp:ListView ID="ltrInsArising" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='Default.aspx?mid=Insurance&fid=ctrlInsArising&group=Business'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+
+                                    <%---------------------%>
+
+                                    <%----------------%>
+
+                                    <div id="dSign" runat="server" class='box48' data="35">
+                                        <asp:Label ID="lb35" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbSign" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-35" style="display: none;">
+                                        <%--<asp:ListView ID="ltrSign" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='#'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+
+                                    <%---------------------%>
+
+                                    <%----------------%>
+
+                                    <div id="dBHYT" runat="server" class='box48' data="36">
+                                        <asp:Label ID="lb36" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbBHYT" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-36" style="display: none;">
+                                        <%-- <asp:ListView ID="ltrBHYT" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='Default.aspx?mid=Insurance&fid=ctrlInsInformations&group=Business&Status=1&IDSelect=822&EmployeeID=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+
+                                    <%---------------------%>
+                                    <%----------------%>
+
+                                    <%--<div id="Div1" runat="server" class='box48' data="40">
+                                        <%# Translate("Danh sách nhân viên tăng mới tham gia bảo hiểm sức khỏe")%> (<asp:Label ID="lbTangBHYT" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-40" style="display: none;">--%>
+                                        <%--<asp:ListView ID="listTangBHSK" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='Default.aspx?mid=Insurance&fid=ctrlInsManagerHeathInsNewEdit&group=Business&FormType=0&noscroll=1&EmployeeID=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    <%--</div>--%>
+
+                                    <%---------------------%>
+                                    <%----------------%>
+
+                                    <%--<div id="Div2" runat="server" class='box48' data="41">
+                                        <%# Translate("Danh sách nhân viên giảm tham gia bảo hiểm sức khỏe")%> (<asp:Label ID="lbGiamBHYT" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-41" style="display: none;">--%>
+                                        <%--<asp:ListView ID="listGiamBHSK" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i><a href='Default.aspx?mid=Insurance&fid=ctrlInsManagerHeathInsNewEdit&group=Business&FormType=0&noscroll=1&EmployeeID=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    <%--</div>--%>
+
+                                    <%---------------------%>
+
+
+                                    <%----------------%>
+
+                                    <%--<div id="Div3" runat="server" class='box48' data="42">
+                                        <%# Translate("Danh sách nhân viên có QLTT đã nghỉ việc")%> (<asp:Label ID="Label1" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-42" style="display: none;">--%>
+                                        <%-- <asp:ListView ID="listQLTTTer" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i>
+                                                <a href='Default.aspx?mid=Profile&fid=ctrlHU_ChangeInfoNewEdit&group=Business&ID=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    <%--</div>--%>
+
+                                    <%---------------------%>
+
+
+                                    <%----------------%>
+
+                                    <div id="dnoAge18" runat="server" class='box48' data="37">
+                                        <asp:Label ID="lb37" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbAge18" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-37" style="display: none;">
+                                        <%--<asp:ListView ID="listAge18" runat="server">
+                                        <ItemTemplate>
+                                            <div class='box25'>
+                                                <i class='fa fa-exclamation-circle'></i>
+                                                <a href='Default.aspx?mid=Profile&fid=ctrlHU_ChangeInfoNewEdit&group=Business&ID=<%# Eval("EMPLOYEE_ID")%>'
+                                                    target="_blank">
+                                                    <%# Eval("EMPLOYEE_CODE") + " - " + Eval("FULLNAME")%></a>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:ListView>--%>
+                                    </div>
+
+                                    <%---------------------%>
+                                    <div id="DivNoticeStock" runat="server" class='box48' data="40">
+                                        <asp:Label ID="lb40" CssClass="lblNotiItem" runat="server"></asp:Label> (<asp:Label ID="lbNoticeStock" CssClass="lblNotiItem" runat="server"></asp:Label>) <i class='fa fa-caret-down'></i>
+                                    </div>
+                                    <div id="collapse-40" style="display: none;">
+
+                                    <%---------------------%>
+                                </div>
+                            </div>
+                        </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+            <div id="login">
+                <asp:LoginView ID="LoginView1" runat="server" EnableViewState="false">
+                    <LoggedInTemplate>
+                        <%--PhongDV--%>
+                        <style type="text/css">
+                            .menu {
+                                /*height: 50px;*/
+                                background-color: transparent; /*padding: 0 17px;*/
+                                margin: 0;
+                                position: relative;
+                                cursor: pointer; /*background: url('../Static/Images/down.png') no-repeat right;*/
+                            }
+
+                            .avatar {
+                                border-radius: 50%;
+                                margin: 0 5px 0 0;
+                                cursor: pointer;
+                                object-fit: cover;
+                            }
+
+                            table.tooltip td {
+                                text-align: center;
+                            }
+
+                            .popup li {
+                                list-style: none;
+                            }
+
+                            .RadComboBox {
+                                vertical-align: top;
+                            }
+                        </style>
+                        <%--End PhongDV--%>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div id="box-login" style="position: absolute; top: 4px; right: 100px; padding-top: 2px;">
+                <div id="popup" style="line-height: 30px; float: right">
+                    <asp:LoginName ID="HeadLoginName" runat="server" CssClass="menu" Visible="false" />
+                    <div style="float: left;">
+                        <tlk:radtooltip runat="server" id="RadToolTip1" width="300px" targetcontrolid="rbiEmployeeImageAll"
+                            relativeto="Element" showevent="OnClick" hideevent="Default" autoclosedelay="0"
+                            showdelay="0" hidedelay="0" position="BottomCenter">
+                            <table width="100%" class="tooltip">
+                                <tr>
+                                    <td style="width: 90px;">
+                                        <tlk:radbinaryimage id="rbiEmployeeImage" runat="server" autoadjustimagecontrolsize="false"
+                                            imageurl="~/Static/Images/user_login.png" width="110px" height="110px" resizemode="Fit" />
+                                    </td>
+                                    <td style="text-align: left; padding-left: 20px;">
+                                        <asp:Label ID="lblUserName" runat="server"></asp:Label><br />
+                                        <asp:Label ID="lblEmail" runat="server"></asp:Label><br />
+                                        <asp:Label ID="lblMNV" runat="server"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="border-top: 1px solid; padding-top: 7px;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td>
+                                                    <a href="ChangePassword.aspx" style="width: 50%">
+                                                        <asp:Label ID="Label2" runat="server" Text="<%$Translate: Ðổi mật khẩu %>">
+                                                        </asp:Label>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="<%$Translate: Ðăng xuất %>"
+                                                        LoginText="<%$Translate: Ðăng xuất %>" LogoutPageUrl="~/" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </tlk:radtooltip>
+                        <div runat="server" id="rbiEmployeeImageAll" style="display: flex; cursor: pointer">
+                            <tlk:radbinaryimage id="rbiEmployeeImage1" runat="server" autoadjustimagecontrolsize="false"
+                                height="28px" width="28px" resizemode="Fit" imageurl="~/Static/Images/user_login.png" cssclass="avatar" />
+                            <asp:Label ID="lblUserName2" runat="server" Style="line-height: 27px; color: #fff;"></asp:Label>
+                        </div>
+                    </div>
+                    <%--  <div style="line-height: 30px; float: right;">
+                    
+                </div>--%>
+                    <div style="position: absolute; top: 29px; right: 0px">
+                        <tlk:radskinmanager id="rsSkin" enabled="true" visible="false" persistencemode="Cookie"
+                            showchooser="true" runat="server">
+                        </tlk:radskinmanager>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div id="quick_launch">
+            <tlk:radtoolbar id="QuickLaunchToolbar" skinid="QuickLaunch" runat="server" style="z-index: 2998 !important;">
+            </tlk:radtoolbar>
+        </div>
+        <div class="clear">
+        </div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="clear">
+        </div>
+        <tlk:radwindow runat="server" id="rwAbout" visiblestatusbar="false" width="500px"
+            height="400px" enableshadow="true" behaviors="Close" modal="true" showcontentduringload="false"
+            style="z-index: 3000!important">
+        </tlk:radwindow>
+        <tlk:radwindow runat="server" id="rwLicense" visiblestatusbar="false" width="370px"
+            height="300px" enableshadow="true" behaviors="Close" modal="true" showcontentduringload="false"
+            style="z-index: 3000!important">
+        </tlk:radwindow>
+        <tlk:radcodeblock id="RadCodeBlock1" runat="server">
+            <script type="text/javascript">
+
+                //Thiết lập notify
+                $.noty.defaults = {
+                    layout: 'topCenter',
+                    theme: 'defaultTheme',
+                    type: 'alert',
+                    text: '',
+                    dismissQueue: true, // If you want to use queue feature set this true
+                    template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
+                    animation: {
+                        open: { height: 'toggle' },
+                        close: { height: 'toggle' },
+                        easing: 'swing',
+                        speed: 500 // opening & closing animation speed
+                    },
+                    timeout: false, // delay for closing event. Set false for sticky notifications
+                    force: true, // adds notification to the beginning of queue when set to true
+                    modal: false,
+                    closeWith: ['click'], // ['click', 'button', 'hover']
+                    callback: {
+                        onShow: function () { },
+                        afterShow: function () { },
+                        onClose: function () { },
+                        afterClose: function () { }
+                    },
+                    buttons: false // an array of buttons
+                };
+
+                function MenuItemClicked(sender, args) {
+                    var itemValue = args.get_item().get_value();
+                    if (itemValue == "About") {
+                        var rw = $find("<%=rwAbout.ClientID %>");
+                        rw.show();
+                        rw.setUrl('About.aspx');
+                    }
+                }
+
+                function mnuHelpClick() {
+                    var rw = $find("<%=rwAbout.ClientID %>");
+                    rw.show();
+                    rw.setUrl('About.aspx');
+                }
+
+                function mnuLicenseClick() {
+                    var rw = $find("<%=rwLicense.ClientID %>");
+                    rw.show();
+                    rw.setUrl('Dialog.aspx?mid=Help&fid=ctrlLicense');
+                    return false;
+                }
+
+                function Notify(message, message_type) {
+                    var notify = noty({ text: message, dismissQueue: true, type: message_type });
+                    setTimeout(function () { $.noty.close(notify.options.id); }, 3000);
+                }
+                function ExportReport(arg) {
+                    window.location = "Export.aspx?id=" + arg;
+                }
+
+                $(function () {
+                    applySkin();
+                    // Status bar buttons : drop-downs fade In/Out
+                    function convertDropLists() {
+                        $(this).find('.result-block .small-files-list').accessibleList({ moreAfter: false });
+
+                        // Run only once
+                        $(this).unbind('mouseenter', convertDropLists);
+                    }
+
+                    $('#popup li:has(.result-block)').hover(function () {
+                        $(this).find('.result-block').stop(true).css('display', 'none').fadeIn('normal', function () {
+                            $(this).css('opacity', '');
+                        });
+
+                    }, function () {
+                        $(this).find('.result-block').stop(true).css('display', 'block').fadeOut('normal', function () {
+                            $(this).css('opacity', '');
+                        });
+
+                    }).bind('mouseenter', convertDropLists);
+
+
+                });
+
+                function applySkin() {
+                    $('.chosen').removeClass('chzn-done').next().remove();
+                    $(".chosen").chosen();
+                    $(".datepicker").datepicker({ dateFormat: 'dd/mm/yy' });
+                }
+
+                $(document).ready(function () {
+                    $('.menu').click(function (event) {
+                        $('.submenu').slideToggle();
+                        event.stopPropagation();
+                    });
+                    $('body').click(function () {
+                        $('.submenu').slideUp();
+                    });
+                    if ($(".box3 span").text().trim() == "0" || $(".box3 span").text().trim() == "") {
+                        $(".box3 span").remove();
+                    } else {
+                        $(".box3").css("opacity", "1");
+                    }
+                });
+
+                if (Telerik.Web.UI.RadTreeView != undefined) {
+                    Telerik.Web.UI.RadTreeView.prototype.saveClientState = function () {
+                        return "{\"expandedNodes\":" + this._expandedNodesJson +
+                            ",\"collapsedNodes\":" + this._collapsedNodesJson +
+                            ",\"logEntries\":" + this._logEntriesJson +
+                            ",\"selectedNodes\":" + this._selectedNodesJson +
+                            ",\"checkedNodes\":" + this._checkedNodesJson +
+                            ",\"scrollPosition\":" + Math.round(this._scrollPosition) + "}";
+                    }
+                }
+
+                if (Telerik.Web.UI.RadListBox != undefined) {
+                    Telerik.Web.UI.RadListBox.prototype.saveClientState = function () {
+                        return "{" +
+                            "\"isEnabled\":" + this._enabled +
+                            ",\"logEntries\":" + this._logEntriesJson +
+                            ",\"selectedIndices\":" + this._selectedIndicesJson +
+                            ",\"checkedIndices\":" + this._checkedIndicesJson +
+                            ",\"scrollPosition\":" + Math.round(this._scrollPosition) + "}";
+                    }
+                }
+
+                if (Telerik.Web.UI.RadScheduler != undefined) {
+                    Telerik.Web.UI.RadScheduler.prototype.saveClientState = function () {
+                        return '{"scrollTop":' + Math.round(this._scrollTop) +
+                            ',"scrollLeft":' + Math.round(this._scrollLeft) +
+                            ',"isDirty":' + this._isDirty + '}';
+                    }
+                }
+
+            </script>
+        </tlk:radcodeblock>
+    </form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="571313a4-750a-4098-ba68-efbfa219ff36" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="Aspose.Cells" />
+      <ReferencedAssembly AssemblyName="Aspose.Words" />
+      <ReferencedAssembly AssemblyName="mscorlib" />
+      <ReferencedAssembly AssemblyName="Remotion" />
+      <ReferencedAssembly AssemblyName="Remotion.Data.Linq" />
+      <ReferencedAssembly AssemblyName="Remotion.Interfaces" />
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Configuration" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Data.DataSetExtensions" />
+      <ReferencedAssembly AssemblyName="System.Drawing" />
+      <ReferencedAssembly AssemblyName="System.EnterpriseServices" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.ApplicationServices" />
+      <ReferencedAssembly AssemblyName="System.Web.DynamicData" />
+      <ReferencedAssembly AssemblyName="System.Web.Entity" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Web.Services" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+      <ReferencedAssembly AssemblyName="Telerik.Web.Design" />
+      <ReferencedAssembly AssemblyName="Telerik.Web.UI" />
+      <ReferencedAssembly AssemblyName="Telerik.Web.UI.Skins" />
+      <ReferencedAssembly AssemblyName="WebAppLog" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/CommonBusiness.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommonBusiness6.xsd" MetadataType="Schema" ID="3470755a-e0a6-4dd0-88c0-804ae9ef41f6" SourceId="1" SourceUrl="http://localhost:9999/CommonBusiness.svc?xsd=xsd3" />
+    <MetadataFile FileName="CommonBusiness.disco" MetadataType="Disco" ID="fdce7c42-153a-454a-a4b2-537e68fadf01" SourceId="1" SourceUrl="http://localhost:9999/CommonBusiness.svc?disco" />
+    <MetadataFile FileName="CommonBusiness.wsdl" MetadataType="Wsdl" ID="1fd44645-dc0f-4d9b-b839-48aa3b6fedb8" SourceId="1" SourceUrl="http://localhost:9999/CommonBusiness.svc?wsdl" />
+    <MetadataFile FileName="CommonBusiness.xsd" MetadataType="Schema" ID="455c125d-0e08-490e-85ae-69d07caf91e6" SourceId="1" SourceUrl="http://localhost:9999/CommonBusiness.svc?xsd=xsd2" />
+    <MetadataFile FileName="CommonBusiness1.xsd" MetadataType="Schema" ID="054c01f8-2978-448f-a85d-97a6085aed7e" SourceId="1" SourceUrl="http://localhost:9999/CommonBusiness.svc?xsd=xsd1" />
+    <MetadataFile FileName="CommonBusiness2.xsd" MetadataType="Schema" ID="48bc0021-ee2e-428d-b2a0-346c02d467b4" SourceId="1" SourceUrl="http://localhost:9999/CommonBusiness.svc?xsd=xsd0" />
+    <MetadataFile FileName="CommonBusiness41.xsd" MetadataType="Schema" ID="bafd58e1-9a64-4f6b-902e-915b7c87cf1d" SourceId="1" SourceUrl="http://localhost:9999/CommonBusiness.svc?xsd=xsd6" />
+    <MetadataFile FileName="CommonBusiness3.xsd" MetadataType="Schema" ID="5a6d939d-dfae-4454-8b39-92734bd6fff3" SourceId="1" SourceUrl="http://localhost:9999/CommonBusiness.svc?xsd=xsd5" />
+    <MetadataFile FileName="CommonBusiness5.xsd" MetadataType="Schema" ID="371e9957-070b-4b69-a207-77c11697795f" SourceId="1" SourceUrl="http://localhost:9999/CommonBusiness.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f3a0c2df-d1de-4d9e-80f3-950650dd25f2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/ProfileBusiness.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProfileBusiness8.xsd" MetadataType="Schema" ID="88a3aee0-c017-46eb-9e03-20c58e640645" SourceId="1" SourceUrl="http://localhost:9999/ProfileBusiness.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProfileBusiness81.xsd" MetadataType="Schema" ID="effb2c7c-2ce8-4b49-ab6a-f0676b7ebdf6" SourceId="1" SourceUrl="http://localhost:9999/ProfileBusiness.svc?xsd=xsd3" />
+    <MetadataFile FileName="ProfileBusiness1.wsdl" MetadataType="Wsdl" ID="ca0a592d-6f2d-4b7b-b600-b9ce57624d1a" SourceId="1" SourceUrl="http://localhost:9999/ProfileBusiness.svc?wsdl" />
+    <MetadataFile FileName="ProfileBusiness82.xsd" MetadataType="Schema" ID="f4cd28a0-68c9-4c8c-97ff-7c85eea3626b" SourceId="1" SourceUrl="http://localhost:9999/ProfileBusiness.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProfileBusiness83.xsd" MetadataType="Schema" ID="3464dcea-0764-4db9-a3aa-9536178b9861" SourceId="1" SourceUrl="http://localhost:9999/ProfileBusiness.svc?xsd=xsd6" />
+    <MetadataFile FileName="ProfileBusiness84.xsd" MetadataType="Schema" ID="8fe47b65-1b1c-4586-8376-7dda13675df0" SourceId="1" SourceUrl="http://localhost:9999/ProfileBusiness.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProfileBusiness85.xsd" MetadataType="Schema" ID="0b292814-5f3e-4434-8c73-9e79d7af4285" SourceId="1" SourceUrl="http://localhost:9999/ProfileBusiness.svc?xsd=xsd4" />
+    <MetadataFile FileName="ProfileBusiness86.xsd" MetadataType="Schema" ID="551c777e-51b0-40a6-8a53-05af595675f7" SourceId="1" SourceUrl="http://localhost:9999/ProfileBusiness.svc?xsd=xsd5" />
+    <MetadataFile FileName="ProfileBusiness1.disco" MetadataType="Disco" ID="e8a49a81-041c-441c-ac48-fb071e360b63" SourceId="1" SourceUrl="http://localhost:9999/ProfileBusiness.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

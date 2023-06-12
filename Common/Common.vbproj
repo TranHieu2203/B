@@ -1,0 +1,1053 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{4B2EF214-7880-45F2-BB79-B394E552B4BE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Common.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Common.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.0.3.0, Culture=neutral, PublicKeyToken=12d8fa3d810c48da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\HistaffFrameworkPublic\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SanitizerProviders">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Design, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik New\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\ref\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik New\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveProcess.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveProcessNewEdit.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveSetupEmp.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveSetupExt.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveSetupOrg.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveTemplate.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveTemplateAddEdit.ascx" />
+    <Content Include="Modules\Common\ctrlFindFrameProductivityPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindFrameSalaryPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindPositionPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindPositionPopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlFindTRRequestPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTRRequestPopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlFrameProductivityTree.ascx" />
+    <Content Include="Modules\Common\ctrlFrameSalaryTree.ascx" />
+    <Content Include="Modules\Common\ctrlLanguageManagementPortal.ascx" />
+    <Content Include="Modules\Common\ctrlCommon_Reject.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeeSignPopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBoxTraining.ascx" />
+    <Content Include="Modules\Common\ctrlOrganizationLoadOnDemand.ascx" />
+    <Content Include="Modules\Common\ctrlUploadWithTeamplate.ascx" />
+    <Content Include="Modules\Common\ctrlDynamicControl.ascx" />
+    <Content Include="Modules\Common\ctrlCheckData.ascx" />
+    <Content Include="Modules\Common\ctrlFindMEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindMEmployeePopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlPROCESS.ascx" />
+    <Content Include="Modules\Common\ctrlREPORT.ascx" />
+    <Content Include="Modules\Common\ctrlRESULT.ascx" />
+    <Content Include="Modules\Common\ctrlViewMap.ascx" />
+    <Content Include="Modules\Common\Guide\ctrlGuide.ascx" />
+    <Content Include="Modules\Common\ctrlSessionWarning.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlDashboard.ascx" />
+    <Content Include="Modules\Common\ctrlFindOrgPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopup.ascx" />
+    <Content Include="Modules\Common\ctrlLanguageManagement.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Common\ctrlOrganization.ascx" />
+    <Content Include="Modules\Common\ctrlUpload.ascx" />
+    <Content Include="Modules\Common\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Common\List\ctrlOtherListGroup.ascx" />
+    <Content Include="Modules\Common\List\ctrlOtherListType.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunctionExceptionEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlManageCache.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_System_Maintain.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlTimeWorkStandardCopy.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunctionExceptionAddEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunctionException.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserException.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlConfirmCodeAccuracy.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupN.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupUserN.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlRegisterUser.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlControlsManage.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlControlsNewEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupOrganization.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlMailTemplate.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlProGramParameters.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlPrograms.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_Mail.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSkinAppConfig.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunction.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunctionAddEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserOrganization.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserReport.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUser.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_LdapConfiguration.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_MailConfiguration.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListFunction.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlValueSet.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlValueSetI.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlValueSetT.ascx" />
+    <Content Include="packages.config" />
+    <Content Include="Modules\Common\Secure\ctrlGroupCopy.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlAccessLog.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlActionLog.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlCheckActionChange.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_Configuration.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupReport.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupUserNewEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroup.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupFunction.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupFunctionAddEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupUser.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListGroup.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListGroupNewEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListUser.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListUserNewEdit.ascx" />
+    <Content Include="My Project\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\CommonBusiness\CommonBusiness.disco" />
+    <None Include="Service References\CommonBusiness\CommonBusiness3.xsd" />
+    <None Include="Service References\CommonBusiness\CommonBusiness4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommonBusiness\CommonBusiness41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommonBusiness\configuration91.svcinfo" />
+    <None Include="Service References\CommonBusiness\configuration.svcinfo" />
+    <None Include="Service References\CommonBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Modules\Common\Secure\ctrlOnlineUser.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\CommonBusiness\CommonBusiness.wsdl" />
+    <None Include="Service References\CommonBusiness\CommonBusiness5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommonBusiness\CommonBusiness6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxPage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\AD_PROGRAM_DTO.vb" />
+    <Compile Include="BusinessObjects\DEFAULT_DTO.vb" />
+    <Compile Include="BusinessObjects\DynamicReportDTO.vb" />
+    <Compile Include="BusinessObjects\OnlineUserDTO.vb" />
+    <Compile Include="BusinessObjects\PARAMETERS_DTO.vb" />
+    <Compile Include="BusinessObjects\PROGRAMREQUEST_DTO.vb" />
+    <Compile Include="BusinessObjects\ReportPreviewDTO.vb" />
+    <Compile Include="BusinessObjects\REQUEST_DTO.vb" />
+    <Compile Include="BusinessObjects\WorkingCommonDTO.vb" />
+    <Compile Include="CMConstant.vb" />
+    <Compile Include="Contant_Common.vb" />
+    <Compile Include="Contant_OtherList_Code_Attendance.vb" />
+    <Compile Include="Contant_OtherList_Code_Insurance.vb" />
+    <Compile Include="Contant_OtherList_Code_IProfile.vb" />
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveProcess.ascx.designer.vb">
+      <DependentUpon>ctrlApproveProcess.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveProcess.ascx.vb">
+      <DependentUpon>ctrlApproveProcess.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveProcessNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlApproveProcessNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveProcessNewEdit.ascx.vb">
+      <DependentUpon>ctrlApproveProcessNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveSetupEmp.ascx.designer.vb">
+      <DependentUpon>ctrlApproveSetupEmp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveSetupEmp.ascx.vb">
+      <DependentUpon>ctrlApproveSetupEmp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveSetupExt.ascx.designer.vb">
+      <DependentUpon>ctrlApproveSetupExt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveSetupExt.ascx.vb">
+      <DependentUpon>ctrlApproveSetupExt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveSetupOrg.ascx.designer.vb">
+      <DependentUpon>ctrlApproveSetupOrg.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveSetupOrg.ascx.vb">
+      <DependentUpon>ctrlApproveSetupOrg.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveTemplate.ascx.designer.vb">
+      <DependentUpon>ctrlApproveTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveTemplate.ascx.vb">
+      <DependentUpon>ctrlApproveTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveTemplateAddEdit.ascx.designer.vb">
+      <DependentUpon>ctrlApproveTemplateAddEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ApproveProcess\ctrlApproveTemplateAddEdit.ascx.vb">
+      <DependentUpon>ctrlApproveTemplateAddEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\BusinessObjects\MessageDTO.vb" />
+    <Compile Include="Modules\Common\Common.vb" />
+    <Compile Include="Modules\Common\CommonConfig.vb" />
+    <Compile Include="Modules\Common\CommonMessage.vb" />
+    <Compile Include="Modules\Common\CommonProcedureNew.vb" />
+    <Compile Include="Modules\Common\CommonProgramsRepository.vb" />
+    <Compile Include="Modules\Common\CommonRepository.vb" />
+    <Compile Include="Modules\Common\CommonRepositoryBase.vb" />
+    <Compile Include="Modules\Common\CommonView.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\CommonRepository.Secure.vb" />
+    <Compile Include="Modules\Common\CommonRepository.ApproveProcess.vb" />
+    <Compile Include="Modules\Common\CommonWorkflow.vb" />
+    <Compile Include="Modules\Common\ctrlFindFrameProductivityPopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindFrameProductivityPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindFrameProductivityPopup.ascx.vb">
+      <DependentUpon>ctrlFindFrameProductivityPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindFrameSalaryPopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindFrameSalaryPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindFrameSalaryPopup.ascx.vb">
+      <DependentUpon>ctrlFindFrameSalaryPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindPositionPopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindPositionPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindPositionPopup.ascx.vb">
+      <DependentUpon>ctrlFindPositionPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindPositionPopupDialog.ascx.designer.vb">
+      <DependentUpon>ctrlFindPositionPopupDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindPositionPopupDialog.ascx.vb">
+      <DependentUpon>ctrlFindPositionPopupDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindTRRequestPopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindTRRequestPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindTRRequestPopup.ascx.vb">
+      <DependentUpon>ctrlFindTRRequestPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindTRRequestPopupDialog.ascx.designer.vb">
+      <DependentUpon>ctrlFindTRRequestPopupDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindTRRequestPopupDialog.ascx.vb">
+      <DependentUpon>ctrlFindTRRequestPopupDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFrameProductivityTree.ascx.designer.vb">
+      <DependentUpon>ctrlFrameProductivityTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFrameProductivityTree.ascx.vb">
+      <DependentUpon>ctrlFrameProductivityTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFrameSalaryTree.ascx.designer.vb">
+      <DependentUpon>ctrlFrameSalaryTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFrameSalaryTree.ascx.vb">
+      <DependentUpon>ctrlFrameSalaryTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlLanguageManagementPortal.ascx.designer.vb">
+      <DependentUpon>ctrlLanguageManagementPortal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlLanguageManagementPortal.ascx.vb">
+      <DependentUpon>ctrlLanguageManagementPortal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlCommon_Reject.ascx.designer.vb">
+      <DependentUpon>ctrlCommon_Reject.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlCommon_Reject.ascx.vb">
+      <DependentUpon>ctrlCommon_Reject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindEmployeeSignPopupDialog.ascx.designer.vb">
+      <DependentUpon>ctrlFindEmployeeSignPopupDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindEmployeeSignPopupDialog.ascx.vb">
+      <DependentUpon>ctrlFindEmployeeSignPopupDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlMessageBoxTraining.ascx.designer.vb">
+      <DependentUpon>ctrlMessageBoxTraining.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlMessageBoxTraining.ascx.vb">
+      <DependentUpon>ctrlMessageBoxTraining.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlOrganizationLoadOnDemand.ascx.designer.vb">
+      <DependentUpon>ctrlOrganizationLoadOnDemand.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlOrganizationLoadOnDemand.ascx.vb">
+      <DependentUpon>ctrlOrganizationLoadOnDemand.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlUploadWithTeamplate.ascx.designer.vb">
+      <DependentUpon>ctrlUploadWithTeamplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlUploadWithTeamplate.ascx.vb">
+      <DependentUpon>ctrlUploadWithTeamplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlDynamicControl.ascx.designer.vb">
+      <DependentUpon>ctrlDynamicControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlDynamicControl.ascx.vb">
+      <DependentUpon>ctrlDynamicControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlCheckData.ascx.designer.vb">
+      <DependentUpon>ctrlCheckData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlCheckData.ascx.vb">
+      <DependentUpon>ctrlCheckData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindMEmployeePopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindMEmployeePopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindMEmployeePopup.ascx.vb">
+      <DependentUpon>ctrlFindMEmployeePopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindMEmployeePopupDialog.ascx.designer.vb">
+      <DependentUpon>ctrlFindMEmployeePopupDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindMEmployeePopupDialog.ascx.vb">
+      <DependentUpon>ctrlFindMEmployeePopupDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlPROCESS.ascx.designer.vb">
+      <DependentUpon>ctrlPROCESS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlPROCESS.ascx.vb">
+      <DependentUpon>ctrlPROCESS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlREPORT.ascx.designer.vb">
+      <DependentUpon>ctrlREPORT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlREPORT.ascx.vb">
+      <DependentUpon>ctrlREPORT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlRESULT.ascx.designer.vb">
+      <DependentUpon>ctrlRESULT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlRESULT.ascx.vb">
+      <DependentUpon>ctrlRESULT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlViewMap.ascx.designer.vb">
+      <DependentUpon>ctrlViewMap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlViewMap.ascx.vb">
+      <DependentUpon>ctrlViewMap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Guide\ctrlGuide.ascx.designer.vb">
+      <DependentUpon>ctrlGuide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Guide\ctrlGuide.ascx.vb">
+      <DependentUpon>ctrlGuide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlSessionWarning.ascx.designer.vb">
+      <DependentUpon>ctrlSessionWarning.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlSessionWarning.ascx.vb">
+      <DependentUpon>ctrlSessionWarning.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomMembershipProviderPortal.vb" />
+    <Compile Include="CustomMembershipProvider.vb" />
+    <Compile Include="Modules\Common\ctrlFindTitlePopupDialog.ascx.designer.vb">
+      <DependentUpon>ctrlFindTitlePopupDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindTitlePopupDialog.ascx.vb">
+      <DependentUpon>ctrlFindTitlePopupDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindEmployeePopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindEmployeePopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindEmployeePopup.ascx.vb">
+      <DependentUpon>ctrlFindEmployeePopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindEmployeePopupDialog.ascx.designer.vb">
+      <DependentUpon>ctrlFindEmployeePopupDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindEmployeePopupDialog.ascx.vb">
+      <DependentUpon>ctrlFindEmployeePopupDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlDashboard.ascx.designer.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlDashboard.ascx.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlUpload.ascx.designer.vb">
+      <DependentUpon>ctrlUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlUpload.ascx.vb">
+      <DependentUpon>ctrlUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomADMembershipProviderPortal.vb" />
+    <Compile Include="Modules\Common\ctrlFindOrgPopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindOrgPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindOrgPopup.ascx.vb">
+      <DependentUpon>ctrlFindOrgPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindTitlePopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindTitlePopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlFindTitlePopup.ascx.vb">
+      <DependentUpon>ctrlFindTitlePopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlLanguageManagement.ascx.designer.vb">
+      <DependentUpon>ctrlLanguageManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlLanguageManagement.ascx.vb">
+      <DependentUpon>ctrlLanguageManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlMessageBox.ascx.designer.vb">
+      <DependentUpon>ctrlMessageBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlMessageBox.ascx.vb">
+      <DependentUpon>ctrlMessageBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlOrganization.ascx.designer.vb">
+      <DependentUpon>ctrlOrganization.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\ctrlOrganization.ascx.vb">
+      <DependentUpon>ctrlOrganization.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomADMembershipProvider.vb" />
+    <Compile Include="ExtensionMethods.vb" />
+    <Compile Include="JsonHelper.vb" />
+    <Compile Include="LogHelper.vb" />
+    <Compile Include="Modules\Common\List\ctrlOtherList.ascx.designer.vb">
+      <DependentUpon>ctrlOtherList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\List\ctrlOtherList.ascx.vb">
+      <DependentUpon>ctrlOtherList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\List\ctrlOtherListGroup.ascx.designer.vb">
+      <DependentUpon>ctrlOtherListGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\List\ctrlOtherListGroup.ascx.vb">
+      <DependentUpon>ctrlOtherListGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\List\ctrlOtherListType.ascx.designer.vb">
+      <DependentUpon>ctrlOtherListType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\List\ctrlOtherListType.ascx.vb">
+      <DependentUpon>ctrlOtherListType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunctionExceptionEdit.ascx.designer.vb">
+      <DependentUpon>ctrlUserFunctionExceptionEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunctionExceptionEdit.ascx.vb">
+      <DependentUpon>ctrlUserFunctionExceptionEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlManageCache.ascx.designer.vb">
+      <DependentUpon>ctrlManageCache.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlManageCache.ascx.vb">
+      <DependentUpon>ctrlManageCache.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_System_Maintain.ascx.designer.vb">
+      <DependentUpon>ctrlSE_System_Maintain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_System_Maintain.ascx.vb">
+      <DependentUpon>ctrlSE_System_Maintain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlTimeWorkStandardCopy.ascx.designer.vb">
+      <DependentUpon>ctrlTimeWorkStandardCopy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlTimeWorkStandardCopy.ascx.vb">
+      <DependentUpon>ctrlTimeWorkStandardCopy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunctionExceptionAddEdit.ascx.designer.vb">
+      <DependentUpon>ctrlUserFunctionExceptionAddEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunctionExceptionAddEdit.ascx.vb">
+      <DependentUpon>ctrlUserFunctionExceptionAddEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunctionException.ascx.designer.vb">
+      <DependentUpon>ctrlUserFunctionException.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunctionException.ascx.vb">
+      <DependentUpon>ctrlUserFunctionException.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserException.ascx.designer.vb">
+      <DependentUpon>ctrlUserException.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserException.ascx.vb">
+      <DependentUpon>ctrlUserException.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlConfirmCodeAccuracy.ascx.designer.vb">
+      <DependentUpon>ctrlConfirmCodeAccuracy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlConfirmCodeAccuracy.ascx.vb">
+      <DependentUpon>ctrlConfirmCodeAccuracy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupN.ascx.designer.vb">
+      <DependentUpon>ctrlGroupN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupN.ascx.vb">
+      <DependentUpon>ctrlGroupN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupUserN.ascx.designer.vb">
+      <DependentUpon>ctrlGroupUserN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupUserN.ascx.vb">
+      <DependentUpon>ctrlGroupUserN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlRegisterUser.ascx.designer.vb">
+      <DependentUpon>ctrlRegisterUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlRegisterUser.ascx.vb">
+      <DependentUpon>ctrlRegisterUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlControlsManage.ascx.designer.vb">
+      <DependentUpon>ctrlControlsManage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlControlsManage.ascx.vb">
+      <DependentUpon>ctrlControlsManage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlControlsNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlControlsNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlControlsNewEdit.ascx.vb">
+      <DependentUpon>ctrlControlsNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupOrganization.ascx.designer.vb">
+      <DependentUpon>ctrlGroupOrganization.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupOrganization.ascx.vb">
+      <DependentUpon>ctrlGroupOrganization.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlMailTemplate.ascx.designer.vb">
+      <DependentUpon>ctrlMailTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlMailTemplate.ascx.vb">
+      <DependentUpon>ctrlMailTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlProGramParameters.ascx.designer.vb">
+      <DependentUpon>ctrlProGramParameters.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlProGramParameters.ascx.vb">
+      <DependentUpon>ctrlProGramParameters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlPrograms.ascx.designer.vb">
+      <DependentUpon>ctrlPrograms.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlPrograms.ascx.vb">
+      <DependentUpon>ctrlPrograms.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_Mail.ascx.designer.vb">
+      <DependentUpon>ctrlSE_Mail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_Mail.ascx.vb">
+      <DependentUpon>ctrlSE_Mail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSkinAppConfig.ascx.designer.vb">
+      <DependentUpon>ctrlSkinAppConfig.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSkinAppConfig.ascx.vb">
+      <DependentUpon>ctrlSkinAppConfig.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunction.ascx.designer.vb">
+      <DependentUpon>ctrlUserFunction.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunction.ascx.vb">
+      <DependentUpon>ctrlUserFunction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunctionAddEdit.ascx.designer.vb">
+      <DependentUpon>ctrlUserFunctionAddEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserFunctionAddEdit.ascx.vb">
+      <DependentUpon>ctrlUserFunctionAddEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserOrganization.ascx.designer.vb">
+      <DependentUpon>ctrlUserOrganization.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserOrganization.ascx.vb">
+      <DependentUpon>ctrlUserOrganization.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserReport.ascx.designer.vb">
+      <DependentUpon>ctrlUserReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUserReport.ascx.vb">
+      <DependentUpon>ctrlUserReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUser.ascx.designer.vb">
+      <DependentUpon>ctrlUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlUser.ascx.vb">
+      <DependentUpon>ctrlUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_LdapConfiguration.ascx.designer.vb">
+      <DependentUpon>ctrlSE_LdapConfiguration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_LdapConfiguration.ascx.vb">
+      <DependentUpon>ctrlSE_LdapConfiguration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_MailConfiguration.ascx.designer.vb">
+      <DependentUpon>ctrlSE_MailConfiguration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_MailConfiguration.ascx.vb">
+      <DependentUpon>ctrlSE_MailConfiguration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListFunction.ascx.designer.vb">
+      <DependentUpon>ctrlListFunction.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListFunction.ascx.vb">
+      <DependentUpon>ctrlListFunction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlValueSet.ascx.designer.vb">
+      <DependentUpon>ctrlValueSet.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlValueSet.ascx.vb">
+      <DependentUpon>ctrlValueSet.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlValueSetI.ascx.designer.vb">
+      <DependentUpon>ctrlValueSetI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlValueSetI.ascx.vb">
+      <DependentUpon>ctrlValueSetI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlValueSetT.ascx.designer.vb">
+      <DependentUpon>ctrlValueSetT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlValueSetT.ascx.vb">
+      <DependentUpon>ctrlValueSetT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="LongRunningActivity.vb" />
+    <Compile Include="Modules\Common\Secure\ctrlGroupCopy.ascx.designer.vb">
+      <DependentUpon>ctrlGroupCopy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupCopy.ascx.vb">
+      <DependentUpon>ctrlGroupCopy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlAccessLog.ascx.designer.vb">
+      <DependentUpon>ctrlAccessLog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlAccessLog.ascx.vb">
+      <DependentUpon>ctrlAccessLog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlActionLog.ascx.designer.vb">
+      <DependentUpon>ctrlActionLog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlActionLog.ascx.vb">
+      <DependentUpon>ctrlActionLog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlCheckActionChange.ascx.designer.vb">
+      <DependentUpon>ctrlCheckActionChange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlCheckActionChange.ascx.vb">
+      <DependentUpon>ctrlCheckActionChange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_Configuration.ascx.designer.vb">
+      <DependentUpon>ctrlSE_Configuration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlSE_Configuration.ascx.vb">
+      <DependentUpon>ctrlSE_Configuration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupReport.ascx.designer.vb">
+      <DependentUpon>ctrlGroupReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupReport.ascx.vb">
+      <DependentUpon>ctrlGroupReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupUserNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlGroupUserNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupUserNewEdit.ascx.vb">
+      <DependentUpon>ctrlGroupUserNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroup.ascx.designer.vb">
+      <DependentUpon>ctrlGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroup.ascx.vb">
+      <DependentUpon>ctrlGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupFunction.ascx.designer.vb">
+      <DependentUpon>ctrlGroupFunction.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupFunction.ascx.vb">
+      <DependentUpon>ctrlGroupFunction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupFunctionAddEdit.ascx.designer.vb">
+      <DependentUpon>ctrlGroupFunctionAddEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupFunctionAddEdit.ascx.vb">
+      <DependentUpon>ctrlGroupFunctionAddEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupUser.ascx.designer.vb">
+      <DependentUpon>ctrlGroupUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlGroupUser.ascx.vb">
+      <DependentUpon>ctrlGroupUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListGroup.ascx.designer.vb">
+      <DependentUpon>ctrlListGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListGroup.ascx.vb">
+      <DependentUpon>ctrlListGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListGroupNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlListGroupNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListGroupNewEdit.ascx.vb">
+      <DependentUpon>ctrlListGroupNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListUser.ascx.designer.vb">
+      <DependentUpon>ctrlListUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListUser.ascx.vb">
+      <DependentUpon>ctrlListUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListUserNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlListUserNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlListUserNewEdit.ascx.vb">
+      <DependentUpon>ctrlListUserNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlOnlineUser.ascx.designer.vb">
+      <DependentUpon>ctrlOnlineUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\Secure\ctrlOnlineUser.ascx.vb">
+      <DependentUpon>ctrlOnlineUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service References\CommonBusiness\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\CommonBusiness\CommonBusiness.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommonBusiness\CommonBusiness1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommonBusiness\CommonBusiness2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Framework.UI.vbproj">
+      <Project>{514CC57F-03AA-4D18-9BF2-3F7B66F6AD9B}</Project>
+      <Name>Framework.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFrameworkPublic\HistaffFrameworkPublic.vbproj">
+      <Project>{5D0CFFD8-3EF0-4584-818F-3F165BD8DE0C}</Project>
+      <Name>HistaffFrameworkPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mailer\Mailer.csproj">
+      <Project>{77274E50-303D-424A-8025-556CB913DA36}</Project>
+      <Name>Mailer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProfileDAL\ProfileDAL.vbproj">
+      <Project>{61E089AB-FE43-45F9-B093-0A26F762A1B4}</Project>
+      <Name>ProfileDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TVC.LDAP\Framework.LDAP.vbproj">
+      <Project>{46C88989-5826-4B88-91C4-512702B504E5}</Project>
+      <Name>Framework.LDAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAppLog\WebAppLog.vbproj">
+      <Project>{780365C3-C031-4841-9B4C-B39840797596}</Project>
+      <Name>WebAppLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CommonBusiness\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1695</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HistaffFramework" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IHistaffFramework_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="1800000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHistaffFramework_GetSpParameterSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpParameterSet" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_GetSpParameterSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpParameterSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteToDataSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteToDataSet" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteToDataSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteToDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStoreScalar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStoreScalar" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStoreScalar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStoreScalarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteBatchCommand_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteBatchCommand" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteBatchCommand_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteBatchCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStore1_5_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStore1_5" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStore1_5_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStore1_5Response" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStoreOutParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStoreOutParameters" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStoreOutParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStoreOutParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStore_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStore" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStoreNonQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStoreNonQuery" />
+  </wsdl:message>
+  <wsdl:message name="IHistaffFramework_ExecuteStoreNonQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStoreNonQueryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IHistaffFramework">
+    <wsdl:operation name="GetSpParameterSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHistaffFramework/GetSpParameterSet" message="tns:IHistaffFramework_GetSpParameterSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHistaffFramework/GetSpParameterSetResponse" message="tns:IHistaffFramework_GetSpParameterSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteToDataSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteToDataSet" message="tns:IHistaffFramework_ExecuteToDataSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteToDataSetResponse" message="tns:IHistaffFramework_ExecuteToDataSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoreScalar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStoreScalar" message="tns:IHistaffFramework_ExecuteStoreScalar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStoreScalarResponse" message="tns:IHistaffFramework_ExecuteStoreScalar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteBatchCommand">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteBatchCommand" message="tns:IHistaffFramework_ExecuteBatchCommand_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteBatchCommandResponse" message="tns:IHistaffFramework_ExecuteBatchCommand_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStore1_5">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStore1_5" message="tns:IHistaffFramework_ExecuteStore1_5_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStore1_5Response" message="tns:IHistaffFramework_ExecuteStore1_5_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoreOutParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStoreOutParameters" message="tns:IHistaffFramework_ExecuteStoreOutParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStoreOutParametersResponse" message="tns:IHistaffFramework_ExecuteStoreOutParameters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStore" message="tns:IHistaffFramework_ExecuteStore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStoreResponse" message="tns:IHistaffFramework_ExecuteStore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoreNonQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStoreNonQuery" message="tns:IHistaffFramework_ExecuteStoreNonQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHistaffFramework/ExecuteStoreNonQueryResponse" message="tns:IHistaffFramework_ExecuteStoreNonQuery_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IHistaffFramework" type="tns:IHistaffFramework">
+    <wsp:PolicyReference URI="#WSHttpBinding_IHistaffFramework_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSpParameterSet">
+      <soap12:operation soapAction="http://tempuri.org/IHistaffFramework/GetSpParameterSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteToDataSet">
+      <soap12:operation soapAction="http://tempuri.org/IHistaffFramework/ExecuteToDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoreScalar">
+      <soap12:operation soapAction="http://tempuri.org/IHistaffFramework/ExecuteStoreScalar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteBatchCommand">
+      <soap12:operation soapAction="http://tempuri.org/IHistaffFramework/ExecuteBatchCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStore1_5">
+      <soap12:operation soapAction="http://tempuri.org/IHistaffFramework/ExecuteStore1_5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoreOutParameters">
+      <soap12:operation soapAction="http://tempuri.org/IHistaffFramework/ExecuteStoreOutParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStore">
+      <soap12:operation soapAction="http://tempuri.org/IHistaffFramework/ExecuteStore" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoreNonQuery">
+      <soap12:operation soapAction="http://tempuri.org/IHistaffFramework/ExecuteStoreNonQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HistaffFramework">
+    <wsdl:port name="WSHttpBinding_IHistaffFramework" binding="tns:WSHttpBinding_IHistaffFramework">
+      <soap12:address location="http://localhost:9999/HistaffFramework.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:9999/HistaffFramework.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

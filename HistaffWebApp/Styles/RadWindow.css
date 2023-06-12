@@ -1,0 +1,9 @@
+﻿.RadWindow_Custom .rwCorner .rwTopLeft, .RadWindow_Custom .rwTitlebar, .RadWindow_Custom .rwCorner .rwTopRight, .RadWindow_Custom .rwIcon, .RadWindow_Custom table .rwTopLeft, .RadWindow_Custom table .rwTopRight, .RadWindow_Custom table .rwFooterLeft, .RadWindow_Custom table .rwFooterRight, .RadWindow_Custom table .rwFooterCenter, .RadWindow_Custom table .rwBodyLeft, .RadWindow_Custom table .rwBodyRight, .RadWindow_Custom table .rwTitlebar, .RadWindow_Custom table .rwTopResize, .RadWindow_Custom table .rwStatusbar, .RadWindow_Custom table .rwStatusbar .rwLoading
+{
+	display: none !important;
+}
+
+html .RadWindow_Simple
+{
+	border: none;
+}

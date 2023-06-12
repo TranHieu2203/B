@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PortalBusiness" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IPortalBusiness_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="1800000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9999/PortalBusiness.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9999/PortalBusiness.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9999/PortalBusiness.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Framework.Data" />
+      <xsd:import schemaLocation="http://localhost:9999/PortalBusiness.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PortalDAL" />
+      <xsd:import schemaLocation="http://localhost:9999/PortalBusiness.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPortalBusiness_TestService_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestService" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_TestService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_GetEventInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventInformation" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_GetEventInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_GetListEventInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListEventInformation" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_GetListEventInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListEventInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_InsertEventInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEventInformation" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_InsertEventInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEventInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_UpdateEventInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEventInformation" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_UpdateEventInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEventInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_DeleteEventInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEventInformation" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_DeleteEventInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEventInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_ActiveEventInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveEventInformation" />
+  </wsdl:message>
+  <wsdl:message name="IPortalBusiness_ActiveEventInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveEventInformationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPortalBusiness">
+    <wsdl:operation name="TestService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPortalBusiness/TestService" message="tns:IPortalBusiness_TestService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPortalBusiness/TestServiceResponse" message="tns:IPortalBusiness_TestService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPortalBusiness/GetEventInformation" message="tns:IPortalBusiness_GetEventInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPortalBusiness/GetEventInformationResponse" message="tns:IPortalBusiness_GetEventInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListEventInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPortalBusiness/GetListEventInformation" message="tns:IPortalBusiness_GetListEventInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPortalBusiness/GetListEventInformationResponse" message="tns:IPortalBusiness_GetListEventInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertEventInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPortalBusiness/InsertEventInformation" message="tns:IPortalBusiness_InsertEventInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPortalBusiness/InsertEventInformationResponse" message="tns:IPortalBusiness_InsertEventInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEventInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPortalBusiness/UpdateEventInformation" message="tns:IPortalBusiness_UpdateEventInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPortalBusiness/UpdateEventInformationResponse" message="tns:IPortalBusiness_UpdateEventInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEventInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPortalBusiness/DeleteEventInformation" message="tns:IPortalBusiness_DeleteEventInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPortalBusiness/DeleteEventInformationResponse" message="tns:IPortalBusiness_DeleteEventInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveEventInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPortalBusiness/ActiveEventInformation" message="tns:IPortalBusiness_ActiveEventInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPortalBusiness/ActiveEventInformationResponse" message="tns:IPortalBusiness_ActiveEventInformation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IPortalBusiness" type="tns:IPortalBusiness">
+    <wsp:PolicyReference URI="#WSHttpBinding_IPortalBusiness_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestService">
+      <soap12:operation soapAction="http://tempuri.org/IPortalBusiness/TestService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventInformation">
+      <soap12:operation soapAction="http://tempuri.org/IPortalBusiness/GetEventInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListEventInformation">
+      <soap12:operation soapAction="http://tempuri.org/IPortalBusiness/GetListEventInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertEventInformation">
+      <soap12:operation soapAction="http://tempuri.org/IPortalBusiness/InsertEventInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEventInformation">
+      <soap12:operation soapAction="http://tempuri.org/IPortalBusiness/UpdateEventInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEventInformation">
+      <soap12:operation soapAction="http://tempuri.org/IPortalBusiness/DeleteEventInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveEventInformation">
+      <soap12:operation soapAction="http://tempuri.org/IPortalBusiness/ActiveEventInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PortalBusiness">
+    <wsdl:port name="WSHttpBinding_IPortalBusiness" binding="tns:WSHttpBinding_IPortalBusiness">
+      <soap12:address location="http://localhost:9999/PortalBusiness.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:9999/PortalBusiness.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

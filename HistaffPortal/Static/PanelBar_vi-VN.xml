@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PanelBar>
+  <Item Text="Thông tin cá nhân" Expanded="True" Value="Profile">
+    <Item Value="Profile;ctrlPortalEmpProfile;Per;NoEdit" Text="Lý lịch cá nhân" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Profile;ctrlPortalFamily_Edit;Per;NoEdit" Text="Thông tin người thân" ImageUrl="~/Static/Images/RibbonBar/family.png" />
+    <Item Value="Profile;ctrlPortalWorking;Per;NoEdit" Text="Quá trình công tác" ImageUrl="~/Static/Images/RibbonBar/working.png" />
+    <Item Value="Profile;ctrlPortalSalary;Per;NoEdit" Text="Quá trình lương" ImageUrl="~/Static/Images/RibbonBar/salary.png" />
+    <Item Value="Profile;ctrlPortalContract;Per;NoEdit" Text="Quá trình lao động hợp đồng" ImageUrl="~/Static/Images/RibbonBar/contract.png" />
+    <Item Value="Profile;ctrlPortalContractAppendix;Per;NoEdit" Text="Quá trình phụ lục hợp đồng" ImageUrl="~/Static/Images/RibbonBar/contract.png" />
+    <Item Value="Profile;ctrlPortalCommend;Per;NoEdit" Text="Quá trình khen thưởng" ImageUrl="~/Static/Images/RibbonBar/commend.png" />
+    <Item Value="Profile;ctrlPortalDiscipline;Per;NoEdit" Text="Quá trình kỷ luật" ImageUrl="~/Static/Images/RibbonBar/discipline.png" />
+    <Item Value="Profile;ctrlInfoCertificate;Per;NoEdit" Text="Quá trình đào tạo" ImageUrl="~/Static/Images/RibbonBar/family.png" />
+    <Item Value="Profile;ctrlHU_EmpDtPortalInsurance;Per;NoEdit" Text="Quá trình bảo hiểm" ImageUrl="~/Static/Images/RibbonBar/working.png" />
+  </Item>
+  <Item Text="Thông tin hồ sơ" Expanded="True" Value="Profile">
+    <Item Value="Profile;ctrlPortalDisciplineMng;Per;NoEdit" Text="Quản lý thông tin kỷ luật nhân viên" ImageUrl="~/Static/Images/RibbonBar/discipline.png" />
+  </Item>
+  <Item Text="Thông tin chấm công" Expanded="True" Value="Attendance">
+
+    <Item Value="Attendance;ctrlLeaveRegistration;Per;NoEdit" Text="Đăng ký nghỉ" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlLeaveCTRegistration;Per;NoEdit" Text="Đăng ký đi công tác / Làm việc tại nhà (WFH)" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlOTRegistration;Per;NoEdit" Text="Đăng ký làm thêm" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlOTRegByAnother;Per;NoEdit" Text="Đăng ký hộ làm ngoài giờ" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlDMVSMng;Per;NoEdit" Text="Đăng ký đi trễ, về sớm, bổ sung quẹt thẻ" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlPortalSignWork;Per;NoEdit" Text="Đăng ký xếp ca làm việc" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+
+    <Item Value="Attendance;ctrlLeaveRegistrationByManager;Per;NoEdit" Text="Phê duyệt nghỉ / đi công tác / Làm việc tại nhà (WFH)" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlOTRegistrationByLM;Per;NoEdit" Text="Phê duyệt làm thêm" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlDMVSApproveByManager;Per;NoEdit" Text="Phê duyệt đi trễ, về sớm, bổ sung quẹt thẻ" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlPortalSWApprove;Per;NoEdit" Text="Phê duyệt Xếp ca làm việc" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+
+    <Item Value="Attendance;ctrlDSVM_LISTEMP_PORTAL;Per;NoEdit" Text="Danh sách nhân viên đi trễ, về sớm" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlPortalSignWorkDirect;Per;NoEdit" Text="Xếp ca làm việc trực tiếp" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlShiftEmployee;Per;NoEdit" Text="Bảng ca làm việc theo tháng" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Attendance;ctrlTimesheetSummaryForEmp;Per;NoEdit" Text="Bảng chấm công tháng" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+
+  </Item>
+  <Item Text="Thông tin Tuyển dụng" Expanded="True" Value="Recruitment">
+    <Item Value="Recruitment;ctrlRC_Request_Portal;Per;NoEdit" Text="Đăng ký yêu cầu tuyển dụng" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Recruitment;ctrlRC_Request_Approve_Portal;Per;NoEdit" Text="Phê duyệt yêu cầu tuyển dụng" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+  </Item>
+  <Item Text="Thông tin Lương" Expanded="True" Value="Payroll">
+    <Item Text="Phiếu lương Văn Phòng"  Value="Payroll;ctrlPA_PortalSalary;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Phiếu lương HTCH"  Value="Payroll;ctrlPA_PortalSalarys;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+  </Item>
+  <Item Text="Thông tin Đào tạo" Expanded="True" Value="Training">
+    <Item Text="Đề xuất yêu cầu đào tạo"  Value="Training;ctrlTR_PortalRequest;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Đăng ký tham gia đào tạo"  Value="Training;ctrlRegisterTraining;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Phê duyệt đề xuất yêu cầu đào tạo"  Value="Training;ctrlTR_PortalRequestApprove;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Hồ sơ đào tạo"  Value="Training;ctrlPortal_TranningRecord;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Đánh giá khóa học"  Value="Training;ctrlTR_EvaluateCourse;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+  </Item>
+  <Item Text="Thông tin Đánh giá" Expanded="True" Value="Performance">
+    <Item Text="Đăng ký KPI và Mục tiêu theo kỳ đánh giá"  Value="Performance;ctrlPortalMngInfoEvalTarget;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Phê duyệt đăng ký KPI"  Value="Performance;ctrlPortalApproveKPIAssessment;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Phê duyệt đánh giá mục tiêu"  Value="Performance;ctrlPortalApproveEvalTarget;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Quản lý đánh giá KPI nhân viên"  Value="Performance;ctrlPE_PortalHTCHAssessment;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Phê duyệt đánh giá KPI nhân viên"  Value="Performance;ctrlPortalApproveHTCTAssessment;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+  </Item>
+  <Item Text="Quản trị hệ thống" Expanded="True" Value="Portal">
+    <Item Text="Cấu hình hệ thống"  Value="Portal;ctrlConfiguration;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+    <Item Text="Quản lý Background"  Value="Portal;ctrlSE_Background_Portal;Per;NoEdit" ImageUrl="~/Static/Images/RibbonBar/user.png"/>
+  </Item>
+
+  <Item Text="Phê duyệt Tập trung" Expanded="True" Value="Attendance">
+    <Item Value="Attendance;ctrlAT_ApproveMng;Per;NoEdit" Text="PD Tập trung" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+  </Item>
+</PanelBar>
+
+

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Business" PostBack="False">
+      <Group>
+        <Item Value="ctrlTR_Plan" Text="Tranning Plane" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Plan&amp;group=Business" CheckPermission="TRUE"/>
+        <Item Value="ctrlTR_Request" Text="Declare Request Trainning" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Request&amp;group=Business" CheckPermission="TRUE"/>
+        <Item Value="ctrlTR_Program" Text="Organizing training courses" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Program&amp;group=Business" CheckPermission="TRUE"/>
+        <Item Value="ctrlTR_Reimbursement" Text="Restitution training" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Reimbursement&amp;group=Business" CheckPermission="TRUE"/>
+        <Item Value="ctrlTR_ChooseForm" Text="Selection evaluation form" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_ChooseForm&amp;group=Business" CheckPermission="TRUE"/>
+        <Item Value="ctrlTR_AssessmentResult" Text="Course Evaluation" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_AssessmentResult&amp;group=Business" CheckPermission="TRUE"/>
+        <Item Value="ctrlTR_TrainningRecord" Text="Employee training records" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_TranningRecord&amp;group=Business" CheckPermission="TRUE"/>
+        <Item Value="ctrlTR_ManaTitleCourse" Text="Employee training standard titles manager" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_ManaTitleCourse&amp;group=Business" CheckPermission="TRUE"/>
+      </Group>
+    </Item>
+
+    <Item Text="Report" PostBack="False">
+      <Group>
+        <Item Value="ctrlTR_ReportList" Text="List Report" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_ReportList&amp;group=report" CheckPermission="true"/>
+
+      </Group>
+    </Item>
+    
+    <Item Text="Institute"  PostBack="False">
+      <Group>
+        <Item Value="ctrlTR_SettingCriteriaGroup" Text="Group criteria" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_SettingCriteriaGroup&amp;group=Setting" CheckPermission="true"/>
+        <Item Value="ctrlTR_SettingAssessmentForm" Text="Evaluation form" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_SettingAssessmentForm&amp;group=Setting" CheckPermission="true"/>
+        <Item Value="ctrlTR_TitleCourse" Text="Employee training standard titles" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_TitleCourse&amp;group=Setting" CheckPermission="true"/>
+      </Group>
+    </Item>
+    
+    <Item Text="Category"  PostBack="False">
+      <Group>
+        <Item Value="ctrlTR_Certificate" Text="Certificate" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Certificate&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_ProgramGroup" Text="Group programs" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_ProgramGroup&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_Course" Text="The Trainning" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Course&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_Center" Text="Training Center" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Center&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_Lecture" Text="Trainers" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Lecture&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_Unit" Text="Hosted training unit" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Unit&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_CommitAfterTrain" Text="Committed after training" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_CommitAfterTrain&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_Criteria" Text="Criteria" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_Criteria&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_CriteriaGroup" Text="Group criteria" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_CriteriaGroup&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_AssessmentRate" Text="Assessment scale" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_AssessmentRate&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlTR_AssessmentForm" Text="Evaluation form" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlTR_AssessmentForm&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlOtherList" Text="System Parameters" PostBack="True" NavigateUrl="Default.aspx?mid=Training&amp;fid=ctrlOtherList&amp;group=List" CheckPermission="true"/>
+      </Group>
+    </Item>
+    
+
+  </Group>
+</Menu>

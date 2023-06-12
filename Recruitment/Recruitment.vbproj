@@ -1,0 +1,1053 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{ABB2176D-ECC7-4392-9DE1-D66C7A939B8A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Recruitment</RootNamespace>
+    <AssemblyName>Recruitment</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Recruitment.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Recruitment.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.0.3.0, Culture=neutral, PublicKeyToken=12d8fa3d810c48da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.Design, Version=2014.1.225.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2019.1.115.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="My Project\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateBeforeWTDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateCVDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateEduDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateExpectDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateFamilyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateHealthDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateHistoryDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateOtherInfoDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CandidateReferenceDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.ComboBoxDataDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CostCenterDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CostDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.CVPoolEmpDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.ExamsDtlDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Modules\Portal\ctrlRC_Request_Approve_Portal.ascx" />
+    <Content Include="Modules\Portal\ctrlRC_Request_Portal.ascx" />
+    <Content Include="Modules\Portal\ctrlRC_Request_PortalNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ListOfferCandidate.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Contract.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlORG_HRYearPlaning.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlORG_HRPlaningBudget.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_User_Title_Permision.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Request_Verify.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CandidateNegotiate.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Candidate_CVPool.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRBudgetDetail.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRPlaningBudget.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRPlaningDetailNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRPlaningDetail.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRYearPlaningNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramInterviewResult_Dialog.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramExamsResult_Dialog.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HU.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramUResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_RequestNewEdit_TBP.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Request_Person_TCTD.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlChartDegree.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlChartWageByMonth.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlDashboardPlanning.ascx" />
+    <Content Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.HRPlaningDetailDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.HRYearPlaningDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.ListOfferCandidateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.PlanRegDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.ProgramDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.ProgramExamsDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.ProgramScheduleCanDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.ProgramScheduleDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.RCNegotiateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.RC_TransferCAN_ToEmployeeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.ReportDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.RC_Allowance_CandidateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.RC_Salary_CandidateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.RC_USER_TITLE_PERMISIONDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.RequestDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.RequestPortalDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.Se_ReportDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.StatisticDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Recruitment.RecruitmentBusiness.TrainSingerDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\RecruitmentBusiness.disco" />
+    <None Include="Service References\RecruitmentBusiness\configuration91.svcinfo" />
+    <None Include="Service References\RecruitmentBusiness\configuration.svcinfo" />
+    <None Include="Service References\RecruitmentBusiness\RecruitmentBusiness4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\RecruitmentBusiness5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\RecruitmentBusiness6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Modules\Common\ctrlFindEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindOrgPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopup.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Common\ctrlOrganization.ascx" />
+    <Content Include="Modules\Common\ctrlUpload.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRYearPlaning.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgrammNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolReference.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlBeforeWT.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlFamily.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlProfile.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlTraining.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtl.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPool.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CadidateReference.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CandidateList.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CandidateTransferList.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CandidateTransferList2.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Costallocate.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_FindCandidate.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtlBeforeWT.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtlTraining.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtlFamily.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_FindProgram.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Manning.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_PlanRegReject.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramExamsResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramInterviewResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramSchedule.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtl.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtlProfile.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ImageUpload.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Program.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramUpdateResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Request.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_PlanSummary.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramExams.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramScheduleNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Cost.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_RequestNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_RequestReject.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Stage.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_StageCost.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_StageCost_CostAllocate.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_DBEstimateReality.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_DBCanToEmp.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_DBStatisticEducation.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_DBStatisticGender.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_Dashboard.ascx" />
+    <Content Include="Modules\Recruitment\List\ctrlRC_Exams.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_PlanRegNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_PlanReg.ascx" />
+    <Content Include="Modules\Recruitment\List\ctrlCostCenter.ascx" />
+    <Content Include="Modules\Recruitment\Report\ctrlRC_ReportList.ascx" />
+    <Content Include="Modules\Recruitment\Shared\ctrlFindProgramPopupDialog.ascx" />
+    <Content Include="Modules\Recruitment\Shared\ctrlFindProgramPopupView.ascx" />
+    <Content Include="Modules\Recruitment\Shared\ctrlRC_CanBasicInfo.ascx" />
+    <Content Include="Modules\Recruitment\Templates\ThuCamOn.htm" />
+    <Content Include="Modules\Recruitment\Templates\TiepNhanThuViec.htm" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\ManningTitleDTO.vb" />
+    <Compile Include="BusinessObjects\ManningOrgDTO.vb" />
+    <Compile Include="BusinessObjects\PROGRAM_SCHEDULE_CAN_DTO.vb" />
+    <Compile Include="BusinessObjects\RC_CANDIDATE_TRAINNING_DTO.vb" />
+    <Compile Include="Modules\Portal\ctrlRC_Request_Approve_Portal.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Request_Approve_Portal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlRC_Request_Approve_Portal.ascx.vb">
+      <DependentUpon>ctrlRC_Request_Approve_Portal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlRC_Request_Portal.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Request_Portal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlRC_Request_Portal.ascx.vb">
+      <DependentUpon>ctrlRC_Request_Portal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlRC_Request_PortalNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Request_PortalNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlRC_Request_PortalNewEdit.ascx.vb">
+      <DependentUpon>ctrlRC_Request_PortalNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\ATConstant.vb" />
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ListOfferCandidate.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ListOfferCandidate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ListOfferCandidate.ascx.vb">
+      <DependentUpon>ctrlRC_ListOfferCandidate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Contract.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Contract.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Contract.ascx.vb">
+      <DependentUpon>ctrlRC_Contract.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlORG_HRYearPlaning.ascx.designer.vb">
+      <DependentUpon>ctrlORG_HRYearPlaning.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlORG_HRYearPlaning.ascx.vb">
+      <DependentUpon>ctrlORG_HRYearPlaning.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlORG_HRPlaningBudget.ascx.designer.vb">
+      <DependentUpon>ctrlORG_HRPlaningBudget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlORG_HRPlaningBudget.ascx.vb">
+      <DependentUpon>ctrlORG_HRPlaningBudget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_User_Title_Permision.ascx.designer.vb">
+      <DependentUpon>ctrlRC_User_Title_Permision.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_User_Title_Permision.ascx.vb">
+      <DependentUpon>ctrlRC_User_Title_Permision.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Request_Verify.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Request_Verify.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Request_Verify.ascx.vb">
+      <DependentUpon>ctrlRC_Request_Verify.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CandidateNegotiate.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CandidateNegotiate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CandidateNegotiate.ascx.vb">
+      <DependentUpon>ctrlRC_CandidateNegotiate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Candidate_CVPool.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Candidate_CVPool.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Candidate_CVPool.ascx.vb">
+      <DependentUpon>ctrlRC_Candidate_CVPool.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRBudgetDetail.ascx.designer.vb">
+      <DependentUpon>ctrlRC_HRBudgetDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRBudgetDetail.ascx.vb">
+      <DependentUpon>ctrlRC_HRBudgetDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRPlaningBudget.ascx.designer.vb">
+      <DependentUpon>ctrlRC_HRPlaningBudget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRPlaningBudget.ascx.vb">
+      <DependentUpon>ctrlRC_HRPlaningBudget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRPlaningDetailNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlRC_HRPlaningDetailNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRPlaningDetailNewEdit.ascx.vb">
+      <DependentUpon>ctrlRC_HRPlaningDetailNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRPlaningDetail.ascx.designer.vb">
+      <DependentUpon>ctrlRC_HRPlaningDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRPlaningDetail.ascx.vb">
+      <DependentUpon>ctrlRC_HRPlaningDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRYearPlaningNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlRC_HRYearPlaningNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRYearPlaningNewEdit.ascx.vb">
+      <DependentUpon>ctrlRC_HRYearPlaningNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRYearPlaning.ascx.designer.vb">
+      <DependentUpon>ctrlRC_HRYearPlaning.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HRYearPlaning.ascx.vb">
+      <DependentUpon>ctrlRC_HRYearPlaning.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramInterviewResult_Dialog.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramInterviewResult_Dialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramInterviewResult_Dialog.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramInterviewResult_Dialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HU.ascx.designer.vb">
+      <DependentUpon>ctrlRC_HU.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_HU.ascx.vb">
+      <DependentUpon>ctrlRC_HU.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgrammNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgrammNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgrammNewEdit.ascx.vb">
+      <DependentUpon>ctrlRC_ProgrammNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolReference.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CVPoolReference.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolReference.ascx.vb">
+      <DependentUpon>ctrlRC_CVPoolReference.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlBeforeWT.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CVPoolDtlBeforeWT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlBeforeWT.ascx.vb">
+      <DependentUpon>ctrlRC_CVPoolDtlBeforeWT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlFamily.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CVPoolDtlFamily.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlFamily.ascx.vb">
+      <DependentUpon>ctrlRC_CVPoolDtlFamily.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlProfile.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CVPoolDtlProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlProfile.ascx.vb">
+      <DependentUpon>ctrlRC_CVPoolDtlProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlTraining.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CVPoolDtlTraining.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlTraining.ascx.vb">
+      <DependentUpon>ctrlRC_CVPoolDtlTraining.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtl.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CVPoolDtl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtl.ascx.vb">
+      <DependentUpon>ctrlRC_CVPoolDtl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPool.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CVPool.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CVPool.ascx.vb">
+      <DependentUpon>ctrlRC_CVPool.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CadidateReference.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CadidateReference.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CadidateReference.ascx.vb">
+      <DependentUpon>ctrlRC_CadidateReference.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramExamsResult_Dialog.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramExamsResult_Dialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramExamsResult_Dialog.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramExamsResult_Dialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramUResult.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramUResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramUResult.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramUResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_RequestNewEdit_TBP.ascx.designer.vb">
+      <DependentUpon>ctrlRC_RequestNewEdit_TBP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_RequestNewEdit_TBP.ascx.vb">
+      <DependentUpon>ctrlRC_RequestNewEdit_TBP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Request_Person_TCTD.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Request_Person_TCTD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Request_Person_TCTD.ascx.vb">
+      <DependentUpon>ctrlRC_Request_Person_TCTD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Request.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Request.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Request.ascx.vb">
+      <DependentUpon>ctrlRC_Request.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_RequestNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlRC_RequestNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_RequestNewEdit.ascx.vb">
+      <DependentUpon>ctrlRC_RequestNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_RequestReject.ascx.designer.vb">
+      <DependentUpon>ctrlRC_RequestReject.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_RequestReject.ascx.vb">
+      <DependentUpon>ctrlRC_RequestReject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlChartDegree.ascx.designer.vb">
+      <DependentUpon>ctrlChartDegree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlChartDegree.ascx.vb">
+      <DependentUpon>ctrlChartDegree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlChartWageByMonth.ascx.designer.vb">
+      <DependentUpon>ctrlChartWageByMonth.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlChartWageByMonth.ascx.vb">
+      <DependentUpon>ctrlChartWageByMonth.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlDashboardPlanning.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardPlanning.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlDashboardPlanning.ascx.vb">
+      <DependentUpon>ctrlDashboardPlanning.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlDashboardSixCell.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlDashboardSixCell.ascx.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_DBEstimateReality.ascx.designer.vb">
+      <DependentUpon>ctrlRC_DBEstimateReality.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_DBEstimateReality.ascx.vb">
+      <DependentUpon>ctrlRC_DBEstimateReality.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_DBCanToEmp.ascx.designer.vb">
+      <DependentUpon>ctrlRC_DBCanToEmp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_DBCanToEmp.ascx.vb">
+      <DependentUpon>ctrlRC_DBCanToEmp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_DBStatisticEducation.ascx.designer.vb">
+      <DependentUpon>ctrlRC_DBStatisticEducation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_DBStatisticEducation.ascx.vb">
+      <DependentUpon>ctrlRC_DBStatisticEducation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_DBStatisticGender.ascx.designer.vb">
+      <DependentUpon>ctrlRC_DBStatisticGender.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_DBStatisticGender.ascx.vb">
+      <DependentUpon>ctrlRC_DBStatisticGender.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_Dashboard.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Dashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Dashboard\ctrlRC_Dashboard.ascx.vb">
+      <DependentUpon>ctrlRC_Dashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\RecruitmentRepository.Dashboard.vb" />
+    <Compile Include="Modules\Recruitment\Shared\ctrlFindProgramPopupDialog.ascx.designer.vb">
+      <DependentUpon>ctrlFindProgramPopupDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Shared\ctrlFindProgramPopupDialog.ascx.vb">
+      <DependentUpon>ctrlFindProgramPopupDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Shared\ctrlFindProgramPopupView.ascx.designer.vb">
+      <DependentUpon>ctrlFindProgramPopupView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Shared\ctrlFindProgramPopupView.ascx.vb">
+      <DependentUpon>ctrlFindProgramPopupView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RCContant.vb" />
+    <Compile Include="BusinessObjects\COSTALLOCATE_DTO.vb" />
+    <Compile Include="BusinessObjects\COST_COSTALLOCATE_DTO.vb" />
+    <Compile Include="BusinessObjects\COST_DTO.vb" />
+    <Compile Include="BusinessObjects\STAGE_DTO.vb" />
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CandidateList.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CandidateList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CandidateList.ascx.vb">
+      <DependentUpon>ctrlRC_CandidateList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CandidateTransferList.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CandidateTransferList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CandidateTransferList.ascx.vb">
+      <DependentUpon>ctrlRC_CandidateTransferList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CandidateTransferList2.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CandidateTransferList2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CandidateTransferList2.ascx.vb">
+      <DependentUpon>ctrlRC_CandidateTransferList2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Costallocate.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Costallocate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Costallocate.ascx.vb">
+      <DependentUpon>ctrlRC_Costallocate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_FindCandidate.ascx.designer.vb">
+      <DependentUpon>ctrlRC_FindCandidate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_FindCandidate.ascx.vb">
+      <DependentUpon>ctrlRC_FindCandidate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtlBeforeWT.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CanDtlBeforeWT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtlBeforeWT.ascx.vb">
+      <DependentUpon>ctrlRC_CanDtlBeforeWT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtlTraining.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CanDtlTraining.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtlTraining.ascx.vb">
+      <DependentUpon>ctrlRC_CanDtlTraining.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtlFamily.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CanDtlFamily.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtlFamily.ascx.vb">
+      <DependentUpon>ctrlRC_CanDtlFamily.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_FindProgram.ascx.designer.vb">
+      <DependentUpon>ctrlRC_FindProgram.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_FindProgram.ascx.vb">
+      <DependentUpon>ctrlRC_FindProgram.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_PlanRegReject.ascx.designer.vb">
+      <DependentUpon>ctrlRC_PlanRegReject.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_PlanRegReject.ascx.vb">
+      <DependentUpon>ctrlRC_PlanRegReject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Manning.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Manning.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Manning.ascx.vb">
+      <DependentUpon>ctrlRC_Manning.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramExamsResult.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramExamsResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramExamsResult.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramExamsResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramInterviewResult.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramInterviewResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramInterviewResult.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramInterviewResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramResult.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramResult.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramSchedule.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramSchedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramSchedule.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramSchedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtl.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CanDtl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtl.ascx.vb">
+      <DependentUpon>ctrlRC_CanDtl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtlProfile.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CanDtlProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_CanDtlProfile.ascx.vb">
+      <DependentUpon>ctrlRC_CanDtlProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ImageUpload.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ImageUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ImageUpload.ascx.vb">
+      <DependentUpon>ctrlRC_ImageUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramNewEdit.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Program.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Program.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Program.ascx.vb">
+      <DependentUpon>ctrlRC_Program.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramUpdateResult.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramUpdateResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramUpdateResult.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramUpdateResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_PlanSummary.ascx.designer.vb">
+      <DependentUpon>ctrlRC_PlanSummary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_PlanSummary.ascx.vb">
+      <DependentUpon>ctrlRC_PlanSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramExams.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramExams.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramExams.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramExams.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramScheduleNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ProgramScheduleNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_ProgramScheduleNewEdit.ascx.vb">
+      <DependentUpon>ctrlRC_ProgramScheduleNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Cost.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Cost.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Cost.ascx.vb">
+      <DependentUpon>ctrlRC_Cost.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Stage.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Stage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_Stage.ascx.vb">
+      <DependentUpon>ctrlRC_Stage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_StageCost.ascx.designer.vb">
+      <DependentUpon>ctrlRC_StageCost.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_StageCost.ascx.vb">
+      <DependentUpon>ctrlRC_StageCost.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_StageCost_CostAllocate.ascx.designer.vb">
+      <DependentUpon>ctrlRC_StageCost_CostAllocate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_StageCost_CostAllocate.ascx.vb">
+      <DependentUpon>ctrlRC_StageCost_CostAllocate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\RecruitmentRepositoryStore.Business.vb" />
+    <Compile Include="Modules\Recruitment\List\ctrlRC_Exams.ascx.designer.vb">
+      <DependentUpon>ctrlRC_Exams.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\List\ctrlRC_Exams.ascx.vb">
+      <DependentUpon>ctrlRC_Exams.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_PlanRegNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlRC_PlanRegNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_PlanRegNewEdit.ascx.vb">
+      <DependentUpon>ctrlRC_PlanRegNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_PlanReg.ascx.designer.vb">
+      <DependentUpon>ctrlRC_PlanReg.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Business\ctrlRC_PlanReg.ascx.vb">
+      <DependentUpon>ctrlRC_PlanReg.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\RecruitmentRepository.Report.vb" />
+    <Compile Include="Modules\Recruitment\RecruitmentCommon.vb" />
+    <Compile Include="Modules\Recruitment\RecruitmentRepository.Business.vb" />
+    <Compile Include="Modules\Recruitment\List\ctrlCostCenter.ascx.designer.vb">
+      <DependentUpon>ctrlCostCenter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\List\ctrlCostCenter.ascx.vb">
+      <DependentUpon>ctrlCostCenter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\RecruitmentRepository.List.vb" />
+    <Compile Include="Modules\Recruitment\RecruitmentRepository.vb" />
+    <Compile Include="Modules\Recruitment\RecruitmentRepositoryBase.vb" />
+    <Compile Include="Modules\Recruitment\RecruitmentRepositoryStatic.vb" />
+    <Compile Include="Modules\Recruitment\RecruitmentStoreProcedure.vb" />
+    <Compile Include="Modules\Recruitment\Report\ctrlRC_ReportList.ascx.designer.vb">
+      <DependentUpon>ctrlRC_ReportList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Report\ctrlRC_ReportList.ascx.vb">
+      <DependentUpon>ctrlRC_ReportList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Shared\ctrlRC_CanBasicInfo.ascx.designer.vb">
+      <DependentUpon>ctrlRC_CanBasicInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Recruitment\Shared\ctrlRC_CanBasicInfo.ascx.vb">
+      <DependentUpon>ctrlRC_CanBasicInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\RecruitmentBusiness\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\RecruitmentBusiness.wsdl" />
+    <None Include="Service References\RecruitmentBusiness\RecruitmentBusiness.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\RecruitmentBusiness1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\RecruitmentBusiness2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruitmentBusiness\RecruitmentBusiness3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\RecruitmentBusiness\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vbproj">
+      <Project>{4B2EF214-7880-45F2-BB79-B394E552B4BE}</Project>
+      <Name>Common %28Common\Common%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.UI.vbproj">
+      <Project>{514CC57F-03AA-4D18-9BF2-3F7B66F6AD9B}</Project>
+      <Name>Framework.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFrameworkPublic\HistaffFrameworkPublic.vbproj">
+      <Project>{5D0CFFD8-3EF0-4584-818F-3F165BD8DE0C}</Project>
+      <Name>HistaffFrameworkPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFramework\HistaffFramework.vbproj">
+      <Project>{FB51763C-4CE7-4417-BBD9-5FF784FCE7A7}</Project>
+      <Name>HistaffFramework %28HistaffFramework\HistaffFramework%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Profile\Profile.vbproj">
+      <Project>{B8148AB7-8752-487B-ABA0-DDA56B917E35}</Project>
+      <Name>Profile %28Profile\Profile%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAppLog\WebAppLog.vbproj">
+      <Project>{780365C3-C031-4841-9B4C-B39840797596}</Project>
+      <Name>WebAppLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>33301</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

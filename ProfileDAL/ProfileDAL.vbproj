@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{61E089AB-FE43-45F9-B093-0A26F762A1B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ProfileDAL</RootNamespace>
+    <AssemblyName>ProfileDAL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProfileDAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProfileDAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.0.3.0, Culture=neutral, PublicKeyToken=12d8fa3d810c48da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>..\Recruitment\bin\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\ref\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>..\packages\LinqKit.1.0\lib\35\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\app\client\HIEUTV\product\12.2.0\client_2\odp.net\bin\4\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.Web, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.Web.UI, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\Business\CBPlanningDTO.vb" />
+    <Compile Include="BusinessObjects\Business\CETIFICATEDTO.vb" />
+    <Compile Include="BusinessObjects\Business\CETIFICATE_EDITDTO.vb" />
+    <Compile Include="BusinessObjects\Business\CommandResult.vb" />
+    <Compile Include="BusinessObjects\Business\StocksTransactionDTO.vb" />
+    <Compile Include="BusinessObjects\Business\StocksDTO.vb" />
+    <Compile Include="BusinessObjects\Business\CommiteeDTO.vb" />
+    <Compile Include="BusinessObjects\Business\AccidentDTO.vb" />
+    <Compile Include="BusinessObjects\Business\UserFileDTO.vb" />
+    <Compile Include="BusinessObjects\Business\DisciplineOrgDTO.vb" />
+    <Compile Include="BusinessObjects\Business\FileUploadDTO.vb" />
+    <Compile Include="BusinessObjects\Business\HealthExamDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EventEmpDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EventManageDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmpBankDTO.vb" />
+    <Compile Include="BusinessObjects\Business\HUAbroadDTO.vb" />
+    <Compile Include="BusinessObjects\Business\MngProfileSavedDTO.vb" />
+    <Compile Include="BusinessObjects\Business\SignerSetupDTO.vb" />
+    <Compile Include="BusinessObjects\Business\HU_SALARYDTO.vb" />
+    <Compile Include="BusinessObjects\Business\WorkPlaceDTO.vb" />
+    <Compile Include="BusinessObjects\Business\Temp_ConcurrentlyDTO.vb" />
+    <Compile Include="BusinessObjects\Business\TransferTerminateDTO.vb" />
+    <Compile Include="BusinessObjects\Business\HandoverContentDTO.vb" />
+    <Compile Include="BusinessObjects\Business\DebtDTO.vb" />
+    <Compile Include="BusinessObjects\Business\TrainningEvaluateDTO.vb" />
+    <Compile Include="BusinessObjects\Business\TrainningManageDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeCriteriaRecordDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeCompetencyDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeAssessmentDTO.vb" />
+    <Compile Include="BusinessObjects\Business\AssetMngDTO.vb" />
+    <Compile Include="BusinessObjects\Business\CommendDTO.vb" />
+    <Compile Include="BusinessObjects\Business\CommendOrgDTO.vb" />
+    <Compile Include="BusinessObjects\Business\ContractDTO.vb" />
+    <Compile Include="BusinessObjects\Business\CommendPrintDTO.vb" />
+    <Compile Include="BusinessObjects\Business\CommendEmpDTO.vb" />
+    <Compile Include="BusinessObjects\Business\DisciplineSalaryDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeTrainForCompanyDTO.vb" />
+    <Compile Include="BusinessObjects\Business\FileContractDTO.vb" />
+    <Compile Include="BusinessObjects\Business\FilterParamDTO.vb" />
+    <Compile Include="BusinessObjects\Business\HUAllowanceDTO.vb" />
+    <Compile Include="BusinessObjects\Business\HuFileDTO.vb" />
+    <Compile Include="BusinessObjects\Business\ImportCommendDTO.vb" />
+    <Compile Include="BusinessObjects\Business\TerminateReasonDTO.vb" />
+    <Compile Include="BusinessObjects\Business\MergeFieldDTO.vb" />
+    <Compile Include="BusinessObjects\Business\Terminate3BDTO.vb" />
+    <Compile Include="BusinessObjects\Business\TrainningForeignDTO.vb" />
+    <Compile Include="BusinessObjects\Business\Welfatemng_empDTO.vb" />
+    <Compile Include="BusinessObjects\Business\WorkingBeforeDTOEdit.vb" />
+    <Compile Include="BusinessObjects\Business\HU_PRO_TRAIN_OUT_COMPANYDTOEDIT.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeEditDTO.vb" />
+    <Compile Include="BusinessObjects\Business\FamilyEditDTO.vb" />
+    <Compile Include="BusinessObjects\Dashboard\ATRegSearchDTO.vb" />
+    <Compile Include="BusinessObjects\Dashboard\CompetencyAvgEmplDTO.vb" />
+    <Compile Include="BusinessObjects\Dashboard\TotalDayOffDTO.vb" />
+    <Compile Include="BusinessObjects\List\CommendFormulaDTO.vb" />
+    <Compile Include="BusinessObjects\List\CommendLevelDTO.vb" />
+    <Compile Include="BusinessObjects\List\DisciplineListDTO.vb" />
+    <Compile Include="BusinessObjects\List\CommendListDTO.vb" />
+    <Compile Include="BusinessObjects\List\CompetencyGroupDTO.vb" />
+    <Compile Include="BusinessObjects\List\CompetencyDTO.vb" />
+    <Compile Include="BusinessObjects\List\CompetencyBuildDTO.vb" />
+    <Compile Include="BusinessObjects\List\CompetencyStandardDTO.vb" />
+    <Compile Include="BusinessObjects\List\CompetencyAppendixDTO.vb" />
+    <Compile Include="BusinessObjects\List\CompetencyEmpDTO.vb" />
+    <Compile Include="BusinessObjects\List\CompetencyPeriodDTO.vb" />
+    <Compile Include="BusinessObjects\List\CompetencyAssDtlDTO.vb" />
+    <Compile Include="BusinessObjects\List\CompetencyAssDTO.vb" />
+    <Compile Include="BusinessObjects\List\ContractProcedureDTO.vb" />
+    <Compile Include="BusinessObjects\List\ChucvuDTO.vb" />
+    <Compile Include="BusinessObjects\List\BHLDItemDTO.vb" />
+    <Compile Include="BusinessObjects\List\JobBandDTO.vb" />
+    <Compile Include="BusinessObjects\List\JobPositinTreeDTO.vb" />
+    <Compile Include="BusinessObjects\List\ORG_PAUSEDTO.vb" />
+    <Compile Include="BusinessObjects\List\OrgBrandDTO.vb" />
+    <Compile Include="BusinessObjects\List\DocumentDTO.vb" />
+    <Compile Include="BusinessObjects\List\PAPaymentListDTO.vb" />
+    <Compile Include="BusinessObjects\List\RelationshipListDTO.vb" />
+    <Compile Include="BusinessObjects\List\PA_SALARY_TYPEDTO.vb" />
+    <Compile Include="BusinessObjects\List\ReminderListDTO.vb" />
+    <Compile Include="BusinessObjects\List\SignerDTO.vb" />
+    <Compile Include="BusinessObjects\Report\OrgChartRptDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\CompetencyCourseDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\AttachFilesDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\SalaryItemsPercentDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\JobDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\JobFunctionDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\JobPositionDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\LocationDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\OrganizationTreeDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\OrganizationVerticalDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\OrgChartDTO.vb" />
+    <Compile Include="BusinessObjects\Business\DisciplineEmpDTO.vb" />
+    <Compile Include="BusinessObjects\Business\HU_PRO_TRAIN_OUT_COMPANYDTO.vb" />
+    <Compile Include="BusinessObjects\Business\INS_CHANGEDTO.vb" />
+    <Compile Include="BusinessObjects\Business\INS_CHANGE_TYPEDTO.vb" />
+    <Compile Include="BusinessObjects\Business\OccupationalSafetyDTO.vb" />
+    <Compile Include="BusinessObjects\Business\LabourProtectionMngDTO.vb" />
+    <Compile Include="BusinessObjects\Business\WorkingAllowanceDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeFileDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeTrainDTO.vb" />
+    <Compile Include="BusinessObjects\Business\ParamDTO.vb" />
+    <Compile Include="BusinessObjects\Business\DisciplineDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeHealthDTO.vb" />
+    <Compile Include="BusinessObjects\Business\TerminateDTO.vb" />
+    <Compile Include="BusinessObjects\Business\WorkingBeforeDTO.vb" />
+    <Compile Include="BusinessObjects\Business\WorkingDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeEduDTO.vb" />
+    <Compile Include="BusinessObjects\Business\FamilyDTO.vb" />
+    <Compile Include="BusinessObjects\Business\WelfareMngDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeCVDTO.vb" />
+    <Compile Include="BusinessObjects\Business\EmployeeDTO.vb" />
+    <Compile Include="BusinessObjects\Dashboard\StatisticDTO.vb" />
+    <Compile Include="BusinessObjects\Dynamic\HuDynamicConditionDTO.vb" />
+    <Compile Include="BusinessObjects\Dynamic\HuConditionColDTO.vb" />
+    <Compile Include="BusinessObjects\List\AssetDTO.vb" />
+    <Compile Include="BusinessObjects\List\ATPeriodDTO.vb" />
+    <Compile Include="BusinessObjects\List\BankBranchDTO.vb" />
+    <Compile Include="BusinessObjects\List\BankDTO.vb" />
+    <Compile Include="BusinessObjects\List\ComboBoxDataDTO.vb" />
+    <Compile Include="BusinessObjects\List\ContractTypeDTO.vb" />
+    <Compile Include="BusinessObjects\Dynamic\DynamicReportConfigDTO.vb" />
+    <Compile Include="BusinessObjects\Business\TitleConcurrentDTO.vb" />
+    <Compile Include="BusinessObjects\List\LabourProtectionDTO.vb" />
+    <Compile Include="BusinessObjects\List\StaffRankDTO.vb" />
+    <Compile Include="BusinessObjects\List\OtherListGroupDTO.vb" />
+    <Compile Include="BusinessObjects\List\OtherListTypeDTO.vb" />
+    <Compile Include="BusinessObjects\List\Ward_DTO.vb" />
+    <Compile Include="BusinessObjects\OData\FindEmployeeOData.vb" />
+    <Compile Include="BusinessObjects\Dynamic\DynamicReportClass.vb" />
+    <Compile Include="BusinessObjects\Dynamic\RptDynamicColumnDTO.vb" />
+    <Compile Include="BusinessObjects\Dynamic\RptDynamicDTO.vb" />
+    <Compile Include="BusinessObjects\Report\SEARCH_DTO.vb" />
+    <Compile Include="BusinessObjects\List\WelfareListDTO.vb" />
+    <Compile Include="BusinessObjects\List\AllowanceListDTO.vb" />
+    <Compile Include="BusinessObjects\Report\Se_ReportDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\ConfigDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\OrganizationPathDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\OrgTilteDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\ReminderLogDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\TalentPoolDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\WelfareDTO.vb" />
+    <Compile Include="BusinessObjects\List\OtherListDTO.vb" />
+    <Compile Include="BusinessObjects\List\TitleDTO.vb" />
+    <Compile Include="BusinessObjects\List\DistrictDTO.vb" />
+    <Compile Include="BusinessObjects\List\IndustryDTO.vb" />
+    <Compile Include="BusinessObjects\List\NationDTO.vb" />
+    <Compile Include="BusinessObjects\List\NewEmployeeDTO.vb" />
+    <Compile Include="BusinessObjects\Setting\OrganizationDTO.vb" />
+    <Compile Include="BusinessObjects\List\ProvinceDTO.vb" />
+    <Compile Include="ProfileContext.Designer.vb">
+      <DependentUpon>ProfileContext.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ProfileRepository.Business.vb" />
+    <Compile Include="ProfileRepository.Setting.vb" />
+    <Compile Include="ProfileRepositoryIntegrated.vb" />
+    <Compile Include="ProfileRepository.Family.vb" />
+    <Compile Include="ProfileRepository.OccupationalSafety.vb" />
+    <Compile Include="ProfileRepository.LabourProtectionMng.vb" />
+    <Compile Include="ProfileRepository.EmployeeFile.vb" />
+    <Compile Include="ProfileRepository.Report.vb" />
+    <Compile Include="ProfileRepository.List.vb" />
+    <Compile Include="ProfileRepository.Asset.vb" />
+    <Compile Include="ProfileRepository.Commend.vb" />
+    <Compile Include="ProfileRepository.Contract.vb" />
+    <Compile Include="ProfileRepository.Discipline.vb" />
+    <Compile Include="ProfileRepository.Employee.vb" />
+    <Compile Include="ProfileRepository.Terminate.vb" />
+    <Compile Include="ProfileRepository.Welfare.vb" />
+    <Compile Include="ProfileRepository.Working.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProfileCommon.vb" />
+    <Compile Include="ProfileContext.vb" />
+    <Compile Include="ProfileDashboardRepository.vb" />
+    <Compile Include="ProfileRepository.DynamicReport.vb" />
+    <Compile Include="ProfileRepository.BackgroundProcess.vb" />
+    <Compile Include="ProfileRepository.vb" />
+    <Compile Include="ProfileRepositoryBase.vb" />
+    <Compile Include="Utility.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\ProfileContext.datasource" />
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.Data\Framework.Data.vbproj">
+      <Project>{5AB0D232-7B7A-44B8-9D14-115C065027DB}</Project>
+      <Name>Framework.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ProfileContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProfileContext.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProfileContext.edmx.sql">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

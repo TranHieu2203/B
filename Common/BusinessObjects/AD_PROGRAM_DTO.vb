@@ -1,0 +1,39 @@
+﻿Public Class AD_PROGRAM_DTO
+    Public Property PROGRAM_ID As Decimal?
+    Public Property CODE As String
+    Public Property NAME As String
+    Public Property PROGRAM_TYPE As String
+    Public Property DESCRIPTION As String
+    Public Property STORE_EXECUTE_IN As String
+    Public Property STORE_EXECUTE_OUT As String
+    Public Property TEMPLATE_NAME As String
+    Public Property TEMPLATE_TYPE_IN As String
+    Public Property TEMPLATE_TYPE_OUT As String
+    Public Property TEMPLATE_URL As String
+    Public Property PRIORITY As Decimal?
+    Public Property ORDERBY As Decimal?
+    Public Property ORIENTATION As Decimal?
+    Public Property STATUS As Decimal?
+    Public Property PERMISSION As Decimal?
+    Public Property CREATED_BY As String
+    Public Property MODIFIED_BY As String
+    Public Property CREATED_LOG As String
+    Public Property MODIFIED_LOG As String
+    Public Property NLS_LANGUAGE As String
+    Public Property NLS_TERRITORY As String
+    Public Property PRINTER As String
+    Public Property DATASET_IN_REPORT As Decimal
+    Public Property OUTPUTFILE_SIZE As Decimal?
+    Public Property FILE_OUT_NAME As String
+    Public Property MODULE_ID As Decimal?
+    Public Property GROUP_ID As Decimal?
+    Public Property PROGRAM_TYPE_ID As Decimal?
+    Public Property SQLLOADER_FILE As String
+    Public Property LINE_FROM As Decimal?
+    Public Property COLUMN_FROM As Decimal?
+    Public Property COLUMN_TO As Decimal?
+    Public Property IS_RUN_AFTER_COMPLETE As Decimal?
+    Public Property ISOLATION_PROGRAM As Decimal?
+    Public Property ISOLATION_USER As Decimal?
+End Class
+

@@ -1,0 +1,371 @@
+﻿body, div, p, label, input, tspan, g, text, td, span, h1, h2, h3, h4, h5 .RadSplitter_Outlook, .RadSplitter_Metro, .RadAjaxPanel, li.rtbItem.rtbBtn, .rtsLI, .rtsLink, .RadTreeView_Outlook, .RadTreeView_Metro, .rgMasterTable, .rgDetailTable,
+.rgGroupPanel table, .rgCommandRow table, .rgEditForm table, .rgPager table, a.rpLink, div.rpHeaderTemplate, .rpTemplate, .rcbItem, .rcbHovered {
+    font-family: 'SF Pro', sans-serif !important;
+    font-size: 12px !important;
+}
+
+:root {
+    --quick_menu_clr: #8b8b8b;
+    --btn-hover-clr: #000;
+}
+
+.lb, .lb3, label {
+    color: var(--quick_menu_clr);
+}
+
+#cusValText:hover, #cusValText1:hover, #cusValText2:hover, #cusValText3:hover {
+    display: block;
+    cursor: pointer;
+    background-color: #ffca5e;
+    background-position: center;
+    /* border: #ffca5e; */
+}
+
+.rtWrapperContent {
+    color: #ffffff;
+}
+
+.brackcrum, .brackcrum-active {
+    color: var(--quick_menu_clr) !important;
+    font-size: 11px !important;
+}
+
+.rtbText {
+    /*font-size: 13px;*/
+    color: #5c5c5c !important;
+}
+.box25 .fa-exclamation-circle {
+    color: #106E5E;
+}
+.box25 a:hover {
+    color: #106E5E !important;
+}
+.box24 {
+    background-color: #106E5E !important;
+}
+.arrow-top {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 14px solid #106E5E;
+    margin: 3px 17px auto auto;
+}
+.item-head {
+    /*color: #413f3f !important;
+    font-weight: 700 !important;*/
+    color: #000000 !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.rcCalPopup {
+    background: #f2f2f2;
+}
+
+.RadToolBar_Metro .rtbItemFocused .rtbWrap {
+    border: none !important;
+    box-shadow: none !important;
+    background: var(--quick_menu_clr) !important;
+}
+
+    .RadToolBar_Metro .rtbItemFocused .rtbWrap .rtbText {
+        color: #fff !important;
+    }
+/*button*/
+.RadButton_Metro.rbSkinnedButton.ButtonView, .RadButton_Metro.rbSkinnedButton.ButtonFind, .RadButton_Metro.ButtonView .rbDecorated, .RadButton_Metro.ButtonFind .rbDecorated {
+    background: #cccccc !important;
+}
+
+    .RadButton_Metro.rbSkinnedButton.ButtonView:hover, .RadButton_Metro.rbSkinnedButton.ButtonFind:hover, .RadButton_Metro.rbSkinnedButton.ButtonView:hover .rbDecorated, .RadButton_Metro.rbSkinnedButton.ButtonFind:hover .rbDecorated {
+        background: #a3a3a3 !important;
+        border-color: #a3a3a3 !important;
+    }
+/*Combobox*/
+.RadComboBox_Metro .rcbFocused .rcbInputCell {
+    border-color: #cccccc !important;
+}
+
+.RadComboBox_Metro .rcbArrowCell {
+    border-color: #cccccc !important;
+    background-color: #cccccc !important;
+}
+/*Checkbox*/
+.tvc-grid-checkbox {
+    line-height: 1.5em;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 0px;
+    margin-right: -15px;
+    border: 1px solid var(--quick_menu_clr);
+    border-radius: 0.25em;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+    .rgHeaderOver .tvc-grid-checkbox, .rgHoveredRow .tvc-grid-checkbox, .tvc-grid-checkbox:hover {
+        border-color: var(--btn-hover-clr);
+    }
+
+    .tvc-grid-checkbox::after {
+        content: "";
+        display: none;
+        content: "";
+        left: 0;
+        margin: 0 auto;
+        top: 0;
+        width: 3px;
+        height: 6px;
+        border: solid #8b8b8b;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+.rgCheck .tvc-grid-checkbox.checked::after, .rgSelectedRow .tvc-grid-checkbox::after {
+    display: block;
+}
+
+/*Menu*/
+#quick_launch {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.rtbText {
+    color: rgb(92 92 92);
+}
+
+#header {
+    height: 42px !important;
+}
+
+#logo1 {
+    height: 35px !important;
+}
+.div.RadToolTip_Metro .rtWrapper .rtWrapperContent {
+    background-color: #106E5E !important;
+}
+#RadToolTipWrapper_ctl00_RadToolTip1{
+    top: 42px !important;
+}
+.mlddm {
+    height: 42px !important;
+}
+div.RadToolTip_Metro .rtWrapper .rtWrapperContent
+    .mlddm li a:hover, .mlddm li a#buttonhover, .mlddm li a.selected, .mlddm .hsub:hover {
+        background: #106E5E !important;
+    }
+
+    .mlddm li a.menuLink:hover {
+        color: #ffffff !important;
+    }
+
+.menuLink {
+    color: #ffffff !important;
+    position: relative;
+    padding: 2.5px 0 0 !important;
+}
+
+.menuItem a.menu-selected-item {
+    color: #ffffff !important;
+}
+
+    .menuItem a.menu-selected-item::after {
+        /*content: " ";
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;*/
+        /* transform: translateX(-50%); */
+        /* border-radius: 3px; */
+    }
+
+.menuLink, .menuItem a {
+    font-size: 13px;
+}
+/*.rtbItemHovered .rtbWrap {
+    background: none !important;
+    border-color: rgba(0,0,0,0) !important;
+}
+.rtbItemHovered .rtbText {
+    color: #151515 !important;
+}*/
+/*Toolbar*/
+/*.RadToolBar .rtbRoundedCorners ul.rtbUL {
+    text-align: right;
+}*/
+td.rspPaneHorizontal.rspFirstItem, .rspResizeBar, .rspPane.rspLastItem, .RadToolBar_Metro .rtbOuter, .RadToolBar_Horizontal .rtbOuter, .rspNestedHorizontal, table.RadSplitter.RadSplitter_Metro {
+    border: none !important;
+}
+
+.tvc-toolbar-header {
+    display: flex;
+}
+
+.tvc-url {
+    width: 25%;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.rtbOuter.rtbRoundedCorners {
+    text-align: right;
+}
+
+.tvc-toolbar {
+    width: 75%;
+}
+
+    .tvc-toolbar .RadToolBar, .tvc-toolbar .rtbOuter.rtbRoundedCorners {
+        border-left: none;
+    }
+
+/*CHART*/
+
+text.highcharts-title tspan {
+    font-weight: 500 !important;
+    fill: #6a6a6a !important;
+    font-size: 14px !important;
+    color: #6a6a6a !important;
+    text-transform: uppercase !important;
+}
+/*table*/
+table.rgMasterTable tr {
+    height: 40px !important;
+}
+
+    table.rgMasterTable tr.rgFilterRow {
+        height: 20px !important;
+    }
+
+table[summary="Page Size Drop Down Control"] tr {
+    height: auto !important;
+}
+
+.rgMasterTable thead tr th.rgHeader {
+    text-transform: uppercase;
+}
+
+.RadGrid_Metro .rgAltRow {
+    background: #ffffff !important;
+}
+
+.RadGrid_Metro .rgSelectedRow, .RadGrid_Metro .rgHoveredRow {
+    background: #ededed !important;
+    color: #000 !important;
+}
+
+    .RadGrid_Metro .rgSelectedCell a, .RadGrid_Metro .rgSelectedRow a {
+        color: #2196f3 !important;
+    }
+
+.RadButton_Metro.rbSkinnedButton, .RadButton_Metro .rbDecorated {
+    background-color: #f9f9f9 !important;
+    color: var(--quick_menu_clr);
+}
+
+    .RadButton_Metro.rbSkinnedButton:hover, .RadButton_Metro.rbVerticalButton:hover, .RadButton_Metro:hover .rbDecorated {
+        background: #c9c9c9 !important;
+        color: var(--btn-hover-clr);
+    }
+
+    .RadButton_Metro.rbSkinnedButton:active, .RadButton_Metro:active .rbDecorated {
+        background-color: #818181 !important;
+        border-color: #818181 !important;
+        color: #fff !important;
+        border-radius: 5px;
+    }
+
+.RadButton_Metro.rbButton.rbSelected, .RadButton_Metro.rbButton.rbToggled, .RadButton_Metro.rbSelected .rbHovered {
+    border-color: #818181 !important;
+    color: #fff !important;
+    background-color: #818181 !important;
+}
+
+.NodeTree1:hover, .NodeJOB1:hover {
+    background-color: #ededed !important;
+}
+
+.RadGrid tbody tr td {
+    font-size: 13px;
+}
+
+table.rgClipCells tr.rgFilterRow td .RadPicker {
+    height: 25px !important;
+}
+
+table.rgClipCells tr.rgFilterRow td div.RadPicker td span, table.rgClipCells tr.rgFilterRow td div.RadPicker td a {
+    margin-top: -15px !important;
+}
+/*Cây SDTC*/
+.RadTreeView .rtIn, .RadToolBar .rtbText {
+    /*font-size: 13px;*/
+    color: var(--quick_menu_clr);
+}
+
+.RadToolBar .rtbText {
+    font-size: 11px !important;
+    color: var(--quick_menu_clr) !important;
+}
+.RadToolBar_Metro .rtbWrap{
+    padding: 0 5px !important;
+}
+.RadTreeView .rtSelected .rtIn {
+    background: none !important;
+    border: none !important;
+    color: #106E5E !important;
+    font-weight: 700;
+}
+.RadToolTip_Default .rtWrapper .rtWrapperContent {
+    background-color: #106E5E !important;
+    color: #fff !important;
+}
+.rtWrapperContent a {
+    color: #fff !important;
+}
+.rtCalloutTopCenter{
+    display: none !important;
+}
+.RadToolTip table.rtShadow .rtWrapperTopCenter{
+    background-image: unset !important;
+}
+.rtWrapperTopLeft {
+    background-image: unset !important;
+}
+.rtWrapperTopRight {
+    background-image: unset !important;
+}
+.rtTitlebar {
+    display: block !important;
+    width: 0;
+    height: 0;
+    float: none !important;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 14px solid #106E5E;
+    margin: 0px 123px 0px auto !important;
+}
+#rbiEmployeeImage {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.RadTreeView .rtHover .rtIn {
+    color: #4b4b4b !important;
+    cursor: pointer;
+    font-weight: 600;
+    border: none !important;
+    background: none !important;
+}
+
+/*Side bar*/
+.RadPanelBar ul.rpRootGroup ul.rpGroup a.rpLink span.rpOut span.rpText {
+    color: #8b8b8b;
+}
+
+.RadPanelBar ul.rpRootGroup ul.rpGroup a.rpLink.rpSelected span.rpOut span.rpText {
+    color: #000000;
+}

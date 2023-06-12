@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="201dde6c-5d1a-48e3-8d67-6939230d9cba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/AttendanceBusiness.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AttendanceBusiness8.xsd" MetadataType="Schema" ID="c59c508c-dbf4-4f35-90ad-d70661679daf" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?xsd=xsd4" />
+    <MetadataFile FileName="AttendanceBusiness81.xsd" MetadataType="Schema" ID="303f8128-96d2-4edf-b83e-4a9bedcf5148" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?xsd=xsd7" />
+    <MetadataFile FileName="AttendanceBusiness82.xsd" MetadataType="Schema" ID="06f6240b-06d6-4aca-a8af-8ace762315cf" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?xsd=xsd6" />
+    <MetadataFile FileName="AttendanceBusiness1.disco" MetadataType="Disco" ID="25aefc6a-4c0b-40dd-b3b1-346fd90eb37e" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?disco" />
+    <MetadataFile FileName="AttendanceBusiness1.wsdl" MetadataType="Wsdl" ID="26aaeff6-c307-41e6-9a3b-470059ceb029" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?wsdl" />
+    <MetadataFile FileName="AttendanceBusiness83.xsd" MetadataType="Schema" ID="e74a36f5-025b-47ce-97f4-edfcbc800c6a" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?xsd=xsd1" />
+    <MetadataFile FileName="AttendanceBusiness84.xsd" MetadataType="Schema" ID="a015a292-4d70-458b-afdf-5017bad1092f" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?xsd=xsd0" />
+    <MetadataFile FileName="AttendanceBusiness85.xsd" MetadataType="Schema" ID="dd8b0147-afdc-4828-a8fa-ff37d074271f" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?xsd=xsd3" />
+    <MetadataFile FileName="AttendanceBusiness86.xsd" MetadataType="Schema" ID="5fc7275b-146c-4ac0-9785-1fc676c6d912" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?xsd=xsd2" />
+    <MetadataFile FileName="AttendanceBusiness87.xsd" MetadataType="Schema" ID="d31749ef-bbe4-4894-9d67-4ffee580aa86" SourceId="1" SourceUrl="http://localhost:9999/AttendanceBusiness.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

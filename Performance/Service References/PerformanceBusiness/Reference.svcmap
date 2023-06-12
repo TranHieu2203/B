@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0957cd40-fdd4-4c9b-92c3-3be8ce37f16b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/PerformanceBusiness.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PerformanceBusiness5.xsd" MetadataType="Schema" ID="4e64628a-591e-4f91-ac96-d1e065d49c63" SourceId="1" SourceUrl="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd5" />
+    <MetadataFile FileName="PerformanceBusiness.xsd" MetadataType="Schema" ID="155944c5-99b3-45d7-8129-7a2e239f1e56" SourceId="1" SourceUrl="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd4" />
+    <MetadataFile FileName="PerformanceBusiness.wsdl" MetadataType="Wsdl" ID="dd9fc1e2-6334-4b2d-b415-01a7d3b4fc5d" SourceId="1" SourceUrl="http://localhost:9999/PerformanceBusiness.svc?wsdl" />
+    <MetadataFile FileName="PerformanceBusiness6.xsd" MetadataType="Schema" ID="e2a99869-41cd-4133-ae9e-1ce739abf024" SourceId="1" SourceUrl="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd6" />
+    <MetadataFile FileName="PerformanceBusiness1.xsd" MetadataType="Schema" ID="534d202e-0db6-44a8-9069-00fd4650bb20" SourceId="1" SourceUrl="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd3" />
+    <MetadataFile FileName="PerformanceBusiness2.xsd" MetadataType="Schema" ID="e71c123c-ed0c-4a56-9b41-a96158240c52" SourceId="1" SourceUrl="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd2" />
+    <MetadataFile FileName="PerformanceBusiness3.xsd" MetadataType="Schema" ID="0d973512-830d-4f05-9277-e2339e5bc65b" SourceId="1" SourceUrl="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd1" />
+    <MetadataFile FileName="PerformanceBusiness4.xsd" MetadataType="Schema" ID="bbcee069-a916-4306-9e2b-4dcdb9ec6f99" SourceId="1" SourceUrl="http://localhost:9999/PerformanceBusiness.svc?xsd=xsd0" />
+    <MetadataFile FileName="PerformanceBusiness.disco" MetadataType="Disco" ID="5c314dc7-c67d-4cef-b255-09b9874bf5ce" SourceId="1" SourceUrl="http://localhost:9999/PerformanceBusiness.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

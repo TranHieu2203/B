@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Framework.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Framework.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="UserLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComputerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViewDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViewGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViewName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserLog" nillable="true" type="tns:UserLog" />
+</xs:schema>

@@ -1,0 +1,45 @@
+﻿Public Class StocksTransactionDTO
+    Public Property ID As Decimal
+    Public Property EMPLOYEE_ID As Decimal?
+    Public Property STOCK_CODE As String
+    Public Property EMPLOYEE_CODE As String
+    Public Property EMPLOYEE_NAME As String
+    Public Property ORG_ID As Decimal?
+    Public Property ORG_NAME As String
+    Public Property ORG_DESC As String
+    Public Property ORG_CODE As String
+    Public Property LOCATION_ID As Decimal?
+    Public Property LOCATION_NAME As String
+    Public Property TITLE_ID As Decimal?
+    Public Property TITLE_NAME As String
+    Public Property STOCK_ID As Decimal?
+    Public Property CODE As String
+    Public Property TRADE_DATE As Date?
+    Public Property PAY_TYPE As Decimal?
+    Public Property PAY_TYPE_NAME As String
+    Public Property STATUS As Decimal?
+    Public Property STATUS_NAME As String
+    Public Property STATUS_CODE As String
+    Public Property STOCK_PRICE As Decimal?
+    Public Property TRADE_MONTH As Decimal?
+    Public Property PROBATION_MONTHS As Decimal?
+    Public Property PROBATION_PERCENT As Decimal?
+    Public Property STOCK_FINAL_PRICE As Decimal?
+    Public Property PROBATION_STOCK As Decimal?
+    Public Property STOCK_LEFT As Decimal?
+    Public Property STOCK_TOTAL As Decimal?
+    Public Property STOCK_TOTAL_ROUND As Decimal?
+    Public Property STOCK_PAY As Decimal?
+    Public Property PAY_DATE As Date?
+    Public Property FILE_NAME As String
+    Public Property UPLOAD_FILE_NAME As String
+    Public Property NOTE As String
+    Public Property CREATED_DATE As Date?
+    Public Property CREATED_BY As String
+    Public Property CREATED_LOG As String
+    Public Property MODIFIED_DATE As Date?
+    Public Property MODIFIED_BY As String
+    Public Property MODIFIED_LOG As String
+    Public Property stock As StocksDTO
+
+End Class

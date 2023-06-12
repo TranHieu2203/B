@@ -1,0 +1,1980 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RecruitmentBusiness" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IRecruitmentBusiness_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="1800000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/RecruitmentDAL" />
+      <xsd:import schemaLocation="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Framework.Data" />
+      <xsd:import schemaLocation="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd5" />
+      <xsd:import schemaLocation="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRecruitmentBusiness_UpdateCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCost" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ValidateCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCost" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ValidateCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCost" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetComboList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComboList" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetComboList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComboListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetOtherList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherList" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetOtherList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetContractTypeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractTypeList" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetContractTypeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetTitleByOrgList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleByOrgList" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetTitleByOrgList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleByOrgListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetTitleByOrgListInPlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleByOrgListInPlan" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetTitleByOrgListInPlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleByOrgListInPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramExamsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramExamsList" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramExamsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramExamsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramList" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCVPoolEmpRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCVPoolEmpRecord" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCVPoolEmpRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCVPoolEmpRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ExportReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExportReport" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ExportReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExportReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetReportById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportById" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetReportById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetStatisticGender_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticGender" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetStatisticGender_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticGenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetStatisticEduacation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticEduacation" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetStatisticEduacation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticEduacationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetStatisticCanToEmp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticCanToEmp" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetStatisticCanToEmp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticCanToEmpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetStatisticEstimateReality_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticEstimateReality" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetStatisticEstimateReality_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatisticEstimateRealityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_TestService_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestService" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_TestService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetWardList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWardList" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetWardList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWardListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ValidateCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ValidateCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ActiveCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ActiveCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCostCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCostCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetExamsDtl_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamsDtl" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetExamsDtl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamsDtlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateExamsDtl_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExamsDtl" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateExamsDtl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExamsDtlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteExamsDtl_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteExamsDtl" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteExamsDtl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteExamsDtlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetPlanReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanReg" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetPlanReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetPlanRegByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRegByID" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetPlanRegByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanRegByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertPlanReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPlanReg" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertPlanReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPlanRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyPlanReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPlanReg" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyPlanReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPlanRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeletePlanReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlanReg" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeletePlanReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlanRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateStatusPlanReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusPlanReg" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateStatusPlanReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusPlanRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetPlanSummary_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanSummary" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetPlanSummary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetRequestByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestByID" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetRequestByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateStatusRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateStatusRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgram" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramSearch" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramByID" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProgram" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_XuatToTrinh_InputMessage">
+    <wsdl:part name="parameters" element="tns:XuatToTrinh" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_XuatToTrinh_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XuatToTrinhResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramExams_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramExams" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramExams_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramExamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramExamsByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramExamsByID" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramExamsByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramExamsByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateProgramExams_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramExams" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateProgramExams_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramExamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteProgramExams_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProgramExams" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteProgramExams_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProgramExamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_CheckExistCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExistCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_CheckExistCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExistCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ValidateInsertCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateInsertCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ValidateInsertCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateInsertCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateFamily_ByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateFamily_ByID" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateFamily_ByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateFamily_ByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateImage" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_CreateNewCandidateCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewCandidateCode" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_CreateNewCandidateCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewCandidateCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetListCandidatePaging_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCandidatePaging" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetListCandidatePaging_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCandidatePagingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetFindCandidatePaging_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFindCandidatePaging" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetFindCandidatePaging_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFindCandidatePagingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetListCandidateTransferPaging_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCandidateTransferPaging" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetListCandidateTransferPaging_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCandidateTransferPagingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetListCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetListCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateInfo" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateCV_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateCV" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateCV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateCVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateEdu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateEdu" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateEdu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateEduResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateOtherInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateOtherInfo" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateOtherInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateOtherInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateHealthInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateHealthInfo" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateHealthInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateHealthInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateExpectInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateExpectInfo" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateExpectInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateExpectInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateHistory" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateProgramCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateProgramCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateStatusCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateStatusCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStatusCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdatePontentialCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePontentialCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdatePontentialCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePontentialCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateBlackListCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBlackListCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateBlackListCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBlackListCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateReHireCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReHireCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateReHireCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReHireCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateImport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateImport" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateImport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateImportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ImportCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ImportCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_TransferHSNVToCandidate_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferHSNVToCandidate" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_TransferHSNVToCandidate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferHSNVToCandidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateFamily_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateFamily" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateFamily_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidateFamily_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidateFamily" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidateFamily_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidateFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidateFamily_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidateFamily" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidateFamily_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidateFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidateFamily_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidateFamily" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidateFamily_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidateFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ValidateFamily_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateFamily" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ValidateFamily_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateTrainSinger_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateTrainSinger" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateTrainSinger_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateTrainSingerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidateTrainSinger_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidateTrainSinger" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidateTrainSinger_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidateTrainSingerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidateTrainSinger_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidateTrainSinger" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidateTrainSinger_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidateTrainSingerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidateTrainSinger_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidateTrainSinger" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidateTrainSinger_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidateTrainSingerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateReference" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidateReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidateReference" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidateReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidateReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidateReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidateReference" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidateReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidateReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidateReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidateReference" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidateReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidateReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateBeforeWT_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateBeforeWT" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateBeforeWT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateBeforeWTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidateBeforeWT_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidateBeforeWT" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_InsertCandidateBeforeWT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCandidateBeforeWTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidateBeforeWT_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidateBeforeWT" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_ModifyCandidateBeforeWT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCandidateBeforeWTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidateBeforeWT_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidateBeforeWT" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_DeleteCandidateBeforeWT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCandidateBeforeWTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramScheduleByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramScheduleByID" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetProgramScheduleByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramScheduleByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateNotScheduleByScheduleID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateNotScheduleByScheduleID" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateNotScheduleByScheduleID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateNotScheduleByScheduleIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateScheduleByScheduleID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateScheduleByScheduleID" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateScheduleByScheduleID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateScheduleByScheduleIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateProgramSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateProgramSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProgramScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateResult" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCandidateResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCandidateResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateCandidateResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCandidateResult" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_UpdateCandidateResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCandidateResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCost_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCost" />
+  </wsdl:message>
+  <wsdl:message name="IRecruitmentBusiness_GetCost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCostResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRecruitmentBusiness">
+    <wsdl:operation name="UpdateCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateCost" message="tns:IRecruitmentBusiness_UpdateCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateCostResponse" message="tns:IRecruitmentBusiness_UpdateCost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ValidateCost" message="tns:IRecruitmentBusiness_ValidateCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ValidateCostResponse" message="tns:IRecruitmentBusiness_ValidateCost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCost" message="tns:IRecruitmentBusiness_DeleteCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCostResponse" message="tns:IRecruitmentBusiness_DeleteCost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComboList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetComboList" message="tns:IRecruitmentBusiness_GetComboList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetComboListResponse" message="tns:IRecruitmentBusiness_GetComboList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetOtherList" message="tns:IRecruitmentBusiness_GetOtherList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetOtherListResponse" message="tns:IRecruitmentBusiness_GetOtherList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractTypeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetContractTypeList" message="tns:IRecruitmentBusiness_GetContractTypeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetContractTypeListResponse" message="tns:IRecruitmentBusiness_GetContractTypeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleByOrgList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetTitleByOrgList" message="tns:IRecruitmentBusiness_GetTitleByOrgList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetTitleByOrgListResponse" message="tns:IRecruitmentBusiness_GetTitleByOrgList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleByOrgListInPlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetTitleByOrgListInPlan" message="tns:IRecruitmentBusiness_GetTitleByOrgListInPlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetTitleByOrgListInPlanResponse" message="tns:IRecruitmentBusiness_GetTitleByOrgListInPlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramExamsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramExamsList" message="tns:IRecruitmentBusiness_GetProgramExamsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramExamsListResponse" message="tns:IRecruitmentBusiness_GetProgramExamsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramList" message="tns:IRecruitmentBusiness_GetProgramList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramListResponse" message="tns:IRecruitmentBusiness_GetProgramList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCVPoolEmpRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCVPoolEmpRecord" message="tns:IRecruitmentBusiness_GetCVPoolEmpRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCVPoolEmpRecordResponse" message="tns:IRecruitmentBusiness_GetCVPoolEmpRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ExportReport" message="tns:IRecruitmentBusiness_ExportReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ExportReportResponse" message="tns:IRecruitmentBusiness_ExportReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetReportById" message="tns:IRecruitmentBusiness_GetReportById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetReportByIdResponse" message="tns:IRecruitmentBusiness_GetReportById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticGender">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetStatisticGender" message="tns:IRecruitmentBusiness_GetStatisticGender_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetStatisticGenderResponse" message="tns:IRecruitmentBusiness_GetStatisticGender_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticEduacation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetStatisticEduacation" message="tns:IRecruitmentBusiness_GetStatisticEduacation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetStatisticEduacationResponse" message="tns:IRecruitmentBusiness_GetStatisticEduacation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticCanToEmp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetStatisticCanToEmp" message="tns:IRecruitmentBusiness_GetStatisticCanToEmp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetStatisticCanToEmpResponse" message="tns:IRecruitmentBusiness_GetStatisticCanToEmp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticEstimateReality">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetStatisticEstimateReality" message="tns:IRecruitmentBusiness_GetStatisticEstimateReality_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetStatisticEstimateRealityResponse" message="tns:IRecruitmentBusiness_GetStatisticEstimateReality_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/TestService" message="tns:IRecruitmentBusiness_TestService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/TestServiceResponse" message="tns:IRecruitmentBusiness_TestService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWardList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetWardList" message="tns:IRecruitmentBusiness_GetWardList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetWardListResponse" message="tns:IRecruitmentBusiness_GetWardList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCostCenter" message="tns:IRecruitmentBusiness_GetCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCostCenterResponse" message="tns:IRecruitmentBusiness_GetCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCostCenter" message="tns:IRecruitmentBusiness_InsertCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCostCenterResponse" message="tns:IRecruitmentBusiness_InsertCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ValidateCostCenter" message="tns:IRecruitmentBusiness_ValidateCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ValidateCostCenterResponse" message="tns:IRecruitmentBusiness_ValidateCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCostCenter" message="tns:IRecruitmentBusiness_ModifyCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCostCenterResponse" message="tns:IRecruitmentBusiness_ModifyCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ActiveCostCenter" message="tns:IRecruitmentBusiness_ActiveCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ActiveCostCenterResponse" message="tns:IRecruitmentBusiness_ActiveCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCostCenter" message="tns:IRecruitmentBusiness_DeleteCostCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCostCenterResponse" message="tns:IRecruitmentBusiness_DeleteCostCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExamsDtl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetExamsDtl" message="tns:IRecruitmentBusiness_GetExamsDtl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetExamsDtlResponse" message="tns:IRecruitmentBusiness_GetExamsDtl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamsDtl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateExamsDtl" message="tns:IRecruitmentBusiness_UpdateExamsDtl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateExamsDtlResponse" message="tns:IRecruitmentBusiness_UpdateExamsDtl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamsDtl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteExamsDtl" message="tns:IRecruitmentBusiness_DeleteExamsDtl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteExamsDtlResponse" message="tns:IRecruitmentBusiness_DeleteExamsDtl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetPlanReg" message="tns:IRecruitmentBusiness_GetPlanReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetPlanRegResponse" message="tns:IRecruitmentBusiness_GetPlanReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRegByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetPlanRegByID" message="tns:IRecruitmentBusiness_GetPlanRegByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetPlanRegByIDResponse" message="tns:IRecruitmentBusiness_GetPlanRegByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPlanReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertPlanReg" message="tns:IRecruitmentBusiness_InsertPlanReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertPlanRegResponse" message="tns:IRecruitmentBusiness_InsertPlanReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPlanReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyPlanReg" message="tns:IRecruitmentBusiness_ModifyPlanReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyPlanRegResponse" message="tns:IRecruitmentBusiness_ModifyPlanReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlanReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeletePlanReg" message="tns:IRecruitmentBusiness_DeletePlanReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeletePlanRegResponse" message="tns:IRecruitmentBusiness_DeletePlanReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusPlanReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateStatusPlanReg" message="tns:IRecruitmentBusiness_UpdateStatusPlanReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateStatusPlanRegResponse" message="tns:IRecruitmentBusiness_UpdateStatusPlanReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanSummary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetPlanSummary" message="tns:IRecruitmentBusiness_GetPlanSummary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetPlanSummaryResponse" message="tns:IRecruitmentBusiness_GetPlanSummary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetRequest" message="tns:IRecruitmentBusiness_GetRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetRequestResponse" message="tns:IRecruitmentBusiness_GetRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetRequestByID" message="tns:IRecruitmentBusiness_GetRequestByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetRequestByIDResponse" message="tns:IRecruitmentBusiness_GetRequestByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertRequest" message="tns:IRecruitmentBusiness_InsertRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertRequestResponse" message="tns:IRecruitmentBusiness_InsertRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyRequest" message="tns:IRecruitmentBusiness_ModifyRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyRequestResponse" message="tns:IRecruitmentBusiness_ModifyRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteRequest" message="tns:IRecruitmentBusiness_DeleteRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteRequestResponse" message="tns:IRecruitmentBusiness_DeleteRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateStatusRequest" message="tns:IRecruitmentBusiness_UpdateStatusRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateStatusRequestResponse" message="tns:IRecruitmentBusiness_UpdateStatusRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgram">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgram" message="tns:IRecruitmentBusiness_GetProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramResponse" message="tns:IRecruitmentBusiness_GetProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramSearch" message="tns:IRecruitmentBusiness_GetProgramSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramSearchResponse" message="tns:IRecruitmentBusiness_GetProgramSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramByID" message="tns:IRecruitmentBusiness_GetProgramByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramByIDResponse" message="tns:IRecruitmentBusiness_GetProgramByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProgram">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyProgram" message="tns:IRecruitmentBusiness_ModifyProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyProgramResponse" message="tns:IRecruitmentBusiness_ModifyProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XuatToTrinh">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/XuatToTrinh" message="tns:IRecruitmentBusiness_XuatToTrinh_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/XuatToTrinhResponse" message="tns:IRecruitmentBusiness_XuatToTrinh_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramExams">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramExams" message="tns:IRecruitmentBusiness_GetProgramExams_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramExamsResponse" message="tns:IRecruitmentBusiness_GetProgramExams_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramExamsByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramExamsByID" message="tns:IRecruitmentBusiness_GetProgramExamsByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramExamsByIDResponse" message="tns:IRecruitmentBusiness_GetProgramExamsByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramExams">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateProgramExams" message="tns:IRecruitmentBusiness_UpdateProgramExams_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateProgramExamsResponse" message="tns:IRecruitmentBusiness_UpdateProgramExams_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProgramExams">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteProgramExams" message="tns:IRecruitmentBusiness_DeleteProgramExams_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteProgramExamsResponse" message="tns:IRecruitmentBusiness_DeleteProgramExams_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/CheckExistCandidate" message="tns:IRecruitmentBusiness_CheckExistCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/CheckExistCandidateResponse" message="tns:IRecruitmentBusiness_CheckExistCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateInsertCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ValidateInsertCandidate" message="tns:IRecruitmentBusiness_ValidateInsertCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ValidateInsertCandidateResponse" message="tns:IRecruitmentBusiness_ValidateInsertCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateFamily_ByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateFamily_ByID" message="tns:IRecruitmentBusiness_GetCandidateFamily_ByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateFamily_ByIDResponse" message="tns:IRecruitmentBusiness_GetCandidateFamily_ByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateImage" message="tns:IRecruitmentBusiness_GetCandidateImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateImageResponse" message="tns:IRecruitmentBusiness_GetCandidateImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidate" message="tns:IRecruitmentBusiness_InsertCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidateResponse" message="tns:IRecruitmentBusiness_InsertCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewCandidateCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/CreateNewCandidateCode" message="tns:IRecruitmentBusiness_CreateNewCandidateCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/CreateNewCandidateCodeResponse" message="tns:IRecruitmentBusiness_CreateNewCandidateCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidate" message="tns:IRecruitmentBusiness_ModifyCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateResponse" message="tns:IRecruitmentBusiness_ModifyCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListCandidatePaging">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetListCandidatePaging" message="tns:IRecruitmentBusiness_GetListCandidatePaging_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetListCandidatePagingResponse" message="tns:IRecruitmentBusiness_GetListCandidatePaging_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFindCandidatePaging">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetFindCandidatePaging" message="tns:IRecruitmentBusiness_GetFindCandidatePaging_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetFindCandidatePagingResponse" message="tns:IRecruitmentBusiness_GetFindCandidatePaging_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListCandidateTransferPaging">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetListCandidateTransferPaging" message="tns:IRecruitmentBusiness_GetListCandidateTransferPaging_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetListCandidateTransferPagingResponse" message="tns:IRecruitmentBusiness_GetListCandidateTransferPaging_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetListCandidate" message="tns:IRecruitmentBusiness_GetListCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetListCandidateResponse" message="tns:IRecruitmentBusiness_GetListCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateInfo" message="tns:IRecruitmentBusiness_GetCandidateInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateInfoResponse" message="tns:IRecruitmentBusiness_GetCandidateInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateCV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateCV" message="tns:IRecruitmentBusiness_GetCandidateCV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateCVResponse" message="tns:IRecruitmentBusiness_GetCandidateCV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateEdu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateEdu" message="tns:IRecruitmentBusiness_GetCandidateEdu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateEduResponse" message="tns:IRecruitmentBusiness_GetCandidateEdu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateOtherInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateOtherInfo" message="tns:IRecruitmentBusiness_GetCandidateOtherInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateOtherInfoResponse" message="tns:IRecruitmentBusiness_GetCandidateOtherInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateHealthInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateHealthInfo" message="tns:IRecruitmentBusiness_GetCandidateHealthInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateHealthInfoResponse" message="tns:IRecruitmentBusiness_GetCandidateHealthInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateExpectInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateExpectInfo" message="tns:IRecruitmentBusiness_GetCandidateExpectInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateExpectInfoResponse" message="tns:IRecruitmentBusiness_GetCandidateExpectInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateHistory" message="tns:IRecruitmentBusiness_GetCandidateHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateHistoryResponse" message="tns:IRecruitmentBusiness_GetCandidateHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidate" message="tns:IRecruitmentBusiness_DeleteCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateResponse" message="tns:IRecruitmentBusiness_DeleteCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateProgramCandidate" message="tns:IRecruitmentBusiness_UpdateProgramCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateProgramCandidateResponse" message="tns:IRecruitmentBusiness_UpdateProgramCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateStatusCandidate" message="tns:IRecruitmentBusiness_UpdateStatusCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateStatusCandidateResponse" message="tns:IRecruitmentBusiness_UpdateStatusCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePontentialCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdatePontentialCandidate" message="tns:IRecruitmentBusiness_UpdatePontentialCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdatePontentialCandidateResponse" message="tns:IRecruitmentBusiness_UpdatePontentialCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBlackListCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateBlackListCandidate" message="tns:IRecruitmentBusiness_UpdateBlackListCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateBlackListCandidateResponse" message="tns:IRecruitmentBusiness_UpdateBlackListCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReHireCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateReHireCandidate" message="tns:IRecruitmentBusiness_UpdateReHireCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateReHireCandidateResponse" message="tns:IRecruitmentBusiness_UpdateReHireCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateImport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateImport" message="tns:IRecruitmentBusiness_GetCandidateImport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateImportResponse" message="tns:IRecruitmentBusiness_GetCandidateImport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ImportCandidate" message="tns:IRecruitmentBusiness_ImportCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ImportCandidateResponse" message="tns:IRecruitmentBusiness_ImportCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferHSNVToCandidate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/TransferHSNVToCandidate" message="tns:IRecruitmentBusiness_TransferHSNVToCandidate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/TransferHSNVToCandidateResponse" message="tns:IRecruitmentBusiness_TransferHSNVToCandidate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateFamily">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateFamily" message="tns:IRecruitmentBusiness_GetCandidateFamily_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateFamilyResponse" message="tns:IRecruitmentBusiness_GetCandidateFamily_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidateFamily">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidateFamily" message="tns:IRecruitmentBusiness_InsertCandidateFamily_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidateFamilyResponse" message="tns:IRecruitmentBusiness_InsertCandidateFamily_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidateFamily">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateFamily" message="tns:IRecruitmentBusiness_ModifyCandidateFamily_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateFamilyResponse" message="tns:IRecruitmentBusiness_ModifyCandidateFamily_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidateFamily">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateFamily" message="tns:IRecruitmentBusiness_DeleteCandidateFamily_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateFamilyResponse" message="tns:IRecruitmentBusiness_DeleteCandidateFamily_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateFamily">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ValidateFamily" message="tns:IRecruitmentBusiness_ValidateFamily_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ValidateFamilyResponse" message="tns:IRecruitmentBusiness_ValidateFamily_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateTrainSinger">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateTrainSinger" message="tns:IRecruitmentBusiness_GetCandidateTrainSinger_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateTrainSingerResponse" message="tns:IRecruitmentBusiness_GetCandidateTrainSinger_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidateTrainSinger">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidateTrainSinger" message="tns:IRecruitmentBusiness_InsertCandidateTrainSinger_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidateTrainSingerResponse" message="tns:IRecruitmentBusiness_InsertCandidateTrainSinger_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidateTrainSinger">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateTrainSinger" message="tns:IRecruitmentBusiness_ModifyCandidateTrainSinger_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateTrainSingerResponse" message="tns:IRecruitmentBusiness_ModifyCandidateTrainSinger_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidateTrainSinger">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateTrainSinger" message="tns:IRecruitmentBusiness_DeleteCandidateTrainSinger_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateTrainSingerResponse" message="tns:IRecruitmentBusiness_DeleteCandidateTrainSinger_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateReference">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateReference" message="tns:IRecruitmentBusiness_GetCandidateReference_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateReferenceResponse" message="tns:IRecruitmentBusiness_GetCandidateReference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidateReference">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidateReference" message="tns:IRecruitmentBusiness_InsertCandidateReference_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidateReferenceResponse" message="tns:IRecruitmentBusiness_InsertCandidateReference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidateReference">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateReference" message="tns:IRecruitmentBusiness_ModifyCandidateReference_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateReferenceResponse" message="tns:IRecruitmentBusiness_ModifyCandidateReference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidateReference">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateReference" message="tns:IRecruitmentBusiness_DeleteCandidateReference_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateReferenceResponse" message="tns:IRecruitmentBusiness_DeleteCandidateReference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateBeforeWT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateBeforeWT" message="tns:IRecruitmentBusiness_GetCandidateBeforeWT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateBeforeWTResponse" message="tns:IRecruitmentBusiness_GetCandidateBeforeWT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidateBeforeWT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidateBeforeWT" message="tns:IRecruitmentBusiness_InsertCandidateBeforeWT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/InsertCandidateBeforeWTResponse" message="tns:IRecruitmentBusiness_InsertCandidateBeforeWT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidateBeforeWT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateBeforeWT" message="tns:IRecruitmentBusiness_ModifyCandidateBeforeWT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateBeforeWTResponse" message="tns:IRecruitmentBusiness_ModifyCandidateBeforeWT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidateBeforeWT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateBeforeWT" message="tns:IRecruitmentBusiness_DeleteCandidateBeforeWT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateBeforeWTResponse" message="tns:IRecruitmentBusiness_DeleteCandidateBeforeWT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramSchedule" message="tns:IRecruitmentBusiness_GetProgramSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramScheduleResponse" message="tns:IRecruitmentBusiness_GetProgramSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramScheduleByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramScheduleByID" message="tns:IRecruitmentBusiness_GetProgramScheduleByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetProgramScheduleByIDResponse" message="tns:IRecruitmentBusiness_GetProgramScheduleByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateNotScheduleByScheduleID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateNotScheduleByScheduleID" message="tns:IRecruitmentBusiness_GetCandidateNotScheduleByScheduleID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateNotScheduleByScheduleIDResponse" message="tns:IRecruitmentBusiness_GetCandidateNotScheduleByScheduleID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateScheduleByScheduleID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateScheduleByScheduleID" message="tns:IRecruitmentBusiness_GetCandidateScheduleByScheduleID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateScheduleByScheduleIDResponse" message="tns:IRecruitmentBusiness_GetCandidateScheduleByScheduleID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateProgramSchedule" message="tns:IRecruitmentBusiness_UpdateProgramSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateProgramScheduleResponse" message="tns:IRecruitmentBusiness_UpdateProgramSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateResult" message="tns:IRecruitmentBusiness_GetCandidateResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCandidateResultResponse" message="tns:IRecruitmentBusiness_GetCandidateResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCandidateResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateCandidateResult" message="tns:IRecruitmentBusiness_UpdateCandidateResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/UpdateCandidateResultResponse" message="tns:IRecruitmentBusiness_UpdateCandidateResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCost" message="tns:IRecruitmentBusiness_GetCost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecruitmentBusiness/GetCostResponse" message="tns:IRecruitmentBusiness_GetCost_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IRecruitmentBusiness" type="tns:IRecruitmentBusiness">
+    <wsp:PolicyReference URI="#WSHttpBinding_IRecruitmentBusiness_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateCost">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCost">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ValidateCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCost">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComboList">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetComboList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherList">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetOtherList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractTypeList">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetContractTypeList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleByOrgList">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetTitleByOrgList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleByOrgListInPlan">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetTitleByOrgListInPlan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramExamsList">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetProgramExamsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramList">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetProgramList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCVPoolEmpRecord">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCVPoolEmpRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportReport">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ExportReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportById">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetReportById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticGender">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetStatisticGender" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticEduacation">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetStatisticEduacation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticCanToEmp">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetStatisticCanToEmp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatisticEstimateReality">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetStatisticEstimateReality" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/TestService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWardList">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetWardList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/InsertCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ValidateCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ModifyCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ActiveCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamsDtl">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetExamsDtl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExamsDtl">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateExamsDtl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExamsDtl">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteExamsDtl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanReg">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetPlanReg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanRegByID">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetPlanRegByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPlanReg">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/InsertPlanReg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPlanReg">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ModifyPlanReg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlanReg">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeletePlanReg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusPlanReg">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateStatusPlanReg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanSummary">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetPlanSummary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequest">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestByID">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetRequestByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequest">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/InsertRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyRequest">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ModifyRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequest">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusRequest">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateStatusRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgram">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetProgram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramSearch">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetProgramSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramByID">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetProgramByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProgram">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ModifyProgram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XuatToTrinh">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/XuatToTrinh" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramExams">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetProgramExams" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramExamsByID">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetProgramExamsByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramExams">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateProgramExams" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProgramExams">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteProgramExams" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/CheckExistCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateInsertCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ValidateInsertCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateFamily_ByID">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateFamily_ByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateImage">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/InsertCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewCandidateCode">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/CreateNewCandidateCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ModifyCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListCandidatePaging">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetListCandidatePaging" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFindCandidatePaging">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetFindCandidatePaging" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListCandidateTransferPaging">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetListCandidateTransferPaging" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetListCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateInfo">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateCV">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateCV" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateEdu">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateEdu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateOtherInfo">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateOtherInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateHealthInfo">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateHealthInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateExpectInfo">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateExpectInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateHistory">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateHistory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateProgramCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateStatusCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePontentialCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdatePontentialCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBlackListCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateBlackListCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReHireCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateReHireCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateImport">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateImport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ImportCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferHSNVToCandidate">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/TransferHSNVToCandidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateFamily">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateFamily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidateFamily">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/InsertCandidateFamily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidateFamily">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateFamily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidateFamily">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateFamily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateFamily">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ValidateFamily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateTrainSinger">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateTrainSinger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidateTrainSinger">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/InsertCandidateTrainSinger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidateTrainSinger">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateTrainSinger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidateTrainSinger">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateTrainSinger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateReference">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateReference" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidateReference">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/InsertCandidateReference" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidateReference">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateReference" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidateReference">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateReference" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateBeforeWT">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateBeforeWT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCandidateBeforeWT">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/InsertCandidateBeforeWT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCandidateBeforeWT">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/ModifyCandidateBeforeWT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCandidateBeforeWT">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/DeleteCandidateBeforeWT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramSchedule">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetProgramSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramScheduleByID">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetProgramScheduleByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateNotScheduleByScheduleID">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateNotScheduleByScheduleID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateScheduleByScheduleID">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateScheduleByScheduleID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProgramSchedule">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateProgramSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateResult">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCandidateResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCandidateResult">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/UpdateCandidateResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCost">
+      <soap12:operation soapAction="http://tempuri.org/IRecruitmentBusiness/GetCost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RecruitmentBusiness">
+    <wsdl:port name="WSHttpBinding_IRecruitmentBusiness" binding="tns:WSHttpBinding_IRecruitmentBusiness">
+      <soap12:address location="http://localhost:9999/RecruitmentBusiness.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:9999/RecruitmentBusiness.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

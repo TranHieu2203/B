@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Business"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_EmployeeMng"  Text="Employee records" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_EmployeeMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_WageMng"  Text="Records management salaries" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_WageMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Contract" Text="Contract Management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Contract&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_ChangeInfoMng"  Text="Change Management Employee Information" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ChangeInfoMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Text="Discipline"  PostBack="False">
+          <Group>
+            <Item Value="ctrlHU_Discipline" Text="Discipline Manager" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Discipline&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlHU_DisciplineSalary" Text="Management income deduction" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_DisciplineSalary&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+          </Group>
+        </Item>
+        <Item Text="Welfare"  PostBack="False">
+          <Group>
+            <Item Value="ctrlHU_WelfareMng" Text="Personal Welfare Manager " PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_WelfareMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_WelfareMngAuto" Text="Welfare Automation Manager" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_WelfareMngAuto&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+          </Group>
+        </Item>
+        <Item Value="ctrlHU_LabourProtectionMng" Text="Management of labor protection" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_LabourProtectionMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_OccupationalSafety" Text="Safety Management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_OccupationalSafety&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_AssetMng" Text="Manage asset allocation" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_AssetMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_TransferTripartiteMng"  Text="Tripartite management transfer" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_TransferTripartiteMng&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Terminate" Text="Management leave" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Terminate&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Terminate3B" Text="Manage third party leave" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Terminate3B&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_BlackList" Text="Manage blacklist" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_BlackList&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Template" Text="Manage dynamic forms" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Template&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Text="Bonus"  PostBack="False">
+          <Group>
+            <Item Value="ctrlHU_ImportCommend" Text="Import Bonus List" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ImportCommend&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlHU_CommendCollect" Text="Bonus approved synthetic" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_CommendCollect&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlHU_Commend" Text="Bonus Management" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Commend&amp;group=Business" CheckPermission="true"/>
+          </Group >
+        </Item >
+        <Item Text="Approval Portal"  PostBack="False">
+          <Group>
+            <Item Value="ctrlHU_ApproveFamily_Edit"  Text="Approving personal information" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ApproveFamily_Edit&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_ApproveEmployee_Edit"  Text="Approve employee records" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ApproveEmployee_Edit&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_ApproveWorkingBefore_Edit"  Text="Approval process previous work" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ApproveWorkingBefore_Edit&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+            <Item Value="ctrlHU_ApproveTrainingOutCompany_Edit"  Text="Training approval process outside the company" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ApproveTrainingOutCompany_Edit&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+          </Group>
+        </Item>
+      </Group>
+    </Item>
+
+    <Item Text="Report" PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_ReportList" Text="Standard Reports" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ReportList&amp;group=report" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_DynamicReport" Text="Dynamic reporting" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_DynamicReport&amp;group=report" CheckPermission="true" CausesValidation="False" />
+      </Group>
+    </Item>
+
+    <Item Text="Institute"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_WelfareList" Text="Welfare" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_WelfareList&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlRemindConfig" Text="The number of days to remind" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlRemindConfig&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+
+    <Item Text="Category" PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_StaffLevel" Text="Level Employee" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_StaffLevel&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_ContractType" Text="Contract type" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_ContractType&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_Place" Text="City" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Place&amp;group=List&amp;tab=Nation" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_Bank" Text="Bank" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Bank&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_BankBranch" Text="Bank branch" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_BankBranch&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_AllowanceList" Text="Allowance" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_AllowanceList&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_LabourProtection" Text="Labour Protection" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_LabourProtection&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_Asset" Text="Asset allocation" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Asset&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_CommendLevel" Text="Bonus Level" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_CommendLevel&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_Commend_List" Text="Bonus" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_Commend_List&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlHU_CommendFormula" Text="Formula Bonus" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_CommendFormula&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlOtherList" Text="System Parameters" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlOtherList&amp;group=list" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_RelationshipList" Text="Relationship" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlHU_RelationshipList&amp;group=list" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+    
+  </Group>
+</Menu>

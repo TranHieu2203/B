@@ -1,0 +1,109 @@
+﻿.box_treeview
+{
+    float: left;
+    width: 250px;
+    min-height: 350px;
+}
+.box_right
+{
+    border-left: 1px solid #c0c0c0;
+    min-height: 600px;
+    margin-left: 249px;
+}
+.box_Basic_Info
+{
+    width: 100%;
+    height: auto;
+    float: left;
+    border-bottom: 1px solid #c0c0c0;
+}
+.box_image
+{
+    width: 150px;
+    min-height: 110px;
+    float: left;
+}
+.image_frame
+{
+    width: 90px;
+    height: 120px;
+    padding: 2px;
+    border: 1px solid #c0c0c0;
+    background-color: #fff;
+    margin: 10px auto;
+}
+.image_frame img
+{
+    width: 90px;
+    height: 120px;
+}
+.left_nav
+{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.left_nav li
+{
+    line-height: 25px;
+    height: 25px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: Red;
+    border-bottom: 1px dotted #c0c0c0;
+}
+.left_nav li:hover
+{
+    background-color: #f1f1f1;
+}
+.left_nav li a
+{
+    text-decoration: none;
+    color:#0E7DA2;
+}
+.left_nav li a:hover
+{
+    color: Red;
+}
+.view_Content
+{
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+.TabView
+{
+    float: left;
+}
+.sub-Title
+{
+    border-bottom: 2px solid teal;
+    margin-bottom: 5px;
+    color: #0E7DA2;
+    font-weight: bold;
+}
+.float-left
+{
+    float:left !important;
+}
+.ctrlBtns
+{
+	margin: 5px;
+}
+.ctrlBtns li
+{
+	float: left;
+	list-style: none;
+}
+.ctrlBtns li.playSpace
+{
+	padding: 0 15px;
+}
+*html .ctrlBtns
+{
+	bottom: 16px;
+}
+* + html .ctrlBtns
+{
+	bottom: 20px;
+}

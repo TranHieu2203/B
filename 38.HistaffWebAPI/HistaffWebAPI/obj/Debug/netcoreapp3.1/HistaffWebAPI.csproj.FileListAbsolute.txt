@@ -1,0 +1,139 @@
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.csprojAssemblyReference.cache
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/staticwebassets/HistaffWebAPI.StaticWebAssets.Manifest.cache
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/staticwebassets/HistaffWebAPI.StaticWebAssets.xml
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.AssemblyInfoInputs.cache
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.AssemblyInfo.cs
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/appsettings.json
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.exe
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.deps.json
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.runtimeconfig.json
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.runtimeconfig.dev.json
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.dll
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.pdb
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/Dapper.dll
+C:/workspaces/TNG/TNG/HistaffWebAPI/bin/Debug/netcoreapp3.1/Oracle.ManagedDataAccess.dll
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.RazorTargetAssemblyInfo.cache
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.csproj.CopyComplete
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.dll
+C:/workspaces/TNG/TNG/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.pdb
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.deps.json
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.runtimeconfig.json
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.runtimeconfig.dev.json
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.dll
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.pdb
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/Dapper.dll
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/Oracle.ManagedDataAccess.dll
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.csprojAssemblyReference.cache
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.MvcApplicationPartsAssemblyInfo.cache
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.AssemblyInfoInputs.cache
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.AssemblyInfo.cs
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.RazorTargetAssemblyInfo.cache
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.csproj.CopyComplete
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/staticwebassets/HistaffWebAPI.StaticWebAssets.Manifest.cache
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/staticwebassets/HistaffWebAPI.StaticWebAssets.xml
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.dll
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.pdb
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.exe
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.deps.json
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.runtimeconfig.json
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.runtimeconfig.dev.json
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.dll
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/HistaffWebAPI.pdb
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/Dapper.dll
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/Oracle.ManagedDataAccess.dll
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.csprojAssemblyReference.cache
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.csproj.CoreCompileInputs.cache
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.AssemblyInfoInputs.cache
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.AssemblyInfo.cs
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.RazorTargetAssemblyInfo.cache
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.csproj.CopyComplete
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/staticwebassets/HistaffWebAPI.StaticWebAssets.Manifest.cache
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/staticwebassets/HistaffWebAPI.StaticWebAssets.xml
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.dll
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.pdb
+C:/Users/Admin/Desktop/API/API/HistaffWebAPI/obj/Debug/netcoreapp3.1/HistaffWebAPI.genruntimeconfig.cache
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings 2.json
+/Users/chiennguyen/Documents/workspaces/API/HistaffWebAPI/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\appsettings.json
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings 2.json
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.exe
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.deps.json
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.runtimeconfig.json
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.runtimeconfig.dev.json
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.dll
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.pdb
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Dapper.dll
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Oracle.ManagedDataAccess.dll
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.csprojAssemblyReference.cache
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.csproj.CoreCompileInputs.cache
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.AssemblyInfoInputs.cache
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.AssemblyInfo.cs
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.RazorTargetAssemblyInfo.cache
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.csproj.CopyComplete
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\HistaffWebAPI.StaticWebAssets.Manifest.cache
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\HistaffWebAPI.StaticWebAssets.xml
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.dll
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.pdb
+D:\L\DỰ ÁN-SP\TNG\API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.genruntimeconfig.cache
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.dll
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.pdb
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\appsettings.json
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings 2.json
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.exe
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.deps.json
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.runtimeconfig.json
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.runtimeconfig.dev.json
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.dll
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.pdb
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Dapper.dll
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\TVC\TNG_API\HistaffWebAPI\bin\Debug\netcoreapp3.1\Oracle.ManagedDataAccess.dll
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.csprojAssemblyReference.cache
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.AssemblyInfoInputs.cache
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.AssemblyInfo.cs
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.csproj.CoreCompileInputs.cache
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.RazorTargetAssemblyInfo.cache
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.csproj.CopyComplete
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\HistaffWebAPI.StaticWebAssets.Manifest.cache
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\HistaffWebAPI.StaticWebAssets.xml
+E:\TVC\TNG_API\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.genruntimeconfig.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings 2.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.exe
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.deps.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.runtimeconfig.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.runtimeconfig.dev.json
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.dll
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\HistaffWebAPI.pdb
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\bin\Debug\netcoreapp3.1\Oracle.ManagedDataAccess.dll
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.csprojAssemblyReference.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.AssemblyInfoInputs.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.AssemblyInfo.cs
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.RazorTargetAssemblyInfo.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.csproj.CopyComplete
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\HistaffWebAPI.StaticWebAssets.Manifest.cache
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\HistaffWebAPI.StaticWebAssets.xml
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.dll
+C:\workspaces\TNG\TNG\38.HistaffWebAPI\HistaffWebAPI\obj\Debug\netcoreapp3.1\HistaffWebAPI.pdb

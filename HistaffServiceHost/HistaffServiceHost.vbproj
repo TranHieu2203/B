@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{F43D5777-6B95-4B9C-8BBC-AE132144A4CC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HistaffServiceHost</RootNamespace>
+    <AssemblyName>HistaffServiceHost</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HistaffServiceHost.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HistaffServiceHost.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\ref\Quartz\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\ref\Quartz\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\app\client\HIEUTV\product\12.2.0\client_2\odp.net\bin\4\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\ref\Quartz\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Attendance\Data\CHECKINOUT.txt" />
+    <Content Include="Attendance\Email\AT_TIMESHEET_RTA.html" />
+    <Content Include="Attendance\Email\AT_TIMESHEET_ATRJ.html" />
+    <Content Include="Attendance\Email\AT_TIMESHEET_ATR.html" />
+    <Content Include="Attendance\Email\AT_TIMESHEET_PWC.html" />
+    <Content Include="Attendance\Email\AT_TIMESHEET_ATR_FC.html" />
+    <Content Include="Attendance\Email\AT_TIME_REGTOAPP.html" />
+    <Content Include="Attendance\Email\AT_TIME_APPTOREG.html" />
+    <Content Include="Attendance\Email\AT_TIME_DENYTOREG.html" />
+    <Content Include="Attendance\Email\AT_TIMESHEET_ATR_FC_LOCALTION.html" />
+    <Content Include="CandidateImage\NoImage.jpg" />
+    <Content Include="CommonBusiness.svc" />
+    <Content Include="AttendanceBusiness.svc" />
+    <Content Include="EmployeeImage\NoImageUploadfile.png" />
+    <Content Include="HistaffFramework.svc" />
+    <Content Include="HU_WorkingBusiness.svc" />
+    <Content Include="ProfileBusinessIntegrated.svc" />
+    <Content Include="EmployeeImage\NoImage.jpg" />
+    <Content Include="Global.asax" />
+    <Content Include="InsuranceBusiness.svc" />
+    <Content Include="OnlineQuizBusiness.svc" />
+    <Content Include="PayrollBusiness.svc" />
+    <Content Include="PerformanceBusiness.svc" />
+    <Content Include="PortalBusiness.svc" />
+    <Content Include="ProfileBusiness.svc" />
+    <Content Include="Profile\Data\HU_RPT_TER_EMP.xml" />
+    <Content Include="Profile\Data\HU_RPT_CHANGE_EMP_BY_UNIT.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Profile\Data\HU_RPT_CHANGE_EMP_BY_TITLE.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Profile\Data\HU_RPT_EMP_QUALITY.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Profile\Data\HU_RPT_CHANGE_EMP.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Profile\Data\HU_DELETE_ALDATA.xml" />
+    <Content Include="Profile\Data\HU_DELETE_AT_RGT.xml" />
+    <Content Include="Profile\Data\HU_DELETE_AT_RGTPLN.xml" />
+    <Content Include="Profile\Data\HU_RPT_CHANGE_SALARY.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RecruitmentBusiness.svc" />
+    <Content Include="TrainingBusiness.svc" />
+    <Content Include="ReportTemplates\Payroll\Report\PhieuLuong.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PhieuThuongHQCV.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PhieuLuongNV.xlsx" />
+    <None Include="ReportTemplates\Payroll\Report\PhieuThuongHQCV.docx" />
+    <Content Include="ReportTemplates\Profile\Import\BHLD.xls" />
+    <Content Include="TemplateDynamic\HRProcess\WORK_PROCESS.docx" />
+    <Content Include="TemplateDynamic\HRProcess\WORK_PROCESS.doc" />
+    <Content Include="TemplateDynamic\HRProcess\TER_PROCESS.doc" />
+    <Content Include="TemplateDynamic\HRProcess\TER_PROCESS.docx" />
+    <Content Include="TemplateDynamic\Termination\TER_HANDOVER.docx" />
+    <Content Include="TemplateDynamic\Termination\TER_HANDOVER.doc" />
+    <Content Include="TemplateDynamic\HRProcess\WORK_PROCESS_DEFAULT.doc" />
+    <Content Include="ReportTemplates\Profile\ExportData.xlsx" />
+    <Content Include="TemplateDynamic\HRProcess\MAN_PROCESS.doc" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="JobSheduleScanDataINOUT.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Attendance\ReportTemplate\RPT_BangCongTongHop.xlsx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Attendance\App_Data\" />
+    <Folder Include="Attendance\Exception\" />
+    <Folder Include="Attendance\Report\" />
+    <Folder Include="Attendance\Script\" />
+    <Folder Include="My Project\PublishProfiles\" />
+    <Folder Include="Payroll\Data\" />
+    <Folder Include="Payroll\Exception\" />
+    <Folder Include="Profile\Exception\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HistaffFrameworkPublic\HistaffFrameworkPublic.vbproj">
+      <Project>{5D0CFFD8-3EF0-4584-818F-3F165BD8DE0C}</Project>
+      <Name>HistaffFrameworkPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFramework\HistaffFramework.vbproj">
+      <Project>{FB51763C-4CE7-4417-BBD9-5FF784FCE7A7}</Project>
+      <Name>HistaffFramework %28HistaffFramework\HistaffFramework%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AttendanceBusiness\AttendanceBusiness.vbproj">
+      <Project>{A99D924F-31C9-4768-9C36-661F38EFCF69}</Project>
+      <Name>AttendanceBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonBusiness\CommonBusiness.vbproj">
+      <Project>{9E1F6BF8-FDDA-48FB-BF5B-17155945A560}</Project>
+      <Name>CommonBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Data\Framework.Data.vbproj">
+      <Project>{5AB0D232-7B7A-44B8-9D14-115C065027DB}</Project>
+      <Name>Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InsuranceBusiness\InsuranceBusiness.vbproj">
+      <Project>{8B96AA55-2FAF-4758-9410-C4AA17A9D5CD}</Project>
+      <Name>InsuranceBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PayrollBusiness\PayrollBusiness.vbproj">
+      <Project>{62819B21-E4C4-497A-B5B3-395F7068E4FD}</Project>
+      <Name>PayrollBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PerformanceBusiness\PerformanceBusiness.vbproj">
+      <Project>{8c3928e9-db3b-4b49-b669-f682c6fdd9aa}</Project>
+      <Name>PerformanceBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProfileBusiness\ProfileBusiness.vbproj">
+      <Project>{13218E20-68EE-4544-85EC-F92AE6D57A23}</Project>
+      <Name>ProfileBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RecruitmentBusiness\RecruitmentBusiness.vbproj">
+      <Project>{C6407D4F-8F99-4C56-AC1F-7A48C204A086}</Project>
+      <Name>RecruitmentBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrainingBusiness\TrainingBusiness.vbproj">
+      <Project>{A5F419A7-9565-4166-ACDA-D454C4E910B7}</Project>
+      <Name>TrainingBusiness</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>9999</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

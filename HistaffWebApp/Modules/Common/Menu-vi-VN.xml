@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Quản trị hệ thống"  PostBack="False">
+      <Group>
+        <Item Value="ctrlListUser" Text="Quản lý tài khoản" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlListUser&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlListGroup" Text="Quản lý nhóm tài khoản" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlListGroup&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlGroupN" Text="Gán tài khoản vào nhóm" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlGroupN&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlGroup" Text="Phân quyền cho nhóm" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlGroup&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlUser" Text="Phân quyền cho tài khoản" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlUser&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlUserException" Text="Phân quyền ngoại lệ người dùng" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlUserException&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlActionLog" Text="Quản lý log thao tác" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlActionLog&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlOnlineUser" Text="Danh sách User online" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlOnlineUser&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlAccessLog" Text="Lịch sử đăng nhập" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlAccessLog&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlSE_MailConfiguration" Text="Quản lý cấu hình Mail" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlSE_MailConfiguration&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlSE_LdapConfiguration" Text="Quản lý cấu hình Ldap" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlSE_LdapConfiguration&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlSE_Configuration" Text="Quản lý cấu hình chung" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlSE_Configuration&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlLanguageManagement" Text="Quản lý ngôn ngữ" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlLanguageManagement" CheckPermission="true"/>
+        <Item Value="ctrlControlsManage" Text="Quản lý config" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlControlsManage&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlManageCache" Text="Quản lý cache" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlManageCache&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlMailTemplate" Text="Quản lý mẫu Email" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlMailTemplate&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlSE_Mail" Text="Quản lý Email History" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlSE_Mail&amp;group=Secure" CheckPermission="true"/>
+        <Item Value="ctrlRegisterUser" Text="Quản lý số lượng tài khoản sử dụng" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlRegisterUser&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlSE_System_Maintain" Text="Quản lý hợp đồng bảo trì hệ thông" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlSE_System_Maintain&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlListFunction" Text="Quản lý chức năng" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlListFunction&amp;group=Secure" CheckPermission="true" />
+        <Item Value="ctrlGeneralSetting" Text="Thiết lập chung" PostBack="True" NavigateUrl="Default.aspx?mid=Profile&amp;fid=ctrlGeneralSetting&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+    <Item Text="Định nghĩa" PostBack="True">
+      <Group>
+        <Item Value="ctrlValueSet" Text="Tập giá trị" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlValueSet&amp;group=Define" CheckPermission="TRUE">
+        </Item>
+        <Item Value="ctrlPrograms" Text="Báo cáo hệ thống" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlPrograms&amp;group=Define" CheckPermission="TRUE">
+        </Item>
+      </Group>
+    </Item>
+    <Item Text="Thiết lập"  PostBack="False">
+      <Group>
+        <Item Value="ctrlApproveProcess" Text="Thiết lập quy trình phê duyệt" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveProcess&amp;group=ApproveProcess" CheckPermission="true"/>
+        <Item Value="ctrlApproveTemplate" Text="Thiết lập Template phê duyệt" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveTemplate&amp;group=ApproveProcess" CheckPermission="true"/>
+        <Item Value="ctrlApproveSetupOrg" Text="Thiết lập Phê duyệt cho Phòng ban" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveSetupOrg&amp;group=ApproveProcess" CheckPermission="true"/>
+        <Item Value="ctrlApproveSetupEmp" Text="Thiết lập Phê duyệt cho Nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveSetupEmp&amp;group=ApproveProcess" CheckPermission="true"/>
+        <Item Value="ctrlApproveSetupExt" Text="Thiết lập Phê duyệt thay thế" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlApproveSetupExt&amp;group=ApproveProcess" CheckPermission="true"/>
+        <Item Value="ctrlSkinAppConfig" Text="Thiết lập Skin" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlSkinAppConfig&amp;group=Secure" CheckPermission="true"/>
+      </Group>
+    </Item>
+    <Item Value="ctrlREPORT" Text="Xử lý báo cáo" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlREPORT" CheckPermission="true" />
+  </Group>
+</Menu>
+
+<!--aa-->

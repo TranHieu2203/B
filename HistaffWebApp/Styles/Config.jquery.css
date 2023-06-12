@@ -1,0 +1,8 @@
+.mlddm li a:hover, .mlddm li a#buttonhover, .mlddm li a.selected {
+    background: #106E5E;
+    color: #ffffff;
+}
+.mlddm ul li a:hover {
+    background-color: #106E5E;
+    color: #ffffff;
+}

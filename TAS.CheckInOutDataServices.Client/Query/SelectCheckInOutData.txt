@@ -1,0 +1,9 @@
+﻿SELECT EmployeeID EMPLOYEE_ID
+      ,[Date] WORKINGDAY
+      ,CONVERT(varchar(23), [Time],  120) IN_OUT_VALUE
+      ,1 CHECKTYPE
+      ,MachineCode MACHINE_CODE
+  FROM CHECKINOUT
+ WHERE IsTransfer = 0 
+	AND [Date] >= CONVERT(date,'{0}',103)
+	AND [Date] <= CONVERT(date,'{1}',103)

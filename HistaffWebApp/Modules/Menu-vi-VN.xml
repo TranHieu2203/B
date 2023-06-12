@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Module">
+      <Group>
+		<Item Value="Organize" Text="Tổ chức" PostBack="True" />
+        <Item Value="Recruitment" Text="Tuyển dụng" PostBack="True" />
+        <Item Value="Profile" Text="Hồ sơ" PostBack="True"/>
+        <Item Value="Insurance" Text="Bảo hiểm" PostBack="True" />
+        <Item Value="Attendance" Text="Công" PostBack="True" />
+        <Item Value="Payroll" Text="Lương" PostBack="True" />
+        <Item Value="Training" Text="Đào tạo" PostBack="True" />
+        <Item Value="Performance" Text="Đánh giá" PostBack="True" />
+        <Item Value="Common" Text="Hệ thống" PostBack="True" />
+      </Group>
+    </Item>
+  </Group>
+</Menu>

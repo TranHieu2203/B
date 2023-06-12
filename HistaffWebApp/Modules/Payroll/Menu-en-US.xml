@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Business"  PostBack="False">
+      <Group>
+        <Item Value="PAYROLL_CALCULATE" Text="Payroll Calculate" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlPROCESS&amp;programID=PAYROLL_CALCULATE&amp;moduleID=5" CheckPermission="true" />
+        <Item Value="PAYROLL_PAYBACK" Text="Payroll Payback Calculate" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlPROCESS&amp;programID=PAYROLL_PAYBACK&amp;moduleID=5" CheckPermission="true" />
+        <Item Value="BONUS_CALCULATE" Text="Bonus salary month 13" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlPROCESS&amp;programID=BONUS_CALCULATE&amp;moduleID=5" CheckPermission="true" />
+        <Item Value="TAX_INCOME_CACULATE" Text="Synthesis Personal income tax finalization" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlPROCESS&amp;programID=TAX_INCOME_CACULATE&amp;moduleID=5" CheckPermission="true" />
+        <Item Value="ctrlImportLuong" Text="Import Salary" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlImportLuong&amp;group=Business" CheckPermission="true" />
+        <Item Value="ctrlImportThuongHQCV" Text="Import bonus" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlImportThuongHQCV&amp;group=Business" CheckPermission="true" />
+        <Item Value="ctrlImportThueTNCN" Text="Import Personal income tax" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlImportThueTNCN&amp;group=Business" CheckPermission="true" />
+        <Item Value="ctrlSendMailLuong" Text="Send mail paycheck" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlSendMailLuong&amp;group=Business" CheckPermission="true" />
+        <Item Value="ctrlSendMailThuongHQCV" Text="Send mail bonus" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlSendMailThuongHQCV&amp;group=Business" CheckPermission="true" />
+      </Group>
+    </Item>
+
+    <Item Text="Report" PostBack="False">
+      <Group>
+        <Item Value="ctrlREPORT" Text="Report list" PostBack="True" NavigateUrl="Default.aspx?mid=Common&amp;fid=ctrlREPORT&amp;moduleID=5" CheckPermission="true">
+        </Item>
+      </Group>
+    </Item>
+
+    <Item Text="Institute"  PostBack="False">
+      <Group>
+        <Item Value="ctrlPA_Period" Text="Declare pay period" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_Period&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlPA_Formula" Text="Declare salary formula" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_Formula&amp;group=Setting" CheckPermission="true"/>
+        <Item Value="ctrlPA_PaymentsList" Text="System Parameters" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_PaymentsList&amp;group=Setting" CheckPermission="true"/>
+        <Item Value="ctrlSalaryFuncMapping" Text="Salary according to salary fund" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlSalaryFuncMapping&amp;group=Setting" CheckPermission="true" />
+      </Group>
+    </Item>
+
+    <Item Text="Category"  PostBack="False">
+      <Group>
+        <Item Value="ctrlPA_SalaryType" Text="Group Payroll" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_SalaryType&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlPA_ListSalaries" Text="Salaries for wage groups" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_ListSalaries&amp;group=list" CheckPermission="true"/>
+        <Item Value="ctrlPA_ListSal" Text="Payroll" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_ListSal&amp;group=list" CheckPermission="true"/>
+        <Item Value="ctrlPA_SalaryGroup" Text="Payroll Sheet" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_SalaryGroup&amp;group=list" CheckPermission="true" />
+        <Item Value="ctrlPA_SalaryLevel" Text="Pay grades" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_SalaryLevel&amp;group=list" CheckPermission="true" />
+        <Item Value="ctrlPA_SalaryRank" Text="Pay ranges" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_SalaryRank&amp;group=list" CheckPermission="true" />
+        <Item Value="ctrlPA_PaymentSources" Text="Sources expenditure" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_PaymentSources&amp;group=list" CheckPermission="true" />
+        <Item Value="ctrlPA_TaxationList" Text="Progressive tariff" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_TaxationList&amp;group=list" CheckPermission="true"/>
+        <Item Value="ctrlPA_ObjectSalary" Text="Group compensation formula &amp; work efficiency" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlPA_ObjectSalary&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlOtherList" Text="System Parameters" PostBack="True" NavigateUrl="Default.aspx?mid=Payroll&amp;fid=ctrlOtherList&amp;group=list" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+  </Group>
+</Menu>

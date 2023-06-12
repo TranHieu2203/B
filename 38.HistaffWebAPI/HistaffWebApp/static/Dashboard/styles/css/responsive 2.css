@@ -1,0 +1,98 @@
+/*Iphone (480 x 640)*/
+
+@media screen and (min-width: 320) {
+    #content {
+        text-align: center;
+        min-height: 650px;
+        padding-top: 150px;
+    }
+}
+
+
+/*Table nhỏ (480 x 640)*/
+
+@media screen and (min-width: 480px) {
+    #content {
+        text-align: center;
+        min-height: 650px;
+        padding-top: 180px;
+    }
+}
+
+
+/*Ipad dọc (768 x 1024)*/
+
+@media screen and (min-width: 768px) {
+    /* #content {
+        text-align: center;
+        min-height: 650px;
+        padding-top: 250px;
+    } */
+}
+
+
+/*Ipad ngang (1024 x 768)*/
+
+@media screen and (min-width: 1024px) {
+    #content {
+        text-align: center;
+        min-height: 650px;
+        padding-top: 250px;
+    }
+}
+
+
+/*Ipad ngang (1024 x 768)*/
+
+@media screen and (max-width: 1024px) {}
+
+
+/*Ipad dọc (768 x 1024)*/
+
+@media screen and (max-width: 768px) {
+    .title-logo {
+        display: none;
+    }
+}
+
+
+/*Table nhỏ (480 x 640)*/
+
+@media screen and (max-width: 480px) {
+    .title-logo {
+        display: none;
+    }
+    #content {
+        text-align: center;
+        min-height: 640px;
+        padding-top: 450px;
+    }
+}
+
+
+/*Iphone (480 x 640)*/
+
+@media screen and (max-width: 320px) {
+    .title-logo {
+        display: none;
+    }
+    #content {
+        text-align: center;
+        min-height: 480px;
+        padding-top: 350px;
+    }
+}
+
+
+/*Smart phone nhỏ */
+
+@media screen and (max-width: 240px) {
+    .title-logo {
+        display: none;
+    }
+    #content {
+        text-align: center;
+        min-height: 600px;
+        padding-top: 150px;
+    }
+}

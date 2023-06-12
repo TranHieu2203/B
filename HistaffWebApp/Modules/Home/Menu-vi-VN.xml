@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item  Value="ctrlInformation"  Text="Bảng tin" PostBack="True" NavigateUrl="Default.aspx?mid=Home&amp;fid=ctrlInformation" CheckPermission="true"/>
+  </Group>
+</Menu>

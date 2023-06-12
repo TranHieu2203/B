@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Business"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_Organization" Text="Organizational" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_Organization&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlOrgChart" Text="Organizational chart" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlOrgChart&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Title" Text="Title" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_Title&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_OrgTitle" Text="Unit titles" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_OrgTitle&amp;group=Business" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_ChartEmployee"  Text="Diagram job titles" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_ChartEmployee&amp;group=Business" CheckPermission="false"/>
+      </Group>
+    </Item>
+	<Item Text="Succession"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_Organization" Text="Successor search" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_SuccessorSearch&amp;group=Succession" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlTalentPoolMng" Text="Successor List" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlTalentPoolMng&amp;group=Succession" CheckPermission="true" CausesValidation="False" />
+      </Group>
+    </Item>
+    <Item Text="Category" PostBack="False">
+      <Group>
+        <Item Value="ctrlOtherList" Text="Group titles" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlOtherList&amp;group=list" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

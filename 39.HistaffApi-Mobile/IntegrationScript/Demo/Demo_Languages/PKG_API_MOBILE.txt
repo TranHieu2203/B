@@ -1,0 +1,698 @@
+﻿CREATE OR REPLACE PACKAGE PKG_API_MOBILE_OM AS 
+TYPE CURSOR_TYPE IS REF CURSOR;
+
+  /* SYSTEM */
+
+	FUNCTION API_FN_HASH(
+					    p_string varchar2,
+					    p_method varchar2 default 'SHA1'
+				) return varchar2 ;
+	/*Convert number to date*/
+	FUNCTION API_FN_CONVERTNUMBERTODATE
+				(
+				  P_D IN NUMBER
+				) RETURN DATE ;
+
+
+	PROCEDURE API_User_GenAccessToken
+				(
+				  p_CompanyCode IN NVARCHAR2,
+				  p_UserID IN NUMBER,
+				  p_DeviceID IN NVARCHAR2,
+				  p_Language IN nvarchar2,
+				  p_Token OUT NVARCHAR2,
+				  p_Message OUT NVARCHAR2,
+				  p_ResponseStatus OUT NUMBER
+				);
+
+	PROCEDURE API_User_CheckAccessToken
+				(
+				    p_CompanyCode IN NVARCHAR2,
+				    p_UserID IN NUMBER,
+				    p_DeviceID IN NVARCHAR2,
+				  	p_Language IN nvarchar2,
+				    p_Token IN NVARCHAR2,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+	PROCEDURE API_User_LoginWToken
+				(
+				    p_CompanyCode IN NVARCHAR2,
+				    p_UserID IN NUMBER,
+				    p_DeviceID IN NVARCHAR2,
+				  	p_Language IN nvarchar2,
+				    p_Token IN NVARCHAR2,
+	    			p_UserName OUT NVARCHAR2,
+				    p_FullName OUT NVARCHAR2,
+				    p_Email OUT NVARCHAR2,
+				    p_Mobile OUT NVARCHAR2,
+				    p_Avatar OUT NVARCHAR2,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				) ;
+
+	PROCEDURE API_User_Login
+				(
+				    p_UserName IN NVARCHAR2,
+				    p_Pwd IN NVARCHAR2,
+				    p_DeviceID IN NVARCHAR2, 
+				    p_Firebase_Client_Id IN NVARCHAR2,
+				  	p_Language IN nvarchar2,
+				    p_CompanyCode OUT NVARCHAR2,
+				    p_UserID OUT NUMBER,
+				    p_FullName OUT NVARCHAR2,
+				    p_Email OUT NVARCHAR2,
+				    p_Mobile OUT NVARCHAR2,
+				    p_Avatar OUT NVARCHAR2,
+				    p_Token OUT NVARCHAR2,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+
+
+	PROCEDURE API_User_Logout
+				(
+				    p_Token IN NVARCHAR2,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				)	;	
+
+	PROCEDURE API_User_CheckPermission
+				(
+				    p_UserID IN NUMBER,
+				    p_Url IN NVARCHAR2,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+
+/* END SYSTEM */
+/*===========================================================================================*/
+/*GET PROCEDURE*/
+	PROCEDURE API_Get_Contract
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_EmployeeID IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+	    			p_Cur OUT CURSOR_TYPE,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+
+	PROCEDURE API_Get_Dashboard
+				(
+		p_Language IN nvarchar2,
+				  p_UserID IN NUMBER,
+				  p_Pending OUT NUMBER,
+				  p_OtHours OUT NUMBER,
+				  p_RegisterHour OUT NUMBER,
+                  p_TotalPaidLeaveDays OUT NUMBER,
+                  P_TotalCompensatedLeaveDays OUT NUMBER,
+				  p_Message OUT NVARCHAR2,
+				  p_ResponseStatus OUT NUMBER
+				);
+
+	PROCEDURE API_Get_Employee
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_RowCount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				)	;
+
+	PROCEDURE API_Get_Family
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_EmployeeID IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+
+	PROCEDURE API_Get_ListRegisterLeave
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_Status IN NVARCHAR2,
+				    p_ManagerStatus IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+
+	PROCEDURE API_Get_ListRegisterLeaveMng
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_Status IN NVARCHAR2,
+				    p_Type IN NUMBER,
+				    p_FromDate IN NVARCHAR2,
+				    p_ToDate IN NVARCHAR2,
+				    p_KeyEmployee IN NVARCHAR2,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+
+	PROCEDURE API_Get_ListRegisterWLEOMng
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_Status IN NVARCHAR2,
+				    p_Type IN NUMBER,
+				    p_FromDate IN NVARCHAR2,
+				    p_ToDate IN NVARCHAR2,
+				    p_KeyEmployee IN NVARCHAR2,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);		
+
+	PROCEDURE API_Get_ListRegisterWLEO
+	(
+		p_Language IN nvarchar2,
+	    p_UserID IN NUMBER,
+	    p_Status IN NVARCHAR2,
+	    p_ManagerStatus IN NUMBER,
+	    p_Page IN NUMBER,
+	    p_PageSize IN NUMBER,
+	    p_Cur OUT CURSOR_TYPE,
+	    p_Rowcount OUT NUMBER,
+	    p_Message OUT NVARCHAR2,
+	    p_ResponseStatus OUT NUMBER
+	);		
+
+	PROCEDURE API_Get_ListRegisterOT
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_Status IN NVARCHAR2,
+				    p_ManagerStatus IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+
+	PROCEDURE API_Get_ListRegisterOTMng
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_Status IN NVARCHAR2,
+				    p_Type IN NUMBER,
+				    p_FromDate IN NVARCHAR2,
+				    p_ToDate IN NVARCHAR2,
+				    p_KeyEmployee IN NVARCHAR2,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+					p_Cur OUT CURSOR_TYPE,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				)	;	
+
+	PROCEDURE API_Get_Period(
+		p_Language IN nvarchar2,p_Year           IN NUMBER,
+	                           p_Page           IN NUMBER,
+	                           p_PageSize       IN NUMBER,
+	                           P_CUR            OUT CURSOR_TYPE,
+	                           p_Rowcount       OUT NUMBER,
+	                           p_Message        OUT NVARCHAR2,
+	                           p_ResponseStatus OUT NUMBER);
+
+	PROCEDURE API_CancelRegisterWLEO
+				    (
+		p_Language IN nvarchar2,
+				        p_UserID IN NUMBER,
+				        p_RegisterID IN NUMBER,
+				        p_Comment IN NVARCHAR2,
+				        p_cur out CURSOR_TYPE,
+				        p_Message OUT NVARCHAR2,
+				        p_ResponseStatus OUT NUMBER
+				    );
+
+	PROCEDURE API_CancelRegisterLeave
+			    (
+		p_Language IN nvarchar2,
+			        p_UserID IN NUMBER,
+			        p_RegisterID IN NUMBER,
+			        p_Comment IN NVARCHAR2,
+			        p_cur out CURSOR_TYPE,
+			        p_Message OUT NVARCHAR2,
+			        p_ResponseStatus OUT NUMBER
+			    );
+
+	PROCEDURE API_Type_Leave(	
+		p_Language IN nvarchar2, P_CUR            OUT CURSOR_TYPE,
+								p_Message        OUT NVARCHAR2,
+                               p_ResponseStatus OUT NUMBER
+                              );		   
+
+	PROCEDURE API_Type_OT(
+		p_Language IN nvarchar2,
+                           P_CUR            OUT CURSOR_TYPE,
+                           p_Message        OUT NVARCHAR2,
+                           p_ResponseStatus OUT NUMBER)     ;                    
+
+    PROCEDURE API_Type_WLEO(
+		p_Language IN nvarchar2,
+                           P_CUR            OUT CURSOR_TYPE,
+                           p_Message        OUT NVARCHAR2,
+                           p_ResponseStatus OUT NUMBER)     ;                       
+
+
+	PROCEDURE API_GET_TIMESHEET(
+		p_Language IN nvarchar2,p_UserID IN NUMBER,
+                                                    p_Period IN NUMBER,
+                                                    P_CUR            OUT CURSOR_TYPE,
+                                                    p_DayWork OUT NUMBER,
+                                                    p_DayNotWork OUT NUMBER,
+                                                    p_RowCount OUT NUMBER,
+                                                    p_Message OUT NVARCHAR2,
+                                                    p_ResponseStatus OUT
+                                                    NUMBER);		   
+
+	PROCEDURE API_GET_Salary(
+		p_Language IN nvarchar2,p_UserID         IN NUMBER,
+                                                 p_Period         IN NUMBER,
+                                                 P_CUR            OUT CURSOR_TYPE,
+                                                 p_RowCount       OUT NUMBER,
+                                                 p_Message        OUT NVARCHAR2,
+                                                 p_ResponseStatus OUT NUMBER) ;		   
+
+
+	PROCEDURE API_AT_SwipeMachine_List(
+		p_Language IN nvarchar2,p_Rowcount       OUT NUMERIC,
+                                        P_CUR            OUT CURSOR_TYPE,
+                                        p_Message        OUT nvarchar2,
+                                        p_ResponseStatus OUT NUMERIC);
+
+
+
+
+    PROCEDURE API_Get_Profile
+									(
+		p_Language IN nvarchar2,
+									    p_UserID IN NUMBER,
+									    p_EmployeeID IN NUMBER,
+									    p_FullName OUT NVARCHAR2,
+									    p_UserName OUT NVARCHAR2,
+									    p_Mobile OUT NVARCHAR2,
+									    p_Address OUT NVARCHAR2,
+									    p_Email OUT NVARCHAR2,
+									    p_Avatar OUT NVARCHAR2,
+									    p_DofB OUT NVARCHAR2,
+									    p_Nationality OUT NVARCHAR2,
+									    p_Nation OUT NVARCHAR2,
+									    p_Title OUT NVARCHAR2,
+									    p_IDCard OUT NVARCHAR2,
+									    p_Gender OUT NVARCHAR2,
+									    p_Message OUT NVARCHAR2,
+									    p_ResponseStatus OUT NUMBER
+									)   ;                                 
+
+     PROCEDURE API_GetNotification
+				(
+		p_Language IN nvarchar2,
+				  p_UserID IN NUMBER,
+				  p_Page IN NUMBER,
+				  p_PageSize IN NUMBER,
+				  p_Cur OUT CURSOR_TYPE,
+				  p_Rowcount OUT NUMBER,
+				  p_Message OUT NVARCHAR2,
+				  p_ResponseStatus OUT NUMBER
+				);                                   
+	 PROCEDURE API_GetWaitNotification 
+				(
+		p_Language IN nvarchar2,
+					p_InputRegisterID IN NUMBER,
+					p_InputRegisterType IN NVARCHAR2,
+					p_UserID IN NUMBER, -- action từ user gửi -> cần xử lý lấy ds message của bên nhận
+					p_Status IN NVARCHAR2,
+					p_Page IN NUMBER,
+					p_PageSize IN NUMBER,
+					p_DeviceIds OUT NVARCHAR2,
+					p_Cur OUT CURSOR_TYPE,
+					p_Rowcount OUT NUMBER,
+					p_Message OUT NVARCHAR2,
+					p_ResponseStatus OUT NUMBER
+				);
+	 PROCEDURE API_UpdateSentNotification
+				(
+					p_StringIds IN nvarchar2,
+					p_Status IN nvarchar2,
+					p_Message OUT nvarchar2,
+				  	p_ResponseStatus OUT NUMBER
+				);
+     PROCEDURE API_Get_RegisterLeaveInfo
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_Register OUT NUMBER,
+				    p_Used OUT NUMBER,
+                    p_Reject OUT NUMBER,
+				    p_AllRegister OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+
+  	 PROCEDURE API_Get_Working
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_EmployeeID IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_CUR OUT CURSOR_TYPE,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				)	;
+
+     PROCEDURE API_Get_WorkingOld
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_EmployeeID IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+					p_CUR OUT CURSOR_TYPE,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				)   ;
+
+	PROCEDURE API_GET_TIMESHEET_TOTAL(
+		p_Language IN nvarchar2,p_UserID IN NUMBER,
+                                                    p_Period IN NUMBER,
+                                                    P_CUR            OUT CURSOR_TYPE,
+                                                    p_DayWork OUT NUMBER,
+                                                    p_DayNotWork OUT NUMBER,
+                                                    p_RowCount OUT NUMBER,
+                                                    p_Message OUT NVARCHAR2,
+                                                    p_ResponseStatus OUT  NUMBER
+                                                    );		
+
+
+
+	/*END GET PROCEDURE*/
+/*===========================================================================================*/
+
+
+	PROCEDURE API_LOGGER_ERROR(p_ErrorCode      IN NVARCHAR2,
+                                                 P_ErrorTitle     IN NVARCHAR2,
+                                                 P_ErrorDetail    IN NVARCHAR2,
+                                                 p_UserInfo       IN NVARCHAR2,
+                                                 p_UserID         IN NUMBER,
+                                                 p_Message        OUT NVARCHAR2,
+                                                 p_ResponseStatus OUT NUMBER);
+
+
+	PROCEDURE API_SaveNotification (	p_ScreenCode IN nvarchar2,
+									  p_ViewerUserID IN NUMBER,
+									  p_ActorUserID IN NUMBER,
+									  p_EntityTypeID IN NUMBER,
+									  p_EntityID IN NUMBER,
+									  p_MessageNotification IN NVARCHAR2,
+									  p_Message OUT NVARCHAR2,
+									  p_ResponseStatus OUT NUMBER
+									);
+	PROCEDURE API_SeenNotificationStatus
+									(
+									  p_UserID IN nvarchar2,
+									  p_StringIds IN nvarchar2,
+									  p_Message OUT NVARCHAR2,
+									  p_ResponseStatus OUT NUMBER
+									);
+
+
+	PROCEDURE API_APPROVEREGISTEROT
+	(
+		p_Language IN nvarchar2,
+	  p_UserID IN NUMBER,
+	  p_RegisterID IN NUMBER,
+	  p_Comment IN NVARCHAR2,
+	  P_CUR       OUT CURSOR_TYPE,
+	  p_Message OUT NVARCHAR2,
+	  p_ResponseStatus OUT NUMBER
+	);
+	PROCEDURE API_CancelRegisterOT
+	(
+		p_Language IN nvarchar2,
+	  p_UserID IN NUMBER,
+	  p_RegisterID IN NUMBER,
+	  p_Comment IN NVARCHAR2,
+	  P_CUR       OUT CURSOR_TYPE,
+	  p_Message OUT NVARCHAR2,
+	  p_ResponseStatus OUT NUMBER
+	);
+	PROCEDURE API_Get_RegisterOtInfo
+	(
+		p_Language IN nvarchar2,
+	    p_UserID IN NUMBER,
+	    p_Register OUT NUMBER,
+	    p_Used OUT NUMBER,
+        p_Reject OUT NUMBER,
+	    p_AllRegister OUT NUMBER,
+	    p_Message OUT NVARCHAR2,
+	    p_ResponseStatus OUT NUMBER
+	);
+
+	PROCEDURE API_Get_RegisterWLEOInfo
+	(
+		p_Language IN nvarchar2,
+	    p_UserID IN NUMBER,
+	    p_Register OUT NUMBER,
+	    p_Used OUT NUMBER,
+        p_Reject OUT NUMBER,
+	    p_AllRegister OUT NUMBER,
+	    p_Message OUT NVARCHAR2,
+	    p_ResponseStatus OUT NUMBER
+	);
+
+	PROCEDURE API_Get_TrainOut
+	(
+		p_Language IN nvarchar2,
+	    p_UserID IN NUMBER,
+	    p_EmployeeID IN NUMBER,
+	    p_Page IN NUMBER,
+	    p_PageSize IN NUMBER,
+	    P_CUR       OUT CURSOR_TYPE,
+	    p_Rowcount OUT NUMBER,
+	    p_Message OUT NVARCHAR2,
+	    p_ResponseStatus OUT NUMBER
+	);
+ 
+	PROCEDURE API_ApproveRegisterLeave
+							(
+								p_Language IN nvarchar2,
+							    p_UserID IN NUMBER,
+							    p_RegisterID IN NUMBER,
+							    p_Comment IN NVARCHAR2,
+							    p_Cur OUT CURSOR_TYPE,
+							    p_Message OUT NVARCHAR2,
+							    p_ResponseStatus OUT NUMBER
+							);						
+
+
+	PROCEDURE API_ApproveRegisterWLEO
+						(
+							p_Language IN nvarchar2,
+						    p_UserID IN NUMBER,
+						    p_RegisterID IN NUMBER,
+						    p_Comment IN NVARCHAR2,
+						    p_Cur OUT CURSOR_TYPE,
+						    p_Message OUT NVARCHAR2,
+						    p_ResponseStatus OUT NUMBER
+						);		
+
+	PROCEDURE API_GET_EMPLOYEE_INFO(
+		p_Language IN nvarchar2,P_EMPLOYEE_ID IN NUMBER,
+                                        P_CUR OUT CURSOR_TYPE,
+                                        P_MESSAGE OUT NVARCHAR2,
+                                        P_RESPONSESTATUS OUT NUMBER);
+
+     PROCEDURE API_GET_LIST_POSITION(
+		p_Language IN nvarchar2,
+   										P_KEYWORD IN NVARCHAR2, 
+                                        P_LANG IN NVARCHAR2, 
+                                        P_ORG_ID IN NUMBER, 
+                                        P_PAGE IN NUMBER,
+                                        P_PAGE_SIZE IN NUMBER,
+                                        P_ROWCOUNT OUT NUMBER, 
+                                        P_CUR  OUT CURSOR_TYPE, 
+                                        P_MESSAGE OUT NVARCHAR2, 
+                                        P_RESPONSESTATUS OUT NUMBER
+   									);
+
+
+   PROCEDURE API_GET_LIST_ORG(
+		p_Language IN nvarchar2,
+			P_KEYWORD IN NVARCHAR2,
+			P_ORG_ID_ROOT OUT NUMBER,
+			P_CUR OUT CURSOR_TYPE, P_MESSAGE OUT NVARCHAR2, P_RESPONSESTATUS OUT NUMBER) ;
+
+    PROCEDURE API_GET_USER_INFO(
+		p_Language IN nvarchar2,P_USER_ID IN NUMBER,
+                                            P_CUR OUT CURSOR_TYPE,
+                                            P_MESSAGE OUT NVARCHAR2,
+                                            P_RESPONSESTATUS OUT NUMBER);
+
+PROCEDURE API_SearchRegisterLeave
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_FromDate IN NVARCHAR2,
+				    p_ToDate IN NVARCHAR2,
+				    p_Status IN NVARCHAR2,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_InitCount OUT NUMBER,
+				    p_PendingCount OUT NUMBER,
+				    p_ApprovedCount OUT NUMBER,
+				    p_RejectedCount OUT NUMBER,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);   
+PROCEDURE API_SearchRegisterOT
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_FromDate IN NVARCHAR2,
+				    p_ToDate IN NVARCHAR2,
+				    p_Status IN NVARCHAR2,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_InitCount OUT NUMBER,
+				    p_PendingCount OUT NUMBER,
+				    p_ApprovedCount OUT NUMBER,
+				    p_RejectedCount OUT NUMBER,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+PROCEDURE API_SearchRegisterWLEO
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_FromDate IN NVARCHAR2,
+				    p_ToDate IN NVARCHAR2,
+				    p_Status IN NVARCHAR2,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_InitCount OUT NUMBER,
+				    p_PendingCount OUT NUMBER,
+				    p_ApprovedCount OUT NUMBER,
+				    p_RejectedCount OUT NUMBER,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				); 
+PROCEDURE API_SearchApprovedLeave
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_KeyEmployee IN NVARCHAR2,
+				    p_FromDate IN NVARCHAR2,
+				    p_ToDate IN NVARCHAR2,
+				    p_Status IN NVARCHAR2,
+	    			p_Type IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_PendingCount OUT NUMBER,
+				    p_ApprovedCount OUT NUMBER,
+				    p_RejectedCount OUT NUMBER,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);                              
+ PROCEDURE API_SearchApprovedWLEO
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_KeyEmployee IN NVARCHAR2,
+				    p_FromDate IN NVARCHAR2,
+				    p_ToDate IN NVARCHAR2,
+				    p_Status IN NVARCHAR2,
+	    			p_Type IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_PendingCount OUT NUMBER,
+				    p_ApprovedCount OUT NUMBER,
+				    p_RejectedCount OUT NUMBER,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);                                       
+
+ PROCEDURE API_SearchApprovedOT
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_KeyEmployee IN NVARCHAR2,
+				    p_FromDate IN NVARCHAR2,
+				    p_ToDate IN NVARCHAR2,
+				    p_Status IN NVARCHAR2,
+	    			p_Type IN NUMBER,
+				    p_Page IN NUMBER,
+				    p_PageSize IN NUMBER,
+				    p_Cur OUT CURSOR_TYPE,
+				    p_PendingCount OUT NUMBER,
+				    p_ApprovedCount OUT NUMBER,
+				    p_RejectedCount OUT NUMBER,
+				    p_Rowcount OUT NUMBER,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);  
+
+PROCEDURE API_GetAllowGPSLocation
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_WorkDay IN nvarchar2,
+				    p_Shift_Info OUT NVARCHAR2,
+				    p_Cur OUT CURSOR_TYPE, 
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);			 
+PROCEDURE API_TimeCheckIn
+				(
+		p_Language IN nvarchar2,
+				    p_UserID IN NUMBER,
+				    p_WorkDay nvarchar2,
+				    p_LocationCode IN nvarchar2,
+				    p_Longitude IN NVARCHAR2,
+				    p_Latitude IN NVARCHAR2,
+				    p_Message OUT NVARCHAR2,
+				    p_ResponseStatus OUT NUMBER
+				);
+			
+			
+END PKG_API_MOBILE_OM_DEV;

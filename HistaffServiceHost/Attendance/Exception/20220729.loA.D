@@ -1,0 +1,9296 @@
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:00:18 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:00:19 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:00:20 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:00:20 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:00:20 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:00:58 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:00:59 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:00 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:00 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:00 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:03 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:04 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:05 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:05 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:05 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:15 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:15 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:01:15 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:05:59 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:06:00 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:06:01 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:06:01 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:06:01 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:06:58 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:06:58 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:07:11 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:07:12 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:07:27 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:07:28 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:07:33 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:07:35 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:13:41 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:13:42 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:21 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:22 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:23 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:23 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:29 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:30 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:30 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:40 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:47 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:14:55 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:15:03 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:15:07 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:15:08 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:15:33 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:16:17 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:16:39 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:19:09 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:19:10 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:19:34 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:19:45 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:19:53 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:19:57 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:19:58 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:19:58 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:19:58 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:01 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:02 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:02 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:02 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:03 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:08 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:09 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:09 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:10 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:10 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:11 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:12 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:17 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:17 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:18 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:18 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:18 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:18 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:18 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:19 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:19 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:24 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:37 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:38 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:39 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:39 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:39 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:39 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:39 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:40 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:45 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:46 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:46 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:47 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:50 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:52 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:54 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:55 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:55 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:58 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:59 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:20:59 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:21:00 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:21:53 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:15 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:24 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:24 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:25 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:25 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:27 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:29 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:29 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:30 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:30 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:36 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:37 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:45 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:47 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:51 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:22:52 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:14 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:41 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:42 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:42 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:42 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:42 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:49 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:49 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:50 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:52 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:52 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:53 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 12:23:53 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:03:23 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:03:24 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:03:49 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:03 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:04 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:05 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:18 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:21 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:21 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:28 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:29 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:29 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:29 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:40 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:43 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:47 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:04:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:05:10 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:13:27 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:13:28 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:13:53 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:13:59 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:14:00 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:14:03 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:14:04 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:14:04 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:14:04 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:25:33 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:25:34 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:25:39 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:26:10 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:26:14 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:26:15 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:26:18 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:26:22 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:26:32 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:26:40 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:26:43 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:28:13 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:28:14 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:28:14 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:29:29 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:45:49 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:45:50 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:45:53 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:45:57 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:46:04 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:46:06 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:46:28 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:46:37 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:46:38 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:46:40 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:58:08 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:58:09 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:58:13 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:58:17 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:58:24 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:58:26 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:59:37 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:59:40 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:59:42 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 8:59:43 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:04:33 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:04:33 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:04:33 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:04:37 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:04:45 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:04:47 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:05:16 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:05:18 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:05:19 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:05:26 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:05:27 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:05:27 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:05:27 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:07:06 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:07:07 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:07:49 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:07:51 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:07:55 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:07:57 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:13:11 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:13:11 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:13:16 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:13:32 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:13:39 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:13:43 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:13:46 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:14:08 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:14:09 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:15:35 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:18:03 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:02 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:04 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:05 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:07 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:20 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:31 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:33 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:35 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:39 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:51 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:19:52 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:20:49 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:20:50 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:21:03 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:21:05 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:23:57 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:23:58 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:24:01 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:24:03 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:24:04 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:24:06 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:24:09 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:24:47 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:24:47 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:24:49 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:25:54 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:28:47 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:28:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:28:50 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:28:52 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:28:53 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:28:54 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:32:33 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:32:34 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:32:37 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:32:53 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:32:54 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:32:55 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:33:00 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:33:25 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:33:26 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:33:35 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:33:43 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:42:27 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:42:28 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:42:30 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:42:46 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:42:48 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:42:49 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:42:51 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:43:59 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:44:01 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:44:35 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:44:46 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:45:00 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:45:01 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 9:45:02 AM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:51:50 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:51:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:51:58 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:08 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:08 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:10 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:52:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:27 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:55:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:56:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:56:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:32 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:57:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:01 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:04 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:04 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:58:04 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:50 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:50 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:50 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 1:59:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:01:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:04:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:04 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:05:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:10:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:10:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:10:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:12:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:13:01 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:13:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:13:10 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:26:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:26:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:27:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:27:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:27:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:27:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:27:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:27:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:27:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:27:48 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:27:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:31:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 2:32:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:15:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:15:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:15:07 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:17:25 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:18:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:18:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:18:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:18:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:18:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:18:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:18:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:18:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:40 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:40 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:40 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:40 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:40 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:40 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:41 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:41 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:41 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:41 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:41 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:41 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:19:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:58 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:58 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:58 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:22:58 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:23:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:48 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:24:48 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:25:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:26:57 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:10 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:11 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:11 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:11 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:11 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:11 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:29:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:50 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:32:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:04 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:04 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:04 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:04 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:04 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:33:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:35:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:36:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:27 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:32 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:32 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:37:32 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:38:47 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:32 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:50 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:51 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:52 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:53 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:41:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:24 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:25 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:25 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:47:25 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:13 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:39 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:41 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:50:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:05 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:06 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:07 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:07 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:07 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:07 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:07 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:07 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:08 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:08 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:08 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:08 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:08 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:08 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:51:09 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:52:50 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:01 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:53:38 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:48 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:48 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:48 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:48 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:48 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:48 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:55:49 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:19 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:20 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:57:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:31 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:32 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 4:59:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:40 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:00:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:41 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:42 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:45 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:46 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:01:56 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:32 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:33 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:34 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:35 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:36 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:02:37 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:18 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:21 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:22 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:23 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:27 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:27 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:27 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:54 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:03:55 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:04:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:04:43 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:04:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:04:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:04:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:04:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:04:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:04:44 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:11 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:12 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:14 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:15 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:16 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:17 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:26 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:27 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:28 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:29 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:05:30 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:06:59 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:00 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:01 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:01 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:01 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:01 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:01 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:02 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+
+Function: GetPortalOtRegData
+Datetime: 07/29/2022 5:07:03 PM
+Error message: ORA-00604: error occurred at recursive SQL level 1
+ORA-01003: no statement parsed
+Stack trace:    at Framework.Data.DataAccess.QueryData.ExecuteStore[T](String sql, T& obj, Boolean isDataTable) in D:\GIT\BCG_DEV_NEW\Framework.Data\DataAccess\Query.vb:line 303
+   at AttendanceDAL.AttendanceRepository.GetPortalOtRegData(AT_OT_REGISTRATIONDTO _filter, Int32& Total, Int32 PageIndex, Int32 PageSize, String Sorts, UserLog log) in D:\GIT\BCG_DEV_NEW\AttendanceDAL\AttendanceRepository.Business.vb:line 8667
+Other Text: iTime
+

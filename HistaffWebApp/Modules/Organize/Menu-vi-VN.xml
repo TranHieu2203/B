@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+	<Group>
+		<Item Text="Dashsboard"  PostBack="False">
+			<Group>
+				<Item Value="Dashboard"  Text="Dashboard" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_OrgChartTab&amp;group=Dashboard" CheckPermission="true"/>
+			</Group>
+		</Item>
+		<Item Text="Nghiệp vụ"  PostBack="False">
+			<Group>
+				<Item Value="ctrltreelist"  Text="Cơ cấu tổ chức" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrltreelist&amp;group=Business" CheckPermission="false"/>
+				<Item Value="ctrlHU_Job" Text="Công việc" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_Job&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+				<Item Value="ctrlHU_Position" Text="Vị trí" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_Position&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+				<Item Value="ctrlHU_TransferOrg" Text="Hoạch định" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_TransferOrg&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+				<Item Value="ctrlHU_Organization" Text="Khai báo cơ cấu tổ chức" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_Organization&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+			</Group>
+		</Item>
+		<Item Text="Danh mục" PostBack="False">
+			<Group>
+				<Item Value="ctrlHU_JobBand" Text="Cấp bậc" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_JobBand&amp;group=list" CheckPermission="true" CausesValidation="False"/>
+
+				<Item Value="ctrlLocation" Text="Thông tin công ty" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlLocation&amp;group=list" CheckPermission="true"/>
+				<Item Value="ctrlOtherList" Text="Tham số hệ thống" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlOtherList&amp;group=list" CheckPermission="true" CausesValidation="False"/>
+			</Group>
+		</Item>
+		<Item Text="Báo cáo" PostBack="False">
+			<Group>
+
+				<Item Value="ctrlHU_ReportList" Text="Báo cáo biểu đồ" PostBack="True" NavigateUrl="Default.aspx?mid=Organize&amp;fid=ctrlHU_ReportList&amp;group=report" CheckPermission="true" CausesValidation="False" />
+			</Group>
+		</Item>
+	</Group>
+</Menu>

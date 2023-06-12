@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Nghiệp vụ"  PostBack="False">
+      <Group>
+	    
+        <Item  Value="ctrlRC_HRYearPlaning"  Text="Đinh biên nhân sự năm" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_HRYearPlaning&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_HRPlaningBudget"  Text="Đinh biên ngân sách" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_HRPlaningBudget&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_Request"  Text="Quản lý yêu cầu tuyển dụng" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Request&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_Program"  Text="Chương trình tuyển dụng" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Program&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_CVPool"  Text="Quản lý nguồn ứng viên" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_CVPool&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_Request_Person_TCTD"  Text="TBP gán người phụ trách cho YCTD" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Request_Person_TCTD&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_Request_Verify"  Text="Xác nhận yêu cầu tuyển dụng" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Request_Verify&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_Contract"  Text="Danh sách hợp đồng lao động" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Contract&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_User_Title_Permision"  Text="Phân quyền tài khoản theo nhóm chức danh" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_User_Title_Permision&amp;group=Business" CheckPermission="true"/>
+        <Item  Value="ctrlRC_ListOfferCandidate"  Text="Danh sách ứng viên Offer và chuyển HSNV" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_ListOfferCandidate&amp;group=Business" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+    <Item Text="Danh mục"  PostBack="False">
+      <Group>
+        <Item Value="ctrlRC_Exams" Text="Khai báo môn thi tuyển" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Exams&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlOtherList" Text="Tham số hệ thống" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlOtherList&amp;group=List" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+    <Item Text="Báo cáo" PostBack="False">
+      <Group>
+        <Item Value="ctrlRC_ReportList" Text="Danh sách báo cáo" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_ReportList&amp;group=report" CheckPermission="true"/>
+      </Group>
+    </Item>
+
+  </Group>
+</Menu>
+<!--<Item  Value="ctrlRC_Manning"  Text="Quản lý định biên" PostBack="True" NavigateUrl="Default.aspx?mid=Recruitment&amp;fid=ctrlRC_Manning&amp;group=Business" CheckPermission="true"/>-->

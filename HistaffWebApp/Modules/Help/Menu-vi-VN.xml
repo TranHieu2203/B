@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Hướng dẫn sử dụng"  PostBack="True" NavigateUrl="Default.aspx?mid=Help&amp;fid=ctrlGuide&amp;group=Guide" CheckPermission="False">
+    </Item>
+    <Item Text="License Manager" PostBack="True" NavigateUrl="#" OnClick="mnuLicenseClick()" CheckPermission="False"/>
+  </Group>
+</Menu>

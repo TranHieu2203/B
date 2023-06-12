@@ -1,0 +1,2324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{B1FF32CB-32BD-451D-8569-5C5E4C45B58B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HistaffWebApp</RootNamespace>
+    <AssemblyName>HistaffWebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HistaffWebApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HistaffWebApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.0.3.0, Culture=neutral, PublicKeyToken=12d8fa3d810c48da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LinqToExcel, Version=1.10.0.0, Culture=neutral, PublicKeyToken=9c8ea65a58f03f1f, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqToExcel_x64.1.10.0\lib\LinqToExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqToExcel_x64.1.10.0\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.6.1.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Quartz.2.6.1\lib\net40\Quartz.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Remotion, Version=1.13.52.2, Culture=neutral, PublicKeyToken=0669cf0452175907, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqToExcel_x64.1.10.0\lib\Remotion.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq, Version=1.13.52.2, Culture=neutral, PublicKeyToken=0669cf0452175907, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqToExcel_x64.1.10.0\lib\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Interfaces, Version=1.13.52.2, Culture=neutral, PublicKeyToken=0669cf0452175907, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqToExcel_x64.1.10.0\lib\Remotion.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.Design, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2019.1.115.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\AccessLimit.aspx" />
+    <Content Include="Account\ForgetPass.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Download.aspx" />
+    <Content Include="Dialog.aspx" />
+    <Content Include="EmployeeImage\08007.jpg" />
+    <Content Include="EmployeeImage\11047.png" />
+    <Content Include="EmployeeImage\NoImageUploadfile.png" />
+    <Content Include="Error.aspx" />
+    <Content Include="Export.aspx" />
+    <Content Include="GetFile.aspx" />
+    <Content Include="Languages\en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Languages\vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Attendance\Business\ctrlAtCompensationYear.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAtConcludeAnnualYear.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAT_AssignEmp_Calendar.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAT_LeavePayment.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAT_LeavePaymentNewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAT_TIMESHEET_LOCK.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAT_WageOffset.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAT_YearLeaveEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlChildren.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlChildrenNewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlConfirmDeclaresOT.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlSignWorkEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlWorkNight.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlAtReasonList.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlSetupGPS.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlSetupGPSNewEdit.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlSetupWifi.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlCopySignDefault.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlDSVM_LISTEMP.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlOffSettingTimeKeepingNewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlOffSettingTimeKeeping.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlActionLog.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAT_PROJECT_ASSIGN.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAT_PROJECT_ASSIGNNewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlDeclareEntitlementNB.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlDeclareEntitlementNBNewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlDeclareEntitlementNBNewEditMultiple.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlDeclaresOT.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlDeclaresOTNewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlDeclare_TimeRice.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlDeclare_TimeRiceNewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlNewInOut.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlSignWorkDelete.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlTimesheetSummary.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlTime_TimeSheet_CCTEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlTime_Timesheet_CTT.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlEntitlement.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlTime_Timesheet_NB.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlTime_Timesheet_ot.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlTime_TimeSheet_OtEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlTime_Timesheet_Rice.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlTime_TimeSheet_RiceEdit.ascx" />
+    <Content Include="Modules\Attendance\ctrlDashboard.ascx" />
+    <Content Include="Modules\Attendance\Dashboard\ctrlAT_DBTimeOff.ascx" />
+    <Content Include="Modules\Attendance\Dashboard\ctrlAT_DBTimeOtByOrg.ascx" />
+    <Content Include="Modules\Attendance\Dashboard\ctrlAT_DBTimeProject.ascx" />
+    <Content Include="Modules\Attendance\Dashboard\ctrlAT_DBTotalWorking.ascx" />
+    <Content Include="Modules\Attendance\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Attendance\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlRitual_Hose.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlAT_PROJECT.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlAT_PROJECT_TITLE.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlAT_PROJECT_WORK.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlListParamSystem.ascx" />
+    <Content Include="Modules\Attendance\Report\ctrlAT_ReportList.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlAtAdvanceLeaveEmp.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlAtAnnualLeaveOrg.ascx" />
+    <Content Include="Modules\Attendance\Setting\crtlATCoeffOverTime.ascx" />
+    <Content Include="Modules\Attendance\Setting\crtlATCoeffOTException.ascx" />
+    <Content Include="Modules\Attendance\Setting\crtlATTimePeriod.ascx" />
+    <Content Include="Modules\Attendance\Setting\crtlATTimeWorkStandard.ascx" />
+    <Content Include="Modules\Attendance\Setting\crtlSetUpExchange.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlAtAnnualLeaveEmp.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlAtSeniority.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlAtSetupELeave.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlAtToxicLeaveEmp.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlGetSignDefaultOrg.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlSetUpCodeAttEmp.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlATTimeManual.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlAT_PROJECT_EMP.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlGetSignDefault.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlManagementNB.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlMngIO.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlRegisterCO.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlRegisterCONewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlRegisterDSVM.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlRegisterDSVMNewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlRegisterOT.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlRegisterOTNewEdit.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlSignWork.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlSwipeDataDownload.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlTimeTimesheet_machine.ascx" />
+    <Content Include="Modules\Attendance\Business\ctrlSignWorkNewEdit.ascx" />
+    <Content Include="Modules\Attendance\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlDMCaLamViec.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlDMKieuCong.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlDMNghiChung.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlOtherListGroup.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlOtherListType.ascx" />
+    <Content Include="Modules\Attendance\List\ctrlRitual.ascx" />
+    <Content Include="Modules\Attendance\Menu-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Attendance\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Attendance\QuickLaunch-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Attendance\QuickLaunch-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Attendance\Setting\ctrlQuyDinhCa.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlQuyDinhPhatDiMuonVeSom.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlSetUpTimeEmp.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlSwipeMachine.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlSwipeMachineStatus.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlThietLapChamCongDB.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlThietLapKieuCong.ascx" />
+    <Content Include="Modules\Attendance\Setting\ctrlThietLapNNTDT.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveProcess.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveProcessNewEdit.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveSetupEmp.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveSetupExt.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveSetupOrg.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveTemplate.ascx" />
+    <Content Include="Modules\Common\ApproveProcess\ctrlApproveTemplateAddEdit.ascx" />
+    <Content Include="Modules\Common\ctrlCommon_Reject.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeeSignPopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlFindFrameProductivityPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindFrameSalaryPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindPositionPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindPositionPopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlFindTRRequestPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTRRequestPopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlFrameProductivityTree.ascx" />
+    <Content Include="Modules\Common\ctrlFrameSalaryTree.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBoxTraining.ascx" />
+    <Content Include="Modules\Common\ctrlOrganizationLoadOnDemand.ascx" />
+    <Content Include="Modules\Common\ctrlUploadWithTeamplate.ascx" />
+    <Content Include="Modules\Common\ctrlCheckData.ascx" />
+    <Content Include="Modules\Common\ctrlDashboard.ascx" />
+    <Content Include="Modules\Common\ctrlDynamicControl.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindMEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindMEmployeePopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlFindOrgPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopupDialog.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Common\ctrlOrganization.ascx" />
+    <Content Include="Modules\Common\ctrlPROCESS.ascx" />
+    <Content Include="Modules\Common\ctrlREPORT.ascx" />
+    <Content Include="Modules\Common\ctrlRESULT.ascx" />
+    <Content Include="Modules\Common\ctrlSessionWarning.ascx" />
+    <Content Include="Modules\Common\ctrlUpload.ascx" />
+    <Content Include="Modules\Common\ctrlViewMap.ascx" />
+    <Content Include="Modules\Common\Define\ctrlProGramParameters.ascx" />
+    <Content Include="Modules\Common\Define\ctrlPrograms.ascx" />
+    <Content Include="Modules\Common\Define\ctrlValueSet.ascx" />
+    <Content Include="Modules\Common\Define\ctrlValueSetI.ascx" />
+    <Content Include="Modules\Common\Define\ctrlValueSetT.ascx" />
+    <Content Include="Modules\Common\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Common\List\ctrlOtherListGroup.ascx" />
+    <Content Include="Modules\Common\List\ctrlOtherListType.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlManageCache.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_System_Maintain.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlTimeWorkStandardCopy.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunctionExceptionAddEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunctionException.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserException.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlConfirmCodeAccuracy.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupN.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupUserN.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlRegisterUser.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlControlsManage.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlControlsNewEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupOrganization.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListFunction.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlMailTemplate.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlProGramParameters.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_Configuration.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_LdapConfiguration.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_Mail.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSE_MailConfiguration.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUser.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunction.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunctionAddEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserFunctionExceptionEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserOrganization.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlUserReport.ascx" />
+    <Content Include="Modules\Competency\Business\ctrlHU_EmployeeCriteriaRecord.ascx" />
+    <Content Include="Modules\Competency\ctrlDashboard.ascx" />
+    <Content Include="Modules\Competency\Dashboard\ctrlCO_Dashboard.ascx" />
+    <Content Include="Modules\Competency\Dashboard\ctrlCO_DBTop5Comp.ascx" />
+    <Content Include="Modules\Competency\Dashboard\ctrlCO_DBTop5CompAvg.ascx" />
+    <Content Include="Modules\Competency\Menu-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Competency\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Competency\QuickLaunch-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Competency\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Competency\Report\ctrlHU_Competency_RadarGapsBetweenPos.ascx" />
+    <Content Include="Modules\Competency\Report\ctrlHU_Competency_RadarReport.ascx" />
+    <Content Include="Modules\Competency\Report\ctrlHU_Competency_RadarReportGaps.ascx" />
+    <Content Include="Modules\Competency\Setting\ctrlHU_CompetencyCourse.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsArisingLeaveSheet.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsManagerChangeNewEdit.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsManagerChange.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsArising.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsArisingManual.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsArisingManualMng.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsHealthExt.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsHealthImport.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsInformations.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsInformationsMng.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsManagerHeathIns.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsManagerHeathInsNewEdit.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsMaternityDetail.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsMaternityMng.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsModifyInfor.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsRegimes.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsRegimesMng.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsTotalSalary.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsWorkingBefore.ascx" />
+    <Content Include="Modules\Insurance\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlInsTypechange.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlInsList.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlInsListOrgInsurance.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlInsListContract.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlInsListContractNewEdit.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_Job.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_Position.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_PositionNewEdit.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_Title_tbl.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_Title_bld.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_Chucvu.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHu_Contract_Procedure.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHu_Org_Brand.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_ChartEmployee.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_TransferOrgPopup.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlORG_HRYearPlaning.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlORG_HRPlaningBudget.ascx" />
+    <Content Include="Modules\Organize\Business\ctrltreelist.ascx" />
+    <Content Include="Modules\Organize\Dashboard\ctrlHU_JobPosition.ascx" />
+    <Content Include="Modules\Organize\Dashboard\ctrlHU_OrgChart.ascx" />
+    <Content Include="Modules\Organize\Dashboard\ctrlHU_OrgChartTab.ascx" />
+    <Content Include="Modules\Organize\List\ctrlHU_JobBand.ascx" />
+    <Content Include="Modules\Organize\List\ctrlLocation.ascx" />
+    <Content Include="Modules\Organize\List\ctrlLocationNewEdit.ascx" />
+    <Content Include="Modules\Organize\Report\ctrlHU_ReportList.ascx" />
+    <Content Include="Modules\Organize\Setting\ctrlHU_OrgTitleNewEdit.ascx" />
+    <Content Include="Modules\Organize\ctrlDashboard.ascx" />
+    <Content Include="Modules\Organize\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Organize\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Organize\Menu-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Organize\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Organize\QuickLaunch-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Organize\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Dashboard\Dashboard\ctrlDBEmployeeChange.ascx" />
+    <Content Include="Modules\Dashboard\Dashboard\ctrlDBEmployeeStatistic.ascx" />
+    <Content Include="Modules\Dashboard\Dashboard\ctrlDBInfo.ascx" />
+    <Content Include="Modules\Dashboard\Menu-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Dashboard\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Dashboard\QuickLaunch-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Dashboard\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Help\ctrlLicense.ascx" />
+    <Content Include="Modules\Help\Guide\ctrlGuide.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlCheckActionChange.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupCopy.ascx" />
+    <Content Include="Modules\Help\Menu-en-US.xml" />
+    <Content Include="Modules\Help\Menu-vi-VN.xml" />
+    <Content Include="Modules\Help\QuickLaunch-en-US.xml" />
+    <Content Include="Modules\Help\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Home\ctrlInformation.ascx" />
+    <Content Include="Modules\Home\Menu-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Home\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Home\QuickLaunch-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Home\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Insurance\Business\ctrlImport_ManagerInfo.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsChange.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsChangeNewEdit.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsClosedNew.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsInfoOld.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsInfoOldNewEdit.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsManagerSunCare.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsManagerSunCareNewEdit.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsRemigeManager.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlInsRemigeManagerNewEdit.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlManGroupSunCare.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlManGroupSunCareNewEdit.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlManInfoIns.ascx" />
+    <Content Include="Modules\Insurance\Business\ctrlManInfoInsNewEdit.ascx" />
+    <Content Include="Modules\Insurance\Common\ctrlFindEmployeePopup.ascx" />
+    <Content Include="Modules\Insurance\Common\ctrlFindOrgPopup.ascx" />
+    <Content Include="Modules\Insurance\Common\ctrlFindTitlePopup.ascx" />
+    <Content Include="Modules\Insurance\Common\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Insurance\Common\ctrlOrganization.ascx" />
+    <Content Include="Modules\Insurance\Common\ctrlUpload.ascx" />
+    <Content Include="Modules\Insurance\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Insurance\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Insurance\Dashboard\ctrlIns_DBInsCeiling.ascx" />
+    <Content Include="Modules\Insurance\Dashboard\ctrlIns_DBInsPayFund.ascx" />
+    <Content Include="Modules\Insurance\Dashboard\ctrlIns_DBInsPayFundDetail.ascx" />
+    <Content Include="Modules\Insurance\Dashboard\ctrlIns_DBInsRate.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlDMCostLever.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlDMGroupRegimes.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlDMNoiKhamChuaBenh.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlDMRegion.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlInsListArisingType.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlInsListParamInsurance.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlInsListRegimes.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlInsObjectPayInsurrance.ascx" />
+    <Content Include="Modules\Insurance\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Insurance\Menu-en-US.xml" />
+    <Content Include="Modules\Insurance\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Insurance\QuickLaunch-en-US.xml" />
+    <Content Include="Modules\Insurance\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Insurance\Report\ctrlINS_ReportList.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlImportSalary.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Award13Month.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DocumentPIT.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DocumentPITDetail.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DocumentPITNewEdit.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_ManageDTTDDaily.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_PayrollAdvance.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_PayrollSheetLock.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_SalaryPITCode.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_SumCHTom.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlActionLogPA.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlAllowance.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlImportLuong.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlImportQuyThuongHQCV.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlImportThueTNCN.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlImportThuongHQCV.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_AccountingAdjust.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_AccountingOvertime.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_AccountingSubsidize.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_AccountingTime.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_BrandRate.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DTTD_DTPB.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DTTD_ECD.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_MA_SCP_QLCH.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_LDT_VP.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Salary_Detention.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Salary_DetentionNewEdit.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_StoreDTTD.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_TARGET_DTTD_LABEL.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_ADDTAX.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_ADDTAXNewEdit.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_BenefitSeniority.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_DelegacyTax.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_STORE_SUBSIDIZE.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Target_Store.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_TaxIncomeYear.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_Vehicle_Norm.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPA_ViewEmpSalary.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlPROCESS.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlSendMailLuong.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlSendMailThuongHQCV.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlSeniorityMonthly.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlSeniorityProcess.ascx" />
+    <Content Include="Modules\Payroll\Business\ctrlTinhLuong.ascx" />
+    <Content Include="Modules\Payroll\ctrlDashboard.ascx" />
+    <Content Include="Modules\Payroll\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlPA_DBSalary.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryAverage.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryIncome.ascx" />
+    <Content Include="Modules\Payroll\Dashboard\ctrlPA_DBSalaryRange.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_DonVi_QuyLuong.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlHU_AllowanceList.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPAFRAME_PRODUCTIVITY.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_Employee_QuyLuong.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_FRAME_SALARY.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlOtherListGroup.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlOtherListType.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_CostCenter.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_ListSal.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_ListSalaries.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_ObjectSalary.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_OrgBonus.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_PaymentsList.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_PaymentSources.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryGroup.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryLevel.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryLevel_Unilever.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryRank.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SalaryType.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_Salary_QuyLuong.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_SaleCommision.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_WorkFactor.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_AOMs_TOMByManage.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Classification.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_EmpFormuler.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SetupNKL.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SETUP_BONUS_KPI_PRODUCT_TYPE.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SETUP_FRAMEWORK_KPI.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_IncentiveRank.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Norm.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_HeSoMR_NV_QLCH.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_HSTDT.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_Index.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_LDTTT_NV_QLCH.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_MR_BQN.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SETUP_RATE.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Setup_Rate_DTTT.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SETUP_SHOP_GRADE.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_System_Criteria.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_PaymentsList.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SETUP_FRAMEWORK_OFFICE.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SETUP_FRAMEWORK_ECD.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SETUP_COMPLETION_KPI_SHOPMANAGER.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlKpiAssessmentResult.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlMngInfoEvalTarget.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlMngInfoEvalTargetDetail.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlMngInfoEvalTargetNewEdit.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_EmployeePeriod.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_EmployeesRecommend.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_Org_Mr_Rr.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlResultRecord.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlResultRecordHistory.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlListClassifi.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlPE_ViewRating.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlPE_ViewRatingOrg.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlPE_ViewRatingSeniority.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Classification_HTCH.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Criteria_HTCH.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Period_HTCH.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_CriteriaTitlegroupRankNewEdit.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_CriteriaTitlegroupRank.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlCriteriaTitlegroup.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlCriteriaTitlegroupNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlComitee.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlWorkKPIsPerformance.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Health_Exam.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Job.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_JobNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_JobPosition.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_PensionBenefits.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpBank.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_BHLD.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_AccidentNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Accident.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Abroad.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_Assessment.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_AssessmentNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_Planning.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_PlanningDetail.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_PlanningNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Commitee.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommiteeDetail.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommiteeNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpCuriculumVitae.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmployeeNPT.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpMailPopup.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_InfoConfirm.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_SeveranceSettlement.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_SeveranceSettlementNewEdit.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_TransferOrg.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Stocks.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_StocksTransaction.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_StocksTransactionNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Travel.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Salary.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_SalaryNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrltreelist.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlTreeListEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlTreelistEmp.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlViewImage.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_BHLDItem.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Discipline_List.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Reminder.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_SalItemsPercent.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlUpdateManager.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlUpdateManagerDialog.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_Class_Result.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_Classification.ascx" />
+    <Content Include="Modules\Training\Setting\ctrlPE_SettingCriteriaCourse.ascx" />
+    <Content Include="Modules\Planning\Business\ctrlPA_SalaryPlan.ascx" />
+    <Content Include="Modules\Planning\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Planning\Dashboard\ctrlDashboardPlanning.ascx" />
+    <Content Include="Modules\Planning\Dashboard\ctrlDashboardPLSixCell.ascx" />
+    <Content Include="Modules\Planning\Dashboard\ctrlPL_DBEmployee.ascx" />
+    <Content Include="Modules\Planning\Dashboard\ctrlPL_DBSalary.ascx" />
+    <Content Include="Modules\Planning\Menu-en-US.xml" />
+    <Content Include="Modules\Planning\Menu-vi-VN.xml" />
+    <Content Include="Modules\Planning\QuickLaunch-en-US.xml" />
+    <Content Include="Modules\Planning\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Planning\Report\ctrlPA_SalaryEmpTracker.ascx" />
+    <Content Include="Modules\Planning\Setting\ctrlPA_SalaryFund.ascx" />
+    <Content Include="Modules\Planning\Report\ctrlPA_SalaryTracker.ascx" />
+    <Content Include="Modules\Planning\Setting\ctrlPA_TitleCost.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlContract_Liquidate.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Allowance.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ALP.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ALPNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveCertificateEmployee.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveEmployee_Edit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveFamily_Edit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_MutilChangeInfoNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveMutilChangeInfo_New.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveTrainingOutCompany_Edit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveWorkingBefore_Edit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_AssetMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_AssetMngNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_BlackList.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CertificateNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Certificates.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ChangeInfoMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ChangeInfoNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Commend.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommendCollect.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommendCollectDetail.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommendNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Concurrently.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ConcurrentlyNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Contract.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ContractAppendix.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ContractNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ContractTemplete.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DebtMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DebtMngNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Discipline.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DisciplineNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DisciplineSalary.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DisciplineSalaryNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtl.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlAppendix.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlCommend.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlCompetency.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlConcurrently.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtl_HU_Allowance.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlContract.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlDiscipline.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlFamily.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlFile.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlHistory.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlInsurance.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlProfile.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlSalary.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlTraining.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlTrainingOutCompany.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlViewKPI.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlWorking.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlWorkingBefore.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpError.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpInfomations.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmployeeFile.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmployeeMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Family.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_FamilytNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ImportCommend.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_LabourProtectionMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_LabourProtectionMngNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_MngProfileSaved.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_MngProfileSavedNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_OccupationalSafety.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_OccupationalSafetyNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Template.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Terminate.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Terminate3B.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Terminate3BNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TerminateCopy.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TerminateNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TrainingEvaluateNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TrainingForeignNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TrainingManageNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TraniningManagement.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TranningEvaluate.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TranningForeign.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TransferTripartiteMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TransferTripartiteNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WageMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WageNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WelfareMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WelfareMngAuto.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WelfareMngNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WorkInfo.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WorkInfoNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WorkingAllowance.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlImageUpload.ascx" />
+    <Content Include="Modules\Profile\ctrlInformation.ascx" />
+    <Content Include="Modules\Profile\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDashboardProfile.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBEmployeeChange.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBEmployeeStatistic.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBInfo.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBInfoProfile.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBReminder.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBSeniority.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_AllowanceList.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Asset.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Bank.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_BankBranch.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_CommendFormula.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_CommendLevel.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Commend_List.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_ContractType.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_District.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Document.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_LabourProtection.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Nation.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Place.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Province.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_RelationshipList.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Signer.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_SignerSetup.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_StaffRank.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_TitleConcurrent.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Ward.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_WelfareList.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_WorkPlace.ascx" />
+    <Content Include="Modules\Profile\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Profile\List\ctrlOtherListGroup.ascx" />
+    <Content Include="Modules\Profile\List\ctrlOtherListType.ascx" />
+    <Content Include="Modules\Profile\Menu-en-US.xml" />
+    <Content Include="Modules\Profile\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Profile\QuickLaunch-en-US.xml" />
+    <Content Include="Modules\Profile\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Profile\Report\ctrlHU_ChartEmployee.ascx" />
+    <Content Include="Modules\Profile\Report\ctrlHU_Competency_RadarGapsBetweenPos.ascx" />
+    <Content Include="Modules\Profile\Report\ctrlHU_Competency_RadarReport.ascx" />
+    <Content Include="Modules\Profile\Report\ctrlHU_Competency_RadarReportGaps.ascx" />
+    <Content Include="Modules\Profile\Report\ctrlHU_DynamicReport.ascx" />
+    <Content Include="Modules\Profile\Report\ctrlHU_ReportList.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlGeneralSetting.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHRGeneralSetting.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_OrganizationHR.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHu_Org_Pause.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_WelfareList.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlLineManager.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlOrgChartHR.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlPA_SalaryGroup.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlPA_SalaryLevel.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlPA_SalaryRank.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlRemindConfig.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlWelfare.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlDashboardHome.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlEmpBasicInfo.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindAssetPopup.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindEmployeeImportPopup.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindEmployeeImportPopupDialog.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindOrgImportPopup.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindOrgImportPopupDialog.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindSalaryPopup.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlHomeDashboard.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CandidateNegotiate.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Candidate_CVPool.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Contract.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRBudgetDetail.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRPlaningBudget.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRPlaningDetail.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRPlaningDetailNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRYearPlaning.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HRYearPlaningNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ListOfferCandidate.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_User_Title_Permision.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramInterviewResult_Dialog.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_HU.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgrammNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Manning.ascx" />
+    <Content Include="Modules\Payroll\List\ctrlPA_TaxationList.ascx" />
+    <Content Include="Modules\Payroll\Report\ctrlPA_ReportList.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Formula.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_FormulaDetail.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_HoldSalaryList.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_Period.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_PriceLunch.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SalaryPlanNewEdit.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_SalaryType_Group.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlPA_WorkStandard.ascx" />
+    <Content Include="Modules\Payroll\Setting\ctrlSalaryFuncMapping.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_CBNSViewRating.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_DirectViewKPIEmp.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_EmployeeAssessmentDTL.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_Organization.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_OrganizationNewEdit.ascx" />
+    <Content Include="Modules\Performance\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Performance\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Classification.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Criteria.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_ObjectGroup.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Period.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_CriteriaObjectGroup.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_EmployeeAssessment.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_ObjectGroupPeriod.ascx" />
+    <Content Include="Modules\Competency\Business\ctrlHU_CompetencyAss.ascx" />
+    <Content Include="Modules\Competency\Business\ctrlHU_CompetencyAssNewEdit.ascx" />
+    <Content Include="Modules\Competency\List\ctrlHU_CompetencyPeriod.ascx" />
+    <Content Include="Modules\Competency\List\ctrlHU_CompetencyRadarEmp.ascx" />
+    <Content Include="Modules\Competency\List\ctrlHU_Competency.ascx" />
+    <Content Include="Modules\Competency\Setting\ctrlHU_CompetencyAppendix.ascx" />
+    <Content Include="Modules\Competency\List\ctrlHU_CompetencyBuild.ascx" />
+    <Content Include="Modules\Competency\List\ctrlHU_CompetencyGroup.ascx" />
+    <Content Include="Modules\Competency\Setting\ctrlHU_CompetencyEmp.ascx" />
+    <Content Include="Modules\Competency\Setting\ctrlHU_CompetencyStandard.ascx" />
+    <Content Include="Modules\Performance\QuickLaunch-en-US.xml" />
+    <Content Include="Modules\Performance\Menu-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Performance\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Performance\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Common\Menu-en-US.xml" />
+    <Content Include="Modules\Common\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Common\QuickLaunch-en-US.xml" />
+    <Content Include="Modules\Common\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Common\Secure\ctrlAccessLog.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlActionLog.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroup.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupFunction.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupFunctionAddEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupReport.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupUser.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlGroupUserNewEdit.ascx" />
+    <Content Include="Modules\Common\ctrlLanguageManagement.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListGroup.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListGroupNewEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListUser.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlListUserNewEdit.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlOnlineUser.ascx" />
+    <Content Include="Modules\Menu-en-US.xml" />
+    <Content Include="Modules\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Organize\Business\ctrlHU_Title.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlHU_Organization.ascx" />
+    <Content Include="Modules\Organize\Setting\ctrlHU_OrgTitle.ascx" />
+    <Content Include="Modules\Organize\Business\ctrlOrgChart.ascx" />
+    <Content Include="Modules\Common\Secure\ctrlSkinAppConfig.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCandidateList.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCandidateReceive.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCandidateReceiveNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCandidateResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCandidateResultNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCanDtl.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCanDtlFamily.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCanDtlProfile.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCanDtlTraining.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlCanDtlWorkingBefore.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlHrPlanning.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlImageUpload.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlPlanning.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlPlanningNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CadidateReference.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CandidateList.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CandidateTransferList.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtl.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtlBeforeWT.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtlFamily.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtlProfile.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CanDtlTraining.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Cost.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Costallocate.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPool.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtl.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlBeforeWT.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlFamily.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlProfile.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolDtlTraining.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_CVPoolReference.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_FindCandidate.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_FindProgram.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ImageUpload.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_PlanReg.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_PlanRegNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_PlanRegReject.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_PlanSummary.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Program.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramExams.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramExamsResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramInterviewResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramSchedule.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramScheduleNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramExamsResult_Dialog.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramUpdateResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_ProgramUResult.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_RequestNewEdit_TBP.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Request_Person_TCTD.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Request.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_RequestNewEdit.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_RequestReject.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Request_Verify.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_Stage.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_StageCost.ascx" />
+    <Content Include="Modules\Recruitment\Business\ctrlRC_StageCost_CostAllocate.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ConfirmCertificate.ascx" />
+    <Content Include="Modules\Recruitment\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlChartDegree.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlChartWageByMonth.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlDashboardPlanning.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_Dashboard.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_DBCanToEmp.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_DBEstimateReality.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_DBStatisticEducation.ascx" />
+    <Content Include="Modules\Recruitment\Dashboard\ctrlRC_DBStatisticGender.ascx" />
+    <Content Include="Modules\Recruitment\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Recruitment\List\ctrlOtherListGroup.ascx" />
+    <Content Include="Modules\Recruitment\List\ctrlOtherListType.ascx" />
+    <Content Include="Modules\Recruitment\List\ctrlRC_Exams.ascx" />
+    <Content Include="Modules\Recruitment\Menu-en-US.xml" />
+    <Content Include="Modules\Recruitment\Menu-vi-VN.xml" />
+    <Content Include="Modules\Recruitment\QuickLaunch-en-US.xml" />
+    <Content Include="Modules\Recruitment\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Recruitment\Report\ctrlRC_ReportList.ascx" />
+    <Content Include="Modules\Recruitment\Shared\ctrlCanBasicInfo.ascx" />
+    <Content Include="Modules\Recruitment\Shared\ctrlFindProgramPopupDialog.ascx" />
+    <Content Include="Modules\Recruitment\Shared\ctrlFindProgramPopupView.ascx" />
+    <Content Include="Modules\Recruitment\Shared\ctrlRC_CanBasicInfo.ascx" />
+    <Content Include="Modules\Recruitment\Templates\ThuCamOn.htm" />
+    <Content Include="Modules\Recruitment\Templates\TiepNhanThuViec.htm" />
+    <Content Include="Modules\Payroll\Menu-en-US.xml" />
+    <Content Include="Modules\Payroll\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Payroll\QuickLaunch-en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Payroll\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Training\Business\ctrlTR_AssessmentResult.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ChooseForm.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ManaTitleCourse.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_Plan.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_PlanNewEdit.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_Program.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramClass.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramClassRollcard.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramClassSchedule.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramClassStudent.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramCommit.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramCost.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramEnrollRecord.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramNewEdit.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramNotify.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramPrepare.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ProgramResult.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_ReimbursementNew.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_Reimbursement.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_Request.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_RequestNewEdit.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_RequestReject.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_SearchTranningRecord.ascx" />
+    <Content Include="Modules\Training\Business\ctrlTR_TranningRecord.ascx" />
+    <Content Include="Modules\Training\ctrlDashboard.ascx" />
+    <Content Include="Modules\Training\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Training\Dashboard\ctrlTR_DBCourse.ascx" />
+    <Content Include="Modules\Training\Dashboard\ctrlTR_DBDiligence.ascx" />
+    <Content Include="Modules\Training\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Training\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Training\Dashboard\ctrlTR_DBFormCost.ascx" />
+    <Content Include="Modules\Training\Dashboard\ctrlTR_DBFormRank.ascx" />
+    <Content Include="Modules\Training\List\ctrlOtherList.ascx" />
+    <Content Include="Modules\Training\List\ctrlOtherListGroup.ascx" />
+    <Content Include="Modules\Training\List\ctrlOtherListType.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_AssessmentForm.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_AssessmentRate.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_Center.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_Certificate.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_CommitAfterTrain.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_Course.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_Criteria.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_CriteriaGroup.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_Lecture.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_ProgramGroup.ascx" />
+    <Content Include="Modules\Training\List\ctrlTR_Unit.ascx" />
+    <Content Include="Modules\Training\Menu-en-US.xml" />
+    <Content Include="Modules\Training\Menu-vi-VN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Training\QuickLaunch-en-US.xml" />
+    <Content Include="Modules\Training\QuickLaunch-vi-VN.xml" />
+    <Content Include="Modules\Training\Report\ctrlTR_ReportList.ascx" />
+    <Content Include="Modules\Training\Setting\ctrlTR_SettingAssessmentForm.ascx" />
+    <Content Include="Modules\Training\Setting\ctrlTR_SettingCriteriaGroup.ascx" />
+    <Content Include="Modules\Training\Setting\ctrlTR_TitleCourse.ascx" />
+    <Content Include="Modules\Training\Shared\ctrlFindPlanPopup.ascx" />
+    <Content Include="ReportTemplates\Attendance\Import\Import_DeclareTimeRice.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Import_DeclareTimeRice_Error.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Import_SingDefault.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Import_SingDefault_Error.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Import_SwipeData.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Import_SwipeData_Error.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Import_TimeSheetRice.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Import_TimeSheetRice_Error.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_DeclareEntitlement.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_DeclareEntitlement_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_DeclareOT.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_DeclareOT_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportDMVS.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportDMVS_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_importIO.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_importIO_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportOT.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportOT_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportShift_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_importTimesheet_CTT.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_importTimesheet_CTT_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_importTimesheet_OT.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\Template_importTimesheet_Rice.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Report\AT_001.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Report\AT_003.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Report\AT_004.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Report\AT_006.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_BangChamCongBoiDuongLamDemThang.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_BangChamCongNgoaiGio.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_BangChamCongThang.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_BangCongTongHop.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_BangPhanCongCa.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_BangPhanCongLaoDong.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_BangPhanCongThang.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_BangTheoDoiGioCong.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_InvalidTimesheet.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_IOTEMPLATE.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\RPT_UnknowTimesheet.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Common\Common.xls" />
+    <Content Include="ReportTemplates\Insurance\Import\Template_DMNoiKhamChuaBenh.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Import\Template_DMNoiKhamChuaBenh_ERROR.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Import\Template_ImportInfoIns.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Import\Template_ImportInfoIns_Error.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Report\INS_001.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Report\INS_002.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Report\INS_003.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Report\INS_004.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Report\INS_005.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Report\INS_006.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Business\TEMP_IMPORT_BONNUS.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Business\TEMP_IMPORT_SALARY.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Business\TEMP_IMPORT_SALARY_FUND_MAPPING.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Business\TEMP_IMPORT_SENIORITY.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Business\TEMP_IMPORT_SENIORITY_error.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Import\Template_SALARY_PLANNING.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Import\Template_SALARY_PLANNING_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA005.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA006.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA008.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA010.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA012.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA013.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PhieuLuong.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\RPT_PA_ADVANCE.xls" />
+    <Content Include="ReportTemplates\Payroll\RPT_PA_ANNUAL.xls" />
+    <Content Include="ReportTemplates\Payroll\RPT_PA_BANK.xls" />
+    <Content Include="ReportTemplates\Payroll\RPT_PA_PayrollSheet.xls" />
+    <Content Include="ReportTemplates\Profile\ctrlDBInfo.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\Import\ChangeInfo.xls" />
+    <Content Include="ReportTemplates\Profile\Import\ChangeInfo_Error.xls" />
+    <Content Include="ReportTemplates\Profile\Report\Dynamic.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0101.xlsx" />
+    <Content Include="ReportTemplates\Profile\Report\HU0102.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0103.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0104.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0105.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0106.xlsx" />
+    <Content Include="ReportTemplates\Profile\Report\HU0107.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0108.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0109.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0110.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0111.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0112.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0113.xls" />
+    <Content Include="ReportTemplates\Profile\Report\HU0114.xlsx" />
+    <Content Include="ReportTemplates\Profile\Report\InCV.xls" />
+    <Content Include="ReportTemplates\Profile\RPT_HU_CHANGE_EMP.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\RPT_HU_CHANGE_EMP_BY_TITLE.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\RPT_HU_CHANGE_EMP_BY_UNIT.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\RPT_HU_CHANGE_SALARY.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\RPT_HU_EMP_QUALITY.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\RPT_HU_TER_EMP.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\Terminate\Print\NV009_BBBG.xlsx" />
+    <Content Include="ReportTemplates\Recruitment\ctrlRC_CanDtlFamily.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Import\Candidate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Import\Candidate_Error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Import\Template_PLAN_RES.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Import\Template_PLAN_RES_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Report\Bao cao tinh hinh tuyen dung.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Report\Bao cao tuyen dung.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Report\BM 01 Ke hoach tuyen dung nam.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Report\BM01_TT_Nhu_cau_TD.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Report\BM04_TT_Ke_hoach_TD.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Report\Danh sach de nghi ky HĐLĐ thu viec.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Report\Danh sach phong van.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\RPT_ADJTEMPLATE.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\RPT_QUESTION.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Training\Import\AssessmentResult.xls" />
+    <Content Include="ReportTemplates\Training\Import\AssessmentResult_Error.xls" />
+    <Content Include="ReportTemplates\Training\Import\RequestEmployee.xls" />
+    <Content Include="ReportTemplates\Training\Import\RequestEmployee_Error.xls" />
+    <Content Include="ReportTemplates\Training\Report\Bao cao dao tao.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Training\Report\Bao cao thong ke chi phi.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Training\Report\Ke hoach dao tao.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\AttendanceScript.js" />
+    <Content Include="Scripts\chosen-jquery.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\DateTimeFormat.js" />
+    <Content Include="Scripts\highcharts\export-data.js" />
+    <Content Include="Scripts\highcharts\exporting.js" />
+    <Content Include="Scripts\highcharts\highcharts-3d.js" />
+    <Content Include="Scripts\highcharts\highcharts-more.js" />
+    <Content Include="Scripts\highcharts\highcharts.js" />
+    <Content Include="Scripts\highcharts\highcharts2.js" />
+    <Content Include="Scripts\highcharts\jspdf.debug.js" />
+    <Content Include="Scripts\highcharts\jspdf.js" />
+    <Content Include="Scripts\highcharts\jspdf.min.js" />
+    <Content Include="Scripts\highcharts\modules\exporting.js" />
+    <Content Include="Scripts\highcharts\modules\exporting.src.js" />
+    <Content Include="Scripts\highcharts\modules\highcharts.js" />
+    <Content Include="Scripts\highcharts\modules\jspdf.js" />
+    <Content Include="Scripts\highcharts\modules\offline-exporting.js" />
+    <Content Include="Scripts\highcharts\offline-exporting.js" />
+    <Content Include="Scripts\highcharts\svg2pdf.js" />
+    <Content Include="Scripts\highlight\highlight.pack.js" />
+    <Content Include="Scripts\highlight\styles\agate.css" />
+    <Content Include="Scripts\highlight\styles\androidstudio.css" />
+    <Content Include="Scripts\highlight\styles\arduino-light.css" />
+    <Content Include="Scripts\highlight\styles\arta.css" />
+    <Content Include="Scripts\highlight\styles\ascetic.css" />
+    <Content Include="Scripts\highlight\styles\atelier-cave-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-cave-light.css" />
+    <Content Include="Scripts\highlight\styles\atelier-dune-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-dune-light.css" />
+    <Content Include="Scripts\highlight\styles\atelier-estuary-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-estuary-light.css" />
+    <Content Include="Scripts\highlight\styles\atelier-forest-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-forest-light.css" />
+    <Content Include="Scripts\highlight\styles\atelier-heath-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-heath-light.css" />
+    <Content Include="Scripts\highlight\styles\atelier-lakeside-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-lakeside-light.css" />
+    <Content Include="Scripts\highlight\styles\atelier-plateau-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-plateau-light.css" />
+    <Content Include="Scripts\highlight\styles\atelier-savanna-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-savanna-light.css" />
+    <Content Include="Scripts\highlight\styles\atelier-seaside-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-seaside-light.css" />
+    <Content Include="Scripts\highlight\styles\atelier-sulphurpool-dark.css" />
+    <Content Include="Scripts\highlight\styles\atelier-sulphurpool-light.css" />
+    <Content Include="Scripts\highlight\styles\brown-paper.css" />
+    <Content Include="Scripts\highlight\styles\brown-papersq.png" />
+    <Content Include="Scripts\highlight\styles\codepen-embed.css" />
+    <Content Include="Scripts\highlight\styles\color-brewer.css" />
+    <Content Include="Scripts\highlight\styles\dark.css" />
+    <Content Include="Scripts\highlight\styles\darkula.css" />
+    <Content Include="Scripts\highlight\styles\default.css" />
+    <Content Include="Scripts\highlight\styles\docco.css" />
+    <Content Include="Scripts\highlight\styles\dracula.css" />
+    <Content Include="Scripts\highlight\styles\far.css" />
+    <Content Include="Scripts\highlight\styles\foundation.css" />
+    <Content Include="Scripts\highlight\styles\github-gist.css" />
+    <Content Include="Scripts\highlight\styles\github.css" />
+    <Content Include="Scripts\highlight\styles\googlecode.css" />
+    <Content Include="Scripts\highlight\styles\grayscale.css" />
+    <Content Include="Scripts\highlight\styles\gruvbox-dark.css" />
+    <Content Include="Scripts\highlight\styles\gruvbox-light.css" />
+    <Content Include="Scripts\highlight\styles\hopscotch.css" />
+    <Content Include="Scripts\highlight\styles\hybrid.css" />
+    <Content Include="Scripts\highlight\styles\idea.css" />
+    <Content Include="Scripts\highlight\styles\ir-black.css" />
+    <Content Include="Scripts\highlight\styles\kimbie.dark.css" />
+    <Content Include="Scripts\highlight\styles\kimbie.light.css" />
+    <Content Include="Scripts\highlight\styles\magula.css" />
+    <Content Include="Scripts\highlight\styles\mono-blue.css" />
+    <Content Include="Scripts\highlight\styles\monokai-sublime.css" />
+    <Content Include="Scripts\highlight\styles\monokai.css" />
+    <Content Include="Scripts\highlight\styles\obsidian.css" />
+    <Content Include="Scripts\highlight\styles\paraiso-dark.css" />
+    <Content Include="Scripts\highlight\styles\paraiso-light.css" />
+    <Content Include="Scripts\highlight\styles\pojoaque.css" />
+    <Content Include="Scripts\highlight\styles\pojoaque.jpg" />
+    <Content Include="Scripts\highlight\styles\purebasic.css" />
+    <Content Include="Scripts\highlight\styles\qtcreator_dark.css" />
+    <Content Include="Scripts\highlight\styles\qtcreator_light.css" />
+    <Content Include="Scripts\highlight\styles\railscasts.css" />
+    <Content Include="Scripts\highlight\styles\rainbow.css" />
+    <Content Include="Scripts\highlight\styles\school-book.css" />
+    <Content Include="Scripts\highlight\styles\school-book.png" />
+    <Content Include="Scripts\highlight\styles\solarized-dark.css" />
+    <Content Include="Scripts\highlight\styles\solarized-light.css" />
+    <Content Include="Scripts\highlight\styles\sunburst.css" />
+    <Content Include="Scripts\highlight\styles\tomorrow-night-blue.css" />
+    <Content Include="Scripts\highlight\styles\tomorrow-night-bright.css" />
+    <Content Include="Scripts\highlight\styles\tomorrow-night-eighties.css" />
+    <Content Include="Scripts\highlight\styles\tomorrow-night.css" />
+    <Content Include="Scripts\highlight\styles\tomorrow.css" />
+    <Content Include="Scripts\highlight\styles\vs.css" />
+    <Content Include="Scripts\highlight\styles\xcode.css" />
+    <Content Include="Scripts\highlight\styles\xt256.css" />
+    <Content Include="Scripts\highlight\styles\zenburn.css" />
+    <Content Include="Scripts\html2canvas.min.js" />
+    <Content Include="Scripts\jMenu.jquery.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery.accessibleList.js" />
+    <Content Include="Scripts\jquery.tip.js" />
+    <Content Include="Scripts\jspdf.debug.js" />
+    <Content Include="Scripts\jspdf.js" />
+    <Content Include="Scripts\jspdf.min.js" />
+    <Content Include="Scripts\noty\jquery.noty.js" />
+    <Content Include="Scripts\noty\layouts\center.js" />
+    <Content Include="Scripts\noty\layouts\topCenter.js" />
+    <Content Include="Scripts\noty\themes\default.js" />
+    <Content Include="Scripts\PreventBackSpace.js" />
+    <Content Include="Scripts\standard.ie.js" />
+    <Content Include="Scripts\svg2pdf.js" />
+    <Content Include="Scripts\top.js" />
+    <Content Include="Scripts\UploadImage.js" />
+    <Content Include="SessionKilled.aspx" />
+    <Content Include="ReportTemplates\Attendance\AT_ALDATA_IMPORT.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\AT_WORKSIGN.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Report\AT_002.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Report\AT_005.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Report\AT_007.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\17.Bao cao thu nhap so voi cung ky.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\21.Form giai trinh.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\Bang ke nguoi phu thuoc.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\Bao cao so sanh luong.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\Bao cao thu nhap theo tung tung chuc danh.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\Bao cao tien luong thu nhap theo don vi.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\Bao cao tong hop luong.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\BC_TIENLUONGTHANGTHEODONVI.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\IPAY_BANGKETHUE_TNCN_COCUTRU.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\IPAY_BANGKETHUE_TNCN_KHONGCUTRU.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\IPAY_BANGLUONGTHANG.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\IPAY_BANGTUONG_CK_THANG.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\IPAY_TIENLUONGTHUNHAP_THEOCHUCDANH.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\IPAY_TK_QUYLUONG_THUONG.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\IPAY_TK_THUNHAP_TRICHLUONGTHANG.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\IPAY_TK_THUNHAP_TRICHTHUONG_HQCVTHANG.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\IPAY_TOKHAIKHAUTRUTHUE_TNCN.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA001.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA002.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA004.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\PA007.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\Thong ke lao dong nam.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Payroll\Report\ToKhai QuyetToanThueTNCN.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\HU_ImportCommendTemplete.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\Report\HU0101.xls" />
+    <Content Include="ReportTemplates\Profile\Report\InCV.docx" />
+    <Content Include="ReportTemplates\Recruitment\Report\Bao cao ung vien theo nguon tuyen dung.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Report\Bao cao tong hop ke hoach tuyen dung.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Training\Report\Bao cao qua trinh dao tao.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Training\Report\Ho so dao tao nhan vien.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Static\Images\404.jpg" />
+    <Content Include="Static\Images\ajax-loader.gif" />
+    <Content Include="Static\Images\arrow_down.png" />
+    <Content Include="Static\Images\arrow_up.png" />
+    <Content Include="Static\Images\back.png" />
+    <Content Include="Static\Images\backHov.png" />
+    <Content Include="Static\Images\banner.png" />
+    <Content Include="Static\Images\bg_user.png" />
+    <Content Include="Static\Images\change_password.jpg" />
+    <Content Include="Static\Images\down.png" />
+    <Content Include="Static\Images\Employees\anhthe.jpg" />
+    <Content Include="Static\Images\fav-icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Static\Images\fav-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Static\Images\icon.png" />
+    <Content Include="Static\Images\Icons\16\accept.png" />
+    <Content Include="Static\Images\Icons\16\AddRecord.gif" />
+    <Content Include="Static\Images\Icons\16\ballon.png" />
+    <Content Include="Static\Images\Icons\16\comment.png" />
+    <Content Include="Static\Images\Icons\16\Delete.gif" />
+    <Content Include="Static\Images\Icons\16\document_attachment.png" />
+    <Content Include="Static\Images\Icons\16\download.png" />
+    <Content Include="Static\Images\Icons\16\Edit.gif" />
+    <Content Include="Static\Images\Icons\16\error.png" />
+    <Content Include="Static\Images\Icons\16\fill_data.png" />
+    <Content Include="Static\Images\Icons\16\find.png" />
+    <Content Include="Static\Images\Icons\16\Flag.gif" />
+    <Content Include="Static\Images\Icons\16\FlagRed.gif" />
+    <Content Include="Static\Images\Icons\16\GView.png" />
+    <Content Include="Static\Images\Icons\16\icon_dowloadFile.png" />
+    <Content Include="Static\Images\Icons\16\navigation-000-white.png" />
+    <Content Include="Static\Images\Icons\16\navigation-180-white.png" />
+    <Content Include="Static\Images\Icons\16\navigation-180.png" />
+    <Content Include="Static\Images\Icons\16\navigation.png" />
+    <Content Include="Static\Images\Icons\16\tick.png" />
+    <Content Include="Static\Images\Icons\16\upload.png" />
+    <Content Include="Static\Images\Icons\16\view.png" />
+    <Content Include="Static\Images\Icons\16\ViewImgOrg.png" />
+    <Content Include="Static\Images\Icons\32\comments.png" />
+    <Content Include="Static\Images\Icons\32\error.png" />
+    <Content Include="Static\Images\indicator.gif" />
+    <Content Include="Static\Images\loginbackground.jpg" />
+    <Content Include="Static\Images\logo_company.png" />
+    <Content Include="Static\Images\logo_HiStaff_big.png" />
+    <Content Include="Static\Images\logo_large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Static\Images\logo_largest.png" />
+    <Content Include="Static\Images\logo_largest1.png" />
+    <Content Include="Static\Images\logo_small.png" />
+    <Content Include="Static\Images\logo_transparent.png" />
+    <Content Include="Static\Images\Menu\arrow.gif" />
+    <Content Include="Static\Images\Menu\arrow_right.png" />
+    <Content Include="Static\Images\Menu\Module\Profile.png" />
+    <Content Include="Static\Images\Menu\Module\Secure.png" />
+    <Content Include="Static\Images\Menu\Module\Time.png" />
+    <Content Include="Static\Images\Menu\rmSprite.png" />
+    <Content Include="Static\Images\Menu\rmVSprite.png" />
+    <Content Include="Static\Images\next.png" />
+    <Content Include="Static\Images\nextHov.png" />
+    <Content Include="Static\Images\PanelBar\Expandable.png" />
+    <Content Include="Static\Images\PanelBar\RootItemBg.png" />
+    <Content Include="Static\Images\Quicklaunch\Allow.png" />
+    <Content Include="Static\Images\Quicklaunch\AnnualLeave.png" />
+    <Content Include="Static\Images\Quicklaunch\assessment.png" />
+    <Content Include="Static\Images\Quicklaunch\commend.png" />
+    <Content Include="Static\Images\Quicklaunch\CommendHQCV.png" />
+    <Content Include="Static\Images\Quicklaunch\CommendHQCV_Quy.png" />
+    <Content Include="Static\Images\Quicklaunch\contract.png" />
+    <Content Include="Static\Images\Quicklaunch\decision.png" />
+    <Content Include="Static\Images\Quicklaunch\decision1.png" />
+    <Content Include="Static\Images\Quicklaunch\discipline.png" />
+    <Content Include="Static\Images\Quicklaunch\Email.png" />
+    <Content Include="Static\Images\Quicklaunch\EmailCommend.png" />
+    <Content Include="Static\Images\Quicklaunch\employee.png" />
+    <Content Include="Static\Images\Quicklaunch\Form.png" />
+    <Content Include="Static\Images\Quicklaunch\groupuser.png" />
+    <Content Include="Static\Images\Quicklaunch\help.png" />
+    <Content Include="Static\Images\Quicklaunch\home.png" />
+    <Content Include="Static\Images\Quicklaunch\Household-Table-icon.png" />
+    <Content Include="Static\Images\Quicklaunch\Image-PNG-icon.png" />
+    <Content Include="Static\Images\Quicklaunch\import-icon.png" />
+    <Content Include="Static\Images\Quicklaunch\ImportSalary.png" />
+    <Content Include="Static\Images\Quicklaunch\ImportTime.png" />
+    <Content Include="Static\Images\Quicklaunch\InsArising.png" />
+    <Content Include="Static\Images\Quicklaunch\InsArisingManual.png" />
+    <Content Include="Static\Images\Quicklaunch\InsInfor.png" />
+    <Content Include="Static\Images\Quicklaunch\io.png" />
+    <Content Include="Static\Images\Quicklaunch\leave.png" />
+    <Content Include="Static\Images\Quicklaunch\LeaveSummary.png" />
+    <Content Include="Static\Images\Quicklaunch\logaccess.png" />
+    <Content Include="Static\Images\Quicklaunch\logaction.png" />
+    <Content Include="Static\Images\Quicklaunch\Manning.png" />
+    <Content Include="Static\Images\Quicklaunch\ModifyInfor.png" />
+    <Content Include="Static\Images\Quicklaunch\online.png" />
+    <Content Include="Static\Images\Quicklaunch\organization.png" />
+    <Content Include="Static\Images\Quicklaunch\permission.png" />
+    <Content Include="Static\Images\Quicklaunch\Plan.png" />
+    <Content Include="Static\Images\Quicklaunch\PlanSum.png" />
+    <Content Include="Static\Images\Quicklaunch\Program.png" />
+    <Content Include="Static\Images\Quicklaunch\Regimes.png" />
+    <Content Include="Static\Images\Quicklaunch\Request.png" />
+    <Content Include="Static\Images\Quicklaunch\Result.png" />
+    <Content Include="Static\Images\Quicklaunch\shift.png" />
+    <Content Include="Static\Images\Quicklaunch\Stage.png" />
+    <Content Include="Static\Images\Quicklaunch\StageCost.png" />
+    <Content Include="Static\Images\Quicklaunch\sum.png" />
+    <Content Include="Static\Images\Quicklaunch\terminate.png" />
+    <Content Include="Static\Images\Quicklaunch\ThueTNCN.png" />
+    <Content Include="Static\Images\Quicklaunch\TimeSheetSum.png" />
+    <Content Include="Static\Images\Quicklaunch\TotalSalary.png" />
+    <Content Include="Static\Images\Quicklaunch\transfer.png" />
+    <Content Include="Static\Images\Quicklaunch\TR_Emp.png" />
+    <Content Include="Static\Images\Quicklaunch\TR_Plan.png" />
+    <Content Include="Static\Images\Quicklaunch\TR_Program.png" />
+    <Content Include="Static\Images\Quicklaunch\TR_Reimbursement.png" />
+    <Content Include="Static\Images\Quicklaunch\TR_Request.png" />
+    <Content Include="Static\Images\Quicklaunch\user.png" />
+    <Content Include="Static\Images\Quicklaunch\working.png" />
+    <Content Include="Static\Images\Quicklaunch\workingplan.png" />
+    <Content Include="Static\Images\sperator.png" />
+    <Content Include="Static\Images\title_bar.png" />
+    <Content Include="Static\Images\Toolbar\add.png" />
+    <Content Include="Static\Images\Toolbar\calculator.png" />
+    <Content Include="Static\Images\Toolbar\calendar.png" />
+    <Content Include="Static\Images\Toolbar\delete.png" />
+    <Content Include="Static\Images\Toolbar\disk_blue.png" />
+    <Content Include="Static\Images\Toolbar\disk_blue_error.png" />
+    <Content Include="Static\Images\Toolbar\document_error.png" />
+    <Content Include="Static\Images\Toolbar\document_ok.png" />
+    <Content Include="Static\Images\Toolbar\edit.png" />
+    <Content Include="Static\Images\Toolbar\export1.png" />
+    <Content Include="Static\Images\Toolbar\find.png" />
+    <Content Include="Static\Images\Toolbar\import1.png" />
+    <Content Include="Static\Images\Toolbar\lock.png" />
+    <Content Include="Static\Images\Toolbar\lock_open.png" />
+    <Content Include="Static\Images\Toolbar\next.png" />
+    <Content Include="Static\Images\Toolbar\previous.png" />
+    <Content Include="Static\Images\Toolbar\printer.png" />
+    <Content Include="Static\Images\Toolbar\refresh.png" />
+    <Content Include="Static\Images\Toolbar\reset.png" />
+    <Content Include="Static\Images\Toolbar\send_email.png" />
+    <Content Include="Static\Images\Toolbar\vacant.png" />
+    <Content Include="Static\Images\tvc_logo.png" />
+    <Content Include="Static\Images\user.png" />
+    <Content Include="Static\Images\user_login.png" />
+    <Content Include="Static\Images\Validate\bg.gif" />
+    <Content Include="Static\Images\Validate\Exclamation.gif" />
+    <Content Include="Static\Images\Validate\info.png" />
+    <Content Include="Static\Images\Validate\Warning.gif" />
+    <Content Include="Static\Images\Validate\WarningHeader.gif" />
+    <Content Include="Static\logo_default.png" />
+    <Content Include="Static\ToolsFile.xml" />
+    <Content Include="Styles\about.css" />
+    <Content Include="Styles\Config.jquery.css" />
+    <Content Include="ReportTemplates\Insurance\Business\InsMaternityMng.xlsx" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_GiaiTrinhNgayCong.xlsx" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_GiaiTrinhNgayCong_error.xlsx" />
+    <Content Include="ReportTemplates\Recruitment\Import\Dinhbien_template.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\WELFARE\import_phucloi_TNG.xls" />
+    <Content Include="ReportTemplates\Payroll\Business\TEMP_IMPORT_HOSOLUONG.xls" />
+    <Content Include="ReportTemplates\Profile\ctrlDashboardHome.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportCTT_error.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\AT_IMPORT_REGISTER_CO.xlsx" />
+    <Content Include="ReportTemplates\Attendance\Import\AT_IMPORT_REGISTER_CO_Error.xlsx" />
+    <Content Include="ReportTemplates\19. Báo cáo - Danh sách HĐLĐ của CBNV TNG %281%29.xls" />
+    <Content Include="ReportTemplates\Recruitment\Import\Template_yeucautuyendung.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Import\Template_yeucautuyendung_Error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="JsonErrorCode\JsonLangs.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="JsonErrorCode\JsonValidateCode.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="ReportTemplates\Payroll\IPAY_REPORT_07_OUT.xls" />
+    <Content Include="ReportTemplates\Payroll\IPAY_REPORT_08.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Business\TEMP_IMPORT_HOSOLUONG_error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Profile\Import\TEMP_IMPORT_HOPDONG.xls" />
+    <Content Include="ReportTemplates\Profile\Import\TEMP_IMPORT_HOPDONG_ERR.xls" />
+    <Content Include="ReportTemplates\Profile\Import\TEMP_IMPORT_BCCC.xls" />
+    <Content Include="ReportTemplates\Profile\Import\TEMP_IMPORT_BCCC_ERR.xls" />
+    <Content Include="ReportTemplates\Profile\Import\Import_CongNo_Template.xls" />
+    <Content Include="ReportTemplates\Profile\Template_FamilyInfomation.xlsx" />
+    <Content Include="ReportTemplates\Profile\Template_WorkInfBefore.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_Import_du_lieu_nhan_vien_HSV.xls" />
+    <Content Include="ReportTemplates\Profile\Report\QDBN.doc" />
+    <Content Include="ReportTemplates\Profile\Report\QDDC.doc" />
+    <Content Include="ReportTemplates\Profile\Import\Congno_error.xls" />
+    <Content Include="ReportTemplates\Profile\Import\cv_error.xls" />
+    <Content Include="ReportTemplates\Profile\Import\Import_phucap.xls" />
+    <Content Include="ReportTemplates\Profile\Import\Import_phucap_err.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportShift.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\import_phuluchopdong.xls" />
+    <Content Include="ReportTemplates\Insurance\Import\Import_INS_SUNCARE.xls" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_NguoiKy.xls" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_NguoiKy_Error.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_Import_TimeSheet_Monthly.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_Import_TimeSheet_Monthly_Error.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Import_OT.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Import_OT_error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_TienXeHTCH _error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_TienXeHTCH.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_YearLeaveEdit.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Business\KPI_VP.xls" />
+    <Content Include="ReportTemplates\Payroll\Business\KPI_VP_error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\import_Thunhapbosung.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_Brand.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_PA_TARGET_DTTD_LABEL_error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_DTTD_DTPB.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_DTTD_DTPB_Error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_DieuChinhConghoachtoan.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_DieuChinhConghoachtoan_Err.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_DTTD_ECD.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_DTTD_ECD_Error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_import_MA_SCP_QLCH.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_import_MA_SCP_QLCH_Error.xls" />
+    <Content Include="Modules\Profile\Shared\ctrlFindSalaryPopup.rar" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_PA_STANDARD_SETUP.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_PA_STANDARD_SETUP_Error.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_LamNgoaiGio.xls" />
+    <Content Include="ReportTemplates\Common\Approve\Import_Taikhoan.xls" />
+    <Content Include="ReportTemplates\Common\Approve\Import_Taikhoan_Error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_DoanhThu.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_LamNgoaiGio_error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_PA_TARGET_STORE.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_PA_TARGET_STORE_error.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Import\TEMPLATE_ImportCH_AOMs_TOM.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_LDT_VP.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_LDT_VP_Error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\TEMPLATE_ImportNhanVien_CongThucLuong.xlsx" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_import_Year_Compenstion.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_import_Year_Compenstion_Error.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_import_Year_Conclude.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_import_Year_Conclude_Error.xls" />
+    <Content Include="ReportTemplates\Profile\Import\Template_ThietLap_CoCau_Nhan.xls" />
+    <Content Include="ReportTemplates\Performance\Import\Template_Import_Criteria.xls" />
+    <Content Include="ReportTemplates\Performance\Import\Template_Import_Criteria_Error.xls" />
+    <Content Include="ReportTemplates\Performance\Report\BC_DANHGIA.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_MR_DoiTuongNhanVien.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_ThietLap_TDTTT_NhomNV.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_ThietLap_TDTTT_NhomNV_Error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_ThietLap_TiLeDatCacChiSo_Error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_ThietLap_TiLeDatCacChiSo.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_ThietLap_TLT_TLHTKPI_LoaiSP.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_ThietLap_TLT_TLHTKPI_LoaiSP_Error.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportShift_Org.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportShift_Org_error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_PA_SETUP_FRAMEWORK_OFFICE.xlsx" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_import_DTCH_TheoNgay.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_import_DTCH_TheoNgay_Error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_XepLoaiCH.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_ThietLap_HeSo_TDT.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_ThietLap_HeSo_TDT_ERROR.xls" />
+    <Content Include="ReportTemplates\Payroll\Business\Template_ThietLap_MucThuong_VP.xls" />
+    <Content Include="ReportTemplates\Payroll\Business\Template_ThietLap_MucThuong_VP_Error.xls" />
+    <Content Include="ReportTemplates\Profile\DSNVULT.xlsx" />
+    <Content Include="ReportTemplates\Insurance\Import\IMPORT_SOBHXH_BHYT.xlsx" />
+    <Content Include="ReportTemplates\Payroll\IMPORT_ LUONGTHANG.xlsx" />
+    <Content Include="ReportTemplates\Performance\Import\Template_Import_MR_RR.xls" />
+    <Content Include="ReportTemplates\Performance\Import\Template_Import_PE_Org_Mr_Rr_Error.xls" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_CTNN.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_CTNN_Error.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_Travel.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_Travel_Error.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_HDCB.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_HDCB_Error.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_TLHD.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_TLHD_Error.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_CB_Assessent.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_CB_Assessent_Error.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_Employee_NPT.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_Employee_NPT_Error.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Import_Emp_Bank.xls" />
+    <Content Include="ReportTemplates\Profile\Import\BHLD.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_ImportWorkNight.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_Discipline_Emp.xls" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Import_Discipline_Emp_Error.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Import_QuyLuong.xls" />
+    <Content Include="ReportTemplates\Insurance\Import\Import_QTBaohiemtruoc.xls" />
+    <Content Include="ReportTemplates\Payroll\Import\Template_Import_Tamungluong.xls" />
+    <Content Include="ReportTemplates\Profile\Import\KhenThuong_Import.xls" />
+    <Content Include="ReportTemplates\Profile\ExportData.xlsx" />
+    <Content Include="ReportTemplates\Profile\Import\Template_Export_Employee.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\LEAVESHEET.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\IMPORT_AT_TOXICLEAVE_EMP.xlsx" />
+    <Content Include="ReportTemplates\Attendance\Import\IMPORT_AT_TOXICLEAVE_EMP_ERROR.xlsx" />
+    <None Include="ReportTemplates\Recruitment\Import\Candidate_Error.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ReportTemplates\Recruitment\Import\Candidate_Error1.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="ReportTemplates\Recruitment\Import\Import_Ungvien_Template.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Recruitment\Import\Template_Import_HRDetail_error.xls" />
+    <Content Include="ReportTemplates\Recruitment\Import\Template_Import_HRDetail.xls" />
+    <Content Include="ReportTemplates\Recruitment\Import\Template_Import_HRBudgetDetail.xls" />
+    <Content Include="ReportTemplates\Recruitment\Import\Template_Import_HRBudgetDetail_error.xls" />
+    <Content Include="ReportTemplates\Recruitment\Import\Import_OfferLetter.xls" />
+    <Content Include="ReportTemplates\Training\Import\ImportResult.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\ImportResultError.xlsx" />
+    <Content Include="ReportTemplates\Recruitment\Import\Import_OfferLetter_error.xls" />
+    <Content Include="ReportTemplates\Training\Import\ImportBoiHoanDT.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\ImportBoiHoanDT_ERROR.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\Import_RollCall.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\Import_RollCall_Error.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\Template_Import_TR_Plan.xls" />
+    <Content Include="ReportTemplates\Training\Import\Template_Import_TR_Plan_Error.xls" />
+    <Content Include="ReportTemplates\Training\Import\Program_Employee.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\Program_Employee_Error.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\Import_TR_Request.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\Import_TR_Request_Error.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\Assessment_Result_Edit.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\Import_TitleCourse.xlsx" />
+    <Content Include="ReportTemplates\Training\Import\Template_Import_TitleCourse_Error.xls" />
+    <None Include="Styles\ImgConfig.jquery.css" />
+    <Content Include="Styles\font-awesome.css" />
+    <Content Include="Styles\img\exclamation.png" />
+    <Content Include="Styles\img\icon-tree.png" />
+    <Content Include="Styles\img\icon.png" />
+    <Content Include="Styles\img\icon1.gif" />
+    <Content Include="Styles\img\item1.png" />
+    <Content Include="Styles\img\item2.png" />
+    <Content Include="Styles\img\item3.png" />
+    <Content Include="Styles\img\listicon1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\jMenu.jquery.css" />
+    <Content Include="Styles\Layout.css" />
+    <Content Include="Styles\Loader.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\RadGrid.css" />
+    <Content Include="Styles\RadOrgChart.css" />
+    <Content Include="Styles\RadTreeView.css" />
+    <Content Include="Styles\RadWindow.css" />
+    <Content Include="Styles\reset.css" />
+    <Content Include="Styles\Scheduler.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\StyleCustom.css" />
+    <Content Include="Styles\UploadImage.css" />
+    <Content Include="Styles\userCustom.css" />
+    <Content Include="UploadFile\NoImage.jpg" />
+    <Content Include="Styles\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Common\Approve.xls" />
+    <Content Include="ReportTemplates\Common\Approve\Import_Phe_Duyet_PhongBan.xls" />
+    <Content Include="ReportTemplates\Common\Approve\Import_Template_Phe_Duyet.xls" />
+    <Content Include="ReportTemplates\Common\Approve.xls" />
+    <Content Include="ReportTemplates\Attendance\Import\Template_QLKeHoachNghiPN _error.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplates\Attendance\Import\TEMPLATE_QLKeHoachNghiPN.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="ReportTemplates\Attendance\Report\AT012.xls" />
+    <Content Include="ReportTemplates\Attendance\Report\AT015.xls" />
+    <None Include="ReportTemplates\Attendance\Report\AT_008.xlsx" />
+    <None Include="ReportTemplates\Attendance\Report\AT_009.xlsx" />
+    <None Include="ReportTemplates\Attendance\Report\AT_010.xls" />
+    <None Include="ReportTemplates\Attendance\Report\AT_011.xls" />
+    <None Include="ReportTemplates\Attendance\Report\Dynamic.xls" />
+    <None Include="TemplateDynamic\ContractAppendixSupport\PLHD - OLD.doc" />
+    <None Include="TemplateDynamic\ContractAppendixSupport\PLHD.doc" />
+    <Content Include="TemplateDynamic\ContractAppendixSupport\TNECSG_TDLUONG.doc" />
+    <Content Include="TemplateDynamic\ContractAppendixSupport\TNG_TDLUONG.doc" />
+    <Content Include="TemplateDynamic\ContractAppendixSupport\TNECSG_X30_GHHD.doc" />
+    <Content Include="TemplateDynamic\ContractAppendixSupport\TNECSG_BDH_GHHD.doc" />
+    <None Include="TemplateDynamic\ContractSupport\5116.doc" />
+    <None Include="TemplateDynamic\ContractSupport\5982.doc" />
+    <None Include="TemplateDynamic\ContractSupport\6314.doc" />
+    <None Include="TemplateDynamic\ContractSupport\6315.docx" />
+    <Content Include="TemplateDynamic\ContractSupport\HDCTV.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HD.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDHN.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDDV.doc" />
+    <None Include="TemplateDynamic\ContractSupport\HDHV.doc" />
+    <None Include="TemplateDynamic\ContractSupport\HDKXDTH.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDTV.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDLD_SN.doc" />
+    <None Include="TemplateDynamic\ContractSupport\HDTV30.doc" />
+    <None Include="TemplateDynamic\ContractSupport\HDTV60.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDXDTH_12.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDTVU.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDTV_1.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDTV_2.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDTV_3.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDXDTH.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDXDTH_12Q.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDXDTH_12T.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\HDXDTH_24.doc" />
+    <None Include="TemplateDynamic\ContractSupport\HDXDTH_36.doc" />
+    <None Include="TemplateDynamic\ContractSupport\LHD012_1.doc" />
+    <None Include="TemplateDynamic\ContractSupport\TMF_Offer_Letter_Revised.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\TNECSG_BDH_HD.docx" />
+    <Content Include="TemplateDynamic\ContractSupport\TNECSG_BDH_HDTV.doc" />
+    <Content Include="TemplateDynamic\ContractSupport\TNECSG_X30_HDTV.docx" />
+    <None Include="TemplateDynamic\Contract\1.doc" />
+    <None Include="TemplateDynamic\Contract\12.doc" />
+    <None Include="TemplateDynamic\Contract\13.doc" />
+    <None Include="TemplateDynamic\Contract\14.doc" />
+    <None Include="TemplateDynamic\Contract\2.doc" />
+    <None Include="TemplateDynamic\Contract\287.doc" />
+    <None Include="TemplateDynamic\Contract\3.doc" />
+    <None Include="TemplateDynamic\Contract\47.doc" />
+    <None Include="TemplateDynamic\Contract\47.xlsx" />
+    <None Include="TemplateDynamic\Contract\6.doc" />
+    <None Include="TemplateDynamic\Contract\7.doc" />
+    <None Include="TemplateDynamic\Contract\8.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\5776.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\5975.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\5976.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\5977.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\5978.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\5979.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\5980.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\5981.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\6014.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\6316.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\6335.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\6335.docx" />
+    <Content Include="TemplateDynamic\DecisionSupport\QDBN.doc" />
+    <Content Include="TemplateDynamic\DecisionSupport\QDDC.doc" />
+    <Content Include="TemplateDynamic\DecisionSupport\QDDCCDCV.doc" />
+    <Content Include="TemplateDynamic\DecisionSupport\QDDC_CBCV.doc" />
+    <Content Include="TemplateDynamic\DecisionSupport\QDDDNS.doc" />
+    <Content Include="TemplateDynamic\DecisionSupport\QDDD_BN.doc" />
+    <Content Include="TemplateDynamic\DecisionSupport\TBL.doc" />
+    <None Include="TemplateDynamic\DecisionSupport\~%245977.docx" />
+    <None Include="TemplateDynamic\Decision\448.doc" />
+    <None Include="TemplateDynamic\Decision\449.doc" />
+    <None Include="TemplateDynamic\Decision\449.docx" />
+    <None Include="TemplateDynamic\Decision\450.doc" />
+    <None Include="TemplateDynamic\Decision\451.doc" />
+    <None Include="TemplateDynamic\Decision\451.docx" />
+    <None Include="TemplateDynamic\Decision\454.doc" />
+    <None Include="TemplateDynamic\DisciplineSupport\5834.doc" />
+    <None Include="TemplateDynamic\DisciplineSupport\6317.doc" />
+    <None Include="TemplateDynamic\DisciplineSupport\6318.doc" />
+    <None Include="TemplateDynamic\DisciplineSupport\6319.doc" />
+    <None Include="TemplateDynamic\DisciplineSupport\6320.doc" />
+    <Content Include="TemplateDynamic\DisciplineSupport\KL.doc" />
+    <None Include="TemplateDynamic\Discipline\1.doc" />
+    <None Include="TemplateDynamic\Discipline\5134.doc" />
+    <None Include="TemplateDynamic\Discipline\6.doc" />
+    <None Include="TemplateDynamic\Discipline\7.doc" />
+    <Content Include="TemplateDynamic\InfoConfirmSupport\InfoConfirmSupport.doc" />
+    <None Include="TemplateDynamic\ProfileSupport\6546.docx" />
+    <None Include="TemplateDynamic\ProfileSupport\6547.doc" />
+    <None Include="TemplateDynamic\ProfileSupport\6547.docx" />
+    <None Include="TemplateDynamic\ProfileSupport\6548.docx" />
+    <None Include="TemplateDynamic\ProfileSupport\6549.doc" />
+    <None Include="TemplateDynamic\ProfileSupport\6550.doc" />
+    <Content Include="TemplateDynamic\ProfileSupport\HSNV_CV.doc" />
+    <None Include="TemplateDynamic\Terminate3B\38.doc" />
+    <None Include="TemplateDynamic\Terminate3B\39.doc" />
+    <Content Include="TemplateDynamic\TerminateSupport\QDNV.doc" />
+    <Content Include="TemplateDynamic\TerminateSupport\LNV09.docx" />
+    <Content Include="TemplateDynamic\TerminateSupport\QDKTK.doc" />
+    <None Include="TemplateDynamic\Terminate\2.doc" />
+    <None Include="TemplateDynamic\Terminate\2.docx" />
+    <None Include="TemplateDynamic\Terminate\5.doc" />
+    <None Include="TemplateDynamic\Terminate\5.docx" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Word\Employee\CV_Template.doc" />
+    <Content Include="Word\Insurance\ToKhai.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Word\Recruitment\CONTRACT_RECIEVE.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Word\Recruitment\LETTER_RECIEVE.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Word\Recruitment\BM04_TT_Ke_hoach_TD.doc" />
+    <Content Include="Word\LIEN1.doc" />
+    <Content Include="Word\LIEN2.doc" />
+    <Content Include="Word\Employee\JD_Template.doc" />
+    <None Include="Word\Profile\PLHD.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AccessLimit.aspx.designer.vb">
+      <DependentUpon>AccessLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccessLimit.aspx.vb">
+      <DependentUpon>AccessLimit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ForgetPass.aspx.designer.vb">
+      <DependentUpon>ForgetPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ForgetPass.aspx.vb">
+      <DependentUpon>ForgetPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download.aspx.designer.vb">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog.aspx.designer.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog.aspx.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.designer.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Export.aspx.designer.vb">
+      <DependentUpon>Export.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Export.aspx.vb">
+      <DependentUpon>Export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SessionKilled.aspx.designer.vb">
+      <DependentUpon>SessionKilled.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionKilled.aspx.vb">
+      <DependentUpon>SessionKilled.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SheduleImportAT.vb" />
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Classic\Classic.skin" />
+    <Content Include="Excel\Assessment.xls" />
+    <Content Include="Excel\IOTEMPLATE.xls" />
+    <None Include="Excel\MngInOut_error.xls" />
+    <None Include="Excel\Recruitment\Mauthongtinungvien.xls" />
+    <Content Include="Guide\iPayroll.docx" />
+    <Content Include="Guide\iProfile.docx" />
+    <Content Include="Guide\iTime.docx" />
+    <None Include="lic.key" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="packages.config" />
+    <Content Include="Word\HDLD_CT.doc" />
+    <Content Include="Word\HDLD_CTV.doc" />
+    <Content Include="Word\HDLD_TV.doc" />
+    <Content Include="Word\QD_BN.doc" />
+    <Content Include="Word\QD_DCLPC.doc" />
+    <Content Include="Word\QD_MN.doc" />
+    <Content Include="Word\QD_TC.doc" />
+    <Content Include="Word\QD_CDCT.doc" />
+    <Content Include="Word\QD_TERMINATE.doc" />
+    <Content Include="Word\QD_DISCIPLINE.doc" />
+    <Content Include="Word\QD_COMMEND.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="AttachFile\Profile\ctrlHU_Title\" />
+    <Folder Include="AttachFile\Profile\ctrlLocation\" />
+    <Folder Include="Excel\Trainning\" />
+    <Folder Include="Modules\Report\" />
+    <Folder Include="ReportTemplates\Profile\Commend\" />
+    <Folder Include="ReportTemplates\Profile\Organization\License\" />
+    <Folder Include="ReportTemplates\Profile\Organization\Logo\" />
+    <Folder Include="ReportTemplates\Training\Upload\Request\" />
+    <Folder Include="Scripts\noty\layout\" />
+    <Folder Include="Static\Images\Icons\48\" />
+    <Folder Include="Static\Images\mainToolbar\" />
+    <Folder Include="Static\Images\Menu\Business\" />
+    <Folder Include="Static\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HistaffFrameworkPublic\HistaffFrameworkPublic.vbproj">
+      <Project>{5D0CFFD8-3EF0-4584-818F-3F165BD8DE0C}</Project>
+      <Name>HistaffFrameworkPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFramework\HistaffFramework.vbproj">
+      <Project>{FB51763C-4CE7-4417-BBD9-5FF784FCE7A7}</Project>
+      <Name>HistaffFramework %28HistaffFramework\HistaffFramework%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attendance\Attendance.vbproj">
+      <Project>{3D295273-0668-43F1-9C39-4010771F6A9D}</Project>
+      <Name>Attendance %28Attendance\Attendance%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.vbproj">
+      <Project>{4B2EF214-7880-45F2-BB79-B394E552B4BE}</Project>
+      <Name>Common %28Common\Common%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.UI.vbproj">
+      <Project>{514CC57F-03AA-4D18-9BF2-3F7B66F6AD9B}</Project>
+      <Name>Framework.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffWebAppResources\HistaffWebAppResources.vbproj">
+      <Project>{2F00C7ED-1915-43B8-A831-A8FC391F7455}</Project>
+      <Name>HistaffWebAppResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insurance\Insurance.vbproj">
+      <Project>{A6FC8CA6-5142-418E-888D-2E05B190FF9A}</Project>
+      <Name>Insurance %28Insurance\Insurance%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Payroll\Payroll.vbproj">
+      <Project>{57D651FD-0B2D-4283-87F8-5ACFA7B7E588}</Project>
+      <Name>Payroll %28Payroll\Payroll%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Performance\Performance.vbproj">
+      <Project>{9a0201dc-a6fe-41dd-874e-6d2761378853}</Project>
+      <Name>Performance %28Performance\Performance%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Profile\Profile.vbproj">
+      <Project>{B8148AB7-8752-487B-ABA0-DDA56B917E35}</Project>
+      <Name>Profile %28Profile\Profile%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Recruitment\Recruitment.vbproj">
+      <Project>{abb2176d-ecc7-4392-9de1-d66c7a939b8a}</Project>
+      <Name>Recruitment %28Recruitment\Recruitment%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Training\Training.vbproj">
+      <Project>{220d534b-7553-43ab-a19a-e22363757e36}</Project>
+      <Name>Training %28Training\Training%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAppLog\WebAppLog.vbproj">
+      <Project>{54EC2CA2-FA9D-48BD-9B42-80C6A98928DC}</Project>
+      <Name>WebAppLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8888</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

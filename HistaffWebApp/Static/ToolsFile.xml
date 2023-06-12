@@ -1,0 +1,29 @@
+﻿<root>
+    <tools name="MainToolbar" dockable="true" enabled="true">
+        <tool name="FindAndReplace" shortcut="CTRL+F"/>
+        <tool separator="true"/>
+        <tool name="Undo" shortcut="CTRL+U"/>
+        <tool name="Redo" shortcut="CTRL+Z"/>
+        <tool separator="true"/>
+        <tool name="Cut" shortcut="CTRL+X"/>
+        <tool name="Copy" shortcut="CTRL+C"/>
+        <tool name="Paste" shortcut="CTRL+!"/>
+    </tools>
+ 
+    <tools name="Formatting" enabled="true" dockable="true">
+        <tool name="Bold" shortcut="CTRL+B" />
+        <tool name="Italic" shortcut="CTRL+I" />
+        <tool name="Underline" shortcut="CTRL+U" />
+        <tool separator="true"/>
+        <tool name="ForeColor" shortcut="CTRL+FC" />
+        <tool name="BackColor" shortcut="CTRL+BC" />
+        <tool separator="true"/>
+        <tool name="FontName" shortcut=""/>
+        <tool name="RealFontSize" shortcut=""/>
+    </tools>
+ 
+  <cssFiles>
+    <item name="~/App_Themes/Default/CustomStyles.css" />
+  </cssFiles>
+ 
+</root>

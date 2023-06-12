@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PanelBar>
+  <Item Text="Thông tin cá nhân" Expanded="True" Value="Profile">
+    <Item Value="Profile;ctrlPortalEmpProfile;NoPer;Edit" Text="Hồ sơ nhân sự" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Profile;ctrlPortalFamily_Edit;NoPer;Edit" Text="Quan hệ nhân thân" ImageUrl="~/Static/Images/RibbonBar/family.png" />
+    <Item Value="Profile;ctrlPortalWorkingBefore;NoPer;NoEdit" Text="Quá trình công tác trước đây" ImageUrl="~/Static/Images/RibbonBar/working_before.png" />
+    <Item Value="Profile;ctrlPortalWorkingBefore_Edit;NoPer;Edit" Text="Chi tiết quá trình công tác trước đây" ImageUrl="~/Static/Images/RibbonBar/working_before.png" />
+    <Item Value="Profile;ctrlPortalWorking;NoPer;NoEdit" Text="Quá trình công tác hiện tại" ImageUrl="~/Static/Images/RibbonBar/working.png" />
+    <Item Value="Profile;ctrlPortalTraining;NoPer;NoEdit" Text="Quá trình đào tạo trong công ty" ImageUrl="~/Static/Images/RibbonBar/working_before.png" />
+    <Item Value="Profile;ctrlPortalTrainingOutCompany;NoPer;NoEdit" Text="Quá trình đào tạo ngoài công ty" ImageUrl="~/Static/Images/RibbonBar/working.png" />
+    <Item Value="Profile;ctrlPortalTrainingOutCompany_Edit;NoPer;Edit" Text="Chi tiết quá trình đào tạo ngoài công ty" ImageUrl="~/Static/Images/RibbonBar/working.png" />
+    <Item Value="Profile;ctrlPortalContract;NoPer;NoEdit" Text="Quá trình hợp đồng lao động" ImageUrl="~/Static/Images/RibbonBar/contract.png" />
+    <Item Value="Profile;ctrlPortalSalary;NoPer;NoEdit" Text="Quá trình thay đổi lương - phụ cấp" ImageUrl="~/Static/Images/RibbonBar/salary.png" />
+    <Item Value="Profile;ctrlPortalCommend;NoPer;NoEdit" Text="Quá trình khen thưởng" ImageUrl="~/Static/Images/RibbonBar/commend.png" />
+    <Item Value="Profile;ctrlPortalDiscipline;NoPer;NoEdit" Text="Quá trình kỷ luật" ImageUrl="~/Static/Images/RibbonBar/discipline.png" />
+  </Item>
+  <Item Text="Leave &amp; OT" Expanded="True" Value="Attendance">
+    <Item Value="Attendance;ctrlRegisterLeave;NoPer;NoEdit" Text="Đăng ký nghỉ" ImageUrl="~/Static/Images/RibbonBar/leave.png"/>
+    <Item Value="Attendance;ctrlOTRegister;NoPer;NoEdit" Text="Đăng ký đi làm thêm" ImageUrl="~/Static/Images/RibbonBar/ot.png"/>
+    <Item Value="Attendance;ctrlDMVSRegister;NoPer;NoEdit" Text="Đăng ký đi muôn về sớm" ImageUrl="~/Static/Images/RibbonBar/leave.png"/>
+    <Item Value="Attendance;ctrlLeaveApprove;NoPer;NoEdit" Text="Phê duyệt nghỉ" ImageUrl="~/Static/Images/RibbonBar/approve.png" />
+    <Item Value="Attendance;ctrlOTApprove;NoPer;NoEdit" Text="Phê duyệt làm thêm" ImageUrl="~/Static/Images/RibbonBar/approve.png" />
+    <Item Value="Attendance;ctrlDMVSApprove;NoPer;NoEdit" Text="Phê duyệt đi muộn về sớm" ImageUrl="~/Static/Images/RibbonBar/approve.png"/>
+  </Item>
+  <Item Text="Thông tin CBNV trực thuộc" Expanded="True" Value="Direct;ctrlPortalDirectManagement;NoPer;NoEdit" />
+  <Item Text="Bảng công" Expanded="True" Value="Attendance;ctrlPortalTimeTimesheetDetails;NoPer;NoEdit" />
+  <Item Text="Phiếu lương" Expanded="True" Value="Payroll;ctrlPA_PortalSalary;NoPer;NoEdit" />
+  <Item Text="Đánh giá" Expanded="True" Value="Performance">
+    <Item Value="Performance;ctrlPE_Assess;NoPer;Edit" Text="Tự đánh giá" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Performance;ctrlPortalAssessmentDirect;NoPer;NoEdit" Text="KPI nhân viên" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Performance;ctrlPortalViewAssessEmp;NoPer;NoEdit" Text="KPI cá nhân" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+    <Item Value="Performance;ctrlPE_DirectViewRating;NoPer;NoEdit" Text="Quản lý xem biểu đồ xếp hạng nhân viên" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+  </Item>
+  <Item Value="Common;ctrlGuide;NoPer" Text="Hướng dẫn sử dụng" />
+  <Item Value="SUPPORT;NoPer" Text="Support" />
+  <Item Text="Quản trị hệ thống" Expanded="True" Value="Common">
+    <Item Value="Common;ctrlLanguageManagement;NoPer;Edit" Text="Quản lý ngôn ngữ" ImageUrl="~/Static/Images/RibbonBar/user.png" />
+  </Item>
+</PanelBar>

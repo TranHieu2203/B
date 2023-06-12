@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4b29b426-ddf8-49be-9b64-7147b57e4d2f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/PortalBusiness.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PortalBusiness1.disco" MetadataType="Disco" ID="b55ef78b-859d-422f-97ea-cb65a06afb4d" SourceId="1" SourceUrl="http://localhost:9999/PortalBusiness.svc?disco" />
+    <MetadataFile FileName="PortalBusiness1.wsdl" MetadataType="Wsdl" ID="edc369be-a794-4024-a8ac-a4077502d80b" SourceId="1" SourceUrl="http://localhost:9999/PortalBusiness.svc?wsdl" />
+    <MetadataFile FileName="PortalBusiness5.xsd" MetadataType="Schema" ID="f1991c5e-00ff-48d3-a3e7-bd2cdd444df5" SourceId="1" SourceUrl="http://localhost:9999/PortalBusiness.svc?xsd=xsd4" />
+    <MetadataFile FileName="PortalBusiness51.xsd" MetadataType="Schema" ID="bab1d215-19b8-4364-8743-1871e960d652" SourceId="1" SourceUrl="http://localhost:9999/PortalBusiness.svc?xsd=xsd3" />
+    <MetadataFile FileName="PortalBusiness52.xsd" MetadataType="Schema" ID="c8a20d12-91bc-4f00-bc71-ae82842d3132" SourceId="1" SourceUrl="http://localhost:9999/PortalBusiness.svc?xsd=xsd2" />
+    <MetadataFile FileName="PortalBusiness53.xsd" MetadataType="Schema" ID="56a1d4b8-a864-4124-9f9c-07587058b5b6" SourceId="1" SourceUrl="http://localhost:9999/PortalBusiness.svc?xsd=xsd1" />
+    <MetadataFile FileName="PortalBusiness54.xsd" MetadataType="Schema" ID="0ed14920-b13a-42e0-962c-9b77b3687404" SourceId="1" SourceUrl="http://localhost:9999/PortalBusiness.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

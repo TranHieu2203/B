@@ -1,0 +1,40 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Config">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Status" type="xs:string" minOccurs="0" />
+                <xs:element name="DNSName" type="xs:string" minOccurs="0" />
+                <xs:element name="DatabaseName" type="xs:string" minOccurs="0" />
+                <xs:element name="UserName" type="xs:string" minOccurs="0" />
+                <xs:element name="Password" type="xs:string" minOccurs="0" />
+                <xs:element name="Time1From" type="xs:integer" minOccurs="0" />
+                <xs:element name="Time1To" type="xs:integer" minOccurs="0" />
+                <xs:element name="Time2From" type="xs:integer" minOccurs="0" />
+                <xs:element name="Time2To" type="xs:integer" minOccurs="0" />
+                <xs:element name="Interval" type="xs:integer" minOccurs="0" />
+                <xs:element name="ConnString" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Config>
+    <Status>OK</Status>
+    <DNSName>10.210.50.141</DNSName>
+    <DatabaseName>StaffManagement</DatabaseName>
+    <UserName>smView</UserName>
+    <Password>tvP@ss</Password>
+    <Time1From>0</Time1From>
+    <Time1To>12</Time1To>
+    <Time2From>12</Time2From>
+    <Time2To>24</Time2To>
+    <Interval>30</Interval>
+    <ConnString>Provider=SQLOLEDB;Data Source={0};Initial Catalog={1};User ID={2};Password={3};</ConnString>
+  </Config>
+</NewDataSet>

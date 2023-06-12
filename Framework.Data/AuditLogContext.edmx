@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AuditLogModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="AuditLogModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AuditLogModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="AuditLogContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SE_ACCESS_LOG" EntityType="AuditLogModel.SE_ACCESS_LOG" />
+          <EntitySet Name="SE_ACTION_LOG" EntityType="AuditLogModel.SE_ACTION_LOG" />
+          <EntitySet Name="SE_CONFIG" EntityType="AuditLogModel.SE_CONFIG" />
+          <EntitySet Name="SE_REMINDER" EntityType="AuditLogModel.SE_REMINDER" />
+          <EntitySet Name="SE_LOG_DTL" EntityType="AuditLogModel.SE_LOG_DTL" />
+          <EntitySet Name="SE_USER" EntityType="AuditLogModel.SE_USER" />
+        </EntityContainer>
+        <EntityType Name="SE_ACCESS_LOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="USERNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FULLNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MOBILE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GROUP_NAMES" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LOGIN_DATE" />
+          <Property Type="DateTime" Name="LOGOUT_DATE" />
+          <Property Type="String" Name="LOGOUT_STATUS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACCESS_FUNCTIONS" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IP" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SE_ACTION_LOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="USERNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FULLNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MOBILE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTION_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ACTION_DATE" />
+          <Property Type="Decimal" Name="OBJECT_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="OBJECT_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IP" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VIEW_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VIEW_DESCRIPTION" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VIEW_GROUP" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTION_TYPE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PLATFORM" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SE_CONFIG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VALUE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="MODULE" />
+        </EntityType>
+        <EntityType Name="SE_REMINDER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="USERNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="TYPE" />
+          <Property Type="String" Name="VALUE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="SE_LOG_DTL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="COL_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OLD_VALUE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NEW_VALUE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SE_ACTION_LOG_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="SE_USER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="USERNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PASSWORD" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FULLNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TELEPHONE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_APP" />
+          <Property Type="Int16" Name="IS_PORTAL" />
+          <Property Type="String" Name="EMPLOYEE_CODE" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="IS_AD" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LOCATION" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_CHANGE_PASS" />
+          <Property Type="DateTime" Name="CHANGE_PASS_DATE" />
+          <Property Type="Int16" Name="REMINDER_COUNT" />
+          <Property Type="String" Name="MODULE_ADMIN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EFFECTDATE_TERMINATION" />
+          <Property Type="Int16" Name="IS_LOGIN" />
+          <Property Type="Decimal" Name="IS_RC" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_HR" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+    <EntityContainerMapping StorageEntityContainer="AuditLogModelStoreContainer" CdmEntityContainer="AuditLogContext">
+        </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="DDLGenerationTemplate" Value="$(VSEFTools)\DBGen\SSDLToOracle.tt" />
+        <DesignerProperty Name="DatabaseGenerationWorkflow" Value="$(VSEFTools)\DBGen\Generate Oracle Via T4 (TPT).xaml" />
+        <DesignerProperty Name="DefaultDatabaseSchema" Value="dbo" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="AuditLog" ZoomLevel="75">
+        <EntityTypeShape EntityType="AuditLogModel.SE_ACCESS_LOG" Width="1.5" PointX="0.75" PointY="0.75" Height="3.3263964843749996" />
+        <EntityTypeShape EntityType="AuditLogModel.SE_ACTION_LOG" Width="1.5" PointX="2.75" PointY="0.75" Height="3.9033007812499996" />
+        <EntityTypeShape EntityType="AuditLogModel.SE_CONFIG" Width="1.5" PointX="4.75" PointY="0.75" Height="1.9802864583333317" />
+        <EntityTypeShape EntityType="AuditLogModel.SE_REMINDER" Width="1.5" PointX="4.75" PointY="3.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="AuditLogModel.SE_LOG_DTL" Width="1.5" PointX="7.125" PointY="0.5" Height="1.787985026041667" />
+        <EntityTypeShape EntityType="AuditLogModel.SE_USER" Width="1.5" PointX="0.75" PointY="5.75" Height="6.5955208333333317" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

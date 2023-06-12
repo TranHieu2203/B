@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Business"  PostBack="False">
+      <Group>
+        <Item Value="ctrlSignWork" Text="Working day" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSignWork&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlRegisterCO" Text="Register for leave" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlRegisterCO&amp;group=Business" CheckPermission="true"/>
+        <Item Text="OverTime" PostBack="False">
+          <Group>
+            <Item Value="ctrlRegisterOT" Text="Register OverTime" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlRegisterOT&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlDeclaresOT" Text="Declares OverTime" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDeclaresOT&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlTime_Timesheet_ot" Text="Synthetic OverTime" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlTime_Timesheet_ot&amp;group=Business" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Value="ctrlSwipeDataDownload" Text="Download data of Timekeeper machine" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSwipeDataDownload&amp;group=Business" CheckPermission="true" />
+        <Item Value="ctrlRegisterDSVM" Text="Tardiness &amp; leave early manager" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlRegisterDSVM&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlMngIO" Text="Data of in and out manager" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlMngIO&amp;group=Business" CheckPermission="true"/>
+        <Item Text="Compensation leave &amp; Annual leave Manager" PostBack="False">
+          <Group>
+            <Item Value="ctrlDeclareEntitlementNB" Text="Declares Seniority,Compensation leave &amp; Annual leave" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDeclareEntitlementNB&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlEntitlement" Text="Synthetic Annual leave" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlEntitlement&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlManagementNB" Text="Synthetic Compensation leave" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlManagementNB&amp;group=Business" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Text="Time Rice" PostBack="False">
+          <Group>
+            <Item Value="ctrlDeclare_TimeRice" Text="Declares Time Rice" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDeclare_TimeRice&amp;group=Business" CheckPermission="true" />
+            <Item Value="ctrlTime_Timesheet_Rice" Text="Synthetic Time Rice" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlTime_Timesheet_Rice&amp;group=Business" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Text="Timesheet" PostBack="False">
+          <Group>
+            <Item Value="ctrlTimeTimesheet_machine" Text="Origin Timesheet" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlTimeTimesheet_machine&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlTime_Timesheet_CTT" Text="Handling data of timesheet" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlTime_Timesheet_CTT&amp;group=Business" CheckPermission="true"/>
+            <Item Value="ctrlTimesheetSummary" Text="Timesheet summary" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlTimesheetSummary&amp;group=Business" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Value="ctrlAT_PROJECT_ASSIGN" Text="Timekeeping project" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_PROJECT_ASSIGN&amp;group=Business" CheckPermission="true"/>
+        <Item Value="ctrlActionLog" Text="Action Manager " NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlActionLog&amp;group=Business" CheckPermission="true"/>
+      </Group>
+    </Item>
+    <Item Text="Report" PostBack="False">
+      <Group>
+        <Item Value="ctrlAT_ReportList" Text="List report" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_ReportList&amp;group=report" CheckPermission="true"/>
+      </Group>
+    </Item>
+    <Item Text="Institute"  PostBack="False">
+      <Group>
+        <Item Value="ctrlThietLapChamCongDB" Text="Principle Timekeeping Rank Employee" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlThietLapChamCongDB&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlSetUpTimeEmp" Text="Principle Timekeeping Employee" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSetUpTimeEmp&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlSwipeMachine" Text="Register Timekeeper" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSwipeMachine&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlSwipeMachineStatus" Text="Status Timekeeper" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlSwipeMachineStatus&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlGetSignDefault" Text="Registetr default shift" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlGetSignDefault&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlATTimeManual" Text="Time Type" PostBack="True" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlATTimeManual&amp;group=Setting" CheckPermission="true" />
+        <Item Value="ctrlAT_PROJECT_EMP" Text="Employee of project" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_PROJECT_EMP&amp;group=Business" CheckPermission="true"/>
+      </Group>
+    </Item>
+    <Item Text="Category"  PostBack="False">
+      <Group>
+        <Item Value="ctrlDMKieuCong" Text="Time Symbol" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDMKieuCong&amp;group=List" CheckPermission="true" />
+        <Item Value="ctrlDMCaLamViec" Text="Time" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlDMCaLamViec&amp;group=List" CheckPermission="true" />
+        <Item Value="ctrlRitual" Text="National leave" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlRitual&amp;group=List" CheckPermission="true"/>
+        <Item Value="ctrlRitual_Hose" Text="National leave Hose" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlRitual_Hose&amp;group=List" CheckPermission="true"/>
+        <Item Text="Project"  PostBack="False">
+          <Group>
+            <Item Value="ctrlAT_PROJECT" Text="Project" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_PROJECT&amp;group=List" CheckPermission="true"/>
+            <Item Value="ctrlAT_PROJECT_TITLE" Text="Title of Project" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_PROJECT_TITLE&amp;group=List" CheckPermission="true"/>
+            <Item Value="ctrlAT_PROJECT_WORK" Text="Task of Project" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlAT_PROJECT_WORK&amp;group=List" CheckPermission="true"/>
+          </Group>
+        </Item>
+        <Item Value="ctrlListParamSystem" Text="System Parameters" NavigateUrl="Default.aspx?mid=Attendance&amp;fid=ctrlListParamSystem&amp;group=List" CheckPermission="true"/>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

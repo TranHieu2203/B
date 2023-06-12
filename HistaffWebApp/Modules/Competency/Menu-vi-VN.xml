@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Nghiệp vụ"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_CompetencyAss" Text="Đánh giá năng lực nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyAss&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_EmployeeCriteriaRecord" Text="Tìm kiếm nhân viên theo năng lực đánh giá" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_EmployeeCriteriaRecord&amp;group=Business" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+    <Item Text="Báo cáo" PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_Competency_RadarReport" Text="Biểu đồ radar năng lực" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_Competency_RadarReport&amp;group=report" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Competency_RadarReportGaps" Text="Biểu đồ lịch sử Gaps năng lực nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_Competency_RadarReportGaps&amp;group=report" CheckPermission="true" CausesValidation="False" />
+        <Item Value="ctrlHU_Competency_RadarGapsBetweenPos" Text="Biểu đồ lịch sử Gaps giữa cấp bậc" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_Competency_RadarGapsBetweenPos&amp;group=report" CheckPermission="true" CausesValidation="False" />
+      </Group>
+    </Item>
+    <Item Text="Thiết lập"  PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_CompetencyAppendix" Text="Tiêu chuẩn năng lực cho chức danh" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyAppendix&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_CompetencyEmp" Text="Năng lực cho nhân viên" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyEmp&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_CompetencyCourse" Text="Tiêu chuẩn đánh giá với khóa học" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyCourse&amp;group=Setting" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+    <Item Text="Danh mục" PostBack="False">
+      <Group>
+        <Item Value="ctrlHU_CompetencyGroup" Text="Nhóm năng lực" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyGroup&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_Competency" Text="Năng lực" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_Competency&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_CompetencyBuild" Text="Xây dựng từ điển năng lực" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyBuild&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+        <Item Value="ctrlHU_CompetencyPeriod" Text="Đợt đánh giá năng lực" PostBack="True" NavigateUrl="Default.aspx?mid=Competency&amp;fid=ctrlHU_CompetencyPeriod&amp;group=List" CheckPermission="true" CausesValidation="False"/>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

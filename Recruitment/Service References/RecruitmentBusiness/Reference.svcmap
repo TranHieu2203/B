@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dff997ea-2039-4585-bef0-0529ba2bf0ad" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/RecruitmentBusiness.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RecruitmentBusiness.wsdl" MetadataType="Wsdl" ID="93ade7b4-3ab8-4275-9846-87fa81e41078" SourceId="1" SourceUrl="http://localhost:9999/RecruitmentBusiness.svc?wsdl" />
+    <MetadataFile FileName="RecruitmentBusiness.xsd" MetadataType="Schema" ID="99a018e0-43b4-4e27-9f3b-cfb23518ac10" SourceId="1" SourceUrl="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd2" />
+    <MetadataFile FileName="RecruitmentBusiness1.xsd" MetadataType="Schema" ID="28419e40-dede-4386-a827-3e6addc6d8ef" SourceId="1" SourceUrl="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd3" />
+    <MetadataFile FileName="RecruitmentBusiness2.xsd" MetadataType="Schema" ID="4c5ee63d-b667-4e1b-adc4-520c268ae0f4" SourceId="1" SourceUrl="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd0" />
+    <MetadataFile FileName="RecruitmentBusiness3.xsd" MetadataType="Schema" ID="d9762942-cc17-44ce-96a3-c2ffd3f99be3" SourceId="1" SourceUrl="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd1" />
+    <MetadataFile FileName="RecruitmentBusiness6.xsd" MetadataType="Schema" ID="76497216-5ac5-4b42-85b7-6f8868c3e6ba" SourceId="1" SourceUrl="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd6" />
+    <MetadataFile FileName="RecruitmentBusiness.disco" MetadataType="Disco" ID="e6c6308a-6305-47f4-8d5e-f8f3429c8981" SourceId="1" SourceUrl="http://localhost:9999/RecruitmentBusiness.svc?disco" />
+    <MetadataFile FileName="RecruitmentBusiness4.xsd" MetadataType="Schema" ID="78fafe5e-50cd-45e6-9ea3-1776e42b4d6f" SourceId="1" SourceUrl="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd4" />
+    <MetadataFile FileName="RecruitmentBusiness5.xsd" MetadataType="Schema" ID="55818fa5-e4c3-4941-bede-9e2b01299aae" SourceId="1" SourceUrl="http://localhost:9999/RecruitmentBusiness.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

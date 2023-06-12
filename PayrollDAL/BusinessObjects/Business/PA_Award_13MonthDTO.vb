@@ -1,0 +1,30 @@
+﻿Public Class PA_Award_13MonthDTO
+    Public Property ID As Decimal?
+    Public Property EMPLOYEE_CODE As String
+    Public Property EMPLOYEE_ID As Decimal?
+    Public Property EMPLOYEE_NAME As String
+    Public Property TITLE_ID As Decimal?
+    Public Property TITLE_NAME As String
+    Public Property ORG_ID As Decimal?
+    Public Property ORG_NAME As String
+    Public Property ORG_DESC As String
+    Public Property ORG_CODE As String
+    Public Property AWARD_YEAR As Decimal?
+    Public Property SALARY_AWARD As Decimal?
+    Public Property SALARY_LIABILITY As Decimal?
+    Public Property SENIORITY_MONTH As Decimal?
+    Public Property NONSALARY_UNIT As Decimal?
+    Public Property NONSALARY_UNITEDIT As Decimal?
+    Public Property SENIORITY_REALIRY As Decimal?
+    Public Property AWARD_13MONTH As Decimal?
+    Public Property NOTE As String
+    Public Property CREATED_DATE As Date?
+    Public Property CREATED_BY As String
+    Public Property CREATED_LOG As String
+    Public Property MODIFIED_DATE As Date?
+    Public Property MODIFIED_BY As String
+    Public Property MODIFIED_LOG As String
+    Public Property IS_LOCK As Boolean?
+    Public Property PERIOD_ID As Decimal?
+    Public Property PERIOD_NAME As String
+End Class

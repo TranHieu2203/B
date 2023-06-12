@@ -1,0 +1,23 @@
+﻿.FullRow .rgDataDiv
+{
+	height: auto !important;
+}
+.rgRow td, .rgAltRow td, .rgFilterRow tr, .rgFilterRow td, .rgMasterTable .rgHeader
+{
+	padding: 1px 1px 1px 5px !important;
+	height: 20px !important;
+	font: 11px "Segoe UI", Arial, Verdana, Tahoma, Times !important;
+}
+.rgFilterBox, .rgFilter, .riDisplay
+{
+	/*width: 80% !important;*/
+	min-width: 70%;
+	max-width: 80%;
+	padding: 1px 1px 1px 1px !important;
+	font: 11px "Segoe UI", Arial, Verdana, Tahoma, Times !important;
+}
+.rgPagerCell, NextPrevAndNumeric, rgSEO
+html .RadTreeView_Metro .rtPlus, .RadTreeView_Metro .rtMinus
+{
+	background-image: url('img/icon-tree.png') !importaint;
+}

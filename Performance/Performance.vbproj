@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{9A0201DC-A6FE-41DD-874E-6D2761378853}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Performance</RootNamespace>
+    <AssemblyName>Performance</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Performance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Performance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.0.3.0, Culture=neutral, PublicKeyToken=12d8fa3d810c48da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.Design, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2019.1.115.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="WebAppLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\WebAppLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="My Project\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.AssessmentDirectDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.AssessmentDTO.datasource" />
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.AssessmentDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.AssessRatingDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.ClassificationDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.ClassificationHTCHDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.CriteriaDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.CriteriaObjectGroupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.CriteriaTitleGroupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Modules\Performance\Business\ctrlKpiAssessmentResult.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlMngInfoEvalTargetDetail.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_Org_Mr_Rr.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_CriteriaTitlegroupRankNewEdit.ascx" />
+    <Content Include="Modules\Portal\ctrlPE_PortalHTCHAssessment.ascx" />
+    <Content Include="Modules\Portal\ctrlPE_PortalApproveHTCHAssessmentDetail.ascx" />
+    <Content Include="Modules\Portal\ctrlPE_PortalHTCHAssessmentDetail.ascx" />
+    <Content Include="Modules\Portal\ctrlPE_PortalHTCHAssessmentResult.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalApproveHTCTAssessment.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalApproveKPIAssessment.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalApproveKPIAssessmentDetail.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalMngInfoEvalTargetDetail.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalApproveKPIAssessmentView.ascx" />
+    <Content Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.CriteriaTitleGroupRankDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.EmployeeAssessmentDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.EmployeeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.EmployeePeriodDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.KPI_ASSESSMENT_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.ObjectGroupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.ObjectGroupPeriodDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.PeriodDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.PE_Criteria_HTCHDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.PE_KPI_ASSESMENT_DETAIL_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.PE_ORGANIZATIONDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.PE_Period_HTCHDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.SettingCriteriaCourseDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\Performance.PerformanceBusiness.StatisticDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PerformanceBusiness\PerformanceBusiness.disco" />
+    <None Include="Service References\PerformanceBusiness\configuration91.svcinfo" />
+    <None Include="Service References\PerformanceBusiness\configuration.svcinfo" />
+    <None Include="Service References\PerformanceBusiness\PerformanceBusiness.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PerformanceBusiness\PerformanceBusiness1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PerformanceBusiness\PerformanceBusiness2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PerformanceBusiness\PerformanceBusiness5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PerformanceBusiness\PerformanceBusiness6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Modules\Common\ctrlFindEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Common\ctrlOrganization.ascx" />
+    <Content Include="Modules\Common\ctrlOrganizationPopup.ascx" />
+    <Content Include="Modules\Common\ctrlToolBar.ascx" />
+    <Content Include="Modules\Common\ctrlUpload.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_EmployeesRecommend.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_EmployeePeriod.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlResultRecordHistory.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlMngInfoEvalTarget.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlResultRecord.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_DirectViewKPIEmp.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlMngInfoEvalTargetNewEdit.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlPE_ViewRatingSeniority.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlListClassifi.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlPE_ViewRating.ascx" />
+    <Content Include="Modules\Performance\Dashboard\ctrlPE_ViewRatingOrg.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Classification_HTCH.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Period_HTCH.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Criteria_HTCH.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_CriteriaTitlegroupRank.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlCriteriaTitlegroup.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlCriteriaTitlegroupNewEdit.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_ObjectGroupPeriod.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalMngInfoEvalTargetNewEdit.ascx" />
+    <Content Include="Modules\Portal\ctrlPE_AssessHistory.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalApproveEvalTarget.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalIETDetailHistory.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalIETDetailResult.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalMngIETNewEdit.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalMngInfoEvalTarget.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalViewAssessEmp.ascx" />
+    <Content Include="Modules\Portal\ctrlPE_Assess.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalAssessmentDirect.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_EmployeeAssessmentDTL.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_Organization.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_OrganizationNewEdit.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Classification.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_EmployeeAssessment.ascx" />
+    <Content Include="Modules\Performance\Setting\ctrlPE_CriteriaObjectGroup.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_ObjectGroup.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Period.ascx" />
+    <Content Include="Modules\Performance\List\ctrlPE_Criteria.ascx" />
+    <Content Include="Modules\Portal\ctrlPE_DirectViewRating.ascx" />
+    <Content Include="Modules\Performance\Business\ctrlPE_CBNSViewRating.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalResultRecordHistory.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalResultRecord.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\PerformanceBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\MessageDTO.vb" />
+    <Compile Include="Modules\Performance\Business\ctrlKpiAssessmentResult.ascx.designer.vb">
+      <DependentUpon>ctrlKpiAssessmentResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlKpiAssessmentResult.ascx.vb">
+      <DependentUpon>ctrlKpiAssessmentResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlMngInfoEvalTargetDetail.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlMngInfoEvalTargetDetail.ascx.designer.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_EmployeesRecommend.ascx.designer.vb">
+      <DependentUpon>ctrlPE_EmployeesRecommend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_EmployeesRecommend.ascx.vb">
+      <DependentUpon>ctrlPE_EmployeesRecommend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_EmployeePeriod.ascx.designer.vb">
+      <DependentUpon>ctrlPE_EmployeePeriod.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_EmployeePeriod.ascx.vb">
+      <DependentUpon>ctrlPE_EmployeePeriod.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_Org_Mr_Rr.ascx.designer.vb">
+      <DependentUpon>ctrlPE_Org_Mr_Rr.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_Org_Mr_Rr.ascx.vb">
+      <DependentUpon>ctrlPE_Org_Mr_Rr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlResultRecordHistory.ascx.designer.vb">
+      <DependentUpon>ctrlResultRecordHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlResultRecordHistory.ascx.vb">
+      <DependentUpon>ctrlResultRecordHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlMngInfoEvalTarget.ascx.designer.vb">
+      <DependentUpon>ctrlMngInfoEvalTarget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlMngInfoEvalTarget.ascx.vb">
+      <DependentUpon>ctrlMngInfoEvalTarget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlResultRecord.ascx.designer.vb">
+      <DependentUpon>ctrlResultRecord.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlResultRecord.ascx.vb">
+      <DependentUpon>ctrlResultRecord.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_DirectViewKPIEmp.ascx.designer.vb">
+      <DependentUpon>ctrlPE_DirectViewKPIEmp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_DirectViewKPIEmp.ascx.vb">
+      <DependentUpon>ctrlPE_DirectViewKPIEmp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlMngInfoEvalTargetNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlMngInfoEvalTargetNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlMngInfoEvalTargetNewEdit.ascx.vb">
+      <DependentUpon>ctrlMngInfoEvalTargetNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlDashboardSixCell.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlDashboardSixCell.ascx.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlPE_ViewRatingSeniority.ascx.designer.vb">
+      <DependentUpon>ctrlPE_ViewRatingSeniority.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlPE_ViewRatingSeniority.ascx.vb">
+      <DependentUpon>ctrlPE_ViewRatingSeniority.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlDashboard.ascx.designer.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlDashboard.ascx.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlListClassifi.ascx.designer.vb">
+      <DependentUpon>ctrlListClassifi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlListClassifi.ascx.vb">
+      <DependentUpon>ctrlListClassifi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlPE_ViewRating.ascx.designer.vb">
+      <DependentUpon>ctrlPE_ViewRating.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlPE_ViewRating.ascx.vb">
+      <DependentUpon>ctrlPE_ViewRating.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlPE_ViewRatingOrg.ascx.designer.vb">
+      <DependentUpon>ctrlPE_ViewRatingOrg.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Dashboard\ctrlPE_ViewRatingOrg.ascx.vb">
+      <DependentUpon>ctrlPE_ViewRatingOrg.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Classification_HTCH.ascx.designer.vb">
+      <DependentUpon>ctrlPE_Classification_HTCH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Classification_HTCH.ascx.vb">
+      <DependentUpon>ctrlPE_Classification_HTCH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Period_HTCH.ascx.designer.vb">
+      <DependentUpon>ctrlPE_Period_HTCH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Period_HTCH.ascx.vb">
+      <DependentUpon>ctrlPE_Period_HTCH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Criteria_HTCH.ascx.designer.vb">
+      <DependentUpon>ctrlPE_Criteria_HTCH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Criteria_HTCH.ascx.vb">
+      <DependentUpon>ctrlPE_Criteria_HTCH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\PerformanceRepository.Dashboard.vb" />
+    <Compile Include="Modules\Performance\PerformanceStoreProcedure.vb" />
+    <Compile Include="Modules\Performance\Setting\ctrlPE_CriteriaTitlegroupRankNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlPE_CriteriaTitlegroupRankNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlPE_CriteriaTitlegroupRankNewEdit.ascx.vb">
+      <DependentUpon>ctrlPE_CriteriaTitlegroupRankNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlPE_CriteriaTitlegroupRank.ascx.designer.vb">
+      <DependentUpon>ctrlPE_CriteriaTitlegroupRank.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlPE_CriteriaTitlegroupRank.ascx.vb">
+      <DependentUpon>ctrlPE_CriteriaTitlegroupRank.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlCriteriaTitlegroup.ascx.designer.vb">
+      <DependentUpon>ctrlCriteriaTitlegroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlCriteriaTitlegroup.ascx.vb">
+      <DependentUpon>ctrlCriteriaTitlegroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlCriteriaTitlegroupNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlCriteriaTitlegroupNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlCriteriaTitlegroupNewEdit.ascx.vb">
+      <DependentUpon>ctrlCriteriaTitlegroupNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlPE_ObjectGroupPeriod.ascx.designer.vb">
+      <DependentUpon>ctrlPE_ObjectGroupPeriod.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlPE_ObjectGroupPeriod.ascx.vb">
+      <DependentUpon>ctrlPE_ObjectGroupPeriod.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_PortalHTCHAssessment.ascx.designer.vb">
+      <DependentUpon>ctrlPE_PortalHTCHAssessment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_PortalHTCHAssessment.ascx.vb">
+      <DependentUpon>ctrlPE_PortalHTCHAssessment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_PortalApproveHTCHAssessmentDetail.ascx.designer.vb">
+      <DependentUpon>ctrlPE_PortalApproveHTCHAssessmentDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_PortalApproveHTCHAssessmentDetail.ascx.vb">
+      <DependentUpon>ctrlPE_PortalApproveHTCHAssessmentDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_PortalHTCHAssessmentDetail.ascx.designer.vb">
+      <DependentUpon>ctrlPE_PortalHTCHAssessmentDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_PortalHTCHAssessmentDetail.ascx.vb">
+      <DependentUpon>ctrlPE_PortalHTCHAssessmentDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_PortalHTCHAssessmentResult.ascx.designer.vb">
+      <DependentUpon>ctrlPE_PortalHTCHAssessmentResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_PortalHTCHAssessmentResult.ascx.vb">
+      <DependentUpon>ctrlPE_PortalHTCHAssessmentResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveHTCTAssessment.ascx.designer.vb">
+      <DependentUpon>ctrlPortalApproveHTCTAssessment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveHTCTAssessment.ascx.vb">
+      <DependentUpon>ctrlPortalApproveHTCTAssessment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveKPIAssessment.ascx.designer.vb">
+      <DependentUpon>ctrlPortalApproveKPIAssessment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveKPIAssessment.ascx.vb">
+      <DependentUpon>ctrlPortalApproveKPIAssessment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveKPIAssessmentDetail.ascx.designer.vb">
+      <DependentUpon>ctrlPortalApproveKPIAssessmentDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveKPIAssessmentDetail.ascx.vb">
+      <DependentUpon>ctrlPortalApproveKPIAssessmentDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalMngInfoEvalTargetDetail.ascx.designer.vb">
+      <DependentUpon>ctrlPortalMngInfoEvalTargetDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalMngInfoEvalTargetDetail.ascx.vb">
+      <DependentUpon>ctrlPortalMngInfoEvalTargetDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveKPIAssessmentView.ascx.designer.vb">
+      <DependentUpon>ctrlPortalApproveKPIAssessmentView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveKPIAssessmentView.ascx.vb">
+      <DependentUpon>ctrlPortalApproveKPIAssessmentView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalMngInfoEvalTargetNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlPortalMngInfoEvalTargetNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalMngInfoEvalTargetNewEdit.ascx.vb">
+      <DependentUpon>ctrlPortalMngInfoEvalTargetNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_AssessHistory.ascx.designer.vb">
+      <DependentUpon>ctrlPE_AssessHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_AssessHistory.ascx.vb">
+      <DependentUpon>ctrlPE_AssessHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveEvalTarget.ascx.designer.vb">
+      <DependentUpon>ctrlPortalApproveEvalTarget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalApproveEvalTarget.ascx.vb">
+      <DependentUpon>ctrlPortalApproveEvalTarget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalIETDetailHistory.ascx.designer.vb">
+      <DependentUpon>ctrlPortalIETDetailHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalIETDetailHistory.ascx.vb">
+      <DependentUpon>ctrlPortalIETDetailHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalIETDetailResult.ascx.designer.vb">
+      <DependentUpon>ctrlPortalIETDetailResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalIETDetailResult.ascx.vb">
+      <DependentUpon>ctrlPortalIETDetailResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalMngIETNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlPortalMngIETNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalMngIETNewEdit.ascx.vb">
+      <DependentUpon>ctrlPortalMngIETNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalMngInfoEvalTarget.ascx.designer.vb">
+      <DependentUpon>ctrlPortalMngInfoEvalTarget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalMngInfoEvalTarget.ascx.vb">
+      <DependentUpon>ctrlPortalMngInfoEvalTarget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalViewAssessEmp.ascx.designer.vb">
+      <DependentUpon>ctrlPortalViewAssessEmp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalViewAssessEmp.ascx.vb">
+      <DependentUpon>ctrlPortalViewAssessEmp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_Assess.ascx.designer.vb">
+      <DependentUpon>ctrlPE_Assess.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_Assess.ascx.vb">
+      <DependentUpon>ctrlPE_Assess.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalAssessmentDirect.ascx.designer.vb">
+      <DependentUpon>ctrlPortalAssessmentDirect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalAssessmentDirect.ascx.vb">
+      <DependentUpon>ctrlPortalAssessmentDirect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_EmployeeAssessmentDTL.ascx.designer.vb">
+      <DependentUpon>ctrlPE_EmployeeAssessmentDTL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_EmployeeAssessmentDTL.ascx.vb">
+      <DependentUpon>ctrlPE_EmployeeAssessmentDTL.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_Organization.ascx.designer.vb">
+      <DependentUpon>ctrlPE_Organization.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_Organization.ascx.vb">
+      <DependentUpon>ctrlPE_Organization.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_OrganizationNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlPE_OrganizationNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_OrganizationNewEdit.ascx.vb">
+      <DependentUpon>ctrlPE_OrganizationNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Classification.ascx.designer.vb">
+      <DependentUpon>ctrlPE_Classification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Classification.ascx.vb">
+      <DependentUpon>ctrlPE_Classification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlPE_EmployeeAssessment.ascx.designer.vb">
+      <DependentUpon>ctrlPE_EmployeeAssessment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlPE_EmployeeAssessment.ascx.vb">
+      <DependentUpon>ctrlPE_EmployeeAssessment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlPE_CriteriaObjectGroup.ascx.designer.vb">
+      <DependentUpon>ctrlPE_CriteriaObjectGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Setting\ctrlPE_CriteriaObjectGroup.ascx.vb">
+      <DependentUpon>ctrlPE_CriteriaObjectGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_ObjectGroup.ascx.designer.vb">
+      <DependentUpon>ctrlPE_ObjectGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_ObjectGroup.ascx.vb">
+      <DependentUpon>ctrlPE_ObjectGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Period.ascx.designer.vb">
+      <DependentUpon>ctrlPE_Period.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Period.ascx.vb">
+      <DependentUpon>ctrlPE_Period.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Criteria.ascx.designer.vb">
+      <DependentUpon>ctrlPE_Criteria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\List\ctrlPE_Criteria.ascx.vb">
+      <DependentUpon>ctrlPE_Criteria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\PerformanceRepository.Setting.vb" />
+    <Compile Include="Modules\Performance\PerformanceRepository.Business.vb" />
+    <Compile Include="Modules\Performance\PerformanceRepository.List.vb" />
+    <Compile Include="Modules\Performance\PerformanceRepository.vb" />
+    <Compile Include="Modules\Performance\PerformanceRepositoryBase.vb" />
+    <Compile Include="Modules\Performance\PerformanceRepository.Report.vb" />
+    <Compile Include="Modules\Portal\ctrlPE_DirectViewRating.ascx.designer.vb">
+      <DependentUpon>ctrlPE_DirectViewRating.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPE_DirectViewRating.ascx.vb">
+      <DependentUpon>ctrlPE_DirectViewRating.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_CBNSViewRating.ascx.designer.vb">
+      <DependentUpon>ctrlPE_CBNSViewRating.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Performance\Business\ctrlPE_CBNSViewRating.ascx.vb">
+      <DependentUpon>ctrlPE_CBNSViewRating.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalResultRecordHistory.ascx.designer.vb">
+      <DependentUpon>ctrlPortalResultRecordHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalResultRecordHistory.ascx.vb">
+      <DependentUpon>ctrlPortalResultRecordHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalResultRecord.ascx.designer.vb">
+      <DependentUpon>ctrlPortalResultRecord.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalResultRecord.ascx.vb">
+      <DependentUpon>ctrlPortalResultRecord.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\PerformanceBusiness\Reference.vb">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\PerformanceBusiness\PerformanceBusiness.wsdl" />
+    <None Include="Service References\PerformanceBusiness\PerformanceBusiness3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PerformanceBusiness\PerformanceBusiness4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Modules\Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\PerformanceBusiness\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vbproj">
+      <Project>{4B2EF214-7880-45F2-BB79-B394E552B4BE}</Project>
+      <Name>Common %28Common\Common%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.UI.vbproj">
+      <Project>{514CC57F-03AA-4D18-9BF2-3F7B66F6AD9B}</Project>
+      <Name>Framework.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFrameworkPublic\HistaffFrameworkPublic.vbproj">
+      <Project>{5D0CFFD8-3EF0-4584-818F-3F165BD8DE0C}</Project>
+      <Name>HistaffFrameworkPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffWebAppResources\HistaffWebAppResources.vbproj">
+      <Project>{2F00C7ED-1915-43B8-A831-A8FC391F7455}</Project>
+      <Name>HistaffWebAppResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Profile\Profile.vbproj">
+      <Project>{B8148AB7-8752-487B-ABA0-DDA56B917E35}</Project>
+      <Name>Profile %28Profile\Profile%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42009</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

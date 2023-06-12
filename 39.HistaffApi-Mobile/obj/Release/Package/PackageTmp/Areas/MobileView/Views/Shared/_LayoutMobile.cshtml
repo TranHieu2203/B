@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>@ViewData["Title"] - HiStaff mobile view</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="~/MobileStyle/css/adminlte.min.css" />
+    <link rel="stylesheet" href="~/MobileStyle/css/select2/select2.min.css" />
+    <link rel="stylesheet" href="~/MobileStyle/css/main/main.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MobileStyle/css/main/custom.css" asp-append-version="true" />
+</head>
+<body class="sidebar-mini sidebar-collapse">
+    <div class="wrapper">
+        <!-- Content Wrapper. Contains page content -->
+        <div class="">
+            <!-- Main content -->
+            <section class="content">
+                @RenderBody()
+            </section>
+            <div id="loading"></div>
+        </div>
+    </div>
+
+    <script src="~/MobileStyle/js/kendo-ui/jquery-1.12.4.min.js"></script>
+    <script src="~/MobileStyle/js/kendo-ui/kendo.all.min.js"></script>
+    <script src="~/MobileStyle/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/MobileStyle/js/select2/select2.min.js"></script>
+    <script>
+        function PostAjax(options, isShowLoading = false) {
+            if (isShowLoading) $("#loading").show();
+            if (typeof options.contentType === 'undefined') options.contentType = false;
+            $.ajax({
+                url: options.url,
+                type: 'POST',
+                data: options.data,
+                contentType: options.contentType,
+                dataType: options.dataType,
+                cache: false,
+                processData: false,
+                async: (options.async || true),
+                success: options.success,
+                complete: function () {
+                    setTimeout(function () {
+                        $("#loading").hide();
+                    }, 100);
+                },
+                error: function (xhr) {
+                    alert(JSON.stringify(xhr));
+                    if (xhr.status == 403 || xhr.status == 401) window.location.href = "/login";
+                    if (typeof options.error !== 'undefined') {
+                        try {
+                            options.error(xhr);
+                        } catch (e) {
+
+                        }
+                    }
+                }
+            });
+        }
+        function formatNumber(n) {
+            if (Number(n) !== n) {
+                return n;
+            }
+            return n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
+        }
+
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

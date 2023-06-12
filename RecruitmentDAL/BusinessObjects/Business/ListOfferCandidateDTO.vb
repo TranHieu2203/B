@@ -1,0 +1,32 @@
+﻿Public Class ListOfferCandidateDTO
+    Public Property ID As Decimal
+    Public Property CREATED_DATE As Date?
+    Public Property CANDIDATE_ID As Decimal?
+    Public Property CANDIDATE_CODE As String
+    Public Property CANDIDATE_NAME As String
+    Public Property OFFER_ID_STR As String
+    Public Property OFFER_ID_DEC As Decimal?
+    Public Property OFFER_NAME As String
+    Public Property STATUS_ID_STR As String
+    Public Property STATUS_ID_DEC As Decimal?
+    Public Property STATUS_NAME As String
+    Public Property CODE_RC As String
+    Public Property REQUIRER_ID As Decimal?
+    Public Property REQUIRER_NAME As String
+    Public Property SEND_DATE As Date?
+    Public Property SEND_FROM As Date?
+    Public Property SEND_TO As Date?
+    Public Property EXPECTED_JOIN_DATE As Date?
+    Public Property EXPECTED_FROM As Date?
+    Public Property EXPECTED_TO As Date?
+    Public Property ORG_ID As Decimal?
+    Public Property ORG_NAME As String
+    Public Property ORG_DESC As String
+    Public Property TITLE_ID As Decimal?
+    Public Property TITLE_NAME As String
+    Public Property RECRUIT_REASON_ID As Decimal?
+    Public Property RECRUIT_REASON_NAME As String
+    Public Property PERSON_PT_RC_ID As Decimal?
+    Public Property PERSON_PT_RC_NAME As String
+    Public Property RC_PROGRAM_ID As Decimal?
+End Class

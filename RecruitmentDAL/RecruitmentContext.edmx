@@ -1,0 +1,2507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RecruitmentModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="RecruitmentModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="RecruitmentModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="RecruitmentContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="RC_COST_CENTER" EntityType="RecruitmentModel.RC_COST_CENTER" />
+          <EntitySet Name="SE_CHOSEN_ORG" EntityType="RecruitmentModel.SE_CHOSEN_ORG" />
+          <EntitySet Name="HU_FAMILY" EntityType="RecruitmentModel.HU_FAMILY" />
+          <EntitySet Name="HU_TERMINATE" EntityType="RecruitmentModel.HU_TERMINATE" />
+          <EntitySet Name="RC_EXAMS" EntityType="RecruitmentModel.RC_EXAMS" />
+          <EntitySet Name="RC_EXAMS_DTL" EntityType="RecruitmentModel.RC_EXAMS_DTL" />
+          <EntitySet Name="RC_PLAN_REG_EMP" EntityType="RecruitmentModel.RC_PLAN_REG_EMP" />
+          <EntitySet Name="RC_PROGRAM_CHARACTER" EntityType="RecruitmentModel.RC_PROGRAM_CHARACTER" />
+          <EntitySet Name="RC_PROGRAM_EMP" EntityType="RecruitmentModel.RC_PROGRAM_EMP" />
+          <EntitySet Name="RC_PROGRAM_EXAMS" EntityType="RecruitmentModel.RC_PROGRAM_EXAMS" />
+          <EntitySet Name="RC_PROGRAM_SCOPE" EntityType="RecruitmentModel.RC_PROGRAM_SCOPE" />
+          <EntitySet Name="RC_PROGRAM_SOFT_SKILL" EntityType="RecruitmentModel.RC_PROGRAM_SOFT_SKILL" />
+          <EntitySet Name="RC_REQUEST" EntityType="RecruitmentModel.RC_REQUEST" />
+          <EntitySet Name="RC_REQUEST_EMP" EntityType="RecruitmentModel.RC_REQUEST_EMP" />
+          <EntitySet Name="OT_OTHER_LIST" EntityType="RecruitmentModel.OT_OTHER_LIST" />
+          <EntitySet Name="OT_OTHER_LIST_GROUP" EntityType="RecruitmentModel.OT_OTHER_LIST_GROUP" />
+          <EntitySet Name="OT_OTHER_LIST_TYPE" EntityType="RecruitmentModel.OT_OTHER_LIST_TYPE" />
+          <EntitySet Name="RC_PLAN_REG" EntityType="RecruitmentModel.RC_PLAN_REG" />
+          <EntitySet Name="RC_CANDIDATE" EntityType="RecruitmentModel.RC_CANDIDATE" />
+          <EntitySet Name="RC_CANDIDATE_EDUCATION" EntityType="RecruitmentModel.RC_CANDIDATE_EDUCATION" />
+          <EntitySet Name="RC_CANDIDATE_HISTORY" EntityType="RecruitmentModel.RC_CANDIDATE_HISTORY" />
+          <EntitySet Name="RC_CANDIDATE_OTHER_INFO" EntityType="RecruitmentModel.RC_CANDIDATE_OTHER_INFO" />
+          <EntitySet Name="RC_CANDIDATE_CV" EntityType="RecruitmentModel.RC_CANDIDATE_CV" />
+          <EntitySet Name="RC_PROGRAM_SCHEDULE" EntityType="RecruitmentModel.RC_PROGRAM_SCHEDULE" />
+          <EntitySet Name="RC_PROGRAM_SCHEDULE_CAN" EntityType="RecruitmentModel.RC_PROGRAM_SCHEDULE_CAN" />
+          <EntitySet Name="RC_PROGRAM_SCHEDULE_USHER" EntityType="RecruitmentModel.RC_PROGRAM_SCHEDULE_USHER" />
+          <EntitySet Name="RC_CANDIDATE_FAMILY" EntityType="RecruitmentModel.RC_CANDIDATE_FAMILY" />
+          <EntitySet Name="RC_CANDIDATE_TRAINSINGER" EntityType="RecruitmentModel.RC_CANDIDATE_TRAINSINGER" />
+          <EntitySet Name="RC_CANDIDATE_BEFOREWT" EntityType="RecruitmentModel.RC_CANDIDATE_BEFOREWT" />
+          <EntitySet Name="RC_COST" EntityType="RecruitmentModel.RC_COST" />
+          <EntitySet Name="RC_COST_FORM" EntityType="RecruitmentModel.RC_COST_FORM" />
+          <EntitySet Name="HU_EMPLOYEE_BANK" EntityType="RecruitmentModel.HU_EMPLOYEE_BANK" />
+          <EntitySet Name="HU_EMPLOYEE_BEFOREWT" EntityType="RecruitmentModel.HU_EMPLOYEE_BEFOREWT" />
+          <EntitySet Name="HU_EMPLOYEE_EDUCATION" EntityType="RecruitmentModel.HU_EMPLOYEE_EDUCATION" />
+          <EntitySet Name="HU_EMPLOYEE_HEALTH" EntityType="RecruitmentModel.HU_EMPLOYEE_HEALTH" />
+          <EntitySet Name="HU_EMPLOYEE_OTHER_INFO" EntityType="RecruitmentModel.HU_EMPLOYEE_OTHER_INFO" />
+          <EntitySet Name="HU_EMPLOYEE_TRAIN" EntityType="RecruitmentModel.HU_EMPLOYEE_TRAIN" />
+          <EntitySet Name="HU_EMPLOYEE_TRAINSINGER" EntityType="RecruitmentModel.HU_EMPLOYEE_TRAINSINGER" />
+          <EntitySet Name="HU_EMPLOYEE" EntityType="RecruitmentModel.HU_EMPLOYEE" />
+          <EntitySet Name="HU_EMPLOYEE_CV" EntityType="RecruitmentModel.HU_EMPLOYEE_CV" />
+          <EntitySet Name="HU_EMPLOYEE_EDUCATION1" EntityType="RecruitmentModel.HU_EMPLOYEE_EDUCATION1" />
+          <EntitySet Name="HU_EMPLOYEE_HEALTH1" EntityType="RecruitmentModel.HU_EMPLOYEE_HEALTH1" />
+          <EntitySet Name="HU_EMPLOYEE_OTHER_INFO1" EntityType="RecruitmentModel.HU_EMPLOYEE_OTHER_INFO1" />
+          <EntitySet Name="HU_ORG_TITLE" EntityType="RecruitmentModel.HU_ORG_TITLE" />
+          <EntitySet Name="HU_ORGANIZATION" EntityType="RecruitmentModel.HU_ORGANIZATION" />
+          <EntitySet Name="HU_TITLE" EntityType="RecruitmentModel.HU_TITLE" />
+          <AssociationSet Name="FK_FE_HEH" Association="RecruitmentModel.FK_FE_HEH">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE_HEALTH1" EntitySet="HU_EMPLOYEE_HEALTH1" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HEC" Association="RecruitmentModel.FK_HE_HEC">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE_CV" EntitySet="HU_EMPLOYEE_CV" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HEE" Association="RecruitmentModel.FK_HE_HEE">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE_EDUCATION1" EntitySet="HU_EMPLOYEE_EDUCATION1" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HEO" Association="RecruitmentModel.FK_HE_HEO">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE_OTHER_INFO1" EntitySet="HU_EMPLOYEE_OTHER_INFO1" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HE_HT" Association="RecruitmentModel.FK_HE_HT">
+            <End Role="HU_TITLE" EntitySet="HU_TITLE" />
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HU_ORG_HU_EMP" Association="RecruitmentModel.FK_HU_ORG_HU_EMP">
+            <End Role="HU_ORGANIZATION" EntitySet="HU_ORGANIZATION" />
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HUEMD_HUEM" Association="RecruitmentModel.FK_HUEMD_HUEM">
+            <End Role="HU_EMPLOYEE" EntitySet="HU_EMPLOYEE" />
+            <End Role="HU_EMPLOYEE1" EntitySet="HU_EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HUOG_HUOT" Association="RecruitmentModel.FK_HUOG_HUOT">
+            <End Role="HU_ORGANIZATION" EntitySet="HU_ORGANIZATION" />
+            <End Role="HU_ORG_TITLE" EntitySet="HU_ORG_TITLE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HUTL_HUOT" Association="RecruitmentModel.FK_HUTL_HUOT">
+            <End Role="HU_TITLE" EntitySet="HU_TITLE" />
+            <End Role="HU_ORG_TITLE" EntitySet="HU_ORG_TITLE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HU_ORG_HU_ORG" Association="RecruitmentModel.FK_HU_ORG_HU_ORG">
+            <End Role="HU_ORGANIZATION" EntitySet="HU_ORGANIZATION" />
+            <End Role="HU_ORGANIZATION1" EntitySet="HU_ORGANIZATION" />
+          </AssociationSet>
+          <EntitySet Name="HU_BANK" EntityType="RecruitmentModel.HU_BANK" />
+          <EntitySet Name="HU_BANK_BRANCH" EntityType="RecruitmentModel.HU_BANK_BRANCH" />
+          <EntitySet Name="HU_DISTRICT" EntityType="RecruitmentModel.HU_DISTRICT" />
+          <EntitySet Name="HU_NATION" EntityType="RecruitmentModel.HU_NATION" />
+          <EntitySet Name="HU_PROVINCE" EntityType="RecruitmentModel.HU_PROVINCE" />
+          <AssociationSet Name="FK_BANKBANK_BRANCH" Association="RecruitmentModel.FK_BANKBANK_BRANCH">
+            <End Role="HU_BANK" EntitySet="HU_BANK" />
+            <End Role="HU_BANK_BRANCH" EntitySet="HU_BANK_BRANCH" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HU_PRO_HU_DIS" Association="RecruitmentModel.FK_HU_PRO_HU_DIS">
+            <End Role="HU_PROVINCE" EntitySet="HU_PROVINCE" />
+            <End Role="HU_DISTRICT" EntitySet="HU_DISTRICT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HU_NAT_HU_PRO" Association="RecruitmentModel.FK_HU_NAT_HU_PRO">
+            <End Role="HU_NATION" EntitySet="HU_NATION" />
+            <End Role="HU_PROVINCE" EntitySet="HU_PROVINCE" />
+          </AssociationSet>
+          <EntitySet Name="RC_STAGE" EntityType="RecruitmentModel.RC_STAGE" />
+          <EntitySet Name="RC_COSTALLOCATE" EntityType="RecruitmentModel.RC_COSTALLOCATE" />
+          <EntitySet Name="RC_COST_COSTALLOCATE" EntityType="RecruitmentModel.RC_COST_COSTALLOCATE" />
+          <EntitySet Name="RC_MANNING_ORG" EntityType="RecruitmentModel.RC_MANNING_ORG" />
+          <EntitySet Name="RC_MANNING_TITLE" EntityType="RecruitmentModel.RC_MANNING_TITLE" />
+          <EntitySet Name="RC_CANDIDATE_EXPECT" EntityType="RecruitmentModel.RC_CANDIDATE_EXPECT" />
+          <EntitySet Name="RC_CANDIDATE_HEALTH" EntityType="RecruitmentModel.RC_CANDIDATE_HEALTH" />
+          <EntitySet Name="RC_CANDIDATE_REFERENCE" EntityType="RecruitmentModel.RC_CANDIDATE_REFERENCE" />
+          <EntitySet Name="RC_PROGRAM" EntityType="RecruitmentModel.RC_PROGRAM" />
+          <EntitySet Name="SE_USER" EntityType="RecruitmentModel.SE_USER" />
+          <EntitySet Name="SE_REPORT" EntityType="RecruitmentModel.SE_REPORT" />
+          <EntitySet Name="SE_USER_REPORT" EntityType="RecruitmentModel.SE_USER_REPORT" />
+          <EntitySet Name="HU_WARD" EntityType="RecruitmentModel.HU_WARD" />
+          <EntitySet Name="HU_ORGANIZATION_V" EntityType="RecruitmentModel.HU_ORGANIZATION_V" />
+          <EntitySet Name="RC_CANDIDATE_TRAINNING" EntityType="RecruitmentModel.RC_CANDIDATE_TRAINNING" />
+          <EntitySet Name="RC_HR_PLANING_DETAIL" EntityType="RecruitmentModel.RC_HR_PLANING_DETAIL" />
+          <EntitySet Name="RC_HR_YEAR_PLANING" EntityType="RecruitmentModel.RC_HR_YEAR_PLANING" />
+          <EntitySet Name="RC_PROGRAM_CANDIDATE" EntityType="RecruitmentModel.RC_PROGRAM_CANDIDATE" />
+          <EntitySet Name="PA_SALARY_GROUP" EntityType="RecruitmentModel.PA_SALARY_GROUP" />
+          <EntitySet Name="PA_SALARY_LEVEL" EntityType="RecruitmentModel.PA_SALARY_LEVEL" />
+          <EntitySet Name="PA_SALARY_RANK" EntityType="RecruitmentModel.PA_SALARY_RANK" />
+          <EntitySet Name="PA_SALARY_TYPE" EntityType="RecruitmentModel.PA_SALARY_TYPE" />
+          <EntitySet Name="RC_CONTRACT_CANDIDATE" EntityType="RecruitmentModel.RC_CONTRACT_CANDIDATE" />
+          <AssociationSet Name="FK_PSG_PSL" Association="RecruitmentModel.FK_PSG_PSL">
+            <End Role="PA_SALARY_GROUP" EntitySet="PA_SALARY_GROUP" />
+            <End Role="PA_SALARY_LEVEL" EntitySet="PA_SALARY_LEVEL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PSL_PSR" Association="RecruitmentModel.FK_PSL_PSR">
+            <End Role="PA_SALARY_LEVEL" EntitySet="PA_SALARY_LEVEL" />
+            <End Role="PA_SALARY_RANK" EntitySet="PA_SALARY_RANK" />
+          </AssociationSet>
+          <EntitySet Name="RC_TRANSFERCAN_TOEMPLOYEE" EntityType="RecruitmentModel.RC_TRANSFERCAN_TOEMPLOYEE" />
+          <EntitySet Name="PROCESS_APPROVED_STATUS" EntityType="RecruitmentModel.PROCESS_APPROVED_STATUS" />
+          <EntitySet Name="RC_ALLOWANCE_CANDIDATE" EntityType="RecruitmentModel.RC_ALLOWANCE_CANDIDATE" />
+          <EntitySet Name="HU_CONTRACT_TYPE" EntityType="RecruitmentModel.HU_CONTRACT_TYPE" />
+          <EntitySet Name="RC_ALLOWANCE_CANDIDATE1" EntityType="RecruitmentModel.RC_ALLOWANCE_CANDIDATE1" />
+          <EntitySet Name="RC_SALARY_CANDIDATE" EntityType="RecruitmentModel.RC_SALARY_CANDIDATE" />
+          <EntitySet Name="HU_ALLOWANCE_LIST" EntityType="RecruitmentModel.HU_ALLOWANCE_LIST" />
+          <EntitySet Name="RC_USER_TITLE_PERMISION" EntityType="RecruitmentModel.RC_USER_TITLE_PERMISION" />
+          </EntityContainer>
+        <EntityType Name="RC_COST_CENTER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NAME" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" Nullable="false" DefaultValue="A" MaxLength="1" FixedLength="false" />
+          <Property Type="String" Name="CODE" Nullable="false" MaxLength="255" FixedLength="false" />
+          <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" />
+          <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" Nullable="false" />
+          <Property Type="String" Name="MODIFIED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SE_CHOSEN_ORG">
+          <Key>
+            <PropertyRef Name="ORG_ID" />
+            <PropertyRef Name="USERNAME" />
+          </Key>
+          <Property Type="Decimal" Name="ORG_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="USERNAME" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HU_FAMILY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="ID_NO" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FULLNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="RELATION_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="JOB" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPANY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_DIED" />
+          <Property Type="Int16" Name="IS_MLG" />
+          <Property Type="String" Name="ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="BIRTH_DAY" />
+          <Property Type="Int16" Name="BIRTH_MONTH" />
+          <Property Type="Int16" Name="BIRTH_YEAR" />
+          <Property Type="DateTime" Name="DIED_DATE" />
+          <Property Type="String" Name="REMARK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PIT_CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="PIT_DATE" />
+          <Property Type="DateTime" Name="ID_DATE" />
+          <Property Type="Decimal" Name="ID_PLACE" Precision="38" Scale="0" />
+          <Property Type="String" Name="PER_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BIRTH_NO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_BOOK" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_NAT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_PRO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_DIS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_NAT2" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="HU_TERMINATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="DECISION_ID" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_TERSINGLE" />
+          <Property Type="Int16" Name="IS_NOHIRE" />
+          <Property Type="DateTime" Name="SEND_DATE" />
+          <Property Type="Decimal" Name="TER_REASON_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="TER_REASON_DETAIL" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LAST_DATE" />
+          <Property Type="Decimal" Name="STATUS_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EMP_SENIORITY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="LAST_WORKING_ID" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="BHYT_REVOCATION" />
+          <Property Type="Decimal" Name="BHYT_MONEY" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="EMPCARD_REVOCATION" />
+          <Property Type="Decimal" Name="DECISION_TYPE" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_REEMPLOY" />
+          <Property Type="Int16" Name="MONEY" />
+          <Property Type="String" Name="FILE_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK2" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_PROPERTIES_RETURN" />
+          <Property Type="Int32" Name="YEARFORALLOW" />
+          <Property Type="Decimal" Name="SALARYMEDIUM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONEYALLOW" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="RC_EXAMS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="RC_EXAMS_DTL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_EXAMS_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="POINT_LADDER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="POINT_PASS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EXAMS_ORDER" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_PV" />
+          <Property Type="Int32" Name="COEFFICIENT" />
+          <Property Type="String" Name="NOTE" />
+        </EntityType>
+        <EntityType Name="RC_PLAN_REG_EMP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PLAN_REG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM_CHARACTER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CHARACTER_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM_EMP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM_EXAMS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="POINT_LADDER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="POINT_PASS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EXAMS_ORDER" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_PV" />
+          <Property Type="Decimal" Name="COEFFICIENT" />
+          <Property Type="String" Name="REMARK" Unicode="true" MaxLength="2000" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM_SCOPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RECRUIT_SCOPE_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM_SOFT_SKILL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SOFT_SKILL_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="RC_REQUEST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_IN_PLAN" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="JOBGRADE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTRACT_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RECRUIT_REASON_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="RECRUIT_REASON" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="LEARNING_LEVEL_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="AGE_FROM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="AGE_TO" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="SEND_DATE" />
+          <Property Type="DateTime" Name="EXPECTED_JOIN_DATE" />
+          <Property Type="Decimal" Name="EXPERIENCE_NUMBER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MALE_NUMBER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="FEMALE_NUMBER" Precision="38" Scale="0" />
+          <Property Type="String" Name="DESCRIPTION" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REQUEST_EXPERIENCE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REQUEST_OTHER" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="STATUS_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK_REJECT" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGELEVEL" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="LANGUAGESCORES" />
+          <Property Type="String" Name="SPECIALSKILLS" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="QUALIFICATION" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAINTASK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DESCRIPTIONATTACHFILE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_LEVEL" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="RC_PLAN_ID" />
+          <Property Type="Decimal" Name="RC_RECRUIT_PROPERTY" Nullable="true" />
+          <Property Type="Decimal" Name="IS_OVER_LIMIT" Nullable="true" />
+          <Property Type="Decimal" Name="IS_REQUEST_COMPUTER" Nullable="true" />
+          <Property Type="String" Name="FOREIGN_ABILITY" />
+          <Property Type="String" Name="COMPUTER_APP_LEVEL" />
+          <Property Type="Decimal" Name="GENDER_PRIORITY" Nullable="true" />
+          <Property Type="String" Name="UPLOAD_FILE" />
+          <Property Type="Decimal" Name="RECRUIT_NUMBER" Nullable="true" />
+          <Property Type="String" Name="FILE_NAME" MaxLength="1023" />
+          <Property Type="Decimal" Name="LOCATION_ID" />
+          <Property Type="String" Name="CODE_RC" />
+          <Property Type="String" Name="NAME_RC" />
+          <Property Type="Decimal" Name="REQUIRER" />
+          <Property Type="String" Name="RC_GRPOS" />
+          <Property Type="Decimal" Name="WORKING_PLACE_ID" />
+          <Property Type="Decimal" Name="SAL_OFFER" />
+          <Property Type="Decimal" Name="PERSON_PT_RC" />
+          <Property Type="Decimal" Name="IS_APPROVED" />
+          <Property Type="String" Name="OTHER_QUALIFICATION" />
+          <Property Type="Decimal" Name="IS_CLOCK" />
+          <Property Type="Decimal" Name="IS_PORTAL" />
+          <Property Type="Decimal" Name="IS_CONFIRM" />
+          <Property Type="String" Name="REMARK_CANCEL" />
+        </EntityType>
+        <EntityType Name="RC_REQUEST_EMP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_REQUEST_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="OT_OTHER_LIST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ATTRIBUTE1" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ATTRIBUTE2" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ATTRIBUTE3" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ATTRIBUTE4" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TYPE_CODE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ORDERBYID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="OT_OTHER_LIST_GROUP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="OT_OTHER_LIST_TYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="GROUP_ID" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_SYSTEM" />
+          <Property Type="String" Name="TABLE_RELATION" MaxLength="2000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="RC_PLAN_REG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="SEND_DATE" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="JOBGRADE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RECRUIT_NUMBER" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EXPECTED_JOIN_DATE" />
+          <Property Type="Decimal" Name="RECRUIT_REASON_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="STATUS_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK_REJECT" />
+          <Property Type="String" Name="EDUCATIONLEVEL" />
+          <Property Type="Decimal" Name="AGESFROM" />
+          <Property Type="Decimal" Name="AGESTO" />
+          <Property Type="String" Name="LANGUAGE" />
+          <Property Type="String" Name="LANGUAGELEVEL" />
+          <Property Type="Decimal" Name="LANGUAGESCORES" />
+          <Property Type="String" Name="SPECIALSKILLS" />
+          <Property Type="String" Name="MAINTASK" />
+          <Property Type="String" Name="QUALIFICATION" />
+          <Property Type="String" Name="QUALIFICATIONREQUEST" />
+          <Property Type="String" Name="COMPUTER_LEVEL" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CANDIDATE_CODE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRST_NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LAST_NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FULLNAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="JOIN_DATE" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="String" Name="TITLE_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="FILE_SIZE" Precision="38" Scale="0" />
+          <Property Type="String" Name="FILE_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WORK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_PONTENTIAL" />
+          <Property Type="Int16" Name="IS_BLACKLIST" />
+          <Property Type="Int16" Name="IS_REHIRE" />
+          <Property Type="String" Name="STATUS_ID" />
+          <Property Type="String" Name="EMPLOYEE_CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CARE_TITLE_NAME" MaxLength="225" />
+          <Property Type="String" Name="RECRUIMENT_WEBSITE" MaxLength="225" />
+          <Property Type="Decimal" Name="RC_SOURCE_REC_ID" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_EDUCATION">
+          <Key>
+            <PropertyRef Name="CANDIDATE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="CANDIDATE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="ACADEMY" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="HE_DAO_TAO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HIGHEST_EDU" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HIGHEST_LEVEL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TRAIN_FORM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="GRADUATE_YEAR" Precision="38" Scale="0" />
+          <Property Type="String" Name="MARK_EDU" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="POLOTOCA_THEORY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STATE_MNG" Precision="38" Scale="0" />
+          <Property Type="String" Name="ADD_INFO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SCHOOL_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LEARNING_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIELD" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SCHOOL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAJOR" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DEGREE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="GPA" Precision="38" Scale="10" />
+          <Property Type="String" Name="IT_CERTIFICATE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_MARK" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_CERTIFICATE1" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_LEVEL1" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_MARK1" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_CERTIFICATE2" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_LEVEL2" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_MARK2" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_MARK" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH1" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_LEVEL1" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_MARK1" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH2" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_LEVEL2" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_MARK2" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DATE_START" />
+          <Property Type="DateTime" Name="DATE_END" />
+          <Property Type="String" Name="ENGLISH_SKILL" />
+          <Property Type="Decimal" Name="CERTIFICATE_ID" />
+          <Property Type="Decimal" Name="LANGUAGE_ID" />
+          <Property Type="Decimal" Name="YEAR_GRADUATE" />
+          <Property Type="String" Name="RATE" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_HISTORY">
+          <Key>
+            <PropertyRef Name="CANDIDATE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="CANDIDATE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" />
+          <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" Nullable="false" />
+          <Property Type="String" Name="MODIFIED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_OLD_REGIME" />
+          <Property Type="DateTime" Name="OLD_REGIME_START" />
+          <Property Type="DateTime" Name="OLD_REGIME_END" />
+          <Property Type="Decimal" Name="OLD_REGIME_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_FOREIGN_RELATION" />
+          <Property Type="String" Name="FOREIGN_WORK" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FOREIGN_NAME" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FOREIGN_OFFICE" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FOREIGN_FAMILY" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ECONOMY" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="OTHER_ISSUE" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_OTHER_INFO">
+          <Key>
+            <PropertyRef Name="CANDIDATE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="CANDIDATE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NGAYVAOCONGDOAN" />
+          <Property Type="String" Name="NOIVAOCONGDOAN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CONGDOANPHI" Precision="38" Scale="0" />
+          <Property Type="String" Name="ACCOUNT_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ACCOUNT_NUMBER" Precision="38" Scale="0" />
+          <Property Type="String" Name="BANK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BANK_BRANCH" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_PAYMENT_VIA_BANK" />
+          <Property Type="DateTime" Name="ACCOUNT_EFFECT_DATE" />
+          <Property Type="Int16" Name="DANG_PHI" Nullable="true" />
+          <Property Type="Decimal" Name="CHUC_VU_DANG" Nullable="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Decimal" Name="CHUC_VU_DOAN" Nullable="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="CAREER" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_DOANVIEN" Nullable="true" />
+          <Property Type="Int16" Name="IS_DANGVIEN" Nullable="true" />
+          <Property Type="Decimal" Name="DANG_KIEMNHIEM" Nullable="true" />
+          <Property Type="String" Name="CAPUY_HIENTAI" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="CAPUY_KIEMNHIEM" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Int16" Name="IS_CONGDOANPHI" Nullable="true" />
+          <Property Type="DateTime" Name="CDP_NGAYVAO" Nullable="true" />
+          <Property Type="String" Name="CDP_NOIVAO" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Int16" Name="IS_CCB" Nullable="true" />
+          <Property Type="DateTime" Name="CCB_NGAYVAO" Nullable="true" />
+          <Property Type="Decimal" Name="CCB_CHUCVU" Nullable="true" />
+          <Property Type="String" Name="CCB_NOIVAO" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="DateTime" Name="CCB_NGAYNHAPNGU" Nullable="true" />
+          <Property Type="DateTime" Name="CCB_NGAYXUATNGU" Nullable="true" />
+          <Property Type="String" Name="CCB_QUANHAM" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="TPGD" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="DANHHIEU" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="SOTRUONGCONGTAC" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Decimal" Name="LYLUANCHINHTRI" Nullable="true" />
+          <Property Type="String" Name="CONGTAC_LAUNHAT" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Decimal" Name="QUANLYNHANUOC" Nullable="true" />
+          <Property Type="Decimal" Name="THUONGBINH" Nullable="true" />
+          <Property Type="Decimal" Name="GDCS" Nullable="true" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_CV">
+          <Key>
+            <PropertyRef Name="CANDIDATE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="CANDIDATE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="BIRTH_DATE" />
+          <Property Type="String" Name="GENDER" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ID_NO" />
+          <Property Type="DateTime" Name="ID_DATE" />
+          <Property Type="String" Name="ID_PLACE" />
+          <Property Type="String" Name="NAV_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="NAV_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="String" Name="BIRTH_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BIRTH_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="String" Name="NATIVE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RELIGION" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PER_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="PER_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="String" Name="CONTACT_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CONTACT_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="String" Name="MARITAL_STATUS" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MOBILE_PHONE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WORK_EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PIT_CODE" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BHXH_NO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HOSPITAL_ADDRESS" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="WORK_FORTE" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="IMAGE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="NATIONALITY_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="INSURANCE_DATE" />
+          <Property Type="String" Name="PASSPORT_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="PASSPORT_DATE" />
+          <Property Type="String" Name="PASSPORT_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BIRTH_NATION" Precision="38" Scale="0" />
+          <Property Type="String" Name="PERTAXCODE" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EDUCATION_MAJORS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="EDUCATION_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTACT_NATION" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="PER_NATION" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NAV_NATION" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="PER_DISTRICT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTACT_DISTRICT" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="ID_DATE_EXPIRATION" />
+          <Property Type="Decimal" Name="IS_RESIDENT" />
+          <Property Type="String" Name="CONTACT_ADDRESS_TEMP" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CONTACT_NATION_TEMP" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTACT_PROVINCE_TEMP" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTACT_DISTRICT_TEMP" Precision="38" Scale="0" />
+          <Property Type="String" Name="CONTACT_MOBILE" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CONTACT_PHONE" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PER_EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="PER_TAX_DATE" />
+          <Property Type="String" Name="PER_TAX_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="PASSPORT_DATE_EXPIRATION" />
+          <Property Type="String" Name="VISA_NUMBER" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="VISA_DATE" />
+          <Property Type="DateTime" Name="VISA_DATE_EXPIRATION" />
+          <Property Type="String" Name="VISA_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VNAIRLINES_NUMBER" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="VNAIRLINES_DATE" />
+          <Property Type="DateTime" Name="VNAIRLINES_DATE_EXPIRATION" />
+          <Property Type="String" Name="VNAIRLINES_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LABOUR_NUMBER" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LABOUR_DATE" />
+          <Property Type="DateTime" Name="LABOUR_DATE_EXPIRATION" />
+          <Property Type="String" Name="LABOUR_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WORK_PERMIT" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="WORK_PERMIT_START" />
+          <Property Type="DateTime" Name="WORK_PERMIT_END" />
+          <Property Type="String" Name="TEMP_RESIDENCE_CARD" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="TEMP_RESIDENCE_CARD_START" />
+          <Property Type="DateTime" Name="TEMP_RESIDENCE_CARD_END" />
+          <Property Type="Decimal" Name="CON_COUNTRY" Nullable="true" />
+          <Property Type="Decimal" Name="CON_PROVINCE" Nullable="true" />
+          <Property Type="Decimal" Name="CON_DISTRICT" Nullable="true" />
+          <Property Type="Decimal" Name="CON_WARD" Nullable="true" />
+          <Property Type="String" Name="CON_ADDRESS" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Decimal" Name="PER_WARD" />
+          <Property Type="String" Name="FINDER_NAME" />
+          <Property Type="String" Name="FINDER_SDT" />
+          <Property Type="String" Name="FINDER_ADDRESS" />
+          <Property Type="String" Name="URGENT_PER_NAME" />
+          <Property Type="Decimal" Name="URGENT_PER_RELATION" />
+          <Property Type="String" Name="URGENT_PER_SDT" />
+          <Property Type="String" Name="URGENT_ADDRESS" />
+          <Property Type="String" Name="STRANGER" />
+          <Property Type="String" Name="WEAKNESS" />
+          <Property Type="Decimal" Name="IS_WORK_PERMIT" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM_SCHEDULE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_EXAMS_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="SCHEDULE_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EXAMS_PLACE" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="NOTE" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="TIME" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM_SCHEDULE_CAN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_SCHEDULE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CANDIDATE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="START_HOUR" />
+          <Property Type="DateTime" Name="END_HOUR" />
+          <Property Type="Decimal" Name="POINT_RESULT" Precision="38" Scale="0" />
+          <Property Type="String" Name="COMMENT_INFO" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ASSESSMENT_INFO" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_PASS" />
+          <Property Type="Decimal" Name="RC_PROGRAM_EXAMS_ID" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM_SCHEDULE_USHER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_SCHEDULE_ID" Precision="38" Scale="0" Nullable="true" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" Nullable="true" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_FAMILY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CANDIDATE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="ID_NO" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FULLNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="RELATION_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="JOB" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPANY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_DIED" />
+          <Property Type="Int16" Name="IS_MLG" />
+          <Property Type="String" Name="ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="BIRTH_DAY" />
+          <Property Type="Int16" Name="BIRTH_MONTH" />
+          <Property Type="Int16" Name="BIRTH_YEAR" />
+          <Property Type="DateTime" Name="DIED_DATE" />
+          <Property Type="String" Name="REMARK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PIT_CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="PIT_DATE" />
+          <Property Type="DateTime" Name="ID_DATE" />
+          <Property Type="Decimal" Name="ID_PLACE" Precision="38" Scale="0" />
+          <Property Type="String" Name="PER_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BIRTH_NO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_BOOK" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_NAT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_PRO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_DIS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIRTH_NAT2" Precision="38" Scale="0" />
+          <Property Type="String" Name="PHONE_NUMBER" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_TRAINSINGER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" />
+          <Property Type="Decimal" Name="CANDIDATE_ID" />
+          <Property Type="String" Name="SCHOOL_NAME" MaxLength="255" />
+          <Property Type="String" Name="BRANCH_NAME" MaxLength="255" FixedLength="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="LEVEL" MaxLength="255" />
+          <Property Type="String" Name="CONTENT" />
+          <Property Type="String" Name="CERTIFICATE" MaxLength="255" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="TRAINNING" MaxLength="255" />
+          <Property Type="DateTime" Name="FROMDATE" />
+          <Property Type="DateTime" Name="TODATE" annotation:StoreGeneratedPattern="None" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RANK" MaxLength="255" />
+          <Property Type="Decimal" Name="YEAR_GRADUATE" />
+          <Property Type="Decimal" Name="COST" />
+          <Property Type="String" Name="REMARK" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_BEFOREWT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" />
+          <Property Type="Decimal" Name="CANDIDATE_ID" />
+          <Property Type="String" Name="ORG_NAME" MaxLength="255" />
+          <Property Type="String" Name="TITLE_NAME" MaxLength="255" FixedLength="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="DateTime" Name="FROMDATE" />
+          <Property Type="DateTime" Name="TODATE" />
+          <Property Type="String" Name="WORK" MaxLength="255" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Decimal" Name="SALARY" />
+          <Property Type="String" Name="REFERENCE" MaxLength="255" />
+          <Property Type="String" Name="REMARK" MaxLength="255" annotation:StoreGeneratedPattern="None" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ORG_PHONE" />
+          <Property Type="String" Name="ORG_ADDRESS" />
+          <Property Type="String" Name="DIRECT_MANAGER" />
+          <Property Type="String" Name="REASON_LEAVE" />
+        </EntityType>
+        <EntityType Name="RC_COST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="COST_EXPECTED" Precision="38" Scale="0" />
+          <Property Type="String" Name="COST_DESCRIPTION" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="COST_ACTUAL" Precision="38" Scale="0" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RC_FORM_NAMES" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="RC_STAGE_ID" />
+          <Property Type="Decimal" Name="SOURCEOFREC_ID" />
+          <Property Type="Decimal" Name="COSTESTIMATE" />
+          <Property Type="Decimal" Name="COSTREALITY" />
+        </EntityType>
+        <EntityType Name="RC_COST_FORM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_COST_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_FORM_ID" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_BANK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BANK_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BRANCH_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="ACCOUNT" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" />
+          <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" Nullable="false" />
+          <Property Type="String" Name="MODIFIED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="PAYMENT" />
+          <Property Type="DateTime" Name="FROMDATE" />
+          <Property Type="DateTime" Name="TODATE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_BEFOREWT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="ORG_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TITLE_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="FROMDATE" />
+          <Property Type="DateTime" Name="TODATE" />
+          <Property Type="String" Name="WORK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SALARY" Precision="38" Scale="0" />
+          <Property Type="String" Name="REFERENCE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ORG_PHONE" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ORG_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DIRECT_MANAGER" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REASON_LEAVE" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_EDUCATION">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="ACADEMY" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="HE_DAO_TAO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HIGHEST_EDU" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HIGHEST_LEVEL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TRAIN_FORM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="GRADUATE_YEAR" Precision="38" Scale="0" />
+          <Property Type="String" Name="MARK_EDU" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="POLOTOCA_THEORY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STATE_MNG" Precision="38" Scale="0" />
+          <Property Type="String" Name="ADD_INFO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SCHOOL_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LEARNING_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIELD" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SCHOOL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAJOR" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DEGREE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="GPA" Precision="38" Scale="10" />
+          <Property Type="String" Name="IT_CERTIFICATE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_MARK" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_CERTIFICATE1" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_LEVEL1" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_MARK1" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_CERTIFICATE2" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_LEVEL2" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IT_MARK2" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_LEVEL" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_MARK" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH1" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_LEVEL1" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_MARK1" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH2" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_LEVEL2" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ENGLISH_MARK2" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_HEALTH">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="TENCOSO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CHIEUCAO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CANNANG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RANGHAMMAT" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NHOMMAU" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TIM" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HUYETAP" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PHOIVANGUC" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="THILUCMATRAI" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VIEMGANB" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="THILUCMATPHAI" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DALIEU" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LOAISUCKHEO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MOTATHEM" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NGAYKHAM" />
+          <Property Type="String" Name="TAIMUIHONG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_OTHER_INFO">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NGAYVAOCONGDOAN" />
+          <Property Type="String" Name="NOIVAOCONGDOAN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CONGDOANPHI" Precision="38" Scale="0" />
+          <Property Type="String" Name="RECRUITMENT_CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RECRUITMENT_REASON" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RECRUITMENT_PRESENTER" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="EMPLOYEE_REPLACE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="RECRUITMENT_NOTE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACCOUNT_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ACCOUNT_NUMBER" Precision="38" Scale="0" />
+          <Property Type="String" Name="BANK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BANK_BRANCH" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_PAYMENT_VIA_BANK" />
+          <Property Type="DateTime" Name="ACCOUNT_EFFECT_DATE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_TRAIN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="FROM_DATE" />
+          <Property Type="DateTime" Name="TO_DATE" />
+          <Property Type="Decimal" Name="TRAINING_FORM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LEARNING_LEVEL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MAJOR" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="GRADUATE_YEAR" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MARK" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SCHOOL_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TRAINING_CONTENT" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_TRAINSINGER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="SCHOOL_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BRANCH_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LEVEL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CONTENT" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CERTIFICATE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TRAINNING" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="FROMDATE" />
+          <Property Type="DateTime" Name="TODATE" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RANK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="YEAR_GRADUATE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="COST" Precision="38" Scale="0" />
+          <Property Type="String" Name="REMARK" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="EMPLOYEE_CODE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRST_NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LAST_NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FULLNAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRST_NAME_EN" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LAST_NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FULLNAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="WORK_STATUS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTRACT_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="JOIN_DATE" />
+          <Property Type="Decimal" Name="DIRECT_MANAGER" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="LAST_WORKING_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="TER_EFFECT_DATE" />
+          <Property Type="DateTime" Name="TER_LAST_DATE" />
+          <Property Type="Decimal" Name="ITIME_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STAFF_RANK_ID" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_EMPLOYEE_HEALTH" Relationship="RecruitmentModel.FK_FE_HEH" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE_HEALTH1" />
+          <NavigationProperty Name="HU_EMPLOYEE_CV" Relationship="RecruitmentModel.FK_HE_HEC" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE_CV" />
+          <NavigationProperty Name="HU_EMPLOYEE_EDUCATION" Relationship="RecruitmentModel.FK_HE_HEE" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE_EDUCATION1" />
+          <NavigationProperty Name="HU_EMPLOYEE_OTHER_INFO" Relationship="RecruitmentModel.FK_HE_HEO" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE_OTHER_INFO1" />
+          <NavigationProperty Name="HU_TITLE" Relationship="RecruitmentModel.FK_HE_HT" FromRole="HU_EMPLOYEE" ToRole="HU_TITLE" />
+          <NavigationProperty Name="HU_ORGANIZATION" Relationship="RecruitmentModel.FK_HU_ORG_HU_EMP" FromRole="HU_EMPLOYEE" ToRole="HU_ORGANIZATION" />
+          <NavigationProperty Name="HU_EMPLOYEE1" Relationship="RecruitmentModel.FK_HUEMD_HUEM" FromRole="HU_EMPLOYEE" ToRole="HU_EMPLOYEE1" />
+          <NavigationProperty Name="HU_EMPLOYEE2" Relationship="RecruitmentModel.FK_HUEMD_HUEM" FromRole="HU_EMPLOYEE1" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_CV">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="GENDER" Precision="38" Scale="0" />
+          <Property Type="String" Name="IMAGE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="BIRTH_DATE" />
+          <Property Type="String" Name="BIRTH_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="MARITAL_STATUS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RELIGION" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NATIVE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NATIONALITY" Precision="38" Scale="0" />
+          <Property Type="String" Name="PER_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="PER_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="String" Name="HOME_PHONE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MOBILE_PHONE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ID_NO" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ID_DATE" />
+          <Property Type="String" Name="PASS_NO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="PASS_DATE" />
+          <Property Type="DateTime" Name="PASS_EXPIRE" />
+          <Property Type="String" Name="PASS_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VISA" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="VISA_DATE" />
+          <Property Type="DateTime" Name="VISA_EXPIRE" />
+          <Property Type="String" Name="VISA_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WORK_PERMIT" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="WORK_PERMIT_DATE" />
+          <Property Type="DateTime" Name="WORK_PERMIT_EXPIRE" />
+          <Property Type="String" Name="WORK_EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAV_ADDRESS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="NAV_PROVINCE" Precision="38" Scale="0" />
+          <Property Type="String" Name="PIT_CODE" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PER_EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CONTACT_PER" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CONTACT_PER_PHONE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ID_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WORK_PERMIT_PLACE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BANK_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BANK_BRANCH_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="NGAY_VAO_DOAN" />
+          <Property Type="String" Name="NOI_VAO_DOAN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CHUC_VU_DOAN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="DOAN_PHI" />
+          <Property Type="DateTime" Name="NGAY_VAO_DANG" />
+          <Property Type="String" Name="NOI_VAO_DANG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CHUC_VU_DANG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="DANG_PHI" />
+          <Property Type="String" Name="BANK_NO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DRIVER_LICENSE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DRIVER_LICENSE_DATE" />
+          <Property Type="DateTime" Name="DRIVER_LICENSE_EXPIRE" />
+          <Property Type="String" Name="CAREER" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="RecruitmentModel.FK_HE_HEC" FromRole="HU_EMPLOYEE_CV" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_EDUCATION1">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ACADEMY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MAJOR" Precision="38" Scale="0" />
+          <Property Type="String" Name="COMPUTER_CER1" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_CER2" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_CER3" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="COMPUTER_LEVEL1" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="COMPUTER_LEVEL2" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="COMPUTER_LEVEL3" Precision="38" Scale="0" />
+          <Property Type="String" Name="COMPUTER_MARK1" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_MARK2" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_MARK3" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="LANGUAGE1" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LANGUAGE2" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LANGUAGE3" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LANGUAGE_LEVEL1" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LANGUAGE_LEVEL2" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LANGUAGE_LEVEL3" Precision="38" Scale="0" />
+          <Property Type="String" Name="LANGUAGE_MARK1" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE_MARK2" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE_MARK3" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GRADUATE_SCHOOL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="MARK_EDU" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TRAINING_FORM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LEARNING_LEVEL" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="RecruitmentModel.FK_HE_HEE" FromRole="HU_EMPLOYEE_EDUCATION1" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_HEALTH1">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Double" Name="CHIEU_CAO" />
+          <Property Type="Double" Name="CAN_NANG" />
+          <Property Type="String" Name="NHOM_MAU" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HUYET_AP" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAT_TRAI" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAT_PHAI" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TAI_MUI_HONG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RANG_HAM_MAT" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TIM" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PHOI_NGUC" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VIEM_GAN_B" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DA_HOA_LIEU" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GHI_CHU_SUC_KHOE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="LOAI_SUC_KHOE" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="DU_SUC_KHOE" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="RecruitmentModel.FK_FE_HEH" FromRole="HU_EMPLOYEE_HEALTH1" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_EMPLOYEE_OTHER_INFO1">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="NGAY_VAO_DOAN" />
+          <Property Type="String" Name="NOI_VAO_DOAN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOI_SINH_HOAT_DOAN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="DOAN_PHI" />
+          <Property Type="DateTime" Name="NGAY_VAO_DANG" />
+          <Property Type="String" Name="NOI_VAO_DANG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOI_SINH_HOAT_DANG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="DANG_PHI" />
+          <Property Type="String" Name="SO_TAI_KHOAN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="NGAN_HANG" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CHI_NHANH" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="NGAY_HIEU_LUC" />
+          <Property Type="String" Name="NGUOI_THU_HUONG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="RecruitmentModel.FK_HE_HEO" FromRole="HU_EMPLOYEE_OTHER_INFO1" ToRole="HU_EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="HU_ORG_TITLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_ORGANIZATION" Relationship="RecruitmentModel.FK_HUOG_HUOT" FromRole="HU_ORG_TITLE" ToRole="HU_ORGANIZATION" />
+          <NavigationProperty Name="HU_TITLE" Relationship="RecruitmentModel.FK_HUTL_HUOT" FromRole="HU_ORG_TITLE" ToRole="HU_TITLE" />
+        </EntityType>
+        <EntityType Name="HU_ORGANIZATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="35" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="PARENT_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LEVEL_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DISSOLVE_DATE" />
+          <Property Type="DateTime" Name="FOUNDATION_DATE" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HIERARCHICAL_PATH" MaxLength="1023" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DESCRIPTION_PATH" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADDRESS" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FAX" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="REPRESENTATIVE_ID" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="RecruitmentModel.FK_HU_ORG_HU_EMP" FromRole="HU_ORGANIZATION" ToRole="HU_EMPLOYEE" />
+          <NavigationProperty Name="HU_ORG_TITLE" Relationship="RecruitmentModel.FK_HUOG_HUOT" FromRole="HU_ORGANIZATION" ToRole="HU_ORG_TITLE" />
+          <NavigationProperty Name="HU_ORGANIZATION1" Relationship="RecruitmentModel.FK_HU_ORG_HU_ORG" FromRole="HU_ORGANIZATION" ToRole="HU_ORGANIZATION1" />
+          <NavigationProperty Name="HU_ORGANIZATION2" Relationship="RecruitmentModel.FK_HU_ORG_HU_ORG" FromRole="HU_ORGANIZATION1" ToRole="HU_ORGANIZATION" />
+        </EntityType>
+        <EntityType Name="HU_TITLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="16" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="TITLE_GROUP_ID" Precision="38" Scale="0" />
+          <NavigationProperty Name="HU_EMPLOYEE" Relationship="RecruitmentModel.FK_HE_HT" FromRole="HU_TITLE" ToRole="HU_EMPLOYEE" />
+          <NavigationProperty Name="HU_ORG_TITLE" Relationship="RecruitmentModel.FK_HUTL_HUOT" FromRole="HU_TITLE" ToRole="HU_ORG_TITLE" />
+        </EntityType>
+        <Association Name="FK_FE_HEH">
+          <End Type="RecruitmentModel.HU_EMPLOYEE" Role="HU_EMPLOYEE" Multiplicity="1" />
+          <End Type="RecruitmentModel.HU_EMPLOYEE_HEALTH1" Role="HU_EMPLOYEE_HEALTH1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE_HEALTH1">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HEC">
+          <End Type="RecruitmentModel.HU_EMPLOYEE" Role="HU_EMPLOYEE" Multiplicity="1" />
+          <End Type="RecruitmentModel.HU_EMPLOYEE_CV" Role="HU_EMPLOYEE_CV" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE_CV">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HEE">
+          <End Type="RecruitmentModel.HU_EMPLOYEE" Role="HU_EMPLOYEE" Multiplicity="1" />
+          <End Type="RecruitmentModel.HU_EMPLOYEE_EDUCATION1" Role="HU_EMPLOYEE_EDUCATION1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE_EDUCATION1">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HEO">
+          <End Type="RecruitmentModel.HU_EMPLOYEE" Role="HU_EMPLOYEE" Multiplicity="1" />
+          <End Type="RecruitmentModel.HU_EMPLOYEE_OTHER_INFO1" Role="HU_EMPLOYEE_OTHER_INFO1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE_OTHER_INFO1">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HE_HT">
+          <End Type="RecruitmentModel.HU_TITLE" Role="HU_TITLE" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.HU_EMPLOYEE" Role="HU_EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_TITLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE">
+              <PropertyRef Name="TITLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HU_ORG_HU_EMP">
+          <End Type="RecruitmentModel.HU_ORGANIZATION" Role="HU_ORGANIZATION" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.HU_EMPLOYEE" Role="HU_EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_ORGANIZATION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HUEMD_HUEM">
+          <End Type="RecruitmentModel.HU_EMPLOYEE" Role="HU_EMPLOYEE" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.HU_EMPLOYEE" Role="HU_EMPLOYEE1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_EMPLOYEE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_EMPLOYEE1">
+              <PropertyRef Name="DIRECT_MANAGER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HUOG_HUOT">
+          <End Type="RecruitmentModel.HU_ORGANIZATION" Role="HU_ORGANIZATION" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.HU_ORG_TITLE" Role="HU_ORG_TITLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_ORGANIZATION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_ORG_TITLE">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HUTL_HUOT">
+          <End Type="RecruitmentModel.HU_TITLE" Role="HU_TITLE" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.HU_ORG_TITLE" Role="HU_ORG_TITLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_TITLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_ORG_TITLE">
+              <PropertyRef Name="TITLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HU_ORG_HU_ORG">
+          <End Type="RecruitmentModel.HU_ORGANIZATION" Role="HU_ORGANIZATION" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.HU_ORGANIZATION" Role="HU_ORGANIZATION1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_ORGANIZATION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_ORGANIZATION1">
+              <PropertyRef Name="PARENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="HU_BANK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SHORT_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_BANK_BRANCH" Relationship="RecruitmentModel.FK_BANKBANK_BRANCH" FromRole="HU_BANK" ToRole="HU_BANK_BRANCH" />
+        </EntityType>
+        <EntityType Name="HU_BANK_BRANCH">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BANK_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_BANK" Relationship="RecruitmentModel.FK_BANKBANK_BRANCH" FromRole="HU_BANK_BRANCH" ToRole="HU_BANK" />
+        </EntityType>
+        <EntityType Name="HU_DISTRICT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="PROVINCE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_PROVINCE" Relationship="RecruitmentModel.FK_HU_PRO_HU_DIS" FromRole="HU_DISTRICT" ToRole="HU_PROVINCE" />
+        </EntityType>
+        <EntityType Name="HU_NATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_PROVINCE" Relationship="RecruitmentModel.FK_HU_NAT_HU_PRO" FromRole="HU_NATION" ToRole="HU_PROVINCE" />
+        </EntityType>
+        <EntityType Name="HU_PROVINCE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="NATION_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HU_DISTRICT" Relationship="RecruitmentModel.FK_HU_PRO_HU_DIS" FromRole="HU_PROVINCE" ToRole="HU_DISTRICT" />
+          <NavigationProperty Name="HU_NATION" Relationship="RecruitmentModel.FK_HU_NAT_HU_PRO" FromRole="HU_PROVINCE" ToRole="HU_NATION" />
+        </EntityType>
+        <Association Name="FK_BANKBANK_BRANCH">
+          <End Type="RecruitmentModel.HU_BANK" Role="HU_BANK" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.HU_BANK_BRANCH" Role="HU_BANK_BRANCH" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_BANK">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_BANK_BRANCH">
+              <PropertyRef Name="BANK_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HU_PRO_HU_DIS">
+          <End Type="RecruitmentModel.HU_PROVINCE" Role="HU_PROVINCE" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.HU_DISTRICT" Role="HU_DISTRICT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_PROVINCE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_DISTRICT">
+              <PropertyRef Name="PROVINCE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HU_NAT_HU_PRO">
+          <End Type="RecruitmentModel.HU_NATION" Role="HU_NATION" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.HU_PROVINCE" Role="HU_PROVINCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HU_NATION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HU_PROVINCE">
+              <PropertyRef Name="NATION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="RC_STAGE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="ORG_ID" />
+          <Property Type="Decimal" Name="YEAR" />
+          <Property Type="String" Name="ORGANIZATIONNAME" Unicode="true" MaxLength="255" />
+          <Property Type="String" Name="TITLE" Unicode="true" MaxLength="500" />
+          <Property Type="DateTime" Name="STARTDATE" />
+          <Property Type="DateTime" Name="ENDDATE" />
+          <Property Type="Decimal" Name="SOURCEOFREC_ID" />
+          <Property Type="Decimal" Name="COSTESTIMATE" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" Unicode="true" MaxLength="255" />
+          <Property Type="String" Name="CREATED_LOG" Unicode="true" MaxLength="500" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" Unicode="true" MaxLength="255" />
+          <Property Type="String" Name="MODIFIED_LOG" Unicode="true" MaxLength="500" />
+          <Property Type="String" Name="REMARK" Unicode="true" MaxLength="2000" />
+        </EntityType>
+        <EntityType Name="RC_COSTALLOCATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="RC_STAGE_ID" />
+          <Property Type="Decimal" Name="COSTAMOUNT" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" Unicode="true" MaxLength="255" />
+          <Property Type="String" Name="CREATED_LOG" Unicode="true" MaxLength="500" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" />
+          <Property Type="String" Name="MODIFIED_LOG" Unicode="true" MaxLength="500" />
+          <Property Type="String" Name="REMARK" Unicode="true" MaxLength="2000" />
+          <Property Type="Decimal" Name="ORG_ID" />
+        </EntityType>
+        <EntityType Name="RC_COST_COSTALLOCATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="RC_COST_ID" />
+          <Property Type="Decimal" Name="COSTAMOUNT" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="500" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="500" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="2000" Unicode="true" />
+          <Property Type="Decimal" Name="ORG_ID" />
+        </EntityType>
+        <EntityType Name="RC_MANNING_ORG">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Decimal" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="ORG_ID" Nullable="false" />
+          <Property Type="String" Name="NAME" Nullable="false" />
+          <Property Type="DateTime" Name="EFFECT_DATE" Nullable="false" />
+          <Property Type="String" Name="NOTE" Nullable="false" />
+          <Property Type="Decimal" Name="OLD_MANNING" Nullable="false" />
+          <Property Type="Decimal" Name="CURRENT_MANNING" Nullable="false" />
+          <Property Type="Decimal" Name="NEW_MANNING" Nullable="false" />
+          <Property Type="Decimal" Name="MOBILIZE_COUNT_MANNING" Nullable="false" />
+          <Property Type="Decimal" Name="STATUS" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RC_MANNING_TITLE">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="OLD_MANNING" Nullable="false" />
+          <Property Type="Decimal" Name="CURRENT_MANNING" Nullable="false" />
+          <Property Type="Decimal" Name="NEW_MANNING" Nullable="false" />
+          <Property Type="Decimal" Name="MOBILIZE_COUNT_MANNING" Nullable="false" />
+          <Property Type="Decimal" Name="TITLE_ID" Nullable="false" />
+          <Property Type="String" Name="NOTE" Nullable="false" MaxLength="255" />
+          <Property Type="Decimal" Name="MANNING_ORG_ID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_EXPECT">
+          <Key>
+            <PropertyRef Name="CANDIDATE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="CANDIDATE_ID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="TIME_START" />
+          <Property Type="Decimal" Name="PROBATIONARY_SALARY" />
+          <Property Type="Decimal" Name="OFFICIAL_SALARY" />
+          <Property Type="DateTime" Name="DATE_START" />
+          <Property Type="String" Name="OTHER_REQUEST" />
+          <Property Type="String" Name="WORK_LOCATION" MaxLength="500" />
+          <Property Type="Decimal" Name="DESIRE_POSITION_1" />
+          <Property Type="Decimal" Name="DESIRE_POSITION_2" />
+          <Property Type="String" Name="DESIRE_LEVEL" />
+          <Property Type="String" Name="SENIORITY_EXPERIENCE" />
+          <Property Type="Int16" Name="WORKED_HSV_HV" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_HEALTH">
+          <Key>
+            <PropertyRef Name="CANDIDATE_ID" />
+          </Key>
+          <Property Type="Decimal" Name="CANDIDATE_ID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" />
+          <Property Type="String" Name="CREATED_LOG" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" />
+          <Property Type="String" Name="CHIEU_CAO" />
+          <Property Type="String" Name="CAN_NANG" />
+          <Property Type="String" Name="NHOM_MAU" />
+          <Property Type="String" Name="HUYET_AP" />
+          <Property Type="String" Name="MAT_TRAI" />
+          <Property Type="String" Name="MAT_PHAI" />
+          <Property Type="String" Name="LOAI_SUC_KHOE" />
+          <Property Type="String" Name="TAI_MUI_HONG" />
+          <Property Type="String" Name="RANG_HAM_MAT" />
+          <Property Type="String" Name="TIM" />
+          <Property Type="String" Name="PHOI_NGUC" />
+          <Property Type="String" Name="VIEM_GAN_B" />
+          <Property Type="String" Name="DA_HOA_LIEU" />
+          <Property Type="String" Name="GHI_CHU_SUC_KHOE" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_REFERENCE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="FULLNAME" Nullable="false" />
+          <Property Type="String" Name="TITLE_NAME" Nullable="false" />
+          <Property Type="String" Name="WORK_UNIT" Nullable="false" />
+          <Property Type="String" Name="ADDRESS_CONTACT" Nullable="false" />
+          <Property Type="String" Name="PHONENUMBER" Nullable="false" />
+          <Property Type="Decimal" Name="CANDIDATE_ID" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_IN_PLAN" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="PIC_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="SEND_DATE" />
+          <Property Type="Decimal" Name="RECRUIT_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RECRUIT_REASON_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="RECRUIT_REASON" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GROUP_WORK_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PRIORITY_LEVEL_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_PORTAL" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JOB_NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DESCRIPTION" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REQUEST_EXPERIENCE" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="RECRUIT_START" />
+          <Property Type="DateTime" Name="RECEIVE_END" />
+          <Property Type="String" Name="LEARNING_LEVEL_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="EXPERIENCE_NUMBER" Precision="38" Scale="0" />
+          <Property Type="String" Name="TRAINING_LEVEL_MAIN_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TRAINING_SCHOOL_MAIN_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAJOR_MAIN_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GRADUATION_TYPE_MAIN_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TRAINING_LEVEL_SUB_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TRAINING_SCHOOL_SUB_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAJOR_SUB_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GRADUATION_TYPE_SUB_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE1_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE1_LEVEL_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE1_POINT_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE2_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE2_LEVEL_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE2_POINT_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE3_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE3_LEVEL_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LANGUAGE3_POINT_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COMPUTER_LEVEL_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="AGE_FROM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="AGE_TO" Precision="38" Scale="0" />
+          <Property Type="String" Name="GENDER_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CHIEUCAO" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CANNANG" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTRACT_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="APPEARANCE_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="THILUCTRAI" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="THILUCPHAI" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HEALTH_STATUS_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="STATUS_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="REQUEST_NUMBER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_REQUEST_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="WORK_TIME_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="REQUEST_SALARY_FROM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STAGE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="REQUEST_SALARY_TO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="FOLLOWERS_EMP_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STAGERECRUITMENT_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NEGOTIABLESALARY" Precision="38" Scale="0" />
+          <Property Type="String" Name="POSITIONRECRUITMENT" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REQUESTOTHER" MaxLength="1023" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="SPECIALSKILLS" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="SE_USER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="USERNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PASSWORD" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FULLNAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EMAIL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TELEPHONE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_APP" />
+          <Property Type="Int16" Name="IS_PORTAL" />
+          <Property Type="String" Name="EMPLOYEE_CODE" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="IS_AD" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LOCATION" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_CHANGE_PASS" />
+          <Property Type="DateTime" Name="CHANGE_PASS_DATE" />
+          <Property Type="Int16" Name="REMINDER_COUNT" />
+          <Property Type="String" Name="MODULE_ADMIN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_RC" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" />
+        </EntityType>
+        <EntityType Name="SE_REPORT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="MODULE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SE_USER_REPORT">
+          <Key>
+            <PropertyRef Name="SE_REPORT_ID" />
+            <PropertyRef Name="SE_USER_ID" />
+          </Key>
+          <Property Type="Decimal" Name="SE_REPORT_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SE_USER_ID" Nullable="false" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="HU_WARD">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_EN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="DISTRICT_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOTE" MaxLength="1023" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HU_ORGANIZATION_V">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="CODE_C1" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NAME_C1" MaxLength="1999" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE_C2" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NAME_C2" MaxLength="1999" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE_C3" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NAME_C3" MaxLength="1999" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE_C4" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NAME_C4" MaxLength="1999" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE_C5" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NAME_C5" MaxLength="1999" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE_C6" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NAME_C6" MaxLength="1999" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE_C7" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NAME_C7" MaxLength="1999" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE_C8" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NAME_C8" MaxLength="1999" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE_C9" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NAME_C9" MaxLength="1999" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="LEVEL_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="DESCRIPTION" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="ID1" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ID2" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ID3" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ID4" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ID5" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ID6" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ID7" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ID8" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ID9" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DESCRIPTION4" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME_VN" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="RC_CANDIDATE_TRAINNING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="YEAR_GRA" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_SHOOLS" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="FORM_TRAIN_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="SPECIALIZED_TRAIN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RESULT_TRAIN" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CERTIFICATE" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EFFECTIVE_DATE_FROM" />
+          <Property Type="DateTime" Name="EFFECTIVE_DATE_TO" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="CANDIDATE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="FROM_DATE" />
+          <Property Type="DateTime" Name="TO_DATE" />
+          <Property Type="String" Name="UPLOAD_FILE" MaxLength="1025" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FILE_NAME" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="TYPE_TRAIN_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="RECEIVE_DEGREE_DATE" />
+          <Property Type="Decimal" Name="IS_RENEWED" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="LEVEL_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="POINT_LEVEL" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CONTENT_LEVEL" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOTE" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CERTIFICATE_CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TYPE_TRAIN_NAME" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="RC_HR_PLANING_DETAIL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_1" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_2" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_3" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_4" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_5" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_6" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_7" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_8" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_9" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_10" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_11" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONTH_12" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RANK_SAL" Precision="38" Scale="2" />
+          <Property Type="Decimal" Name="YEAR_PLAN_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="RC_HR_YEAR_PLANING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="YEAR" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="DateTime" Name="EXPIRE_DATE" />
+          <Property Type="String" Name="VERSION" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOTE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="RC_PROGRAM_CANDIDATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CANDIDATE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="STATUS_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OFFER_ID" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+        </EntityType>
+        <EntityType Name="PA_SALARY_GROUP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" />
+          <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" Nullable="false" />
+          <Property Type="String" Name="MODIFIED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ORDERS" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_COEFFICIENT" />
+          <Property Type="Int16" Name="IS_INCENTIVE" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="IS_DELETED" />
+          <Property Type="Int16" Name="ISHOSE" />
+          <NavigationProperty Name="PA_SALARY_LEVEL" Relationship="RecruitmentModel.FK_PSG_PSL" FromRole="PA_SALARY_GROUP" ToRole="PA_SALARY_LEVEL" />
+        </EntityType>
+        <EntityType Name="PA_SALARY_LEVEL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SAL_GROUP_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" />
+          <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" Nullable="false" />
+          <Property Type="String" Name="MODIFIED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ORDERS" Precision="38" Scale="0" />
+          <Property Type="String" Name="OTHER_USE" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="PA_SALARY_GROUP" Relationship="RecruitmentModel.FK_PSG_PSL" FromRole="PA_SALARY_LEVEL" ToRole="PA_SALARY_GROUP" />
+          <NavigationProperty Name="PA_SALARY_RANK" Relationship="RecruitmentModel.FK_PSL_PSR" FromRole="PA_SALARY_LEVEL" ToRole="PA_SALARY_RANK" />
+        </EntityType>
+        <EntityType Name="PA_SALARY_RANK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SAL_LEVEL_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="RANK" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SALARY_BASIC" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" />
+          <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" Nullable="false" />
+          <Property Type="String" Name="MODIFIED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SAL_GROUP_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORDERS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="HE_SO" Precision="38" Scale="0" />
+          <NavigationProperty Name="PA_SALARY_LEVEL" Relationship="RecruitmentModel.FK_PSL_PSR" FromRole="PA_SALARY_RANK" ToRole="PA_SALARY_LEVEL" />
+        </EntityType>
+        <EntityType Name="PA_SALARY_TYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="CODE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" />
+          <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" Nullable="false" />
+          <Property Type="String" Name="MODIFIED_BY" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ORDERS" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_INCENTIVE" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="RC_CONTRACT_CANDIDATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_CANDIDATE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTRACT_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CONTRACT_FROMDATE" />
+          <Property Type="DateTime" Name="CONTRACT_TODATE" />
+          <Property Type="Decimal" Name="SALARY_PROBATION" Precision="38" Scale="2" />
+          <Property Type="Decimal" Name="SALARY_OFFICIAL" Precision="38" Scale="2" />
+          <Property Type="String" Name="NOTE" MaxLength="1025" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="SAL_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TAX_TABLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OTHERSALARY1" Precision="38" Scale="2" />
+          <Property Type="Decimal" Name="PERCENT_SAL" Precision="38" Scale="0" />
+        </EntityType>
+        <Association Name="FK_PSG_PSL">
+          <End Type="RecruitmentModel.PA_SALARY_GROUP" Role="PA_SALARY_GROUP" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.PA_SALARY_LEVEL" Role="PA_SALARY_LEVEL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PA_SALARY_GROUP">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PA_SALARY_LEVEL">
+              <PropertyRef Name="SAL_GROUP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PSL_PSR">
+          <End Type="RecruitmentModel.PA_SALARY_LEVEL" Role="PA_SALARY_LEVEL" Multiplicity="0..1" />
+          <End Type="RecruitmentModel.PA_SALARY_RANK" Role="PA_SALARY_RANK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PA_SALARY_LEVEL">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PA_SALARY_RANK">
+              <PropertyRef Name="SAL_LEVEL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="RC_TRANSFERCAN_TOEMPLOYEE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CANDIDATE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORG_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="DIRECT_MANAGER_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OBJECT_LABOR_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OBJECT_ATTENDANCE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OBJECT_EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OBJECT_ATTENDANT_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="WORK_PLACE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CONTRACT_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CONTRACT_FROM" />
+          <Property Type="DateTime" Name="CONTRACT_TO" />
+          <Property Type="Decimal" Name="SAL_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TAX_TABLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SAL_BASIC" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OTHERSALARY1" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="PERCENT_SAL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SAL_TOTAL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TRANSFER_HSL_HD" Precision="38" Scale="0" />
+          <Property Type="String" Name="EMPLOYEE_CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="STATUS" Precision="38" Scale="0" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PROCESS_APPROVED_STATUS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_APPROVED" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="APP_DATE" />
+          <Property Type="Decimal" Name="APP_LEVEL" Precision="38" Scale="0" />
+          <Property Type="String" Name="APP_NOTES" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="Decimal" Name="APP_STATUS" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="PE_PERIOD_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ID_REGGROUP" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TEMPLATE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="PROCESS_TYPE" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TOKEN" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="DateTime" Name="EXP_DATE" />
+        </EntityType>
+        <EntityType Name="RC_ALLOWANCE_CANDIDATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" />
+          <Property Type="Decimal" Name="RC_CANDIDATE_ID" />
+          <Property Type="Decimal" Name="ALLOWANCE_ID" />
+          <Property Type="Decimal" Name="MONEY" />
+          <Property Type="DateTime" Name="EFFECT_FROM" />
+          <Property Type="DateTime" Name="EFFECT_TO" />
+          <Property Type="Decimal" Name="ALLOWANCE_UNIT" />
+        </EntityType>
+        <EntityType Name="HU_CONTRACT_TYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="PERIOD" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BHXH" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BHYT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BHTN" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORD_NO" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="String" Name="TYPE_CODE" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="BHTNLD_BNN" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CODE_GET_ENDDATE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="FLOWING_MD" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME_VISIBLE_ONFORM" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="IS_HOCVIEC" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="IS_REQUIREMENT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TYPE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="STATUS" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="RC_ALLOWANCE_CANDIDATE1">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_CANDIDATE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ALLOWANCE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MONEY" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EFFECT_FROM" />
+          <Property Type="DateTime" Name="EFFECT_TO" />
+        </EntityType>
+        <EntityType Name="RC_SALARY_CANDIDATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_PROGRAM_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="RC_CANDIDATE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="EFFECT_DATE" />
+          <Property Type="Decimal" Name="SAL_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="TAX_TABLE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="EMPLOYEE_TYPE_ID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SALARY_PROBATION" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="OTHERSALARY1" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="PERCENT_SAL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SALARY_OFFICIAL" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="HU_ALLOWANCE_LIST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="NAME" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACTFLG" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODE" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REMARK" MaxLength="1023" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ALLOWANCE_TYPE" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ORDERS" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="IS_CONTRACT" />
+          <Property Type="Int16" Name="IS_INSURANCE" />
+          <Property Type="Int16" Name="IS_PAY" />
+          <Property Type="Decimal" Name="IS_DEDUCT" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="RC_USER_TITLE_PERMISION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="USER_ID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="GROUP_TITLE_ID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="CREATED_DATE" />
+          <Property Type="String" Name="CREATED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIED_DATE" />
+          <Property Type="String" Name="MODIFIED_BY" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MODIFIED_LOG" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+    <EntityContainerMapping StorageEntityContainer="RecruitmentModelStoreContainer" CdmEntityContainer="RecruitmentContext">
+        </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="DatabaseGenerationWorkflow" Value="$(VSEFTools)\DBGen\Generate Oracle Via T4 (TPT).xaml" />
+        <DesignerProperty Name="DDLGenerationTemplate" Value="$(VSEFTools)\DBGen\SSDLToOracle.tt" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="RecruitmentContext" ZoomLevel="77" >
+        <EntityTypeShape EntityType="RecruitmentModel.RC_COST_CENTER" Width="1.5" PointX="1" PointY="25.5" IsExpanded="false" Height="0.4" />
+        <EntityTypeShape EntityType="RecruitmentModel.SE_CHOSEN_ORG" Width="1.5" PointX="2.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_FAMILY" Width="1.5" PointX="3.875" PointY="32.625" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_TERMINATE" Width="1.5" PointX="1.375" PointY="32.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_EXAMS" Width="1.5" PointX="0.75" PointY="9.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_EXAMS_DTL" Width="1.5" PointX="6.375" PointY="6.625" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PLAN_REG_EMP" Width="1.5" PointX="11.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM_CHARACTER" Width="2" PointX="13.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM_EMP" Width="2.875" PointX="13.75" PointY="3.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM_EXAMS" Width="1.75" PointX="13.75" PointY="6.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM_SCOPE" Width="2" PointX="13.75" PointY="9.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM_SOFT_SKILL" Width="2.375" PointX="13.75" PointY="12.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_REQUEST" Width="1.5" PointX="17.5" PointY="0.5" Height="12.556865234375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_REQUEST_EMP" Width="1.5" PointX="15.75" PointY="7.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.OT_OTHER_LIST" Width="1.5" PointX="14" PointY="15.5" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.OT_OTHER_LIST_GROUP" Width="1.5" PointX="14.625" PointY="10.875" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.OT_OTHER_LIST_TYPE" Width="1.5" PointX="9.125" PointY="16.625" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PLAN_REG" Width="1.5" PointX="16.375" PointY="14.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE" Width="2.5" PointX="19.5" PointY="1.875" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_EDUCATION" Width="1.5" PointX="18.375" PointY="14.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_HISTORY" Width="1.5" PointX="20.375" PointY="5.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_OTHER_INFO" Width="1.5" PointX="23.25" PointY="11.5" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_CV" Width="2.375" PointX="23.125" PointY="17" Height="18.325908203125003" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM_SCHEDULE" Width="2.625" PointX="7" PointY="22.75" Height="3.5186979166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM_SCHEDULE_CAN" Width="2.5" PointX="12.375" PointY="21.75" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM_SCHEDULE_USHER" Width="3.625" PointX="15.125" PointY="21.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_FAMILY" Width="1.5" PointX="8.75" PointY="29" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_TRAINSINGER" Width="1.5" PointX="2.875" PointY="6.5" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_BEFOREWT" Width="1.5" PointX="3.375" PointY="26.375" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_COST" Width="2" PointX="22.25" PointY="6.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_COST_FORM" Width="1.5" PointX="0.75" PointY="0.5" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_BANK" Width="1.5" PointX="5.375" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_BEFOREWT" Width="1.5" PointX="5.375" PointY="5.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_EDUCATION" Width="1.5" PointX="21" PointY="20.25" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_HEALTH" Width="1.5" PointX="3.375" PointY="12.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_OTHER_INFO" Width="1.5" PointX="7.375" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_TRAIN" Width="1.5" PointX="21.125" PointY="22.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_TRAINSINGER" Width="1.5" PointX="11.375" PointY="25.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE" Width="1.5" PointX="27.625" PointY="9.5" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_CV" Width="1.5" PointX="30.875" PointY="29.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_EDUCATION1" Width="1.5" PointX="34.125" PointY="10.25" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_HEALTH1" Width="1.5" PointX="29.875" PointY="5.25" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_EMPLOYEE_OTHER_INFO1" Width="1.5" PointX="30.875" PointY="42.5" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_ORG_TITLE" Width="1.5" PointX="30.625" PointY="11.625" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_ORGANIZATION" Width="1.5" PointX="25.375" PointY="16.375" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_TITLE" Width="1.5" PointX="25.375" PointY="11.25" Height="0.4" IsExpanded="false" />
+        <AssociationConnector Association="RecruitmentModel.FK_FE_HEH" >
+          <ConnectorPoint PointX="28.375" PointY="9.5" />
+          <ConnectorPoint PointX="28.375" PointY="5.45" />
+          <ConnectorPoint PointX="29.875" PointY="5.45" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HE_HEC" >
+          <ConnectorPoint PointX="28.127593653846152" PointY="9.9" />
+          <ConnectorPoint PointX="28.127593653846152" PointY="29.95" />
+          <ConnectorPoint PointX="28.170559647435898" PointY="29.95" />
+          <ConnectorPoint PointX="28.337226314102562" PointY="29.95" />
+          <ConnectorPoint PointX="30.875" PointY="29.95" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HE_HEE" >
+          <ConnectorPoint PointX="29.125" PointY="9.7" />
+          <ConnectorPoint PointX="34.875" PointY="9.7" />
+          <ConnectorPoint PointX="34.875" PointY="10.25" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HE_HEO" >
+          <ConnectorPoint PointX="28.25389298076923" PointY="9.9" />
+          <ConnectorPoint PointX="28.25389298076923" PointY="42.7" />
+          <ConnectorPoint PointX="30.875" PointY="42.7" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HE_HT" >
+          <ConnectorPoint PointX="26.125" PointY="11.25" />
+          <ConnectorPoint PointX="26.125" PointY="9.7" />
+          <ConnectorPoint PointX="27.625" PointY="9.7" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HU_ORG_HU_EMP" >
+          <ConnectorPoint PointX="26.875" PointY="16.575" />
+          <ConnectorPoint PointX="28.044260320512819" PointY="16.575" />
+          <ConnectorPoint PointX="28.337226314102566" PointY="16.575" />
+          <ConnectorPoint PointX="28.380192307692305" PointY="16.575" />
+          <ConnectorPoint PointX="28.380192307692305" PointY="9.9" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HUEMD_HUEM" >
+          <ConnectorPoint PointX="28.139153846153846" PointY="9.5" />
+          <ConnectorPoint PointX="28.139153846153846" PointY="9.25" />
+          <ConnectorPoint PointX="28.291666666666668" PointY="9.25" />
+          <ConnectorPoint PointX="28.458333333333332" PointY="9.25" />
+          <ConnectorPoint PointX="28.622076923076925" PointY="9.25" />
+          <ConnectorPoint PointX="28.622076923076925" PointY="9.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HUOG_HUOT" >
+          <ConnectorPoint PointX="26.875" PointY="16.443747500000008" />
+          <ConnectorPoint PointX="28.044260320512819" PointY="16.443747500000008" />
+          <ConnectorPoint PointX="28.46352564102564" PointY="16.443747500000008" />
+          <ConnectorPoint PointX="31.4062525" PointY="16.443747500000008" />
+          <ConnectorPoint PointX="31.4062525" PointY="12.025" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HUTL_HUOT" >
+          <ConnectorPoint PointX="26.875" PointY="11.65" />
+          <ConnectorPoint PointX="27.25" PointY="12.024999999999999" />
+          <ConnectorPoint PointX="27.25" PointY="11.25" />
+          <ConnectorPoint PointX="28.044260320512819" PointY="11.249999999999998" />
+          <ConnectorPoint PointX="28.46352564102564" PointY="11.25" />
+          <ConnectorPoint PointX="30.25" PointY="11.25" />
+          <ConnectorPoint PointX="30.625" PointY="11.625" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HU_ORG_HU_ORG" >
+          <ConnectorPoint PointX="25.889153846153846" PointY="16.775" />
+          <ConnectorPoint PointX="25.889153846153846" PointY="17.025000000000002" />
+          <ConnectorPoint PointX="26.372076923076925" PointY="17.025000000000002" />
+          <ConnectorPoint PointX="26.372076923076925" PointY="16.775" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="RecruitmentModel.HU_BANK" Width="1.5" PointX="5.75" PointY="12.125" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_BANK_BRANCH" Width="1.5" PointX="8" PointY="12" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_DISTRICT" Width="1.5" PointX="5.25" PointY="20.25" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_NATION" Width="1.5" PointX="0.75" PointY="20.25" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_PROVINCE" Width="1.5" PointX="3" PointY="20" Height="0.4" IsExpanded="false" />
+        <AssociationConnector Association="RecruitmentModel.FK_BANKBANK_BRANCH" >
+          <ConnectorPoint PointX="7.25" PointY="12.2625" />
+          <ConnectorPoint PointX="8" PointY="12.2625" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HU_PRO_HU_DIS" >
+          <ConnectorPoint PointX="4.5" PointY="20.325" />
+          <ConnectorPoint PointX="5.25" PointY="20.325" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_HU_NAT_HU_PRO" >
+          <ConnectorPoint PointX="2.25" PointY="20.325" />
+          <ConnectorPoint PointX="3" PointY="20.325" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="RecruitmentModel.RC_STAGE" Width="2" PointX="2.75" PointY="2.375" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_COSTALLOCATE" Width="2" PointX="0.5" PointY="2.5" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_COST_COSTALLOCATE" Width="2.125" PointX="20" PointY="2.875" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_MANNING_ORG" Width="2" PointX="14.875" PointY="25.125" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_MANNING_TITLE" Width="2.375" PointX="14.875" PointY="28.375" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_EXPECT" Width="2.125" PointX="19.875" PointY="6.5" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_HEALTH" Width="2" PointX="0.75" PointY="13.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_REFERENCE" Width="1.5" PointX="0.625" PointY="6.875" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM" Width="1.5" PointX="19.375" PointY="21.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.SE_USER" Width="2.375" PointX="6.875" PointY="2.375" Height="6.0186165364583335" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecruitmentModel.SE_REPORT" Width="1.5" PointX="3.375" PointY="7.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.SE_USER_REPORT" Width="1.5" PointX="0.75" PointY="3.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_WARD" Width="1.5" PointX="10.875" PointY="4.125" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_ORGANIZATION_V" Width="2.625" PointX="3.625" PointY="3.5" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CANDIDATE_TRAINNING" Width="2.125" PointX="10.375" PointY="2.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_HR_PLANING_DETAIL" Width="1.5" PointX="5.375" PointY="13.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_HR_YEAR_PLANING" Width="1.5" PointX="10.375" PointY="10.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_PROGRAM_CANDIDATE" Width="2.625" PointX="7" PointY="8.375" Height="2.1725878906249996" />
+        <EntityTypeShape EntityType="RecruitmentModel.PA_SALARY_GROUP" Width="1.5" PointX="26.375" PointY="18" Height="4.4802050781249818" />
+        <EntityTypeShape EntityType="RecruitmentModel.PA_SALARY_LEVEL" Width="1.5" PointX="28.625" PointY="18.25" Height="4.0956022135416674" />
+        <EntityTypeShape EntityType="RecruitmentModel.PA_SALARY_RANK" Width="1.5" PointX="30.875" PointY="18.25" Height="4.0956022135416106" />
+        <EntityTypeShape EntityType="RecruitmentModel.PA_SALARY_TYPE" Width="1.5" PointX="10.375" PointY="4.75" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_CONTRACT_CANDIDATE" Width="1.5" PointX="20.375" PointY="10.75" Height="4.864807942708353" />
+        <AssociationConnector Association="RecruitmentModel.FK_PSG_PSL" >
+          <ConnectorPoint PointX="27.875" PointY="20.297801106770834" />
+          <ConnectorPoint PointX="28.044260320512819" PointY="20.297801106770834" />
+          <ConnectorPoint PointX="28.337226314102566" PointY="20.297801106770834" />
+          <ConnectorPoint PointX="28.625" PointY="20.297801106770834" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecruitmentModel.FK_PSL_PSR" >
+          <ConnectorPoint PointX="30.125" PointY="20.297801106770805" />
+          <ConnectorPoint PointX="30.875" PointY="20.297801106770805" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="RecruitmentModel.RC_TRANSFERCAN_TOEMPLOYEE" Width="1.5" PointX="18.375" PointY="23.75" Height="6.7878222656249818" />
+        <EntityTypeShape EntityType="RecruitmentModel.PROCESS_APPROVED_STATUS" Width="1.5" PointX="11.375" PointY="16.75" Height="4.0956022135416674" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_ALLOWANCE_CANDIDATE" Width="2.125" PointX="3.125" PointY="8.75" Height="2.5571907552083335" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_CONTRACT_TYPE" Width="1.5" PointX="5.375" PointY="24.75" Height="6.018616536458353" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_ALLOWANCE_CANDIDATE1" Width="1.5" PointX="10.75" PointY="12.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_SALARY_CANDIDATE" Width="1.5" PointX="0.75" PointY="15.75" Height="3.1340950520833246" />
+        <EntityTypeShape EntityType="RecruitmentModel.HU_ALLOWANCE_LIST" Width="1.5" PointX="23.375" PointY="0.75" Height="4.2879036458333246" />
+        <EntityTypeShape EntityType="RecruitmentModel.RC_USER_TITLE_PERMISION" Width="1.5" PointX="6" PointY="15.625" Height="2.7494921874999818" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

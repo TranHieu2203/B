@@ -1,0 +1,2685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{B8148AB7-8752-487B-ABA0-DDA56B917E35}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Profile</RootNamespace>
+    <AssemblyName>Profile</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Profile.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Profile.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.0.3.0, Culture=neutral, PublicKeyToken=12d8fa3d810c48da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\ref\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\ref\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqToExcel">
+      <HintPath>..\packages\LinqToExcel.1.6.5\lib\LinqToExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqToExcel.1.6.5\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion">
+      <HintPath>..\packages\LinqToExcel.1.6.5\lib\Remotion.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\packages\LinqToExcel.1.6.5\lib\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Interfaces">
+      <HintPath>..\packages\LinqToExcel.1.6.5\lib\Remotion.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Design, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2019.1.115.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.3.1205.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ref\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modules\Common\ctrlFindOrgPopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindSalaryGroupPopup.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlWorkKPIsPerformance.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlComitee.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Health_Exam.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Job.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_JobNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_PensionBenefits.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_StocksTransactionNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Stocks.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_SeveranceSettlementNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_SeveranceSettlement.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpBank.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_BHLD.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_AccidentNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Accident.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_Assessment.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_AssessmentNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommiteeDetail.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommiteeNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Commitee.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_PlanningDetail.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_Planning.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmployeeNPT.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_InfoConfirm.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_StocksTransaction.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TransferOrg.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TransferOrgPopup.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Travel.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpCuriculumVitae.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpMailPopup.ascx" />
+    <Content Include="Modules\Competency\Business\ctrlHU_EmployeeCriteriaRecord.ascx" />
+    <Content Include="Modules\Competency\Dashboard\ctrlCO_Dashboard.ascx" />
+    <Content Include="Modules\Competency\Dashboard\ctrlCO_DBTop5Comp.ascx" />
+    <Content Include="Modules\Competency\Dashboard\ctrlCO_DBTop5CompAvg.ascx" />
+    <Content Include="Modules\Competency\Report\ctrlHU_Competency_RadarGapsBetweenPos.ascx" />
+    <Content Include="Modules\Competency\Report\ctrlHU_Competency_RadarReport.ascx" />
+    <Content Include="Modules\Competency\Report\ctrlHU_Competency_RadarReportGaps.ascx" />
+    <Content Include="Modules\Competency\Setting\ctrlHU_CompetencyCourse.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalDiscipline.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalDisciplineMng.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalDisciplineNewEditMng.ascx" />
+    <Content Include="Modules\Portal\ctrlHU_EmpDtPortalInsurance.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalContractAppendix.ascx" />
+    <Content Include="Modules\Portal\ctrlInfoCertificate.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalEmpDtlTrainingEvaluate.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalConcurrently.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalTrainingOutCompany.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalWorkingBefore.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalCompetencyCourse.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalEmpDtlCompetency.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalEmpDtlViewKPI.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalDirectManagement.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalEmpProfile.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalWorkingBefore_Edit.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalTrainingOutCompany_Edit.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalEmpProfile_Edit.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalFamily_Edit.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalTraining.ascx" />
+    <Content Include="Modules\Competency\Business\ctrlHU_CompetencyAssNewEdit.ascx" />
+    <Content Include="Modules\Competency\Business\ctrlHU_CompetencyAss.ascx" />
+    <Content Include="Modules\Portal\Dashboard\ctrlDBInfoLeave.ascx" />
+    <Content Include="Modules\Portal\Dashboard\ctrlDBEmployeePaper.ascx" />
+    <Content Include="Modules\Portal\Dashboard\ctrlDashboardPortal.ascx" />
+    <Content Include="Modules\Portal\Dashboard\ctrlDashboardPortalSixCell.ascx" />
+    <Content Include="Modules\Portal\Dashboard\ctrlDBEmployeeReg.ascx" />
+    <Content Include="Modules\Portal\Dashboard\ctrlDBCertificateExpires.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_MutilChangeInfoNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtl_HU_Allowance.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpError.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_MngProfileSavedNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_MngProfileSaved.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CertificateNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Certificates.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DebtMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DebtMngNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_FamilytNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Family.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveMutilChangeInfo_New.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlContract_Liquidate.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlAppendix.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ALP.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ALPNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveCertificateEmployee.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Concurrently.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ConcurrentlyNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlConcurrently.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpInfomations.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TerminateCopy.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Abroad.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TrainingEvaluateNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TranningEvaluate.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TrainingManageNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TraniningManagement.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Allowance.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ContractAppendix.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ContractTemplete.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlCompetency.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommendCollect.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommendCollectDetail.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DisciplineSalaryNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DisciplineSalary.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlFile.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ImportCommend.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Terminate3BNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Terminate3B.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveWorkingBefore_Edit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveTrainingOutCompany_Edit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveEmployee_Edit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ApproveFamily_Edit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_AssetMngNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TrainingForeignNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TranningForeign.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Salary.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_SalaryNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WelfareMngAuto.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_AssetMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlHistory.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlInsurance.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlTrainingOutCompany.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TerminateNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TransferTripartiteNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_TransferTripartiteMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Template.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_BlackList.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Commend.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CommendNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Contract.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ContractNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Discipline.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_DisciplineNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_LabourProtectionMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_LabourProtectionMngNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_OccupationalSafety.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_OccupationalSafetyNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_Terminate.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WelfareMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WelfareMngNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WageMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WageNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ChartEmployee.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlViewKPI.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WorkInfo.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WorkInfoNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_CB_PlanningNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlTreelistEmp.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlViewImage.ascx" />
+    <Content Include="Modules\Profile\ctrlInformation.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_WorkingAllowance.ascx" />
+    <Content Include="Modules\Competency\Setting\ctrlHU_CompetencyEmp.ascx" />
+    <Content Include="Modules\Competency\List\ctrlHU_CompetencyPeriod.ascx" />
+    <Content Include="Modules\Competency\Setting\ctrlHU_CompetencyAppendix.ascx" />
+    <Content Include="Modules\Competency\Setting\ctrlHU_CompetencyStandard.ascx" />
+    <Content Include="Modules\Competency\List\ctrlHU_CompetencyBuild.ascx" />
+    <Content Include="Modules\Competency\List\ctrlHU_Competency.ascx" />
+    <Content Include="Modules\Competency\List\ctrlHU_CompetencyGroup.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDashboard.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBInfo.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBSeniority.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDashboardProfile.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDashboardSixCell.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBInfoProfile.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_BHLDItem.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Discipline_List.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_JobBand.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Job_Position.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Position.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_PositionNewEdit.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Reminder.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Title_tbl.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Title_bld.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Chucvu.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHu_Contract_Procedure.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHu_Org_Brand.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Document.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_SignerSetup.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_WorkPlace.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_RelationshipList.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_CommendFormula.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_CommendLevel.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Commend_List.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Signer.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_TitleConcurrent.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Ward.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ChangeInfoNewEdit.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_ChangeInfoMng.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlProfile.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlTraining.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlCommend.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlContract.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlDiscipline.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlFamily.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlSalary.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlWorking.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtlWorkingBefore.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlImageUpload.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmpDtl.ascx" />
+    <Content Include="Modules\Profile\Business\ctrlHU_EmployeeMng.ascx" />
+    <Content Include="Modules\Profile\Business\GetFile.aspx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBEmployeeChange.ascx" />
+    <Content Include="Modules\Profile\Dashboard\ctrlDBEmployeeStatistic.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_AllowanceList.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_StaffRank.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Title.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_WelfareList.ascx" />
+    <Content Include="Modules\Common\ctrlUpload.ascx" />
+    <Content Include="Modules\Portal\ctrlEmployeeInfo.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalCommend.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalContract.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalSalary.ascx" />
+    <Content Include="Modules\Portal\ctrlPortalWorking.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_LabourProtection.ascx" />
+    <Content Include="Modules\Profile\Report\ctrlHU_DynamicReport.ascx" />
+    <None Include="My Project\DataSources\Common.CommonBusiness.UserLog.datasource" />
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="My Project\DataSources\System.Data.DataTable.datasource" />
+    <Content Include="Modules\Profile\Report\ctrlHU_ReportList.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHRGeneralSetting.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlGeneralSetting.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_JobPosition.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_OrganizationHR.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_OrgChart.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_OrgChartTab.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHu_Org_Pause.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlLocationNewEdit.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_SalItemsPercent.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlLocation.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlOrgChartHR.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrltreelist.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlTreeListEdit.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlDashboardHome.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlHomeDashboard.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlUpdateManager.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlUpdateManagerDialog.ascx" />
+    <Content Include="packages.config" />
+    <None Include="Service References\ProfileBusiness\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\Arrays1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\configuration91.svcinfo" />
+    <None Include="Service References\ProfileBusiness\configuration.svcinfo" />
+    <None Include="Service References\ProfileBusiness\Framework.Data.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\Framework.Data1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.AllowanceListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.AssetDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.AssetMngDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.ATPeriodDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.BankAccountLogDTO1.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.BankBranchDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.BankDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <!--
+    <Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CETIFICATEDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.ComboBoxDataDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <!--
+    <Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CommandResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CommendDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CommendEmpDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CommendFormulaDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CommendLevelDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CommendListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CommendOrgDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyAppendixDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyAssDtlDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyAssDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyAvgEmplDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyBuildDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyCourseDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyEmpDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyGroupDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyPeriodDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.CompetencyStandardDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.ContractDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.ContractTypeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <!--
+    <Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.DebtDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.DisciplineDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.DisciplineEmpDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.DisciplineSalaryDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.DistrictDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeAssessmentDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeCompetencyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeCriteriaRecordDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeCVDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeEditDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeEduDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeFileDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeHealthDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeTrainDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.EmployeeTrainForCompanyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.FamilyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.FamilyEditDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.FileContractDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.HospitalDTO.datasource" />
+    <!--
+	<Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.HUAllowanceDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.HuDynamicConditionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.HuFileDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.HU_PRO_TRAIN_OUT_COMPANYDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.HU_PRO_TRAIN_OUT_COMPANYDTOEDIT.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.ImportCommendDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.LabourProtectionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.LabourProtectionMngDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <!--
+    <Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.LocationDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.MissionPrintDTO.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.NationDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.OccupationalSafetyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.OrganizationDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <!--
+	<Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.OrganizationTreeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.OrgChartDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.OrgTitleDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.OtherListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.ProvinceDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <!--
+    <Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.RelationshipListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.ReminderLogDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.RptDynamicColumnDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.RptDynamicColumnDTO1.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.RptManPowerDTO1.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.RptManPowerReferalDTO1.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.RptPPRDTO1.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.Se_ReportDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.Se_ReportDTO1.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.StaffRankDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.StatisticDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TalentPoolDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TalentPoolDTO1.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TalentPoolDTO2.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TalentPoolDTO3.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TalentPoolDTO4.datasource" />
+    <!--
+	<Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.Temp_ConcurrentlyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.Terminate3BDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TerminateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TitleConcurrentDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TitleDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TotalDayOffDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TotalDayOffDTO1.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TotalDayOffDTO2.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TotalDayOffDTO3.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TotalDayOffDTO4.datasource" />
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TotalDayOffDTO5.datasource" />
+    <!--
+	<Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TrainningEvaluateDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TrainningForeignDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.TrainningManageDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.Ward_DTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.WelfareListDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.WelfareMngDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <!--
+    <Content Include="Service References\ProfileBusiness\Profile.ProfileBusiness.Welfatemng_empDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+	-->
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.WorkingAllowanceDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.WorkingBeforeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.WorkingBeforeDTOEdit.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\Profile.ProfileBusiness.WorkingDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProfileBusiness\ProfileDAL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\ProfileDAL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Modules\Profile\Setting\ctrlHU_OrgTitleNewEdit.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlLineManager.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlOrgChart.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Asset.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Bank.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_BankBranch.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_ContractType.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_District.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Nation.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_Organization.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlHU_OrgTitle.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Place.ascx" />
+    <Content Include="Modules\Profile\List\ctrlHU_Province.ascx" />
+    <Content Include="Modules\Profile\Setting\ctrlRemindConfig.ascx" />
+    <Content Include="Modules\Common\ctrlFindEmployeePopup.ascx" />
+    <Content Include="Modules\Common\ctrlFindTitlePopup.ascx" />
+    <Content Include="Modules\Common\ctrlMessageBox.ascx" />
+    <Content Include="Modules\Common\ctrlOrganization.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlEmpBasicInfo.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindEmployeeImportPopup.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindEmployeeImportPopupDialog.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindOrgImportPopup.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindOrgImportPopupDialog.ascx" />
+    <Content Include="Modules\Profile\Shared\ctrlFindSalaryPopup.ascx" />
+    <None Include="My Project\DataSources\ProfileDAL.EMPLOYEE.datasource" />
+    <None Include="My Project\DataSources\ProfileDAL.Employee1.datasource" />
+    <Content Include="Modules\Profile\Shared\ctrlFindAssetPopup.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\ProfileBusiness\service.wsdl" />
+    <None Include="Service References\ProfileBusiness\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\service1.wsdl" />
+    <None Include="Service References\ProfileBusiness\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\System.Data.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\System.Data1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\System.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfileBusiness\System1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlWorkKPIsPerformance.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlWorkKPIsPerformance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlWorkKPIsPerformance.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlWorkKPIsPerformance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlComitee.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlComitee.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlComitee.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlComitee.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Health_Exam.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Health_Exam.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Health_Exam.ascx.vb">
+      <DependentUpon>ctrlHU_Health_Exam.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Job.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Job.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Job.ascx.vb">
+      <DependentUpon>ctrlHU_Job.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_JobNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_JobNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_JobNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_JobNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_PensionBenefits.ascx.designer.vb">
+      <DependentUpon>ctrlHU_PensionBenefits.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_PensionBenefits.ascx.vb">
+      <DependentUpon>ctrlHU_PensionBenefits.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_StocksTransactionNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_StocksTransactionNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_StocksTransactionNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_StocksTransactionNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Stocks.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Stocks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Stocks.ascx.vb">
+      <DependentUpon>ctrlHU_Stocks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_SeveranceSettlementNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_SeveranceSettlementNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_SeveranceSettlementNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_SeveranceSettlementNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_SeveranceSettlement.ascx.designer.vb">
+      <DependentUpon>ctrlHU_SeveranceSettlement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_SeveranceSettlement.ascx.vb">
+      <DependentUpon>ctrlHU_SeveranceSettlement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpBank.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpBank.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpBank.ascx.vb">
+      <DependentUpon>ctrlHU_EmpBank.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_BHLD.ascx.designer.vb">
+      <DependentUpon>ctrlHU_BHLD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_BHLD.ascx.vb">
+      <DependentUpon>ctrlHU_BHLD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_AccidentNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_AccidentNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_AccidentNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_AccidentNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Accident.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Accident.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Accident.ascx.vb">
+      <DependentUpon>ctrlHU_Accident.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_Assessment.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CB_Assessment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_Assessment.ascx.vb">
+      <DependentUpon>ctrlHU_CB_Assessment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_AssessmentNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CB_AssessmentNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_AssessmentNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_CB_AssessmentNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommiteeDetail.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CommiteeDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommiteeDetail.ascx.vb">
+      <DependentUpon>ctrlHU_CommiteeDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommiteeNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CommiteeNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommiteeNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_CommiteeNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Commitee.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Commitee.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Commitee.ascx.vb">
+      <DependentUpon>ctrlHU_Commitee.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_PlanningDetail.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CB_PlanningDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_PlanningDetail.ascx.vb">
+      <DependentUpon>ctrlHU_CB_PlanningDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_Planning.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CB_Planning.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_Planning.ascx.vb">
+      <DependentUpon>ctrlHU_CB_Planning.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmployeeNPT.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmployeeNPT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmployeeNPT.ascx.vb">
+      <DependentUpon>ctrlHU_EmployeeNPT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_InfoConfirm.ascx.designer.vb">
+      <DependentUpon>ctrlHU_InfoConfirm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_InfoConfirm.ascx.vb">
+      <DependentUpon>ctrlHU_InfoConfirm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_StocksTransaction.ascx.designer.vb">
+      <DependentUpon>ctrlHU_StocksTransaction.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_StocksTransaction.ascx.vb">
+      <DependentUpon>ctrlHU_StocksTransaction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TransferOrg.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TransferOrg.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TransferOrg.ascx.vb">
+      <DependentUpon>ctrlHU_TransferOrg.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TransferOrgPopup.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TransferOrgPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TransferOrgPopup.ascx.vb">
+      <DependentUpon>ctrlHU_TransferOrgPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Travel.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Travel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Travel.ascx.vb">
+      <DependentUpon>ctrlHU_Travel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpCuriculumVitae.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpCuriculumVitae.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpCuriculumVitae.ascx.vb">
+      <DependentUpon>ctrlHU_EmpCuriculumVitae.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpMailPopup.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpMailPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpMailPopup.ascx.vb">
+      <DependentUpon>ctrlHU_EmpMailPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Business\ctrlHU_EmployeeCriteriaRecord.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmployeeCriteriaRecord.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Business\ctrlHU_EmployeeCriteriaRecord.ascx.vb">
+      <DependentUpon>ctrlHU_EmployeeCriteriaRecord.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Dashboard\ctrlCO_Dashboard.ascx.designer.vb">
+      <DependentUpon>ctrlCO_Dashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Dashboard\ctrlCO_Dashboard.ascx.vb">
+      <DependentUpon>ctrlCO_Dashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Dashboard\ctrlCO_DBTop5Comp.ascx.designer.vb">
+      <DependentUpon>ctrlCO_DBTop5Comp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Dashboard\ctrlCO_DBTop5Comp.ascx.vb">
+      <DependentUpon>ctrlCO_DBTop5Comp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Dashboard\ctrlCO_DBTop5CompAvg.ascx.designer.vb">
+      <DependentUpon>ctrlCO_DBTop5CompAvg.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Dashboard\ctrlCO_DBTop5CompAvg.ascx.vb">
+      <DependentUpon>ctrlCO_DBTop5CompAvg.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Report\ctrlHU_Competency_RadarGapsBetweenPos.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Competency_RadarGapsBetweenPos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Report\ctrlHU_Competency_RadarGapsBetweenPos.ascx.vb">
+      <DependentUpon>ctrlHU_Competency_RadarGapsBetweenPos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Report\ctrlHU_Competency_RadarReport.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Competency_RadarReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Report\ctrlHU_Competency_RadarReport.ascx.vb">
+      <DependentUpon>ctrlHU_Competency_RadarReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Report\ctrlHU_Competency_RadarReportGaps.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Competency_RadarReportGaps.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Report\ctrlHU_Competency_RadarReportGaps.ascx.vb">
+      <DependentUpon>ctrlHU_Competency_RadarReportGaps.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Setting\ctrlHU_CompetencyCourse.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CompetencyCourse.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Setting\ctrlHU_CompetencyCourse.ascx.vb">
+      <DependentUpon>ctrlHU_CompetencyCourse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalDiscipline.ascx.designer.vb">
+      <DependentUpon>ctrlPortalDiscipline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalDiscipline.ascx.vb">
+      <DependentUpon>ctrlPortalDiscipline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalDisciplineMng.ascx.designer.vb">
+      <DependentUpon>ctrlPortalDisciplineMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalDisciplineMng.ascx.vb">
+      <DependentUpon>ctrlPortalDisciplineMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalDisciplineNewEditMng.ascx.designer.vb">
+      <DependentUpon>ctrlPortalDisciplineNewEditMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalDisciplineNewEditMng.ascx.vb">
+      <DependentUpon>ctrlPortalDisciplineNewEditMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlHU_EmpDtPortalInsurance.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtPortalInsurance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlHU_EmpDtPortalInsurance.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtPortalInsurance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalContractAppendix.ascx.designer.vb">
+      <DependentUpon>ctrlPortalContractAppendix.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalContractAppendix.ascx.vb">
+      <DependentUpon>ctrlPortalContractAppendix.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlInfoCertificate.ascx.designer.vb">
+      <DependentUpon>ctrlInfoCertificate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlInfoCertificate.ascx.vb">
+      <DependentUpon>ctrlInfoCertificate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpDtlTrainingEvaluate.ascx.designer.vb">
+      <DependentUpon>ctrlPortalEmpDtlTrainingEvaluate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpDtlTrainingEvaluate.ascx.vb">
+      <DependentUpon>ctrlPortalEmpDtlTrainingEvaluate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalConcurrently.ascx.designer.vb">
+      <DependentUpon>ctrlPortalConcurrently.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalConcurrently.ascx.vb">
+      <DependentUpon>ctrlPortalConcurrently.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalTrainingOutCompany.ascx.designer.vb">
+      <DependentUpon>ctrlPortalTrainingOutCompany.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalTrainingOutCompany.ascx.vb">
+      <DependentUpon>ctrlPortalTrainingOutCompany.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalWorkingBefore.ascx.designer.vb">
+      <DependentUpon>ctrlPortalWorkingBefore.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalWorkingBefore.ascx.vb">
+      <DependentUpon>ctrlPortalWorkingBefore.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalCompetencyCourse.ascx.designer.vb">
+      <DependentUpon>ctrlPortalCompetencyCourse.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalCompetencyCourse.ascx.vb">
+      <DependentUpon>ctrlPortalCompetencyCourse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpDtlCompetency.ascx.designer.vb">
+      <DependentUpon>ctrlPortalEmpDtlCompetency.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpDtlCompetency.ascx.vb">
+      <DependentUpon>ctrlPortalEmpDtlCompetency.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpDtlViewKPI.ascx.designer.vb">
+      <DependentUpon>ctrlPortalEmpDtlViewKPI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpDtlViewKPI.ascx.vb">
+      <DependentUpon>ctrlPortalEmpDtlViewKPI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalDirectManagement.ascx.designer.vb">
+      <DependentUpon>ctrlPortalDirectManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalDirectManagement.ascx.vb">
+      <DependentUpon>ctrlPortalDirectManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpProfile.ascx.designer.vb">
+      <DependentUpon>ctrlPortalEmpProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpProfile.ascx.vb">
+      <DependentUpon>ctrlPortalEmpProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalWorkingBefore_Edit.ascx.designer.vb">
+      <DependentUpon>ctrlPortalWorkingBefore_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalWorkingBefore_Edit.ascx.vb">
+      <DependentUpon>ctrlPortalWorkingBefore_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalTrainingOutCompany_Edit.ascx.designer.vb">
+      <DependentUpon>ctrlPortalTrainingOutCompany_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalTrainingOutCompany_Edit.ascx.vb">
+      <DependentUpon>ctrlPortalTrainingOutCompany_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpProfile_Edit.ascx.designer.vb">
+      <DependentUpon>ctrlPortalEmpProfile_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalEmpProfile_Edit.ascx.vb">
+      <DependentUpon>ctrlPortalEmpProfile_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalFamily_Edit.ascx.designer.vb">
+      <DependentUpon>ctrlPortalFamily_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalFamily_Edit.ascx.vb">
+      <DependentUpon>ctrlPortalFamily_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalTraining.ascx.designer.vb">
+      <DependentUpon>ctrlPortalTraining.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalTraining.ascx.vb">
+      <DependentUpon>ctrlPortalTraining.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDBInfoLeave.ascx.designer.vb">
+      <DependentUpon>ctrlDBInfoLeave.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDBInfoLeave.ascx.vb">
+      <DependentUpon>ctrlDBInfoLeave.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDBEmployeePaper.ascx.designer.vb">
+      <DependentUpon>ctrlDBEmployeePaper.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDBEmployeePaper.ascx.vb">
+      <DependentUpon>ctrlDBEmployeePaper.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDashboardPortal.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardPortal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDashboardPortal.ascx.vb">
+      <DependentUpon>ctrlDashboardPortal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDashboardPortalSixCell.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardPortalSixCell.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDashboardPortalSixCell.ascx.vb">
+      <DependentUpon>ctrlDashboardPortalSixCell.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDBEmployeeReg.ascx.designer.vb">
+      <DependentUpon>ctrlDBEmployeeReg.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDBEmployeeReg.ascx.vb">
+      <DependentUpon>ctrlDBEmployeeReg.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDBCertificateExpires.ascx.designer.vb">
+      <DependentUpon>ctrlDBCertificateExpires.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\Dashboard\ctrlDBCertificateExpires.ascx.vb">
+      <DependentUpon>ctrlDBCertificateExpires.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\BusinessObjects\SendMail.vb" />
+    <Compile Include="Modules\Profile\BusinessObjects\MessageDTO.vb" />
+    <Compile Include="Modules\Competency\Business\ctrlHU_CompetencyAssNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CompetencyAssNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Business\ctrlHU_CompetencyAssNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_CompetencyAssNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Business\ctrlHU_CompetencyAss.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CompetencyAss.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Business\ctrlHU_CompetencyAss.ascx.vb">
+      <DependentUpon>ctrlHU_CompetencyAss.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_MutilChangeInfoNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_MutilChangeInfoNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_MutilChangeInfoNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_MutilChangeInfoNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtl_HU_Allowance.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtl_HU_Allowance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtl_HU_Allowance.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtl_HU_Allowance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpError.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpError.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpError.ascx.vb">
+      <DependentUpon>ctrlHU_EmpError.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_MngProfileSavedNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_MngProfileSavedNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_MngProfileSavedNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_MngProfileSavedNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_MngProfileSaved.ascx.designer.vb">
+      <DependentUpon>ctrlHU_MngProfileSaved.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_MngProfileSaved.ascx.vb">
+      <DependentUpon>ctrlHU_MngProfileSaved.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CertificateNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CertificateNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CertificateNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_CertificateNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Certificates.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Certificates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Certificates.ascx.vb">
+      <DependentUpon>ctrlHU_Certificates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DebtMng.ascx.designer.vb">
+      <DependentUpon>ctrlHU_DebtMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DebtMng.ascx.vb">
+      <DependentUpon>ctrlHU_DebtMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DebtMngNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_DebtMngNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DebtMngNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_DebtMngNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_FamilytNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_FamilytNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_FamilytNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_FamilytNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Family.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Family.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Family.ascx.vb">
+      <DependentUpon>ctrlHU_Family.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveMutilChangeInfo_New.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ApproveMutilChangeInfo_New.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveMutilChangeInfo_New.ascx.vb">
+      <DependentUpon>ctrlHU_ApproveMutilChangeInfo_New.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlContract_Liquidate.ascx.designer.vb">
+      <DependentUpon>ctrlContract_Liquidate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlContract_Liquidate.ascx.vb">
+      <DependentUpon>ctrlContract_Liquidate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlAppendix.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlAppendix.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlAppendix.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlAppendix.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ALP.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ALP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ALP.ascx.vb">
+      <DependentUpon>ctrlHU_ALP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ALPNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ALPNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ALPNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_ALPNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveCertificateEmployee.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ApproveCertificateEmployee.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveCertificateEmployee.ascx.vb">
+      <DependentUpon>ctrlHU_ApproveCertificateEmployee.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Concurrently.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Concurrently.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Concurrently.ascx.vb">
+      <DependentUpon>ctrlHU_Concurrently.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ConcurrentlyNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ConcurrentlyNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ConcurrentlyNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_ConcurrentlyNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlConcurrently.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlConcurrently.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlConcurrently.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlConcurrently.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpInfomations.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpInfomations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpInfomations.ascx.vb">
+      <DependentUpon>ctrlHU_EmpInfomations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TerminateCopy.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TerminateCopy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TerminateCopy.ascx.vb">
+      <DependentUpon>ctrlHU_TerminateCopy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Abroad.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Abroad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Abroad.ascx.vb">
+      <DependentUpon>ctrlHU_Abroad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TrainingEvaluateNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TrainingEvaluateNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TrainingEvaluateNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_TrainingEvaluateNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TranningEvaluate.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TranningEvaluate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TranningEvaluate.ascx.vb">
+      <DependentUpon>ctrlHU_TranningEvaluate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TrainingManageNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TrainingManageNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TrainingManageNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_TrainingManageNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TraniningManagement.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TraniningManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TraniningManagement.ascx.vb">
+      <DependentUpon>ctrlHU_TraniningManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Allowance.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Allowance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Allowance.ascx.vb">
+      <DependentUpon>ctrlHU_Allowance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ContractAppendix.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ContractAppendix.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ContractAppendix.ascx.vb">
+      <DependentUpon>ctrlHU_ContractAppendix.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ContractTemplete.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ContractTemplete.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ContractTemplete.ascx.vb">
+      <DependentUpon>ctrlHU_ContractTemplete.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlCompetency.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlCompetency.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlCompetency.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlCompetency.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommendCollect.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CommendCollect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommendCollect.ascx.vb">
+      <DependentUpon>ctrlHU_CommendCollect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommendCollectDetail.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CommendCollectDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommendCollectDetail.ascx.vb">
+      <DependentUpon>ctrlHU_CommendCollectDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DisciplineSalaryNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_DisciplineSalaryNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DisciplineSalaryNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_DisciplineSalaryNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DisciplineSalary.ascx.designer.vb">
+      <DependentUpon>ctrlHU_DisciplineSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DisciplineSalary.ascx.vb">
+      <DependentUpon>ctrlHU_DisciplineSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlFile.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlFile.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ImportCommend.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ImportCommend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ImportCommend.ascx.vb">
+      <DependentUpon>ctrlHU_ImportCommend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Terminate3BNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Terminate3BNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Terminate3BNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_Terminate3BNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Terminate3B.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Terminate3B.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Terminate3B.ascx.vb">
+      <DependentUpon>ctrlHU_Terminate3B.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveWorkingBefore_Edit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ApproveWorkingBefore_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveWorkingBefore_Edit.ascx.vb">
+      <DependentUpon>ctrlHU_ApproveWorkingBefore_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveTrainingOutCompany_Edit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ApproveTrainingOutCompany_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveTrainingOutCompany_Edit.ascx.vb">
+      <DependentUpon>ctrlHU_ApproveTrainingOutCompany_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveEmployee_Edit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ApproveEmployee_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveEmployee_Edit.ascx.vb">
+      <DependentUpon>ctrlHU_ApproveEmployee_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveFamily_Edit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ApproveFamily_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ApproveFamily_Edit.ascx.vb">
+      <DependentUpon>ctrlHU_ApproveFamily_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_AssetMngNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_AssetMngNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_AssetMngNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_AssetMngNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TrainingForeignNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TrainingForeignNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TrainingForeignNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_TrainingForeignNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TranningForeign.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TranningForeign.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TranningForeign.ascx.vb">
+      <DependentUpon>ctrlHU_TranningForeign.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Salary.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Salary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Salary.ascx.vb">
+      <DependentUpon>ctrlHU_Salary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_SalaryNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_SalaryNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_SalaryNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_SalaryNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WelfareMngAuto.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WelfareMngAuto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WelfareMngAuto.ascx.vb">
+      <DependentUpon>ctrlHU_WelfareMngAuto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_AssetMng.ascx.designer.vb">
+      <DependentUpon>ctrlHU_AssetMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_AssetMng.ascx.vb">
+      <DependentUpon>ctrlHU_AssetMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlHistory.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlHistory.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlInsurance.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlInsurance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlInsurance.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlInsurance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlTrainingOutCompany.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlTrainingOutCompany.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlTrainingOutCompany.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlTrainingOutCompany.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TerminateNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TerminateNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TerminateNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_TerminateNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TransferTripartiteNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TransferTripartiteNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TransferTripartiteNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_TransferTripartiteNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TransferTripartiteMng.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TransferTripartiteMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_TransferTripartiteMng.ascx.vb">
+      <DependentUpon>ctrlHU_TransferTripartiteMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Template.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Template.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Template.ascx.vb">
+      <DependentUpon>ctrlHU_Template.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_BlackList.ascx.designer.vb">
+      <DependentUpon>ctrlHU_BlackList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_BlackList.ascx.vb">
+      <DependentUpon>ctrlHU_BlackList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Commend.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Commend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Commend.ascx.vb">
+      <DependentUpon>ctrlHU_Commend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommendNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CommendNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CommendNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_CommendNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Contract.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Contract.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Contract.ascx.vb">
+      <DependentUpon>ctrlHU_Contract.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ContractNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ContractNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ContractNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_ContractNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Discipline.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Discipline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Discipline.ascx.vb">
+      <DependentUpon>ctrlHU_Discipline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DisciplineNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_DisciplineNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_DisciplineNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_DisciplineNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_LabourProtectionMng.ascx.designer.vb">
+      <DependentUpon>ctrlHU_LabourProtectionMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_LabourProtectionMng.ascx.vb">
+      <DependentUpon>ctrlHU_LabourProtectionMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_LabourProtectionMngNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_LabourProtectionMngNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_LabourProtectionMngNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_LabourProtectionMngNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_OccupationalSafety.ascx.designer.vb">
+      <DependentUpon>ctrlHU_OccupationalSafety.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_OccupationalSafety.ascx.vb">
+      <DependentUpon>ctrlHU_OccupationalSafety.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_OccupationalSafetyNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_OccupationalSafetyNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_OccupationalSafetyNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_OccupationalSafetyNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Terminate.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Terminate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_Terminate.ascx.vb">
+      <DependentUpon>ctrlHU_Terminate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WelfareMng.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WelfareMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WelfareMng.ascx.vb">
+      <DependentUpon>ctrlHU_WelfareMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WelfareMngNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WelfareMngNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WelfareMngNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_WelfareMngNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WageMng.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WageMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WageMng.ascx.vb">
+      <DependentUpon>ctrlHU_WageMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WageNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WageNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WageNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_WageNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WorkInfo.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WorkInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WorkInfo.ascx.vb">
+      <DependentUpon>ctrlHU_WorkInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WorkInfoNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WorkInfoNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WorkInfoNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_WorkInfoNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WorkingAllowance.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WorkingAllowance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_WorkingAllowance.ascx.vb">
+      <DependentUpon>ctrlHU_WorkingAllowance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Setting\ctrlHU_CompetencyEmp.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CompetencyEmp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Setting\ctrlHU_CompetencyEmp.ascx.vb">
+      <DependentUpon>ctrlHU_CompetencyEmp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\List\ctrlHU_CompetencyPeriod.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CompetencyPeriod.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\List\ctrlHU_CompetencyPeriod.ascx.vb">
+      <DependentUpon>ctrlHU_CompetencyPeriod.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Setting\ctrlHU_CompetencyAppendix.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CompetencyAppendix.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Setting\ctrlHU_CompetencyAppendix.ascx.vb">
+      <DependentUpon>ctrlHU_CompetencyAppendix.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\Setting\ctrlHU_CompetencyStandard.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CompetencyStandard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\Setting\ctrlHU_CompetencyStandard.ascx.vb">
+      <DependentUpon>ctrlHU_CompetencyStandard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\List\ctrlHU_CompetencyBuild.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CompetencyBuild.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\List\ctrlHU_CompetencyBuild.ascx.vb">
+      <DependentUpon>ctrlHU_CompetencyBuild.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\List\ctrlHU_Competency.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Competency.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\List\ctrlHU_Competency.ascx.vb">
+      <DependentUpon>ctrlHU_Competency.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\List\ctrlHU_CompetencyGroup.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CompetencyGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Competency\List\ctrlHU_CompetencyGroup.ascx.vb">
+      <DependentUpon>ctrlHU_CompetencyGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Competency\ProfileRepository.Competency.vb" />
+    <Compile Include="Modules\Profile\Business\ctrlHU_ChartEmployee.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ChartEmployee.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ChartEmployee.ascx.vb">
+      <DependentUpon>ctrlHU_ChartEmployee.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlViewKPI.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlViewKPI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlViewKPI.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlViewKPI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_PlanningNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CB_PlanningNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_CB_PlanningNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_CB_PlanningNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlTreelistEmp.ascx.designer.vb">
+      <DependentUpon>ctrlTreelistEmp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlTreelistEmp.ascx.vb">
+      <DependentUpon>ctrlTreelistEmp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlViewImage.ascx.designer.vb">
+      <DependentUpon>ctrlViewImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlViewImage.ascx.vb">
+      <DependentUpon>ctrlViewImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDashboard.ascx.designer.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDashboard.ascx.vb">
+      <DependentUpon>ctrlDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBInfo.ascx.designer.vb">
+      <DependentUpon>ctrlDBInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBInfo.ascx.vb">
+      <DependentUpon>ctrlDBInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBSeniority.ascx.designer.vb">
+      <DependentUpon>ctrlDBSeniority.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBSeniority.ascx.vb">
+      <DependentUpon>ctrlDBSeniority.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDashboardProfile.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDashboardProfile.ascx.vb">
+      <DependentUpon>ctrlDashboardProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDashboardSixCell.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDashboardSixCell.ascx.vb">
+      <DependentUpon>ctrlDashboardSixCell.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBInfoProfile.ascx.designer.vb">
+      <DependentUpon>ctrlDBInfoProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBInfoProfile.ascx.vb">
+      <DependentUpon>ctrlDBInfoProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_BHLDItem.ascx.designer.vb">
+      <DependentUpon>ctrlHU_BHLDItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_BHLDItem.ascx.vb">
+      <DependentUpon>ctrlHU_BHLDItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Discipline_List.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Discipline_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Discipline_List.ascx.vb">
+      <DependentUpon>ctrlHU_Discipline_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_JobBand.ascx.designer.vb">
+      <DependentUpon>ctrlHU_JobBand.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_JobBand.ascx.vb">
+      <DependentUpon>ctrlHU_JobBand.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Job_Position.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Job_Position.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Job_Position.ascx.vb">
+      <DependentUpon>ctrlHU_Job_Position.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Position.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Position.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Position.ascx.vb">
+      <DependentUpon>ctrlHU_Position.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_PositionNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_PositionNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_PositionNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_PositionNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Reminder.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Reminder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Reminder.ascx.vb">
+      <DependentUpon>ctrlHU_Reminder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Title_tbl.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Title_tbl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Title_tbl.ascx.vb">
+      <DependentUpon>ctrlHU_Title_tbl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Title_bld.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Title_bld.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Title_bld.ascx.vb">
+      <DependentUpon>ctrlHU_Title_bld.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Chucvu.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Chucvu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Chucvu.ascx.vb">
+      <DependentUpon>ctrlHU_Chucvu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHu_Contract_Procedure.ascx.designer.vb">
+      <DependentUpon>ctrlHu_Contract_Procedure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHu_Contract_Procedure.ascx.vb">
+      <DependentUpon>ctrlHu_Contract_Procedure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHu_Org_Brand.ascx.designer.vb">
+      <DependentUpon>ctrlHu_Org_Brand.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHu_Org_Brand.ascx.vb">
+      <DependentUpon>ctrlHu_Org_Brand.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Document.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Document.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Document.ascx.vb">
+      <DependentUpon>ctrlHU_Document.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_SignerSetup.ascx.designer.vb">
+      <DependentUpon>ctrlHU_SignerSetup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_SignerSetup.ascx.vb">
+      <DependentUpon>ctrlHU_SignerSetup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_WorkPlace.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WorkPlace.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_WorkPlace.ascx.vb">
+      <DependentUpon>ctrlHU_WorkPlace.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_RelationshipList.ascx.designer.vb">
+      <DependentUpon>ctrlHU_RelationshipList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_RelationshipList.ascx.vb">
+      <DependentUpon>ctrlHU_RelationshipList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_CommendFormula.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CommendFormula.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_CommendFormula.ascx.vb">
+      <DependentUpon>ctrlHU_CommendFormula.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_CommendLevel.ascx.designer.vb">
+      <DependentUpon>ctrlHU_CommendLevel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_CommendLevel.ascx.vb">
+      <DependentUpon>ctrlHU_CommendLevel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Commend_List.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Commend_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Commend_List.ascx.vb">
+      <DependentUpon>ctrlHU_Commend_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Signer.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Signer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Signer.ascx.vb">
+      <DependentUpon>ctrlHU_Signer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\ProfileBusinessRepository.Contract.vb" />
+    <Compile Include="Modules\Profile\ProfileBusinessRepository.Commend.vb" />
+    <Compile Include="Modules\Profile\ProfileBusinessRepository.Discipline.vb" />
+    <Compile Include="Modules\Profile\ProfileBusinessRepository.Terminate.vb" />
+    <Compile Include="Modules\Profile\ProfileBusinessRepository.Employee.vb" />
+    <Compile Include="Modules\Profile\ProfileBusinessRepository.Family.vb" />
+    <Compile Include="Modules\Profile\ctrlInformation.ascx.designer.vb">
+      <DependentUpon>ctrlInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\ctrlInformation.ascx.vb">
+      <DependentUpon>ctrlInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_TitleConcurrent.ascx.designer.vb">
+      <DependentUpon>ctrlHU_TitleConcurrent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_TitleConcurrent.ascx.vb">
+      <DependentUpon>ctrlHU_TitleConcurrent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Ward.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Ward.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Ward.ascx.vb">
+      <DependentUpon>ctrlHU_Ward.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\ProfileStoreProcedure.EmployeeCV.vb" />
+    <Compile Include="Modules\Profile\ProfileStoreProcedure.Import.vb" />
+    <Compile Include="Modules\Profile\ProfileStoreProcedure.Location.vb" />
+    <Compile Include="Modules\Profile\ProfileStoreProcedure.vb" />
+    <Compile Include="Modules\Profile\Business\ctrlHU_ChangeInfoNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ChangeInfoNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ChangeInfoNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_ChangeInfoNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ChangeInfoMng.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ChangeInfoMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_ChangeInfoMng.ascx.vb">
+      <DependentUpon>ctrlHU_ChangeInfoMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlProfile.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlProfile.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlTraining.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlTraining.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlTraining.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlTraining.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlCommend.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlCommend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlCommend.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlCommend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlContract.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlContract.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlContract.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlContract.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlDiscipline.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlDiscipline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlDiscipline.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlDiscipline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlFamily.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlFamily.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlFamily.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlFamily.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlSalary.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlSalary.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlWorking.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlWorking.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlWorking.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlWorking.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlWorkingBefore.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtlWorkingBefore.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtlWorkingBefore.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtlWorkingBefore.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlImageUpload.ascx.designer.vb">
+      <DependentUpon>ctrlImageUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlImageUpload.ascx.vb">
+      <DependentUpon>ctrlImageUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtl.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmpDtl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmpDtl.ascx.vb">
+      <DependentUpon>ctrlHU_EmpDtl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmployeeMng.ascx.designer.vb">
+      <DependentUpon>ctrlHU_EmployeeMng.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\ctrlHU_EmployeeMng.ascx.vb">
+      <DependentUpon>ctrlHU_EmployeeMng.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\GetFile.aspx.designer.vb">
+      <DependentUpon>GetFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Business\GetFile.aspx.vb">
+      <DependentUpon>GetFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_LabourProtection.ascx.designer.vb">
+      <DependentUpon>ctrlHU_LabourProtection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_LabourProtection.ascx.vb">
+      <DependentUpon>ctrlHU_LabourProtection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\ProfileBusinessRepository.EmployeeFile.vb" />
+    <Compile Include="Modules\Profile\ProfileBusinessRepository.Working.vb" />
+    <Compile Include="Modules\Profile\List\ctrlHU_StaffRank.ascx.designer.vb">
+      <DependentUpon>ctrlHU_StaffRank.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_StaffRank.ascx.vb">
+      <DependentUpon>ctrlHU_StaffRank.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\ProfileRepository.List.vb" />
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBEmployeeChange.ascx.designer.vb">
+      <DependentUpon>ctrlDBEmployeeChange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBEmployeeChange.ascx.vb">
+      <DependentUpon>ctrlDBEmployeeChange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBEmployeeStatistic.ascx.designer.vb">
+      <DependentUpon>ctrlDBEmployeeStatistic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Dashboard\ctrlDBEmployeeStatistic.ascx.vb">
+      <DependentUpon>ctrlDBEmployeeStatistic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_AllowanceList.ascx.designer.vb">
+      <DependentUpon>ctrlHU_AllowanceList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_AllowanceList.ascx.vb">
+      <DependentUpon>ctrlHU_AllowanceList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Title.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Title.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Title.ascx.vb">
+      <DependentUpon>ctrlHU_Title.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_WelfareList.ascx.designer.vb">
+      <DependentUpon>ctrlHU_WelfareList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_WelfareList.ascx.vb">
+      <DependentUpon>ctrlHU_WelfareList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlEmployeeInfo.ascx.designer.vb">
+      <DependentUpon>ctrlEmployeeInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlEmployeeInfo.ascx.vb">
+      <DependentUpon>ctrlEmployeeInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalCommend.ascx.designer.vb">
+      <DependentUpon>ctrlPortalCommend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalCommend.ascx.vb">
+      <DependentUpon>ctrlPortalCommend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalContract.ascx.designer.vb">
+      <DependentUpon>ctrlPortalContract.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalContract.ascx.vb">
+      <DependentUpon>ctrlPortalContract.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalSalary.ascx.designer.vb">
+      <DependentUpon>ctrlPortalSalary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalSalary.ascx.vb">
+      <DependentUpon>ctrlPortalSalary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalWorking.ascx.designer.vb">
+      <DependentUpon>ctrlPortalWorking.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Portal\ctrlPortalWorking.ascx.vb">
+      <DependentUpon>ctrlPortalWorking.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\ProfileRepository.Report.vb" />
+    <Compile Include="Modules\Profile\ProfileCommon.vb" />
+    <Compile Include="Modules\Profile\ProfileDashboardRepository.vb" />
+    <Compile Include="Modules\Profile\ProfileReportRepositoty.vb" />
+    <Compile Include="Modules\Profile\Report\ctrlHU_DynamicReport.ascx.designer.vb">
+      <DependentUpon>ctrlHU_DynamicReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Report\ctrlHU_DynamicReport.ascx.vb">
+      <DependentUpon>ctrlHU_DynamicReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Report\ctrlHU_ReportList.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ReportList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Report\ctrlHU_ReportList.ascx.vb">
+      <DependentUpon>ctrlHU_ReportList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Report\RdlGenerator.vb" />
+    <Compile Include="Modules\Profile\Report\ReportDefinition.vb" />
+    <Compile Include="Modules\Profile\Report\TableRdlGenerator.vb" />
+    <Compile Include="Modules\Profile\Setting\ctrlHRGeneralSetting.ascx.designer.vb">
+      <DependentUpon>ctrlHRGeneralSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHRGeneralSetting.ascx.vb">
+      <DependentUpon>ctrlHRGeneralSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlGeneralSetting.ascx.designer.vb">
+      <DependentUpon>ctrlGeneralSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlGeneralSetting.ascx.vb">
+      <DependentUpon>ctrlGeneralSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_JobPosition.ascx.designer.vb">
+      <DependentUpon>ctrlHU_JobPosition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_JobPosition.ascx.vb">
+      <DependentUpon>ctrlHU_JobPosition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrganizationHR.ascx.designer.vb">
+      <DependentUpon>ctrlHU_OrganizationHR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrganizationHR.ascx.vb">
+      <DependentUpon>ctrlHU_OrganizationHR.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrgChart.ascx.designer.vb">
+      <DependentUpon>ctrlHU_OrgChart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrgChart.ascx.vb">
+      <DependentUpon>ctrlHU_OrgChart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrgChartTab.ascx.designer.vb">
+      <DependentUpon>ctrlHU_OrgChartTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrgChartTab.ascx.vb">
+      <DependentUpon>ctrlHU_OrgChartTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrgTitleNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlHU_OrgTitleNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrgTitleNewEdit.ascx.vb">
+      <DependentUpon>ctrlHU_OrgTitleNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHu_Org_Pause.ascx.designer.vb">
+      <DependentUpon>ctrlHu_Org_Pause.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHu_Org_Pause.ascx.vb">
+      <DependentUpon>ctrlHu_Org_Pause.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlLocationNewEdit.ascx.designer.vb">
+      <DependentUpon>ctrlLocationNewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlLocationNewEdit.ascx.vb">
+      <DependentUpon>ctrlLocationNewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_SalItemsPercent.ascx.designer.vb">
+      <DependentUpon>ctrlHU_SalItemsPercent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_SalItemsPercent.ascx.vb">
+      <DependentUpon>ctrlHU_SalItemsPercent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlLocation.ascx.designer.vb">
+      <DependentUpon>ctrlLocation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlLocation.ascx.vb">
+      <DependentUpon>ctrlLocation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlOrgChartHR.ascx.designer.vb">
+      <DependentUpon>ctrlOrgChartHR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlOrgChartHR.ascx.vb">
+      <DependentUpon>ctrlOrgChartHR.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrltreelist.ascx.designer.vb">
+      <DependentUpon>ctrltreelist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrltreelist.ascx.vb">
+      <DependentUpon>ctrltreelist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlTreeListEdit.ascx.designer.vb">
+      <DependentUpon>ctrlTreeListEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlTreeListEdit.ascx.vb">
+      <DependentUpon>ctrlTreeListEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlDashboardHome.ascx.designer.vb">
+      <DependentUpon>ctrlDashboardHome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlDashboardHome.ascx.vb">
+      <DependentUpon>ctrlDashboardHome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindEmployeeImportPopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindEmployeeImportPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindEmployeeImportPopup.ascx.vb">
+      <DependentUpon>ctrlFindEmployeeImportPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindEmployeeImportPopupDialog.ascx.designer.vb">
+      <DependentUpon>ctrlFindEmployeeImportPopupDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindEmployeeImportPopupDialog.ascx.vb">
+      <DependentUpon>ctrlFindEmployeeImportPopupDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindOrgImportPopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindOrgImportPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindOrgImportPopup.ascx.vb">
+      <DependentUpon>ctrlFindOrgImportPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindOrgImportPopupDialog.ascx.designer.vb">
+      <DependentUpon>ctrlFindOrgImportPopupDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindOrgImportPopupDialog.ascx.vb">
+      <DependentUpon>ctrlFindOrgImportPopupDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlHomeDashboard.ascx.designer.vb">
+      <DependentUpon>ctrlHomeDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlHomeDashboard.ascx.vb">
+      <DependentUpon>ctrlHomeDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlUpdateManager.ascx.designer.vb">
+      <DependentUpon>ctrlUpdateManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlUpdateManager.ascx.vb">
+      <DependentUpon>ctrlUpdateManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlUpdateManagerDialog.ascx.designer.vb">
+      <DependentUpon>ctrlUpdateManagerDialog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlUpdateManagerDialog.ascx.vb">
+      <DependentUpon>ctrlUpdateManagerDialog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Util.vb" />
+    <Compile Include="Service References\ProfileBusiness\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlLineManager.ascx.designer.vb">
+      <DependentUpon>ctrlLineManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlLineManager.ascx.vb">
+      <DependentUpon>ctrlLineManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlOrgChart.ascx.designer.vb">
+      <DependentUpon>ctrlOrgChart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlOrgChart.ascx.vb">
+      <DependentUpon>ctrlOrgChart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Asset.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Asset.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Asset.ascx.vb">
+      <DependentUpon>ctrlHU_Asset.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Bank.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Bank.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Bank.ascx.vb">
+      <DependentUpon>ctrlHU_Bank.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_BankBranch.ascx.designer.vb">
+      <DependentUpon>ctrlHU_BankBranch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_BankBranch.ascx.vb">
+      <DependentUpon>ctrlHU_BankBranch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_ContractType.ascx.designer.vb">
+      <DependentUpon>ctrlHU_ContractType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_ContractType.ascx.vb">
+      <DependentUpon>ctrlHU_ContractType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_District.ascx.designer.vb">
+      <DependentUpon>ctrlHU_District.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_District.ascx.vb">
+      <DependentUpon>ctrlHU_District.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Nation.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Nation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Nation.ascx.vb">
+      <DependentUpon>ctrlHU_Nation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_Organization.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Organization.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_Organization.ascx.vb">
+      <DependentUpon>ctrlHU_Organization.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrgTitle.ascx.designer.vb">
+      <DependentUpon>ctrlHU_OrgTitle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlHU_OrgTitle.ascx.vb">
+      <DependentUpon>ctrlHU_OrgTitle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Place.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Place.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Place.ascx.vb">
+      <DependentUpon>ctrlHU_Place.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Province.ascx.designer.vb">
+      <DependentUpon>ctrlHU_Province.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\List\ctrlHU_Province.ascx.vb">
+      <DependentUpon>ctrlHU_Province.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlRemindConfig.ascx.designer.vb">
+      <DependentUpon>ctrlRemindConfig.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Setting\ctrlRemindConfig.ascx.vb">
+      <DependentUpon>ctrlRemindConfig.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\ProfileBusinessRepository.vb" />
+    <Compile Include="Modules\Profile\ProfileRepository.vb" />
+    <Compile Include="Modules\Profile\ProfileRepositoryBase.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlEmpBasicInfo.ascx.designer.vb">
+      <DependentUpon>ctrlEmpBasicInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlEmpBasicInfo.ascx.vb">
+      <DependentUpon>ctrlEmpBasicInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindAssetPopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindAssetPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindAssetPopup.ascx.vb">
+      <DependentUpon>ctrlFindAssetPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindSalaryPopup.ascx.designer.vb">
+      <DependentUpon>ctrlFindSalaryPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Profile\Shared\ctrlFindSalaryPopup.ascx.vb">
+      <DependentUpon>ctrlFindSalaryPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vbproj">
+      <Project>{4b2ef214-7880-45f2-bb79-b394e552b4be}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Data\Framework.Data.vbproj">
+      <Project>{5ab0d232-7b7a-44b8-9d14-115c065027db}</Project>
+      <Name>Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.UI.vbproj">
+      <Project>{514CC57F-03AA-4D18-9BF2-3F7B66F6AD9B}</Project>
+      <Name>Framework.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFrameworkPublic\HistaffFrameworkPublic.vbproj">
+      <Project>{5D0CFFD8-3EF0-4584-818F-3F165BD8DE0C}</Project>
+      <Name>HistaffFrameworkPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffFramework\HistaffFramework.vbproj">
+      <Project>{FB51763C-4CE7-4417-BBD9-5FF784FCE7A7}</Project>
+      <Name>HistaffFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HistaffWebAppResources\HistaffWebAppResources.vbproj">
+      <Project>{2F00C7ED-1915-43B8-A831-A8FC391F7455}</Project>
+      <Name>HistaffWebAppResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAppLog\WebAppLog.vbproj">
+      <Project>{780365C3-C031-4841-9B4C-B39840797596}</Project>
+      <Name>WebAppLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ProfileBusiness\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1688</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
